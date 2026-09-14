@@ -29,7 +29,7 @@ export class WorkerClient {
   }
   private async json(path:string,method='GET',body?:unknown):Promise<unknown>{
     const response=await this.fetch(path,{method,...(body===undefined?{}:{body:JSON.stringify(body),headers:{'Content-Type':'application/json'}})});
-    if(!response.ok){await response.body?.cancel();throw new WorkerError(response.status===404?404:response.status===409?409:502,`Worker returned HTTP ${response.status}`);}
+    if(!response.ok){await response.body?.cancel();throw new WorkerError(response.status>=400&&response.status<500?response.status:502,`Worker returned HTTP ${response.status}`);}
     const pieces:Uint8Array[]=[];let size=0;
     for await(const piece of chunks(response)){size+=piece.length;if(size>MAX_JSON){throw new WorkerError(502,'Worker JSON response exceeds limit');}pieces.push(piece);}
     try {return JSON.parse(Buffer.concat(pieces).toString());}catch{throw new WorkerError(502,'Worker returned invalid JSON');}

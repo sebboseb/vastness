@@ -1,6 +1,6 @@
 # Vastness
 
-Read CONTEXT.md, relevant docs/adr, and docs/exploration.md before implementation. The user brief is docs/brief.md. Current delivery contract is docs/specs/milestone-zero.md.
+Read CONTEXT.md, relevant docs/adr, and docs/exploration.md before implementation. The user brief is docs/brief.md. Current delivery contract is docs/specs/gpu-worker-readiness.md; preserve the verified M0 behavior in docs/specs/milestone-zero.md.
 
 ## Agent skills
 
