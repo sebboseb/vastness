@@ -1,0 +1,30 @@
+{
+  "name": "vastness",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:web": "vite apps/web --host 127.0.0.1",
+    "dev:server": "tsx services/orchestrator/src/index.ts",
+    "fixtures": "tsx scripts/create-fixtures.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test packages/*/src/*.test.ts services/orchestrator/src/*.test.ts",
+    "build": "vite build apps/web",
+    "check": "npm run typecheck && npm test && npm run build",
+    "frontier": "node scripts/frontier.mjs"
+  },
+  "dependencies": {
+    "playcanvas": "2.22.1",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "22.18.6",
+    "tsx": "4.20.5",
+    "typescript": "5.9.2",
+    "vite": "7.3.6"
+  }
+}

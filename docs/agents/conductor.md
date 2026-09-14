@@ -1,0 +1,5 @@
+# Autonomous conductor
+
+Use installed Matt Pocock flow: grill-with-docs → to-spec → to-tickets → implement → code-review. Resolve routine questions from the brief, source research, or experiments and persist decisions. Repository setup was performed 2026-09-14 with GitHub, default labels and single-context domain docs.
+
+Read npm run frontier for unfinished unblocked tickets. Claim independent tickets, record base commit, and create each worktree from current codex/integration tip. Pass ticket/spec/ADRs/exploration paths and exact owned files, not the lead conversation. Serialize shared protocol, config and migrations. Each worker uses implement discipline: behavioral red/green at meaningful seams, typecheck, focused tests, completion verification, review, commit. Lead verifies diff/tests, integrates, closes ticket and recalculates frontier. Rebase long work onto current integration tip when safe before final verification. Research agents only write owned notes. This is a thin dispatch policy, not a replacement implementation workflow.

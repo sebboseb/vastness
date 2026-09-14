@@ -1,0 +1,20 @@
+# Pinned integration seams
+
+Read packages/protocol/src/index.ts as exact shared TS contract. Integration branch codex/integration. Lead alone changes root configuration, protocol, world-model and scripts/dev.mjs.
+
+## Coordinates and fixtures
+Metres, Y up. Arrival room id `arrival`, position [0,0,0], bounds local [-7,0,-9]..[7,4,9]. Observatory id `observatory`, position [0,0,-18], same local bounds. Arrival north portal at WORLD [0,0,-9] links observatory; observatory south same WORLD point links arrival. Portal width 3.2 height 3.2. Eye starts [0,1.65,5], yaw 0 pitch 0, looks -Z. Physical radius .3. Flat authored collider boxes. Exclude floor/ceiling from horizontal blocking (only boxes crossing player's body y=.2..1.8). Closed north seam until observatory ready. Outer boundaries solid. Interior collider boxes extracted from actual GLB meshInstance AABBs, transformed into world space. No GPU dependency for fixtures.
+
+## Artifact writer / server contract
+`scripts/create-fixtures.ts` writes `artifacts/fixtures/arrival/scene.ply`, `collider.glb` and observatory equivalents. Script deterministic and mkdir recursive. Each collision GLB contains unit-cube mesh nodes with scale/translation; renderer may derive world AABBs from loaded render mesh instances. Visual PLY binary little endian, authored rooms with equipment, windows, lights and distinct palettes. Worker fake copies these files. Runtime data ignored by Git and reproducible.
+
+Orchestrator `createOrchestrator({dataDir?, artifactDir?})` async returns `{server, close}`; server is node http.Server unbound so test listen(0). Main binds 127.0.0.1:4310 unless HOST/PORT. `GET /api/health`; `GET /api/world` returns World, lazily initialize stable singleton fixture world. `GET /api/chunks/:id` returns Chunk after optional ~350ms fixture delay (initial world metadata includes both; browser requests second on approach). `PUT /api/player` JSON PlayerPose → saved pose response. `GET /artifacts/:hash/:filename` serves immutable imported bytes; backend computes SHA256 and copies fixtures to content-addressed artifact storage on initialization; filenames scene.ply/collider.glb. SQLite at dataDir/world.sqlite. Restart uses original DB records and artifacts, no regeneration. Root artifacts directory defaults path.resolve('artifacts'), data .runtime. Backend owns all services/orchestrator/** plus its tests. Browser uses same-origin relative /api and /artifacts; Vite proxy to :4310.
+
+## World movement function
+`movePlayer(position: Vec3, displacement: Vec3, boxes: CollisionBox[], radius=0.3): Vec3` in packages/world-model/src/index.ts. Axis-separated XZ sweep/substeps, fixed eye Y. `chunkAt(position: Vec3, chunks: Chunk[]): string | null`; `shouldLoadNeighbor(position: Vec3, portal: Portal, distance=6): boolean`. Browser owns request/retention/load states and reports actual player pose with periodic PUT.
+
+## Worker
+Python stdlib HTTP service (no install needed fake mode), port 4320 loopback by default. GET /health /capabilities; POST /jobs JSON WorkerJobRequest; GET /jobs/:id, POST /jobs/:id/cancel, GET /jobs/:id/artifacts. Job status WorkerJob. Artifacts manifests use project Artifact array, local HTTP artifact routes, backend fake-fixture-v1. Heavy concurrency exactly 1. Explicit bind/token config for remote use, documented SSH tunnel preferred. No browser contact. Persistent fake job state preferred. GPU probe read-only reports nvidia-smi/OS/Git/Python and records unavailable values honestly.
+
+## Resolved grilling questions
+The brief chooses renderer, explicit geometry, local SQLite, fake-before-real worker, hardware separation and workflow. Remaining M0 choices are reversible and covered by autonomous authorization: two flat rooms, capsule approximation against authored GLB boxes, fixtures honestly labeled, single local player. Loss/restart and failed stream scenarios gate acceptance. Test seams are HTTP restart behavior, movement API and browser user flow. Real GPU access is a separate blocker, not an architectural choice.
