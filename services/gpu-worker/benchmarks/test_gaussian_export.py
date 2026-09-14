@@ -2,6 +2,7 @@
 import os
 from pathlib import Path
 import sys
+import subprocess
 import tempfile
 import unittest
 
@@ -12,7 +13,12 @@ from .gaussian_export import save_gaussian_ply
 class GaussianExportTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        sys.path.insert(0, os.environ['VASTNESS_TEST_TRELLIS_ROOT'])
+        from .run import PINS
+        root = os.environ['VASTNESS_TEST_TRELLIS_ROOT']
+        revision = subprocess.check_output(['git', '-C', root, 'rev-parse', 'HEAD'], text=True).strip()
+        if revision != PINS['source']['revision']:
+            raise RuntimeError('Regression requires the pinned TRELLIS source revision')
+        sys.path.insert(0, root)
         import numpy as np
         import torch
         from plyfile import PlyData
