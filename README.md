@@ -2,11 +2,11 @@
 
 A local-first, persistent spatial world prototype. Milestone Zero is a small Scandinavian coastal research station: two authored Gaussian-splat rooms, separate solid collision proxies, a streamed portal, and a saved player position.
 
-**Current content is deterministic fixture geometry, not AI-generated.** Real generation will be introduced through a separate worker API after the walking loop is proven.
+**Current content is deterministic fixture geometry, not AI-generated.** The pluggable worker integration and first real-backend benchmark runner are prepared. NVIDIA execution remains unverified until the PC is reachable.
 
 ## Run on the Mac
 
-Requires Node.js 22.13+ and npm. Tested runtime: Node 22.23.1. The worker's fake mode also uses Python 3.11+.
+Requires Node.js 22.13+ and npm. Tested runtime: Node 22.23.1. The fixture worker uses Python 3.10+.
 
 ```sh
 npm ci
@@ -48,6 +48,6 @@ Matt Pocock's project-local workflow skills are installed in `.agents/skills` wi
 
 ## GPU appliance
 
-See `docs/worker.md` for the fake-worker contract and deployment procedure, and `docs/research/gpu-connectivity.md` for connection results. Worker deployment must use Git commits. The Mac/browser never requires a shared network folder or a CUDA installation. Initial heavy-job concurrency is one.
+See [worker adapters and capabilities](docs/worker.md), [Mac integration](docs/worker-integration.md), [exact Linux/SSH deployment](docs/deployment.md), and [the prepared TRELLIS benchmark](docs/benchmark.md). [Connection results](docs/research/gpu-connectivity.md) remain unverified for the PC. Worker deployment must use Git commits. The Mac/browser never requires a shared network folder or a CUDA installation. Initial heavy-job concurrency is one.
 
-Real-world generation, model benchmarks, generated boundary continuity and predictive generation remain later milestones. GPU performance is not claimed until measured on the actual PC.
+Fixture and external-command execution, typed GPU/CUDA/PyTorch/VRAM inventory, verified imports and repeatable Linux bootstrap are covered by CPU tests. Actual model execution, generated boundary continuity and predictive generation remain later milestones. GPU performance is not claimed until measured on the actual PC.

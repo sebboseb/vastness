@@ -7,6 +7,13 @@ export class WorkerError extends Error {
   constructor(readonly status:number,message:string){super(message);}
 }
 const MAX_JSON=1024*1024;
+const MAX_HEADER=65536;
+function validHeader(header:Buffer,size:number,format:'ply'|'glb'){
+ if(format==='glb')return size>12&&header.length>=12&&header.readUInt32LE(0)===0x46546c67&&header.readUInt32LE(4)===2&&header.readUInt32LE(8)===size;
+ const text=header.toString('ascii');const end=/^end_header\r?\n/m.exec(text);if(!end)return false;
+ const lines=text.slice(0,end.index).split(/\r?\n/);
+ return lines[0]==='ply'&&lines.includes('format binary_little_endian 1.0')&&lines.some(line=>/^element vertex [0-9]+$/.test(line)&&Number(line.split(' ')[2])>0)&&end.index+end[0].length<size;
+}
 export const MAX_ARTIFACT_BYTES=256*1024*1024;
 
 async function* chunks(response:Response){
@@ -56,12 +63,11 @@ export class WorkerClient {
       try {
         for await(const piece of chunks(response)){
           size+=piece.length;if(size>artifact.bytes)throw new WorkerError(502,'Worker artifact exceeds declared size');
-          if(header.length<4096)header=Buffer.concat([header,Buffer.from(piece).subarray(0,4096-header.length)]);
+          if(header.length<MAX_HEADER)header=Buffer.concat([header,Buffer.from(piece).subarray(0,MAX_HEADER-header.length)]);
           hash.update(piece);await file.writeFile(piece);
         }
         if(size!==artifact.bytes||hash.digest('hex')!==artifact.sha256)throw new WorkerError(502,'Worker artifact hash or size mismatch');
-        const valid=artifact.format==='ply'?header.toString('ascii').startsWith('ply\nformat binary_little_endian 1.0\n'):header.length>=12&&header.readUInt32LE(0)===0x46546c67&&header.readUInt32LE(4)===2&&header.readUInt32LE(8)===size;
-        if(!valid)throw new WorkerError(502,'Worker artifact format is invalid');
+        if(!validHeader(header,size,artifact.format))throw new WorkerError(502,'Worker artifact format is invalid');
         await file.sync();await file.close();await rename(temporary,join(directory,filename));
         accepted.push({...artifact,url:`/artifacts/${artifact.sha256}/${filename}`});
       } finally {await file.close().catch(()=>{});await rm(temporary,{force:true});}

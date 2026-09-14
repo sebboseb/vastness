@@ -41,7 +41,8 @@ test('Mac submits real Python jobs, imports verified bytes and keeps accepted ar
 
 test('artifact import rejects hostile URLs, wrong hashes, redirects and invalid formats',async t=>{
  const dir=await mkdtemp(join(tmpdir(),'vastness-import-boundary-'));t.after(()=>rm(dir,{recursive:true,force:true}));
- const ply=Buffer.from('ply\nformat binary_little_endian 1.0\nend_header\n');const glb=Buffer.alloc(12);glb.writeUInt32LE(0x46546c67);glb.writeUInt32LE(2,4);glb.writeUInt32LE(12,8);
+ const validPly=Buffer.from('ply\nformat binary_little_endian 1.0\nelement vertex 1\nproperty float x\nend_header\n\0\0\0\0');
+ let ply=validPly;const glb=Buffer.alloc(12);glb.writeUInt32LE(0x46546c67);glb.writeUInt32LE(2,4);glb.writeUInt32LE(12,8);
  let mode='external';let downloaded=0;
  const server=createServer((req,res)=>{res.setHeader('content-type','application/json');
  if(req.url==='/jobs/test'){res.end(JSON.stringify({id:'test',status:'succeeded',progress:1,logs:[],backend:'fixture',error:null}));return;}
@@ -52,4 +53,16 @@ test('artifact import rejects hostile URLs, wrong hashes, redirects and invalid 
  mode='hash';await assert.rejects(client.importArtifacts('test',dir),/hash/);
  mode='redirect';await assert.rejects(client.importArtifacts('test',dir),/redirect/);
  mode='format';await assert.rejects(client.importArtifacts('test',dir),/format/);
+ mode='truncated-ply';ply=Buffer.from('ply\nformat binary_little_endian 1.0\n');await assert.rejects(client.importArtifacts('test',dir),/format/);
+ ply=validPly.subarray(0,validPly.length-4);await assert.rejects(client.importArtifacts('test',dir),/format/);
+ mode='truncated-glb';ply=validPly;await assert.rejects(client.importArtifacts('test',dir),/format/);
+});
+
+
+test('Mac rejects malformed worker capabilities at the HTTP boundary',async t=>{
+ const dir=await mkdtemp(join(tmpdir(),'vastness-capability-boundary-'));t.after(()=>rm(dir,{recursive:true,force:true}));
+ const worker=createServer((_req,res)=>{res.setHeader('content-type','application/json');res.end(JSON.stringify({schemaVersion:1,hardware:{nvidiaExecution:'passed'}}));});
+ const workerUrl=await listen(worker);t.after(()=>new Promise<void>(r=>worker.close(()=>r())));
+ const app=await createOrchestrator({dataDir:dir,artifactDir:join(dir,'artifacts'),workerUrl});const origin=await listen(app.server);t.after(()=>app.close());
+ const response=await fetch(origin+'/api/worker/capabilities');assert.equal(response.status,502);assert.deepEqual(await response.json(),{error:'Worker response does not match the protocol'});
 });
