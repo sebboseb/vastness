@@ -2,7 +2,7 @@
 
 This procedure deploys a reviewed Git commit from the Mac to an ordinary Linux account. The bootstrap creates a Python environment, preserves worker state and configuration, and prepares a loopback launcher. It installs no system packages, drivers, PyTorch, models or weights. Fixture mode needs only Bash, Git and Python 3.10+ with the `venv` module; the environment is created without pip because the worker uses the standard library.
 
-These are deployment instructions, not evidence of a PC deployment or NVIDIA validation. The last recorded candidate is `DESKTOP-6QS5JC3.local` / `192.168.1.252`, with an unverified Windows account `sebas` and existing Mac key `~/.ssh/moneytap_codex_win10_ed25519`. Port 22 timed out before authentication. See [the connectivity record](research/gpu-connectivity.md). The Linux account, SSH port, host fingerprint, actual GPU model and working CUDA environment remain unverified.
+For the actual Windows OpenSSH → Ubuntu-24.04 WSL2 appliance, use [the Windows-to-WSL procedure](deployment-wsl.md). Its verified alias is `vastness-gpu`, dedicated key `~/.ssh/vastness_pc_ed25519`, Windows account `sebas`, and current LAN IP `192.168.1.252`. The direct-Linux examples below require a separate verified Linux SSH endpoint; they are not the deployed Windows route. See [measured deployment evidence](research/gpu-worker-deployment.md).
 
 ## Establish a verified Linux endpoint
 

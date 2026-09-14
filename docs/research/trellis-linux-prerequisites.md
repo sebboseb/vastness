@@ -68,8 +68,10 @@ After inspecting the successful solve, execute the same request and retain its l
   > "$prereq/toolchain-install.log" 2>&1
 "$conda_bin" list --prefix "$toolchain" --explicit \
   > "$prereq/toolchain-explicit.txt"
+set +u # conda activation scripts inspect optional, unset variables
 source "$prereq/miniforge-26.7.2-0/etc/profile.d/conda.sh"
 conda activate "$toolchain"
+set -u
 export CC="$toolchain/bin/x86_64-conda-linux-gnu-gcc"
 export CXX="$toolchain/bin/x86_64-conda-linux-gnu-g++"
 export CUDAHOSTCXX="$CXX"

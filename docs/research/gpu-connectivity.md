@@ -1,6 +1,6 @@
 # GPU PC connectivity
 
-**Current status (2026-09-15, Europe/Stockholm):** the dedicated SSH connection and WSL GPU inventory passed before the authorized reboot. The PC has returned at the same LAN IP, but SSH is timing out. Post-reboot SSH/GPU verification, worker deployment and inference remain incomplete. The earlier discovery notes below are historical.
+**Current status (2026-09-15, Europe/Stockholm):** post-reboot dedicated SSH and WSL GPU checks pass at the unchanged LAN IP. The worker is deployed from a committed revision and its Mac artifact-import smoke test passes. See [the deployment record](gpu-worker-deployment.md). NVIDIA model inference is still unvalidated; earlier outage notes below are historical.
 
 Checked from the Mac on 2026-09-14. Discovery and connection probes were read-only; no software, SSH configuration, services, or files on the PC were changed.
 
