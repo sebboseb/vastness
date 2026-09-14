@@ -66,3 +66,17 @@ test('Mac rejects malformed worker capabilities at the HTTP boundary',async t=>{
  const app=await createOrchestrator({dataDir:dir,artifactDir:join(dir,'artifacts'),workerUrl});const origin=await listen(app.server);t.after(()=>app.close());
  const response=await fetch(origin+'/api/worker/capabilities');assert.equal(response.status,502);assert.deepEqual(await response.json(),{error:'Worker response does not match the protocol'});
 });
+
+
+test('overlapping identical submissions share one worker request and retain provenance',async t=>{
+ const dir=await mkdtemp(join(tmpdir(),'vastness-submit-race-'));t.after(()=>rm(dir,{recursive:true,force:true}));
+ let submissions=0;let release!:()=>void;const gate=new Promise<void>(r=>release=r);let began!:()=>void;const started=new Promise<void>(r=>began=r);
+ const job={id:'duplicate',status:'queued',progress:0,logs:[],backend:'fixture',error:null};
+ const worker=createServer(async(req,res)=>{res.setHeader('content-type','application/json');if(req.method==='POST'){submissions++;began();await gate;res.writeHead(submissions===1?202:409);res.end(JSON.stringify(job));}else{res.end(JSON.stringify(job));}});
+ const workerUrl=await listen(worker);t.after(()=>new Promise<void>(r=>worker.close(()=>r())));
+ const app=await createOrchestrator({dataDir:dir,artifactDir:join(dir,'artifacts'),workerUrl});const origin=await listen(app.server);t.after(()=>app.close());
+ const send=(seed=1)=>fetch(origin+'/api/worker/jobs',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({id:'duplicate',prompt:'same request',seed,fixture:'arrival'})});
+ const first=send();await started;const second=send();assert.equal((await send(2)).status,409);release();
+ assert.deepEqual((await Promise.all([first,second])).map(r=>r.status),[202,202]);assert.equal(submissions,1);
+ assert.equal((await fetch(origin+'/api/worker/jobs/duplicate')).status,200);
+});

@@ -3,7 +3,7 @@ import {readFile} from 'node:fs/promises';
 import {join} from 'node:path';
 import type {IncomingMessage,ServerResponse} from 'node:http';
 import {ZodError} from 'zod';
-import {ArtifactSchema,WorkerJobRequestSchema,type Artifact} from '../../../packages/protocol/src/index.ts';
+import {ArtifactSchema,WorkerJobRequestSchema,type Artifact,type WorkerJob} from '../../../packages/protocol/src/index.ts';
 import {WorkerClient,WorkerError} from './worker-client.ts';
 
 function json(response:ServerResponse,status:number,body:unknown){response.writeHead(status,{'content-type':'application/json','cache-control':'no-store'});response.end(JSON.stringify(body));}
@@ -20,6 +20,7 @@ export function createWorkerGateway(options:{dataDir:string;artifactDir:string;w
  const db=new DatabaseSync(join(options.dataDir,'worker.sqlite'));
  db.exec('CREATE TABLE IF NOT EXISTS requests (id TEXT PRIMARY KEY, request TEXT NOT NULL, origin TEXT NOT NULL); CREATE TABLE IF NOT EXISTS imports (id TEXT PRIMARY KEY, manifest TEXT NOT NULL, accepted_at TEXT NOT NULL)');
  const pending=new Map<string,Promise<Artifact[]>>();
+ const submissions=new Map<string,Promise<{status:number;job:WorkerJob}>>();
  function local(id:string):Artifact[]|undefined{const row=db.prepare('SELECT manifest FROM imports WHERE id=?').get(id);return row?ArtifactSchema.array().parse(JSON.parse(row.manifest as string)):undefined;}
  async function importedArtifact(pathname:string,response:ServerResponse){
   if(!/^\/artifacts\/[a-f0-9]{64}\/(scene\.ply|collider\.glb)$/.test(pathname))return false;
@@ -40,12 +41,18 @@ export function createWorkerGateway(options:{dataDir:string;artifactDir:string;w
    if(pathname==='/api/worker/jobs'&&request.method==='POST'){
     const parsed=WorkerJobRequestSchema.safeParse(await body(request));if(!parsed.success)throw new WorkerError(400,'Invalid job request');const job=parsed.data;
     const existing=db.prepare('SELECT request,origin FROM requests WHERE id=?').get(job.id);
-    if(existing){
-     if(existing.request!==JSON.stringify(job)||existing.origin!==client.origin)throw new WorkerError(409,'Job id already belongs to a different request or worker');
-     try{json(response,200,await client.status(job.id));return true;}catch(error){if(!(error instanceof WorkerError&&error.status===404))throw error;}
-    }else db.prepare('INSERT INTO requests VALUES (?,?,?)').run(job.id,JSON.stringify(job),client.origin);
-    try {json(response,202,await client.submit(job));}
-    catch(error){if(!existing&&error instanceof WorkerError&&error.status>=400&&error.status<500)db.prepare('DELETE FROM requests WHERE id=?').run(job.id);throw error;}
+    if(existing&&(existing.request!==JSON.stringify(job)||existing.origin!==client.origin))throw new WorkerError(409,'Job id already belongs to a different request or worker');
+    let operation=submissions.get(job.id);
+    if(!operation){
+     if(!existing)db.prepare('INSERT INTO requests VALUES (?,?,?)').run(job.id,JSON.stringify(job),client.origin);
+     operation=(async()=>{
+      if(existing){try{return {status:200,job:await client.status(job.id)};}catch(error){if(!(error instanceof WorkerError&&error.status===404))throw error;}}
+      try{return {status:202,job:await client.submit(job)};}
+      catch(error){if(!existing&&error instanceof WorkerError&&error.status>=400&&error.status<500)db.prepare('DELETE FROM requests WHERE id=?').run(job.id);throw error;}
+     })().finally(()=>submissions.delete(job.id));
+     submissions.set(job.id,operation);
+    }
+    const result=await operation;json(response,result.status,result.job);
     return true;
    }
    if(match){
