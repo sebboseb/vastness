@@ -12,7 +12,7 @@
     "dev:server": "tsx services/orchestrator/src/index.ts",
     "fixtures": "tsx scripts/create-fixtures.ts",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test packages/*/src/*.test.ts services/orchestrator/src/*.test.ts",
+    "test": "tsx --test packages/*/src/*.test.ts services/orchestrator/src/*.test.ts apps/web/src/*.test.ts",
     "build": "vite build apps/web",
     "check": "npm run typecheck && npm test && npm run build",
     "frontier": "node scripts/frontier.mjs"
