@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111817" />
+    <meta name="description" content="Explore a persistent, two-room coastal research station. An authored Gaussian-splat world by Vastness." />
+    <title>Vastness — North Station</title>
+  </head>
+  <body>
+    <canvas id="world-canvas" aria-label="First-person view of North Station"></canvas>
+    <div class="vignette" aria-hidden="true"></div>
+    <main id="interface">
+      <header class="topbar">
+        <a class="wordmark" href="/" aria-label="Vastness home"><span class="mark" aria-hidden="true">✳</span> VASTNESS<span class="wordmark-divider"></span><span class="project-name">FIELD NOTES / 001</span></a>
+        <div class="fixture-label"><span class="status-dot"></span> AUTHORED FIXTURE <span class="label-detail">/ LOCAL WORLD</span></div>
+      </header>
+      <div class="north-indicator" aria-hidden="true"><span>N</span><i></i><span class="bearing">000°</span></div>
+      <section class="welcome" id="welcome">
+        <p class="eyebrow"><span class="short-rule"></span> 64° 08′ N &nbsp; 21° 56′ W <span class="fictional">/ FICTIONAL SITE</span></p>
+        <h1>Somewhere,<br>at the edge.</h1>
+        <p class="intro">A quiet station on the northern coast.<br>Two rooms. One place to come back to.</p>
+        <button id="enter" type="button" disabled><span id="enter-label">Opening station</span><span aria-hidden="true">↗</span></button>
+        <p class="entry-note">WASD to walk <span>·</span> Mouse to look <span>·</span> Esc to pause</p>
+      </section>
+      <div class="reticle" aria-hidden="true"></div>
+      <div class="walk-tools" aria-label="Walking without mouse capture">
+        <button id="walk-forward" type="button" aria-pressed="false" disabled>↑ Walk forward</button>
+        <button id="walk-backward" type="button" aria-pressed="false" disabled>↓ Walk backward</button>
+        <button id="stop-walking" type="button" disabled>Stop</button>
+        <span>Arrow keys to look</span>
+      </div>
+      <section class="notice" id="notice" role="status" aria-live="polite"><span class="status-dot"></span><span id="notice-text">Connecting to your local world…</span><button id="retry" hidden type="button">Retry</button></section>
+      <aside class="station-map" aria-label="Station map">
+        <div class="map-heading"><span>NORTH STATION</span><span>01—02</span></div>
+        <svg viewBox="0 0 160 210" role="img" aria-label="Arrival room connected north to the observatory">
+          <path class="map-room" id="map-observatory" d="M39 18H121V100H90M70 100H39Z" />
+          <path class="map-room" id="map-arrival" d="M39 106H70M90 106H121V190H39Z" />
+          <path class="map-route" d="M80 155V58" />
+          <text x="80" y="49">02</text><text x="80" y="141">01</text>
+          <circle id="map-player" cx="80" cy="171" r="3.6" />
+          <path class="map-north" d="M139 31V17M135 22L139 17L143 22" /><text x="139" y="43" class="map-n-label">N</text>
+        </svg>
+        <div class="map-key"><span><i></i> YOU ARE HERE</span><span>1 : 200</span></div>
+      </aside>
+      <footer class="bottom-bar">
+        <div class="location"><span class="eyebrow" id="location-index">01 / NORTH STATION</span><h2 id="location-name">Arrival hall</h2><p id="location-caption">Field equipment · Coastal approach</p></div>
+        <div class="controls"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> WALK</span><span><kbd>ESC</kbd> PAUSE</span></div>
+        <details class="diagnostics" open><summary>WORLD TELEMETRY <span id="save-state">CONNECTING</span></summary><dl><div><dt>CHUNK</dt><dd id="chunk-state">—</dd></div><div><dt>POSITION</dt><dd id="pose-state">—</dd></div><div><dt>STREAM</dt><dd id="load-state">arrival: waiting · observatory: waiting</dd></div><div><dt>WORLD</dt><dd id="world-state">—</dd></div></dl></details>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
