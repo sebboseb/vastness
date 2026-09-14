@@ -81,6 +81,19 @@ PY
 
 Start the worker using [its documented command-mode configuration](worker.md), then submit the same JSON request through `POST /jobs` and inspect status/artifacts through the normal API. The generic adapter stores the request outside the empty output directory. It retains successful extra report files locally and keeps failed/cancelled output directories under worker `data/failures/<job-id>`; only valid PLY/GLB artifacts are exposed as success. Do not manually copy benchmark outputs into an accepted world.
 
+## Retain appliance evidence on the Mac
+
+The API exposes the accepted PLY/GLB. Retrieve the extra reports/logs over the verified SSH alias from [deployment.md](deployment.md). For the documented prefix and successful job `trellis-smoke-1`, run on the Mac:
+
+```sh
+mkdir -p .runtime/benchmark-evidence/trellis-smoke-1
+ssh -o BatchMode=yes -o StrictHostKeyChecking=yes vastness-gpu-linux \
+  'tar -C "$HOME/.local/share/vastness-worker/shared/data/artifacts/trellis-smoke-1" -cf - benchmark-report.json inference.log metrics.json gpu-memory.csv' \
+  > .runtime/benchmark-evidence/trellis-smoke-1/reports.tar
+```
+
+For a failed/cancelled job, use its logged `shared/data/failures/<job-id>` directory and archive the files that actually exist; a preflight failure has no inference metrics. Preserve the setup prefix's `setup-report.json`, `setup.log`, `pip-freeze.txt`, `conda-explicit.txt` and weight manifests as well. Keep raw archives locally and commit a concise measured research record linking the source SHA and job ID.
+
 ## Evidence and acceptance
 
 Each attempt records `benchmark-report.json`, with the plan/pins, request, repository revision, preflight observations, stage, exit code, timestamps, errors and artifact hashes. Failures before CUDA keep `nvidiaExecution: not_run`; starting the GPU child changes it to `attempted`; only successful validated exports change it to `completed`. Output directories cannot overwrite earlier evidence. Process-group cancellation belongs to the worker; the runner catches termination to write its final report when time permits. Abrupt kill/power loss can leave the last in-progress report, which must not be treated as success.
