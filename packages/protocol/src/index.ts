@@ -23,7 +23,7 @@ export const CapabilityReportSchema=z.object({
   schemaVersion:z.literal(1), capturedAt:z.string().datetime({offset:true}),
   host:z.object({hostname:z.string(),os:z.string(),release:z.string(),arch:z.string()}),
   python:z.object({version:z.string(),executable:z.string()}),
-  gpu:z.object({status:ProbeStatusSchema,devices:z.array(z.object({index:z.number().int().nonnegative(),uuid:z.string(),name:z.string(),driverVersion:z.string(),vramTotalMiB:z.number().finite().nonnegative(),vramFreeMiB:z.number().finite().nonnegative()})),error:NullableText}),
+  gpu:z.object({status:ProbeStatusSchema,devices:z.array(z.object({index:z.number().int().nonnegative(),uuid:z.string(),name:z.string(),driverVersion:z.string(),vramTotalMiB:z.number().finite().nonnegative().nullable(),vramFreeMiB:z.number().finite().nonnegative().nullable()})),error:NullableText}),
   cuda:z.object({driverStatus:ProbeStatusSchema,driverSupportedVersion:NullableText,toolkitStatus:ProbeStatusSchema,toolkitVersion:NullableText}),
   pytorch:z.object({status:ProbeStatusSchema,version:NullableText,cudaBuildVersion:NullableText,cudaAvailable:z.boolean().nullable(),error:NullableText}),
   nvidiaExecution:z.literal('not_run'), notes:z.array(z.string())
