@@ -136,6 +136,37 @@ class BenchmarkTests(unittest.TestCase):
             self.assertEqual(error.exception.code, 2)
             self.assertFalse(prefix.exists())
 
+    def test_linux_setup_prerequisite_failures_keep_reports_without_installing(self):
+        cases = [
+            ('missing', None, 'conda is required before setup'),
+            ('mismatch', subprocess.CompletedProcess(['nvcc', '--version'], 0, 'release 12.4,', ''), 'CUDA Toolkit 12.1'),
+            ('failed', subprocess.CompletedProcess(['nvcc', '--version'], 1, '', 'broken toolkit'), 'nvcc exited 1'),
+        ]
+        for case, toolkit, expected_error in cases:
+            with self.subTest(case=case), tempfile.TemporaryDirectory() as directory:
+                prefix = Path(directory) / 'attempt'
+
+                def which(name):
+                    return None if case == 'missing' and name == 'conda' else '/tools/bin/' + name
+
+                with patch.object(prepare.platform, 'system', return_value='Linux'), \
+                     patch.object(prepare.shutil, 'which', side_effect=which), \
+                     patch.object(prepare.subprocess, 'run', return_value=toolkit) as commands, \
+                     patch.object(prepare.urllib.request, 'urlretrieve') as download, \
+                     contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+                    self.assertEqual(prepare.main(['--execute', '--download-models', '--prefix', str(prefix)]), 1)
+                report = json.loads((prefix / 'setup-report.json').read_text())
+                self.assertEqual(report['status'], 'failed')
+                self.assertEqual(report['stage'], 'prerequisites')
+                self.assertEqual(report['nvidiaExecution'], 'not_run')
+                self.assertIn(expected_error, report['error'])
+                self.assertIn(expected_error, (prefix / 'setup.log').read_text())
+                self.assertIn('finishedAt', report)
+                self.assertFalse((prefix / 'env').exists())
+                self.assertFalse((prefix / 'weights').exists())
+                download.assert_not_called()
+                self.assertEqual(commands.call_count, 0 if case == 'missing' else 1)
+
 
 if __name__ == '__main__':
     unittest.main()
