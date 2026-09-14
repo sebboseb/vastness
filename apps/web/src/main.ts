@@ -185,7 +185,11 @@ async function start() {
     // At a saved seam position, load the adjacent room before enabling movement.
     for (const portal of current.portals) if (shouldLoadNeighbor(pose.position,portal)) {
       const neighbor = world.chunks.find(chunk => chunk.id === portal.connectedTo);
-      if (neighbor) await loadNeighbor(neighbor);
+      if (neighbor) {
+        await loadNeighbor(neighbor);
+        // A restored pose can overlap the portal barrier; do not enable a walker inside it.
+        if (!scene.loaded.has(neighbor.id)) throw new Error('Cannot safely restore this passage. Retry when the adjacent room is available.');
+      }
     }
     ready = true; enter.disabled = false; element('enter-label').textContent = 'Enter station';
     element<HTMLButtonElement>('walk-forward').disabled = false;
