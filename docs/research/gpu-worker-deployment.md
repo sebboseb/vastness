@@ -45,3 +45,11 @@ The Mac orchestrator was restarted with `WORKER_URL=http://127.0.0.1:14320`. HTT
 ## Capability and benchmark boundary
 
 The real capability schema reports the NVIDIA device and driver, distinguishes driver-supported CUDA 13.3 from an installed toolkit, and reports PyTorch absent in the stdlib worker environment. Baseline evidence is `.runtime/remote-capability-initial.json`. Fixture transport passes with `nvidiaExecution: not_run`. A separate pinned benchmark environment is being prepared; no CUDA kernel, successful inference or generated 3D result is implied by these checks. Ticket #11 owns those measurements.
+
+## First model setup result and next attempt
+
+Attempt `trellis-20260915-01` installed Torch 2.4.0+cu121, xformers, Kaolin and all pinned native extensions. A real CUDA arange/multiply/add/reduction passed with the exact expected result 1,048,576 on compute capability 8.6. This validates small-kernel NVIDIA execution; it is not model inference.
+
+The original preparation then failed at its retained `pip check` gate, before downloading weights: `ninja 1.11.1.1 is not supported on this platform`. Inspection found a blank line before the WHEEL tags, matching [pip's upstream report](https://github.com/pypa/pip/issues/12884). The built Ninja executable worked, and all native extensions compiled; this failure is packaging metadata rather than an observed CUDA build failure.
+
+The next explicit experiment updates only the Ninja distribution pin to **1.11.1.4**. Its downloaded Linux wheel has parseable, compatible platform tags and SHA-256 `096487995473320de7f65d622c3f1d16c3ad174797602218ca8c967f51ec38a0`. [Upstream releases](https://github.com/scikit-build/ninja-python-distributions/releases). Python/Torch/CUDA, model sources, weights and generation parameters are unchanged. A fresh `trellis-20260915-02` prefix preserves the complete failed attempt and logs; cached dependency downloads may be reused. Do not mark the original failed setup as successful or bypass `pip check`.
