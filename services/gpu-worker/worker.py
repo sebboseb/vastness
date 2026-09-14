@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Vastness fixture worker. Standard library only; no model or GPU dependency."""
+"""Vastness serial artifact worker. Fixture and trusted command backends."""
 import argparse
 from collections import deque
 from copy import deepcopy
@@ -13,9 +13,15 @@ from pathlib import Path
 import platform
 import re
 import shutil
+import signal
 import subprocess
 import sys
 import threading
+import time
+import struct
+
+from adapters import FixtureBackend, CommandBackend
+from probe import inventory
 from urllib.parse import urlsplit
 
 BACKEND = "fake-fixture-v1"
@@ -25,6 +31,8 @@ IDENTIFIER = re.compile(r"^[a-zA-Z0-9_-]{1,80}$")
 TERMINAL = {"succeeded", "failed", "cancelled"}
 ARTIFACT_FILES = (("scene.ply", "ply"), ("collider.glb", "glb"))
 MAX_BODY = 64 * 1024
+MAX_LOGS = 64
+MAX_LOG_LENGTH = 2048
 
 
 class APIError(Exception):
@@ -54,9 +62,9 @@ def validate_request(value):
     seed = value.get("seed")
     if not finite_number(seed) or int(seed) != seed:
         raise APIError(400, "seed must be a finite integer")
-    if value.get("fixture") not in ("arrival", "observatory"):
+    if "fixture" in value and value["fixture"] not in ("arrival", "observatory"):
         raise APIError(400, "fixture must be arrival or observatory")
-    request = {key: value[key] for key in ("id", "prompt", "seed", "fixture")}
+    request = {key: value[key] for key in ("id", "prompt", "seed", "fixture") if key in value}
     if "boundary" in value:
         boundary = value["boundary"]
         if not isinstance(boundary, dict) or not isinstance(boundary.get("portalId"), str):
@@ -70,31 +78,97 @@ def validate_request(value):
     return request
 
 
-def version_info():
+def version_info(backend=BACKEND):
     try:
         result = subprocess.run(["git", "rev-parse", "HEAD"], cwd=REPO_ROOT,
                                 capture_output=True, text=True, timeout=5, check=False)
         commit = result.stdout.strip() if result.returncode == 0 else None
     except (OSError, subprocess.TimeoutExpired):
         commit = None
-    return {"service": "vastness-gpu-worker", "version": VERSION, "backend": BACKEND,
+    return {"service": "vastness-gpu-worker", "version": VERSION, "backend": backend,
             "python": platform.python_version(), "gitCommit": commit}
+
+
+class JobCancelled(Exception):
+    pass
+
+
+class JobContext:
+    def __init__(self, store, record):
+        self.store, self.record = store, record
+        self.deadline = time.monotonic() + store.job_timeout
+
+    def check(self):
+        with self.store.condition:
+            if self.record["job"]["status"] != "running":
+                raise JobCancelled("Job cancelled")
+            if time.monotonic() >= self.deadline:
+                raise TimeoutError("Job exceeded configured timeout")
+
+    def wait(self, duration):
+        end = time.monotonic() + duration
+        with self.store.condition:
+            while time.monotonic() < end:
+                self.check()
+                self.store.condition.wait(min(end - time.monotonic(), max(0, self.deadline - time.monotonic())))
+        self.check()
+
+    def log(self, message):
+        with self.store.condition:
+            append_log(self.record, message)
+
+    def progress(self, value):
+        with self.store.condition:
+            self.check()
+            self.record["job"]["progress"] = value
+            self.store._save(self.record)
+
+
+def append_log(record, message):
+    record["job"]["logs"].append(str(message)[:MAX_LOG_LENGTH])
+    del record["job"]["logs"][:-MAX_LOGS]
+
+
+def validate_artifact(path, format_name):
+    if path.is_symlink() or not path.is_file():
+        raise ValueError(f"{path.name} must be a regular output file")
+    size = path.stat().st_size
+    with path.open("rb") as stream:
+        if format_name == "glb":
+            header = stream.read(12)
+            if len(header) != 12 or struct.unpack("<4sII", header) != (b"glTF", 2, size) or size <= 12:
+                raise ValueError("collider.glb has invalid GLB magic, version or declared length")
+        else:
+            header = bytearray()
+            while len(header) < 65536:
+                line = stream.readline(65536 - len(header))
+                header.extend(line)
+                if line.strip() == b"end_header":
+                    break
+                if not line:
+                    break
+            lines = bytes(header).splitlines()
+            vertices = [line.split() for line in lines if line.startswith(b"element vertex ")]
+            if (not lines or lines[0] != b"ply" or b"format binary_little_endian 1.0" not in lines
+                    or lines[-1] != b"end_header" or len(header) >= size or not vertices
+                    or not vertices[0][-1].isdigit() or int(vertices[0][-1]) <= 0):
+                raise ValueError("scene.ply requires a binary_little_endian PLY header and nonempty vertices")
 
 
 class JobStore:
     """Own durable job state and the one serial executor behind the HTTP boundary."""
-    def __init__(self, data_dir, fixture_dir, delay):
-        if not math.isfinite(delay) or delay < 0:
-            raise ValueError("delay must be finite and nonnegative")
-        self.directory = Path(data_dir)
-        self.fixtures = Path(fixture_dir)
-        self.delay = delay
+    def __init__(self, data_dir, backend, job_timeout):
+        self.directory = Path(data_dir).resolve()
+        self.backend = backend
+        self.job_timeout = job_timeout
         self.condition = threading.Condition()
         self.stopping = False
         self.queue = deque()
         self.records = {}
         (self.directory / "jobs").mkdir(parents=True, exist_ok=True)
         (self.directory / "artifacts").mkdir(exist_ok=True)
+        (self.directory / "requests").mkdir(exist_ok=True)
+        (self.directory / "failures").mkdir(exist_ok=True)
         for path in sorted((self.directory / "jobs").glob("*.json")):
             record = json.loads(path.read_text(encoding="utf-8"))
             identifier = record["job"]["id"]
@@ -104,10 +178,10 @@ class JobStore:
             if record["job"]["status"] not in TERMINAL:
                 record["job"]["status"] = "failed"
                 record["job"]["error"] = "Worker restarted before job completion; submit a new job id to retry"
-                record["job"]["logs"].append(record["job"]["error"])
+                append_log(record, record["job"]["error"])
                 record["artifacts"] = []
                 self._save(record)
-        self.executor = threading.Thread(target=self._run, name="fixture-executor", daemon=True)
+        self.executor = threading.Thread(target=self._run, name="worker-executor", daemon=True)
         self.executor.start()
 
     def _save(self, record):
@@ -120,6 +194,10 @@ class JobStore:
         os.replace(temporary, destination)
 
     def submit(self, request):
+        try:
+            self.backend.validate(request)
+        except ValueError as error:
+            raise APIError(400, str(error)) from error
         with self.condition:
             if self.stopping:
                 raise APIError(503, "Worker is stopping")
@@ -128,8 +206,8 @@ class JobStore:
                 raise APIError(409, "Job id already exists; inspect it or submit a new id")
             record = {"request": request, "job": {
                 "id": identifier, "status": "queued", "progress": 0,
-                "logs": ["Queued authored fixture copy; no AI generation"],
-                "backend": BACKEND, "error": None,
+                "logs": [f"Queued {self.backend.info['id']}"],
+                "backend": self.backend.info["id"], "error": None,
             }, "artifacts": []}
             self._save(record)
             self.records[identifier] = record
@@ -151,7 +229,7 @@ class JobStore:
             record = self._record(identifier)
             if record["job"]["status"] not in TERMINAL:
                 record["job"]["status"] = "cancelled"
-                record["job"]["logs"].append("Cancelled by request")
+                append_log(record, "Cancelled by request")
                 record["artifacts"] = []
                 self._save(record)
                 self.condition.notify_all()
@@ -191,7 +269,7 @@ class JobStore:
                     if record["job"]["status"] != "cancelled":
                         record["job"]["status"] = "failed"
                         record["job"]["error"] = f"{type(error).__name__}: {error}"
-                        record["job"]["logs"].append(record["job"]["error"])
+                        append_log(record, record["job"]["error"])
                         record["artifacts"] = []
                         try:
                             self._save(record)
@@ -205,46 +283,45 @@ class JobStore:
             if record["job"]["status"] != "queued":
                 return
             record["job"]["status"] = "running"
-            record["job"]["logs"].append(f"Copying {record['request']['fixture']} fixture after {self.delay:g}s delay")
+            append_log(record, f"Running {self.backend.info['id']}")
             self._save(record)
+        context = JobContext(self, record)
         try:
-            for step in range(1, 11):
-                with self.condition:
-                    if self.condition.wait_for(lambda: record["job"]["status"] != "running", timeout=self.delay / 10):
-                        return
-                    record["job"]["progress"] = step * 0.08
-                    self._save(record)
-            staging.mkdir(exist_ok=True)
+            if staging.exists():
+                shutil.rmtree(staging)
+            staging.mkdir()
+            request_path = self.directory / "requests" / f"{identifier}.json"
+            request_path.write_text(json.dumps(record["request"], allow_nan=False), encoding="utf-8")
+            self.backend.run(deepcopy(record["request"]), request_path, staging, context)
+            context.check()
             artifacts = []
             for filename, format_name in ARTIFACT_FILES:
-                with self.condition:
-                    if record["job"]["status"] != "running":
-                        return
-                source = self.fixtures / record["request"]["fixture"] / filename
+                path = staging / filename
+                validate_artifact(path, format_name)
                 digest = hashlib.sha256()
                 size = 0
-                with source.open("rb") as reader, (staging / filename).open("wb") as writer:
+                with path.open("rb") as reader:
                     while block := reader.read(1024 * 1024):
-                        with self.condition:
-                            if record["job"]["status"] != "running":
-                                return
-                        writer.write(block)
+                        context.check()
                         digest.update(block)
                         size += len(block)
                 artifacts.append({"url": f"/artifacts/{identifier}/{filename}", "sha256": digest.hexdigest(),
-                                  "bytes": size, "format": format_name, "backend": BACKEND})
+                                  "bytes": size, "format": format_name, "backend": self.backend.info["id"]})
             with self.condition:
-                if record["job"]["status"] != "running":
-                    return
+                context.check()
                 os.replace(staging, self.directory / "artifacts" / identifier)
                 record["job"]["status"] = "succeeded"
                 record["job"]["progress"] = 1
-                record["job"]["logs"].append("Fixture visual and collision artifacts are ready")
+                append_log(record, "Visual and collision artifacts are ready")
                 record["artifacts"] = artifacts
                 self._save(record)
         finally:
             if staging.exists():
-                shutil.rmtree(staging)
+                evidence = self.directory / "failures" / identifier
+                os.replace(staging, evidence)
+                with self.condition:
+                    append_log(record, f"Unpublished adapter evidence retained at {evidence}")
+                    self._save(record)
 
     def close(self):
         with self.condition:
@@ -252,7 +329,7 @@ class JobStore:
             for record in self.records.values():
                 if record["job"]["status"] not in TERMINAL:
                     record["job"]["status"] = "cancelled"
-                    record["job"]["logs"].append("Cancelled during worker shutdown")
+                    append_log(record, "Cancelled during worker shutdown")
                     self._save(record)
             self.condition.notify_all()
         self.executor.join()
@@ -320,17 +397,14 @@ class WorkerHandler(BaseHTTPRequestHandler):
             jobs = self.server.jobs
             if self.command == "GET":
                 if path == "/health":
-                    self._json(200, {"status": "ok" if jobs.executor.is_alive() else "degraded", "backend": BACKEND,
-                                     "version": VERSION, "mode": "fixture"})
+                    self._json(200, {"status": "ok" if jobs.executor.is_alive() else "degraded", "backend": jobs.backend.info["id"],
+                                     "version": VERSION, "mode": jobs.backend.info["mode"]})
                     return
                 if path == "/version":
                     self._json(200, self.server.version)
                     return
                 if path == "/capabilities":
-                    self._json(200, {"backend": BACKEND, "mode": "fixture", "requiresGpu": False,
-                                     "maxConcurrency": 1, "formats": ["ply", "glb"],
-                                     "fixtures": ["arrival", "observatory"], "cancellation": True,
-                                     "version": self.server.version})
+                    self._json(200, self.server.capabilities)
                     return
                 if len(parts) in (2, 3) and parts[0] == "jobs" and IDENTIFIER.fullmatch(parts[1]):
                     if len(parts) == 2:
@@ -370,16 +444,32 @@ class WorkerHandler(BaseHTTPRequestHandler):
             self._json(500, {"error": "Worker storage operation failed"})
 
 
-def create_server(host="127.0.0.1", port=4320, data_dir=None, fixture_dir=None, delay=1.0, token=None):
+def create_server(host="127.0.0.1", port=4320, data_dir=None, fixture_dir=None, delay=1.0, token=None,
+                  backend="fixture", command_json=None, job_timeout=900, check_torch=False):
+    if not math.isfinite(delay) or delay < 0:
+        raise ValueError("delay must be finite and nonnegative")
+    if not math.isfinite(job_timeout) or job_timeout <= 0:
+        raise ValueError("job_timeout must be finite and positive")
+    if backend == "fixture":
+        adapter = FixtureBackend(fixture_dir or REPO_ROOT / "artifacts" / "fixtures", delay)
+    elif backend == "command":
+        adapter = CommandBackend(command_json)
+    elif hasattr(backend, "run") and hasattr(backend, "info") and hasattr(backend, "validate"):
+        adapter = backend
+    else:
+        raise ValueError("Unknown backend")
+    version = version_info(adapter.info["id"])
+    hardware = inventory(check_torch=check_torch)
     server = WorkerServer((host, port), WorkerHandler)
     try:
-        server.jobs = JobStore(data_dir or REPO_ROOT / ".runtime" / "gpu-worker",
-                               fixture_dir or REPO_ROOT / "artifacts" / "fixtures", delay)
+        server.jobs = JobStore(data_dir or REPO_ROOT / ".runtime" / "gpu-worker", adapter, job_timeout)
         server.token = token
-        server.version = version_info()
+        server.version = version
+        server.capabilities = {"schemaVersion": 1, "backend": adapter.info, "maxConcurrency": 1,
+                               "formats": ["ply", "glb"], "cancellation": True, "hardware": hardware,
+                               "version": {key: value for key, value in version.items() if key != "backend"}}
         return server
     except Exception:
-        # JobStore may not exist yet; close the socket directly on failed startup.
         ThreadingHTTPServer.server_close(server)
         raise
 
@@ -391,9 +481,16 @@ def main():
     parser.add_argument("--data-dir", type=Path, default=REPO_ROOT / ".runtime" / "gpu-worker")
     parser.add_argument("--fixture-dir", type=Path, default=REPO_ROOT / "artifacts" / "fixtures")
     parser.add_argument("--delay", type=float, default=1.0)
+    parser.add_argument("--backend", choices=("fixture", "command"), default=os.environ.get("WORKER_BACKEND", "fixture"))
+    parser.add_argument("--command-json", default=os.environ.get("WORKER_COMMAND_JSON"))
+    parser.add_argument("--job-timeout", type=float, default=float(os.environ.get("WORKER_JOB_TIMEOUT", "900")))
+    parser.add_argument("--check-torch", action="store_true")
     arguments = parser.parse_args()
     server = create_server(**vars(arguments), token=os.environ.get("WORKER_TOKEN") or None)
-    print(f"Vastness {BACKEND} listening on http://{arguments.host}:{server.server_port}", flush=True)
+    print(f"Vastness {server.jobs.backend.info['id']} listening on http://{arguments.host}:{server.server_port}", flush=True)
+    def terminate(signum, frame):
+        raise KeyboardInterrupt
+    signal.signal(signal.SIGTERM, terminate)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

@@ -1,49 +1,66 @@
-# Fixture GPU worker
+# GPU worker adapters
 
-The Python worker exposes the project job boundary without installing models or GPU libraries. `fake-fixture-v1` copies authored fixtures after a delay; it does not generate geometry, use the prompt/seed to modify assets, or condition geometry on the supplied boundary. It validates and stores those inputs for inspection in its local job records. The browser never calls this service directly; the Mac orchestrator is its intended client.
+The standard-library Python worker owns a serial job API, durable job records, staging, format validation, hashing and publication. Its default `fake-fixture-v1` adapter copies authored fixtures without AI generation. A configured `command-v1` adapter runs a trusted local executable. The browser never contacts this service directly; the Mac orchestrator is its client. No model or GPU package is installed by either the worker or its probe.
 
-## Local start and verification
+## Start and configuration
 
-Use Python 3.10 or newer. No pip installation is needed. From the repository root, generate the pinned assets and start the worker:
+Use Python 3.10 or newer. From the repository root:
 
 ```sh
 npm run fixtures
 python3 services/gpu-worker/worker.py
 ```
 
-It binds `127.0.0.1:4320`. Fixtures come from `artifacts/fixtures/{arrival,observatory}/{scene.ply,collider.glb}`. The fixture generation command requires the project's existing Node dependencies; the Python worker itself does not. Missing fixtures produce a failed job with a useful error, while health/capability inspection remains available.
+The fixture worker binds `127.0.0.1:4320`, copies `artifacts/fixtures/{arrival,observatory}/{scene.ply,collider.glb}`, and stores state under `.runtime/gpu-worker`. Paths default relative to the repository. Missing fixtures fail jobs without preventing health inspection.
+
+| CLI option | Environment default | Default value |
+| --- | --- | --- |
+| `--backend` | `WORKER_BACKEND` | `fixture` (`command` also supported) |
+| `--command-json` | `WORKER_COMMAND_JSON` | Required JSON argv array for command mode |
+| `--job-timeout` | `WORKER_JOB_TIMEOUT` | 900 seconds, finite and positive |
+| `--host` | `WORKER_HOST` | `127.0.0.1` |
+| `--port` | `WORKER_PORT` | `4320` |
+| `--data-dir` | — | `.runtime/gpu-worker` in repository |
+| `--fixture-dir` | — | `artifacts/fixtures` in repository |
+| `--delay` | — | 1 second, fixture only |
+| `--check-torch` | — | Off; optional startup PyTorch inspection |
+
+`WORKER_TOKEN` enables bearer authentication on every route, including health and artifacts. It has no CLI option and is not included in job records or capability responses. An empty token disables authentication. Prefer SSH forwarding with loopback binding; the HTTP service has no TLS or browser CORS support. Run one worker process per data directory.
+
+## Trusted command adapter
+
+Configure an executable using local operator configuration, never job input:
 
 ```sh
-python3 -m unittest discover -s services/gpu-worker -p 'test_*.py'
-curl --fail http://127.0.0.1:4320/health
-curl --fail http://127.0.0.1:4320/capabilities
-curl --fail http://127.0.0.1:4320/version
+export WORKER_BACKEND=command
+export WORKER_COMMAND_JSON='["/absolute/venv/bin/python","/absolute/backend/run.py"]'
+python3 services/gpu-worker/worker.py --job-timeout 900
 ```
 
-The unittest suite creates isolated synthetic fixture bytes and temporary state directories. It verifies HTTP validation, serial execution, cancellation, failure recovery, artifact hashes and bytes, authentication, persisted success, interrupted-job recovery, and honest probe failures. Production fixture visual quality and real GPU behavior are separate acceptance seams.
+The worker executes that argv with `shell=False`, appending `--request <absolute request.json> --output <absolute staging directory>`. The output directory starts empty; request files persist separately in the worker data directory. The command reads the validated project `WorkerJobRequest`: ID, prompt, seed, optional fixture and optional portal boundary. Unknown fields are discarded. Fixture mode requires `arrival` or `observatory`; command mode does not require a fixture. HTTP cannot select an executable or modify argv.
 
-Options are `--host`, `--port`, `--data-dir`, `--fixture-dir`, and `--delay` (seconds, default 1). `WORKER_HOST` and `WORKER_PORT` set bind defaults. Paths default relative to the repository, independent of the shell's working directory. Job state and output copies live under `.runtime/gpu-worker/` by default. Run one worker process per state directory; no multiprocess scheduler or shared-storage locking is provided.
+The command must exit zero and write regular files named `scene.ply` and `collider.glb` in the output directory. The worker checks a binary little-endian PLY header with positive vertex count and payload, and GLB magic, version 2 and declared file length with a nonempty payload. These checks detect malformed containers; they do not certify visual quality, complete mesh semantics or walkability. The adapter must supply a real collision artifact; the worker never fabricates one. Symlink outputs are rejected.
 
-Ctrl+C stops the service, records outstanding jobs as cancelled, and joins the serial executor. Restarting preserves successful jobs, their manifests and artifact bytes. After an abrupt stop, previously queued/running records become failed with an explicit restart error. Submit a new ID to retry. Existing job IDs always return HTTP 409 on resubmission, including failed and cancelled jobs.
+The worker checks cancellation and its wall-clock deadline during execution and hashing. Only after both files pass validation does it atomically rename the staging directory and persist a successful manifest. Failed, timed-out and cancelled jobs expose no artifact bytes or manifest. Unpublished staging is retained under `data-dir/failures/<job-id>` after failure or cancellation, with its path recorded in job logs; the artifact API never serves it. Successful extra output files remain in the published directory but are not served by the artifact API. This preserves benchmark reports and full model logs from failed experiments. Operators control retention of these potentially large evidence directories. Commands run in their own POSIX process group on Linux, WSL2 or macOS; termination escalates from SIGTERM to SIGKILL after a bounded grace period. Remaining descendants are also stopped when a leader exits successfully. Command mode refuses non-POSIX hosts. Configured commands are trusted code, not a security sandbox; they must not detach into new sessions or modify published files.
 
-## HTTP contract
+One executor drains the queue in order and completes process cleanup before starting the next job. Job logs retain at most 64 entries of at most 2048 characters, including merged command stdout/stderr. Current output is visible through polling, and terminal logs are persisted. Command progress is 0 while running and 1 on success; fixture progress reflects its delay/copy steps. Generic command capability `requiresGpu:false` means this adapter has no intrinsic GPU requirement; it does not assert that the configured model can run without a GPU. Actual model identity, revision and GPU requirements belong in benchmark provenance.
 
-The shared names and fields are defined in `packages/protocol/src/index.ts`; exact integration seams are pinned in `docs/exploration.md`. Python validates the same request fields without a JavaScript runtime. Unknown fields are discarded, matching the shared Zod schema. Responses are JSON except artifact bytes. Routes use these statuses:
+Python integrations can pass an adapter object to `create_server(backend=adapter)`. It supplies `info` (`id`, `version`, `mode`, `requiresGpu`), `validate(request)` and `run(request, request_path, output, context)`. `context.check()`, `wait(seconds)`, `progress(value)` and `log(message)` cooperate with the same lifecycle. Adapters must return only after their work is stopped. The built-in command adapter enforces subprocess isolation; arbitrary in-process adapters are trusted to cooperate.
+
+## HTTP contract and persistence
+
+Exact schemas live in `packages/protocol/src/index.ts` and integration names in `docs/exploration.md`.
 
 | Request | Success | Behavior |
 | --- | --- | --- |
-| `GET /health` | 200 | Service status, fixture mode, backend and service version. No GPU claim. |
-| `GET /capabilities` | 200 | Fixture choices, PLY/GLB formats, cancellation support, `maxConcurrency: 1`, `requiresGpu: false`, version information. |
-| `GET /version` | 200 | Service version, `fake-fixture-v1`, Python version and Git commit (null if unavailable). |
-| `POST /jobs` | 202 | Submit a `WorkerJobRequest`, return a queued `WorkerJob`. |
-| `GET /jobs/:id` | 200 | `WorkerJob`: id, status, progress, logs, backend and nullable error. |
-| `POST /jobs/:id/cancel` | 200 | Return the job after cancellation; terminal jobs remain unchanged. No request body required. |
-| `GET /jobs/:id/artifacts` | 200 | Return the project `Artifact[]`; 409 until successful. |
-| `GET /artifacts/:id/:filename` | 200 | Retrieve immutable successful output bytes; only `scene.ply` and `collider.glb` are exposed. |
-
-Errors are `{"error":"message"}`. Invalid JSON/contracts return 400; a body larger than 64 KiB returns 413; unsupported submission content type returns 415; missing routes/jobs/artifacts return 404; duplicate IDs return 409. Requests with configured token authentication require it on every route, including artifact retrieval. Unsupported HTTP methods receive the standard HTTP-server 501 response.
-
-Example submission:
+| `GET /health` | 200 | Service health, selected mode/backend and service version |
+| `GET /version` | 200 | Service, Python, backend and Git commit (null if unavailable) |
+| `GET /capabilities` | 200 | `WorkerCapabilitiesSchema`, including versioned hardware inventory |
+| `POST /jobs` | 202 | Validate and enqueue `WorkerJobRequest`, return `WorkerJob` |
+| `GET /jobs/:id` | 200 | ID, status, progress, bounded logs, backend and nullable error |
+| `POST /jobs/:id/cancel` | 200 | Cancel queued/running job; terminal states remain unchanged |
+| `GET /jobs/:id/artifacts` | 200 | `Artifact[]`; 409 before successful publication |
+| `GET /artifacts/:id/:filename` | 200 | Successful `scene.ply` or `collider.glb` bytes only |
 
 ```sh
 curl --fail -X POST http://127.0.0.1:4320/jobs \
@@ -53,62 +70,31 @@ curl --fail http://127.0.0.1:4320/jobs/lab-001
 curl --fail http://127.0.0.1:4320/jobs/lab-001/artifacts
 ```
 
-Poll status until `succeeded` before requesting the manifest. Each artifact includes a relative worker URL, lowercase SHA-256, byte count, `format` (`ply` or `glb`), and `backend: "fake-fixture-v1"`. Resolve URLs against the worker origin and verify the hash when importing into orchestrator storage. The worker sends an ETag with the digest and an immutable private cache policy. Paths cannot select arbitrary worker files.
+Every manifest contains relative worker URLs, lowercase SHA-256, actual byte counts, `ply`/`glb` formats and the adapter ID that produced the bytes. The Mac verifies these bytes before accepting them into its own persistent storage. Artifact responses include a digest ETag and immutable private cache policy.
 
-One executor processes jobs in submission order. Status follows `queued → running → succeeded` or `failed`; cancellation can end queued or running jobs. Progress describes the fixture delay/copy operation. Logs are available in every status response and persist with the job. Cancelling a running job interrupts its delay or the next copy block, and partial files are never published through the API. Heavy work remains strictly serial even while concurrent HTTP clients submit or inspect jobs.
+Errors are `{"error":"message"}`. Invalid jobs/JSON return 400, absent authentication 401, missing routes/jobs/artifacts 404, duplicate IDs or incomplete manifests 409, bodies exceeding 64 KiB 413, and unsupported submission content types 415. Job IDs cannot be reused, including after failure or cancellation. Unknown request fields are discarded, matching Zod.
 
-State is stored as one atomically replaced JSON record per job, with artifact copies published before the successful manifest. This is a local prototype store with no automatic retention or cleanup of completed jobs. Preserve it across upgrades. It is not a multi-host database. Keep output files immutable; callers can use the recorded hash to detect external modification.
+SIGTERM and Ctrl+C cancel outstanding jobs and join the executor. Restart preserves completed job status, logs, manifests and bytes, including after switching adapters. Abruptly interrupted queued/running records become failed with a restart diagnostic; retry with a new ID. Records are atomically replaced JSON files and output directories are published before successful records. This local store has no automatic retention or multiprocess locking. Preserve the data directory across upgrades and keep published bytes immutable.
 
-## Read-only inventory
-
-Run the probe on the machine being inventoried:
+## Capability inventory
 
 ```sh
 python3 services/gpu-worker/probe.py
+python3 services/gpu-worker/probe.py --check-torch
 ```
 
-It prints JSON containing UTC time, hostname/OS, Python executable/version, Git commit and working-tree status, NVIDIA GPU names/VRAM/driver query, full `nvidia-smi` output, CUDA toolkit compiler version when available, and PyTorch package version without importing PyTorch. On Windows it also records `wsl --list --verbose`. Every command includes its executable path, exit code, stdout/stderr, and `ok`, `unavailable` or `failed` status. Command timeouts are ten seconds each. A missing command is not evidence that the host has no GPU.
+Both print `CapabilityReportSchema` version 1: capture time, host OS/architecture, Python, GPU devices with total/free VRAM, NVIDIA driver compatibility, CUDA toolkit and PyTorch state. Report statuses distinguish `available`, `unavailable`, `failed` and `not_checked`. Unknown measurements are null. Missing executables do not establish hardware absence. Malformed GPU output is a failed probe, not a zero-sized device.
 
-The probe does not change system configuration, install dependencies, download weights, or execute a generation workload. `nvidia-smi`'s CUDA version reports driver compatibility; `nvcc` describes an installed toolkit, and neither establishes that a model can run. PyTorch package metadata also does not establish working CUDA support. Capture an inventory and then run separate approved benchmark experiments before choosing a model adapter.
+Default inspection does not import PyTorch. `--check-torch` imports it in a child with a ten-second deadline and reports package version, build CUDA and `torch.cuda.is_available()`. NVIDIA and toolkit inspection commands also have ten-second deadlines. Availability inspection is not inference. `nvidiaExecution` remains `not_run`, regardless of discovered hardware or PyTorch availability. Driver-supported CUDA is separate from the installed toolkit and PyTorch CUDA build.
 
-Local validation on 2026-09-14 ran on the Mac (Darwin arm64, Python 3.14.6). NVIDIA commands, `nvcc` and PyTorch package metadata were unavailable. No PC hardware measurement or GPU benchmark is claimed. See `docs/research/gpu-connectivity.md`: PC SSH port 22 timed out, authentication was never reached, and the candidate Windows account and GPU inventory remain unverified.
+The worker captures its inventory once at startup and caches `/capabilities` for its process lifetime. Repeated HTTP inspection does not rerun probes or block the job executor. Restart for a fresh report.
 
-## Deployment from a Git commit
-
-The following is a deployment procedure, not a record of a completed PC deployment. First establish reachable SSH and verify the host fingerprint. Use the actual confirmed account/host and the existing key; do not disable host-key checking. The known candidate endpoint and the connection blocker are documented in the connectivity research.
-
-Use an ordinary Git clone on the GPU host, ideally native Linux or a confirmed WSL2 Linux environment. Product code must come from the accepted repository commit. On that host, in a clean deployment checkout:
+## Verification and deployment
 
 ```sh
-git fetch origin
-git checkout --detach <accepted-commit-sha>
-git rev-parse HEAD
-git status --porcelain
-python3 services/gpu-worker/probe.py
+python3 -m unittest discover -s services/gpu-worker -p 'test_*.py'
 ```
 
-Replace the commit placeholder with the exact reviewed/integrated SHA available on the remote. Confirm `git rev-parse HEAD` matches it and the checkout is clean. Stop the prior worker before starting the new one, retaining the same state directory. A persistent directory outside the checkout is useful when deployment checkouts change; pass it with `--data-dir`.
+Tests use valid minimal fixture containers and real adapter subprocesses through public HTTP. They cover successful bytes and hashes, malformed output, failures, serial execution, bounded logs, child-process cancellation/timeouts, SIGTERM shutdown, persisted completion across backend switches, authentication and typed probe outputs. No NVIDIA execution is performed or claimed.
 
-Fixture options are to run `npm ci && npm run fixtures` on the host when Node is already available, or transfer only the reproducible `artifacts/fixtures/` assets generated from the same commit on the Mac. Product Python source is always deployed through Git; do not maintain an independently edited PC copy. No GPU libraries or models are required for fixture mode.
-
-Start on the host in a persistent shell/service environment:
-
-```sh
-python3 services/gpu-worker/worker.py --host 127.0.0.1 --port 4320
-```
-
-On the Mac, forward a distinct local port through the verified SSH connection:
-
-```sh
-ssh -N -o ExitOnForwardFailure=yes -o StrictHostKeyChecking=yes \
-  -o IdentitiesOnly=yes -i ~/.ssh/moneytap_codex_win10_ed25519 \
-  -L 127.0.0.1:14320:127.0.0.1:4320 <verified-user>@<verified-host>
-```
-
-With WSL2, confirm the SSH session reaches the environment running the worker or verify Windows-to-WSL loopback forwarding before relying on this tunnel. Through the Mac end, request `/health`, `/capabilities` and `/version`; verify the returned commit. Then submit a fixture job, wait for success, download both artifacts and verify their byte counts and SHA-256 values. This acceptance loop is required before reporting remote deployment as complete. None of these PC deployment checks has passed yet.
-
-## Optional remote authentication
-
-SSH tunneling with the worker bound to loopback is preferred. If deliberately binding another interface using `--host` or `WORKER_HOST`, set `WORKER_TOKEN` in the service environment. An empty/unset token disables authentication, including on explicitly selected non-loopback interfaces. The service does not provide TLS; expose it only through a trusted network or encrypted tunnel/proxy.
-
-Clients then send `Authorization: Bearer <token>` on every request. Tokens are not part of command-line options, job records, version responses, or logs. Do not put actual tokens in Git. The API intentionally has no browser CORS integration.
+Product deployments come from exact Git commits. The repeatable Linux bootstrap and Mac-to-Linux SSH procedure are documented in `docs/deployment.md`. Preserve external state/configuration across releases, verify the returned `/version` commit, and complete a fixture or command job through the SSH tunnel before calling remote deployment successful. The PC connectivity blocker remains documented in `docs/research/gpu-connectivity.md`; local tests are not evidence of PC or model readiness.
