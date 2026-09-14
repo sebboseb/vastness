@@ -5,6 +5,7 @@ import { join, resolve } from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
 import { setTimeout as delay } from 'node:timers/promises';
 import { pathToFileURL } from 'node:url';
+import { createWorkerGateway } from './worker-gateway.ts';
 import { PlayerPoseSchema, WorldSchema, type Artifact, type Chunk, type World } from '../../../packages/protocol/src/index.ts';
 
 class HttpError extends Error {
@@ -20,10 +21,11 @@ function json(response: ServerResponse, status: number, body: unknown) {
   response.end(JSON.stringify(body));
 }
 
-export async function createOrchestrator(options: { dataDir?: string; artifactDir?: string } = {}) {
+export async function createOrchestrator(options: { dataDir?: string; artifactDir?: string; workerUrl?: string; workerToken?: string } = {}) {
   const dataDir = resolve(options.dataDir ?? '.runtime');
   const artifactDir = resolve(options.artifactDir ?? 'artifacts');
   await mkdir(dataDir, { recursive: true });
+  const gateway = createWorkerGateway({...options,dataDir,artifactDir});
   const database = new DatabaseSync(join(dataDir, 'world.sqlite'));
   database.exec('PRAGMA journal_mode = WAL; CREATE TABLE IF NOT EXISTS worlds (singleton INTEGER PRIMARY KEY CHECK (singleton = 1), document TEXT NOT NULL)');
   database.exec('CREATE TABLE IF NOT EXISTS player_save_clock (singleton INTEGER PRIMARY KEY CHECK (singleton = 1), timestamp REAL NOT NULL); INSERT OR IGNORE INTO player_save_clock VALUES (1, 0)');
@@ -70,6 +72,7 @@ export async function createOrchestrator(options: { dataDir?: string; artifactDi
   const server = createServer((request, response) => {
     void (async () => {
       const pathname = new URL(request.url ?? '/', 'http://localhost').pathname;
+      if (await gateway.handle(request,response,pathname)) return;
       if (request.method === 'GET' && pathname === '/api/health') {
         json(response, 200, { status: 'ok', mode: 'fixture' });
       } else if (request.method === 'GET' && pathname === '/api/world') {
@@ -134,8 +137,8 @@ export async function createOrchestrator(options: { dataDir?: string; artifactDi
   let closing: Promise<void> | undefined;
   function close() {
     closing ??= new Promise<void>((resolveClose, reject) => {
-      if (!server.listening) { database.close(); resolveClose(); return; }
-      server.close((error) => { database.close(); if (error) reject(error); else resolveClose(); });
+      if (!server.listening) { database.close(); gateway.close(); resolveClose(); return; }
+      server.close((error) => { database.close(); gateway.close(); if (error) reject(error); else resolveClose(); });
     });
     return closing;
   }
@@ -143,7 +146,7 @@ export async function createOrchestrator(options: { dataDir?: string; artifactDi
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  const app = await createOrchestrator();
+  const app = await createOrchestrator({workerUrl:process.env.WORKER_URL,workerToken:process.env.WORKER_TOKEN});
   app.server.listen(Number(process.env.PORT ?? 4310), process.env.HOST ?? '127.0.0.1', () => console.log('Vastness fixture orchestrator listening', app.server.address()));
   for (const signal of ['SIGINT', 'SIGTERM'] as const) process.once(signal, () => { void app.close(); });
 }
