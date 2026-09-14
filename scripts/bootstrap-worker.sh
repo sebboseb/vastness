@@ -36,6 +36,7 @@ command -v "$python" >/dev/null || die 'requested Python executable is unavailab
 umask 077
 mkdir -p -- "$prefix"
 prefix=$(cd -- "$prefix" && pwd -P)
+[[ "$prefix" != / ]] || die '--prefix must not resolve to the filesystem root'
 release="$prefix/releases/$ref"
 check_clean() {
   [[ -z $(git -C "$1" status --porcelain --untracked-files=all) ]] || die 'release checkout is dirty; preserve/review changes before deploying'
