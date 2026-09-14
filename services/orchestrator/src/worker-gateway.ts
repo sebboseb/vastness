@@ -44,7 +44,9 @@ export function createWorkerGateway(options:{dataDir:string;artifactDir:string;w
      if(existing.request!==JSON.stringify(job)||existing.origin!==client.origin)throw new WorkerError(409,'Job id already belongs to a different request or worker');
      try{json(response,200,await client.status(job.id));return true;}catch(error){if(!(error instanceof WorkerError&&error.status===404))throw error;}
     }else db.prepare('INSERT INTO requests VALUES (?,?,?)').run(job.id,JSON.stringify(job),client.origin);
-    json(response,202,await client.submit(job));return true;
+    try {json(response,202,await client.submit(job));}
+    catch(error){if(!existing&&error instanceof WorkerError&&error.status===409)db.prepare('DELETE FROM requests WHERE id=?').run(job.id);throw error;}
+    return true;
    }
    if(match){
     const [_,id,action]=match;
