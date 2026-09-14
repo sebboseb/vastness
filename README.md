@@ -13,7 +13,7 @@ npm ci
 npm run dev
 ```
 
-Open [Vastness locally](http://127.0.0.1:5173). Enter the station, use **WASD** to move and the **mouse** to look. **Escape** releases the pointer. Walk toward the north doorway to load the observatory, cross it, then turn and return. Both chunks remain loaded. Quit and relaunch with the same command to resume the saved world.
+Open [Vastness locally](http://127.0.0.1:5173). Enter the station, use **WASD** to move and the **mouse** to look. **Escape** pauses. If mouse capture is unavailable in an embedded browser, drag to look; walking-assist buttons and arrow-key looking are also available. Walk toward the north doorway to load the observatory, cross it, then turn and return. Both chunks remain loaded. Quit and relaunch with the same command to resume the saved world.
 
 `npm run dev` writes reproducible fixtures if needed and starts the Mac orchestrator on `127.0.0.1:4310` and Vite on `127.0.0.1:5173`. Ctrl+C stops both. Keep these ports available. The browser only talks to the Mac through same-origin proxied HTTP routes.
 
@@ -29,7 +29,7 @@ npm run check
 python3 -m unittest discover -s services/gpu-worker -p 'test_*.py'
 ```
 
-Public movement tests exercise wall blocking, diagonal sliding, doorway clearance and a closed streaming gate. Orchestrator tests use real HTTP requests and reopen SQLite to verify stable worlds, artifact hashes and player state. Browser acceptance evidence is recorded in `docs/research/m0-validation.md` when performed.
+Public movement tests exercise wall blocking, diagonal sliding, doorway clearance and a closed streaming gate. Orchestrator tests use real HTTP requests and reopen SQLite to verify stable worlds, artifact hashes and player state. Browser acceptance and its input-surface limits are recorded in [the validation notes](docs/research/m0-validation.md).
 
 ## Project map
 
