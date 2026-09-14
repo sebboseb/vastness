@@ -14,10 +14,13 @@ The first prepared benchmark is pinned original TRELLIS, using a fixed official 
 
 ## Verification evidence
 
+- `npm run check`: typecheck, 21 TypeScript tests and production build passed. Worker/benchmark unittest suite: 32 passed (including 10 benchmark cases). Mac bootstrap suite: 2 passed, 4 Linux-only cases skipped; all 6 passed on Linux. The transport regression also passed repeated Node 22 runs, and the full TypeScript check passed Node 26. The existing bundle-size build warning remains non-fatal.
+
 - The live Mac smoke submitted `mac-smoke-1789420573086`, completed the fixture job, imported and rehashed its local PLY and GLB. The PLY was 3,179,644 bytes, SHA-256 `f8ce312b7eb1c9437bf53bcdbbe33e0feae4cb16a2219a7d883f7ea8c591ffcb`; GLB was 1,636 bytes, SHA-256 `e55dad0ba416d0613b24564ed9e47d02d53d99f2a0f5219db90633907c317b66`.
 - Restarting the configured Mac service and worker preserved world `e651eff8-aaa5-48ee-822c-7c47d5fd1aa8` byte-for-byte through its API, including player position/topology. Runtime smoke evidence is `.runtime/worker-smoke.json` (local, ignored by Git).
 - All six bootstrap acceptance tests passed in official `python:3.11-slim`, Debian 13.6, Linux `6.12.76-linuxkit`, aarch64, Python 3.11.16, as unprivileged `nobody`. The tested integration SHA was `682f278e04f17f6806b2b0c98a8bf7ae7f8ec375`. Tests include repeat deployment, environment/config preservation, worker restart/upgrade with original artifacts, invalid/dirty releases and quoted SSH transport. Transport is emulated; this is not evidence of PC connectivity.
 - Plan and preflight commands ran on the Mac without Torch/model imports, package installs, weight downloads or NVIDIA execution. Mac inventory reports NVIDIA tools unavailable and PyTorch not checked.
+- A full-suite failure was traced to Node 22 fetch/Undici asserting on HTTP/1.0 EOF under download backpressure. The worker client now uses core HTTP/HTTPS streams. A minimal regression failed before the change; slow-download and total-body-deadline coverage verify the replacement.
 - Independent Standards and Spec reviews found and prompted fixes for header-only artifact acceptance, concurrent-submission provenance loss, and missing prerequisite-failure setup reports. Regression coverage exercises these boundaries.
 
 ## Remaining external dependency
