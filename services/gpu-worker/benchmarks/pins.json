@@ -1,0 +1,14 @@
+{
+  "backend": "trellis-image-large-benchmark-v1",
+  "source": {"repo": "microsoft/TRELLIS", "revision": "442aa1e1afb9014e80681d3bf604e8d728a86ee7"},
+  "model": {"repo": "microsoft/TRELLIS-image-large", "revision": "25e0d31ffbebe4b5a97464dd851910efc3002d96"},
+  "dinov2": {"repo": "facebookresearch/dinov2", "revision": "7b187bd4df8efce2cbcbbb67bd01532c19bf4c9c"},
+  "dinov2Weights": {"name": "dinov2_vitl14_reg", "url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitl14/dinov2_vitl14_reg4_pretrain.pth", "sha256": null},
+  "input": {"path": "assets/example_image/T.png", "sha256": "e29ddc83a5bd3a05fe9b34732169bc4ea7131f7c36527fdc5f626a90a73076d2"},
+  "extensions": {
+    "nvdiffrast": {"repo": "NVlabs/nvdiffrast", "revision": "c5caf7bdb8a2448acc491a9faa47753972edd380"},
+    "diffoctreerast": {"repo": "JeffreyXiang/diffoctreerast", "revision": "b09c20b84ec3aace4729e6e18a613112320eca3a"},
+    "mip-splatting": {"repo": "autonomousvision/mip-splatting", "revision": "dda02ab5ecf45d6edb8c540d9bb65c7e451345a9"},
+    "utils3d": {"repo": "EasternJournalist/utils3d", "revision": "9a4eb15e4021b67b12c460c7057d642626897ec8"}
+  }
+}
