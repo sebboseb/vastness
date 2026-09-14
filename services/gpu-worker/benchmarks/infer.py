@@ -65,7 +65,8 @@ def main():
     rotation = np.array([[1, 0, 0], [0, 0, 1], [0, -1, 0]], dtype=np.float32)
     staging = args.output / 'staging'
     staging.mkdir(exist_ok=False)
-    outputs['gaussian'][0].save_ply(str(staging / 'scene.ply'), transform=rotation)
+    from gaussian_export import save_gaussian_ply
+    save_gaussian_ply(outputs['gaussian'][0], staging / 'scene.ply', rotation)
     mesh = outputs['mesh'][0]
     vertices = mesh.vertices.detach().cpu().numpy() @ rotation.T
     faces = mesh.faces.detach().cpu().numpy()
