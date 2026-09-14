@@ -20,7 +20,7 @@ let locked = false;
 let entered = false;
 let dragging = false;
 let automaticDirection = 0;
-let saveInFlight = false;
+let pendingSaves = 0;
 let lastSaved = '';
 let failedChunk: Chunk | undefined;
 let lastTelemetry = 0;
@@ -75,8 +75,8 @@ async function loadNeighbor(chunk: Chunk) {
 async function savePose(keepalive = false) {
   if (!ready) return;
   const snapshot = JSON.stringify(pose);
-  if (snapshot === lastSaved || (saveInFlight && !keepalive)) return;
-  if (!keepalive) saveInFlight = true;
+  if ((snapshot === lastSaved && pendingSaves === 0) || (pendingSaves > 0 && !keepalive)) return;
+  pendingSaves++;
   element('save-state').textContent = 'SAVING';
   try {
     const response = await fetch('/api/player',{method:'PUT',headers:{'Content-Type':'application/json','X-Pose-Time':String(performance.timeOrigin + performance.now())},body:snapshot,keepalive});
@@ -86,7 +86,7 @@ async function savePose(keepalive = false) {
   } catch {
     element('save-state').textContent = 'SAVE FAILED · RETRYING';
   } finally {
-    if (!keepalive) saveInFlight = false;
+    pendingSaves--;
   }
 }
 
