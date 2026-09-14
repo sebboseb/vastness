@@ -8,7 +8,7 @@ import {createServer} from 'node:http';
 import {once} from 'node:events';
 import {createHash} from 'node:crypto';
 import {createOrchestrator} from './index.ts';
-import {WorkerClient} from './worker-client.ts';
+import {WorkerClient,WorkerError} from './worker-client.ts';
 import {ArtifactSchema,WorkerCapabilitiesSchema} from '../../../packages/protocol/src/index.ts';
 
 async function responseStatus(request:Promise<Response>){const response=await request;await response.arrayBuffer();return response.status;}
@@ -81,4 +81,61 @@ test('overlapping identical submissions share one worker request and retain prov
  const first=send();await started;const second=send();assert.equal(await responseStatus(send(2)),409);release();
  assert.deepEqual(await Promise.all([responseStatus(first),responseStatus(second)]),[202,202]);assert.equal(submissions,1);
  assert.equal(await responseStatus(fetch(origin+'/api/worker/jobs/duplicate')),200);
+});
+
+test('HTTP/1.0 artifact EOF remains safe while file writes apply backpressure',async t=>{
+ const dir=await mkdtemp(join(tmpdir(),'vastness-http10-'));t.after(()=>rm(dir,{recursive:true,force:true}));
+ const source=`from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
+import hashlib,json,struct
+ply=b'ply\\nformat binary_little_endian 1.0\\nelement vertex 75000\\nproperty float x\\nend_header\\n'+b'\\0'*300000
+glb=struct.pack('<4sII',b'glTF',2,16)+b'    '
+artifacts=[dict(url='/artifacts/test/'+name,format=fmt,bytes=len(data),sha256=hashlib.sha256(data).hexdigest(),backend='fixture') for name,fmt,data in [('scene.ply','ply',ply),('collider.glb','glb',glb)]]
+class Handler(BaseHTTPRequestHandler):
+ def do_GET(self):
+  if self.path=='/jobs/test': data=json.dumps(dict(id='test',status='succeeded',progress=1,logs=[],backend='fixture',error=None)).encode()
+  elif self.path=='/jobs/test/artifacts': data=json.dumps(artifacts).encode()
+  else: data=ply if self.path.endswith('.ply') else glb
+  self.send_response(200)
+  self.send_header('Content-Length',str(len(data)))
+  self.end_headers()
+  self.wfile.write(data)
+ def log_message(self,*args): pass
+server=ThreadingHTTPServer(('127.0.0.1',0),Handler)
+print(server.server_port,flush=True)
+server.serve_forever()
+`;
+ const child=spawn(process.env.PYTHON??'python3',['-u','-c',source],{stdio:['ignore','pipe','inherit']});
+ t.after(async()=>{if(child.exitCode===null){child.kill();await once(child,'exit');}});
+ const [port]=await once(child.stdout,'data');const client=new WorkerClient(`http://127.0.0.1:${String(port).trim()}`);
+ for(let i=0;i<10;i++){
+  const artifacts=await client.importArtifacts('test',dir);
+  assert.equal(artifacts.length,2);assert.equal(artifacts[0].bytes,300085);
+ }
+});
+
+
+test('worker transport preserves authentication, JSON bounds and response failure handling',async t=>{
+ let mode='error';const authorizations:unknown[]=[];
+ const server=createServer((req,res)=>{
+  authorizations.push(req.headers.authorization);
+  if(mode==='error'){res.writeHead(401);res.end('denied');}
+  else if(mode==='large'){res.end(' '.repeat(2*1024*1024));}
+  else if(mode==='truncated'){res.writeHead(200,{'content-length':100});res.write('{}');res.socket!.end();}
+  else{res.end('invalid JSON');}
+ });
+ const origin=await listen(server);t.after(()=>new Promise<void>(resolve=>server.close(()=>resolve())));
+ const client=new WorkerClient(origin,'transport-test-token');
+ await assert.rejects(client.capabilities(),error=>error instanceof WorkerError&&error.status===401);
+ mode='large';await assert.rejects(client.capabilities(),/exceeds limit/);
+ mode='truncated';await assert.rejects(client.capabilities(),/aborted/);
+ mode='invalid';await assert.rejects(client.capabilities(),/invalid JSON/);
+ assert.deepEqual(authorizations,Array(4).fill('Bearer transport-test-token'));
+});
+
+
+test('worker response deadline covers a body stalled after headers', {timeout:20_000},async t=>{
+ const server=createServer((_req,res)=>{res.writeHead(200,{'content-length':100});res.flushHeaders();});
+ const origin=await listen(server);t.after(()=>new Promise<void>(resolve=>server.close(()=>resolve())));
+ const start=Date.now();await assert.rejects(new WorkerClient(origin).capabilities(),/aborted/);
+ assert.ok(Date.now()-start<18_000,'body exceeded the configured total deadline');
 });
