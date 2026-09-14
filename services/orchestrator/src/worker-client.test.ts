@@ -11,6 +11,8 @@ import {createOrchestrator} from './index.ts';
 import {WorkerClient} from './worker-client.ts';
 import {ArtifactSchema,WorkerCapabilitiesSchema} from '../../../packages/protocol/src/index.ts';
 
+async function responseStatus(request:Promise<Response>){const response=await request;await response.arrayBuffer();return response.status;}
+
 async function listen(server:ReturnType<typeof createServer>){server.listen(0,'127.0.0.1');await once(server,'listening');const a=server.address();assert.ok(a&&typeof a!=='string');return `http://127.0.0.1:${a.port}`;}
 
 test('Mac submits real Python jobs, imports verified bytes and keeps accepted artifacts offline after restart',async t=>{
@@ -23,20 +25,20 @@ test('Mac submits real Python jobs, imports verified bytes and keeps accepted ar
  let app=await createOrchestrator(options);let origin=await listen(app.server);t.after(()=>app.close());
  const capabilities=WorkerCapabilitiesSchema.parse(await(await fetch(origin+'/api/worker/capabilities')).json());assert.equal(capabilities.hardware.nvidiaExecution,'not_run');assert.equal(capabilities.backend.mode,'fixture');
  const request={id:'observatory-test',prompt:'coastal observatory',seed:3,fixture:'observatory'};
- const submitted=await fetch(origin+'/api/worker/jobs',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(request)});assert.equal(submitted.status,202);
+ const submitted=await fetch(origin+'/api/worker/jobs',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(request)});assert.equal(submitted.status,202);await submitted.arrayBuffer();
  let status;for(let i=0;i<100;i++){status=await(await fetch(origin+'/api/worker/jobs/observatory-test')).json();if(status.status==='succeeded')break;await new Promise(r=>setTimeout(r,25));}assert.equal(status.status,'succeeded');
  const imported=await fetch(origin+'/api/worker/jobs/observatory-test/import',{method:'POST'});assert.equal(imported.status,200);const artifacts=ArtifactSchema.array().parse(await imported.json());assert.equal(artifacts.length,2);
  for(const a of artifacts){const bytes=Buffer.from(await(await fetch(origin+a.url)).arrayBuffer());assert.equal(createHash('sha256').update(bytes).digest('hex'),a.sha256);}
- assert.equal((await fetch(origin+'/api/worker/jobs',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({...request,seed:99})})).status,409);
+ assert.equal(await responseStatus(fetch(origin+'/api/worker/jobs',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({...request,seed:99})})),409);
  const collision={id:'pre-existing',prompt:'not ours',seed:1,fixture:'arrival'};
- await fetch(url+'/jobs',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(collision)});
- assert.equal((await fetch(origin+'/api/worker/jobs',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({...collision,seed:2})})).status,409);
- assert.equal((await fetch(origin+'/api/worker/jobs/pre-existing/import',{method:'POST'})).status,404);
+ await responseStatus(fetch(url+'/jobs',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(collision)}));
+ assert.equal(await responseStatus(fetch(origin+'/api/worker/jobs',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({...collision,seed:2})})),409);
+ assert.equal(await responseStatus(fetch(origin+'/api/worker/jobs/pre-existing/import',{method:'POST'})),404);
  await app.close();child.kill('SIGTERM');await once(child,'exit');
  app=await createOrchestrator({...options,workerUrl:undefined});origin=await listen(app.server);
  assert.deepEqual(await(await fetch(origin+'/api/worker/jobs/observatory-test/artifacts')).json(),artifacts);
- for(const a of artifacts)assert.equal((await fetch(origin+a.url)).status,200);
- assert.equal((await fetch(origin+'/api/worker/capabilities')).status,503);
+ for(const a of artifacts)assert.equal(await responseStatus(fetch(origin+a.url)),200);
+ assert.equal(await responseStatus(fetch(origin+'/api/worker/capabilities')),503);
 });
 
 test('artifact import rejects hostile URLs, wrong hashes, redirects and invalid formats',async t=>{
@@ -76,7 +78,7 @@ test('overlapping identical submissions share one worker request and retain prov
  const workerUrl=await listen(worker);t.after(()=>new Promise<void>(r=>worker.close(()=>r())));
  const app=await createOrchestrator({dataDir:dir,artifactDir:join(dir,'artifacts'),workerUrl});const origin=await listen(app.server);t.after(()=>app.close());
  const send=(seed=1)=>fetch(origin+'/api/worker/jobs',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({id:'duplicate',prompt:'same request',seed,fixture:'arrival'})});
- const first=send();await started;const second=send();assert.equal((await send(2)).status,409);release();
- assert.deepEqual((await Promise.all([first,second])).map(r=>r.status),[202,202]);assert.equal(submissions,1);
- assert.equal((await fetch(origin+'/api/worker/jobs/duplicate')).status,200);
+ const first=send();await started;const second=send();assert.equal(await responseStatus(send(2)),409);release();
+ assert.deepEqual(await Promise.all([responseStatus(first),responseStatus(second)]),[202,202]);assert.equal(submissions,1);
+ assert.equal(await responseStatus(fetch(origin+'/api/worker/jobs/duplicate')),200);
 });
