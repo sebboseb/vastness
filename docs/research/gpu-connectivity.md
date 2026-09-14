@@ -36,3 +36,21 @@ ssh -o BatchMode=yes -o ConnectTimeout=5 -o IdentitiesOnly=yes \
 ```
 
 Then run `whoami`, `nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv`, and `wsl --list --verbose` separately through the verified connection. Model installation and GPU worker setup should follow this inventory rather than assume that a compatible environment is already installed.
+
+## Mac enrollment and pre-reboot verification — 2026-09-14
+
+The dedicated Mac key is `~/.ssh/vastness_pc_ed25519` (private key stays on the Mac). Alias `vastness-gpu` targets `sebas@192.168.1.252`. The server ED25519 key was retrieved without trusting it, fingerprinted locally, compared exactly with the user's out-of-band value `SHA256:9x9TJqqXOxwX0+UxTn+uOZKsSU1nFIWh45j/Jczy7qE`, and only then added to known_hosts. Strict host-key checking was retained for connections.
+
+Both requested commands passed from the Mac:
+
+```sh
+ssh vastness-gpu "whoami"
+# desktop-6qs5jc3\sebas
+ssh vastness-gpu "wsl -d Ubuntu-24.04 -u vastness --exec /usr/lib/wsl/lib/nvidia-smi"
+```
+
+The second command reported NVIDIA GeForce RTX 3090, 24,576 MiB total VRAM, Windows/KMD driver 610.62, NVIDIA-SMI 610.43.02 and CUDA UMD 13.3. A separate CSV query identified GPU UUID `GPU-02ec26d3-2fcf-7527-1110-7120a701ec49`, driver 610.62 and 19,391 MiB free at capture. This verifies **Mac → Windows SSH → WSL2 → RTX 3090 connectivity**, before the pending reboot. It does not establish PyTorch/CUDA computation or model inference.
+
+Windows boot time before restart: `2026-08-28T16:16:11.7667180+02:00`. WSL 2.7.13.0 registers Ubuntu-24.04 as WSL2 and Linux user `vastness`. Its ext4 VHD currently lives on C:. Windows physical free space was C: 23,642,570,752 bytes, D: 137,692,766,208 bytes, E: 1,078,767,316,992 bytes. The Linux virtual disk's much larger advertised free space is not the physical C: allowance. No model downloads occurred before this inventory and the [explicit storage budget](trellis-storage-requirements.md).
+
+The existing worker contract requires Python 3.10+ with venv, Bash and Git; fixture mode is stdlib-only. Bootstrap uses committed Git bundles, persistent shared data/config, and loopback `127.0.0.1:4320`; the documented Mac tunnel endpoint is `127.0.0.1:14320`. The existing direct-Linux SSH helper cannot be passed a Windows shell alias unchanged. Deployment must explicitly bridge to Ubuntu or establish a verified Linux SSH endpoint. Model setup separately requires the pinned Python/Torch/CUDA recipe in `docs/benchmark.md`.
