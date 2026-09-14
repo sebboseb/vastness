@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-09-14T23:17:07.433565+00:00",
+  "host": {
+    "hostname": "DESKTOP-6QS5JC3",
+    "os": "Linux",
+    "release": "6.18.33.2-microsoft-standard-WSL2",
+    "arch": "x86_64"
+  },
+  "python": {
+    "version": "3.10.21",
+    "executable": "/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/bin/python"
+  },
+  "gpu": {
+    "status": "available",
+    "devices": [
+      {
+        "index": 0,
+        "uuid": "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49",
+        "name": "NVIDIA GeForce RTX 3090",
+        "driverVersion": "610.62",
+        "vramTotalMiB": 24576.0,
+        "vramFreeMiB": 22496.0
+      }
+    ],
+    "error": null
+  },
+  "cuda": {
+    "driverStatus": "available",
+    "driverSupportedVersion": "13.3",
+    "toolkitStatus": "available",
+    "toolkitVersion": "12.1"
+  },
+  "pytorch": {
+    "status": "available",
+    "version": "2.4.0+cu121",
+    "cudaBuildVersion": "12.1",
+    "cudaAvailable": true,
+    "error": null
+  },
+  "nvidiaExecution": "not_run",
+  "notes": [
+    "No model generation or NVIDIA execution benchmark was run.",
+    "Missing tools are not proof of absent hardware. Unknown measurements are not zero.",
+    "Driver-supported CUDA is distinct from an installed toolkit and a PyTorch CUDA build.",
+    "PyTorch availability inspection does not validate model inference."
+  ]
+}

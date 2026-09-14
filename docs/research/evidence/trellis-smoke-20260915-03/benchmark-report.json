@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 1,
+  "status": "succeeded",
+  "nvidiaExecution": "completed",
+  "provenance": {
+    "backend": "trellis-image-large-benchmark-v1",
+    "source": {
+      "repo": "microsoft/TRELLIS",
+      "revision": "442aa1e1afb9014e80681d3bf604e8d728a86ee7"
+    },
+    "model": {
+      "repo": "microsoft/TRELLIS-image-large",
+      "revision": "25e0d31ffbebe4b5a97464dd851910efc3002d96"
+    },
+    "dinov2": {
+      "repo": "facebookresearch/dinov2",
+      "revision": "7b187bd4df8efce2cbcbbb67bd01532c19bf4c9c"
+    },
+    "dinov2Weights": {
+      "name": "dinov2_vitl14_reg",
+      "url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitl14/dinov2_vitl14_reg4_pretrain.pth",
+      "sha256": null
+    },
+    "input": {
+      "path": "assets/example_image/T.png",
+      "sha256": "e29ddc83a5bd3a05fe9b34732169bc4ea7131f7c36527fdc5f626a90a73076d2"
+    },
+    "extensions": {
+      "nvdiffrast": {
+        "repo": "NVlabs/nvdiffrast",
+        "revision": "c5caf7bdb8a2448acc491a9faa47753972edd380"
+      },
+      "diffoctreerast": {
+        "repo": "JeffreyXiang/diffoctreerast",
+        "revision": "b09c20b84ec3aace4729e6e18a613112320eca3a"
+      },
+      "mip-splatting": {
+        "repo": "autonomousvision/mip-splatting",
+        "revision": "dda02ab5ecf45d6edb8c540d9bb65c7e451345a9"
+      },
+      "utils3d": {
+        "repo": "EasternJournalist/utils3d",
+        "revision": "9a4eb15e4021b67b12c460c7057d642626897ec8"
+      }
+    }
+  },
+  "case": "upstream-T-seed-1",
+  "parameters": {
+    "seed": 1,
+    "formats": [
+      "gaussian",
+      "mesh"
+    ],
+    "sparseSteps": 12,
+    "sparseCfg": 7.5,
+    "slatSteps": 12,
+    "slatCfg": 3.0
+  },
+  "outputs": [
+    "scene.ply",
+    "collider.glb"
+  ],
+  "limits": [
+    "Fixed upstream image; prompt, fixture and boundary conditioning unsupported.",
+    "Raw geometry proxy; walkability, scale and browser acceptance unmeasured.",
+    "Dependency installation and NVIDIA execution remain unvalidated."
+  ],
+  "metrics": {
+    "loadSeconds": 24.474543061000077,
+    "generationSeconds": 6.750786941000115,
+    "exportAndValidationSeconds": 10.35078963199976,
+    "totalSeconds": 41.57611963399995,
+    "torchPeakAllocatedBytes": 11195929600,
+    "torchPeakReservedBytes": 14822670336,
+    "torchVersion": "2.4.0+cu121",
+    "torchCudaVersion": "12.1",
+    "gpuName": "NVIDIA GeForce RTX 3090",
+    "computeCapability": [
+      8,
+      6
+    ],
+    "gaussianCount": 501696,
+    "meshVertexCount": 317222,
+    "meshTriangleCount": 634834,
+    "meshBounds": [
+      [
+        -0.44959697127342224,
+        -0.4996050298213959,
+        -0.22018563747406006
+      ],
+      [
+        0.4361909329891205,
+        0.4971827268600464,
+        0.20830027759075165
+      ]
+    ],
+    "sourceToOutputRotation": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    ],
+    "scaleMetres": null,
+    "collisionAssessment": "unassessed_raw_mesh_proxy"
+  },
+  "artifacts": [
+    {
+      "path": "scene.ply",
+      "bytes": 34115744,
+      "sha256": "45225f837c1f7551337ee86a5d42afddddf895b59a5f563facc8c1d9c9799a1f"
+    },
+    {
+      "path": "collider.glb",
+      "bytes": 11425480,
+      "sha256": "6141ddd57bec66dfdf47419eec3aa4e4e60bc6ece5360fd392d7953dfa429588"
+    }
+  ],
+  "error": null,
+  "startedAt": "2026-09-14T23:08:54.498722+00:00",
+  "command": [
+    "/home/vastness/.local/share/vastness-worker/releases/367c9d3b6648af000bbd25291bace7e0464afe58/repo/services/gpu-worker/benchmarks/run.py",
+    "--execute",
+    "--trellis-root",
+    "/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/src/TRELLIS",
+    "--weights-root",
+    "/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/weights/trellis-image-large",
+    "--dinov2-root",
+    "/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/src/dinov2",
+    "--dinov2-weights",
+    "/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/weights/dinov2/dinov2_vitl14_reg4_pretrain.pth",
+    "--request",
+    "/home/vastness/.local/share/vastness-worker/shared/data/requests/trellis-smoke-20260915-03.json",
+    "--output",
+    "/home/vastness/.local/share/vastness-worker/shared/data/artifacts/.trellis-smoke-20260915-03.tmp"
+  ],
+  "stage": "complete",
+  "exitCode": 0,
+  "vastnessGit": {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exitCode": 0,
+    "stdout": "367c9d3b6648af000bbd25291bace7e0464afe58",
+    "stderr": ""
+  },
+  "logs": [
+    "inference.log",
+    "gpu-memory.csv"
+  ],
+  "request": {
+    "id": "trellis-smoke-20260915-03",
+    "prompt": "",
+    "seed": 1
+  },
+  "preflight": {
+    "os": "Linux",
+    "python": "3.10.21",
+    "nvidia": {
+      "argv": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,name,driver_version,memory.total,memory.free",
+        "--format=csv"
+      ],
+      "exitCode": 0,
+      "stdout": "index, uuid, name, driver_version, memory.total [MiB], memory.free [MiB]\n0, GPU-02ec26d3-2fcf-7527-1110-7120a701ec49, NVIDIA GeForce RTX 3090, 610.62, 24576 MiB, 22496 MiB",
+      "stderr": ""
+    },
+    "nvcc": {
+      "argv": [
+        "nvcc",
+        "--version"
+      ],
+      "exitCode": 0,
+      "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2023 NVIDIA Corporation\nBuilt on Mon_Apr__3_17:16:06_PDT_2023\nCuda compilation tools, release 12.1, V12.1.105\nBuild cuda_12.1.r12.1/compiler.32688072_0",
+      "stderr": ""
+    },
+    "packages": {
+      "torch": "2.4.0+cu121",
+      "torchvision": "0.19.0+cu121",
+      "xformers": "0.0.27.post2",
+      "kaolin": "0.17.0",
+      "spconv-cu120": "2.3.6"
+    },
+    "source": {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exitCode": 0,
+      "stdout": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+      "stderr": ""
+    },
+    "dinov2": {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exitCode": 0,
+      "stdout": "7b187bd4df8efce2cbcbbb67bd01532c19bf4c9c",
+      "stderr": ""
+    },
+    "weights": {
+      "model": {
+        "repo": "microsoft/TRELLIS-image-large",
+        "revision": "25e0d31ffbebe4b5a97464dd851910efc3002d96"
+      },
+      "files": {
+        "pipeline.json": "2686b6c9b3b0a100b544d5f9dc7b3ecb15c9d98be9852d68e8731bd8dbe52a42",
+        "README.md": "9b64b43ea1d58635f14f2ebe5664c22be6fee8943943ece39a14e98b1da4378c",
+        ".gitattributes": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+        "ckpts/slat_dec_mesh_swin8_B_64l8m256c_fp16.json": "293900795cb69cc972d1a20a4940ee12f7e007952c2ae92d128dda91b96ac317",
+        "ckpts/slat_enc_swin8_B_64l8_fp16.safetensors": "21dceac6bee917ab6458ff52c9757ba89a779d03031c7bd17f9e7f0103bfd436",
+        "ckpts/slat_dec_gs_swin8_B_64l8gs32_fp16.json": "ebe9d3eade6d9cb7662efae109197e97d7ab58aebd5e8ede0c8991dfce88a06a",
+        "ckpts/slat_flow_img_dit_L_64l8p2_fp16.safetensors": "693fb2a58ad497bd222007301eeec49d14d60f8c12d2f2f00c221fa747b4c66c",
+        "ckpts/slat_enc_swin8_B_64l8_fp16.json": "7b7e2bd3e831bdd5a6129cea36424a47ad73c1b9ad109d1de54e0f14af4d28a2",
+        "ckpts/slat_dec_mesh_swin8_B_64l8m256c_fp16.safetensors": "3e87aba94b5786407eb06d0502c1ed0885a0027a3f2b8537bfe15b0a92c01859",
+        "ckpts/ss_flow_img_dit_L_16l8_fp16.json": "bf69161da7ece9a87394dd4441f0cfa6d4261696a214a8f68388c81fa9a6b5b7",
+        "ckpts/ss_enc_conv3d_16l8_fp16.json": "12efe92a0d7dcd790f251acb94a6950957ea4398268e2838ef7319c3f20b071e",
+        "ckpts/slat_dec_gs_swin8_B_64l8gs32_fp16.safetensors": "38c84bcef5ce0af1f48b1b5558dabc7575a13346043c41a7e0610f1fa619a161",
+        "ckpts/slat_flow_img_dit_L_64l8p2_fp16.json": "c0a9bd57227f55cf75ff02562c27bb05c50174f06955f56a79dea2982fd7a8f9",
+        "ckpts/slat_dec_rf_swin8_B_64l8r16_fp16.json": "9b46a04602988b9cd83f1d0537de1cb93c4c1b6d35a0bbbcb07bb37bac66b766",
+        "ckpts/ss_dec_conv3d_16l8_fp16.safetensors": "1c76d4a40519aa2d711cc263a8404105231ac26db31d946bed48b84fee79009a",
+        "ckpts/ss_flow_img_dit_L_16l8_fp16.safetensors": "96dc6bfd4136fd950af564dd16b4ae533c9ba6af8f26c670646b2a9f2789b1db",
+        "ckpts/ss_dec_conv3d_16l8_fp16.json": "646781293f1cda74720de85d1cef50a957fb4aebd9a4bd014e454e32f2330ac5",
+        "ckpts/slat_dec_rf_swin8_B_64l8r16_fp16.safetensors": "737da6578d01948016b7c39786113af0d64a46f7922f6b8b5e698b84643be514",
+        "ckpts/ss_enc_conv3d_16l8_fp16.safetensors": "107874eeaa0feb82f51b19db5da7db534fb7e7f19e5a122b9ff1bc2e258bfc6d"
+      }
+    },
+    "dinov2Weights": {
+      "model": {
+        "name": "dinov2_vitl14_reg",
+        "url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitl14/dinov2_vitl14_reg4_pretrain.pth",
+        "sha256": null
+      },
+      "files": {
+        "dinov2_vitl14_reg4_pretrain.pth": "36e4deffbaef061a2576705b0c36f93621e2ae20bf6274694821b0b492551b51"
+      }
+    },
+    "problems": [],
+    "readyForAttempt": true,
+    "note": "Read-only inspection; no torch import, CUDA inference or artifact generation."
+  },
+  "inferenceCommand": [
+    "/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/bin/python",
+    "/home/vastness/.local/share/vastness-worker/releases/367c9d3b6648af000bbd25291bace7e0464afe58/repo/services/gpu-worker/benchmarks/infer.py",
+    "--trellis-root",
+    "/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/src/TRELLIS",
+    "--weights-root",
+    "/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/weights/trellis-image-large",
+    "--dinov2-root",
+    "/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/src/dinov2",
+    "--dinov2-weights",
+    "/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/weights/dinov2/dinov2_vitl14_reg4_pretrain.pth",
+    "--output",
+    "/home/vastness/.local/share/vastness-worker/shared/data/artifacts/.trellis-smoke-20260915-03.tmp"
+  ],
+  "wallSeconds": 51.713015283999994,
+  "finishedAt": "2026-09-14T23:09:48.223066+00:00",
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 1831.0,
+        "sampledPeakMiB": 16290.0,
+        "samples": 486
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  }
+}

@@ -1,6 +1,6 @@
 # GPU appliance deployment — 2026-09-15
 
-The Mac → Windows SSH → WSL2 → RTX 3090 path passes after the authorized Windows reboot. This record distinguishes the deployed service/fixture transport from the still-unvalidated model environment.
+The Mac → Windows SSH → WSL2 → RTX 3090 path passes after the authorized Windows reboot. The existing worker now runs a successful pinned TRELLIS command backend. See [the measured trial](trellis-first-appliance-trial.md); fixture transport and model execution have separate evidence.
 
 ## Verified identity and reboot
 
@@ -24,7 +24,7 @@ The [pinned model payload](trellis-storage-requirements.md) is 4,516,848,171 byt
 
 ## Running worker and networking
 
-The actual deployed revision is `b7e5764f89a7edbb93f6676669d1c27ed5e58713`, transferred by `scripts/deploy-worker-wsl.py` from its Git bundle. The prefix is `/home/vastness/.local/share/vastness-worker`; current points to that release. Fixtures were generated on the Mac from a detached checkout of the same commit and transferred separately.
+The initial fixture deployment used revision `b7e5764f89a7edbb93f6676669d1c27ed5e58713`, transferred by `scripts/deploy-worker-wsl.py` from its Git bundle. The prefix is `/home/vastness/.local/share/vastness-worker`; The current service and benchmark runner now point to `367c9d3b6648af000bbd25291bace7e0464afe58`, including the validated finite-opacity export correction. Initial fixtures were generated on the Mac from a detached `b7e5764` checkout and transferred separately. They were later regenerated at `86d52bf`; fixture code and verified artifact hashes were unchanged by the exporter-only `367c9d3` update.
 
 The documented `vastness-worker.service` systemd user unit is enabled and running as `vastness`, using the bootstrap's `run-worker`, shared data/fixtures and loopback `127.0.0.1:4320`. Its PATH includes `/usr/lib/wsl/lib` for the capability probe. Windows loopback `/health` was independently checked before tunneling.
 
@@ -44,12 +44,20 @@ The Mac orchestrator was restarted with `WORKER_URL=http://127.0.0.1:14320`. HTT
 
 ## Capability and benchmark boundary
 
-The real capability schema reports the NVIDIA device and driver, distinguishes driver-supported CUDA 13.3 from an installed toolkit, and reports PyTorch absent in the stdlib worker environment. Baseline evidence is `.runtime/remote-capability-initial.json`. Fixture transport passes with `nvidiaExecution: not_run`. A separate pinned benchmark environment is being prepared; no CUDA kernel, successful inference or generated 3D result is implied by these checks. Ticket #11 owns those measurements.
+The real capability schema reports the NVIDIA device and driver, distinguishes driver-supported CUDA 13.3 from an installed toolkit, and reports PyTorch absent in the stdlib worker environment. Baseline evidence is `.runtime/remote-capability-initial.json`. Fixture transport passes with `nvidiaExecution: not_run`. These inventory/fixture checks imply no model execution. The separate benchmark environment subsequently completed genuine CUDA inference; [ticket #11’s trial record](trellis-first-appliance-trial.md) provides those measurements. The worker remains on stdlib Python 3.12.3, while the configured child uses Python 3.10.21/Torch 2.4.0+cu121. `/capabilities` inventories the service environment; its `nvidiaExecution: not_run` describes the probe itself, and generic `command-v1.requiresGpu: false` is not model-specific metadata.
 
-## First model setup result and next attempt
+## Retained setup failure and successful correction
 
 Attempt `trellis-20260915-01` installed Torch 2.4.0+cu121, xformers, Kaolin and all pinned native extensions. A real CUDA arange/multiply/add/reduction passed with the exact expected result 1,048,576 on compute capability 8.6. This validates small-kernel NVIDIA execution; it is not model inference.
 
 The original preparation then failed at its retained `pip check` gate, before downloading weights: `ninja 1.11.1.1 is not supported on this platform`. Inspection found a blank line before the WHEEL tags, matching [pip's upstream report](https://github.com/pypa/pip/issues/12884). The built Ninja executable worked, and all native extensions compiled; this failure is packaging metadata rather than an observed CUDA build failure.
 
-The next explicit experiment updates only the Ninja distribution pin to **1.11.1.4**. Its downloaded Linux wheel has parseable, compatible platform tags and SHA-256 `096487995473320de7f65d622c3f1d16c3ad174797602218ca8c967f51ec38a0`. [Upstream releases](https://github.com/scikit-build/ninja-python-distributions/releases). Python/Torch/CUDA, model sources, weights and generation parameters are unchanged. A fresh `trellis-20260915-02` prefix preserves the complete failed attempt and logs; cached dependency downloads may be reused. Do not mark the original failed setup as successful or bypass `pip check`.
+The successful second setup explicitly updated only the Ninja distribution pin to **1.11.1.4**. Its downloaded Linux wheel has parseable, compatible platform tags and SHA-256 `096487995473320de7f65d622c3f1d16c3ad174797602218ca8c967f51ec38a0`. [Upstream releases](https://github.com/scikit-build/ninja-python-distributions/releases). Python/Torch/CUDA, model sources, weights and generation parameters are unchanged. A fresh `trellis-20260915-02` prefix preserves the complete failed attempt and logs; cached dependency downloads may be reused. Do not mark the original failed setup as successful or bypass `pip check`.
+
+## Current model deployment
+
+Setup `trellis-20260915-02` passed imports, `pip check`, all pinned file/revision preflight checks and explicit model downloads on the E:-backed disk. The command adapter is configured with the absolute `367c9d3` runner path, that environment’s Python/source/weights paths, and a 1,800-second worker timeout. It retains the pinned CUDA/GCC paths in `worker.env`; no model paths or executables are selected by HTTP input.
+
+Job `trellis-smoke-20260915-03` completed through the Mac API and remote worker, exported genuine PLY/GLB, and was imported into separate Mac content-addressed storage with matching hashes and sizes. Setup 01 and failed inference 02 remain intact. Successful report/log/memory samples and original model/source license files were copied back to `.runtime/benchmark-evidence/`.
+
+After setup, inference and diagnostics, the storage snapshot still identifies Ubuntu at `E:\Vastness\WSL\Ubuntu-24.04`; E: has 1,060,952,109,056 bytes free and C: 25,276,375,040 bytes free. All benchmark model/cache/environment destinations remain on E:. These host snapshots include unrelated Windows activity and do not establish exact per-benchmark disk consumption.

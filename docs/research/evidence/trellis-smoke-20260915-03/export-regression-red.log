@@ -1,0 +1,32 @@
+Warp DeprecationWarning: warp.config.quiet is deprecated; use warp.config.log_level = warp.LOG_WARNING to suppress the init banner.
+test_nonfinite_model_logits_are_rejected_without_clipping (benchmarks.test_gaussian_export.GaussianExportTests) ... FAIL
+test_saturated_opacity_preserves_finite_logits_and_other_attributes (benchmarks.test_gaussian_export.GaussianExportTests) ... FAIL
+
+======================================================================
+FAIL: test_nonfinite_model_logits_are_rejected_without_clipping (benchmarks.test_gaussian_export.GaussianExportTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/vastness/.local/share/vastness-worker/current/repo/services/gpu-worker/benchmarks/test_gaussian_export.py", line 54, in test_nonfinite_model_logits_are_rejected_without_clipping
+    with self.assertRaisesRegex(ValueError, 'nonfinite opacity logits'):
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_saturated_opacity_preserves_finite_logits_and_other_attributes (benchmarks.test_gaussian_export.GaussianExportTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/vastness/.local/share/vastness-worker/current/repo/services/gpu-worker/benchmarks/test_gaussian_export.py", line 45, in test_saturated_opacity_preserves_finite_logits_and_other_attributes
+    self.assertTrue(all(self.np.isfinite(after[n]).all() for n in after.dtype.names))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 2 tests in 5.758s
+
+FAILED (failures=2)
+[SPARSE] Backend: spconv, Attention: xformers
+Warp 1.17.0 initialized:
+   CUDA Toolkit 12.9, Driver 13.3
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 3090" (24 GiB, sm_86, mempool enabled)
+   Kernel cache:
+     /home/vastness/.cache/warp/1.17.0

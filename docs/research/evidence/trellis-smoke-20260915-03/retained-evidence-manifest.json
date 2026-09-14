@@ -1,0 +1,246 @@
+{
+  "final-reports.tar.gz": {
+    "bytes": 31058,
+    "sha256": "c3f7d4514dcaa79ab9cb13d3789ad6db8f9b5b5869ada904cd096eaeb2111fc5"
+  },
+  "trellis-smoke-20260915-03/metrics.json": {
+    "bytes": 941,
+    "sha256": "f6aaa8e137f8e0a6796084fc0cd18ca053047994a2a65758c25bc71741cd7072"
+  },
+  "trellis-smoke-20260915-03/benchmark-report.json": {
+    "bytes": 10402,
+    "sha256": "67d8a55a39e30c85f6dec32a7290502f7a1ffd916bdfd98035bd7dde32b87d33"
+  },
+  "trellis-smoke-20260915-03/export-regression-green.log": {
+    "bytes": 755,
+    "sha256": "3d98aab486940245d1b881da6e57048ee053fce361e95352ce8c7faf07119f3d"
+  },
+  "trellis-smoke-20260915-03/render-inspection.py": {
+    "bytes": 2706,
+    "sha256": "66b0f2edbd0b0c76e0760ff370e9eada4fefd91c715d7936196b5779f4eff508"
+  },
+  "trellis-smoke-20260915-03/gpu-render-inspection.png": {
+    "bytes": 769441,
+    "sha256": "fc0762fdeb68a23ed86f44efefe4fa3b02b4c1b26dc8a5d00cf089b77de371fd"
+  },
+  "trellis-smoke-20260915-03/capabilities.json": {
+    "bytes": 1881,
+    "sha256": "a141821e800a383e5c6fadcfcbffb5e42b4047036838d7c892a3922ee4b40060"
+  },
+  "trellis-smoke-20260915-03/export-fix-check.log": {
+    "bytes": 6272,
+    "sha256": "a28ed530869bf1cd64d40d548b51009e4ed80a8cf3349834274478f367716bf4"
+  },
+  "trellis-smoke-20260915-03/export-regression-red.log": {
+    "bytes": 2003,
+    "sha256": "67c2459850aa26ca85b5feedd58407f0c3d67961bc707d0fcf55e167f4e6cd03"
+  },
+  "trellis-smoke-20260915-03/export-fix-tests.log": {
+    "bytes": 147,
+    "sha256": "b59f7f2c44c05e75dbe15acca4da76b610cb02148e61e0b6a904989ca0e99038"
+  },
+  "trellis-smoke-20260915-03/gpu-memory.csv": {
+    "bytes": 38560,
+    "sha256": "c8e54a4a20bbfcdad1588273972ef71495e950323b20a7fe30d6ebdc82e98d95"
+  },
+  "trellis-smoke-20260915-03/final-verification.json": {
+    "bytes": 225,
+    "sha256": "39e0efb023a041c1bd0884cb54aa8135b75085882449d240e8d5696549f61f28"
+  },
+  "trellis-smoke-20260915-03/scene.ply": {
+    "bytes": 34115744,
+    "sha256": "45225f837c1f7551337ee86a5d42afddddf895b59a5f563facc8c1d9c9799a1f"
+  },
+  "trellis-smoke-20260915-03/alignment-diagnostic.py": {
+    "bytes": 2793,
+    "sha256": "5d12fce2486c11671db9270c497c9f4d7279279b9b6865ea78a12da5bf1ff05b"
+  },
+  "trellis-smoke-20260915-03/reports.tar.gz": {
+    "bytes": 7061,
+    "sha256": "c715fa215603b86f7eaeea81704c434a90e045d498df758477e16a220fc57a8d"
+  },
+  "trellis-smoke-20260915-03/render-first-attempt.log": {
+    "bytes": 2418,
+    "sha256": "5d4e740c81a8803f0c6fe179d0899101c28a410776be7f3bcea1c9b93c280807"
+  },
+  "trellis-smoke-20260915-03/job.json": {
+    "bytes": 7018,
+    "sha256": "0e74e725bb10b27f730f051181496a3fb66a87d1656a0a37388d3f54799ed718"
+  },
+  "trellis-smoke-20260915-03/invalid-diagnostic-sh-layout.png": {
+    "bytes": 712380,
+    "sha256": "200f4d4613337926bd7be2bdf5f88b3f5aaeb34bff485924b90859c06513aa7e"
+  },
+  "trellis-smoke-20260915-03/manifest.json": {
+    "bytes": 531,
+    "sha256": "1de8e5b7455e669b3bebf9363b5ad0293d31b04fc259f2b8c487afd418d8c360"
+  },
+  "trellis-smoke-20260915-03/collider.glb": {
+    "bytes": 11425480,
+    "sha256": "6141ddd57bec66dfdf47419eec3aa4e4e60bc6ece5360fd392d7953dfa429588"
+  },
+  "trellis-smoke-20260915-03/alignment-diagnostic.png": {
+    "bytes": 965417,
+    "sha256": "188a48f10aa6bdd89013ff50ad140b338bf34f8ecc70c7e15d86fe38b8f77df3"
+  },
+  "trellis-smoke-20260915-03/render-inspection.log": {
+    "bytes": 865,
+    "sha256": "861f8f3d68537779dc8a8d20b49259d94280f0339f3ec3f3b8780e6f829867f2"
+  },
+  "trellis-smoke-20260915-03/inference.log": {
+    "bytes": 7076,
+    "sha256": "b1255f40d03ae35225e810cacc3b8f9c995e821d6c1a553e1525225c53b6df2f"
+  },
+  "trellis-smoke-20260915-03/alignment-metrics.json": {
+    "bytes": 365,
+    "sha256": "cbca576f8fd693cd44e0d6a5c8a6e2a7f9d42069de73f18447bee96eeff1a5b5"
+  },
+  "trellis-smoke-20260915-02/benchmark-report.json": {
+    "bytes": 9115,
+    "sha256": "95bf9a7b8d5daec15494fc06f2314f80412ddba613826aad4ff018fe63534be8"
+  },
+  "trellis-smoke-20260915-02/capabilities.json": {
+    "bytes": 1881,
+    "sha256": "806378a6066830911abdcf8e825ba7320b05b0e459f6865a1dd4bc570e34ad9e"
+  },
+  "trellis-smoke-20260915-02/gpu-memory.csv": {
+    "bytes": 53408,
+    "sha256": "73c61e5155bf1738bd9a6eb92a7bcf1f6fc426cdd3d5349c8845d7f1f4e0bbc8"
+  },
+  "trellis-smoke-20260915-02/job.json": {
+    "bytes": 5917,
+    "sha256": "a64afa7e0f3ffb89704505efd2b2a186de785fbd7008e5759a2aa8e4a015636a"
+  },
+  "trellis-smoke-20260915-02/opacity-diagnosis.txt": {
+    "bytes": 9672,
+    "sha256": "f0a532e75c60d8dbef6abc513d146609aae6a77794173087eed4752f0d6f9971"
+  },
+  "trellis-smoke-20260915-02/opacity-diagnosis.sh": {
+    "bytes": 805,
+    "sha256": "0d054ef4181509c048d768324c5c8627bee2fb3a3aa5cadd99d5426ec163e986"
+  },
+  "trellis-smoke-20260915-02/inference.log": {
+    "bytes": 6640,
+    "sha256": "8eda166ff5b70b73ac3a3d0a3e0d4580427e0e32419e150d8c2761ca9f0ffbd2"
+  },
+  "trellis-20260915-02/hardware.json": {
+    "bytes": 1369,
+    "sha256": "53d8963c32c9eab97489d353aa4d51a4f209644e236a0b0495fbab16e57b6237"
+  },
+  "trellis-20260915-02/conda-explicit.txt": {
+    "bytes": 2338,
+    "sha256": "7a33bfc022c08f118ab463567b108d9ff2b7ecc0bcef582d808ecbc57571cdd7"
+  },
+  "trellis-20260915-02/licenses.tar.gz": {
+    "bytes": 34399,
+    "sha256": "1c6ae912ee5514242cea54ddef3303a65fbe329012cbb5658e928375330a8120"
+  },
+  "trellis-20260915-02/setup.log": {
+    "bytes": 97048,
+    "sha256": "b4207c2f2a380c5d84e914b0fd6c7e0ab07c7c2f18789e041fc36c3ec729d664"
+  },
+  "trellis-20260915-02/setup-report.json": {
+    "bytes": 2900,
+    "sha256": "68d6bb9923aaa770bb8d74fd8db42c3431dec28e04d0b88e89e9d3b37db66479"
+  },
+  "trellis-20260915-02/pip-freeze.txt": {
+    "bytes": 3681,
+    "sha256": "2ec3ca9d4c4e95a619a472e663f38b1fd9af4b13dc6979103e709ea635aafdb5"
+  },
+  "trellis-20260915-01/cuda-kernel-check.json": {
+    "bytes": 315,
+    "sha256": "57dbaee0f20a7d1819e6ab788d8761e43f042e870d09861cd89211a7288dce59"
+  },
+  "trellis-20260915-01/setup.log": {
+    "bytes": 105310,
+    "sha256": "02da89a92a3c5b9d05fd6567c243a4267d3f15dc0f895a808333215071a1cdc7"
+  },
+  "trellis-20260915-01/setup-report.json": {
+    "bytes": 2749,
+    "sha256": "96df86711a08c48abfbeb28ad1b29adaff37bd4694ed585500967a5bfe4948cf"
+  },
+  "trellis-20260915-01/reports.tar.gz": {
+    "bytes": 16547,
+    "sha256": "3834ef47c75c60ce9396d0a41e229e10b25ce85e98556483b4d6c9f267f915be"
+  },
+  "trellis-20260915-01/conda-explicit-failed.txt": {
+    "bytes": 2338,
+    "sha256": "7a33bfc022c08f118ab463567b108d9ff2b7ecc0bcef582d808ecbc57571cdd7"
+  },
+  "trellis-20260915-01/pip-freeze-failed.txt": {
+    "bytes": 3681,
+    "sha256": "860d5255a4942859d081ef36aff65ec316790d449b22acb86c0aeb03c6a0c977"
+  },
+  "trellis-20260915-02/licenses/model-card.md": {
+    "bytes": 464,
+    "sha256": "9b64b43ea1d58635f14f2ebe5664c22be6fee8943943ece39a14e98b1da4378c"
+  },
+  "trellis-20260915-02/weights/trellis-image-large/weights-manifest.json": {
+    "bytes": 2316,
+    "sha256": "722c7c76817031b87781d8685968b4f44bd3b99b4d1c7a23a7126b53546b54b6"
+  },
+  "trellis-20260915-02/weights/dinov2/weights-manifest.json": {
+    "bytes": 295,
+    "sha256": "0dd9e61ed334ad6aa02d471ae5f1b26d0d74261a67ab1f17cf432bdbf4ba3853"
+  },
+  "trellis-20260915-02/licenses/src/utils3d/LICENSE": {
+    "bytes": 1074,
+    "sha256": "197b6e9eeec3ebf5ff80edc89c0eecc9f33fff0b9074500c042ce67ff6665d3d"
+  },
+  "trellis-20260915-02/licenses/src/nvdiffrast/LICENSE.txt": {
+    "bytes": 4445,
+    "sha256": "ce20436c2730611757d3c7ed2b4d9bef8315a8a0af0540ff8baa5dce7a94f5da"
+  },
+  "trellis-20260915-02/licenses/src/mip-splatting/LICENSE.md": {
+    "bytes": 4275,
+    "sha256": "cd5c95b3cfff3acc1bd412420c770f88809331c3db6872df11a970147aa8e81f"
+  },
+  "trellis-20260915-02/licenses/src/diffoctreerast/LICENSE": {
+    "bytes": 3645,
+    "sha256": "a455ed304a209a3cfa38148b3fe15103a43d397962a89d5108c3175a86373a39"
+  },
+  "trellis-20260915-02/licenses/src/TRELLIS/LICENSE": {
+    "bytes": 1141,
+    "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+  },
+  "trellis-20260915-02/licenses/src/dinov2/LICENSE_XRAY_DINO_MODEL": {
+    "bytes": 9878,
+    "sha256": "ce9efad90c86b5697e1783e56e3c936f6bd23c568c1166ecf07805b65d0891ad"
+  },
+  "trellis-20260915-02/licenses/src/dinov2/LICENSE": {
+    "bytes": 11359,
+    "sha256": "600cc67cc4cb2f5ea317dcfc687ad1c74dc4bec8782bbe9db0afd83513b935b7"
+  },
+  "trellis-20260915-02/licenses/src/dinov2/LICENSE_CELL_DINO_CODE": {
+    "bytes": 18655,
+    "sha256": "fe7b4ce83b8381cc5b216bbb4af73c570688d1b819c73bbaed8ca401f4677cd6"
+  },
+  "trellis-20260915-02/licenses/src/dinov2/LICENSE_CELL_DINO_MODELS": {
+    "bytes": 11487,
+    "sha256": "d779b47a4ef8bbfc6c90d14768fe6a0a2c1c08bbc3712084496058bfd83cef4f"
+  },
+  "trellis-20260915-02/licenses/src/dinov2/dinov2/thirdparty/CLIP/LICENSE": {
+    "bytes": 1063,
+    "sha256": "893951b3bf94db8df1b13e05da5cdeb499400960e4d44a3962a8b33ed0b4f28e"
+  },
+  "trellis-20260915-02/licenses/src/TRELLIS/trellis/representations/mesh/flexicubes/LICENSE.txt": {
+    "bytes": 11357,
+    "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+  },
+  "trellis-20260915-02/licenses/src/diffoctreerast/lib/glm/copying.txt": {
+    "bytes": 2865,
+    "sha256": "62d2d642c7d054d4fb4c9b42faad617d6c88fcd91e317f8035aa9f277cc159c3"
+  },
+  "trellis-20260915-02/licenses/src/mip-splatting/submodules/diff-gaussian-rasterization/LICENSE.md": {
+    "bytes": 4275,
+    "sha256": "cd5c95b3cfff3acc1bd412420c770f88809331c3db6872df11a970147aa8e81f"
+  },
+  "trellis-20260915-02/licenses/src/mip-splatting/submodules/diff-gaussian-rasterization/third_party/glm/copying.txt": {
+    "bytes": 2865,
+    "sha256": "62d2d642c7d054d4fb4c9b42faad617d6c88fcd91e317f8035aa9f277cc159c3"
+  },
+  "trellis-20260915-02/licenses/src/nvdiffrast/samples/data/NOTICE.txt": {
+    "bytes": 32041,
+    "sha256": "5b24e04c152f4dc1e8109adfecd87b484de168b70b8800ae90f2488b4f1f8fb1"
+  }
+}
