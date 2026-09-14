@@ -79,6 +79,26 @@ class ProbeCLITest(unittest.TestCase):
         self.assertEqual(report["cuda"]["toolkitVersion"], "12.1")
         self.assertEqual(report["nvidiaExecution"], "not_run")
 
+    def test_legacy_and_umd_banners_keep_driver_cuda_separate_from_toolkit(self):
+        banners = (
+            ("| NVIDIA-SMI 550.54.14 Driver Version: 550.54.14 CUDA Version: 12.4 |", "12.4"),
+            ("| NVIDIA-SMI 610.43.02 KMD Version: 610.62 CUDA UMD Version: 13.3 |", "13.3"),
+        )
+        for banner, expected in banners:
+            for toolkit_installed in (False, True):
+                with self.subTest(banner=banner, toolkit_installed=toolkit_installed):
+                    self.executable("nvidia-smi", "import sys\nprint('0, GPU-a, RTX 3090, 610.62, 24576, 23000' if len(sys.argv)>1 else " + repr(banner) + ")")
+                    if toolkit_installed:
+                        self.executable("nvcc", "print('Cuda compilation tools, release 12.1, V12.1.2')")
+                    else:
+                        (self.root / "nvcc").unlink(missing_ok=True)
+                    report = self.report()
+                    self.assertEqual(report["cuda"]["driverStatus"], "available")
+                    self.assertEqual(report["cuda"]["driverSupportedVersion"], expected)
+                    self.assertEqual(report["cuda"]["toolkitStatus"], "available" if toolkit_installed else "unavailable")
+                    self.assertEqual(report["cuda"]["toolkitVersion"], "12.1" if toolkit_installed else None)
+                    self.assertEqual(report["nvidiaExecution"], "not_run")
+
     def test_malformed_tool_output_is_failure(self):
         self.executable("nvidia-smi", "print('not a gpu inventory')")
         report = self.report()

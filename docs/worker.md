@@ -87,6 +87,8 @@ Both print `CapabilityReportSchema` version 1: capture time, host OS/architectur
 
 Default inspection does not import PyTorch. `--check-torch` imports it in a child with a ten-second deadline and reports package version, build CUDA and `torch.cuda.is_available()`. NVIDIA and toolkit inspection commands also have ten-second deadlines. Availability inspection is not inference. `nvidiaExecution` remains `not_run`, regardless of discovered hardware or PyTorch availability. Driver-supported CUDA is separate from the installed toolkit and PyTorch CUDA build.
 
+The probe accepts both legacy `CUDA Version` and modern `CUDA UMD Version` banners. NVIDIA defines UMD as the CUDA user-mode driver and describes this value as the latest CUDA version supported by that driver; it does not establish which toolkit is installed. `toolkitVersion` continues to come only from `nvcc --version`. See [NVIDIA’s nvidia-smi reference](https://docs.nvidia.com/deploy/nvidia-smi/#cuda-umd-version).
+
 The worker captures its inventory once at startup and caches `/capabilities` for its process lifetime. Repeated HTTP inspection does not rerun probes or block the job executor. Restart for a fresh report.
 
 ## Verification and deployment

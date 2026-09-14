@@ -47,7 +47,7 @@ def inventory(check_torch=False):
             gpu = {"status": "failed", "devices": [], "error": f"Invalid nvidia-smi inventory: {error}"}
     driver = command_probe(["nvidia-smi"])
     toolkit = command_probe(["nvcc", "--version"])
-    driver_version = re.search(r"CUDA Version:\s*([\d.]+)", driver["stdout"])
+    driver_version = re.search(r"CUDA (?:UMD )?Version:\s*([\d.]+)", driver["stdout"])
     toolkit_version = re.search(r"release\s+([\d.]+)", toolkit["stdout"])
     torch = {"status": "not_checked", "version": None, "cudaBuildVersion": None, "cudaAvailable": None, "error": None}
     if check_torch:
