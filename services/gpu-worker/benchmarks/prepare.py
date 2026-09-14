@@ -32,12 +32,6 @@ def main(argv=None):
         return 0
     if platform.system() != 'Linux':
         parser.error('Installation/download is disabled outside Linux; use the default plan on Mac')
-    for name in ['conda', 'git', 'nvcc', 'nvidia-smi']:
-        if shutil.which(name) is None:
-            parser.error(f'{name} is required before setup')
-    toolkit = subprocess.run(['nvcc', '--version'], text=True, capture_output=True, check=True)
-    if 'release 12.1,' not in toolkit.stdout:
-        parser.error('This proposed environment requires CUDA Toolkit 12.1; do not silently substitute versions')
     root = args.prefix.resolve()
     root.mkdir(parents=True, exist_ok=True)
     # A new attempt never replaces a previous setup record or environment.
@@ -46,12 +40,33 @@ def main(argv=None):
     environment = root / 'env'
     report['startedAt'] = datetime.now(timezone.utc).isoformat()
     report['status'] = 'running'
-    (root / 'src').mkdir()
+    report['stage'] = 'prerequisites'
     report_path = root / 'setup-report.json'
     write_report(report_path, report)
-    env = {**os.environ, 'CUDA_HOME': str(Path(shutil.which('nvcc')).resolve().parents[1])}
     try:
         with (root / 'setup.log').open('w') as log:
+            report['executables'] = {}
+            for name in ['conda', 'git', 'nvcc', 'nvidia-smi']:
+                executable = shutil.which(name)
+                report['executables'][name] = executable
+                log.write(f'{name}: {executable or "unavailable"}\n')
+                if executable is None:
+                    raise ValueError(f'{name} is required before setup')
+            report['lastCommand'] = ['nvcc', '--version']
+            write_report(report_path, report)
+            log.write('\n$ ' + repr(report['lastCommand']) + '\n')
+            log.flush()
+            toolkit = subprocess.run(report['lastCommand'], text=True, capture_output=True, timeout=20, check=False)
+            report['toolkit'] = {'exitCode': toolkit.returncode, 'stdout': toolkit.stdout, 'stderr': toolkit.stderr}
+            log.write(toolkit.stdout + '\n' + toolkit.stderr + '\n')
+            if toolkit.returncode != 0:
+                raise RuntimeError(f'nvcc exited {toolkit.returncode}')
+            if 'release 12.1,' not in toolkit.stdout:
+                raise ValueError('This proposed environment requires CUDA Toolkit 12.1; do not silently substitute versions')
+            env = {**os.environ, 'CUDA_HOME': str(Path(report['executables']['nvcc']).resolve().parents[1])}
+            report['stage'] = 'installation'
+            (root / 'src').mkdir()
+
             def run(argv):
                 report['lastCommand'] = [str(x) for x in argv]
                 write_report(report_path, report)
@@ -103,6 +118,8 @@ def main(argv=None):
             report['weightsDownloaded'] = args.download_models
     except Exception as error:
         report.update(status='failed', error=f'{type(error).__name__}: {error}')
+        with (root / 'setup.log').open('a') as log:
+            log.write('\n' + report['error'] + '\n')
     finally:
         report['finishedAt'] = datetime.now(timezone.utc).isoformat()
         write_report(report_path, report)
