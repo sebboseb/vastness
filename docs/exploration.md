@@ -18,3 +18,5 @@ Python stdlib HTTP service (no install needed fake mode), port 4320 loopback by 
 
 ## Resolved grilling questions
 The brief chooses renderer, explicit geometry, local SQLite, fake-before-real worker, hardware separation and workflow. Remaining M0 choices are reversible and covered by autonomous authorization: two flat rooms, capsule approximation against authored GLB boxes, fixtures honestly labeled, single local player. Loss/restart and failed stream scenarios gate acceptance. Test seams are HTTP restart behavior, movement API and browser user flow. Real GPU access is a separate blocker, not an architectural choice.
+
+Pose writes may include `X-Pose-Time` (epoch milliseconds, browser performance.timeOrigin + performance.now). The Mac and browser share one clock. SQLite atomically persists the newest timestamp with the pose and ignores older arrivals, returning the accepted pose. Missing timestamps use server time. This prevents periodic/keepalive requests arriving out of order from replacing the exit pose. This is single-local-player ordering, not multi-device clock synchronization.

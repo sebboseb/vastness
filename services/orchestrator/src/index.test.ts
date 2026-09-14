@@ -140,3 +140,18 @@ test('missing initial fixture is visible and initialization can recover without 
   assert.equal(ready.status, 200);
   assert.equal(WorldSchema.parse(await ready.json()).chunks.length, 2);
 });
+
+test('late older pose saves cannot overwrite a newer exit pose, including after restart', async (t) => {
+  const { start } = await setup(t);
+  let app = await start();
+  await fetch(`${app.url}/api/world`);
+  const newer = {position:[0,1.65,-12],yaw:180,pitch:0};
+  const older = {position:[0,1.65,5],yaw:0,pitch:0};
+  const put = (pose:unknown,time:number) => fetch(`${app.url}/api/player`,{method:'PUT',headers:{'content-type':'application/json','x-pose-time':String(time)},body:JSON.stringify(pose)});
+  assert.equal((await put(newer,200)).status,200);
+  assert.deepEqual(await(await put(older,100)).json(),newer);
+  await app.close();
+  app=await start();
+  await put(older,150);
+  assert.deepEqual(WorldSchema.parse(await(await fetch(`${app.url}/api/world`)).json()).player,newer);
+});

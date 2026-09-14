@@ -26,6 +26,7 @@ export async function createOrchestrator(options: { dataDir?: string; artifactDi
   await mkdir(dataDir, { recursive: true });
   const database = new DatabaseSync(join(dataDir, 'world.sqlite'));
   database.exec('PRAGMA journal_mode = WAL; CREATE TABLE IF NOT EXISTS worlds (singleton INTEGER PRIMARY KEY CHECK (singleton = 1), document TEXT NOT NULL)');
+  database.exec('CREATE TABLE IF NOT EXISTS player_save_clock (singleton INTEGER PRIMARY KEY CHECK (singleton = 1), timestamp REAL NOT NULL); INSERT OR IGNORE INTO player_save_clock VALUES (1, 0)');
   let initialization: Promise<World> | undefined;
 
   async function importArtifact(chunkId: string, filename: 'scene.ply' | 'collider.glb'): Promise<Artifact> {
@@ -93,9 +94,18 @@ export async function createOrchestrator(options: { dataDir?: string; artifactDi
         const parsed = PlayerPoseSchema.safeParse(input);
         if (!parsed.success) { json(response, 400, { error: 'Player pose requires three finite coordinates, finite yaw, and pitch between -89 and 89' }); return; }
         const player = parsed.data;
+        const timestamp = request.headers['x-pose-time'] === undefined ? performance.timeOrigin + performance.now() : Number(request.headers['x-pose-time']);
+        if (!Number.isFinite(timestamp) || timestamp <= 0 || timestamp > Date.now() + 60_000) { json(response, 400, { error: 'Invalid pose timestamp' }); return; }
         const current = await world();
+        const clock = database.prepare('SELECT timestamp FROM player_save_clock WHERE singleton = 1').get()!;
+        if (timestamp <= Number(clock.timestamp)) { json(response, 200, current.player); return; }
         const updated = { ...current, player };
-        database.prepare('UPDATE worlds SET document = ? WHERE singleton = 1').run(JSON.stringify(updated));
+        database.exec('BEGIN IMMEDIATE');
+        try {
+          database.prepare('UPDATE worlds SET document = ? WHERE singleton = 1').run(JSON.stringify(updated));
+          database.prepare('UPDATE player_save_clock SET timestamp = ? WHERE singleton = 1').run(timestamp);
+          database.exec('COMMIT');
+        } catch (error) { database.exec('ROLLBACK'); throw error; }
         initialization = Promise.resolve(updated);
         json(response, 200, player);
       } else if (request.method === 'GET' && /^\/api\/chunks\/[^/]+$/.test(pathname)) {

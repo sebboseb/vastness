@@ -79,9 +79,9 @@ async function savePose(keepalive = false) {
   if (!keepalive) saveInFlight = true;
   element('save-state').textContent = 'SAVING';
   try {
-    const response = await fetch('/api/player',{method:'PUT',headers:{'Content-Type':'application/json'},body:snapshot,keepalive});
+    const response = await fetch('/api/player',{method:'PUT',headers:{'Content-Type':'application/json','X-Pose-Time':String(performance.timeOrigin + performance.now())},body:snapshot,keepalive});
     if (!response.ok) throw new Error(`Save failed (${response.status})`);
-    lastSaved = snapshot;
+    lastSaved = JSON.stringify(await response.json());
     element('save-state').textContent = 'SAVED LOCALLY';
   } catch {
     element('save-state').textContent = 'SAVE FAILED · RETRYING';
