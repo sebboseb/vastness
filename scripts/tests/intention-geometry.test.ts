@@ -137,3 +137,16 @@ test('previous real TRELLIS output keeps its actual surface and passes the same 
   assert.ok(blocked[2] > -23, 'Actual returned geometry still blocks direct traversal');
  }, visual, collider);
 });
+
+const intentEvidence = process.env.INTENTION_SOURCE_DIR ?? resolve('.runtime/intention-generation/evidence/trial1');
+test('first free-form GPU output above one million triangles remains bounded, simplified and walkable', {skip: !existsSync(resolve(intentEvidence, 'collider.glb'))}, async () => {
+ const visual = await readFile(resolve(intentEvidence, 'scene.ply')), collider = await readFile(resolve(intentEvidence, 'collider.glb'));
+ await withArtifacts(async ({run}) => {
+  const scene = await run();
+  assert.equal(scene.metrics.sourceTriangles, 1184866);
+  assert.equal(scene.sources.glb.sha256, 'b069c9fff83458b6ee1c95531920e47e392036bbb52ae589aaf2805281b86e6f');
+  assert.ok(scene.mesh.indices.length / 3 < scene.metrics.sourceTriangles / 10);
+  assert.ok(scene.validation.estimatedSurfaceSamples <= scene.validation.limits.surfaceSamples);
+  walkRoute(scene);
+ }, visual, collider);
+});
