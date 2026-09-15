@@ -97,14 +97,14 @@ test('rejects non-finite returned visuals and collider coordinates with matching
 });
 
 test('bounded parser rejects allocation claims, accessor overruns and invalid indices', async () => {
- for (const collider of [glb(triangle, {count: 1_000_001}), glb(triangle, {declaredViewBytes: 12}), glb({...triangle, indices: [0, 1, 200]})]) {
+ for (const collider of [glb(triangle, {count: 2_000_001}), glb(triangle, {declaredViewBytes: 12}), glb({...triangle, indices: [0, 1, 200]})]) {
   await withArtifacts(async ({run, outputDir}) => {await assert.rejects(run(), /accessor count|exceeds buffer view|Invalid source mesh/); assert.equal(existsSync(outputDir), false);}, ply(), collider);
  }
  await withArtifacts(async ({run}) => {walkRoute(await run());}, ply(), glb(triangle, {index16: true}));
 });
 
 test('rejects pathological triangle sampling before collision derivation', async () => {
- const expensive = {positions: [-2, 0, 0, 2, 0, 0, 0, 0.1, 0.1], indices: Array.from({length: 100}, () => [0, 1, 2]).flat()};
+ const expensive = {positions: [-2, 0, 0, 2, 0, 0, 0, 0.1, 0.1], indices: Array.from({length: 200}, () => [0, 1, 2]).flat()};
  await withArtifacts(async ({run, outputDir}) => {await assert.rejects(run(), /collision sampling budget/); assert.equal(existsSync(outputDir), false);}, ply(), glb(expensive));
 });
 
@@ -148,5 +148,43 @@ test('first free-form GPU output above one million triangles remains bounded, si
   assert.ok(scene.mesh.indices.length / 3 < scene.metrics.sourceTriangles / 10);
   assert.ok(scene.validation.estimatedSurfaceSamples <= scene.validation.limits.surfaceSamples);
   walkRoute(scene);
+ }, visual, collider);
+});
+
+const crystalEvidence = process.env.INTENTION_CRYSTAL_SOURCE_DIR ?? resolve('.runtime/intention-generation/evidence/comparison3');
+const crystalObjects = resolve('.runtime/intention-generation/artifacts/objects');
+const crystalHashes = {ply: 'f5dbfa5c2157da4264d68b064f5ff038cb0bc9a740802cd508a5897ea96fc89b', glb: '925c07cec101e76d91e0781fdf7a9da4051792ec4a155c16eb155aa2825b3382'};
+const crystalFiles = existsSync(resolve(crystalEvidence, 'scene.ply')) && existsSync(resolve(crystalEvidence, 'collider.glb'))
+ ? {ply: resolve(crystalEvidence, 'scene.ply'), glb: resolve(crystalEvidence, 'collider.glb')}
+ : {ply: resolve(crystalObjects, crystalHashes.ply, 'scene.ply'), glb: resolve(crystalObjects, crystalHashes.glb, 'collider.glb')};
+test('actual crystal export above three million triangles preserves collision and a walkable bounded circuit', {skip: !existsSync(crystalFiles.ply) || !existsSync(crystalFiles.glb)}, async t => {
+ const visual = await readFile(crystalFiles.ply), collider = await readFile(crystalFiles.glb);
+ await withArtifacts(async ({run}) => {
+  const started = performance.now(), scene = await run();
+  assert.equal(scene.sources.ply.sha256, crystalHashes.ply); assert.equal(scene.sources.glb.sha256, crystalHashes.glb);
+  assert.equal(scene.sources.ply.bytes, 147232929); assert.equal(scene.sources.glb.bytes, 54111208);
+  assert.equal(scene.validation.visual.vertices, 2165184);
+  assert.equal(scene.metrics.sourceVertices, 1503500); assert.equal(scene.metrics.sourceTriangles, 3005700);
+  assert.ok(scene.metrics.meshTriangles < 150000 && scene.metrics.meshTriangles < scene.metrics.sourceTriangles / 20, 'Fixed abstraction reduces the measured dense export by at least 20x within a 150k-triangle regression budget');
+  assert.ok(scene.metrics.colliderBoxes > 10 && scene.metrics.colliderBoxes < 10000);
+  assert.ok(scene.metrics.surfaceSamples <= scene.validation.limits.surfaceSamples);
+  assert.equal(scene.metrics.surfaceSamples, scene.validation.estimatedSurfaceSamples);
+  assert.ok(scene.validation.generatedBoxes.length === scene.boxes.length);
+  walkRoute(scene);
+  // A deterministic set of original triangle centroids must remain inside the
+  // generated proxy, independent of the authored floor and room boundary boxes.
+  const jsonLength = collider.readUInt32LE(12), gltf = JSON.parse(collider.toString('utf8', 20, 20 + jsonLength));
+  const binaryStart = 28 + jsonLength, primitive = gltf.meshes[0].primitives[0];
+  const indices = gltf.accessors[primitive.indices], positions = gltf.accessors[primitive.attributes.POSITION];
+  const indexStart = binaryStart + (gltf.bufferViews[indices.bufferView].byteOffset ?? 0) + (indices.byteOffset ?? 0);
+  const positionStart = binaryStart + (gltf.bufferViews[positions.bufferView].byteOffset ?? 0) + (positions.byteOffset ?? 0);
+  for (let triangle = 0; triangle < scene.metrics.sourceTriangles; triangle += 15427) {
+   const ids = [0, 1, 2].map(i => collider.readUInt32LE(indexStart + (triangle * 3 + i) * 4));
+   const point = [0, 1, 2].map(axis => ids.reduce((sum, id) => sum + collider.readFloatLE(positionStart + (id * 3 + axis) * 4), 0) / 3 * scene.transform.scale + scene.transform.position[axis] + scene.validation.placement[axis]);
+   assert.ok(contains(scene.validation.generatedBoxes, point), `Missing actual crystal triangle centroid ${triangle}`);
+  }
+  const blocked = movePlayer([0, 1.65, -17], [0, 0, -8], scene.validation.generatedBoxes);
+  assert.ok(blocked[2] > -24, 'Actual crystal shell blocks direct traversal');
+  t.diagnostic(JSON.stringify({preparationAndChecksMs: Math.round(performance.now() - started), sourceBounds: scene.validation.sourceBounds, visualBounds: scene.validation.visual.pointBounds, metrics: scene.metrics}));
  }, visual, collider);
 });

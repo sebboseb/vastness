@@ -7,7 +7,9 @@ import {deriveScene, verifySource, type Mesh, type PreparedScene} from './prepar
 
 // Deliberately fixed across intentions: semantic scale is not a claim of inferred metres.
 const SCALE = 6;
-const LIMITS = {plyBytes: 128 * 1024 * 1024, glbBytes: 64 * 1024 * 1024, vertices: 1_000_000, triangles: 2_000_000, splats: 2_000_000, surfaceSamples: 6_000_000, modelCoordinate: 2};
+// The measured crystal export has 2.17M splats and 3.01M triangles. These remain
+// hard per-artifact/workload caps; the coordinate, GLB-byte and route limits stay fixed.
+const LIMITS = {plyBytes: 256 * 1024 * 1024, glbBytes: 64 * 1024 * 1024, vertices: 2_000_000, triangles: 4_000_000, splats: 4_000_000, surfaceSamples: 12_000_000, modelCoordinate: 2};
 const PLACEMENT: Vec3 = [0, 0, -21];
 const ENTRY: Vec3 = [0, 1.65, -13];
 const APPROACH: Vec3 = [0, 1.65, -11.5];
