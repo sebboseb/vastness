@@ -1,6 +1,6 @@
 # Isolated intention generation GPU setup — 2026-09-15
 
-The new adapter accepts the semantic envelope in `docs/specs/intention-generated-destination.md` through the existing worker command interface. It compiles arbitrary concept and axis fields into one image prompt, runs SDXL-Turbo, saves both RGB and a deterministic white-background color matte RGBA, exits that process, then runs the existing pinned TRELLIS model in a second process. The old fixed-image runner and worker stay unchanged. This generates an asset/diorama; it does not establish arbitrary walkable-room generation.
+The new adapter accepts the semantic envelope in `docs/specs/intention-generated-destination.md` through the existing worker command interface. It compiles arbitrary concept and axis fields into one image prompt, runs SDXL-Turbo, saves RGB plus explicit RGBA conditioning (white color matte or preserved full-frame image with a transparent border), exits that process, then runs the existing pinned TRELLIS model in a second process. The old fixed-image runner and worker stay unchanged. This generates an asset/diorama; it does not establish arbitrary walkable-room generation.
 
 ## Pins and budget
 
@@ -91,3 +91,24 @@ The first browser garden attempt `intent-fb4bb474-3e58-4172-99e1-d8876313a33c` g
 Final `sdxl-turbo-trellis-intention-v3` uniformly applies `white-matte-or-full-frame-v1`: use the existing color matte when it isolates background, otherwise retain every original RGB pixel for an unsegmented full-frame reference when matte foreground fraction is ≥0.98. A 16-pixel transparent border on all sides ensures TRELLIS recognizes explicitly supplied alpha and never downloads/runs an implicit rembg model. Reports identify `conditioningMode`, source matte fraction, padded size and the fact that a retained nonwhite background may become generated geometry. ≤0.01 foreground still fails; RGB, RGBA and image metrics are now written before that guard so diagnostic evidence survives. There is no phrase-specific branch or replacement asset.
 
 All three original sentences must run again with seed42 through this one final committed pipeline. Earlier attempts remain evidence of the two failed preprocessing policies. Six focused CPU tests now include exact RGB preservation and explicit transparent-border checks using Pillow in the prepared environment; the Mac skips the two Pillow-dependent cases if Pillow is unavailable.
+
+
+## Final three-input GPU comparison
+
+All three browser-submitted inputs completed genuine CUDA SDXL → TRELLIS generation with the **same code `04986defd1de38609cfb69c8d6c78ae4704e5670`**, pinned model/dependency identities above, and seed42. The worker remained serial throughout. No fixtures or phrase-specific asset selection were used. These are runner wall durations, not Mac/browser end-to-end latency.
+
+| Input | Worker job | Runner seconds | Prompt tokens | Conditioning mode | Gaussians | Raw mesh triangles | Sampled device peak MiB |
+| --- | --- | ---: | ---: | --- | ---: | ---: | ---: |
+| 1 | `intent-627a51e4-fb55-44a6-9e35-b795fba1b82b` | 221.7049 | 55/77 | white-matte | 643,456 | 1,185,258 | 16,629 |
+| 2 | `intent-4b29932c-114d-4673-89f3-fa15e3f895a4` | 75.6528 | 48/77 | unsegmented-full-frame | 692,736 | 832,224 | 17,029 |
+| 3 | `intent-096c4d7e-3213-4bd4-af72-40ca7630a010` | 119.4169 | 50/77 | unsegmented-full-frame | 2,165,184 | 3,005,700 | 24,233 |
+
+Input1 asks for an enormous, quiet pale arch over still water; input2 a dense garden of glowing mushrooms and twisted roots; input3 a compact, ominous enclosed red-crystal chamber. All image prompts fit within the 77-token limit. The reference images are visibly different and correspond to those concepts; geometry/rendered semantic fidelity and navigation are assessed separately in the parent experiment. Full-frame conditioning explicitly preserves background that may become geometry.
+
+Comparison1 followed a cold WSL startup: image child wall33.27s and TRELLIS child wall98.80s (49.19s model load,10.38s inference,15.37s export/validation), with89.63s remaining parent/preflight/hash overhead. A post-completion check found31GiB guest RAM and zero cumulative `pswpin`/`pswpout` since boot, so the slow run was not swap thrashing. Warm later runs are not an estimate of fresh-machine latency, and these different inputs are not a controlled latency distribution.
+
+Comparison3 exercised the machine's capacity: TRELLIS peak allocated17,974,806,016 bytes, reserved25,358,761,984 bytes; whole-device sampled peak24,233 of24,576MiB. No OOM occurred, but343MiB sampled headroom is small and brief peaks can be missed. It produced147,232,929-byte PLY and54,111,208-byte GLB, exceeding the Mac prototype's initial import bound. That downstream validation failure was retained; artifact preparation is being retried against these identical bytes, without another GPU job or weakening the worker's finite/nonempty export checks.
+
+Every report, source RGB/RGBA, prompt, log, memory sample and both artifacts was collected to Mac `.runtime/intention-generation/evidence/comparison1`, `comparison2`, and `comparison3`. The collector verified HTTP download sizes/SHA-256 against both worker manifests and generation reports. Original worker output directories persist under the matching job IDs. The parent research report selects small evidence files and records final browser acceptance; this setup note makes no claim that the model generated a guaranteed navigable room.
+
+Final validation: `npm run check` passed typecheck,21 tests and production build on the worker branch. Python discovery passed41 tests with4 Mac skips (two GPU regressions and two Pillow cases); all6 focused contract/Pillow tests passed inside the prepared worker environment. Service `/version` at Mac loopback14321 confirmed the deployed04986de commit. Independent Mac SSH worker/tunnel processes and logs/PIDs under `.runtime/intention-generation` keep the service available after tool sessions finish. All product deployment remains from committed Git; the final documentation/collector commits need not change the running inference release.
