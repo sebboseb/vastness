@@ -224,10 +224,20 @@ element('return').addEventListener('click', () => {
 });
 element('stop').addEventListener('click', stop);
 element('reset').addEventListener('click', () => {stop(); yaw = 0; pitch = 0;});
-element('retry').addEventListener('click', () => {
+element('retry').addEventListener('click', async () => {
   element('retry').hidden = true; renderFailed = false;
-  if (world) {window.clearTimeout(pollTimer); void poll(world.id, epoch);}
-  else if (location.hash) void selectWorld(decodeURIComponent(location.hash.slice(1)));
+  const selectedEpoch = epoch;
+  try {
+    if (world) {
+      const id = world.id; window.clearTimeout(pollTimer);
+      if (world.status === 'failed' && world.workerJob?.status === 'succeeded') {
+        const retried = await json<WorldRecord>(`/api/intent/worlds/${encodeURIComponent(id)}/retry-validation`, {method: 'POST'});
+        if (selectedEpoch !== epoch) return;
+        world = retried;
+      }
+      void poll(id, selectedEpoch);
+    } else if (location.hash) void selectWorld(decodeURIComponent(location.hash.slice(1)));
+  } catch (error) {if (selectedEpoch === epoch) report(error);}
   void refreshHistory().catch(report); void persistVisits();
 });
 function editable(target: EventTarget | null) {return target instanceof HTMLElement && ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName);}

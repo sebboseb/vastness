@@ -70,3 +70,36 @@ test('visit identities preserve a fresh crossing after pose reset and deduplicat
   assert.deepEqual(restored.events.map((event:{type:string;eventId:string})=>[event.type,event.eventId]),[['crossed',firstId],['crossed',secondId],['returned',returnedId]]);
  }finally{await service.close();await rm(dir,{recursive:true,force:true});}
 });
+
+test('validation retry reuses the successful job and accepted hashes without worker contact or regeneration',async()=>{
+ const dir=await mkdtemp(join(tmpdir(),'vastness-intent-validation-retry-'));let submits=0,imports=0,preparations=0,id='',workerOffline=false;
+ const artifacts:Artifact[]=[{format:'ply',sha256:'c'.repeat(64),bytes:10,url:'/artifacts/'+ 'c'.repeat(64)+'/scene.ply',backend:'command-v1'},{format:'glb',sha256:'d'.repeat(64),bytes:10,url:'/artifacts/'+ 'd'.repeat(64)+'/collider.glb',backend:'command-v1'}];
+ const worker={async submit(request:{id:string}){submits++;id=request.id;return {id,status:'running'} as WorkerJob;},async status(){assert.equal(workerOffline,false,'Accepted artifacts must not require the worker on retry');return {id,status:'succeeded'} as WorkerJob;},async importArtifacts(){imports++;return artifacts;}};
+ let releaseRetry!:()=>void;const retryGate=new Promise<void>(resolve=>releaseRetry=resolve);
+ const prepare:typeof prepareIntentionArtifact=async args=>{
+  preparations++;assert.equal(args.jobId,id);assert.deepEqual(args.artifacts.map(artifact=>artifact.sha256),artifacts.map(artifact=>artifact.sha256));
+  if(preparations===1)throw new Error('Triangle limit rejected valid generated mesh');
+  await retryGate;await mkdir(args.outputDir,{recursive:true});await writeFile(join(args.outputDir,'scene.json'),JSON.stringify({jobId:args.jobId,hashes:args.artifacts.map(artifact=>artifact.sha256)}));
+  return {} as Awaited<ReturnType<typeof prepareIntentionArtifact>>;
+ };
+ let service=await createIntentionService({dataDir:dir,worker,prepare,pollMs:5});
+ async function listen(){await new Promise<void>(resolve=>service.server.listen(0,'127.0.0.1',resolve));const address=service.server.address();assert.ok(address&&typeof address==='object');return `http://127.0.0.1:${address.port}`;}
+ let base=await listen();
+ const read=()=>fetch(base+`/api/intent/worlds/${id}`).then(response=>response.json());
+ const retry=()=>fetch(base+`/api/intent/worlds/${id}/retry-validation`,{method:'POST'});
+ try{
+  await fetch(base+'/api/intent/worlds',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:'An unfamiliar crystalline garden',source:'text'})});
+  let failed;for(let n=0;n<100;n++){failed=await read();if(failed.status==='failed')break;await delay(5);}
+  assert.equal(failed.status,'failed');assert.equal(failed.workerJob.status,'succeeded');assert.match(failed.error,/Triangle limit/);
+  // A restart must retain enough accepted provenance to repeat only Mac preparation.
+  await service.close();workerOffline=true;service=await createIntentionService({dataDir:dir,worker,prepare,pollMs:5});base=await listen();
+  const responses=await Promise.all([retry(),retry()]);assert.deepEqual(responses.map(response=>response.status).sort(),[202,409]);
+  const processing=await read();assert.equal(processing.status,'processing');assert.equal(processing.error,undefined);
+  assert.equal((await fetch(base+`/api/intent/worlds/${id}/scene`)).status,409);
+  releaseRetry();let ready;for(let n=0;n<100;n++){ready=await read();if(ready.status==='ready')break;await delay(5);}
+  assert.equal(ready.status,'ready');assert.equal(ready.jobId,failed.jobId);assert.deepEqual(ready.request,failed.request);assert.deepEqual(ready.artifacts,failed.artifacts);
+  assert.equal(ready.events.filter((event:{type:string})=>event.type==='validation-retried').length,1);
+  assert.deepEqual([submits,imports,preparations],[1,1,2]);assert.equal((await retry()).status,409);
+  assert.deepEqual(await (await fetch(base+ready.sceneUrl)).json(),{jobId:id,hashes:artifacts.map(artifact=>artifact.sha256)});
+ }finally{releaseRetry();await service.close();await rm(dir,{recursive:true,force:true});}
+});

@@ -22,9 +22,9 @@ export async function createIntentionService(options:{dataDir?:string;workerUrl?
  async function save(world:WorldRecord){const snapshot=JSON.stringify(world,null,2)+'\n';const operation=(writes.get(world.id)??Promise.resolve()).then(async()=>{const temporary=join(worldDir,`.${world.id}-${randomUUID()}.tmp`);await writeFile(temporary,snapshot);await rename(temporary,join(worldDir,world.id+'.json'));});writes.set(world.id,operation);await operation;}
  async function run(world:WorldRecord){try{
   if(world.status==='requested'){try{world.workerJob=await worker.submit(world.request);}catch(error){if(!(error instanceof WorkerError)||error.status!==409)throw error;world.workerJob=await worker.status(world.jobId);world.events.push({type:'gpu-job-reconciled-after-restart',at:now()});}world.status='generating';world.events.push({type:'gpu-job-submitted',at:now()});await save(world);}
-  while(!closed){const job=await worker.status(world.jobId);world.workerJob=job;delete world.error;
+  while(!closed){const job=world.status==='processing'&&world.artifacts&&world.workerJob?.status==='succeeded'?world.workerJob:await worker.status(world.jobId);world.workerJob=job;delete world.error;
    if(job.status==='failed'||job.status==='cancelled')throw new Error(job.error??`GPU job ${job.status}`);
-   if(job.status==='succeeded'){world.status='processing';world.events.push({type:'artifacts-processing',at:now()});await save(world);world.artifacts=(await worker.importArtifacts(world.jobId,objectDir)).map(artifact=>({...artifact,url:'/api/intent'+artifact.url}));await prepare({jobId:world.jobId,artifacts:world.artifacts,objectDir,outputDir:join(worldDir,world.id)});world.sceneUrl=`/api/intent/worlds/${world.id}/scene`;world.status='ready';world.events.push({type:'destination-validated',at:now()});await save(world);return;}
+   if(job.status==='succeeded'){world.status='processing';world.events.push({type:'artifacts-processing',at:now()});await save(world);if(!world.artifacts){world.artifacts=(await worker.importArtifacts(world.jobId,objectDir)).map(artifact=>({...artifact,url:'/api/intent'+artifact.url}));await save(world);}await prepare({jobId:world.jobId,artifacts:world.artifacts,objectDir,outputDir:join(worldDir,world.id)});world.sceneUrl=`/api/intent/worlds/${world.id}/scene`;world.status='ready';world.events.push({type:'destination-validated',at:now()});await save(world);return;}
    await save(world);await delay(options.pollMs??1500,undefined,{signal:abort.signal});
   }
  }catch(error){if(closed)return;const message=String(error);if((error instanceof WorkerError&&error.status===502&&/unreachable|timed out|download failed|returned HTTP 50[234]/i.test(message))||['ECONNRESET','EPIPE','ETIMEDOUT'].includes((error as NodeJS.ErrnoException).code??'')){if(world.error!==message)world.events.push({type:'worker-connection-retry',at:now()});world.error=message;await save(world);return;}world.status='failed';world.error=String(error);world.events.push({type:'failed',at:now()});await save(world);}}
@@ -38,9 +38,18 @@ export async function createIntentionService(options:{dataDir?:string;workerUrl?
   if(path==='/api/intent/worlds'&&request.method==='POST'){
    const input=InputSchema.parse(await body(request));const derived=deriveIntent(input);const id='intent-'+randomUUID();const world:WorldRecord={id,createdAt:now(),rawIntent:input,...derived,status:'requested',jobId:id,request:{id,prompt:JSON.stringify(derived.semantics),seed:42},events:[{type:'intent-recorded',at:now()},{type:'constraints-derived',at:now()}]};worlds.set(id,world);await save(world);json(response,202,world);launch(world);return;
   }
-  const match=/^\/api\/intent\/worlds\/([a-zA-Z0-9_-]+)(?:\/(scene|visit))?$/.exec(path);
+  const match=/^\/api\/intent\/worlds\/([a-zA-Z0-9_-]+)(?:\/(scene|visit|retry-validation))?$/.exec(path);
   if(match){const world=worlds.get(match[1]);if(!world){json(response,404,{error:'Unknown prototype world'});return;}
    if(!match[2]&&request.method==='GET'){json(response,200,world);return;}
+   if(match[2]==='retry-validation'&&request.method==='POST'){
+    if(world.status!=='failed'||world.workerJob?.status!=='succeeded'){json(response,409,{error:'Validation retry requires a failed destination with a successful GPU job'});return;}
+    // The failed state becomes visible before its final write and task cleanup finish.
+    // Wait before changing it, otherwise the old runner can consume or hide this retry.
+    await tasks.get(world.id);
+    if(world.status!=='failed'||world.workerJob?.status!=='succeeded'||tasks.has(world.id)){json(response,409,{error:'Destination validation is already active'});return;}
+    world.status='processing';delete world.error;world.events.push({type:'validation-retried',at:now()});
+    await save(world);json(response,202,world);launch(world);return;
+   }
    if(match[2]==='scene'&&request.method==='GET'){if(world.status!=='ready'){json(response,409,{error:'Destination not validated'});return;}response.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-store'});response.end(await readFile(join(worldDir,world.id,'scene.json')));return;}
    if(match[2]==='visit'&&request.method==='POST'){
     const visit=visitSchema.parse(await body(request));

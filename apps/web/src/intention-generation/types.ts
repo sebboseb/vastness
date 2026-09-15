@@ -1,9 +1,10 @@
-import type {Artifact, CollisionBox, Vec3} from '../../../../packages/protocol/src/index.ts';
+import type {Artifact, CollisionBox, Vec3, WorkerJob} from '../../../../packages/protocol/src/index.ts';
 
 export type WorldRecord = {
   id: string; createdAt: string; rawIntent: {text: string; source: string};
   semantics: unknown; status: 'requested' | 'generating' | 'processing' | 'ready' | 'failed';
   jobId: string; request: {id: string; prompt: string; seed: number};
+  workerJob?: WorkerJob;
   events: {type: string; at: string; position?: Vec3}[];
   artifacts?: Artifact[]; sceneUrl?: string; error?: string;
 };
