@@ -1,0 +1,179 @@
+{
+  "world": {
+    "id": "intent-e52a8219-d5bb-4f9f-8568-5f68d7d0e6d7",
+    "createdAt": "2026-09-15T20:30:09.832Z",
+    "rawIntent": {
+      "text": "I want to find somewhere enormous and quiet: a single pale stone arch above a still lake, with open sky.",
+      "source": "text"
+    },
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "somewhere enormous and quiet: a single pale stone arch above a still lake, with open sky.",
+      "axes": {
+        "scale": "vast",
+        "density": "sparse",
+        "mood": "quiet",
+        "openness": "open"
+      },
+      "representation": "abstract-solid"
+    },
+    "derivation": {
+      "compiler": "lexical-semantic-v1",
+      "cues": {
+        "vast": [
+          "enormous"
+        ],
+        "intimate": [],
+        "sparse": [
+          "quiet",
+          "single"
+        ],
+        "dense": [],
+        "open": [
+          "open",
+          "sky"
+        ],
+        "enclosed": [],
+        "quiet": [
+          "quiet",
+          "still"
+        ],
+        "ominous": [],
+        "luminous": [],
+        "joyful": []
+      },
+      "limitations": [
+        "Rule-based axis extraction; no general language reasoning",
+        "Negation handling is local, not a complete semantic parser",
+        "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+        "Concept is bounded to 600 characters; original input is retained separately"
+      ]
+    },
+    "status": "ready",
+    "jobId": "intent-e52a8219-d5bb-4f9f-8568-5f68d7d0e6d7",
+    "request": {
+      "id": "intent-e52a8219-d5bb-4f9f-8568-5f68d7d0e6d7",
+      "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"somewhere enormous and quiet: a single pale stone arch above a still lake, with open sky.\",\"axes\":{\"scale\":\"vast\",\"density\":\"sparse\",\"mood\":\"quiet\",\"openness\":\"open\"},\"representation\":\"abstract-solid\"}",
+      "seed": 42
+    },
+    "events": [
+      {
+        "type": "intent-recorded",
+        "at": "2026-09-15T20:30:09.832Z"
+      },
+      {
+        "type": "constraints-derived",
+        "at": "2026-09-15T20:30:09.832Z"
+      },
+      {
+        "type": "gpu-job-submitted",
+        "at": "2026-09-15T20:30:09.977Z"
+      },
+      {
+        "type": "artifacts-processing",
+        "at": "2026-09-15T20:31:22.249Z"
+      },
+      {
+        "type": "failed",
+        "at": "2026-09-15T20:31:45.166Z"
+      },
+      {
+        "type": "validation-retried",
+        "at": "2026-09-15T20:36:40.319Z"
+      },
+      {
+        "type": "artifacts-processing",
+        "at": "2026-09-15T20:36:40.320Z"
+      },
+      {
+        "type": "destination-validated",
+        "at": "2026-09-15T20:36:42.633Z"
+      },
+      {
+        "type": "crossed",
+        "at": "2026-09-15T20:37:02.406Z",
+        "position": [
+          0,
+          1.65,
+          -12.007199999999996
+        ],
+        "eventId": "a9244cdc-1edd-4514-9377-1fb872d0c710"
+      },
+      {
+        "type": "returned",
+        "at": "2026-09-15T20:38:10.317Z",
+        "position": [
+          0,
+          1.65,
+          -11.983520000000038
+        ],
+        "eventId": "fd1f6b4a-f9e5-4eac-9b25-f042d3bf5dd3"
+      }
+    ],
+    "workerJob": {
+      "id": "intent-e52a8219-d5bb-4f9f-8568-5f68d7d0e6d7",
+      "status": "succeeded",
+      "progress": 1,
+      "logs": [
+        "Queued command-v1",
+        "Running command-v1",
+        "{\"status\": \"succeeded\", \"report\": \"/home/vastness/.local/share/vastness-intention-worker/shared/data/artifacts/.intent-e52a8219-d5bb-4f9f-8568-5f68d7d0e6d7.tmp/generation-report.json\", \"error\": null}\n",
+        "Visual and collision artifacts are ready"
+      ],
+      "backend": "command-v1",
+      "error": null
+    },
+    "artifacts": [
+      {
+        "url": "/api/intent/artifacts/42007499f4c34aef101751810398ce96dc20bd2337a47eaac81cc4ef8b7a5742/scene.ply",
+        "sha256": "42007499f4c34aef101751810398ce96dc20bd2337a47eaac81cc4ef8b7a5742",
+        "bytes": 43755424,
+        "format": "ply",
+        "backend": "command-v1"
+      },
+      {
+        "url": "/api/intent/artifacts/b069c9fff83458b6ee1c95531920e47e392036bbb52ae589aaf2805281b86e6f/collider.glb",
+        "sha256": "b069c9fff83458b6ee1c95531920e47e392036bbb52ae589aaf2805281b86e6f",
+        "bytes": 21332980,
+        "format": "glb",
+        "backend": "command-v1"
+      }
+    ],
+    "sceneUrl": "/api/intent/worlds/intent-e52a8219-d5bb-4f9f-8568-5f68d7d0e6d7/scene"
+  },
+  "telemetry": {
+    "position": [
+      0,
+      1.65,
+      5
+    ],
+    "yaw": 0,
+    "pitch": 0,
+    "overlaps": false,
+    "worldId": "intent-e52a8219-d5bb-4f9f-8568-5f68d7d0e6d7",
+    "status": "ready",
+    "renderReady": true,
+    "gateOpen": true,
+    "loadingScene": false,
+    "renderFailed": false,
+    "travelMetres": 0,
+    "crossingCount": 0,
+    "returnCount": 0,
+    "pendingVisits": 0,
+    "savingVisits": false,
+    "walking": null,
+    "pathRemaining": 0,
+    "frameCount": 4446,
+    "representation": "solid",
+    "generatedMeshes": 1,
+    "splatAssets": 0,
+    "generatedTriangles": 40889,
+    "destinationEntities": 815,
+    "errorCount": 0,
+    "artifactUrls": [
+      "/api/intent/artifacts/42007499f4c34aef101751810398ce96dc20bd2337a47eaac81cc4ef8b7a5742/scene.ply",
+      "/api/intent/artifacts/b069c9fff83458b6ee1c95531920e47e392036bbb52ae589aaf2805281b86e6f/collider.glb"
+    ]
+  }
+}

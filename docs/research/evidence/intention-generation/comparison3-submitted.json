@@ -1,0 +1,114 @@
+{
+  "world": {
+    "id": "intent-096c4d7e-3213-4bd4-af72-40ca7630a010",
+    "createdAt": "2026-09-15T20:48:15.468Z",
+    "rawIntent": {
+      "text": "I want a compact, enclosed chamber made of sharp red crystal, dark and ominous.",
+      "source": "text"
+    },
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "a compact, enclosed chamber made of sharp red crystal, dark and ominous.",
+      "axes": {
+        "scale": "intimate",
+        "density": "balanced",
+        "mood": "ominous",
+        "openness": "enclosed"
+      },
+      "representation": "abstract-solid"
+    },
+    "derivation": {
+      "compiler": "lexical-semantic-v1",
+      "cues": {
+        "vast": [],
+        "intimate": [
+          "compact"
+        ],
+        "sparse": [],
+        "dense": [],
+        "open": [],
+        "enclosed": [
+          "enclosed",
+          "chamber"
+        ],
+        "quiet": [],
+        "ominous": [
+          "dark",
+          "ominous"
+        ],
+        "luminous": [],
+        "joyful": []
+      },
+      "limitations": [
+        "Rule-based axis extraction; no general language reasoning",
+        "Negation handling is local, not a complete semantic parser",
+        "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+        "Concept is bounded to 600 characters; original input is retained separately"
+      ]
+    },
+    "status": "generating",
+    "jobId": "intent-096c4d7e-3213-4bd4-af72-40ca7630a010",
+    "request": {
+      "id": "intent-096c4d7e-3213-4bd4-af72-40ca7630a010",
+      "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"a compact, enclosed chamber made of sharp red crystal, dark and ominous.\",\"axes\":{\"scale\":\"intimate\",\"density\":\"balanced\",\"mood\":\"ominous\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+      "seed": 42
+    },
+    "events": [
+      {
+        "type": "intent-recorded",
+        "at": "2026-09-15T20:48:15.468Z"
+      },
+      {
+        "type": "constraints-derived",
+        "at": "2026-09-15T20:48:15.468Z"
+      },
+      {
+        "type": "gpu-job-submitted",
+        "at": "2026-09-15T20:48:15.572Z"
+      }
+    ],
+    "workerJob": {
+      "id": "intent-096c4d7e-3213-4bd4-af72-40ca7630a010",
+      "status": "running",
+      "progress": 0,
+      "logs": [
+        "Queued command-v1",
+        "Running command-v1"
+      ],
+      "backend": "command-v1",
+      "error": null
+    }
+  },
+  "telemetry": {
+    "position": [
+      0,
+      1.65,
+      -11.5
+    ],
+    "yaw": 0,
+    "pitch": 0,
+    "overlaps": false,
+    "worldId": "intent-096c4d7e-3213-4bd4-af72-40ca7630a010",
+    "status": "generating",
+    "renderReady": false,
+    "gateOpen": false,
+    "loadingScene": false,
+    "renderFailed": false,
+    "travelMetres": 0,
+    "crossingCount": 0,
+    "returnCount": 0,
+    "pendingVisits": 0,
+    "savingVisits": false,
+    "walking": null,
+    "pathRemaining": 0,
+    "frameCount": 70214,
+    "representation": "solid",
+    "generatedMeshes": 0,
+    "splatAssets": 0,
+    "generatedTriangles": 0,
+    "destinationEntities": 1,
+    "errorCount": 0,
+    "artifactUrls": []
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "intent-627a51e4-fb55-44a6-9e35-b795fba1b82b": {
+    "worldRecordUnchanged": true,
+    "status": "ready",
+    "submissionCount": 1,
+    "visits": [
+      "crossed",
+      "returned"
+    ],
+    "artifacts": [
+      {
+        "url": "/api/intent/artifacts/1ef2021d616b99aacbf3ed873a0d46d9a5ab5596e6d931c1bedd746f67b1cc75/scene.ply",
+        "sha256": "1ef2021d616b99aacbf3ed873a0d46d9a5ab5596e6d931c1bedd746f67b1cc75",
+        "bytes": 43755424,
+        "format": "ply",
+        "backend": "command-v1"
+      },
+      {
+        "url": "/api/intent/artifacts/b12c3695a3c8297e0b274302a9ddc46e19bfd874e08845c31dfecb1fe6b7f320/collider.glb",
+        "sha256": "b12c3695a3c8297e0b274302a9ddc46e19bfd874e08845c31dfecb1fe6b7f320",
+        "bytes": 21340240,
+        "format": "glb",
+        "backend": "command-v1"
+      }
+    ]
+  },
+  "intent-4b29932c-114d-4673-89f3-fa15e3f895a4": {
+    "worldRecordUnchanged": true,
+    "status": "ready",
+    "submissionCount": 1,
+    "visits": [
+      "crossed",
+      "returned"
+    ],
+    "artifacts": [
+      {
+        "url": "/api/intent/artifacts/cb6315bb4ae0469d8369771fccadcda0b0c1f5c3bf165690a255832d655813b8/scene.ply",
+        "sha256": "cb6315bb4ae0469d8369771fccadcda0b0c1f5c3bf165690a255832d655813b8",
+        "bytes": 47106464,
+        "format": "ply",
+        "backend": "command-v1"
+      },
+      {
+        "url": "/api/intent/artifacts/c1467ac42184992988ae16f6ecf1cd44629b4639fc69702f499f98125746ee63/collider.glb",
+        "sha256": "c1467ac42184992988ae16f6ecf1cd44629b4639fc69702f499f98125746ee63",
+        "bytes": 14978800,
+        "format": "glb",
+        "backend": "command-v1"
+      }
+    ]
+  },
+  "intent-096c4d7e-3213-4bd4-af72-40ca7630a010": {
+    "worldRecordUnchanged": true,
+    "status": "ready",
+    "submissionCount": 1,
+    "visits": [
+      "crossed",
+      "returned"
+    ],
+    "artifacts": [
+      {
+        "url": "/api/intent/artifacts/f5dbfa5c2157da4264d68b064f5ff038cb0bc9a740802cd508a5897ea96fc89b/scene.ply",
+        "sha256": "f5dbfa5c2157da4264d68b064f5ff038cb0bc9a740802cd508a5897ea96fc89b",
+        "bytes": 147232929,
+        "format": "ply",
+        "backend": "command-v1"
+      },
+      {
+        "url": "/api/intent/artifacts/925c07cec101e76d91e0781fdf7a9da4051792ec4a155c16eb155aa2825b3382/collider.glb",
+        "sha256": "925c07cec101e76d91e0781fdf7a9da4051792ec4a155c16eb155aa2825b3382",
+        "bytes": 54111208,
+        "format": "glb",
+        "backend": "command-v1"
+      }
+    ]
+  }
+}

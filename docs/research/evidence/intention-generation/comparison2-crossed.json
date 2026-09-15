@@ -1,0 +1,153 @@
+{
+  "world": {
+    "id": "intent-4b29932c-114d-4673-89f3-fa15e3f895a4",
+    "createdAt": "2026-09-15T20:46:45.528Z",
+    "rawIntent": {
+      "text": "Let me enter a dense, tangled garden of giant glowing mushrooms and twisted roots.",
+      "source": "text"
+    },
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "a dense, tangled garden of giant glowing mushrooms and twisted roots.",
+      "axes": {
+        "scale": "vast",
+        "density": "dense",
+        "mood": "luminous",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "derivation": {
+      "compiler": "lexical-semantic-v1",
+      "cues": {
+        "vast": [
+          "giant"
+        ],
+        "intimate": [],
+        "sparse": [],
+        "dense": [
+          "dense",
+          "tangled"
+        ],
+        "open": [],
+        "enclosed": [],
+        "quiet": [],
+        "ominous": [],
+        "luminous": [
+          "glowing"
+        ],
+        "joyful": []
+      },
+      "limitations": [
+        "Rule-based axis extraction; no general language reasoning",
+        "Negation handling is local, not a complete semantic parser",
+        "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+        "Concept is bounded to 600 characters; original input is retained separately"
+      ]
+    },
+    "status": "ready",
+    "jobId": "intent-4b29932c-114d-4673-89f3-fa15e3f895a4",
+    "request": {
+      "id": "intent-4b29932c-114d-4673-89f3-fa15e3f895a4",
+      "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"a dense, tangled garden of giant glowing mushrooms and twisted roots.\",\"axes\":{\"scale\":\"vast\",\"density\":\"dense\",\"mood\":\"luminous\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+      "seed": 42
+    },
+    "events": [
+      {
+        "type": "intent-recorded",
+        "at": "2026-09-15T20:46:45.528Z"
+      },
+      {
+        "type": "constraints-derived",
+        "at": "2026-09-15T20:46:45.528Z"
+      },
+      {
+        "type": "gpu-job-submitted",
+        "at": "2026-09-15T20:46:45.619Z"
+      },
+      {
+        "type": "artifacts-processing",
+        "at": "2026-09-15T20:48:01.571Z"
+      },
+      {
+        "type": "destination-validated",
+        "at": "2026-09-15T20:48:04.268Z"
+      },
+      {
+        "type": "crossed",
+        "at": "2026-09-15T20:48:41.821Z",
+        "position": [
+          0,
+          1.65,
+          -12.004639999999851
+        ],
+        "eventId": "b1094583-c09d-4b18-b271-f8a462d048ae"
+      }
+    ],
+    "workerJob": {
+      "id": "intent-4b29932c-114d-4673-89f3-fa15e3f895a4",
+      "status": "succeeded",
+      "progress": 1,
+      "logs": [
+        "Queued command-v1",
+        "Running command-v1",
+        "{\"status\": \"succeeded\", \"report\": \"/home/vastness/.local/share/vastness-intention-worker/shared/data/artifacts/.intent-4b29932c-114d-4673-89f3-fa15e3f895a4.tmp/generation-report.json\", \"error\": null}\n",
+        "Visual and collision artifacts are ready"
+      ],
+      "backend": "command-v1",
+      "error": null
+    },
+    "artifacts": [
+      {
+        "url": "/api/intent/artifacts/cb6315bb4ae0469d8369771fccadcda0b0c1f5c3bf165690a255832d655813b8/scene.ply",
+        "sha256": "cb6315bb4ae0469d8369771fccadcda0b0c1f5c3bf165690a255832d655813b8",
+        "bytes": 47106464,
+        "format": "ply",
+        "backend": "command-v1"
+      },
+      {
+        "url": "/api/intent/artifacts/c1467ac42184992988ae16f6ecf1cd44629b4639fc69702f499f98125746ee63/collider.glb",
+        "sha256": "c1467ac42184992988ae16f6ecf1cd44629b4639fc69702f499f98125746ee63",
+        "bytes": 14978800,
+        "format": "glb",
+        "backend": "command-v1"
+      }
+    ],
+    "sceneUrl": "/api/intent/worlds/intent-4b29932c-114d-4673-89f3-fa15e3f895a4/scene"
+  },
+  "telemetry": {
+    "position": [
+      0,
+      1.65,
+      -13
+    ],
+    "yaw": 0,
+    "pitch": 0,
+    "overlaps": false,
+    "worldId": "intent-4b29932c-114d-4673-89f3-fa15e3f895a4",
+    "status": "ready",
+    "renderReady": true,
+    "gateOpen": true,
+    "loadingScene": false,
+    "renderFailed": false,
+    "travelMetres": 54.86625268616644,
+    "crossingCount": 1,
+    "returnCount": 0,
+    "pendingVisits": 0,
+    "savingVisits": false,
+    "walking": null,
+    "pathRemaining": 0,
+    "frameCount": 76287,
+    "representation": "solid",
+    "generatedMeshes": 1,
+    "splatAssets": 0,
+    "generatedTriangles": 33728,
+    "destinationEntities": 1505,
+    "errorCount": 0,
+    "artifactUrls": [
+      "/api/intent/artifacts/cb6315bb4ae0469d8369771fccadcda0b0c1f5c3bf165690a255832d655813b8/scene.ply",
+      "/api/intent/artifacts/c1467ac42184992988ae16f6ecf1cd44629b4639fc69702f499f98125746ee63/collider.glb"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "loadSeconds": 25.717414684000005,
+  "generationSeconds": 8.319954241999994,
+  "exportAndValidationSeconds": 16.214653550000094,
+  "totalSeconds": 50.25202247600009,
+  "torchPeakAllocatedBytes": 11625427968,
+  "torchPeakReservedBytes": 16437477376,
+  "torchVersion": "2.4.0+cu121",
+  "torchCudaVersion": "12.1",
+  "gpuName": "NVIDIA GeForce RTX 3090",
+  "computeCapability": [
+    8,
+    6
+  ],
+  "gaussianCount": 692736,
+  "meshVertexCount": 415942,
+  "meshTriangleCount": 832224,
+  "meshBounds": [
+    [
+      -0.46716320514678955,
+      -0.32540464401245117,
+      -0.49996471405029297
+    ],
+    [
+      0.42220067977905273,
+      0.315964937210083,
+      0.4218931794166565
+    ]
+  ],
+  "sourceToOutputRotation": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  ],
+  "scaleMetres": null,
+  "collisionAssessment": "unassessed_raw_mesh_proxy"
+}

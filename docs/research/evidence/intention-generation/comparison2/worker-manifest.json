@@ -1,0 +1,16 @@
+[
+  {
+    "url": "/artifacts/intent-4b29932c-114d-4673-89f3-fa15e3f895a4/scene.ply",
+    "sha256": "cb6315bb4ae0469d8369771fccadcda0b0c1f5c3bf165690a255832d655813b8",
+    "bytes": 47106464,
+    "format": "ply",
+    "backend": "command-v1"
+  },
+  {
+    "url": "/artifacts/intent-4b29932c-114d-4673-89f3-fa15e3f895a4/collider.glb",
+    "sha256": "c1467ac42184992988ae16f6ecf1cd44629b4639fc69702f499f98125746ee63",
+    "bytes": 14978800,
+    "format": "glb",
+    "backend": "command-v1"
+  }
+]

@@ -1,0 +1,401 @@
+
+> vastness@0.1.0 check:intention
+> npm run check && npm run test:intention && npm run build:intention
+
+
+> vastness@0.1.0 check
+> npm run typecheck && npm test && npm run build
+
+
+> vastness@0.1.0 typecheck
+> tsc --noEmit
+
+
+> vastness@0.1.0 test
+> tsx --test packages/*/src/*.test.ts services/orchestrator/src/*.test.ts apps/web/src/*.test.ts apps/web/src/m1-prototype/*.test.ts scripts/tests/m1-geometry.test.ts
+
+TAP version 13
+# Subtest: reproducible fixture artifacts describe solid rooms with a traversable shared aperture
+ok 1 - reproducible fixture artifacts describe solid rooms with a traversable shared aperture
+  ---
+  duration_ms: 363.461083
+  type: 'test'
+  ...
+# Subtest: actual generated chunk supports a closed circuit, real obstacle blocking, and bounded flat-floor walking
+ok 2 - actual generated chunk supports a closed circuit, real obstacle blocking, and bounded flat-floor walking
+  ---
+  duration_ms: 50.472917
+  type: 'test'
+  ...
+# Subtest: intention is proximity-gated, causal, persisted, and cannot replace an accepted result
+ok 3 - intention is proximity-gated, causal, persisted, and cannot replace an accepted result
+  ---
+  duration_ms: 1.652917
+  type: 'test'
+  ...
+# Subtest: real generated approach, gated seam, shared destination and return stay walkable for both intentions
+ok 4 - real generated approach, gated seam, shared destination and return stay walkable for both intentions
+  ---
+  duration_ms: 234.367292
+  type: 'test'
+  ...
+# Subtest: semantic fixture reveals detail on approach and safely resets after Seek
+ok 5 - semantic fixture reveals detail on approach and safely resets after Seek
+  ---
+  duration_ms: 10.758167
+  type: 'test'
+  ...
+# Subtest: solid and hybrid treatments preserve generated geometry through material and visibility changes
+    # Subtest: each placement has the complete original base buffers and transform
+    ok 1 - each placement has the complete original base buffers and transform
+      ---
+      duration_ms: 12.421625
+      type: 'test'
+      ...
+    # Subtest: stress overlays match shared classified faces exactly and retain all solid mass
+    ok 2 - stress overlays match shared classified faces exactly and retain all solid mass
+      ---
+      duration_ms: 29.761792
+      type: 'test'
+      ...
+    # Subtest: sparse glyphs appear nearby in hybrid mode and disappear at distance or in solid mode
+    ok 3 - sparse glyphs appear nearby in hybrid mode and disappear at distance or in solid mode
+      ---
+      duration_ms: 9.996541
+      type: 'test'
+      ...
+    1..3
+ok 6 - solid and hybrid treatments preserve generated geometry through material and visibility changes
+  ---
+  duration_ms: 125.689375
+  type: 'test'
+  ...
+# Subtest: actual Python inventory matches the shared capability schema without claiming GPU validation
+ok 7 - actual Python inventory matches the shared capability schema without claiming GPU validation
+  ---
+  duration_ms: 56.208625
+  type: 'test'
+  ...
+# Subtest: public pose input rejects non-finite positions and impossible pitch
+ok 8 - public pose input rejects non-finite positions and impossible pitch
+  ---
+  duration_ms: 0.985084
+  type: 'test'
+  ...
+# Subtest: job IDs cannot address parent paths in artifact storage
+ok 9 - job IDs cannot address parent paths in artifact storage
+  ---
+  duration_ms: 0.38325
+  type: 'test'
+  ...
+# Subtest: a walker stops at a wall, including a frame large enough to tunnel through it
+ok 10 - a walker stops at a wall, including a frame large enough to tunnel through it
+  ---
+  duration_ms: 0.7735
+  type: 'test'
+  ...
+# Subtest: walk through a 3.2m portal and return, but its solid jamb stops a wider approach
+ok 11 - walk through a 3.2m portal and return, but its solid jamb stops a wider approach
+  ---
+  duration_ms: 0.239833
+  type: 'test'
+  ...
+# Subtest: floor is walkable and diagonal wall contact slides without escaping
+ok 12 - floor is walkable and diagonal wall contact slides without escaping
+  ---
+  duration_ms: 0.095541
+  type: 'test'
+  ...
+# Subtest: an unloaded portal barrier stops the walker until removed
+ok 13 - an unloaded portal barrier stops the walker until removed
+  ---
+  duration_ms: 0.134
+  type: 'test'
+  ...
+# Subtest: identity verification rejects truncation and same-size corruption
+ok 14 - identity verification rejects truncation and same-size corruption
+  ---
+  duration_ms: 0.698125
+  type: 'test'
+  ...
+# Subtest: preparation rejects mismatched sources before creating output
+ok 15 - preparation rejects mismatched sources before creating output
+  ---
+  duration_ms: 3.835667
+  type: 'test'
+  ...
+# Subtest: scaled and grounded surface boxes cover triangle interiors without filling gaps
+ok 16 - scaled and grounded surface boxes cover triangle interiors without filling gaps
+  ---
+  duration_ms: 5.354792
+  type: 'test'
+  ...
+# Subtest: verified real asset retains navigable AABB recesses and conservatively blocks its surface
+ok 17 - verified real asset retains navigable AABB recesses and conservatively blocks its surface
+  ---
+  duration_ms: 1235.299792
+  type: 'test'
+  ...
+# (node:58312) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: world imports real fixture bytes and exposes connected chunks and immutable artifacts over HTTP
+ok 18 - world imports real fixture bytes and exposes connected chunks and immutable artifacts over HTTP
+  ---
+  duration_ms: 396.20025
+  type: 'test'
+  ...
+# Subtest: restart restores singleton identity, topology, saved player and original artifacts without fixture sources
+ok 19 - restart restores singleton identity, topology, saved player and original artifacts without fixture sources
+  ---
+  duration_ms: 22.0935
+  type: 'test'
+  ...
+# Subtest: invalid player requests return actionable errors and preserve the last saved pose
+ok 20 - invalid player requests return actionable errors and preserve the last saved pose
+  ---
+  duration_ms: 30.608125
+  type: 'test'
+  ...
+# Subtest: missing chunks and assets return JSON errors and artifact paths cannot escape storage
+ok 21 - missing chunks and assets return JSON errors and artifact paths cannot escape storage
+  ---
+  duration_ms: 25.87625
+  type: 'test'
+  ...
+# Subtest: missing initial fixture is visible and initialization can recover without restarting
+ok 22 - missing initial fixture is visible and initialization can recover without restarting
+  ---
+  duration_ms: 9.4735
+  type: 'test'
+  ...
+# Subtest: late older pose saves cannot overwrite a newer exit pose, including after restart
+ok 23 - late older pose saves cannot overwrite a newer exit pose, including after restart
+  ---
+  duration_ms: 13.713583
+  type: 'test'
+  ...
+# (node:58313) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Mac submits real Python jobs, imports verified bytes and keeps accepted artifacts offline after restart
+ok 24 - Mac submits real Python jobs, imports verified bytes and keeps accepted artifacts offline after restart
+  ---
+  duration_ms: 434.279959
+  type: 'test'
+  ...
+# Subtest: artifact import rejects hostile URLs, wrong hashes, redirects and invalid formats
+ok 25 - artifact import rejects hostile URLs, wrong hashes, redirects and invalid formats
+  ---
+  duration_ms: 22.642833
+  type: 'test'
+  ...
+# Subtest: Mac rejects malformed worker capabilities at the HTTP boundary
+ok 26 - Mac rejects malformed worker capabilities at the HTTP boundary
+  ---
+  duration_ms: 5.631
+  type: 'test'
+  ...
+# Subtest: overlapping identical submissions share one worker request and retain provenance
+ok 27 - overlapping identical submissions share one worker request and retain provenance
+  ---
+  duration_ms: 8.844834
+  type: 'test'
+  ...
+# Subtest: HTTP/1.0 artifact EOF remains safe while file writes apply backpressure
+ok 28 - HTTP/1.0 artifact EOF remains safe while file writes apply backpressure
+  ---
+  duration_ms: 167.644
+  type: 'test'
+  ...
+# Subtest: worker transport preserves authentication, JSON bounds and response failure handling
+ok 29 - worker transport preserves authentication, JSON bounds and response failure handling
+  ---
+  duration_ms: 5.316875
+  type: 'test'
+  ...
+# Subtest: worker response deadline covers a body stalled after headers
+ok 30 - worker response deadline covers a body stalled after headers
+  ---
+  duration_ms: 15002.454166
+  type: 'test'
+  ...
+1..30
+# tests 33
+# suites 0
+# pass 33
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 15795.558542
+
+> vastness@0.1.0 build
+> vite build apps/web
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1244 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     4.22 kB │ gzip:   1.76 kB
+dist/assets/index-CjVqJj1w.css      8.39 kB │ gzip:   2.72 kB
+dist/assets/index-BxrjwBEz.js   2,033.43 kB │ gzip: 524.04 kB
+
+(!) Some chunks are larger than 1600 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.44s
+
+> vastness@0.1.0 test:intention
+> tsx --test services/intention-prototype/*.test.ts scripts/tests/intention-geometry.test.ts apps/web/src/intention-generation/*.test.ts
+
+TAP version 13
+# Subtest: closed threshold stops high-speed movement until the destination is render-ready
+ok 1 - closed threshold stops high-speed movement until the destination is render-ready
+  ---
+  duration_ms: 1.070542
+  type: 'test'
+  ...
+# Subtest: open center is traversable while authored wall beside threshold remains solid
+ok 2 - open center is traversable while authored wall beside threshold remains solid
+  ---
+  duration_ms: 0.116291
+  type: 'test'
+  ...
+# Subtest: actual generated collision moves with the accepted placement and route stepping cannot bypass it
+ok 3 - actual generated collision moves with the accepted placement and route stepping cannot bypass it
+  ---
+  duration_ms: 1.428833
+  type: 'test'
+  ...
+# Subtest: returned identities replace the old fixture and preparation publishes stable local geometry plus traversable world route
+ok 4 - returned identities replace the old fixture and preparation publishes stable local geometry plus traversable world route
+  ---
+  duration_ms: 14.733875
+  type: 'test'
+  ...
+# Subtest: both identities must pass before any parsing or publication, including same-size tampering
+ok 5 - both identities must pass before any parsing or publication, including same-size tampering
+  ---
+  duration_ms: 6.528042
+  type: 'test'
+  ...
+# Subtest: rejects non-finite returned visuals and collider coordinates with matching manifests
+ok 6 - rejects non-finite returned visuals and collider coordinates with matching manifests
+  ---
+  duration_ms: 5.910625
+  type: 'test'
+  ...
+# Subtest: bounded parser rejects allocation claims, accessor overruns and invalid indices
+ok 7 - bounded parser rejects allocation claims, accessor overruns and invalid indices
+  ---
+  duration_ms: 9.701166
+  type: 'test'
+  ...
+# Subtest: rejects pathological triangle sampling before collision derivation
+ok 8 - rejects pathological triangle sampling before collision derivation
+  ---
+  duration_ms: 1.777375
+  type: 'test'
+  ...
+# Subtest: rejects room overflow and geometry that leaves no free entry or perimeter circuit
+ok 9 - rejects room overflow and geometry that leaves no free entry or perimeter circuit
+  ---
+  duration_ms: 45.333834
+  type: 'test'
+  ...
+# Subtest: rejects missing/duplicated manifests and degenerate source surfaces
+ok 10 - rejects missing/duplicated manifests and degenerate source surfaces
+  ---
+  duration_ms: 3.162125
+  type: 'test'
+  ...
+# Subtest: previous real TRELLIS output keeps its actual surface and passes the same dynamic preparation path
+ok 11 - previous real TRELLIS output keeps its actual surface and passes the same dynamic preparation path
+  ---
+  duration_ms: 1185.589042
+  type: 'test'
+  ...
+# Subtest: first free-form GPU output above one million triangles remains bounded, simplified and walkable
+ok 12 - first free-form GPU output above one million triangles remains bounded, simplified and walkable
+  ---
+  duration_ms: 2129.678417
+  type: 'test'
+  ...
+# Subtest: actual crystal export above three million triangles preserves collision and a walkable bounded circuit
+ok 13 - actual crystal export above three million triangles preserves collision and a walkable bounded circuit
+  ---
+  duration_ms: 5764.003458
+  type: 'test'
+  ...
+# {"preparationAndChecksMs":5649,"sourceBounds":{"min":[-0.5007639527320862,-0.5013420581817627,-0.5011510252952576],"max":[0.5006712675094604,0.5005823969841003,0.5012916326522827]},"visualBounds":{"min":[-0.5039061903953552,-0.5039061903953552,-0.5039057731628418],"max":[0.5039060115814209,0.50390625,0.50390625]},"metrics":{"sourceVertices":1503500,"sourceTriangles":3005700,"meshVertices":54562,"meshTriangles":126551,"clusterPitchModelUnits":0.018,"scaleMetresPerModelUnit":6,"voxelPitchMetres":0.12,"maximumSamplePitchMetres":0.06,"maximumSurfacePaddingMetres":0.06,"surfaceSamples":9017100,"surfaceCells":39065,"occupiedCells":57044,"colliderBoxes":2093,"colliderTriangles":25116,"glyphCount":3500}}
+# Subtest: free concepts survive compilation rather than selecting canned destinations
+ok 14 - free concepts survive compilation rather than selecting canned destinations
+  ---
+  duration_ms: 2.2525
+  type: 'test'
+  ...
+# Subtest: simple negation does not select the negated axis, and original intent is separate
+ok 15 - simple negation does not select the negated axis, and original intent is separate
+  ---
+  duration_ms: 0.084542
+  type: 'test'
+  ...
+# Subtest: HTTP intent is recorded before generation; accepted destination and visits survive restart without regeneration
+ok 16 - HTTP intent is recorded before generation; accepted destination and visits survive restart without regeneration
+  ---
+  duration_ms: 55.951792
+  type: 'test'
+  ...
+# Subtest: failed GPU jobs remain failed and cannot be crossed
+ok 17 - failed GPU jobs remain failed and cannot be crossed
+  ---
+  duration_ms: 14.615958
+  type: 'test'
+  ...
+# Subtest: restart reconciles a job accepted before the Mac saved its submission acknowledgment
+ok 18 - restart reconciles a job accepted before the Mac saved its submission acknowledgment
+  ---
+  duration_ms: 6.807125
+  type: 'test'
+  ...
+# Subtest: temporary worker transport failure preserves resumable job and retries without generating again
+ok 19 - temporary worker transport failure preserves resumable job and retries without generating again
+  ---
+  duration_ms: 11.250709
+  type: 'test'
+  ...
+# Subtest: visit identities preserve a fresh crossing after pose reset and deduplicate retries across restart
+ok 20 - visit identities preserve a fresh crossing after pose reset and deduplicate retries across restart
+  ---
+  duration_ms: 20.19675
+  type: 'test'
+  ...
+# Subtest: validation retry reuses the successful job and accepted hashes without worker contact or regeneration
+ok 21 - validation retry reuses the successful job and accepted hashes without worker contact or regeneration
+  ---
+  duration_ms: 20.024667
+  type: 'test'
+  ...
+1..21
+# tests 21
+# suites 0
+# pass 21
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 9295.724083
+
+> vastness@0.1.0 build:intention
+> vite build apps/web --config apps/web/vite.intention-generation.config.ts
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1234 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/intention-generation/intention-generation.html                     2.51 kB │ gzip:   1.17 kB
+dist/intention-generation/assets/intention-generation-BfiWmwBP.css      1.96 kB │ gzip:   0.88 kB
+dist/intention-generation/assets/intention-generation-3OxRCQap.js   1,985.69 kB │ gzip: 513.98 kB
+✓ built in 1.37s

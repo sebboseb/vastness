@@ -14,8 +14,24 @@ Acceptance includes actual browser approach/input/submission/polling, real RTX 3
 
 ## Mac/browser seam
 
-New service services/intention-prototype/server.ts on127.0.0.1:4311. GET /api/intent/worlds → WorldRecord[] newest first. POST /api/intent/worlds with {text:string,source:'text'} →202 WorldRecord. GET /api/intent/worlds/:id → WorldRecord. GET /api/intent/worlds/:id/scene → prepared scene JSON onlyafterready. POST /api/intent/worlds/:id/visit with {event:'crossed'|'returned',position:[x,y,z]} recordsactualseamcrossing. GET /api/intent/artifacts/:sha/:filename serveshashverifiedobjects scene.ply/collider.glb. Worker origin fixedbyenv INTENTION_WORKER_URL defaulthttp://127.0.0.1:14321; never chosenbybrowser.
+The isolated service is `services/intention-prototype/server.ts`, bound to `127.0.0.1:4311`.
 
-WorldRecord fields: id,createdAt,rawIntent:{text,source},semantics(theenvelopeabove),status:'requested'|'generating'|'processing'|'ready'|'failed',jobId,request:{id,prompt,seed},events:{type:string,at:string,position?:Vec3}[],workerJob?:WorkerJob,artifacts?:Artifact[],sceneUrl?:string,error?:string. Artifact URLs fromWorkerClient /artifacts/:sha/:filename mustbrowserprefix /api/intent/artifacts. Originalinput isstoredonlyMacside. Newtrialcreatesnewid; previousworldsremainunchanged selectablethroughsecondarydeveloperhistory controls. Serverresumesactivejobpollingafterrestart and neverregeneratesreadyworlds.
+| Route | Behavior |
+| --- | --- |
+| GET `/api/intent/worlds` | Saved world records, newest first |
+| POST `/api/intent/worlds` | Accept `{text, source: 'text'}`; persist before GPU submission; return 202 |
+| GET `/api/intent/worlds/:id` | Original intent, semantics, status, provenance and events |
+| GET `/api/intent/worlds/:id/scene` | Prepared geometry, available only after validation |
+| POST `/api/intent/worlds/:id/visit` | Record crossing or return with world position and a stable retry identity |
+| POST `/api/intent/worlds/:id/retry-validation` | Retry a failed validation against the same successful GPU job and saved hashes; never regenerate |
+| GET `/api/intent/artifacts/:sha/:filename` | Hash-verified accepted PLY/GLB bytes |
 
-Browser owns only new apps/web/intention-generation.html, apps/web/src/intention-generation/** and apps/web/vite.intention-generation.config.ts. Renderer mayimportunmodifiedM1treatments/spatialhelpers butnotmodifythem. Dedicated5175Viteproxy /api/intent to4311; publicassets mayread existingM1 source withoutchangingit. Leadwillwire one-command npm run intention andchecks. Pageapproach canuseauthoredfloorandthreshold; no needpreloadoldTRELLIS asset ifunnecessary. Thresholdplane z=-12, sourcefloor z=-12..8,destinationfloorz=-31..-12; geometryagentpublishes scene.validation={placement:Vec3,route:Vec3[],room:CollisionBox[],...} fordestination. Browsermustderivebodycollision fromscene.boxes shiftedbyvalidation.placement. Entrycenter[0,1.65,-13],crossingat-12. Keepgateuntilstatusready AND meshloaded. Basicalreadyknownplayer movePlayer floorY1.65 radius.3,sourcefloorX±10. BrowserrecordsrealcrossingsviaAPI andplaysnostoredcameraanimation pretendingtowalk. ExposeDOMtelemetrydata-state forvisual/movement QA. Secondaryfunctionaldebugcontrols canwalkapproach/verifiedroute/return andshowcollider; noUIpolish. Maininteractionfreeformtextinputshownnearclosedthreshold; architecture InputSource.submit(text) canbereplacedbyvoiceadapter. Retainoriginalsplatcontrolifpractical; abstractsoliddefault.
+The worker origin comes from `INTENTION_WORKER_URL`, defaulting to `http://127.0.0.1:14321`; browser input cannot choose it. Imported artifact URLs use the isolated `/api/intent/artifacts` prefix.
+
+A world record contains `id`, `createdAt`, `rawIntent`, `semantics`, `derivation`, `status`, `jobId`, `request`, `events`, and optional `workerJob`, `artifacts`, `sceneUrl` and `error`. The original sentence remains on the Mac. A new trial creates a new ID. Existing destinations remain selectable through secondary developer controls. Restart resumes active jobs and reuses ready worlds without generation. A transport interruption remains resumable; a terminal GPU or validation failure keeps the gate closed.
+
+The browser owns only the new `intention-generation.html`, `src/intention-generation/**` and `vite.intention-generation.config.ts`. It can import existing M1 helpers without modifying them. `npm run intention` starts the Mac service and Vite on port 5175; `npm run check:intention` runs existing checks plus the isolated checks/build.
+
+The authored threshold is at z=-12. The source floor spans z=-12..8; the destination floor spans z=-31..-12. Geometry preparation publishes `scene.validation`, including placement, collision room and verified route. Generated collision boxes receive the same placement as the visual mesh. The eye height remains 1.65 m, player radius 0.3 m. The gate opens only after both server validation and browser rendering succeed.
+
+The browser records actual movement crossings. Secondary approach/circuit/return controls drive the same collision-constrained movement function as keyboard input. DOM telemetry exposes pose, overlaps, gate state, loaded geometry and visit persistence for acceptance checks. A small `InputSource` adapter submits text today and can later accept transcribed voice. Abstract solid is the default; the original splat remains available for comparison. The authored floor and perimeter route do not establish that generated interiors, stairs or slopes are navigable.
