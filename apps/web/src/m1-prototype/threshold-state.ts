@@ -7,18 +7,20 @@ export const seamZ=-10.9;
 export const nextPlacements:Vec3[]=[[-4,0,-19],[4,0,-19],[0,0,-24]];
 export const approachRoute:Vec3[]=[[-3.4,1.65,5],[-3.4,1.65,-2],[0,1.65,-3],[0,1.65,-9]];
 export type Intention='ascend'|'seek';
-const compositionSchema=z.object({source:z.literal('controlled-fixture-v1'),seed:z.literal(14),verticalEmphasis:z.number(),focalEmphasis:z.number(),upperOpenness:z.number(),detailRevelation:z.number()});
+const constraintsSchema=z.object({verticalEmphasis:z.number().min(0).max(1),focalEmphasis:z.number().min(0).max(1),upperOpenness:z.number().min(0).max(1),detailRevelation:z.number().min(0).max(1),continuousFloor:z.literal(true)});
+const compositionSchema=constraintsSchema.extend({source:z.literal('controlled-fixture-v1'),seed:z.literal(14)});
+export function composeFixture(constraints:z.infer<typeof constraintsSchema>){return {...constraints,source:'controlled-fixture-v1' as const,seed:14 as const};}
 const eventSchema=z.object({sequence:z.number(),kind:z.enum(['intention-recorded','composition-ready','crossed','returned']),intention:z.enum(['ascend','seek'])});
-const worldSchema=z.object({schema:z.literal(1),id:z.literal('PROTOTYPE-wipe-me-threshold'),threshold:z.object({id:z.literal('north'),phase:z.enum(['unshaped','forming','ready','crossed']),intention:z.enum(['ascend','seek']).nullable(),constraints:z.array(z.string()),composition:compositionSchema.nullable()}),events:z.array(eventSchema)});
+const worldSchema=z.object({schema:z.literal(1),id:z.literal('PROTOTYPE-wipe-me-threshold'),threshold:z.object({id:z.literal('north'),phase:z.enum(['unshaped','forming','ready','crossed']),intention:z.enum(['ascend','seek']).nullable(),constraints:constraintsSchema.nullable(),composition:compositionSchema.nullable()}),events:z.array(eventSchema)});
 export type PrototypeWorld=z.infer<typeof worldSchema>;
-export function freshWorld():PrototypeWorld{return {schema:1,id:'PROTOTYPE-wipe-me-threshold',threshold:{id:'north',phase:'unshaped',intention:null,constraints:[],composition:null},events:[]};}
-export function inReach(p:Vec3){return Math.abs(p[0])<1.25&&p[2]<-7.5&&p[2]>-10.5;}
+export function freshWorld():PrototypeWorld{return {schema:1,id:'PROTOTYPE-wipe-me-threshold',threshold:{id:'north',phase:'unshaped',intention:null,constraints:null,composition:null},events:[]};}
+export function inReach(p:Vec3){return Math.abs(p[0])<=1.31&&p[2]<-7.5&&p[2]>=-10.51;}
 export function gesture(pitch:number):Intention{return pitch>23?'ascend':'seek';}
 export function express(world:PrototypeWorld,intention:Intention,p:Vec3):PrototypeWorld{
  if(world.threshold.phase!=='unshaped'||!inReach(p))return world;
- const constraints=intention==='ascend'?['emphasize vertical rhythm','open the upper volume','keep a continuous walkable floor']:['draw attention toward a concealed focus','reveal sparse traces on approach','keep a continuous walkable floor'];
- // Fixed seed, shared shell and source artifacts. Semantic axes, not a destination id.
- const composition={source:'controlled-fixture-v1' as const,seed:14 as const,verticalEmphasis:intention==='ascend'?1:.15,focalEmphasis:intention==='seek'?1:.15,upperOpenness:intention==='ascend'?1:.35,detailRevelation:intention==='seek'?1:.2};
+ const constraints={verticalEmphasis:intention==='ascend'?1:.15,focalEmphasis:intention==='seek'?1:.15,upperOpenness:intention==='ascend'?1:.35,detailRevelation:intention==='seek'?1:.2,continuousFloor:true as const};
+ // Composer consumes semantic axes, never an intention name or a destination id.
+ const composition=composeFixture(constraints);
  return {...world,threshold:{...world.threshold,phase:'forming',intention,constraints,composition},events:[...world.events,{sequence:world.events.length+1,kind:'intention-recorded',intention}]};
 }
 export function acceptComposition(world:PrototypeWorld):PrototypeWorld{
