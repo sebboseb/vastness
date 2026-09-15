@@ -160,7 +160,7 @@ export async function prepare(input: string, output: string) {
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
  const args = process.argv.slice(2);
- let input = resolve('.runtime/benchmark-evidence', SOURCE.jobId), output = resolve('apps/web/public/m1-prototype');
+ let input = resolve('.runtime/benchmark-evidence', SOURCE.jobId), output = resolve('apps/web/m1-prototype-public/m1-prototype');
  for (let i = 0; i < args.length; i += 2) {
   if (!args[i + 1] || !['--input', '--output'].includes(args[i])) throw new Error('Usage: tsx scripts/prepare-m1-prototype.ts [--input directory] [--output directory]');
   if (args[i] === '--input') input = resolve(args[i + 1]); else output = resolve(args[i + 1]);
