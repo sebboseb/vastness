@@ -18,7 +18,8 @@
     "frontier": "node scripts/frontier.mjs",
     "worker:smoke": "tsx scripts/worker-smoke.ts",
     "m1": "tsx scripts/prepare-m1-prototype.ts && vite apps/web --config apps/web/vite.m1-prototype.config.ts",
-    "build:m1": "vite build apps/web --config apps/web/vite.m1-prototype.config.ts"
+    "build:m1": "vite build apps/web --config apps/web/vite.m1-prototype.config.ts",
+    "check:m1": "tsx scripts/prepare-m1-prototype.ts && npm run check && npm run build:m1"
   },
   "dependencies": {
     "playcanvas": "2.22.1",
