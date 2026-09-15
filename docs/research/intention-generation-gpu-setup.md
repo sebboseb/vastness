@@ -32,3 +32,53 @@ The replacement alpha policy is uniform `white-matte-v1`: near-white pixels with
 The existing Windows SSH `Match User sebas` now permits exactly `127.0.0.1:4320` and `127.0.0.1:4321`. Backup: `C:\ProgramData\ssh\sshd_config.intention-20260915221804.bak`. `sshd -t` passed before restart. No wildcard listener, firewall rule or port proxy was added. Mac forwarding uses `ssh -o BatchMode=yes -o StrictHostKeyChecking=yes -o ExitOnForwardFailure=yes -N -L 127.0.0.1:14321:127.0.0.1:4321 vastness-gpu`.
 
 A detached startup initially vanished while WSL's user session was still starting. Keep the worker in a persistent foreground SSH command: `ssh -o BatchMode=yes -o StrictHostKeyChecking=yes vastness-gpu "wsl -d Ubuntu-24.04 -u vastness --exec bash /home/vastness/.local/share/vastness-intention-worker/current/repo/services/gpu-worker/intention_generation/serve.sh /home/vastness/.local/share/vastness-intention-worker"`. The Mac `/version` endpoint was verified against the actual deployed Git commit. The existing port4320 user service starts separately and was not modified.
+
+
+## Corrected smoke — ready for browser trials
+
+`intention-gpu-smoke-20260915-02` ran the identical semantic envelope, prompt and seed42 on committed product code `09412b7871e49d040dba5b0a2b002930258a4b09`. The source RGB hash is identical to smoke01 (`bca5c378f0bd6282ddb500ac968a44fca6cf78f37502f6cc7281dec4f88bf835`); only preprocessing changed. The corrected RGBA retains the arch, with opaque foreground fraction 0.6862. SDXL still used 45/77 tokens with no truncation. The two serial CUDA stages and artifact validation succeeded in **63.1347 s** including preflight; warm filesystem pages make this different from the first cold run.
+
+Image load/generation/matte were 2.4750/1.5907/0.3333 s; TRELLIS load/generation/export-validation were 25.6412/6.5597/8.2423 s. Peak allocated memory was 8,288,533,504 bytes for SDXL and 10,878,150,656 bytes for TRELLIS. Output contains 357,920 Gaussians and a raw mesh with 350,326 vertices / 700,610 triangles. Actual HTTP downloads matched both worker manifest and generation-report hashes:
+
+| Artifact | Bytes | SHA-256 |
+| --- | ---: | --- |
+| scene.ply | 24,338,976 | d0802e86703f5a63f429865cdfb659bce8fc3a5066f86c1797a8da1cd2798975 |
+| collider.glb | 12,612,036 | c1d4d2ff93c82f36ada3cda9e2b40bbbc97c97a79a94e8201c1aa1a43f500aa2 |
+
+Full verified evidence is `.runtime/intention-generation/smoke-02-verified` on the Mac and `shared/data/artifacts/intention-gpu-smoke-20260915-02` in the isolated worker prefix. Structural validation does not establish that the arch itself is traversable: browser preparation and movement acceptance remain separate. All three browser trials must use this same deployed pipeline; do not tune it per input.
+
+Verification: **39 Python worker tests passed, with two GPU-only regression tests skipped on the Mac**. The real smoke executed CUDA and actual export validation separately. Original worker port4320, M0 state and benchmark runner remain unchanged.
+
+## Collect any completed trial
+
+From any checkout containing this adapter (including the Mac prototype checkout):
+
+```sh
+python3 services/gpu-worker/intention_generation/collect_evidence.py \
+  --job JOB_ID --output .runtime/intention-generation/evidence/JOB_ID
+```
+
+The collector uses the existing encoded WSL deployment transport with strict SSH host verification, copies final report/image/log files, verifies transfer hashes, and downloads PLY/GLB from `http://127.0.0.1:14321`. Artifact hashes must agree with both manifest and report. It refuses to overwrite different existing evidence, and it collects failed-job reports without claiming artifact success. `--worker-url`, `--host`, and `--prefix` are trusted operator overrides. The collector was tested against smoke02's real HTTP artifacts.
+
+## Restart without a tool-owned terminal
+
+Keep the existing service if `/version` is healthy. When deliberately restarting, first stop only the dedicated port4321 worker/SSH connection and its port14321 tunnel; never stop the original port4320 service. The following Mac Python recipe creates independent background SSH processes with retained PIDs and logs. The remote worker remains a foreground WSL command, avoiding the detached-child lifetime problem seen during initial boot.
+
+```python
+from pathlib import Path
+import subprocess
+runtime = Path('.runtime/intention-generation')
+runtime.mkdir(parents=True, exist_ok=True)
+common = ['ssh', '-o', 'BatchMode=yes', '-o', 'StrictHostKeyChecking=yes']
+commands = {
+    'worker-ssh': common + ['vastness-gpu', 'wsl -d Ubuntu-24.04 -u vastness --exec bash /home/vastness/.local/share/vastness-intention-worker/current/repo/services/gpu-worker/intention_generation/serve.sh /home/vastness/.local/share/vastness-intention-worker'],
+    'worker-tunnel': common + ['-o', 'ExitOnForwardFailure=yes', '-N', '-L', '127.0.0.1:14321:127.0.0.1:4321', 'vastness-gpu'],
+}
+for name, command in commands.items():
+    log = (runtime / (name + '.log')).open('ab')
+    process = subprocess.Popen(command, stdin=subprocess.DEVNULL, stdout=log,
+                               stderr=log, start_new_session=True)
+    (runtime / (name + '.pid')).write_text(str(process.pid))
+```
+
+Verify `curl --fail http://127.0.0.1:14321/version` after startup and check the expected Git commit before submitting a job. WSL may take time to finish its user-session startup after a cold boot; a process launch alone is not proof of readiness. Model/data directories persist independently of these SSH processes.
