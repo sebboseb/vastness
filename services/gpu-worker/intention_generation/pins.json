@@ -1,5 +1,5 @@
 {
-  "backend": "sdxl-turbo-trellis-intention-v2",
+  "backend": "sdxl-turbo-trellis-intention-v3",
   "imageModel": {
     "repo": "stabilityai/sdxl-turbo",
     "revision": "71153311d3dbb46851df1931d3ca6e939de83304",
@@ -125,8 +125,11 @@
     "sha256": "309c8469258dda742793dce0ebea8e6dd393174f89934733ecc8b14c76f4ddd8"
   },
   "alpha": {
-    "method": "white-matte-v1",
+    "method": "white-matte-or-full-frame-v1",
     "opaqueMaxMinChannel": 224,
-    "transparentMinChannel": 236
+    "transparentMinChannel": 236,
+    "fullFrameAtForegroundFraction": 0.98,
+    "transparentPaddingPixels": 16,
+    "rejectAtForegroundFraction": 0.01
   }
 }

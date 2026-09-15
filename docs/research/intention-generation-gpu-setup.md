@@ -4,7 +4,7 @@ The new adapter accepts the semantic envelope in `docs/specs/intention-generated
 
 ## Pins and budget
 
-`services/gpu-worker/intention_generation/pins.json` records all image file sizes and upstream LFS SHA-256 values. SDXL-Turbo revision is `71153311d3dbb46851df1931d3ca6e939de83304`. Required fp16 files plus configs, tokenizer and license total **6,941,205,599 bytes**. The initially tried, subsequently rejected U2NetP alpha model added **4,574,861 bytes**, SHA-256 `309c8469258dda742793dce0ebea8e6dd393174f89934733ecc8b14c76f4ddd8` (also checked against rembg's upstream MD5). The current white-matte-v1 alpha stage requires no additional model. No implicit model download is allowed during inference; manifests and weight hashes are checked first.
+`services/gpu-worker/intention_generation/pins.json` records all image file sizes and upstream LFS SHA-256 values. SDXL-Turbo revision is `71153311d3dbb46851df1931d3ca6e939de83304`. Required fp16 files plus configs, tokenizer and license total **6,941,205,599 bytes**. The initially tried, subsequently rejected U2NetP alpha model added **4,574,861 bytes**, SHA-256 `309c8469258dda742793dce0ebea8e6dd393174f89934733ecc8b14c76f4ddd8` (also checked against rembg's upstream MD5). The current white-matte-or-full-frame-v1 alpha stage requires no additional model. No implicit model download is allowed during inference; manifests and weight hashes are checked first.
 
 Before downloads, Windows `Get-Volume` reported E: free **1,060,855,640,064 bytes**; registry inspection confirmed Ubuntu-24.04 at `E:\Vastness\WSL\Ubuntu-24.04`. C: free was 26,443,104,256 bytes and was not selected. A 12 GiB setup allowance covers ~6.95 GB weights plus packages and temporary files. New environment, weights and reports live at `/home/vastness/.local/share/vastness-intention-models/20260915-01` in E-backed Linux home. Python 3.10.21 venv uses `--system-site-packages` from the existing benchmark environment; only diffusers 0.30.3, accelerate 0.34.2 and psutil 6.1.0 are installed in the new venv. Existing Torch 2.4.0+cu121, transformers 4.46.3, rembg 2.0.60 and onnxruntime 1.19.2 remain unmodified. TRELLIS uses its original environment.
 
@@ -45,7 +45,7 @@ Image load/generation/matte were 2.4750/1.5907/0.3333 s; TRELLIS load/generation
 | scene.ply | 24,338,976 | d0802e86703f5a63f429865cdfb659bce8fc3a5066f86c1797a8da1cd2798975 |
 | collider.glb | 12,612,036 | c1d4d2ff93c82f36ada3cda9e2b40bbbc97c97a79a94e8201c1aa1a43f500aa2 |
 
-Full verified evidence is `.runtime/intention-generation/smoke-02-verified` on the Mac and `shared/data/artifacts/intention-gpu-smoke-20260915-02` in the isolated worker prefix. Structural validation does not establish that the arch itself is traversable: browser preparation and movement acceptance remain separate. All three browser trials must use this same deployed pipeline; do not tune it per input.
+Full verified evidence is `.runtime/intention-generation/smoke-02-verified` on the Mac and `shared/data/artifacts/intention-gpu-smoke-20260915-02` in the isolated worker prefix. Structural validation does not establish that the arch itself is traversable: browser preparation and movement acceptance remain separate. This established a mechanical baseline, later superseded by the general full-frame fallback below.
 
 Verification: **39 Python worker tests passed, with two GPU-only regression tests skipped on the Mac**. The real smoke executed CUDA and actual export validation separately. Original worker port4320, M0 state and benchmark runner remain unchanged.
 
@@ -82,3 +82,12 @@ for name, command in commands.items():
 ```
 
 Verify `curl --fail http://127.0.0.1:14321/version` after startup and check the expected Git commit before submitting a job. WSL may take time to finish its user-session startup after a cold boot; a process launch alone is not proof of readiness. Model/data directories persist independently of these SSH processes.
+
+
+## Dense-scene failure and final general fallback
+
+The first browser garden attempt `intent-fb4bb474-3e58-4172-99e1-d8876313a33c` generated an appropriate image of giant mushrooms and intertwined roots, but SDXL ignored the white-backdrop request. With 0.999954 foreground fraction, the old upper guard rejected this valid full-frame reference before TRELLIS. Its RGB/log/report remain under the worker's failures directory and `.runtime/intention-generation/evidence/trial2`. This failure is not deleted or relabeled as success.
+
+Final `sdxl-turbo-trellis-intention-v3` uniformly applies `white-matte-or-full-frame-v1`: use the existing color matte when it isolates background, otherwise retain every original RGB pixel for an unsegmented full-frame reference when matte foreground fraction is ≥0.98. A 16-pixel transparent border on all sides ensures TRELLIS recognizes explicitly supplied alpha and never downloads/runs an implicit rembg model. Reports identify `conditioningMode`, source matte fraction, padded size and the fact that a retained nonwhite background may become generated geometry. ≤0.01 foreground still fails; RGB, RGBA and image metrics are now written before that guard so diagnostic evidence survives. There is no phrase-specific branch or replacement asset.
+
+All three original sentences must run again with seed42 through this one final committed pipeline. Earlier attempts remain evidence of the two failed preprocessing policies. Six focused CPU tests now include exact RGB preservation and explicit transparent-border checks using Pillow in the prepared environment; the Mac skips the two Pillow-dependent cases if Pillow is unavailable.

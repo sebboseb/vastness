@@ -18,3 +18,24 @@ def white_matte(image):
     rgba = rgb.convert('RGBA')
     rgba.putalpha(alpha)
     return rgba
+
+
+def conditioning_image(image):
+    """Preserve full-frame references when the requested white backdrop is absent."""
+    from PIL import Image
+    matte = white_matte(image)
+    histogram = matte.getchannel('A').histogram()
+    fraction = sum(histogram[128:]) / (image.width * image.height)
+    full_frame = fraction >= 0.98
+    selected = image.convert('RGBA') if full_frame else matte
+    # TRELLIS recognizes a supplied alpha channel only if it has transparent
+    # pixels. The border prevents an implicit rembg download for opaque images.
+    padding = 16
+    padded = Image.new('RGBA', (image.width + 2*padding, image.height + 2*padding), (0, 0, 0, 0))
+    padded.paste(selected, (padding, padding))
+    return padded, {'alphaMethod': 'white-matte-or-full-frame-v1',
+        'conditioningMode': 'unsegmented-full-frame' if full_frame else 'white-matte',
+        'matteForegroundFraction': fraction, 'transparentPaddingPixels': padding,
+        'conditioningSize': list(padded.size),
+        'alphaLimitation': ('Nonwhite background retained as image conditioning; may become geometry.' if full_frame
+                            else 'Color key may remove pale material; RGB retained for inspection.')}

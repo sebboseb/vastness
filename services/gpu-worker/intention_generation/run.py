@@ -94,9 +94,11 @@ def execute(args):
                     status='succeeded' if code == 0 else 'failed')
                 if interrupted:
                     raise InterruptedError('Generation cancelled')
+                metrics_path = out / (name + '-metrics.json')
+                if metrics_path.exists():
+                    report['stages'][name]['metrics'] = json.loads(metrics_path.read_text())
                 if code:
                     raise RuntimeError(f'{name} stage exited {code}; see {name}.log')
-                report['stages'][name]['metrics'] = json.loads((out / (name + '-metrics.json')).read_text())
         for name in ['scene.ply', 'collider.glb', 'source-rgb.png', 'source-rgba.png', 'image-prompt.txt']:
             path = out / name
             report['artifacts'].append({'path': name, 'bytes': path.stat().st_size, 'sha256': shared.digest(path)})

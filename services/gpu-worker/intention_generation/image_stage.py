@@ -16,7 +16,7 @@ def main():
     import torch
     import numpy as np
     from diffusers import StableDiffusionXLPipeline
-    from alpha import white_matte
+    from alpha import conditioning_image
     prompt = (a.output / 'image-prompt.txt').read_text()
     torch.cuda.reset_peak_memory_stats()
     start = time.monotonic()
@@ -30,11 +30,9 @@ def main():
     torch.cuda.synchronize()
     generated = time.monotonic()
     image.save(a.output / 'source-rgb.png')
-    rgba = white_matte(image)
+    rgba, alpha_metrics = conditioning_image(image)
     alpha = np.asarray(rgba)[..., 3]
     foreground = float((alpha > 127).mean())
-    if not 0.01 < foreground < 0.98:
-        raise ValueError(f'Background extraction yielded implausible foreground fraction {foreground}')
     rgba.save(a.output / 'source-rgba.png')
     metrics = {'loadSeconds': loaded-start, 'generationSeconds': generated-loaded,
         'alphaSeconds': time.monotonic()-generated, 'tokenCounts': token_counts,
@@ -42,8 +40,10 @@ def main():
         'foregroundFraction': foreground, 'torchPeakAllocatedBytes': torch.cuda.max_memory_allocated(),
         'torchPeakReservedBytes': torch.cuda.max_memory_reserved(), 'torchVersion': torch.__version__,
         'torchCudaVersion': torch.version.cuda, 'gpuName': torch.cuda.get_device_name(),
-        'alphaMethod': 'white-matte-v1', 'alphaLimitation': 'Color key may remove pale material; RGB retained for inspection'}
+        **alpha_metrics}
     (a.output / 'image-metrics.json').write_text(json.dumps(metrics, indent=2)+'\n')
+    if alpha_metrics['matteForegroundFraction'] <= 0.01:
+        raise ValueError('White matte contains too little nonwhite foreground; retained diagnostics')
 
 
 if __name__ == '__main__':
