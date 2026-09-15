@@ -15,7 +15,7 @@ export function buildThresholdView(app:pc.Application){
  box({min:[-1.73,4.14,-11.05],max:[1.73,4.26,-10.72]},accent);
  for(let z=-12;z>=-26;z-=2)box({min:[-8.8,.001,z-.012],max:[8.8,.007,z+.012]},trace);
  for(let x=-8;x<=8;x+=2)box({min:[x-.012,.001,-27.8],max:[x+.012,.007,-11]},trace);
- function compose(world:PrototypeWorld){for(const child of [...result.children])child.destroy();const c=world.threshold.composition;if(!c)return;
+ function compose(world:PrototypeWorld){for(const child of [...result.children])child.destroy();focus=undefined;const c=world.threshold.composition;if(!c)return;
  // The physical shell/obstacles are invariant. Non-solid light traces remain above body height or flush to walls.
  const rising=c.verticalEmphasis>c.focalEmphasis,roof=4.3+3.4*c.upperOpenness;focus=undefined;
  for(const x of [-7,-5,5,7]){for(const z of [-14,-18,-22,-26]){
