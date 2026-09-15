@@ -1,0 +1,12 @@
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/lib/python3.10/site-packages/xformers/ops/fmha/flash.py:211: FutureWarning: `torch.library.impl_abstract` was renamed to `torch.library.register_fake`. Please use that instead; we will remove `torch.library.impl_abstract` in a future version of PyTorch.
+  @torch.library.impl_abstract("xformers_flash::flash_fwd")
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/lib/python3.10/site-packages/xformers/ops/fmha/flash.py:344: FutureWarning: `torch.library.impl_abstract` was renamed to `torch.library.register_fake`. Please use that instead; we will remove `torch.library.impl_abstract` in a future version of PyTorch.
+  @torch.library.impl_abstract("xformers_flash::flash_bwd")
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|█▍        | 1/7 [00:00<00:01,  4.65it/s]Loading pipeline components...:  57%|█████▋    | 4/7 [00:00<00:00, 10.60it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00,  9.36it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00,  9.13it/s]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:01,  2.26it/s] 75%|███████▌  | 3/4 [00:00<00:00,  5.81it/s]100%|██████████| 4/4 [00:00<00:00,  5.87it/s]
+Traceback (most recent call last):
+  File "/home/vastness/.local/share/vastness-intention-worker/releases/09412b7871e49d040dba5b0a2b002930258a4b09/repo/services/gpu-worker/intention_generation/image_stage.py", line 50, in <module>
+    main()
+  File "/home/vastness/.local/share/vastness-intention-worker/releases/09412b7871e49d040dba5b0a2b002930258a4b09/repo/services/gpu-worker/intention_generation/image_stage.py", line 37, in main
+    raise ValueError(f'Background extraction yielded implausible foreground fraction {foreground}')
+ValueError: Background extraction yielded implausible foreground fraction 0.9999542236328125

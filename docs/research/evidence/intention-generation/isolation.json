@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-09-15T20:57:59.834363+00:00",
+  "files": {
+    ".runtime/world.sqlite": {
+      "before": "4cd795d208bd6df2f54fac6cccbcae78959cdda0f122fce103dcf08ea2d18eae",
+      "after": "4cd795d208bd6df2f54fac6cccbcae78959cdda0f122fce103dcf08ea2d18eae",
+      "unchanged": true
+    },
+    "apps/web/m1-prototype.html": {
+      "before": "b3f89dd859c674c00fa3e7adec5eeb86bad553a05b0a30f35f1a75be47fdccf0",
+      "after": "b3f89dd859c674c00fa3e7adec5eeb86bad553a05b0a30f35f1a75be47fdccf0",
+      "unchanged": true
+    },
+    "apps/web/src/m1-prototype/main.ts": {
+      "before": "fa499dc0405933728d38789b09944683abe7b03fc7a06e55439b74784bb60053",
+      "after": "fa499dc0405933728d38789b09944683abe7b03fc7a06e55439b74784bb60053",
+      "unchanged": true
+    },
+    "scripts/prepare-m1-prototype.ts": {
+      "before": "94cdd2c57d1404a895b47ca570140ff3f3853d417f9408cac68734e42731215b",
+      "after": "94cdd2c57d1404a895b47ca570140ff3f3853d417f9408cac68734e42731215b",
+      "unchanged": true
+    },
+    "apps/web/m1-prototype-public/m1-prototype/scene.json": {
+      "before": "12fd2299311c31c9678a600d6f2d2b02b712c2496485b010d818f620492641fe",
+      "after": "12fd2299311c31c9678a600d6f2d2b02b712c2496485b010d818f620492641fe",
+      "unchanged": true
+    }
+  }
+}

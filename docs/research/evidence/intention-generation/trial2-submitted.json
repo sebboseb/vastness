@@ -1,0 +1,113 @@
+{
+  "world": {
+    "id": "intent-fb4bb474-3e58-4172-99e1-d8876313a33c",
+    "createdAt": "2026-09-15T20:33:40.498Z",
+    "rawIntent": {
+      "text": "Let me enter a dense, tangled garden of giant glowing mushrooms and twisted roots.",
+      "source": "text"
+    },
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "a dense, tangled garden of giant glowing mushrooms and twisted roots.",
+      "axes": {
+        "scale": "vast",
+        "density": "dense",
+        "mood": "luminous",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "derivation": {
+      "compiler": "lexical-semantic-v1",
+      "cues": {
+        "vast": [
+          "giant"
+        ],
+        "intimate": [],
+        "sparse": [],
+        "dense": [
+          "dense",
+          "tangled"
+        ],
+        "open": [],
+        "enclosed": [],
+        "quiet": [],
+        "ominous": [],
+        "luminous": [
+          "glowing"
+        ],
+        "joyful": []
+      },
+      "limitations": [
+        "Rule-based axis extraction; no general language reasoning",
+        "Negation handling is local, not a complete semantic parser",
+        "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+        "Concept is bounded to 600 characters; original input is retained separately"
+      ]
+    },
+    "status": "generating",
+    "jobId": "intent-fb4bb474-3e58-4172-99e1-d8876313a33c",
+    "request": {
+      "id": "intent-fb4bb474-3e58-4172-99e1-d8876313a33c",
+      "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"a dense, tangled garden of giant glowing mushrooms and twisted roots.\",\"axes\":{\"scale\":\"vast\",\"density\":\"dense\",\"mood\":\"luminous\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+      "seed": 42
+    },
+    "events": [
+      {
+        "type": "intent-recorded",
+        "at": "2026-09-15T20:33:40.498Z"
+      },
+      {
+        "type": "constraints-derived",
+        "at": "2026-09-15T20:33:40.498Z"
+      },
+      {
+        "type": "gpu-job-submitted",
+        "at": "2026-09-15T20:33:40.635Z"
+      }
+    ],
+    "workerJob": {
+      "id": "intent-fb4bb474-3e58-4172-99e1-d8876313a33c",
+      "status": "running",
+      "progress": 0,
+      "logs": [
+        "Queued command-v1",
+        "Running command-v1"
+      ],
+      "backend": "command-v1",
+      "error": null
+    }
+  },
+  "telemetry": {
+    "position": [
+      0,
+      1.65,
+      -11.5
+    ],
+    "yaw": 0,
+    "pitch": 0,
+    "overlaps": false,
+    "worldId": "intent-fb4bb474-3e58-4172-99e1-d8876313a33c",
+    "status": "generating",
+    "renderReady": false,
+    "gateOpen": false,
+    "loadingScene": false,
+    "renderFailed": false,
+    "travelMetres": 0,
+    "crossingCount": 0,
+    "returnCount": 0,
+    "pendingVisits": 0,
+    "savingVisits": false,
+    "walking": null,
+    "pathRemaining": 0,
+    "frameCount": 37551,
+    "representation": "solid",
+    "generatedMeshes": 0,
+    "splatAssets": 0,
+    "generatedTriangles": 0,
+    "destinationEntities": 1,
+    "errorCount": 1,
+    "artifactUrls": []
+  }
+}

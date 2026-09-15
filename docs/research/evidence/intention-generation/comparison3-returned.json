@@ -1,0 +1,176 @@
+{
+  "world": {
+    "id": "intent-096c4d7e-3213-4bd4-af72-40ca7630a010",
+    "createdAt": "2026-09-15T20:48:15.468Z",
+    "rawIntent": {
+      "text": "I want a compact, enclosed chamber made of sharp red crystal, dark and ominous.",
+      "source": "text"
+    },
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "a compact, enclosed chamber made of sharp red crystal, dark and ominous.",
+      "axes": {
+        "scale": "intimate",
+        "density": "balanced",
+        "mood": "ominous",
+        "openness": "enclosed"
+      },
+      "representation": "abstract-solid"
+    },
+    "derivation": {
+      "compiler": "lexical-semantic-v1",
+      "cues": {
+        "vast": [],
+        "intimate": [
+          "compact"
+        ],
+        "sparse": [],
+        "dense": [],
+        "open": [],
+        "enclosed": [
+          "enclosed",
+          "chamber"
+        ],
+        "quiet": [],
+        "ominous": [
+          "dark",
+          "ominous"
+        ],
+        "luminous": [],
+        "joyful": []
+      },
+      "limitations": [
+        "Rule-based axis extraction; no general language reasoning",
+        "Negation handling is local, not a complete semantic parser",
+        "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+        "Concept is bounded to 600 characters; original input is retained separately"
+      ]
+    },
+    "status": "ready",
+    "jobId": "intent-096c4d7e-3213-4bd4-af72-40ca7630a010",
+    "request": {
+      "id": "intent-096c4d7e-3213-4bd4-af72-40ca7630a010",
+      "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"a compact, enclosed chamber made of sharp red crystal, dark and ominous.\",\"axes\":{\"scale\":\"intimate\",\"density\":\"balanced\",\"mood\":\"ominous\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+      "seed": 42
+    },
+    "events": [
+      {
+        "type": "intent-recorded",
+        "at": "2026-09-15T20:48:15.468Z"
+      },
+      {
+        "type": "constraints-derived",
+        "at": "2026-09-15T20:48:15.468Z"
+      },
+      {
+        "type": "gpu-job-submitted",
+        "at": "2026-09-15T20:48:15.572Z"
+      },
+      {
+        "type": "artifacts-processing",
+        "at": "2026-09-15T20:50:16.253Z"
+      },
+      {
+        "type": "failed",
+        "at": "2026-09-15T20:50:20.224Z"
+      },
+      {
+        "type": "validation-retried",
+        "at": "2026-09-15T20:55:16.167Z"
+      },
+      {
+        "type": "artifacts-processing",
+        "at": "2026-09-15T20:55:16.170Z"
+      },
+      {
+        "type": "destination-validated",
+        "at": "2026-09-15T20:55:22.179Z"
+      },
+      {
+        "type": "crossed",
+        "at": "2026-09-15T20:55:51.104Z",
+        "position": [
+          0,
+          1.65,
+          -12.00655999999998
+        ],
+        "eventId": "c2e18090-6354-47f9-bda9-2a4a6025a940"
+      },
+      {
+        "type": "returned",
+        "at": "2026-09-15T20:57:10.542Z",
+        "position": [
+          0,
+          1.65,
+          -11.980639999999955
+        ],
+        "eventId": "87af6a14-534a-45e2-9b0d-647ac0045412"
+      }
+    ],
+    "workerJob": {
+      "id": "intent-096c4d7e-3213-4bd4-af72-40ca7630a010",
+      "status": "succeeded",
+      "progress": 1,
+      "logs": [
+        "Queued command-v1",
+        "Running command-v1",
+        "{\"status\": \"succeeded\", \"report\": \"/home/vastness/.local/share/vastness-intention-worker/shared/data/artifacts/.intent-096c4d7e-3213-4bd4-af72-40ca7630a010.tmp/generation-report.json\", \"error\": null}\n",
+        "Visual and collision artifacts are ready"
+      ],
+      "backend": "command-v1",
+      "error": null
+    },
+    "artifacts": [
+      {
+        "url": "/api/intent/artifacts/f5dbfa5c2157da4264d68b064f5ff038cb0bc9a740802cd508a5897ea96fc89b/scene.ply",
+        "sha256": "f5dbfa5c2157da4264d68b064f5ff038cb0bc9a740802cd508a5897ea96fc89b",
+        "bytes": 147232929,
+        "format": "ply",
+        "backend": "command-v1"
+      },
+      {
+        "url": "/api/intent/artifacts/925c07cec101e76d91e0781fdf7a9da4051792ec4a155c16eb155aa2825b3382/collider.glb",
+        "sha256": "925c07cec101e76d91e0781fdf7a9da4051792ec4a155c16eb155aa2825b3382",
+        "bytes": 54111208,
+        "format": "glb",
+        "backend": "command-v1"
+      }
+    ],
+    "sceneUrl": "/api/intent/worlds/intent-096c4d7e-3213-4bd4-af72-40ca7630a010/scene"
+  },
+  "telemetry": {
+    "position": [
+      0,
+      1.65,
+      -11.500639999999954
+    ],
+    "yaw": 180,
+    "pitch": 0,
+    "overlaps": false,
+    "worldId": "intent-096c4d7e-3213-4bd4-af72-40ca7630a010",
+    "status": "ready",
+    "renderReady": true,
+    "gateOpen": true,
+    "loadingScene": false,
+    "renderFailed": false,
+    "travelMetres": 96.13225031374742,
+    "crossingCount": 1,
+    "returnCount": 1,
+    "pendingVisits": 0,
+    "savingVisits": false,
+    "walking": null,
+    "pathRemaining": 0,
+    "frameCount": 20241,
+    "representation": "solid",
+    "generatedMeshes": 1,
+    "splatAssets": 1,
+    "generatedTriangles": 126551,
+    "destinationEntities": 2103,
+    "errorCount": 1,
+    "artifactUrls": [
+      "/api/intent/artifacts/f5dbfa5c2157da4264d68b064f5ff038cb0bc9a740802cd508a5897ea96fc89b/scene.ply",
+      "/api/intent/artifacts/925c07cec101e76d91e0781fdf7a9da4051792ec4a155c16eb155aa2825b3382/collider.glb"
+    ]
+  }
+}

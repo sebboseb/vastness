@@ -1,0 +1,18 @@
+{
+  "loadSeconds": 3.0061910709999893,
+  "generationSeconds": 6.704592300000002,
+  "alphaSeconds": 0.5228728780000438,
+  "tokenCounts": [
+    45,
+    45
+  ],
+  "tokenLimit": 77,
+  "promptTruncated": false,
+  "foregroundFraction": 0.2734413146972656,
+  "torchPeakAllocatedBytes": 8287861760,
+  "torchPeakReservedBytes": 9504292864,
+  "torchVersion": "2.4.0+cu121",
+  "torchCudaVersion": "12.1",
+  "gpuName": "NVIDIA GeForce RTX 3090",
+  "alphaMethod": "rembg2.0.60-u2netp-cpu"
+}

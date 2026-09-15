@@ -1,0 +1,20 @@
+{
+  "localCommand": "npm run check:intention",
+  "exitCode": 0,
+  "existingTestsPassed": 33,
+  "isolatedTestsPassed": 21,
+  "skippedLocalTests": 0,
+  "typecheck": "passed",
+  "builds": [
+    "M0",
+    "intention"
+  ],
+  "workerTests": {
+    "total": 41,
+    "passed": 37,
+    "skipped": 4,
+    "remoteIsolatedContractAndPillowPassed": 6
+  },
+  "nvidiaExecution": "completed in all three final generation reports",
+  "browserConsoleErrorsAfterStartupFix": 0
+}

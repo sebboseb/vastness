@@ -1,0 +1,19 @@
+{
+  "loadSeconds": 2.467551268999955,
+  "generationSeconds": 1.3745960700000524,
+  "alphaSeconds": 0.3302408539999533,
+  "tokenCounts": [
+    55,
+    55
+  ],
+  "tokenLimit": 77,
+  "promptTruncated": false,
+  "foregroundFraction": 0.6817092895507812,
+  "torchPeakAllocatedBytes": 8285027328,
+  "torchPeakReservedBytes": 9560915968,
+  "torchVersion": "2.4.0+cu121",
+  "torchCudaVersion": "12.1",
+  "gpuName": "NVIDIA GeForce RTX 3090",
+  "alphaMethod": "white-matte-v1",
+  "alphaLimitation": "Color key may remove pale material; RGB retained for inspection"
+}

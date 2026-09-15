@@ -1,0 +1,161 @@
+{
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "vramTotalMiB": 24576,
+  "driver": "610.62",
+  "cases": [
+    {
+      "case": "comparison1",
+      "jobId": "intent-627a51e4-fb55-44a6-9e35-b795fba1b82b",
+      "originalIntent": "I want to find somewhere enormous and quiet: a single pale stone arch above a still lake, with open sky.",
+      "axes": {
+        "scale": "vast",
+        "density": "sparse",
+        "mood": "quiet",
+        "openness": "open"
+      },
+      "seed": 42,
+      "status": "ready",
+      "workerGenerationSeconds": 221.70488210999997,
+      "recordToReadySeconds": 227.056,
+      "includesValidationRepairPause": false,
+      "sampledDevicePeakMiB": 16629.0,
+      "imageTokens": [
+        55,
+        55
+      ],
+      "promptTruncated": false,
+      "conditioningMode": "white-matte",
+      "metrics": {
+        "sourceVertices": 593028,
+        "sourceTriangles": 1185258,
+        "meshVertices": 15270,
+        "meshTriangles": 40924,
+        "clusterPitchModelUnits": 0.018,
+        "scaleMetresPerModelUnit": 6,
+        "voxelPitchMetres": 0.12,
+        "maximumSamplePitchMetres": 0.06,
+        "maximumSurfacePaddingMetres": 0.06,
+        "surfaceSamples": 3555774,
+        "surfaceCells": 12040,
+        "occupiedCells": 19270,
+        "colliderBoxes": 816,
+        "colliderTriangles": 9792,
+        "glyphCount": 3500
+      },
+      "artifactHashes": {
+        "ply": "1ef2021d616b99aacbf3ed873a0d46d9a5ab5596e6d931c1bedd746f67b1cc75",
+        "glb": "b12c3695a3c8297e0b274302a9ddc46e19bfd874e08845c31dfecb1fe6b7f320"
+      },
+      "crossingCount": 1,
+      "returnCount": 1,
+      "roundTripMetres": 79.59997513370249,
+      "overlapsAtCircuitEnd": false,
+      "overlapsAtReturn": false,
+      "pendingVisitsAtReturn": 0,
+      "submissionCount": 1
+    },
+    {
+      "case": "comparison2",
+      "jobId": "intent-4b29932c-114d-4673-89f3-fa15e3f895a4",
+      "originalIntent": "Let me enter a dense, tangled garden of giant glowing mushrooms and twisted roots.",
+      "axes": {
+        "scale": "vast",
+        "density": "dense",
+        "mood": "luminous",
+        "openness": "mixed"
+      },
+      "seed": 42,
+      "status": "ready",
+      "workerGenerationSeconds": 75.65277741399996,
+      "recordToReadySeconds": 78.74,
+      "includesValidationRepairPause": false,
+      "sampledDevicePeakMiB": 17029.0,
+      "imageTokens": [
+        48,
+        48
+      ],
+      "promptTruncated": false,
+      "conditioningMode": "unsegmented-full-frame",
+      "metrics": {
+        "sourceVertices": 415942,
+        "sourceTriangles": 832224,
+        "meshVertices": 15157,
+        "meshTriangles": 33728,
+        "clusterPitchModelUnits": 0.018,
+        "scaleMetresPerModelUnit": 6,
+        "voxelPitchMetres": 0.12,
+        "maximumSamplePitchMetres": 0.06,
+        "maximumSurfacePaddingMetres": 0.06,
+        "surfaceSamples": 2496672,
+        "surfaceCells": 11946,
+        "occupiedCells": 17040,
+        "colliderBoxes": 1496,
+        "colliderTriangles": 17952,
+        "glyphCount": 3500
+      },
+      "artifactHashes": {
+        "ply": "cb6315bb4ae0469d8369771fccadcda0b0c1f5c3bf165690a255832d655813b8",
+        "glb": "c1467ac42184992988ae16f6ecf1cd44629b4639fc69702f499f98125746ee63"
+      },
+      "crossingCount": 1,
+      "returnCount": 1,
+      "roundTripMetres": 93.2173205287856,
+      "overlapsAtCircuitEnd": false,
+      "overlapsAtReturn": false,
+      "pendingVisitsAtReturn": 0,
+      "submissionCount": 1
+    },
+    {
+      "case": "comparison3",
+      "jobId": "intent-096c4d7e-3213-4bd4-af72-40ca7630a010",
+      "originalIntent": "I want a compact, enclosed chamber made of sharp red crystal, dark and ominous.",
+      "axes": {
+        "scale": "intimate",
+        "density": "balanced",
+        "mood": "ominous",
+        "openness": "enclosed"
+      },
+      "seed": 42,
+      "status": "ready",
+      "workerGenerationSeconds": 119.4168542079999,
+      "recordToReadySeconds": 426.711,
+      "includesValidationRepairPause": true,
+      "sampledDevicePeakMiB": 24233.0,
+      "imageTokens": [
+        50,
+        50
+      ],
+      "promptTruncated": false,
+      "conditioningMode": "unsegmented-full-frame",
+      "metrics": {
+        "sourceVertices": 1503500,
+        "sourceTriangles": 3005700,
+        "meshVertices": 54562,
+        "meshTriangles": 126551,
+        "clusterPitchModelUnits": 0.018,
+        "scaleMetresPerModelUnit": 6,
+        "voxelPitchMetres": 0.12,
+        "maximumSamplePitchMetres": 0.06,
+        "maximumSurfacePaddingMetres": 0.06,
+        "surfaceSamples": 9017100,
+        "surfaceCells": 39065,
+        "occupiedCells": 57044,
+        "colliderBoxes": 2093,
+        "colliderTriangles": 25116,
+        "glyphCount": 3500
+      },
+      "artifactHashes": {
+        "ply": "f5dbfa5c2157da4264d68b064f5ff038cb0bc9a740802cd508a5897ea96fc89b",
+        "glb": "925c07cec101e76d91e0781fdf7a9da4051792ec4a155c16eb155aa2825b3382"
+      },
+      "crossingCount": 1,
+      "returnCount": 1,
+      "roundTripMetres": 96.13225031374742,
+      "overlapsAtCircuitEnd": false,
+      "overlapsAtReturn": false,
+      "pendingVisitsAtReturn": 0,
+      "submissionCount": 1
+    }
+  ]
+}

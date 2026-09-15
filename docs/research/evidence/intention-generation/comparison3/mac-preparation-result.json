@@ -1,0 +1,102 @@
+{
+  "preparationMs": 5768,
+  "sources": {
+    "jobId": "intent-096c4d7e-3213-4bd4-af72-40ca7630a010",
+    "ply": {
+      "filename": "scene.ply",
+      "sha256": "f5dbfa5c2157da4264d68b064f5ff038cb0bc9a740802cd508a5897ea96fc89b",
+      "bytes": 147232929,
+      "backend": "command-v1"
+    },
+    "glb": {
+      "filename": "collider.glb",
+      "sha256": "925c07cec101e76d91e0781fdf7a9da4051792ec4a155c16eb155aa2825b3382",
+      "bytes": 54111208,
+      "backend": "command-v1"
+    }
+  },
+  "metrics": {
+    "sourceVertices": 1503500,
+    "sourceTriangles": 3005700,
+    "meshVertices": 54562,
+    "meshTriangles": 126551,
+    "clusterPitchModelUnits": 0.018,
+    "scaleMetresPerModelUnit": 6,
+    "voxelPitchMetres": 0.12,
+    "maximumSamplePitchMetres": 0.06,
+    "maximumSurfacePaddingMetres": 0.06,
+    "surfaceSamples": 9017100,
+    "surfaceCells": 39065,
+    "occupiedCells": 57044,
+    "colliderBoxes": 2093,
+    "colliderTriangles": 25116,
+    "glyphCount": 3500
+  },
+  "sourceBounds": {
+    "min": [
+      -0.5007639527320862,
+      -0.5013420581817627,
+      -0.5011510252952576
+    ],
+    "max": [
+      0.5006712675094604,
+      0.5005823969841003,
+      0.5012916326522827
+    ]
+  },
+  "visualBounds": {
+    "min": [
+      -0.5039061903953552,
+      -0.5039061903953552,
+      -0.5039057731628418
+    ],
+    "max": [
+      0.5039060115814209,
+      0.50390625,
+      0.50390625
+    ]
+  },
+  "route": [
+    [
+      0,
+      1.65,
+      -13
+    ],
+    [
+      0,
+      1.65,
+      -17.279999999999998
+    ],
+    [
+      3.72,
+      1.65,
+      -17.279999999999998
+    ],
+    [
+      3.72,
+      1.65,
+      -24.720000000000002
+    ],
+    [
+      -3.72,
+      1.65,
+      -24.720000000000002
+    ],
+    [
+      -3.72,
+      1.65,
+      -17.279999999999998
+    ],
+    [
+      0,
+      1.65,
+      -17.279999999999998
+    ],
+    [
+      0,
+      1.65,
+      -13
+    ]
+  ],
+  "routeVerified": true
+}
