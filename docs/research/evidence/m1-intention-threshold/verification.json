@@ -1,0 +1,29 @@
+{
+  "databaseSha256Before": "4cd795d208bd6df2f54fac6cccbcae78959cdda0f122fce103dcf08ea2d18eae",
+  "sourceArtifactSha256": {
+    "scene.json": "12fd2299311c31c9678a600d6f2d2b02b712c2496485b010d818f620492641fe",
+    "scene.ply": "45225f837c1f7551337ee86a5d42afddddf895b59a5f563facc8c1d9c9799a1f"
+  },
+  "databaseSha256After": "4cd795d208bd6df2f54fac6cccbcae78959cdda0f122fce103dcf08ea2d18eae",
+  "m0Unchanged": true,
+  "prototypeSourceCommit": "bd2000931a851bbdeb17ceb8ec3067c0347a1883",
+  "verification": {
+    "command": "npm run check:m1",
+    "tests": 33,
+    "passed": 33,
+    "failed": 0,
+    "skipped": 0,
+    "typecheck": "passed",
+    "m0Build": "passed",
+    "prototypeBuild": "passed"
+  },
+  "derivedArtifactsUnchanged": true,
+  "browserAcceptance": {
+    "matchedStyleCameras": true,
+    "matchedIntentionCameras": true,
+    "bothCrossedAndReturned": true,
+    "bothReloadRecordsIdentical": true,
+    "seekResetUnshaped": true,
+    "transitionalTelemetryMayLagWorldRecordMs": 250
+  }
+}

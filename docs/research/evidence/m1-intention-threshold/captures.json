@@ -1,0 +1,1129 @@
+[
+  {
+    "label": "hybrid-stress-front",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": true,
+      "glyphsVisible": 6,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": false,
+      "worldPhase": "ready",
+      "intention": "ascend",
+      "thought": 0,
+      "pitch": 5,
+      "position": [
+        0,
+        1.65,
+        7
+      ],
+      "yaw": 0,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.1,
+      "samples": 600,
+      "loadMs": 770.7,
+      "tourIndex": -1
+    }
+  },
+  {
+    "label": "faceted-stress-front",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "faceted",
+      "stress": true,
+      "glyphsVisible": 0,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": false,
+      "worldPhase": "ready",
+      "intention": "ascend",
+      "thought": 0,
+      "pitch": 5,
+      "position": [
+        0,
+        1.65,
+        7
+      ],
+      "yaw": 0,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.1,
+      "samples": 600,
+      "loadMs": 770.7,
+      "tourIndex": -1
+    }
+  },
+  {
+    "label": "solid-stress-front",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "solid",
+      "stress": true,
+      "glyphsVisible": 0,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": false,
+      "worldPhase": "ready",
+      "intention": "ascend",
+      "thought": 0,
+      "pitch": 5,
+      "position": [
+        0,
+        1.65,
+        7
+      ],
+      "yaw": 0,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9,
+      "samples": 600,
+      "loadMs": 770.7,
+      "tourIndex": -1
+    }
+  },
+  {
+    "label": "solid-stress-side",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "solid",
+      "stress": true,
+      "glyphsVisible": 0,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": false,
+      "worldPhase": "ready",
+      "intention": "ascend",
+      "thought": 0,
+      "pitch": 8,
+      "position": [
+        6.8,
+        1.65,
+        0
+      ],
+      "yaw": 90,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.1,
+      "samples": 600,
+      "loadMs": 770.7,
+      "tourIndex": -1
+    }
+  },
+  {
+    "label": "hybrid-stress-side",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": true,
+      "glyphsVisible": 18,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": false,
+      "worldPhase": "ready",
+      "intention": "ascend",
+      "thought": 0,
+      "pitch": 8,
+      "position": [
+        6.8,
+        1.65,
+        0
+      ],
+      "yaw": 90,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9,
+      "samples": 600,
+      "loadMs": 770.7,
+      "tourIndex": -1
+    }
+  },
+  {
+    "label": "faceted-stress-side",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "faceted",
+      "stress": true,
+      "glyphsVisible": 0,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": false,
+      "worldPhase": "ready",
+      "intention": "ascend",
+      "thought": 0,
+      "pitch": 8,
+      "position": [
+        6.8,
+        1.65,
+        0
+      ],
+      "yaw": 90,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.1,
+      "samples": 600,
+      "loadMs": 770.7,
+      "tourIndex": -1
+    }
+  },
+  {
+    "label": "faceted-stress-near",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "faceted",
+      "stress": true,
+      "glyphsVisible": 0,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": false,
+      "worldPhase": "ready",
+      "intention": "ascend",
+      "thought": 0,
+      "pitch": 5,
+      "position": [
+        0,
+        1.65,
+        1.62
+      ],
+      "yaw": 0,
+      "travelMetres": 5.38,
+      "collisionFrames": 1859,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9,
+      "samples": 600,
+      "loadMs": 770.7,
+      "tourIndex": -1
+    }
+  },
+  {
+    "label": "solid-stress-near",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "solid",
+      "stress": true,
+      "glyphsVisible": 0,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": false,
+      "worldPhase": "ready",
+      "intention": "ascend",
+      "thought": 0,
+      "pitch": 5,
+      "position": [
+        0,
+        1.65,
+        1.62
+      ],
+      "yaw": 0,
+      "travelMetres": 5.38,
+      "collisionFrames": 1859,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.1,
+      "samples": 600,
+      "loadMs": 770.7,
+      "tourIndex": -1
+    }
+  },
+  {
+    "label": "hybrid-stress-near",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": true,
+      "glyphsVisible": 18,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": false,
+      "worldPhase": "ready",
+      "intention": "ascend",
+      "thought": 0,
+      "pitch": 5,
+      "position": [
+        0,
+        1.65,
+        1.62
+      ],
+      "yaw": 0,
+      "travelMetres": 5.38,
+      "collisionFrames": 1859,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.2,
+      "samples": 600,
+      "loadMs": 770.7,
+      "tourIndex": -1
+    }
+  },
+  {
+    "label": "hybrid-stress-circuit-return",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": true,
+      "glyphsVisible": 6,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": false,
+      "worldPhase": "ready",
+      "intention": "ascend",
+      "thought": 0,
+      "pitch": 2,
+      "position": [
+        0.077,
+        1.65,
+        6.953
+      ],
+      "yaw": 121.5,
+      "travelMetres": 34.07,
+      "collisionFrames": 1859,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.1,
+      "samples": 600,
+      "loadMs": 770.7,
+      "tourIndex": -1
+    }
+  },
+  {
+    "label": "hybrid-clean-front",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": false,
+      "glyphsVisible": 6,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": false,
+      "worldPhase": "unshaped",
+      "intention": null,
+      "thought": 0,
+      "pitch": 5,
+      "position": [
+        0,
+        1.65,
+        7
+      ],
+      "yaw": 0,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.2,
+      "samples": 600,
+      "loadMs": 825.2,
+      "tourIndex": -1
+    }
+  },
+  {
+    "label": "threshold-unformed-contact",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": false,
+      "glyphsVisible": 35,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": true,
+      "worldPhase": "unshaped",
+      "intention": null,
+      "thought": 0,
+      "pitch": 0,
+      "position": [
+        -0.001,
+        1.65,
+        -10.5
+      ],
+      "yaw": 0,
+      "travelMetres": 21.82,
+      "collisionFrames": 2272,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.2,
+      "samples": 600,
+      "loadMs": 815.3,
+      "tourIndex": -1
+    },
+    "world": {
+      "schema": 1,
+      "id": "PROTOTYPE-wipe-me-threshold",
+      "threshold": {
+        "id": "north",
+        "phase": "unshaped",
+        "intention": null,
+        "constraints": null,
+        "composition": null
+      },
+      "events": []
+    }
+  },
+  {
+    "label": "ascend-ready-contact",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": false,
+      "glyphsVisible": 35,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": true,
+      "worldPhase": "ready",
+      "intention": "ascend",
+      "thought": 0,
+      "pitch": 0,
+      "position": [
+        -0.001,
+        1.65,
+        -10.5
+      ],
+      "yaw": 0,
+      "travelMetres": 21.82,
+      "collisionFrames": 2272,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.2,
+      "samples": 600,
+      "loadMs": 815.3,
+      "tourIndex": -1
+    },
+    "world": {
+      "schema": 1,
+      "id": "PROTOTYPE-wipe-me-threshold",
+      "threshold": {
+        "id": "north",
+        "phase": "ready",
+        "intention": "ascend",
+        "constraints": {
+          "verticalEmphasis": 1,
+          "focalEmphasis": 0.15,
+          "upperOpenness": 1,
+          "detailRevelation": 0.2,
+          "continuousFloor": true
+        },
+        "composition": {
+          "verticalEmphasis": 1,
+          "focalEmphasis": 0.15,
+          "upperOpenness": 1,
+          "detailRevelation": 0.2,
+          "continuousFloor": true,
+          "source": "controlled-fixture-v1",
+          "seed": 14
+        }
+      },
+      "events": [
+        {
+          "sequence": 1,
+          "kind": "intention-recorded",
+          "intention": "ascend"
+        },
+        {
+          "sequence": 2,
+          "kind": "composition-ready",
+          "intention": "ascend"
+        }
+      ]
+    }
+  },
+  {
+    "label": "ascend-crossed-obstacle",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": false,
+      "glyphsVisible": 0,
+      "nextGlyphsVisible": 54,
+      "inspection": false,
+      "intentionMode": true,
+      "worldPhase": "crossed",
+      "intention": "ascend",
+      "thought": 0,
+      "pitch": 0,
+      "position": [
+        -0.001,
+        1.65,
+        -22.38
+      ],
+      "yaw": 0,
+      "travelMetres": 33.7,
+      "collisionFrames": 5085,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.2,
+      "samples": 600,
+      "loadMs": 815.3,
+      "tourIndex": -1
+    },
+    "world": {
+      "schema": 1,
+      "id": "PROTOTYPE-wipe-me-threshold",
+      "threshold": {
+        "id": "north",
+        "phase": "crossed",
+        "intention": "ascend",
+        "constraints": {
+          "verticalEmphasis": 1,
+          "focalEmphasis": 0.15,
+          "upperOpenness": 1,
+          "detailRevelation": 0.2,
+          "continuousFloor": true
+        },
+        "composition": {
+          "verticalEmphasis": 1,
+          "focalEmphasis": 0.15,
+          "upperOpenness": 1,
+          "detailRevelation": 0.2,
+          "continuousFloor": true,
+          "source": "controlled-fixture-v1",
+          "seed": 14
+        }
+      },
+      "events": [
+        {
+          "sequence": 1,
+          "kind": "intention-recorded",
+          "intention": "ascend"
+        },
+        {
+          "sequence": 2,
+          "kind": "composition-ready",
+          "intention": "ascend"
+        },
+        {
+          "sequence": 3,
+          "kind": "crossed",
+          "intention": "ascend"
+        }
+      ]
+    }
+  },
+  {
+    "label": "ascend-returned",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": false,
+      "glyphsVisible": 41,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": true,
+      "worldPhase": "crossed",
+      "intention": "ascend",
+      "thought": 0,
+      "pitch": 2,
+      "position": [
+        0,
+        1.65,
+        -9.067
+      ],
+      "yaw": -180,
+      "travelMetres": 47.01,
+      "collisionFrames": 5085,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.3,
+      "samples": 600,
+      "loadMs": 815.3,
+      "tourIndex": -1
+    },
+    "world": {
+      "schema": 1,
+      "id": "PROTOTYPE-wipe-me-threshold",
+      "threshold": {
+        "id": "north",
+        "phase": "crossed",
+        "intention": "ascend",
+        "constraints": {
+          "verticalEmphasis": 1,
+          "focalEmphasis": 0.15,
+          "upperOpenness": 1,
+          "detailRevelation": 0.2,
+          "continuousFloor": true
+        },
+        "composition": {
+          "verticalEmphasis": 1,
+          "focalEmphasis": 0.15,
+          "upperOpenness": 1,
+          "detailRevelation": 0.2,
+          "continuousFloor": true,
+          "source": "controlled-fixture-v1",
+          "seed": 14
+        }
+      },
+      "events": [
+        {
+          "sequence": 1,
+          "kind": "intention-recorded",
+          "intention": "ascend"
+        },
+        {
+          "sequence": 2,
+          "kind": "composition-ready",
+          "intention": "ascend"
+        },
+        {
+          "sequence": 3,
+          "kind": "crossed",
+          "intention": "ascend"
+        },
+        {
+          "sequence": 4,
+          "kind": "returned",
+          "intention": "ascend"
+        }
+      ]
+    }
+  },
+  {
+    "label": "ascend-reloaded",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": false,
+      "glyphsVisible": 6,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": true,
+      "worldPhase": "crossed",
+      "intention": "ascend",
+      "thought": 0,
+      "pitch": 5,
+      "position": [
+        0,
+        1.65,
+        7
+      ],
+      "yaw": 0,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.2,
+      "samples": 600,
+      "loadMs": 815.4,
+      "tourIndex": -1
+    },
+    "world": {
+      "schema": 1,
+      "id": "PROTOTYPE-wipe-me-threshold",
+      "threshold": {
+        "id": "north",
+        "phase": "crossed",
+        "intention": "ascend",
+        "constraints": {
+          "verticalEmphasis": 1,
+          "focalEmphasis": 0.15,
+          "upperOpenness": 1,
+          "detailRevelation": 0.2,
+          "continuousFloor": true
+        },
+        "composition": {
+          "verticalEmphasis": 1,
+          "focalEmphasis": 0.15,
+          "upperOpenness": 1,
+          "detailRevelation": 0.2,
+          "continuousFloor": true,
+          "source": "controlled-fixture-v1",
+          "seed": 14
+        }
+      },
+      "events": [
+        {
+          "sequence": 1,
+          "kind": "intention-recorded",
+          "intention": "ascend"
+        },
+        {
+          "sequence": 2,
+          "kind": "composition-ready",
+          "intention": "ascend"
+        },
+        {
+          "sequence": 3,
+          "kind": "crossed",
+          "intention": "ascend"
+        },
+        {
+          "sequence": 4,
+          "kind": "returned",
+          "intention": "ascend"
+        }
+      ]
+    }
+  },
+  {
+    "label": "seek-before-approach",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": false,
+      "glyphsVisible": 41,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": true,
+      "worldPhase": "unshaped",
+      "intention": null,
+      "thought": 0,
+      "pitch": 2,
+      "position": [
+        -0.001,
+        1.65,
+        -8.931
+      ],
+      "yaw": -0.8,
+      "travelMetres": 20.27,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.2,
+      "samples": 600,
+      "loadMs": 815.4,
+      "tourIndex": -1
+    },
+    "world": {
+      "schema": 1,
+      "id": "PROTOTYPE-wipe-me-threshold",
+      "threshold": {
+        "id": "north",
+        "phase": "unshaped",
+        "intention": null,
+        "constraints": null,
+        "composition": null
+      },
+      "events": []
+    }
+  },
+  {
+    "label": "seek-forming",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": false,
+      "glyphsVisible": 35,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": true,
+      "worldPhase": "unshaped",
+      "intention": null,
+      "thought": 1.08,
+      "pitch": 0,
+      "position": [
+        -0.001,
+        1.65,
+        -10.5
+      ],
+      "yaw": 0,
+      "travelMetres": 21.84,
+      "collisionFrames": 2026,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.1,
+      "samples": 600,
+      "loadMs": 815.4,
+      "tourIndex": -1
+    },
+    "world": {
+      "schema": 1,
+      "id": "PROTOTYPE-wipe-me-threshold",
+      "threshold": {
+        "id": "north",
+        "phase": "forming",
+        "intention": "seek",
+        "constraints": {
+          "verticalEmphasis": 0.15,
+          "focalEmphasis": 1,
+          "upperOpenness": 0.35,
+          "detailRevelation": 1,
+          "continuousFloor": true
+        },
+        "composition": {
+          "verticalEmphasis": 0.15,
+          "focalEmphasis": 1,
+          "upperOpenness": 0.35,
+          "detailRevelation": 1,
+          "continuousFloor": true,
+          "source": "controlled-fixture-v1",
+          "seed": 14
+        }
+      },
+      "events": [
+        {
+          "sequence": 1,
+          "kind": "intention-recorded",
+          "intention": "seek"
+        }
+      ]
+    }
+  },
+  {
+    "label": "seek-ready-contact",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": false,
+      "glyphsVisible": 35,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": true,
+      "worldPhase": "ready",
+      "intention": "seek",
+      "thought": 0,
+      "pitch": 0,
+      "position": [
+        -0.001,
+        1.65,
+        -10.5
+      ],
+      "yaw": 0,
+      "travelMetres": 21.84,
+      "collisionFrames": 2026,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.2,
+      "samples": 600,
+      "loadMs": 815.4,
+      "tourIndex": -1
+    },
+    "world": {
+      "schema": 1,
+      "id": "PROTOTYPE-wipe-me-threshold",
+      "threshold": {
+        "id": "north",
+        "phase": "ready",
+        "intention": "seek",
+        "constraints": {
+          "verticalEmphasis": 0.15,
+          "focalEmphasis": 1,
+          "upperOpenness": 0.35,
+          "detailRevelation": 1,
+          "continuousFloor": true
+        },
+        "composition": {
+          "verticalEmphasis": 0.15,
+          "focalEmphasis": 1,
+          "upperOpenness": 0.35,
+          "detailRevelation": 1,
+          "continuousFloor": true,
+          "source": "controlled-fixture-v1",
+          "seed": 14
+        }
+      },
+      "events": [
+        {
+          "sequence": 1,
+          "kind": "intention-recorded",
+          "intention": "seek"
+        },
+        {
+          "sequence": 2,
+          "kind": "composition-ready",
+          "intention": "seek"
+        }
+      ]
+    }
+  },
+  {
+    "label": "seek-crossed-obstacle",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": false,
+      "glyphsVisible": 0,
+      "nextGlyphsVisible": 54,
+      "inspection": false,
+      "intentionMode": true,
+      "worldPhase": "crossed",
+      "intention": "seek",
+      "thought": 0,
+      "pitch": 0,
+      "position": [
+        -0.001,
+        1.65,
+        -22.38
+      ],
+      "yaw": 0,
+      "travelMetres": 33.72,
+      "collisionFrames": 5010,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.3,
+      "samples": 600,
+      "loadMs": 815.4,
+      "tourIndex": -1
+    },
+    "world": {
+      "schema": 1,
+      "id": "PROTOTYPE-wipe-me-threshold",
+      "threshold": {
+        "id": "north",
+        "phase": "crossed",
+        "intention": "seek",
+        "constraints": {
+          "verticalEmphasis": 0.15,
+          "focalEmphasis": 1,
+          "upperOpenness": 0.35,
+          "detailRevelation": 1,
+          "continuousFloor": true
+        },
+        "composition": {
+          "verticalEmphasis": 0.15,
+          "focalEmphasis": 1,
+          "upperOpenness": 0.35,
+          "detailRevelation": 1,
+          "continuousFloor": true,
+          "source": "controlled-fixture-v1",
+          "seed": 14
+        }
+      },
+      "events": [
+        {
+          "sequence": 1,
+          "kind": "intention-recorded",
+          "intention": "seek"
+        },
+        {
+          "sequence": 2,
+          "kind": "composition-ready",
+          "intention": "seek"
+        },
+        {
+          "sequence": 3,
+          "kind": "crossed",
+          "intention": "seek"
+        }
+      ]
+    }
+  },
+  {
+    "label": "seek-returned",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": false,
+      "glyphsVisible": 40,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": true,
+      "worldPhase": "crossed",
+      "intention": "seek",
+      "thought": 0,
+      "pitch": 2,
+      "position": [
+        0,
+        1.65,
+        -9.087
+      ],
+      "yaw": -180,
+      "travelMetres": 47.01,
+      "collisionFrames": 5010,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.2,
+      "samples": 600,
+      "loadMs": 815.4,
+      "tourIndex": -1
+    },
+    "world": {
+      "schema": 1,
+      "id": "PROTOTYPE-wipe-me-threshold",
+      "threshold": {
+        "id": "north",
+        "phase": "crossed",
+        "intention": "seek",
+        "constraints": {
+          "verticalEmphasis": 0.15,
+          "focalEmphasis": 1,
+          "upperOpenness": 0.35,
+          "detailRevelation": 1,
+          "continuousFloor": true
+        },
+        "composition": {
+          "verticalEmphasis": 0.15,
+          "focalEmphasis": 1,
+          "upperOpenness": 0.35,
+          "detailRevelation": 1,
+          "continuousFloor": true,
+          "source": "controlled-fixture-v1",
+          "seed": 14
+        }
+      },
+      "events": [
+        {
+          "sequence": 1,
+          "kind": "intention-recorded",
+          "intention": "seek"
+        },
+        {
+          "sequence": 2,
+          "kind": "composition-ready",
+          "intention": "seek"
+        },
+        {
+          "sequence": 3,
+          "kind": "crossed",
+          "intention": "seek"
+        },
+        {
+          "sequence": 4,
+          "kind": "returned",
+          "intention": "seek"
+        }
+      ]
+    }
+  },
+  {
+    "label": "seek-reloaded",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": false,
+      "glyphsVisible": 6,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": true,
+      "worldPhase": "crossed",
+      "intention": "seek",
+      "thought": 0,
+      "pitch": 5,
+      "position": [
+        0,
+        1.65,
+        7
+      ],
+      "yaw": 0,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.2,
+      "samples": 600,
+      "loadMs": 801.2,
+      "tourIndex": -1
+    },
+    "world": {
+      "schema": 1,
+      "id": "PROTOTYPE-wipe-me-threshold",
+      "threshold": {
+        "id": "north",
+        "phase": "crossed",
+        "intention": "seek",
+        "constraints": {
+          "verticalEmphasis": 0.15,
+          "focalEmphasis": 1,
+          "upperOpenness": 0.35,
+          "detailRevelation": 1,
+          "continuousFloor": true
+        },
+        "composition": {
+          "verticalEmphasis": 0.15,
+          "focalEmphasis": 1,
+          "upperOpenness": 0.35,
+          "detailRevelation": 1,
+          "continuousFloor": true,
+          "source": "controlled-fixture-v1",
+          "seed": 14
+        }
+      },
+      "events": [
+        {
+          "sequence": 1,
+          "kind": "intention-recorded",
+          "intention": "seek"
+        },
+        {
+          "sequence": 2,
+          "kind": "composition-ready",
+          "intention": "seek"
+        },
+        {
+          "sequence": 3,
+          "kind": "crossed",
+          "intention": "seek"
+        },
+        {
+          "sequence": 4,
+          "kind": "returned",
+          "intention": "seek"
+        }
+      ]
+    }
+  },
+  {
+    "label": "fresh-world-after-seek-reset",
+    "height": 720,
+    "width": 1280,
+    "state": {
+      "variant": "hybrid",
+      "stress": false,
+      "glyphsVisible": 6,
+      "nextGlyphsVisible": 0,
+      "inspection": false,
+      "intentionMode": true,
+      "worldPhase": "unshaped",
+      "intention": null,
+      "thought": 0,
+      "pitch": 5,
+      "position": [
+        0,
+        1.65,
+        7
+      ],
+      "yaw": 0,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.3,
+      "samples": 600,
+      "loadMs": 801.2,
+      "tourIndex": -1
+    },
+    "world": {
+      "schema": 1,
+      "id": "PROTOTYPE-wipe-me-threshold",
+      "threshold": {
+        "id": "north",
+        "phase": "unshaped",
+        "intention": null,
+        "constraints": null,
+        "composition": null
+      },
+      "events": []
+    }
+  }
+]
