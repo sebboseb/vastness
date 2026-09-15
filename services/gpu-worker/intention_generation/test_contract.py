@@ -1,4 +1,5 @@
 import copy
+import importlib.util
 import json
 from pathlib import Path
 import subprocess
@@ -7,10 +8,10 @@ import tempfile
 import unittest
 try:
     from .semantic import validate_request, image_prompt
-    from .alpha import alpha_for_rgb
+    from .alpha import alpha_for_rgb, conditioning_image
 except ImportError:
     from semantic import validate_request, image_prompt
-    from alpha import alpha_for_rgb
+    from alpha import alpha_for_rgb, conditioning_image
 
 
 class ContractTests(unittest.TestCase):
@@ -51,6 +52,26 @@ class ContractTests(unittest.TestCase):
         self.assertEqual(alpha_for_rgb((255, 80, 120)), 255)
         self.assertEqual(alpha_for_rgb((30, 30, 30)), 255)
         self.assertTrue(0 < alpha_for_rgb((232, 230, 230)) < 255)
+
+    @unittest.skipUnless(importlib.util.find_spec('PIL'), 'Pillow available in prepared worker environment')
+    def test_full_frame_preserves_every_rgb_pixel_and_explicit_alpha_border(self):
+        from PIL import Image
+        original = Image.new('RGB', (8, 8), (20, 110, 40))
+        conditioned, metrics = conditioning_image(original)
+        self.assertEqual(metrics['conditioningMode'], 'unsegmented-full-frame')
+        self.assertEqual(conditioned.crop((16, 16, 24, 24)).tobytes(), original.convert('RGBA').tobytes())
+        self.assertEqual(conditioned.getpixel((0, 0))[3], 0)
+        self.assertEqual(conditioned.getpixel((16, 16))[3], 255)
+
+    @unittest.skipUnless(importlib.util.find_spec('PIL'), 'Pillow available in prepared worker environment')
+    def test_white_background_matte_preserves_colored_material(self):
+        from PIL import Image
+        original = Image.new('RGB', (8, 8), (250, 248, 238))
+        original.putpixel((4, 4), (150, 80, 40))
+        conditioned, metrics = conditioning_image(original)
+        self.assertEqual(metrics['conditioningMode'], 'white-matte')
+        self.assertEqual(conditioned.getpixel((20, 20)), (150, 80, 40, 255))
+        self.assertEqual(conditioned.getpixel((17, 17))[3], 0)
 
     def test_invalid_command_request_preserves_failure_without_gpu_import(self):
         with tempfile.TemporaryDirectory() as temp:
