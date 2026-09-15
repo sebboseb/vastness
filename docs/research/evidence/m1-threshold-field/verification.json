@@ -1,0 +1,11 @@
+{
+  "checks": "npm run check:m1 regenerates assets, then typecheck, 26 tests, M0 build and separate M1 build",
+  "localTests": 26,
+  "passed": 26,
+  "skipped": 0,
+  "m0BuildExcludesPrototypeAssets": true,
+  "limits": [
+    "Local browser acceptance is separate from Node tests.",
+    "Existing PlayCanvas bundle-size warning remains."
+  ]
+}

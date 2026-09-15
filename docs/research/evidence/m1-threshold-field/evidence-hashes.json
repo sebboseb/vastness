@@ -1,0 +1,74 @@
+{
+  "artifact-hashes.json": {
+    "bytes": 255,
+    "sha256": "065f2201dd80c36286132f53e5092f1bbfd7be2c85a9991d0bc5029512d30fe9"
+  },
+  "single-asset-collider.jpg": {
+    "bytes": 75110,
+    "sha256": "2a91d1ae82751e069962bc54d3b2ab8fbf9bc504a61cd90e377fa12ba5442eaf"
+  },
+  "faceted-front.jpg": {
+    "bytes": 105383,
+    "sha256": "1ae5775215cf371721c42207390f697d4b1101452195ca87e9203da62109887f"
+  },
+  "walk-return.jpg": {
+    "bytes": 43917,
+    "sha256": "0128dcb04cb1c694342918379b29a22f8e48acb73d7aa2997be3dde9a7303f4b"
+  },
+  "glyph-side.jpg": {
+    "bytes": 117175,
+    "sha256": "056810ff2ea6110c74c29b490c2cec79089f3db914e96c08584cf715f51fca0a"
+  },
+  "capture-states.json": {
+    "bytes": 4109,
+    "sha256": "fc23fb6fd44599d76e402992a2dabfc090afcbdfaa0989251522f261b5df36e1"
+  },
+  "live-circuit.json": {
+    "bytes": 338,
+    "sha256": "a04dccaea0b2aa6691d0a15c646de99d91b1c9c61c35f291e6f9be00890a6b12"
+  },
+  "m0-isolation.json": {
+    "bytes": 332,
+    "sha256": "b9a160095992dd109b7aa10ce3b73c31b2971ac8e9c1b22e3d354423b4cc8a98"
+  },
+  "derivation.json": {
+    "bytes": 1834,
+    "sha256": "67a3fa7dff33fd36b48114e7ee6c992d9fa1526037028b4bd0f57a0dbbf9f14d"
+  },
+  "original-side.jpg": {
+    "bytes": 82117,
+    "sha256": "58a0135c9397a32aa67022a42a270f4cfac372d93340387da4f282fa030de648"
+  },
+  "original-front.jpg": {
+    "bytes": 89510,
+    "sha256": "72c81263c843b069b5e7743f3b38ffa5ff23ddfba028df68f9dc6a3d218a0692"
+  },
+  "graphic-front.jpg": {
+    "bytes": 78294,
+    "sha256": "6721d68232c5ecb343efaa0ce6782749a7c2848ac8cb2ec58e53dbd5b5c99680"
+  },
+  "faceted-side.jpg": {
+    "bytes": 84869,
+    "sha256": "d91cfcc053de83b35a48ef4bdffd8d740adabc7b343f09b061f7a3324c1d2858"
+  },
+  "browser-walk-checks.json": {
+    "bytes": 247,
+    "sha256": "adcd188fdbbf001a9863570759b3192433a345c418f57e35bd24cda62b8904ee"
+  },
+  "verification.json": {
+    "bytes": 341,
+    "sha256": "c0b95d0fb373f232aa09637dfe005bc46dd5661065183dff9ea04ed6c9da8b53"
+  },
+  "graphic-side.jpg": {
+    "bytes": 84528,
+    "sha256": "8a44c1d8faf5a2cb5294a9071e4a23faddc6cb4883adc3611dc3d31c62eccb57"
+  },
+  "glyph-front.jpg": {
+    "bytes": 139348,
+    "sha256": "f67e6cea69fc34febc36a442950fc3553a96e66e6477139eb9f2bcac7654933b"
+  },
+  "final-live-circuit.json": {
+    "bytes": 409,
+    "sha256": "bb73776208ea9b18db8c1451e61311418593bb91ebd2df58211d41a791d17ab6"
+  }
+}
