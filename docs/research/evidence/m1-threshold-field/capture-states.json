@@ -1,0 +1,227 @@
+[
+  {
+    "label": "faceted-front",
+    "state": {
+      "variant": "faceted",
+      "inspection": false,
+      "position": [
+        0,
+        1.65,
+        7
+      ],
+      "yaw": 0,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.2,
+      "samples": 600,
+      "loadMs": 272.5,
+      "tourIndex": -1
+    },
+    "size": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "label": "faceted-side",
+    "state": {
+      "variant": "faceted",
+      "inspection": false,
+      "position": [
+        6.8,
+        1.65,
+        0
+      ],
+      "yaw": 90,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.2,
+      "samples": 600,
+      "loadMs": 272.5,
+      "tourIndex": -1
+    },
+    "size": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "label": "graphic-front",
+    "state": {
+      "variant": "graphic",
+      "inspection": false,
+      "position": [
+        0,
+        1.65,
+        7
+      ],
+      "yaw": 0,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.3,
+      "samples": 600,
+      "loadMs": 272.5,
+      "tourIndex": -1
+    },
+    "size": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "label": "graphic-side",
+    "state": {
+      "variant": "graphic",
+      "inspection": false,
+      "position": [
+        6.8,
+        1.65,
+        0
+      ],
+      "yaw": 90,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.1,
+      "samples": 600,
+      "loadMs": 272.5,
+      "tourIndex": -1
+    },
+    "size": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "label": "glyph-front",
+    "state": {
+      "variant": "glyph",
+      "inspection": false,
+      "position": [
+        0,
+        1.65,
+        7
+      ],
+      "yaw": 0,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.1,
+      "samples": 600,
+      "loadMs": 272.5,
+      "tourIndex": -1
+    },
+    "size": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "label": "glyph-side",
+    "state": {
+      "variant": "glyph",
+      "inspection": false,
+      "position": [
+        6.8,
+        1.65,
+        0
+      ],
+      "yaw": 90,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.1,
+      "samples": 600,
+      "loadMs": 272.5,
+      "tourIndex": -1
+    },
+    "size": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "label": "original-front",
+    "state": {
+      "variant": "original",
+      "inspection": false,
+      "position": [
+        0,
+        1.65,
+        7
+      ],
+      "yaw": 0,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.2,
+      "samples": 600,
+      "loadMs": 272.5,
+      "tourIndex": -1
+    },
+    "size": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "label": "original-side",
+    "state": {
+      "variant": "original",
+      "inspection": false,
+      "position": [
+        6.8,
+        1.65,
+        0
+      ],
+      "yaw": 90,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 9.1,
+      "samples": 600,
+      "loadMs": 272.5,
+      "tourIndex": -1
+    },
+    "size": {
+      "height": 720,
+      "width": 1280
+    }
+  },
+  {
+    "label": "single-asset-collider",
+    "state": {
+      "variant": "original",
+      "inspection": true,
+      "position": [
+        0,
+        1.65,
+        7
+      ],
+      "yaw": 0,
+      "travelMetres": 0,
+      "collisionFrames": 0,
+      "overlaps": false,
+      "frameMedianMs": 8.3,
+      "frameP95Ms": 8.6,
+      "samples": 600,
+      "loadMs": 272.5,
+      "tourIndex": -1
+    },
+    "size": {
+      "height": 720,
+      "width": 1280
+    }
+  }
+]

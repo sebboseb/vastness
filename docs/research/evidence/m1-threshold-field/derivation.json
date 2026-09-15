@@ -1,0 +1,58 @@
+{
+  "sources": {
+    "jobId": "trellis-smoke-20260915-03",
+    "ply": {
+      "filename": "scene.ply",
+      "sha256": "45225f837c1f7551337ee86a5d42afddddf895b59a5f563facc8c1d9c9799a1f",
+      "bytes": 34115744
+    },
+    "glb": {
+      "filename": "collider.glb",
+      "sha256": "6141ddd57bec66dfdf47419eec3aa4e4e60bc6ece5360fd392d7953dfa429588",
+      "bytes": 11425480
+    }
+  },
+  "transform": {
+    "scale": 6,
+    "position": [
+      0,
+      2.9976301789283752,
+      0
+    ]
+  },
+  "bounds": {
+    "min": [
+      -2.6975818276405334,
+      0,
+      -1.3211138248443604
+    ],
+    "max": [
+      2.617145597934723,
+      5.980726540088654,
+      1.2498016655445099
+    ]
+  },
+  "metrics": {
+    "sourceVertices": 317222,
+    "sourceTriangles": 634834,
+    "meshVertices": 11063,
+    "meshTriangles": 24624,
+    "clusterPitchModelUnits": 0.018,
+    "scaleMetresPerModelUnit": 6,
+    "voxelPitchMetres": 0.12,
+    "maximumSamplePitchMetres": 0.06,
+    "maximumSurfacePaddingMetres": 0.06,
+    "surfaceSamples": 1904502,
+    "surfaceCells": 8604,
+    "occupiedCells": 12985,
+    "colliderBoxes": 981,
+    "colliderTriangles": 11772,
+    "glyphCount": 3500
+  },
+  "caveats": [
+    "Scale 6 metres per model unit is an authored experimental choice; it is not a model-estimated scale.",
+    "Every original triangle is sampled, including foliage. Padding by each triangle lattice edge conservatively covers the continuous triangle surface; voxel quantization adds up to one cell of excess.",
+    "The proxy is a surface shell, not a watertight interior fill. It has no floor semantics or walkable slope inference. The browser supplies a labeled authored floor and boundary.",
+    "Vertex clustering averages source vertices and removes collapsed/duplicate faces; it can erase fine detail and does not preserve mesh topology."
+  ]
+}
