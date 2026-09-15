@@ -28,8 +28,8 @@ def validate_request(request):
 
 def image_prompt(intent):
     a = intent['axes']
-    # Concept first preserves its salience within CLIP's bounded token window.
-    return (f"{intent['concept']}. {a['mood']} atmosphere. {a['scale']} scale, "
-            f"{a['density']} forms, {a['openness']} space. "
-            "A coherent sculptural architectural diorama, bold solid forms, three-quarter view, "
-            "entire structure visible, isolated on plain white background, physical miniature, no text.")
+    # Put axes first so long concepts cannot silently remove their conditioning.
+    # Image metrics retain token counts and explicitly flag CLIP truncation.
+    return (f"{a['scale']} scale, {a['density']} forms, {a['openness']} space, {a['mood']} atmosphere. "
+            f"{intent['concept']}. Sculptural architectural diorama, three-quarter view, "
+            "entire structure isolated on white background, no text.")
