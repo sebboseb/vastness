@@ -5,8 +5,8 @@ import {sourceRoom, shiftBoxes} from './spatial.ts';
 
 export class DestinationRenderer {
   readonly app: pc.Application;
-  readonly camera = new pc.Entity('visitor');
-  private destination = new pc.Entity('destination');
+  readonly camera: pc.Entity;
+  private destination: pc.Entity;
   private solid: pc.Entity | undefined;
   private splat: pc.Entity | undefined;
   private colliderRoot: pc.Entity | undefined;
@@ -23,6 +23,9 @@ export class DestinationRenderer {
 
   constructor(canvas: HTMLCanvasElement) {
     this.app = new pc.Application(canvas, {graphicsDeviceOptions: {antialias: true, alpha: false, powerPreference: 'high-performance'}});
+    // Entity captures its application at construction; class field initializers run too early.
+    this.camera = new pc.Entity('visitor', this.app);
+    this.destination = new pc.Entity('destination', this.app);
     this.app.graphicsDevice.maxPixelRatio = Math.min(devicePixelRatio, 1.5);
     this.app.setCanvasFillMode(pc.FILLMODE_FILL_WINDOW);
     this.app.setCanvasResolution(pc.RESOLUTION_AUTO);
@@ -30,7 +33,7 @@ export class DestinationRenderer {
     this.app.root.addChild(this.camera);
     this.app.root.addChild(this.destination);
     this.app.scene.ambientLight = new pc.Color(.55, .6, .62);
-    const sun = new pc.Entity('light');
+    const sun = new pc.Entity('light', this.app);
     sun.addComponent('light', {type: 'directional', color: new pc.Color(1, .9, .7), intensity: 1.4});
     sun.setEulerAngles(48, -28, 0); this.app.root.addChild(sun);
     const floorMaterial = this.material([.19, .27, .28]);
@@ -50,7 +53,7 @@ export class DestinationRenderer {
     material.update(); return material;
   }
   private box(box: CollisionBox, material: pc.StandardMaterial, parent: pc.Entity) {
-    const entity = new pc.Entity('authored-support');
+    const entity = new pc.Entity('authored-support', this.app);
     entity.addComponent('render', {type: 'box', material});
     entity.setLocalPosition(...box.min.map((n, i) => (n + box.max[i]) / 2) as Vec3);
     entity.setLocalScale(...box.min.map((n, i) => Math.max(.001, box.max[i] - n)) as Vec3);
@@ -70,7 +73,7 @@ export class DestinationRenderer {
     for (const resource of this.resources) resource.destroy();
     for (const asset of this.assets) {asset.unload(); this.app.assets.remove(asset);}
     this.resources = []; this.assets = []; this.solid = undefined; this.splat = undefined; this.colliderRoot = undefined; this.data = undefined;
-    this.destination = new pc.Entity('destination'); this.app.root.addChild(this.destination);
+    this.destination = new pc.Entity('destination', this.app); this.app.root.addChild(this.destination);
     this.setGate(false);
   }
   async install(data: PreparedScene) {
@@ -92,10 +95,10 @@ export class DestinationRenderer {
     }
     mesh.setColors(colors); mesh.update(pc.PRIMITIVE_TRIANGLES);
     this.resources.push(mesh, material);
-    this.solid = new pc.Entity('accepted-generated-mesh');
+    this.solid = new pc.Entity('accepted-generated-mesh', this.app);
     this.solid.addComponent('render', {meshInstances: [new pc.MeshInstance(mesh, material)]});
     this.setArtifactTransform(this.solid, data); this.destination.addChild(this.solid);
-    this.colliderRoot = new pc.Entity('derived-collision'); this.destination.addChild(this.colliderRoot);
+    this.colliderRoot = new pc.Entity('derived-collision', this.app); this.destination.addChild(this.colliderRoot);
     const colliderMaterial = this.material([.95, .55, .15]);
     colliderMaterial.blendType = pc.BLEND_NORMAL; colliderMaterial.opacity = .22; colliderMaterial.depthWrite = false; colliderMaterial.update();
     this.resources.push(colliderMaterial);
@@ -123,7 +126,7 @@ export class DestinationRenderer {
         this.app.assets.load(asset);
       }).then(() => {
         if (generation !== this.generation) {asset.unload(); this.app.assets.remove(asset); return;}
-        this.splat = new pc.Entity('accepted-original-splat');
+        this.splat = new pc.Entity('accepted-original-splat', this.app);
         this.splat.addComponent('gsplat', {asset}); this.setArtifactTransform(this.splat, data);
         this.destination.addChild(this.splat);
       }).catch(error => {
