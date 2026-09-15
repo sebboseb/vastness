@@ -5,7 +5,12 @@ import subprocess
 import sys
 import tempfile
 import unittest
-from semantic import validate_request, image_prompt
+try:
+    from .semantic import validate_request, image_prompt
+    from .alpha import alpha_for_rgb
+except ImportError:
+    from semantic import validate_request, image_prompt
+    from alpha import alpha_for_rgb
 
 
 class ContractTests(unittest.TestCase):
@@ -39,12 +44,20 @@ class ContractTests(unittest.TestCase):
             with self.subTest(request=request), self.assertRaises(ValueError):
                 validate_request(request)
 
+    def test_white_matte_preserves_material_and_removes_background_without_semantic_selection(self):
+        self.assertEqual(alpha_for_rgb((250, 248, 238)), 0)
+        self.assertEqual(alpha_for_rgb((247, 245, 239)), 0)
+        self.assertEqual(alpha_for_rgb((208, 181, 152)), 255)
+        self.assertEqual(alpha_for_rgb((255, 80, 120)), 255)
+        self.assertEqual(alpha_for_rgb((30, 30, 30)), 255)
+        self.assertTrue(0 < alpha_for_rgb((232, 230, 230)) < 255)
+
     def test_invalid_command_request_preserves_failure_without_gpu_import(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
             (root / 'request.json').write_text(json.dumps({'id': 'bad', 'seed': 14, 'prompt': 'raw text'}))
             command = [sys.executable, str(Path(__file__).parent / 'run.py'), '--request', str(root/'request.json'), '--output', str(root/'out')]
-            for name in ['image-weights', 'rembg-weights', 'trellis-python', 'trellis-root', 'weights-root', 'dinov2-root', 'dinov2-weights']:
+            for name in ['image-weights', 'trellis-python', 'trellis-root', 'weights-root', 'dinov2-root', 'dinov2-weights']:
                 command += ['--'+name, str(root/'missing')]
             process = subprocess.run(command, capture_output=True, text=True)
             self.assertEqual(process.returncode, 1, process.stderr)

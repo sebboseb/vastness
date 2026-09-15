@@ -23,7 +23,7 @@ def main():
     parser.add_argument('--download-budget-bytes', required=True, type=int)
     a = parser.parse_args()
     pins = json.loads((Path(__file__).parent/'pins.json').read_text())
-    planned = sum(f['bytes'] for f in pins['imageModel']['files']) + pins['alpha']['bytes']
+    planned = sum(f['bytes'] for f in pins['imageModel']['files'])
     if planned > a.download_budget_bytes:
         raise ValueError(f'Weight bytes {planned} exceed explicit budget')
     a.prefix.mkdir(parents=True, exist_ok=True)
@@ -46,12 +46,6 @@ def main():
             report['files'][item['path']] = sha
             (a.prefix/'setup-report.json').write_text(json.dumps(report, indent=2)+'\n')
         (root/'weights-manifest.json').write_text(json.dumps(report, indent=2)+'\n')
-        mask = a.prefix/'weights/rembg/u2netp.onnx'
-        mask.parent.mkdir(parents=True, exist_ok=True)
-        if not mask.exists():
-            urllib.request.urlretrieve(pins['alpha']['url'], mask)
-        if mask.stat().st_size != pins['alpha']['bytes'] or digest(mask) != pins['alpha']['sha256']:
-            raise ValueError('U2NetP weight mismatch')
         subprocess.run([str(a.prefix/'env/bin/python'), '-m', 'pip', 'check'], check=True, stdout=log, stderr=log)
         subprocess.run([str(a.prefix/'env/bin/python'), '-m', 'pip', 'freeze'], check=True, stdout=(a.prefix/'pip-freeze.txt').open('w'))
     print(json.dumps({'status': 'prepared', 'prefix': str(a.prefix), 'weightBytes': planned}))

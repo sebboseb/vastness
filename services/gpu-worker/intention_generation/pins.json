@@ -1,5 +1,5 @@
 {
-  "backend": "sdxl-turbo-trellis-intention-v1",
+  "backend": "sdxl-turbo-trellis-intention-v2",
   "imageModel": {
     "repo": "stabilityai/sdxl-turbo",
     "revision": "71153311d3dbb46851df1931d3ca6e939de83304",
@@ -109,8 +109,7 @@
   "packages": {
     "diffusers": "0.30.3",
     "accelerate": "0.34.2",
-    "psutil": "6.1.0",
-    "rembg": "2.0.60"
+    "psutil": "6.1.0"
   },
   "imageParameters": {
     "steps": 4,
@@ -118,11 +117,16 @@
     "width": 512,
     "height": 512
   },
-  "alpha": {
+  "rejectedAlphaModel": {
     "model": "u2netp",
     "url": "https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2netp.onnx",
     "bytes": 4574861,
     "md5": "8e83ca70e441ab06c318d82300c84806",
     "sha256": "309c8469258dda742793dce0ebea8e6dd393174f89934733ecc8b14c76f4ddd8"
+  },
+  "alpha": {
+    "method": "white-matte-v1",
+    "opaqueMaxMinChannel": 224,
+    "transparentMinChannel": 236
   }
 }

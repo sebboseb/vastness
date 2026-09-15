@@ -1,4 +1,4 @@
-"""Pinned local SDXL-Turbo text conditioning and CPU U2NetP alpha preparation."""
+"""Pinned local SDXL-Turbo text conditioning and deterministic white-backdrop alpha preparation."""
 import argparse
 import json
 import os
@@ -8,15 +8,15 @@ import time
 
 def main():
     p = argparse.ArgumentParser()
-    for name in ['weights', 'output', 'rembg-weights']:
+    for name in ['weights', 'output']:
         p.add_argument('--' + name, type=Path, required=True)
     p.add_argument('--seed', type=int, required=True)
     a = p.parse_args()
-    os.environ.update(HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1', U2NET_HOME=str(a.rembg_weights))
+    os.environ.update(HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1')
     import torch
     import numpy as np
     from diffusers import StableDiffusionXLPipeline
-    from rembg import remove, new_session
+    from alpha import white_matte
     prompt = (a.output / 'image-prompt.txt').read_text()
     torch.cuda.reset_peak_memory_stats()
     start = time.monotonic()
@@ -30,8 +30,7 @@ def main():
     torch.cuda.synchronize()
     generated = time.monotonic()
     image.save(a.output / 'source-rgb.png')
-    session = new_session('u2netp', providers=['CPUExecutionProvider'])
-    rgba = remove(image, session=session)
+    rgba = white_matte(image)
     alpha = np.asarray(rgba)[..., 3]
     foreground = float((alpha > 127).mean())
     if not 0.01 < foreground < 0.98:
@@ -43,7 +42,7 @@ def main():
         'foregroundFraction': foreground, 'torchPeakAllocatedBytes': torch.cuda.max_memory_allocated(),
         'torchPeakReservedBytes': torch.cuda.max_memory_reserved(), 'torchVersion': torch.__version__,
         'torchCudaVersion': torch.version.cuda, 'gpuName': torch.cuda.get_device_name(),
-        'alphaMethod': 'rembg2.0.60-u2netp-cpu'}
+        'alphaMethod': 'white-matte-v1', 'alphaLimitation': 'Color key may remove pale material; RGB retained for inspection'}
     (a.output / 'image-metrics.json').write_text(json.dumps(metrics, indent=2)+'\n')
 
 
