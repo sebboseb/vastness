@@ -19,7 +19,11 @@
     "worker:smoke": "tsx scripts/worker-smoke.ts",
     "m1": "tsx scripts/prepare-m1-prototype.ts && vite apps/web --config apps/web/vite.m1-prototype.config.ts",
     "build:m1": "vite build apps/web --config apps/web/vite.m1-prototype.config.ts",
-    "check:m1": "tsx scripts/prepare-m1-prototype.ts && npm run check && npm run build:m1"
+    "check:m1": "tsx scripts/prepare-m1-prototype.ts && npm run check && npm run build:m1",
+    "intention": "node scripts/dev-intention.mjs",
+    "test:intention": "tsx --test services/intention-prototype/*.test.ts scripts/tests/intention-geometry.test.ts apps/web/src/intention-generation/*.test.ts",
+    "build:intention": "vite build apps/web --config apps/web/vite.intention-generation.config.ts",
+    "check:intention": "npm run check && npm run test:intention && npm run build:intention"
   },
   "dependencies": {
     "playcanvas": "2.22.1",
