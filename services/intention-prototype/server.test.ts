@@ -3,11 +3,13 @@ import assert from 'node:assert/strict';
 import {mkdtemp,mkdir,writeFile,rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
+import {randomUUID} from 'node:crypto';
 import {setTimeout as delay} from 'node:timers/promises';
 import type {Artifact,WorkerJob} from '../../packages/protocol/src/index.ts';
 import {WorkerError} from '../orchestrator/src/worker-client.ts';
 import {createIntentionService} from './server.ts';
 import type {prepareIntentionArtifact} from '../../scripts/prepare-intention-artifact.ts';
+import {crossing,start} from '../../apps/web/src/intention-generation/spatial.ts';
 test('HTTP intent is recorded before generation; accepted destination and visits survive restart without regeneration',async()=>{
  const dir=await mkdtemp(join(tmpdir(),'vastness-intent-test-'));let submits=0,complete=false,id='';const worker={async submit(request:{id:string;prompt:string}){submits++;id=request.id;assert.equal(JSON.parse(request.prompt).kind,'intention-destination');assert.equal(JSON.parse(request.prompt).intent,undefined);return {id,status:'running'} as WorkerJob;},async status(){return {id,status:complete?'succeeded':'running'} as WorkerJob;},async importArtifacts(){return [{format:'ply',sha256:'a'.repeat(64),bytes:10,url:'/artifacts/'+ 'a'.repeat(64)+'/scene.ply',backend:'command-v1'},{format:'glb',sha256:'b'.repeat(64),bytes:10,url:'/artifacts/'+ 'b'.repeat(64)+'/collider.glb',backend:'command-v1'}] as Artifact[];}};
  const prepare:typeof prepareIntentionArtifact=async args=>{await mkdir(args.outputDir,{recursive:true});await writeFile(join(args.outputDir,'scene.json'),JSON.stringify({validated:true,jobId:args.jobId}));return {} as Awaited<ReturnType<typeof prepareIntentionArtifact>>;};
@@ -38,4 +40,33 @@ test('temporary worker transport failure preserves resumable job and retries wit
  const worker={async submit(){throw new Error('must not resubmit');},async status(){if(++polls===1)throw new WorkerError(502,'Worker is unreachable, redirected, or timed out');return {id,status:'succeeded'} as WorkerJob;},async importArtifacts(){return [] as Artifact[];}};
  const prepare:typeof prepareIntentionArtifact=async()=>({} as Awaited<ReturnType<typeof prepareIntentionArtifact>>);const service=await createIntentionService({dataDir:dir,worker,prepare,pollMs:5});
  try{for(let n=0;n<100&&service.worlds.get(id)?.status!=='ready';n++)await delay(5);assert.equal(service.worlds.get(id)?.status,'ready');assert.equal(polls,2);assert.equal(service.worlds.get(id)?.error,undefined);assert.ok(service.worlds.get(id)?.events.some(e=>e.type==='worker-connection-retry'));}finally{await service.close();await rm(dir,{recursive:true,force:true});}
+});
+
+test('visit identities preserve a fresh crossing after pose reset and deduplicate retries across restart',async()=>{
+ const dir=await mkdtemp(join(tmpdir(),'vastness-intent-visits-'));const id='intent-visits';
+ await mkdir(join(dir,'worlds'));await writeFile(join(dir,'worlds',id+'.json'),JSON.stringify({id,jobId:id,status:'ready',events:[]}));
+ let service=await createIntentionService({dataDir:dir});
+ async function listen(){await new Promise<void>(resolve=>service.server.listen(0,'127.0.0.1',resolve));const address=service.server.address();assert.ok(address&&typeof address==='object');return `http://127.0.0.1:${address.port}`;}
+ let base=await listen();
+ const crossedPosition:[number,number,number]=[0,1.65,-12.1];
+ const post=(event:string,eventId:string,position:[number,number,number]=crossedPosition)=>fetch(base+`/api/intent/worlds/${id}/visit`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({event,eventId,position})});
+ try{
+  assert.equal((await post('returned',randomUUID(),[0,1.65,-11.9])).status,409);
+  let position:[number,number,number]=[0,1.65,-11.9];const firstId=randomUUID();
+  assert.equal(crossing(position,crossedPosition),'crossed');
+  assert.equal((await post('crossed',firstId)).status,200);position=[...crossedPosition];
+  await service.close();service=await createIntentionService({dataDir:dir});base=await listen();
+  // Browser reload/reselection resets the pose to source without inventing a returned event.
+  position=[...start];assert.equal(crossing(position,crossedPosition),'crossed');
+  const secondId=randomUUID();assert.equal((await post('crossed',secondId)).status,200);
+  assert.equal((await post('crossed',secondId)).status,200);
+  const returnedId=randomUUID();assert.equal((await post('returned',returnedId,[0,1.65,-11.9])).status,200);
+  // Lost acknowledgments can arrive after later events; identity still prevents duplicate history.
+  assert.equal((await post('crossed',firstId)).status,200);
+  assert.equal((await post('returned',returnedId,[0,1.65,-11.9])).status,200);
+  assert.equal((await post('returned',randomUUID(),[0,1.65,-11.9])).status,409);
+  assert.equal((await post('returned',secondId,[0,1.65,-11.9])).status,409);
+  const restored=await (await fetch(base+`/api/intent/worlds/${id}`)).json();
+  assert.deepEqual(restored.events.map((event:{type:string;eventId:string})=>[event.type,event.eventId]),[['crossed',firstId],['crossed',secondId],['returned',returnedId]]);
+ }finally{await service.close();await rm(dir,{recursive:true,force:true});}
 });

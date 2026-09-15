@@ -28,7 +28,7 @@ let destinationTrail: Vec3[] = [];
 let dragging = false, entered = false;
 let lastTelemetry = 0;
 
-type PendingVisit = {worldId: string; event: 'crossed' | 'returned'; position: Vec3};
+type PendingVisit = {worldId: string; event: 'crossed' | 'returned'; position: Vec3; eventId?: string};
 const queueKey = 'vastness:intention-generation:pending-visits-v1';
 let visits: PendingVisit[] = [];
 let savingVisits = false;
@@ -101,7 +101,7 @@ async function persistVisits() {
       const visit = visits[0];
       const record = await json<WorldRecord>(`/api/intent/worlds/${encodeURIComponent(visit.worldId)}/visit`, {
         method: 'POST', headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({event: visit.event, position: visit.position}), keepalive: true,
+        body: JSON.stringify({event: visit.event, position: visit.position, eventId: visit.eventId}), keepalive: true,
       });
       visits.shift(); saveVisitQueue();
       if (world?.id === visit.worldId) world = record;
@@ -117,7 +117,7 @@ function move(next: Vec3) {
   if (event && world && isOpen()) {
     if (event === 'crossed') {crossingCount++; destinationTrail = [[...before], [...next]];}
     else {returnCount++; destinationTrail = [];}
-    visits.push({worldId: world.id, event, position: [...next]}); saveVisitQueue(); void persistVisits();
+    visits.push({worldId: world.id, event, position: [...next], eventId: crypto.randomUUID()}); saveVisitQueue(); void persistVisits();
   } else if (next[2] < -12 && Math.hypot(next[0] - before[0], next[2] - before[2]) > .001) destinationTrail.push([...next]);
 }
 

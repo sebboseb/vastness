@@ -10,9 +10,9 @@ import {WorkerClient,WorkerError} from '../orchestrator/src/worker-client.ts';
 import type {Artifact,Vec3,WorkerJob,WorkerJobRequest} from '../../packages/protocol/src/index.ts';
 import {prepareIntentionArtifact} from '../../scripts/prepare-intention-artifact.ts';
 import {deriveIntent,InputSchema,type IntentInput,type SemanticIntent} from './semantics.ts';
-export type WorldRecord={id:string;createdAt:string;rawIntent:IntentInput;semantics:SemanticIntent;derivation:ReturnType<typeof deriveIntent>['derivation'];status:'requested'|'generating'|'processing'|'ready'|'failed';jobId:string;request:WorkerJobRequest;events:{type:string;at:string;position?:Vec3}[];workerJob?:WorkerJob;artifacts?:Artifact[];sceneUrl?:string;error?:string};
+export type WorldRecord={id:string;createdAt:string;rawIntent:IntentInput;semantics:SemanticIntent;derivation:ReturnType<typeof deriveIntent>['derivation'];status:'requested'|'generating'|'processing'|'ready'|'failed';jobId:string;request:WorkerJobRequest;events:{type:string;at:string;position?:Vec3;eventId?:string}[];workerJob?:WorkerJob;artifacts?:Artifact[];sceneUrl?:string;error?:string};
 const idPattern=/^[a-zA-Z0-9_-]{1,80}$/;
-const visitSchema=z.object({event:z.enum(['crossed','returned']),position:z.tuple([z.number().finite(),z.number().finite(),z.number().finite()])});
+const visitSchema=z.object({event:z.enum(['crossed','returned']),eventId:z.string().uuid().optional(),position:z.tuple([z.number().finite(),z.number().finite(),z.number().finite()])});
 const now=()=>new Date().toISOString();
 export async function createIntentionService(options:{dataDir?:string;workerUrl?:string;worker?:Pick<WorkerClient,'submit'|'status'|'importArtifacts'>;prepare?:typeof prepareIntentionArtifact;pollMs?:number}={}){
  const directory=resolve(options.dataDir??'.runtime/intention-generation');const worldDir=join(directory,'worlds'),objectDir=join(directory,'artifacts');await mkdir(worldDir,{recursive:true});await mkdir(objectDir,{recursive:true});
@@ -42,7 +42,23 @@ export async function createIntentionService(options:{dataDir?:string;workerUrl?
   if(match){const world=worlds.get(match[1]);if(!world){json(response,404,{error:'Unknown prototype world'});return;}
    if(!match[2]&&request.method==='GET'){json(response,200,world);return;}
    if(match[2]==='scene'&&request.method==='GET'){if(world.status!=='ready'){json(response,409,{error:'Destination not validated'});return;}response.writeHead(200,{'Content-Type':'application/json','Cache-Control':'no-store'});response.end(await readFile(join(worldDir,world.id,'scene.json')));return;}
-   if(match[2]==='visit'&&request.method==='POST'){const visit=visitSchema.parse(await body(request));if(world.status!=='ready'){json(response,409,{error:'Threshold is closed'});return;}if(Math.abs(visit.position[0])>1.7||Math.abs(visit.position[2]+12)>1){json(response,400,{error:'Visit must occur at the physical threshold'});return;}const last=world.events.filter(e=>e.type==='crossed'||e.type==='returned').at(-1)?.type;if(last!==visit.event){if(visit.event==='returned'&&last!=='crossed'){json(response,409,{error:'Cannot return before crossing'});return;}world.events.push({type:visit.event,at:now(),position:visit.position});await save(world);}json(response,200,world);return;}
+   if(match[2]==='visit'&&request.method==='POST'){
+    const visit=visitSchema.parse(await body(request));
+    if(world.status!=='ready'){json(response,409,{error:'Threshold is closed'});return;}
+    if(Math.abs(visit.position[0])>1.7||Math.abs(visit.position[2]+12)>1){json(response,400,{error:'Visit must occur at the physical threshold'});return;}
+    const existing=visit.eventId?world.events.find(event=>event.eventId===visit.eventId):undefined;
+    if(existing){
+     if(existing.type!==visit.event||existing.position?.some((value,axis)=>value!==visit.position[axis])){json(response,409,{error:'Visit event id already belongs to a different crossing'});return;}
+     // A response can be lost after the write; retries must acknowledge durable history.
+     await writes.get(world.id);json(response,200,world);return;
+    }
+    const last=world.events.filter(event=>event.type==='crossed'||event.type==='returned').at(-1)?.type;
+    // Older clients have no retry identity, so retain their alternating-event behavior.
+    if(!visit.eventId&&last===visit.event){await writes.get(world.id);json(response,200,world);return;}
+    if(visit.event==='returned'&&last!=='crossed'){json(response,409,{error:'Cannot return before crossing'});return;}
+    world.events.push({type:visit.event,at:now(),position:visit.position,...(visit.eventId?{eventId:visit.eventId}:{})});
+    await save(world);json(response,200,world);return;
+   }
   }
   const artifact=/^\/api\/intent\/artifacts\/([a-f0-9]{64})\/(scene\.ply|collider\.glb)$/.exec(path);
   if(artifact&&request.method==='GET'){const known=[...worlds.values()].some(w=>w.status==='ready'&&w.artifacts?.some(a=>a.sha256===artifact[1]&&(a.format==='ply'?'scene.ply':'collider.glb')===artifact[2]));if(!known){json(response,404,{error:'Artifact not accepted'});return;}const bytes=await readFile(join(objectDir,'objects',artifact[1],artifact[2]));response.writeHead(200,{'Content-Type':'application/octet-stream','Content-Length':bytes.length,'Cache-Control':'public,max-age=31536000,immutable'});response.end(bytes);return;}
