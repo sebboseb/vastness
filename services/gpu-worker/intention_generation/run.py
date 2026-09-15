@@ -65,16 +65,13 @@ def execute(args):
         if not report['trellisPreflight']['readyForAttempt']:
             raise ValueError('; '.join(report['trellisPreflight']['problems']))
         report['imageWeights'] = verify_image_weights(args.image_weights)
-        mask = args.rembg_weights / 'u2netp.onnx'
-        if shared.digest(mask) != PINS['alpha']['sha256'] or mask.stat().st_size != PINS['alpha']['bytes']:
-            raise ValueError('U2NetP weight integrity mismatch')
         report['packageVersions'] = {name: shared.metadata.version(name) for name in ['torch', 'transformers', 'diffusers', 'accelerate', 'rembg', 'onnxruntime']}
         for name, version in PINS['packages'].items():
             if shared.metadata.version(name) != version:
                 raise ValueError('Wrong package version: ' + name)
         stages = [
             ('image', [sys.executable, str(HERE / 'image_stage.py'), '--weights', str(args.image_weights),
-                '--rembg-weights', str(args.rembg_weights), '--seed', str(request['seed']), '--output', str(out)]),
+                '--seed', str(request['seed']), '--output', str(out)]),
             ('trellis', [str(args.trellis_python), str(HERE / 'trellis_stage.py'),
                 '--trellis-root', str(args.trellis_root), '--weights-root', str(args.weights_root),
                 '--dinov2-root', str(args.dinov2_root), '--dinov2-weights', str(args.dinov2_weights),
@@ -126,7 +123,7 @@ def execute(args):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    for name in ['request', 'output', 'image-weights', 'rembg-weights', 'trellis-python', 'trellis-root', 'weights-root', 'dinov2-root', 'dinov2-weights']:
+    for name in ['request', 'output', 'image-weights', 'trellis-python', 'trellis-root', 'weights-root', 'dinov2-root', 'dinov2-weights']:
         parser.add_argument('--' + name, type=Path, required=True)
     return execute(parser.parse_args())
 
