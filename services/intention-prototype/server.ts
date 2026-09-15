@@ -6,7 +6,7 @@ import {join,resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
 import {setTimeout as delay} from 'node:timers/promises';
 import {z} from 'zod';
-import {WorkerClient} from '../orchestrator/src/worker-client.ts';
+import {WorkerClient,WorkerError} from '../orchestrator/src/worker-client.ts';
 import type {Artifact,Vec3,WorkerJob,WorkerJobRequest} from '../../packages/protocol/src/index.ts';
 import {prepareIntentionArtifact} from '../../scripts/prepare-intention-artifact.ts';
 import {deriveIntent,InputSchema,type IntentInput,type SemanticIntent} from './semantics.ts';
@@ -21,14 +21,14 @@ export async function createIntentionService(options:{dataDir?:string;workerUrl?
  for(const file of await readdir(worldDir)){if(!file.endsWith('.json'))continue;const world=JSON.parse(await readFile(join(worldDir,file),'utf8')) as WorldRecord;if(!idPattern.test(world.id)||file!==world.id+'.json')throw new Error('Invalid persisted prototype world');worlds.set(world.id,world);}
  async function save(world:WorldRecord){const snapshot=JSON.stringify(world,null,2)+'\n';const operation=(writes.get(world.id)??Promise.resolve()).then(async()=>{const temporary=join(worldDir,`.${world.id}-${randomUUID()}.tmp`);await writeFile(temporary,snapshot);await rename(temporary,join(worldDir,world.id+'.json'));});writes.set(world.id,operation);await operation;}
  async function run(world:WorldRecord){try{
-  if(world.status==='requested'){world.workerJob=await worker.submit(world.request);world.status='generating';world.events.push({type:'gpu-job-submitted',at:now()});await save(world);}
-  while(!closed){const job=await worker.status(world.jobId);world.workerJob=job;
+  if(world.status==='requested'){try{world.workerJob=await worker.submit(world.request);}catch(error){if(!(error instanceof WorkerError)||error.status!==409)throw error;world.workerJob=await worker.status(world.jobId);world.events.push({type:'gpu-job-reconciled-after-restart',at:now()});}world.status='generating';world.events.push({type:'gpu-job-submitted',at:now()});await save(world);}
+  while(!closed){const job=await worker.status(world.jobId);world.workerJob=job;delete world.error;
    if(job.status==='failed'||job.status==='cancelled')throw new Error(job.error??`GPU job ${job.status}`);
-   if(job.status==='succeeded'){world.status='processing';world.events.push({type:'artifacts-processing',at:now()});await save(world);world.artifacts=await worker.importArtifacts(world.jobId,objectDir);await prepare({jobId:world.jobId,artifacts:world.artifacts,objectDir,outputDir:join(worldDir,world.id)});world.sceneUrl=`/api/intent/worlds/${world.id}/scene`;world.status='ready';world.events.push({type:'destination-validated',at:now()});await save(world);return;}
+   if(job.status==='succeeded'){world.status='processing';world.events.push({type:'artifacts-processing',at:now()});await save(world);world.artifacts=(await worker.importArtifacts(world.jobId,objectDir)).map(artifact=>({...artifact,url:'/api/intent'+artifact.url}));await prepare({jobId:world.jobId,artifacts:world.artifacts,objectDir,outputDir:join(worldDir,world.id)});world.sceneUrl=`/api/intent/worlds/${world.id}/scene`;world.status='ready';world.events.push({type:'destination-validated',at:now()});await save(world);return;}
    await save(world);await delay(options.pollMs??1500,undefined,{signal:abort.signal});
   }
- }catch(error){if(closed)return;world.status='failed';world.error=String(error);world.events.push({type:'failed',at:now()});await save(world);}}
- function launch(world:WorldRecord){if(tasks.has(world.id))return;const task=run(world).finally(()=>tasks.delete(world.id));tasks.set(world.id,task);void task.catch(error=>console.error('Prototype persistence failure',error));}
+ }catch(error){if(closed)return;const message=String(error);if((error instanceof WorkerError&&error.status===502&&/unreachable|timed out|download failed|returned HTTP 50[234]/i.test(message))||['ECONNRESET','EPIPE','ETIMEDOUT'].includes((error as NodeJS.ErrnoException).code??'')){if(world.error!==message)world.events.push({type:'worker-connection-retry',at:now()});world.error=message;await save(world);return;}world.status='failed';world.error=String(error);world.events.push({type:'failed',at:now()});await save(world);}}
+ function launch(world:WorldRecord){if(tasks.has(world.id))return;const task=(async()=>{while(!closed){await run(world);if(world.status==='ready'||world.status==='failed')return;try{await delay(options.pollMs??3000,undefined,{signal:abort.signal});}catch{if(closed)return;}}})().finally(()=>tasks.delete(world.id));tasks.set(world.id,task);void task.catch(error=>console.error('Prototype persistence failure',error));}
  function json(response:ServerResponse,status:number,value:unknown){response.writeHead(status,{'Content-Type':'application/json','Cache-Control':'no-store'});response.end(JSON.stringify(value));}
  async function body(request:IncomingMessage){let text='';for await(const chunk of request){text+=chunk;if(Buffer.byteLength(text)>8192)throw new Error('Request too large');}return JSON.parse(text);}
  const server=createServer(async(request,response)=>{try{
