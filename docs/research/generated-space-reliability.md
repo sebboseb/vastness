@@ -89,7 +89,7 @@ Do not promote TRELLIS to a reliable navigable-scene backend yet. Both condition
 - HunyuanWorld 1.0: 67.052 GiB weights; 160 GiB reservation. Published territorial terms exclude the EU, FLUX access is gated, and applicable permission/access is unresolved. Single-3090 fit is unvalidated.
 - HY-World 2.0: 199.009 GiB selected full-pipeline weights; 350 GiB reservation. Terms/access remain unresolved and documented full generation is not a validated single-3090 configuration.
 
-No alternative weights were downloaded or gated terms accepted. The question about existing upstream permission remains unanswered. The fallback benchmark remains blocked on applicable rights/access and hardware prerequisites; feasibility research is not an execution result. Do not expand gameplay or visual-style work based on this study.
+No alternative weights were downloaded or gated terms accepted. The question about existing upstream permission remains unanswered. The fallback benchmark remains blocked on applicable rights/access and hardware prerequisites; feasibility research is not an execution result. The concrete continuation is tracked in [GitHub #19](https://github.com/sebboseb/vastness/issues/19), marked `needs-info`. Do not expand gameplay or visual-style work based on this study.
 
 ## Evidence, isolation and checks
 
