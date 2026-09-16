@@ -1,0 +1,9 @@
+{
+  "id": "control-tunnel-1-42",
+  "candidateId": "tunnel-1-42",
+  "kind": "control",
+  "scale": 16,
+  "chosenScale": 16,
+  "includedInPrimaryRate": false,
+  "sourceAssessment": ".runtime/interpretation-study/candidates/tunnel-1-42/old-strict-scale16.json"
+}

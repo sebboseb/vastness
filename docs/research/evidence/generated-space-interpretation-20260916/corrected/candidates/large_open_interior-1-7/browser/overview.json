@@ -1,0 +1,26 @@
+{
+  "assessment": "failed",
+  "audit": [],
+  "blocked": "",
+  "caseId": "large_open_interior-1-7",
+  "errors": 0,
+  "generatedTravel": 0,
+  "glbSha256": "b6315fe62b32374bbf3db71538e16b19b8d342eaa975417e0eb1594222048457",
+  "identity": "25759a3ce8241d9f1b478ae1310918389c07caf00d819d5629509b1d01dcbfc5",
+  "mode": "inspection",
+  "pathRemaining": 0,
+  "pendingVisits": 0,
+  "pitch": -14.440669090923237,
+  "position": [
+    12.897824143539646,
+    8.669600180078614,
+    19.202861340325853
+  ],
+  "ready": true,
+  "representation": "coarse",
+  "support": null,
+  "visits": [],
+  "walking": "",
+  "worldId": "intent-c55fe14c-883c-4acb-9e7f-dcbeaa1ad5ca",
+  "yaw": 34.50852298766841
+}

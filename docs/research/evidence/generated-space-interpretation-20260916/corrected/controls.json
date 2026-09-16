@@ -1,0 +1,218 @@
+[
+  {
+    "id": "control-large_open_interior-1-7",
+    "candidateId": "large_open_interior-1-7",
+    "kind": "control",
+    "scale": 12,
+    "chosenScale": 12,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/large_open_interior-1-7/old-strict-scale12.json"
+  },
+  {
+    "id": "control-narrow_passage-1-7",
+    "candidateId": "narrow_passage-1-7",
+    "kind": "control",
+    "scale": 6,
+    "chosenScale": 6,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/narrow_passage-1-7/old-strict-scale6.json"
+  },
+  {
+    "id": "control-chamber-1-7",
+    "candidateId": "chamber-1-7",
+    "kind": "control",
+    "scale": 6,
+    "chosenScale": 6,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/chamber-1-7/old-strict-scale6.json"
+  },
+  {
+    "id": "control-corridor-1-7",
+    "candidateId": "corridor-1-7",
+    "kind": "control",
+    "scale": 10,
+    "chosenScale": 10,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/corridor-1-7/old-strict-scale10.json"
+  },
+  {
+    "id": "control-courtyard-1-7",
+    "candidateId": "courtyard-1-7",
+    "kind": "control",
+    "scale": 10,
+    "chosenScale": 10,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/courtyard-1-7/old-strict-scale10.json"
+  },
+  {
+    "id": "control-bridge-1-7",
+    "candidateId": "bridge-1-7",
+    "kind": "control",
+    "scale": 12,
+    "chosenScale": 12,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/bridge-1-7/old-strict-scale12.json"
+  },
+  {
+    "id": "control-large_open_interior-1-42",
+    "candidateId": "large_open_interior-1-42",
+    "kind": "control",
+    "scale": 10,
+    "chosenScale": 10,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/large_open_interior-1-42/old-strict-scale10.json"
+  },
+  {
+    "id": "control-bridge-1-42",
+    "candidateId": "bridge-1-42",
+    "kind": "control",
+    "scale": 16,
+    "chosenScale": 16,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/bridge-1-42/old-strict-scale16.json"
+  },
+  {
+    "id": "control-courtyard-1-42",
+    "candidateId": "courtyard-1-42",
+    "kind": "control",
+    "scale": 6,
+    "chosenScale": 6,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/courtyard-1-42/old-strict-scale6.json"
+  },
+  {
+    "id": "control-corridor-1-42",
+    "candidateId": "corridor-1-42",
+    "kind": "control",
+    "scale": 16,
+    "chosenScale": 16,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/corridor-1-42/old-strict-scale16.json"
+  },
+  {
+    "id": "control-tunnel-1-42",
+    "candidateId": "tunnel-1-42",
+    "kind": "control",
+    "scale": 16,
+    "chosenScale": 16,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/tunnel-1-42/old-strict-scale16.json"
+  },
+  {
+    "id": "control-courtyard-2-7",
+    "candidateId": "courtyard-2-7",
+    "kind": "control",
+    "scale": 6,
+    "chosenScale": 6,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/courtyard-2-7/old-strict-scale6.json"
+  },
+  {
+    "id": "control-tunnel-2-7",
+    "candidateId": "tunnel-2-7",
+    "kind": "control",
+    "scale": 10,
+    "chosenScale": 10,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/tunnel-2-7/old-strict-scale10.json"
+  },
+  {
+    "id": "control-narrow_passage-2-7",
+    "candidateId": "narrow_passage-2-7",
+    "kind": "control",
+    "scale": 6,
+    "chosenScale": 6,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/narrow_passage-2-7/old-strict-scale6.json"
+  },
+  {
+    "id": "control-cave-2-7",
+    "candidateId": "cave-2-7",
+    "kind": "control",
+    "scale": 6,
+    "chosenScale": 6,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/cave-2-7/old-strict-scale6.json"
+  },
+  {
+    "id": "control-large_open_interior-2-7",
+    "candidateId": "large_open_interior-2-7",
+    "kind": "control",
+    "scale": 12,
+    "chosenScale": 12,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/large_open_interior-2-7/old-strict-scale12.json"
+  },
+  {
+    "id": "control-doorway-2-7",
+    "candidateId": "doorway-2-7",
+    "kind": "control",
+    "scale": 10,
+    "chosenScale": 10,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/doorway-2-7/old-strict-scale10.json"
+  },
+  {
+    "id": "control-doorway-2-42",
+    "candidateId": "doorway-2-42",
+    "kind": "control",
+    "scale": 6,
+    "chosenScale": 6,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/doorway-2-42/old-strict-scale6.json"
+  },
+  {
+    "id": "control-corridor-2-42",
+    "candidateId": "corridor-2-42",
+    "kind": "control",
+    "scale": 6,
+    "chosenScale": 6,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/corridor-2-42/old-strict-scale6.json"
+  },
+  {
+    "id": "control-courtyard-2-42",
+    "candidateId": "courtyard-2-42",
+    "kind": "control",
+    "scale": 10,
+    "chosenScale": 10,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/courtyard-2-42/old-strict-scale10.json"
+  },
+  {
+    "id": "control-bridge-2-42",
+    "candidateId": "bridge-2-42",
+    "kind": "control",
+    "scale": 12,
+    "chosenScale": 12,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-study/candidates/bridge-2-42/old-strict-scale12.json"
+  },
+  {
+    "id": "reference-large_open_interior-1-7",
+    "candidateId": "large_open_interior-1-7",
+    "kind": "reference",
+    "scale": 16,
+    "chosenScale": 12,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-replay/candidates/large_open_interior-1-7/interpreted-scale16.json"
+  },
+  {
+    "id": "reference-corridor-1-7",
+    "candidateId": "corridor-1-7",
+    "kind": "reference",
+    "scale": 12,
+    "chosenScale": 10,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-replay/candidates/corridor-1-7/interpreted-scale12.json"
+  },
+  {
+    "id": "repeat-cave-1-7",
+    "candidateId": "cave-1-7",
+    "kind": "repeat",
+    "scale": 10,
+    "chosenScale": 10,
+    "includedInPrimaryRate": false,
+    "sourceAssessment": ".runtime/interpretation-replay/candidates/cave-1-7/selected-assessment.json"
+  }
+]

@@ -1,0 +1,5452 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-16T11:29:07.919Z",
+  "selectionsSha256": "a023b551f38752982a7f6f7b29d4c5e8010f4628762e8f4ee146ce888bdcb6c7",
+  "n": 36,
+  "counts": {
+    "fixed6": 12,
+    "fixed6IntentExpanded": 2,
+    "selectedOldStrict": 21,
+    "selectedIntentLegacy": 2,
+    "selected": 2,
+    "anyScale": 3,
+    "browser": 2
+  },
+  "scaleHistogram": {
+    "6": 15,
+    "10": 10,
+    "12": 4,
+    "16": 7
+  },
+  "failureTaxonomy": {
+    "intent-topology-or-bounded-route-search": 19,
+    "no-connected-3m-route-found": 3,
+    "no-verified-exterior-entry": 12
+  },
+  "scaleMisses": [
+    "large_open_interior-1-7"
+  ],
+  "recoveredFromFixed6": [],
+  "lostFromFixed6": [
+    "chamber-1-7",
+    "corridor-1-7",
+    "courtyard-1-42",
+    "corridor-1-42",
+    "courtyard-2-7",
+    "tunnel-2-7",
+    "cave-2-7",
+    "doorway-2-7",
+    "doorway-2-42",
+    "corridor-2-42"
+  ],
+  "categories": [
+    {
+      "category": "large_open_interior",
+      "n": 4,
+      "fixed6": 0,
+      "fixed6IntentExpanded": 0,
+      "selectedOldStrict": 3,
+      "selectedIntentLegacy": 0,
+      "selected": 0,
+      "anyScale": 1,
+      "browser": 0
+    },
+    {
+      "category": "tunnel",
+      "n": 4,
+      "fixed6": 1,
+      "fixed6IntentExpanded": 0,
+      "selectedOldStrict": 2,
+      "selectedIntentLegacy": 0,
+      "selected": 0,
+      "anyScale": 0,
+      "browser": 0
+    },
+    {
+      "category": "doorway",
+      "n": 4,
+      "fixed6": 2,
+      "fixed6IntentExpanded": 0,
+      "selectedOldStrict": 2,
+      "selectedIntentLegacy": 0,
+      "selected": 0,
+      "anyScale": 0,
+      "browser": 0
+    },
+    {
+      "category": "narrow_passage",
+      "n": 4,
+      "fixed6": 2,
+      "fixed6IntentExpanded": 2,
+      "selectedOldStrict": 2,
+      "selectedIntentLegacy": 1,
+      "selected": 2,
+      "anyScale": 2,
+      "browser": 2
+    },
+    {
+      "category": "chamber",
+      "n": 4,
+      "fixed6": 1,
+      "fixed6IntentExpanded": 0,
+      "selectedOldStrict": 1,
+      "selectedIntentLegacy": 0,
+      "selected": 0,
+      "anyScale": 0,
+      "browser": 0
+    },
+    {
+      "category": "cave",
+      "n": 4,
+      "fixed6": 1,
+      "fixed6IntentExpanded": 0,
+      "selectedOldStrict": 1,
+      "selectedIntentLegacy": 1,
+      "selected": 0,
+      "anyScale": 0,
+      "browser": 0
+    },
+    {
+      "category": "corridor",
+      "n": 4,
+      "fixed6": 3,
+      "fixed6IntentExpanded": 0,
+      "selectedOldStrict": 3,
+      "selectedIntentLegacy": 0,
+      "selected": 0,
+      "anyScale": 0,
+      "browser": 0
+    },
+    {
+      "category": "courtyard",
+      "n": 4,
+      "fixed6": 2,
+      "fixed6IntentExpanded": 0,
+      "selectedOldStrict": 4,
+      "selectedIntentLegacy": 0,
+      "selected": 0,
+      "anyScale": 0,
+      "browser": 0
+    },
+    {
+      "category": "bridge",
+      "n": 4,
+      "fixed6": 0,
+      "fixed6IntentExpanded": 0,
+      "selectedOldStrict": 3,
+      "selectedIntentLegacy": 0,
+      "selected": 0,
+      "anyScale": 0,
+      "browser": 0
+    }
+  ],
+  "rows": [
+    {
+      "id": "large_open_interior-1-7",
+      "category": "large_open_interior",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "An enormous empty vaulted hall with a broad entrance and a continuous level floor, widely spaced perimeter columns and clear central space.",
+      "sourceSha256": "b6315fe62b32374bbf3db71538e16b19b8d342eaa975417e0eb1594222048457",
+      "selectedScale": 12,
+      "baselineFixed6": false,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "passed",
+          "reasons": []
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": true,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "broad-covered-interior"
+        ],
+        "evidence": [
+          {
+            "kind": "broad-covered-interior",
+            "source": "text",
+            "cue": "hall"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 192,
+        "edgesTested": 7468,
+        "candidateRoutes": 1358,
+        "topologyQueries": 21057,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 848980,
+        "sourceVertices": 424474,
+        "indexReferences": 1183326,
+        "indexCells": 2604,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 5570,
+        "supportedPoints": 2789,
+        "enclosurePoints": 1521,
+        "entryCandidates": 1360,
+        "rejected": {
+          "unsupported-footprint": 1980,
+          "body-or-head-obstruction": 799,
+          "scaffold-overlaps-source-footprint": 120
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 12.092973166264782,
+        "buildMs": 124.53387500000099,
+        "assessmentMs": 20963.206165999996
+      }
+    },
+    {
+      "id": "tunnel-1-7",
+      "category": "tunnel",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof.",
+      "sourceSha256": "03ea4b0ea0d52c31609a350bac8362969bde7ee7141a8542bacd3038af67cffe",
+      "selectedScale": 6,
+      "baselineFixed6": false,
+      "selectedOldStrict": false,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "tunnel"
+          },
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "passage"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 192,
+        "edgesTested": 15,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "no-connected-3m-route-found",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 757356,
+        "sourceVertices": 378770,
+        "indexReferences": 887476,
+        "indexCells": 736,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 786,
+        "supportedPoints": 340,
+        "enclosurePoints": 0,
+        "entryCandidates": 226,
+        "rejected": {
+          "unsupported-footprint": 355,
+          "body-or-head-obstruction": 88,
+          "scaffold-overlaps-source-footprint": 164
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0.39999999999999947,
+        "buildMs": 97.6491670000105,
+        "assessmentMs": 468.0765420000098
+      }
+    },
+    {
+      "id": "doorway-1-7",
+      "category": "doorway",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.",
+      "sourceSha256": "3b2e6b1800b0f9565cf699eea62f1af945e8ce64f453f6360ad2e96770d92810",
+      "selectedScale": 10,
+      "baselineFixed6": false,
+      "selectedOldStrict": false,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals",
+          "candidate-routes"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 44,
+        "edgesTested": 3028,
+        "candidateRoutes": 4097,
+        "topologyQueries": 19695,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 794370,
+        "sourceVertices": 397926,
+        "indexReferences": 1024695,
+        "indexCells": 2704,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2843,
+        "supportedPoints": 1836,
+        "enclosurePoints": 0,
+        "entryCandidates": 586,
+        "rejected": {
+          "unsupported-footprint": 873,
+          "body-or-head-obstruction": 132,
+          "scaffold-overlaps-source-footprint": 31
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 11.68246549320819,
+        "buildMs": 106.37337499999558,
+        "assessmentMs": 5107.040334000005
+      }
+    },
+    {
+      "id": "narrow_passage-1-7",
+      "category": "narrow_passage",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.",
+      "sourceSha256": "75e8c7130f57c8786a79c28cc81daa1007039c13ca4ae61bfd97bd4a027c0774",
+      "selectedScale": 6,
+      "baselineFixed6": true,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": true,
+      "selectedIntentExpanded": true,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "passed",
+          "reasons": []
+        },
+        {
+          "scale": 10,
+          "status": "passed",
+          "reasons": []
+        },
+        {
+          "scale": 12,
+          "status": "passed",
+          "reasons": []
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": true,
+      "availableSuccess": true,
+      "browser": {
+        "reasons": [],
+        "forwardEndpointDistance": 0.0010500001035036793,
+        "returnEndpointDistance": 0.0010558482712079709,
+        "status": "passed"
+      },
+      "routeLength": 3.200000000000001,
+      "routeDisplacement": 3.2,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "passage"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": true,
+          "minimumWidth": 0.6
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [
+        {
+          "kind": "enclosed-passage",
+          "routeIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "supportTriangleIds": [
+            1310681,
+            1334985,
+            1327500,
+            1310655,
+            1293889,
+            1286474,
+            1293925,
+            1310705,
+            1327537,
+            1310696,
+            1335000,
+            1327517,
+            1310672,
+            1293905,
+            1286491,
+            1293940,
+            1310723,
+            1327552,
+            1310715,
+            1335019,
+            1327535,
+            1310689,
+            1293923,
+            1286509,
+            1293959,
+            1310741,
+            1327571,
+            1310730,
+            1335034,
+            1327550,
+            1293939,
+            1286524,
+            1293974,
+            1310757,
+            1327586,
+            1310749,
+            1335053,
+            1327569,
+            1293957,
+            1286543,
+            1293993,
+            1310774,
+            1327605,
+            1310765,
+            1335069,
+            1327585,
+            1293973,
+            1286559,
+            1294009,
+            1310791,
+            1327621
+          ],
+          "structuralTriangleIds": [
+            800107,
+            1311073,
+            635906,
+            802756,
+            635907,
+            805716,
+            808045,
+            1311075,
+            635908,
+            810275,
+            812141
+          ],
+          "measurements": {
+            "continuousDistance": 1,
+            "minimumRoofCoverage": 0,
+            "maximumRoofHeight": 0,
+            "declaredMinimumWidth": 0.6,
+            "broadCenterlineDiameter": 0,
+            "minimumBoundaryDirections": 3
+          }
+        }
+      ],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 3,
+        "entriesTested": 70,
+        "edgesTested": 342,
+        "candidateRoutes": 2,
+        "topologyQueries": 156,
+        "approachBuilds": 2,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": null,
+      "reasons": [],
+      "metrics": {
+        "sourceTriangles": 1342526,
+        "sourceVertices": 673142,
+        "indexReferences": 1540955,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 859,
+        "supportedPoints": 384,
+        "enclosurePoints": 12,
+        "entryCandidates": 248,
+        "rejected": {
+          "unsupported-footprint": 349,
+          "body-or-head-obstruction": 126,
+          "scaffold-overlaps-source-footprint": 47,
+          "authored-to-generated-seam": 1
+        },
+        "routeLength": 3.200000000000001,
+        "routeDisplacement": 3.2,
+        "continuousEnclosedDistance": 3.1999999999999966,
+        "maximumConnectedDisplacement": 3.2,
+        "buildMs": 174.57470899999316,
+        "assessmentMs": 2431.707125000001
+      }
+    },
+    {
+      "id": "chamber-1-7",
+      "category": "chamber",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+      "sourceSha256": "d526aec6874c3a1259fe4af64beb770ab96888df3909b58f4e0bd7f79e2ad464",
+      "selectedScale": 6,
+      "baselineFixed6": true,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 3,
+        "entriesTested": 192,
+        "edgesTested": 3667,
+        "candidateRoutes": 318,
+        "topologyQueries": 9841,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 1673652,
+        "sourceVertices": 836912,
+        "indexReferences": 1959132,
+        "indexCells": 960,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1921,
+        "supportedPoints": 1141,
+        "enclosurePoints": 332,
+        "entryCandidates": 408,
+        "rejected": {
+          "unsupported-footprint": 622,
+          "body-or-head-obstruction": 125,
+          "scaffold-overlaps-source-footprint": 110
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 6,
+        "buildMs": 222.0200420000183,
+        "assessmentMs": 27889.897958000016
+      }
+    },
+    {
+      "id": "cave-1-7",
+      "category": "cave",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space.",
+      "sourceSha256": "a56bb24593ddd9164444ec54f03365f5e8712636a983ae6e50a82fa1f4b172bf",
+      "selectedScale": 10,
+      "baselineFixed6": false,
+      "selectedOldStrict": false,
+      "selectedIntentLegacy": true,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "cave"
+          },
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 3,
+        "entriesTested": 192,
+        "edgesTested": 1928,
+        "candidateRoutes": 399,
+        "topologyQueries": 6916,
+        "approachBuilds": 4,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 1273170,
+        "sourceVertices": 636686,
+        "indexReferences": 1631972,
+        "indexCells": 2548,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2806,
+        "supportedPoints": 1550,
+        "enclosurePoints": 419,
+        "entryCandidates": 810,
+        "rejected": {
+          "unsupported-footprint": 1173,
+          "body-or-head-obstruction": 82,
+          "footprint-height-spread": 1,
+          "scaffold-overlaps-source-footprint": 162,
+          "authored-to-generated-seam": 4
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 5.688585061331157,
+        "buildMs": 186.52374999999302,
+        "assessmentMs": 15631.39391699998
+      }
+    },
+    {
+      "id": "corridor-1-7",
+      "category": "corridor",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end.",
+      "sourceSha256": "5383ef9cabe2f2d88fba3b08d8c4b97f2bb7f519e882a7253b8773899b5339d7",
+      "selectedScale": 10,
+      "baselineFixed6": true,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "corridor"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": true,
+          "minimumWidth": 0.6
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 3,
+        "entriesTested": 192,
+        "edgesTested": 1360,
+        "candidateRoutes": 129,
+        "topologyQueries": 13565,
+        "approachBuilds": 2,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 740284,
+        "sourceVertices": 370156,
+        "indexReferences": 948835,
+        "indexCells": 1404,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2084,
+        "supportedPoints": 1294,
+        "enclosurePoints": 283,
+        "entryCandidates": 560,
+        "rejected": {
+          "unsupported-footprint": 755,
+          "body-or-head-obstruction": 35,
+          "scaffold-overlaps-source-footprint": 131,
+          "authored-to-generated-seam": 2
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 5.403702434442518,
+        "buildMs": 98.32191699999385,
+        "assessmentMs": 2562.81716700003
+      }
+    },
+    {
+      "id": "courtyard-1-7",
+      "category": "courtyard",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "An empty courtyard enclosed by stone walls, broad entrance gate and flat continuous paving under an open sky.",
+      "sourceSha256": "7616b93737b806eddb845bcee9d60cc1c29989cd2d7bd7ec9ebeefcd3134b305",
+      "selectedScale": 10,
+      "baselineFixed6": false,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "open-courtyard",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "open-courtyard",
+            "source": "text",
+            "cue": "courtyard"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "gate"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement.",
+          "Both open-sky and covered requirements occur; they must be witnessed on different route portions."
+        ],
+        "requirements": {
+          "openSky": true,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 192,
+        "edgesTested": 3261,
+        "candidateRoutes": 852,
+        "topologyQueries": 12651,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 1544768,
+        "sourceVertices": 772418,
+        "indexReferences": 1925358,
+        "indexCells": 2704,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2496,
+        "supportedPoints": 1405,
+        "enclosurePoints": 935,
+        "entryCandidates": 570,
+        "rejected": {
+          "unsupported-footprint": 1001,
+          "body-or-head-obstruction": 90,
+          "scaffold-overlaps-source-footprint": 146
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 9.219544457292889,
+        "buildMs": 207.75012499996228,
+        "assessmentMs": 6783.2699589999975
+      }
+    },
+    {
+      "id": "bridge-1-7",
+      "category": "bridge",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A stone bridge with a flat continuous deck, tall solid side parapets and an empty walkway joining two broad stone landings.",
+      "sourceSha256": "5a4c29d4289eeb9c9bdbaa2b1015a14da2964f30bbafe9336eac7b0f7db60b71",
+      "selectedScale": 12,
+      "baselineFixed6": false,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "elevated-bridge"
+        ],
+        "evidence": [
+          {
+            "kind": "elevated-bridge",
+            "source": "text",
+            "cue": "bridge"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals",
+          "topology-queries"
+        ],
+        "componentsExplored": 2,
+        "entriesTested": 58,
+        "edgesTested": 2580,
+        "candidateRoutes": 963,
+        "topologyQueries": 160000,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 859044,
+        "sourceVertices": 429968,
+        "indexReferences": 1176010,
+        "indexCells": 3844,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 4451,
+        "supportedPoints": 1871,
+        "enclosurePoints": 205,
+        "entryCandidates": 802,
+        "rejected": {
+          "unsupported-footprint": 2091,
+          "body-or-head-obstruction": 459,
+          "footprint-height-spread": 26,
+          "scaffold-overlaps-source-footprint": 45
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 9.850888284819801,
+        "buildMs": 124.74737499997718,
+        "assessmentMs": 10196.979374999995
+      }
+    },
+    {
+      "id": "large_open_interior-1-42",
+      "category": "large_open_interior",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "An enormous empty vaulted hall with a broad entrance and a continuous level floor, widely spaced perimeter columns and clear central space.",
+      "sourceSha256": "2e43864cb5022f8d122ffa76f060afe903e6051feea8b04f43530bce40909c5d",
+      "selectedScale": 10,
+      "baselineFixed6": false,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "broad-covered-interior"
+        ],
+        "evidence": [
+          {
+            "kind": "broad-covered-interior",
+            "source": "text",
+            "cue": "hall"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 192,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "no-verified-exterior-entry",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 744360,
+        "sourceVertices": 372236,
+        "indexReferences": 973955,
+        "indexCells": 1664,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 3288,
+        "supportedPoints": 1969,
+        "enclosurePoints": 0,
+        "entryCandidates": 458,
+        "rejected": {
+          "unsupported-footprint": 1157,
+          "body-or-head-obstruction": 151,
+          "footprint-height-spread": 11,
+          "scaffold-overlaps-source-footprint": 163
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 105.60291700001108,
+        "assessmentMs": 511.6307079999824
+      }
+    },
+    {
+      "id": "bridge-1-42",
+      "category": "bridge",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A stone bridge with a flat continuous deck, tall solid side parapets and an empty walkway joining two broad stone landings.",
+      "sourceSha256": "261279b0fcb27df5ec822c9db09bb85e296c12aba270e7f26dacce3aa5e0d026",
+      "selectedScale": 16,
+      "baselineFixed6": false,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "elevated-bridge"
+        ],
+        "evidence": [
+          {
+            "kind": "elevated-bridge",
+            "source": "text",
+            "cue": "bridge"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals",
+          "topology-queries"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 112,
+        "edgesTested": 2036,
+        "candidateRoutes": 760,
+        "topologyQueries": 160000,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 562340,
+        "sourceVertices": 281262,
+        "indexReferences": 833372,
+        "indexCells": 5330,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 4336,
+        "supportedPoints": 2092,
+        "enclosurePoints": 186,
+        "entryCandidates": 1026,
+        "rejected": {
+          "unsupported-footprint": 2036,
+          "body-or-head-obstruction": 202,
+          "footprint-height-spread": 4,
+          "scaffold-overlaps-source-footprint": 93
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 15.358385331798392,
+        "buildMs": 82.98045799997635,
+        "assessmentMs": 8183.882291999995
+      }
+    },
+    {
+      "id": "doorway-1-42",
+      "category": "doorway",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.",
+      "sourceSha256": "7dc260e05158dda0e43ecd63d5f6e7db5bb57e6bab7265be5aed0f7513eb3206",
+      "selectedScale": 6,
+      "baselineFixed6": false,
+      "selectedOldStrict": false,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 192,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "no-verified-exterior-entry",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 2216472,
+        "sourceVertices": 1110896,
+        "indexReferences": 2561813,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2388,
+        "supportedPoints": 1176,
+        "enclosurePoints": 0,
+        "entryCandidates": 356,
+        "rejected": {
+          "unsupported-footprint": 418,
+          "body-or-head-obstruction": 794,
+          "scaffold-overlaps-source-footprint": 109
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 292.4951659999788,
+        "assessmentMs": 1405.0423749999609
+      }
+    },
+    {
+      "id": "narrow_passage-1-42",
+      "category": "narrow_passage",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.",
+      "sourceSha256": "afcbf5920dd1230ee9c845fd59726ecd00de692d6a35cb787046beb8212b98ea",
+      "selectedScale": 6,
+      "baselineFixed6": false,
+      "selectedOldStrict": false,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "passage"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": true,
+          "minimumWidth": 0.6
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 192,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "no-verified-exterior-entry",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 2128166,
+        "sourceVertices": 1065842,
+        "indexReferences": 2457334,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1748,
+        "supportedPoints": 1155,
+        "enclosurePoints": 0,
+        "entryCandidates": 364,
+        "rejected": {
+          "unsupported-footprint": 528,
+          "body-or-head-obstruction": 65,
+          "scaffold-overlaps-source-footprint": 174
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 281.4339579999796,
+        "assessmentMs": 1239.6487919999636
+      }
+    },
+    {
+      "id": "cave-1-42",
+      "category": "cave",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space.",
+      "sourceSha256": "2e23286835d759ed91268f1b782689060c5e7501cf0008357a4d3e01a1eac9ad",
+      "selectedScale": 10,
+      "baselineFixed6": false,
+      "selectedOldStrict": false,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "cave"
+          },
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 192,
+        "edgesTested": 120,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "no-connected-3m-route-found",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 1060506,
+        "sourceVertices": 530509,
+        "indexReferences": 1366386,
+        "indexCells": 2704,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2501,
+        "supportedPoints": 1157,
+        "enclosurePoints": 0,
+        "entryCandidates": 688,
+        "rejected": {
+          "unsupported-footprint": 1144,
+          "body-or-head-obstruction": 196,
+          "footprint-height-spread": 4,
+          "scaffold-overlaps-source-footprint": 154
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 2.0880613017821097,
+        "buildMs": 143.05916699999943,
+        "assessmentMs": 884.8392920000479
+      }
+    },
+    {
+      "id": "courtyard-1-42",
+      "category": "courtyard",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "An empty courtyard enclosed by stone walls, broad entrance gate and flat continuous paving under an open sky.",
+      "sourceSha256": "9e1df2a956a459ac91917dc0ccd92804235bf901dd094fdf201fb3fcf7dfe269",
+      "selectedScale": 6,
+      "baselineFixed6": true,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "open-courtyard",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "open-courtyard",
+            "source": "text",
+            "cue": "courtyard"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "gate"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement.",
+          "Both open-sky and covered requirements occur; they must be witnessed on different route portions."
+        ],
+        "requirements": {
+          "openSky": true,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 192,
+        "edgesTested": 1161,
+        "candidateRoutes": 3651,
+        "topologyQueries": 7215,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 1437656,
+        "sourceVertices": 719697,
+        "indexReferences": 1651089,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1014,
+        "supportedPoints": 638,
+        "enclosurePoints": 37,
+        "entryCandidates": 198,
+        "rejected": {
+          "unsupported-footprint": 358,
+          "body-or-head-obstruction": 18,
+          "scaffold-overlaps-source-footprint": 156
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 5.9363288318623315,
+        "buildMs": 196.81087500002468,
+        "assessmentMs": 6886.842875000031
+      }
+    },
+    {
+      "id": "corridor-1-42",
+      "category": "corridor",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end.",
+      "sourceSha256": "589e5e427db97ef45a76411ea1629c08f55b39b82efe3688359e8d5c795c7eae",
+      "selectedScale": 16,
+      "baselineFixed6": true,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "corridor"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": true,
+          "minimumWidth": 0.6
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 192,
+        "edgesTested": 32816,
+        "candidateRoutes": 2699,
+        "topologyQueries": 73710,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 1440730,
+        "sourceVertices": 720705,
+        "indexReferences": 2302426,
+        "indexCells": 6724,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 23800,
+        "supportedPoints": 11170,
+        "enclosurePoints": 0,
+        "entryCandidates": 716,
+        "rejected": {
+          "unsupported-footprint": 1780,
+          "body-or-head-obstruction": 10850,
+          "scaffold-overlaps-source-footprint": 167
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 16.815469068687918,
+        "buildMs": 196.31100000010338,
+        "assessmentMs": 21954.75354100007
+      }
+    },
+    {
+      "id": "tunnel-1-42",
+      "category": "tunnel",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof.",
+      "sourceSha256": "ca0f3ceb9e7248fd493d597a5f715df12cc911c647b7e631c1586f32a9dc001e",
+      "selectedScale": 16,
+      "baselineFixed6": false,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "tunnel"
+          },
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "passage"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 192,
+        "edgesTested": 3003,
+        "candidateRoutes": 3431,
+        "topologyQueries": 19318,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 1214008,
+        "sourceVertices": 607771,
+        "indexReferences": 1828541,
+        "indexCells": 6478,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 11037,
+        "supportedPoints": 5726,
+        "enclosurePoints": 38,
+        "entryCandidates": 1092,
+        "rejected": {
+          "unsupported-footprint": 1918,
+          "body-or-head-obstruction": 3393,
+          "scaffold-overlaps-source-footprint": 162
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 19.461757371830533,
+        "buildMs": 180.76512499991804,
+        "assessmentMs": 3569.119791999925
+      }
+    },
+    {
+      "id": "chamber-1-42",
+      "category": "chamber",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+      "sourceSha256": "2b6e56636c72bdccdd387c4a30a7e98526d15efeab66d47c396287f81d7a8a76",
+      "selectedScale": 6,
+      "baselineFixed6": false,
+      "selectedOldStrict": false,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 192,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "no-verified-exterior-entry",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 2279942,
+        "sourceVertices": 1141676,
+        "indexReferences": 2643858,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2229,
+        "supportedPoints": 1383,
+        "enclosurePoints": 0,
+        "entryCandidates": 220,
+        "rejected": {
+          "unsupported-footprint": 404,
+          "body-or-head-obstruction": 432,
+          "scaffold-overlaps-source-footprint": 187
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 302.608041999978,
+        "assessmentMs": 1539.6781669999473
+      }
+    },
+    {
+      "id": "courtyard-2-7",
+      "category": "courtyard",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A square cloister courtyard with a wide doorway, level tiled floor and empty central space bordered by covered arcades.",
+      "sourceSha256": "6bccae253afbe6bdb595f3501e195ac7798c8e7e6784e76340a0688b262186df",
+      "selectedScale": 6,
+      "baselineFixed6": true,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "open-courtyard",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "open-courtyard",
+            "source": "text",
+            "cue": "courtyard"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement.",
+          "Both open-sky and covered requirements occur; they must be witnessed on different route portions."
+        ],
+        "requirements": {
+          "openSky": true,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 192,
+        "edgesTested": 1475,
+        "candidateRoutes": 264,
+        "topologyQueries": 5603,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 740336,
+        "sourceVertices": 370206,
+        "indexReferences": 885411,
+        "indexCells": 960,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1214,
+        "supportedPoints": 644,
+        "enclosurePoints": 278,
+        "entryCandidates": 356,
+        "rejected": {
+          "unsupported-footprint": 452,
+          "body-or-head-obstruction": 115,
+          "scaffold-overlaps-source-footprint": 127
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 6.648308055437865,
+        "buildMs": 103.77599999995437,
+        "assessmentMs": 5419.029125000001
+      }
+    },
+    {
+      "id": "bridge-2-7",
+      "category": "bridge",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A covered wooden footbridge with parallel side walls, high roof and flat uninterrupted deck, open entrances at both ends.",
+      "sourceSha256": "68e8a625f16c7bdda99cdd299323526ff70d8131a49d55bc25e4d8ccb9c8ed98",
+      "selectedScale": 16,
+      "baselineFixed6": false,
+      "selectedOldStrict": false,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "elevated-bridge"
+        ],
+        "evidence": [
+          {
+            "kind": "elevated-bridge",
+            "source": "text",
+            "cue": "footbridge"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 0.6
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 192,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "no-verified-exterior-entry",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 599148,
+        "sourceVertices": 299432,
+        "indexReferences": 928419,
+        "indexCells": 6480,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 7646,
+        "supportedPoints": 4423,
+        "enclosurePoints": 0,
+        "entryCandidates": 1280,
+        "rejected": {
+          "unsupported-footprint": 2165,
+          "body-or-head-obstruction": 1051,
+          "footprint-height-spread": 2,
+          "scaffold-overlaps-source-footprint": 145
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 81.46212500007823,
+        "assessmentMs": 535.939458000008
+      }
+    },
+    {
+      "id": "tunnel-2-7",
+      "category": "tunnel",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom.",
+      "sourceSha256": "0ff7a321ed9c1d36fdf48c1def049eb5144c42380eed28f161a7aa2a2167467a",
+      "selectedScale": 10,
+      "baselineFixed6": true,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "tunnel"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 3,
+        "entriesTested": 192,
+        "edgesTested": 1243,
+        "candidateRoutes": 1115,
+        "topologyQueries": 8034,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 967640,
+        "sourceVertices": 483938,
+        "indexReferences": 1240463,
+        "indexCells": 2244,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2189,
+        "supportedPoints": 844,
+        "enclosurePoints": 127,
+        "entryCandidates": 456,
+        "rejected": {
+          "unsupported-footprint": 1183,
+          "body-or-head-obstruction": 160,
+          "scaffold-overlaps-source-footprint": 165
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 9.121403400793104,
+        "buildMs": 130.8723329999484,
+        "assessmentMs": 4458.6244169999845
+      }
+    },
+    {
+      "id": "corridor-2-7",
+      "category": "corridor",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "An empty covered walkway between brick walls, broad straight path, low arched ceiling and flat continuous paving.",
+      "sourceSha256": "3deff24d4be94dee2bc86c7bc6d3091f3ebc6ec2bf0c1d51aad186022ed87f00",
+      "selectedScale": 10,
+      "baselineFixed6": false,
+      "selectedOldStrict": false,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "Intent has no supported topology criteria."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "Intent has no supported topology criteria."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "Intent has no supported topology criteria."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "Intent has no supported topology criteria."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": false,
+        "required": [],
+        "evidence": [],
+        "ambiguities": [
+          "No supported spatial topology was specified; generic objects or open scenery cannot be accepted as an inferred interior."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 0,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "no-verified-exterior-entry",
+      "reasons": [
+        "Intent has no supported topology criteria."
+      ],
+      "metrics": {
+        "sourceTriangles": 702590,
+        "sourceVertices": 351382,
+        "indexReferences": 910589,
+        "indexCells": 1300,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2420,
+        "supportedPoints": 1581,
+        "enclosurePoints": 0,
+        "entryCandidates": 408,
+        "rejected": {
+          "unsupported-footprint": 746,
+          "body-or-head-obstruction": 93
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 91.4891250000801,
+        "assessmentMs": 354.12241700000595
+      }
+    },
+    {
+      "id": "narrow_passage-2-7",
+      "category": "narrow_passage",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person.",
+      "sourceSha256": "594aadf3c943e1769cc9893a1841eac9f1ab5f3fd2c69382feea5f86583c4273",
+      "selectedScale": 6,
+      "baselineFixed6": true,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": true,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "passed",
+          "reasons": []
+        },
+        {
+          "scale": 10,
+          "status": "passed",
+          "reasons": []
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": true,
+      "availableSuccess": true,
+      "browser": {
+        "reasons": [],
+        "forwardEndpointDistance": 0.000522192899376666,
+        "returnEndpointDistance": 0.001649999999998819,
+        "status": "passed"
+      },
+      "routeLength": 3.000000000000001,
+      "routeDisplacement": 3,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "corridor"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 0.6
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [
+        {
+          "kind": "enclosed-passage",
+          "routeIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "supportTriangleIds": [
+            1032753,
+            1050767,
+            1045190,
+            1032700,
+            1019981,
+            1014342,
+            1020057,
+            1032804,
+            1045267,
+            1021447,
+            1039689,
+            1034122,
+            1021395,
+            1008686,
+            1003158,
+            1008762,
+            1021499,
+            1034198,
+            1008722,
+            1027107,
+            1021411,
+            1008670,
+            995998,
+            990354,
+            996075,
+            1008775,
+            1021487,
+            997450,
+            1010087,
+            997399,
+            984611,
+            978996,
+            984686,
+            997503,
+            1010162,
+            984646,
+            997414,
+            984594,
+            971862,
+            966208,
+            971938,
+            984699,
+            997486,
+            971898,
+            986021,
+            971846,
+            958872,
+            954639,
+            960531,
+            971950,
+            986097
+          ],
+          "structuralTriangleIds": [
+            412671,
+            430808,
+            425191,
+            412619,
+            399874,
+            395564,
+            399946,
+            412723,
+            425263,
+            707328,
+            500687,
+            1034054,
+            401338,
+            419662,
+            414042,
+            401286,
+            388370,
+            382727,
+            388443,
+            401390,
+            414115,
+            1022745,
+            388407,
+            407020,
+            401302,
+            388355,
+            375415,
+            369713,
+            375487,
+            388459,
+            401375,
+            1009977,
+            376882,
+            389816,
+            376830,
+            363924,
+            358273,
+            363996,
+            376934,
+            389888,
+            998735,
+            363961,
+            376847,
+            363908,
+            351021,
+            345395,
+            351093,
+            364013,
+            376919,
+            985836,
+            352468,
+            365348,
+            351005,
+            339718,
+            334174,
+            339790,
+            352520,
+            365421,
+            974531
+          ],
+          "measurements": {
+            "continuousDistance": 1,
+            "minimumRoofCoverage": 1,
+            "maximumRoofHeight": 3.8425621502144085,
+            "declaredMinimumWidth": 0.6,
+            "broadCenterlineDiameter": 0,
+            "minimumBoundaryDirections": 3
+          }
+        },
+        {
+          "kind": "explicit-cover",
+          "routeIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "supportTriangleIds": [
+            1032753,
+            1050767,
+            1045190,
+            1032700,
+            1019981,
+            1014342,
+            1020057,
+            1032804,
+            1045267,
+            1021447,
+            1039689,
+            1034122,
+            1021395,
+            1008686,
+            1003158,
+            1008762,
+            1021499,
+            1034198,
+            1008722,
+            1027107,
+            1021411,
+            1008670,
+            995998,
+            990354,
+            996075,
+            1008775,
+            1021487,
+            997450,
+            1010087,
+            997399,
+            984611,
+            978996,
+            984686,
+            997503,
+            1010162,
+            984646,
+            997414,
+            984594,
+            971862,
+            966208,
+            971938,
+            984699,
+            997486,
+            971898,
+            986021,
+            971846,
+            958872,
+            954639,
+            960531,
+            971950,
+            986097
+          ],
+          "structuralTriangleIds": [
+            412671,
+            430808,
+            425191,
+            412619,
+            399874,
+            395564,
+            399946,
+            412723,
+            425263,
+            707328,
+            500687,
+            1034054,
+            401338,
+            419662,
+            414042,
+            401286,
+            388370,
+            382727,
+            388443,
+            401390,
+            414115,
+            1022745,
+            388407,
+            407020,
+            401302,
+            388355,
+            375415,
+            369713,
+            375487,
+            388459,
+            401375,
+            1009977,
+            376882,
+            389816,
+            376830,
+            363924,
+            358273,
+            363996,
+            376934,
+            389888,
+            998735,
+            363961,
+            376847,
+            363908,
+            351021,
+            345395,
+            351093,
+            364013,
+            376919,
+            985836,
+            352468,
+            365348,
+            351005,
+            339718,
+            334174,
+            339790,
+            352520,
+            365421,
+            974531
+          ],
+          "measurements": {
+            "continuousDistance": 1,
+            "minimumRoofCoverage": 1,
+            "maximumRoofHeight": 3.8425621502144085,
+            "declaredMinimumWidth": 0.6,
+            "broadCenterlineDiameter": 0,
+            "minimumBoundaryDirections": 3
+          }
+        }
+      ],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 4,
+        "entriesTested": 80,
+        "edgesTested": 3626,
+        "candidateRoutes": 294,
+        "topologyQueries": 5057,
+        "approachBuilds": 3,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": null,
+      "reasons": [],
+      "metrics": {
+        "sourceTriangles": 1248202,
+        "sourceVertices": 624710,
+        "indexReferences": 1460917,
+        "indexCells": 960,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1701,
+        "supportedPoints": 1194,
+        "enclosurePoints": 16,
+        "entryCandidates": 308,
+        "rejected": {
+          "unsupported-footprint": 478,
+          "body-or-head-obstruction": 29,
+          "scaffold-overlaps-source-footprint": 50,
+          "authored-to-generated-seam": 2
+        },
+        "routeLength": 3.000000000000001,
+        "routeDisplacement": 3,
+        "continuousEnclosedDistance": 2.9999999999999964,
+        "maximumConnectedDisplacement": 5.556977595779923,
+        "buildMs": 170.3076669999864,
+        "assessmentMs": 11072.430749999941
+      }
+    },
+    {
+      "id": "chamber-2-7",
+      "category": "chamber",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+      "sourceSha256": "7241fe8446a75299314f00c5a5bc70893cc20f4ab7c63444c6f77f67d1921a09",
+      "selectedScale": 6,
+      "baselineFixed6": false,
+      "selectedOldStrict": false,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 192,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "no-verified-exterior-entry",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 1597526,
+        "sourceVertices": 799666,
+        "indexReferences": 1850176,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1688,
+        "supportedPoints": 1401,
+        "enclosurePoints": 0,
+        "entryCandidates": 256,
+        "rejected": {
+          "unsupported-footprint": 246,
+          "body-or-head-obstruction": 41,
+          "scaffold-overlaps-source-footprint": 176
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 216.27687499998137,
+        "assessmentMs": 1165.8504170000087
+      }
+    },
+    {
+      "id": "cave-2-7",
+      "category": "cave",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.",
+      "sourceSha256": "bc528fa49a4c2d671206c150c39991ddf3047794aaf672c2441dd55163d00685",
+      "selectedScale": 6,
+      "baselineFixed6": true,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "cave"
+          },
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "passage"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 192,
+        "edgesTested": 507,
+        "candidateRoutes": 155,
+        "topologyQueries": 2509,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 1126980,
+        "sourceVertices": 563538,
+        "indexReferences": 1318619,
+        "indexCells": 992,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 901,
+        "supportedPoints": 335,
+        "enclosurePoints": 74,
+        "entryCandidates": 276,
+        "rejected": {
+          "unsupported-footprint": 525,
+          "body-or-head-obstruction": 41,
+          "scaffold-overlaps-source-footprint": 148
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 4.604345773288535,
+        "buildMs": 155.59754099999554,
+        "assessmentMs": 3350.0837499999907
+      }
+    },
+    {
+      "id": "large_open_interior-2-7",
+      "category": "large_open_interior",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles.",
+      "sourceSha256": "d7aa255ae47867ea3c6df7a2562315511a79b396d47f4ccda9c11ffbeffadc3d",
+      "selectedScale": 12,
+      "baselineFixed6": false,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "doorway-crossing",
+          "broad-covered-interior"
+        ],
+        "evidence": [
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          },
+          {
+            "kind": "broad-covered-interior",
+            "source": "text",
+            "cue": "warehouse"
+          },
+          {
+            "kind": "broad-covered-interior",
+            "source": "text",
+            "cue": "interior"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement.",
+          "Alternative topology wording is not resolved by this lexical compiler; conservative conjunction retained."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 2,
+        "entriesTested": 192,
+        "edgesTested": 7214,
+        "candidateRoutes": 643,
+        "topologyQueries": 12857,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 1586842,
+        "sourceVertices": 793910,
+        "indexReferences": 2139576,
+        "indexCells": 3844,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 7988,
+        "supportedPoints": 5573,
+        "enclosurePoints": 98,
+        "entryCandidates": 1464,
+        "rejected": {
+          "unsupported-footprint": 2094,
+          "body-or-head-obstruction": 321,
+          "scaffold-overlaps-source-footprint": 164
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 10.089598604503552,
+        "buildMs": 229.20012499997392,
+        "assessmentMs": 8413.95945799991
+      }
+    },
+    {
+      "id": "doorway-2-7",
+      "category": "doorway",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening.",
+      "sourceSha256": "63c6ce8785a9cdf0462f6df5079fff737ef7aa67bc3796211b6f05d31bf78080",
+      "selectedScale": 10,
+      "baselineFixed6": true,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "arch"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 2,
+        "entriesTested": 192,
+        "edgesTested": 1826,
+        "candidateRoutes": 3443,
+        "topologyQueries": 43356,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 771472,
+        "sourceVertices": 385464,
+        "indexReferences": 967987,
+        "indexCells": 2028,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1701,
+        "supportedPoints": 1019,
+        "enclosurePoints": 281,
+        "entryCandidates": 382,
+        "rejected": {
+          "unsupported-footprint": 554,
+          "body-or-head-obstruction": 128,
+          "scaffold-overlaps-source-footprint": 131
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 9.476286192385707,
+        "buildMs": 117.75500000000466,
+        "assessmentMs": 6748.3121670000255
+      }
+    },
+    {
+      "id": "large_open_interior-2-42",
+      "category": "large_open_interior",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles.",
+      "sourceSha256": "185a62eabee619fae3843600702cb259b0a43af9e6f22137a09598938cebf36f",
+      "selectedScale": 16,
+      "baselineFixed6": false,
+      "selectedOldStrict": false,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "doorway-crossing",
+          "broad-covered-interior"
+        ],
+        "evidence": [
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          },
+          {
+            "kind": "broad-covered-interior",
+            "source": "text",
+            "cue": "warehouse"
+          },
+          {
+            "kind": "broad-covered-interior",
+            "source": "text",
+            "cue": "interior"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement.",
+          "Alternative topology wording is not resolved by this lexical compiler; conservative conjunction retained."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 192,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "no-verified-exterior-entry",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 1817372,
+        "sourceVertices": 909625,
+        "indexReferences": 2804524,
+        "indexCells": 6724,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 24083,
+        "supportedPoints": 16884,
+        "enclosurePoints": 0,
+        "entryCandidates": 966,
+        "rejected": {
+          "unsupported-footprint": 2506,
+          "body-or-head-obstruction": 4692,
+          "footprint-height-spread": 1,
+          "scaffold-overlaps-source-footprint": 176
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 253.6292919999687,
+        "assessmentMs": 1794.796624999959
+      }
+    },
+    {
+      "id": "doorway-2-42",
+      "category": "doorway",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening.",
+      "sourceSha256": "8a6bdf101d8d1b01b96832bee7e7d3277374fdba8a398656e7d70a2c1b2e6fda",
+      "selectedScale": 6,
+      "baselineFixed6": true,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "arch"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 2,
+        "entriesTested": 192,
+        "edgesTested": 707,
+        "candidateRoutes": 2456,
+        "topologyQueries": 10252,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 963096,
+        "sourceVertices": 481990,
+        "indexReferences": 1122595,
+        "indexCells": 992,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1031,
+        "supportedPoints": 440,
+        "enclosurePoints": 15,
+        "entryCandidates": 220,
+        "rejected": {
+          "unsupported-footprint": 532,
+          "body-or-head-obstruction": 59,
+          "scaffold-overlaps-source-footprint": 141
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 6.212889826803627,
+        "buildMs": 137.27545900002588,
+        "assessmentMs": 4986.243000000017
+      }
+    },
+    {
+      "id": "corridor-2-42",
+      "category": "corridor",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "An empty covered walkway between brick walls, broad straight path, low arched ceiling and flat continuous paving.",
+      "sourceSha256": "79b792cfba58bb085aa025625e66ad170eaf5d21cecf1c18f4ed654f523345fe",
+      "selectedScale": 6,
+      "baselineFixed6": true,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "Intent has no supported topology criteria."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "Intent has no supported topology criteria."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "Intent has no supported topology criteria."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "Intent has no supported topology criteria."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": false,
+        "required": [],
+        "evidence": [],
+        "ambiguities": [
+          "No supported spatial topology was specified; generic objects or open scenery cannot be accepted as an inferred interior."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 0,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "no-verified-exterior-entry",
+      "reasons": [
+        "Intent has no supported topology criteria."
+      ],
+      "metrics": {
+        "sourceTriangles": 1062398,
+        "sourceVertices": 531894,
+        "indexReferences": 1255675,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1749,
+        "supportedPoints": 1084,
+        "enclosurePoints": 0,
+        "entryCandidates": 322,
+        "rejected": {
+          "unsupported-footprint": 537,
+          "body-or-head-obstruction": 128
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 153.30454200005624,
+        "assessmentMs": 516.9652080000378
+      }
+    },
+    {
+      "id": "chamber-2-42",
+      "category": "chamber",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+      "sourceSha256": "22a79d784e63af8b34e5b2565e1bfdfc759f8d3a6ecf3c1bdd198f02763bb0bc",
+      "selectedScale": 16,
+      "baselineFixed6": false,
+      "selectedOldStrict": false,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "supported-nodes",
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 192,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "no-verified-exterior-entry",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 2052202,
+        "sourceVertices": 1028753,
+        "indexReferences": 3109841,
+        "indexCells": 6724,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 21377,
+        "supportedPoints": 20000,
+        "enclosurePoints": 0,
+        "entryCandidates": 1216,
+        "rejected": {
+          "unsupported-footprint": 1212,
+          "body-or-head-obstruction": 159,
+          "footprint-height-spread": 6,
+          "scaffold-overlaps-source-footprint": 132
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 301.7732079999987,
+        "assessmentMs": 1897.7444580000592
+      }
+    },
+    {
+      "id": "narrow_passage-2-42",
+      "category": "narrow_passage",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person.",
+      "sourceSha256": "959d16f942eda033df6c66c738c6db0abf5862cee35852436f22c670b237e489",
+      "selectedScale": 6,
+      "baselineFixed6": false,
+      "selectedOldStrict": false,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "corridor"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 0.6
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 192,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "no-verified-exterior-entry",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 1468980,
+        "sourceVertices": 737630,
+        "indexReferences": 1705564,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1737,
+        "supportedPoints": 1458,
+        "enclosurePoints": 0,
+        "entryCandidates": 216,
+        "rejected": {
+          "unsupported-footprint": 279,
+          "scaffold-overlaps-source-footprint": 192
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 210.16504200012423,
+        "assessmentMs": 1063.4142500001471
+      }
+    },
+    {
+      "id": "courtyard-2-42",
+      "category": "courtyard",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A square cloister courtyard with a wide doorway, level tiled floor and empty central space bordered by covered arcades.",
+      "sourceSha256": "443c614d9e2df544032a989b6cfa769715330eb95081d630d635f84192ace40f",
+      "selectedScale": 10,
+      "baselineFixed6": false,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "open-courtyard",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "open-courtyard",
+            "source": "text",
+            "cue": "courtyard"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement.",
+          "Both open-sky and covered requirements occur; they must be witnessed on different route portions."
+        ],
+        "requirements": {
+          "openSky": true,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 192,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "no-verified-exterior-entry",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 1697748,
+        "sourceVertices": 849887,
+        "indexReferences": 2209475,
+        "indexCells": 2704,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 6510,
+        "supportedPoints": 4695,
+        "enclosurePoints": 0,
+        "entryCandidates": 1188,
+        "rejected": {
+          "unsupported-footprint": 1601,
+          "body-or-head-obstruction": 211,
+          "footprint-height-spread": 1,
+          "scaffold-overlaps-source-footprint": 130
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 245.1531670000404,
+        "assessmentMs": 1216.156042000046
+      }
+    },
+    {
+      "id": "cave-2-42",
+      "category": "cave",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.",
+      "sourceSha256": "2799c15cc829face3643046c5d400024b6ea2e4f53eddb89f68e4cdc234bd1a3",
+      "selectedScale": 6,
+      "baselineFixed6": false,
+      "selectedOldStrict": false,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "cave"
+          },
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "passage"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 2,
+        "entriesTested": 192,
+        "edgesTested": 8,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "no-connected-3m-route-found",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 1880112,
+        "sourceVertices": 941903,
+        "indexReferences": 2194609,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1757,
+        "supportedPoints": 870,
+        "enclosurePoints": 0,
+        "entryCandidates": 360,
+        "rejected": {
+          "unsupported-footprint": 708,
+          "body-or-head-obstruction": 177,
+          "footprint-height-spread": 1,
+          "scaffold-overlaps-source-footprint": 168
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0.3999999999999999,
+        "buildMs": 283.3722500000149,
+        "assessmentMs": 1237.3920419998467
+      }
+    },
+    {
+      "id": "bridge-2-42",
+      "category": "bridge",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A covered wooden footbridge with parallel side walls, high roof and flat uninterrupted deck, open entrances at both ends.",
+      "sourceSha256": "08e209f8cc1ba52619cfd02edc04abc6d4522232c238eb19998801bfb2a16e00",
+      "selectedScale": 12,
+      "baselineFixed6": false,
+      "selectedOldStrict": true,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "elevated-bridge"
+        ],
+        "evidence": [
+          {
+            "kind": "elevated-bridge",
+            "source": "text",
+            "cue": "footbridge"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 0.6
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals",
+          "topology-queries"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 19,
+        "edgesTested": 5538,
+        "candidateRoutes": 810,
+        "topologyQueries": 160000,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 1648866,
+        "sourceVertices": 824278,
+        "indexReferences": 2294975,
+        "indexCells": 3100,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 10287,
+        "supportedPoints": 4046,
+        "enclosurePoints": 104,
+        "entryCandidates": 1000,
+        "rejected": {
+          "unsupported-footprint": 2637,
+          "body-or-head-obstruction": 3579,
+          "footprint-height-spread": 9,
+          "scaffold-overlaps-source-footprint": 14
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 13.171180660821568,
+        "buildMs": 236.67279099998996,
+        "assessmentMs": 32893.49733299995
+      }
+    },
+    {
+      "id": "tunnel-2-42",
+      "category": "tunnel",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom.",
+      "sourceSha256": "57449dddb406c34b47e052c63fae7c8e3c3f974c1949cc3f49f7af6e51e38faf",
+      "selectedScale": 16,
+      "baselineFixed6": false,
+      "selectedOldStrict": false,
+      "selectedIntentLegacy": false,
+      "selectedIntentExpanded": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "reasons": [
+            "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+          ]
+        }
+      ],
+      "fixed6IntentExpanded": false,
+      "availableSuccess": false,
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "routeLength": 0,
+      "routeDisplacement": 0,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "tunnel"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "topologyWitnesses": [],
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 192,
+        "edgesTested": 13625,
+        "candidateRoutes": 1859,
+        "topologyQueries": 49660,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "reasons": [
+        "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+      ],
+      "metrics": {
+        "sourceTriangles": 2167308,
+        "sourceVertices": 1085352,
+        "indexReferences": 3140687,
+        "indexCells": 6724,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 11499,
+        "supportedPoints": 7207,
+        "enclosurePoints": 0,
+        "entryCandidates": 1862,
+        "rejected": {
+          "unsupported-footprint": 3425,
+          "body-or-head-obstruction": 860,
+          "footprint-height-spread": 4,
+          "scaffold-overlaps-source-footprint": 161
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 20.131567251458595,
+        "buildMs": 316.66783299995586,
+        "assessmentMs": 21599.359332999913
+      }
+    }
+  ]
+}

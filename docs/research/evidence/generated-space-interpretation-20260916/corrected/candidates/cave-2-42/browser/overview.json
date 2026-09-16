@@ -1,0 +1,26 @@
+{
+  "assessment": "failed",
+  "audit": [],
+  "blocked": "",
+  "caseId": "cave-2-42",
+  "errors": 0,
+  "generatedTravel": 0,
+  "glbSha256": "2799c15cc829face3643046c5d400024b6ea2e4f53eddb89f68e4cdc234bd1a3",
+  "identity": "36f7f18c33eb8ab08a5115ecab8e3e8c3e3f01a4973feab5a275d8d9836c2918",
+  "mode": "inspection",
+  "pathRemaining": 0,
+  "pendingVisits": 0,
+  "pitch": -14.440669090923238,
+  "position": [
+    6.599326894283295,
+    5.090122528374195,
+    9.599046544274865
+  ],
+  "ready": true,
+  "representation": "coarse",
+  "support": null,
+  "visits": [],
+  "walking": "",
+  "worldId": "intent-7f95f53b-4060-4980-99bb-2f337ff8ba88",
+  "yaw": 34.50852298766841
+}

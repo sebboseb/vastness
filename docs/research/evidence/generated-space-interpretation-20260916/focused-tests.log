@@ -1,0 +1,172 @@
+TAP version 13
+# Subtest: criteria distinguish topology and conjoin explicit requirements
+ok 1 - criteria distinguish topology and conjoin explicit requirements
+  ---
+  duration_ms: 1.714416
+  type: 'test'
+  ...
+# Subtest: metadata, category, identity and outcomes never feed interpretation
+ok 2 - metadata, category, identity and outcomes never feed interpretation
+  ---
+  duration_ms: 0.466459
+  type: 'test'
+  ...
+# Subtest: local negation and unresolved alternatives are reported honestly
+ok 3 - local negation and unresolved alternatives are reported honestly
+  ---
+  duration_ms: 0.121625
+  type: 'test'
+  ...
+# Subtest: semantic fallback cannot resurrect explicit text exclusions
+ok 4 - semantic fallback cannot resurrect explicit text exclusions
+  ---
+  duration_ms: 0.04725
+  type: 'test'
+  ...
+# Subtest: enclosed passage has fixed body dimensions, original support, reversible route and exterior approach
+ok 5 - enclosed passage has fixed body dimensions, original support, reversible route and exterior approach
+  ---
+  duration_ms: 52.24575
+  type: 'test'
+  ...
+# Subtest: sealed box and disconnected short floors cannot be rescued by authored support
+ok 6 - sealed box and disconnected short floors cannot be rescued by authored support
+  ---
+  duration_ms: 17.975
+  type: 'test'
+  ...
+# Subtest: broad tall covered interior has genuine roof and side witnesses above old 6m limit
+ok 7 - broad tall covered interior has genuine roof and side witnesses above old 6m limit
+  ---
+  duration_ms: 179.424583
+  type: 'test'
+  ...
+# Subtest: open courtyard requires open sky and at least three real boundaries; bare rooftop fails
+ok 8 - open courtyard requires open sky and at least three real boundaries; bare rooftop fails
+  ---
+  duration_ms: 143.729584
+  type: 'test'
+  ...
+# Subtest: doorway witness crosses aperture between flanks and lintel, not alongside an arch
+ok 9 - doorway witness crosses aperture between flanks and lintel, not alongside an arch
+  ---
+  duration_ms: 225.005166
+  type: 'test'
+  ...
+# Subtest: elevated bridge route stays on narrow deck over void, not the base or building roof
+ok 10 - elevated bridge route stays on narrow deck over void, not the base or building roof
+  ---
+  duration_ms: 320.318125
+  type: 'test'
+  ...
+# Subtest: expanded local boundary search finds recessed entry that global-AABB legacy search misses
+ok 11 - expanded local boundary search finds recessed entry that global-AABB legacy search misses
+  ---
+  duration_ms: 19.721792
+  type: 'test'
+  ...
+# Subtest: explicitly open walled passage and covered bridge honor intent without contradictory defaults
+ok 12 - explicitly open walled passage and covered bridge honor intent without contradictory defaults
+  ---
+  duration_ms: 45.410791
+  type: 'test'
+  ...
+# Subtest: authored approach cannot begin inside a large internal hole
+ok 13 - authored approach cannot begin inside a large internal hole
+  ---
+  duration_ms: 9.188417
+  type: 'test'
+  ...
+# Subtest: two-million-triangle synthetic room keeps bounded original-surface queries practical
+ok 14 - two-million-triangle synthetic room keeps bounded original-surface queries practical # SKIP
+  ---
+  duration_ms: 0.237542
+  type: 'test'
+  ...
+# Subtest: explicit wide tunnel cannot pass on a narrow supported corridor
+ok 15 - explicit wide tunnel cannot pass on a narrow supported corridor
+  ---
+  duration_ms: 10.169125
+  type: 'test'
+  ...
+# Subtest: L-shaped interior enters from its concave outer boundary without filling the recess
+ok 16 - L-shaped interior enters from its concave outer boundary without filling the recess
+  ---
+  duration_ms: 22.297083
+  type: 'test'
+  ...
+# Subtest: longitudinal room length cannot masquerade as explicit tunnel width at a side doorway
+ok 17 - longitudinal room length cannot masquerade as explicit tunnel width at a side doorway
+  ---
+  duration_ms: 4.2915
+  type: 'test'
+  ...
+# Subtest: a thin canopy cannot witness a broad covered interior
+ok 18 - a thin canopy cannot witness a broad covered interior
+  ---
+  duration_ms: 110.911334
+  type: 'test'
+  ...
+# Subtest: known architectural proportions prefer the middle candidate over automatically enlarging
+ok 19 - known architectural proportions prefer the middle candidate over automatically enlarging
+  ---
+  duration_ms: 2.271083
+  type: 'test'
+  ...
+# Subtest: doubling geometry halves the preferred scale when both physical equivalents are declared
+ok 20 - doubling geometry halves the preferred scale when both physical equivalents are declared
+  ---
+  duration_ms: 1.349583
+  type: 'test'
+  ...
+# Subtest: low overhead and sub-body wall spacing independently favor the candidate that clears them
+ok 21 - low overhead and sub-body wall spacing independently favor the candidate that clears them
+  ---
+  duration_ms: 0.831709
+  type: 'test'
+  ...
+# Subtest: a flat open scene is explicitly ambiguous, regardless of its overall size
+ok 22 - a flat open scene is explicitly ambiguous, regardless of its overall size
+  ---
+  duration_ms: 0.28125
+  type: 'test'
+  ...
+# Subtest: a vertical wall has no support and cannot fabricate a usable scale
+ok 23 - a vertical wall has no support and cannot fabricate a usable scale
+  ---
+  duration_ms: 0.143709
+  type: 'test'
+  ...
+# Subtest: selection is deterministic, translation invariant, pure and independent of candidate ordering
+ok 24 - selection is deterministic, translation invariant, pure and independent of candidate ordering
+  ---
+  duration_ms: 1.550708
+  type: 'test'
+  ...
+# Subtest: two million synthetic triangles remain within declared geometry-sampling bounds
+ok 25 - two million synthetic triangles remain within declared geometry-sampling bounds
+  ---
+  duration_ms: 570.876625
+  type: 'test'
+  ...
+# Subtest: dense floor tessellation preserves full column coverage and the architectural choice
+ok 26 - dense floor tessellation preserves full column coverage and the architectural choice
+  ---
+  duration_ms: 126.785875
+  type: 'test'
+  ...
+# Subtest: rejects invalid meshes and scale sets, including corruption late in a large index buffer
+ok 27 - rejects invalid meshes and scale sets, including corruption late in a large index buffer
+  ---
+  duration_ms: 4.365833
+  type: 'test'
+  ...
+1..27
+# tests 27
+# suites 0
+# pass 26
+# fail 0
+# cancelled 0
+# skipped 1
+# todo 0
+# duration_ms 1297.996083

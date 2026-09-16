@@ -1,0 +1,13 @@
+
+> vastness@0.1.0 build:passage
+> vite build apps/web --config apps/web/vite.generated-passage.config.ts
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1233 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/generated-passage/generated-passage.html                     1.31 kB │ gzip:   0.68 kB
+dist/generated-passage/assets/generated-passage-DanD5BKd.css      0.65 kB │ gzip:   0.39 kB
+dist/generated-passage/assets/generated-passage-BvitO3Bi.js   1,992.13 kB │ gzip: 516.69 kB
+✓ built in 1.38s

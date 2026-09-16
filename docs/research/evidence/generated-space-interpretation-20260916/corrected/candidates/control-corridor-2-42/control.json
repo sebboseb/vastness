@@ -1,0 +1,9 @@
+{
+  "id": "control-corridor-2-42",
+  "candidateId": "corridor-2-42",
+  "kind": "control",
+  "scale": 6,
+  "chosenScale": 6,
+  "includedInPrimaryRate": false,
+  "sourceAssessment": ".runtime/interpretation-study/candidates/corridor-2-42/old-strict-scale6.json"
+}

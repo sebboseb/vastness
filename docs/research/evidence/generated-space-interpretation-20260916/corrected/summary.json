@@ -1,0 +1,5833 @@
+{
+  "schemaVersion": 1,
+  "selectionHash": "a023b551f38752982a7f6f7b29d4c5e8010f4628762e8f4ee146ce888bdcb6c7",
+  "replayHash": "e0e3ba360ad14f252986a4d26d3741920ceaa4da25bb47e2926b5da0f40b3881",
+  "counts": {
+    "n": 36,
+    "selected": 3,
+    "expandedOnly": 2,
+    "anyScale": 5,
+    "fixed6": 2,
+    "browser": 2,
+    "fallbackRescues": 1,
+    "criteriaChanged": 4
+  },
+  "categories": [
+    {
+      "category": "large_open_interior",
+      "n": 4,
+      "selected": 0,
+      "expandedOnly": 0,
+      "anyScale": 1,
+      "browser": 0,
+      "fixed6": 0
+    },
+    {
+      "category": "tunnel",
+      "n": 4,
+      "selected": 0,
+      "expandedOnly": 0,
+      "anyScale": 0,
+      "browser": 0,
+      "fixed6": 0
+    },
+    {
+      "category": "doorway",
+      "n": 4,
+      "selected": 0,
+      "expandedOnly": 0,
+      "anyScale": 0,
+      "browser": 0,
+      "fixed6": 0
+    },
+    {
+      "category": "narrow_passage",
+      "n": 4,
+      "selected": 2,
+      "expandedOnly": 2,
+      "anyScale": 2,
+      "browser": 2,
+      "fixed6": 2
+    },
+    {
+      "category": "chamber",
+      "n": 4,
+      "selected": 0,
+      "expandedOnly": 0,
+      "anyScale": 0,
+      "browser": 0,
+      "fixed6": 0
+    },
+    {
+      "category": "cave",
+      "n": 4,
+      "selected": 1,
+      "expandedOnly": 0,
+      "anyScale": 1,
+      "browser": 0,
+      "fixed6": 0
+    },
+    {
+      "category": "corridor",
+      "n": 4,
+      "selected": 0,
+      "expandedOnly": 0,
+      "anyScale": 1,
+      "browser": 0,
+      "fixed6": 0
+    },
+    {
+      "category": "courtyard",
+      "n": 4,
+      "selected": 0,
+      "expandedOnly": 0,
+      "anyScale": 0,
+      "browser": 0,
+      "fixed6": 0
+    },
+    {
+      "category": "bridge",
+      "n": 4,
+      "selected": 0,
+      "expandedOnly": 0,
+      "anyScale": 0,
+      "browser": 0,
+      "fixed6": 0
+    }
+  ],
+  "failureTaxonomy": {
+    "intent-topology-or-bounded-route-search": 18,
+    "no-connected-3m-route-found": 3,
+    "browser-navigation-or-evidence": 1,
+    "no-verified-exterior-entry": 11,
+    "no-exterior-entry-found": 1
+  },
+  "rows": [
+    {
+      "id": "large_open_interior-1-7",
+      "category": "large_open_interior",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "An enormous empty vaulted hall with a broad entrance and a continuous level floor, widely spaced perimeter columns and clear central space.",
+      "selectedScale": 12,
+      "sourceSha256": "b6315fe62b32374bbf3db71538e16b19b8d342eaa975417e0eb1594222048457",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "broad-covered-interior"
+        ],
+        "evidence": [
+          {
+            "kind": "broad-covered-interior",
+            "source": "text",
+            "cue": "hall"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": true,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "passed",
+          "strategy": "expanded",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 6.799999999999999
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 848980,
+        "sourceVertices": 424474,
+        "indexReferences": 1183326,
+        "indexCells": 2604,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 5570,
+        "supportedPoints": 2789,
+        "enclosurePoints": 1579,
+        "entryCandidates": 102,
+        "rejected": {
+          "unsupported-footprint": 1980,
+          "body-or-head-obstruction": 799,
+          "scaffold-overlaps-source-footprint": 30
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 11.3718951806636,
+        "buildMs": 98.77916700000014,
+        "assessmentMs": 21220.549583
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals",
+          "candidate-routes"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 34,
+        "edgesTested": 7468,
+        "candidateRoutes": 4097,
+        "topologyQueries": 21838,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "tunnel-1-7",
+      "category": "tunnel",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof.",
+      "selectedScale": 6,
+      "sourceSha256": "03ea4b0ea0d52c31609a350bac8362969bde7ee7141a8542bacd3038af67cffe",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "tunnel"
+          },
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "passage"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "no-connected-3m-route-found",
+      "metrics": {
+        "sourceTriangles": 757356,
+        "sourceVertices": 378770,
+        "indexReferences": 887476,
+        "indexCells": 736,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 786,
+        "supportedPoints": 340,
+        "enclosurePoints": 0,
+        "entryCandidates": 20,
+        "rejected": {
+          "unsupported-footprint": 355,
+          "body-or-head-obstruction": 88,
+          "scaffold-overlaps-source-footprint": 19
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 122.180165999991,
+        "assessmentMs": 343.9922910000023
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [],
+        "componentsExplored": 1,
+        "entriesTested": 20,
+        "edgesTested": 2,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "doorway-1-7",
+      "category": "doorway",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.",
+      "selectedScale": 10,
+      "sourceSha256": "3b2e6b1800b0f9565cf699eea62f1af945e8ce64f453f6360ad2e96770d92810",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 794370,
+        "sourceVertices": 397926,
+        "indexReferences": 1024695,
+        "indexCells": 2704,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2843,
+        "supportedPoints": 1836,
+        "enclosurePoints": 0,
+        "entryCandidates": 360,
+        "rejected": {
+          "unsupported-footprint": 873,
+          "body-or-head-obstruction": 132,
+          "scaffold-overlaps-source-footprint": 13
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 12.731064370271639,
+        "buildMs": 105.69216699998651,
+        "assessmentMs": 5271.1026249999995
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals",
+          "candidate-routes"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 17,
+        "edgesTested": 3028,
+        "candidateRoutes": 4097,
+        "topologyQueries": 18525,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "narrow_passage-1-7",
+      "category": "narrow_passage",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.",
+      "selectedScale": 6,
+      "sourceSha256": "75e8c7130f57c8786a79c28cc81daa1007039c13ca4ae61bfd97bd4a027c0774",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "passage"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": true,
+          "minimumWidth": 0.6
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": true,
+      "selectedPassed": true,
+      "expandedPassed": true,
+      "strategy": "expanded",
+      "fixed6Passed": true,
+      "availableSuccess": true,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "passed",
+          "strategy": "expanded",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 3.200000000000001
+        },
+        {
+          "scale": 10,
+          "status": "passed",
+          "strategy": "expanded",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 3.200000000000001
+        },
+        {
+          "scale": 12,
+          "status": "passed",
+          "strategy": "expanded",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 3.2
+        },
+        {
+          "scale": 16,
+          "status": "passed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 3
+        }
+      ],
+      "browser": {
+        "reasons": [],
+        "forwardEndpointDistance": 0.002000000197155776,
+        "returnEndpointDistance": 0.006750000000000256,
+        "status": "passed"
+      },
+      "failure": null,
+      "metrics": {
+        "sourceTriangles": 1342526,
+        "sourceVertices": 673142,
+        "indexReferences": 1540955,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 859,
+        "supportedPoints": 384,
+        "enclosurePoints": 12,
+        "entryCandidates": 248,
+        "rejected": {
+          "unsupported-footprint": 349,
+          "body-or-head-obstruction": 126,
+          "scaffold-overlaps-source-footprint": 47,
+          "authored-to-generated-seam": 1
+        },
+        "routeLength": 3.200000000000001,
+        "routeDisplacement": 3.2,
+        "continuousEnclosedDistance": 3.1999999999999966,
+        "maximumConnectedDisplacement": 3.2,
+        "buildMs": 174.57470899999316,
+        "assessmentMs": 2431.707125000001
+      },
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 3,
+        "entriesTested": 70,
+        "edgesTested": 342,
+        "candidateRoutes": 2,
+        "topologyQueries": 156,
+        "approachBuilds": 2,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": [
+        {
+          "kind": "enclosed-passage",
+          "routeIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "supportTriangleIds": [
+            1310681,
+            1334985,
+            1327500,
+            1310655,
+            1293889,
+            1286474,
+            1293925,
+            1310705,
+            1327537,
+            1310696,
+            1335000,
+            1327517,
+            1310672,
+            1293905,
+            1286491,
+            1293940,
+            1310723,
+            1327552,
+            1310715,
+            1335019,
+            1327535,
+            1310689,
+            1293923,
+            1286509,
+            1293959,
+            1310741,
+            1327571,
+            1310730,
+            1335034,
+            1327550,
+            1293939,
+            1286524,
+            1293974,
+            1310757,
+            1327586,
+            1310749,
+            1335053,
+            1327569,
+            1293957,
+            1286543,
+            1293993,
+            1310774,
+            1327605,
+            1310765,
+            1335069,
+            1327585,
+            1293973,
+            1286559,
+            1294009,
+            1310791,
+            1327621
+          ],
+          "structuralTriangleIds": [
+            800107,
+            1311073,
+            635906,
+            802756,
+            635907,
+            805716,
+            808045,
+            1311075,
+            635908,
+            810275,
+            812141
+          ],
+          "measurements": {
+            "continuousDistance": 1,
+            "minimumRoofCoverage": 0,
+            "maximumRoofHeight": 0,
+            "declaredMinimumWidth": 0.6,
+            "broadCenterlineDiameter": 0,
+            "minimumBoundaryDirections": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "chamber-1-7",
+      "category": "chamber",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+      "selectedScale": 6,
+      "sourceSha256": "d526aec6874c3a1259fe4af64beb770ab96888df3909b58f4e0bd7f79e2ad464",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "topology-queries",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 1673652,
+        "sourceVertices": 836912,
+        "indexReferences": 1959132,
+        "indexCells": 960,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1921,
+        "supportedPoints": 1141,
+        "enclosurePoints": 17,
+        "entryCandidates": 185,
+        "rejected": {
+          "unsupported-footprint": 622,
+          "body-or-head-obstruction": 125,
+          "scaffold-overlaps-source-footprint": 40
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 3.2,
+        "buildMs": 210.1465409999946,
+        "assessmentMs": 2250.8405409999978
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 4,
+        "entriesTested": 48,
+        "edgesTested": 199,
+        "candidateRoutes": 2,
+        "topologyQueries": 221,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "cave-1-7",
+      "category": "cave",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space.",
+      "selectedScale": 10,
+      "sourceSha256": "a56bb24593ddd9164444ec54f03365f5e8712636a983ae6e50a82fa1f4b172bf",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "cave"
+          },
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": true,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": true,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "passed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 4.2
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "reasons": [
+          "Return did not reach scaffold mode",
+          "Return endpoint is outside .03m of approach start",
+          "Return does not append exactly one visit to the forward visit sequence",
+          "Observed visits are not a prefix of persisted visits",
+          "Missing distinct new crossed/returned visit pair"
+        ],
+        "forwardEndpointDistance": 0.005650596043471569,
+        "returnEndpointDistance": 3.380343325119261,
+        "status": "failed"
+      },
+      "failure": "browser-navigation-or-evidence",
+      "metrics": {
+        "sourceTriangles": 1273170,
+        "sourceVertices": 636686,
+        "indexReferences": 1631972,
+        "indexCells": 2548,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2806,
+        "supportedPoints": 1550,
+        "enclosurePoints": 421,
+        "entryCandidates": 228,
+        "rejected": {
+          "unsupported-footprint": 1173,
+          "body-or-head-obstruction": 82,
+          "footprint-height-spread": 1,
+          "scaffold-overlaps-source-footprint": 23,
+          "authored-to-generated-seam": 5
+        },
+        "routeLength": 4.2,
+        "routeDisplacement": 3.0528675044947504,
+        "continuousEnclosedDistance": 4.12,
+        "maximumConnectedDisplacement": 5.830951894845301,
+        "buildMs": 177.16183299999102,
+        "assessmentMs": 15577.564375000016
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 3,
+        "entriesTested": 29,
+        "edgesTested": 1935,
+        "candidateRoutes": 1041,
+        "topologyQueries": 7098,
+        "approachBuilds": 6,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": [
+        {
+          "kind": "enclosed-passage",
+          "routeIndices": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "supportTriangleIds": [
+            854125,
+            876885,
+            869896,
+            854095,
+            836356,
+            830363,
+            836400,
+            854161,
+            869960,
+            869923,
+            892527,
+            886586,
+            869889,
+            851060,
+            844931,
+            851128,
+            869973,
+            886652,
+            892551,
+            886616,
+            869911,
+            851092,
+            844966,
+            851150,
+            869995,
+            886674,
+            869986,
+            892582,
+            886646,
+            869941,
+            851122,
+            844996,
+            851170,
+            870015,
+            886704,
+            870006,
+            892612,
+            886671,
+            851147,
+            845018,
+            851198,
+            870041,
+            886730,
+            870032,
+            892638,
+            851167,
+            845038,
+            851219,
+            870070,
+            886757
+          ],
+          "structuralTriangleIds": [
+            851094,
+            246911,
+            240137,
+            220373,
+            205321,
+            199391,
+            205373,
+            223506,
+            240189,
+            854899,
+            222710,
+            240160,
+            264997,
+            256578,
+            240124,
+            220385,
+            214344,
+            220433,
+            240202,
+            256629,
+            870843,
+            239339,
+            240184,
+            892552,
+            886618,
+            240152,
+            220405,
+            214364,
+            220463,
+            240226,
+            886679,
+            240218,
+            265061,
+            256625,
+            240172,
+            220425,
+            214394,
+            220483,
+            240252,
+            256685,
+            240242,
+            262399,
+            256654,
+            220456,
+            214420,
+            220509,
+            240284,
+            256713,
+            240268,
+            262425,
+            256681,
+            220478,
+            845040,
+            220533,
+            240309,
+            886762
+          ],
+          "measurements": {
+            "continuousDistance": 1,
+            "minimumRoofCoverage": 1,
+            "maximumRoofHeight": 5.632947565283002,
+            "declaredMinimumWidth": 2.4,
+            "broadCenterlineDiameter": 2.4,
+            "minimumBoundaryDirections": 2
+          }
+        },
+        {
+          "kind": "explicit-cover",
+          "routeIndices": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "supportTriangleIds": [
+            691997,
+            720944,
+            713112,
+            691923,
+            666934,
+            660743,
+            667188,
+            692042,
+            713200,
+            713167,
+            740494,
+            732580,
+            713095,
+            687896,
+            679517,
+            692031,
+            713213,
+            732686,
+            732636,
+            760408,
+            752882,
+            732564,
+            713113,
+            700844,
+            709080,
+            732707,
+            752982,
+            752938,
+            781752,
+            771556,
+            752860,
+            732581,
+            732687,
+            752999,
+            771670,
+            771618,
+            798660,
+            788330,
+            771538,
+            752883,
+            752983,
+            771689,
+            788394,
+            788364,
+            815473,
+            808805,
+            788322,
+            771557,
+            771671,
+            788411,
+            809019
+          ],
+          "structuralTriangleIds": [
+            64026,
+            720947,
+            83217,
+            60119,
+            43298,
+            26550,
+            39059,
+            64098,
+            83274,
+            692779,
+            59653,
+            79615,
+            740501,
+            732583,
+            83186,
+            60132,
+            52127,
+            60221,
+            83282,
+            732691,
+            713842,
+            82861,
+            102451,
+            760425,
+            752887,
+            102383,
+            79569,
+            71822,
+            79673,
+            732708,
+            752986,
+            733483,
+            732202,
+            752942,
+            151534,
+            771560,
+            752865,
+            728716,
+            728796,
+            753002,
+            771675,
+            753908,
+            752106,
+            771621,
+            168516,
+            161528,
+            771545,
+            122267,
+            122369,
+            771690,
+            161656,
+            772512,
+            770803,
+            788367,
+            184256,
+            805436,
+            158089,
+            771558,
+            771672,
+            788413,
+            805594,
+            789222,
+            787733
+          ],
+          "measurements": {
+            "continuousDistance": 1,
+            "minimumRoofCoverage": 1,
+            "maximumRoofHeight": 5.15231931245447,
+            "declaredMinimumWidth": 2.4,
+            "broadCenterlineDiameter": 2.4,
+            "minimumBoundaryDirections": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "corridor-1-7",
+      "category": "corridor",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end.",
+      "selectedScale": 10,
+      "sourceSha256": "5383ef9cabe2f2d88fba3b08d8c4b97f2bb7f519e882a7253b8773899b5339d7",
+      "criteriaChanged": true,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "corridor"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 0.6
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": true,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "passed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 5.599999999999999
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "topology-queries"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 740284,
+        "sourceVertices": 370156,
+        "indexReferences": 948835,
+        "indexCells": 1404,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2084,
+        "supportedPoints": 1294,
+        "enclosurePoints": 298,
+        "entryCandidates": 100,
+        "rejected": {
+          "unsupported-footprint": 755,
+          "body-or-head-obstruction": 35,
+          "authored-to-generated-seam": 8,
+          "scaffold-overlaps-source-footprint": 38
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 5.4,
+        "buildMs": 123.0177079999994,
+        "assessmentMs": 5969.798999999999
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 3,
+        "entriesTested": 48,
+        "edgesTested": 1409,
+        "candidateRoutes": 915,
+        "topologyQueries": 73554,
+        "approachBuilds": 8,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "courtyard-1-7",
+      "category": "courtyard",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "An empty courtyard enclosed by stone walls, broad entrance gate and flat continuous paving under an open sky.",
+      "selectedScale": 10,
+      "sourceSha256": "7616b93737b806eddb845bcee9d60cc1c29989cd2d7bd7ec9ebeefcd3134b305",
+      "criteriaChanged": true,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "open-courtyard",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "open-courtyard",
+            "source": "text",
+            "cue": "courtyard"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "gate"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement."
+        ],
+        "requirements": {
+          "openSky": true,
+          "covered": false,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 1544768,
+        "sourceVertices": 772418,
+        "indexReferences": 1925358,
+        "indexCells": 2704,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2496,
+        "supportedPoints": 1405,
+        "enclosurePoints": 936,
+        "entryCandidates": 48,
+        "rejected": {
+          "unsupported-footprint": 1001,
+          "body-or-head-obstruction": 90,
+          "scaffold-overlaps-source-footprint": 7
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 9.234717104492159,
+        "buildMs": 238.41379200000665,
+        "assessmentMs": 7423.79120800001
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "candidate-routes"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 12,
+        "edgesTested": 3261,
+        "candidateRoutes": 4097,
+        "topologyQueries": 12653,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "bridge-1-7",
+      "category": "bridge",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A stone bridge with a flat continuous deck, tall solid side parapets and an empty walkway joining two broad stone landings.",
+      "selectedScale": 12,
+      "sourceSha256": "5a4c29d4289eeb9c9bdbaa2b1015a14da2964f30bbafe9336eac7b0f7db60b71",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "elevated-bridge"
+        ],
+        "evidence": [
+          {
+            "kind": "elevated-bridge",
+            "source": "text",
+            "cue": "bridge"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "topology-queries"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "topology-queries"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "topology-queries"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 859044,
+        "sourceVertices": 429968,
+        "indexReferences": 1176010,
+        "indexCells": 3844,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 4451,
+        "supportedPoints": 1871,
+        "enclosurePoints": 214,
+        "entryCandidates": 238,
+        "rejected": {
+          "unsupported-footprint": 2091,
+          "body-or-head-obstruction": 459,
+          "footprint-height-spread": 26,
+          "scaffold-overlaps-source-footprint": 1
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 8.881441324469806,
+        "buildMs": 120.11087499995483,
+        "assessmentMs": 11122.18829099997
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals",
+          "topology-queries"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 3,
+        "edgesTested": 1822,
+        "candidateRoutes": 1230,
+        "topologyQueries": 160000,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "large_open_interior-1-42",
+      "category": "large_open_interior",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "An enormous empty vaulted hall with a broad entrance and a continuous level floor, widely spaced perimeter columns and clear central space.",
+      "selectedScale": 10,
+      "sourceSha256": "2e43864cb5022f8d122ffa76f060afe903e6051feea8b04f43530bce40909c5d",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "broad-covered-interior"
+        ],
+        "evidence": [
+          {
+            "kind": "broad-covered-interior",
+            "source": "text",
+            "cue": "hall"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "no-verified-exterior-entry",
+      "metrics": {
+        "sourceTriangles": 744360,
+        "sourceVertices": 372236,
+        "indexReferences": 973955,
+        "indexCells": 1664,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 3288,
+        "supportedPoints": 1969,
+        "enclosurePoints": 0,
+        "entryCandidates": 80,
+        "rejected": {
+          "unsupported-footprint": 1157,
+          "body-or-head-obstruction": 151,
+          "footprint-height-spread": 11,
+          "scaffold-overlaps-source-footprint": 48
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 107.67087500001071,
+        "assessmentMs": 528.225541999971
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 48,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "bridge-1-42",
+      "category": "bridge",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A stone bridge with a flat continuous deck, tall solid side parapets and an empty walkway joining two broad stone landings.",
+      "selectedScale": 16,
+      "sourceSha256": "261279b0fcb27df5ec822c9db09bb85e296c12aba270e7f26dacce3aa5e0d026",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "elevated-bridge"
+        ],
+        "evidence": [
+          {
+            "kind": "elevated-bridge",
+            "source": "text",
+            "cue": "bridge"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "topology-queries"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "topology-queries"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 562340,
+        "sourceVertices": 281262,
+        "indexReferences": 833372,
+        "indexCells": 5330,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 4336,
+        "supportedPoints": 2092,
+        "enclosurePoints": 160,
+        "entryCandidates": 123,
+        "rejected": {
+          "unsupported-footprint": 2036,
+          "body-or-head-obstruction": 202,
+          "footprint-height-spread": 4,
+          "scaffold-overlaps-source-footprint": 12
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 15.160474926597782,
+        "buildMs": 78.20704200002365,
+        "assessmentMs": 7923.606500000053
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals",
+          "topology-queries"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 13,
+        "edgesTested": 2036,
+        "candidateRoutes": 735,
+        "topologyQueries": 160000,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "doorway-1-42",
+      "category": "doorway",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.",
+      "selectedScale": 6,
+      "sourceSha256": "7dc260e05158dda0e43ecd63d5f6e7db5bb57e6bab7265be5aed0f7513eb3206",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "no-verified-exterior-entry",
+      "metrics": {
+        "sourceTriangles": 2216472,
+        "sourceVertices": 1110896,
+        "indexReferences": 2561813,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2388,
+        "supportedPoints": 1176,
+        "enclosurePoints": 0,
+        "entryCandidates": 200,
+        "rejected": {
+          "unsupported-footprint": 418,
+          "body-or-head-obstruction": 794,
+          "scaffold-overlaps-source-footprint": 48
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 302.37162500002887,
+        "assessmentMs": 2068.886666000006
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 48,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "narrow_passage-1-42",
+      "category": "narrow_passage",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.",
+      "selectedScale": 6,
+      "sourceSha256": "afcbf5920dd1230ee9c845fd59726ecd00de692d6a35cb787046beb8212b98ea",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "passage"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": true,
+          "minimumWidth": 0.6
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "no-verified-exterior-entry",
+      "metrics": {
+        "sourceTriangles": 2128166,
+        "sourceVertices": 1065842,
+        "indexReferences": 2457334,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1748,
+        "supportedPoints": 1155,
+        "enclosurePoints": 0,
+        "entryCandidates": 62,
+        "rejected": {
+          "unsupported-footprint": 528,
+          "body-or-head-obstruction": 65,
+          "scaffold-overlaps-source-footprint": 48
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 280.264542000019,
+        "assessmentMs": 1554.5839590000105
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 48,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "cave-1-42",
+      "category": "cave",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space.",
+      "selectedScale": 10,
+      "sourceSha256": "2e23286835d759ed91268f1b782689060c5e7501cf0008357a4d3e01a1eac9ad",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "cave"
+          },
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "no-connected-3m-route-found",
+      "metrics": {
+        "sourceTriangles": 1060506,
+        "sourceVertices": 530509,
+        "indexReferences": 1366386,
+        "indexCells": 2704,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2501,
+        "supportedPoints": 1157,
+        "enclosurePoints": 0,
+        "entryCandidates": 69,
+        "rejected": {
+          "unsupported-footprint": 1144,
+          "body-or-head-obstruction": 196,
+          "footprint-height-spread": 4,
+          "scaffold-overlaps-source-footprint": 42
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 2.4738633753705965,
+        "buildMs": 146.42970799998147,
+        "assessmentMs": 847.6539169999887
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 48,
+        "edgesTested": 120,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "courtyard-1-42",
+      "category": "courtyard",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "An empty courtyard enclosed by stone walls, broad entrance gate and flat continuous paving under an open sky.",
+      "selectedScale": 6,
+      "sourceSha256": "9e1df2a956a459ac91917dc0ccd92804235bf901dd094fdf201fb3fcf7dfe269",
+      "criteriaChanged": true,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "open-courtyard",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "open-courtyard",
+            "source": "text",
+            "cue": "courtyard"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "gate"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement."
+        ],
+        "requirements": {
+          "openSky": true,
+          "covered": false,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 1437656,
+        "sourceVertices": 719697,
+        "indexReferences": 1651089,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1014,
+        "supportedPoints": 638,
+        "enclosurePoints": 44,
+        "entryCandidates": 102,
+        "rejected": {
+          "unsupported-footprint": 358,
+          "body-or-head-obstruction": 18,
+          "scaffold-overlaps-source-footprint": 26
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 5.660388679233963,
+        "buildMs": 225.31575000000885,
+        "assessmentMs": 7291.6394169999985
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals",
+          "candidate-routes"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 42,
+        "edgesTested": 1161,
+        "candidateRoutes": 4097,
+        "topologyQueries": 7410,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "corridor-1-42",
+      "category": "corridor",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end.",
+      "selectedScale": 16,
+      "sourceSha256": "589e5e427db97ef45a76411ea1629c08f55b39b82efe3688359e8d5c795c7eae",
+      "criteriaChanged": true,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "corridor"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 0.6
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 1440730,
+        "sourceVertices": 720705,
+        "indexReferences": 2302426,
+        "indexCells": 6724,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 23800,
+        "supportedPoints": 11170,
+        "enclosurePoints": 0,
+        "entryCandidates": 486,
+        "rejected": {
+          "unsupported-footprint": 1780,
+          "body-or-head-obstruction": 10850,
+          "scaffold-overlaps-source-footprint": 12
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 15.005332385522157,
+        "buildMs": 234.13320799998473,
+        "assessmentMs": 19432.645707999996
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals",
+          "candidate-routes"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 13,
+        "edgesTested": 25803,
+        "candidateRoutes": 4097,
+        "topologyQueries": 57785,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "tunnel-1-42",
+      "category": "tunnel",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof.",
+      "selectedScale": 16,
+      "sourceSha256": "ca0f3ceb9e7248fd493d597a5f715df12cc911c647b7e631c1586f32a9dc001e",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "tunnel"
+          },
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "passage"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 1214008,
+        "sourceVertices": 607771,
+        "indexReferences": 1828541,
+        "indexCells": 6478,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 11037,
+        "supportedPoints": 5726,
+        "enclosurePoints": 56,
+        "entryCandidates": 526,
+        "rejected": {
+          "unsupported-footprint": 1918,
+          "body-or-head-obstruction": 3393,
+          "scaffold-overlaps-source-footprint": 39
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 19.964969321288727,
+        "buildMs": 164.1180830000667,
+        "assessmentMs": 3622.129791000043
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals",
+          "candidate-routes"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 43,
+        "edgesTested": 3003,
+        "candidateRoutes": 4097,
+        "topologyQueries": 19721,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "chamber-1-42",
+      "category": "chamber",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+      "selectedScale": 6,
+      "sourceSha256": "2b6e56636c72bdccdd387c4a30a7e98526d15efeab66d47c396287f81d7a8a76",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "no-verified-exterior-entry",
+      "metrics": {
+        "sourceTriangles": 2279942,
+        "sourceVertices": 1141676,
+        "indexReferences": 2643858,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2229,
+        "supportedPoints": 1383,
+        "enclosurePoints": 0,
+        "entryCandidates": 199,
+        "rejected": {
+          "unsupported-footprint": 404,
+          "body-or-head-obstruction": 432,
+          "scaffold-overlaps-source-footprint": 48
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 305.14937500003725,
+        "assessmentMs": 2080.2652080000844
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 48,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "courtyard-2-7",
+      "category": "courtyard",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A square cloister courtyard with a wide doorway, level tiled floor and empty central space bordered by covered arcades.",
+      "selectedScale": 6,
+      "sourceSha256": "6bccae253afbe6bdb595f3501e195ac7798c8e7e6784e76340a0688b262186df",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "open-courtyard",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "open-courtyard",
+            "source": "text",
+            "cue": "courtyard"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement.",
+          "Both open-sky and covered requirements occur; they must be witnessed on different route portions."
+        ],
+        "requirements": {
+          "openSky": true,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 740336,
+        "sourceVertices": 370206,
+        "indexReferences": 885411,
+        "indexCells": 960,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1214,
+        "supportedPoints": 644,
+        "enclosurePoints": 281,
+        "entryCandidates": 174,
+        "rejected": {
+          "unsupported-footprint": 452,
+          "body-or-head-obstruction": 115,
+          "scaffold-overlaps-source-footprint": 46
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 6.248199740725324,
+        "buildMs": 97.94120899995323,
+        "assessmentMs": 5480.849416999961
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 48,
+        "edgesTested": 1475,
+        "candidateRoutes": 487,
+        "topologyQueries": 5694,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "bridge-2-7",
+      "category": "bridge",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A covered wooden footbridge with parallel side walls, high roof and flat uninterrupted deck, open entrances at both ends.",
+      "selectedScale": 16,
+      "sourceSha256": "68e8a625f16c7bdda99cdd299323526ff70d8131a49d55bc25e4d8ccb9c8ed98",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "elevated-bridge"
+        ],
+        "evidence": [
+          {
+            "kind": "elevated-bridge",
+            "source": "text",
+            "cue": "footbridge"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 0.6
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "no-verified-exterior-entry",
+      "metrics": {
+        "sourceTriangles": 599148,
+        "sourceVertices": 299432,
+        "indexReferences": 928419,
+        "indexCells": 6480,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 7646,
+        "supportedPoints": 4423,
+        "enclosurePoints": 0,
+        "entryCandidates": 25,
+        "rejected": {
+          "unsupported-footprint": 2165,
+          "body-or-head-obstruction": 1051,
+          "footprint-height-spread": 2,
+          "scaffold-overlaps-source-footprint": 25
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 88.63312500005122,
+        "assessmentMs": 499.4938329999568
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [],
+        "componentsExplored": 0,
+        "entriesTested": 25,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "tunnel-2-7",
+      "category": "tunnel",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom.",
+      "selectedScale": 10,
+      "sourceSha256": "0ff7a321ed9c1d36fdf48c1def049eb5144c42380eed28f161a7aa2a2167467a",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "tunnel"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 967640,
+        "sourceVertices": 483938,
+        "indexReferences": 1240463,
+        "indexCells": 2244,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2189,
+        "supportedPoints": 844,
+        "enclosurePoints": 130,
+        "entryCandidates": 49,
+        "rejected": {
+          "unsupported-footprint": 1183,
+          "body-or-head-obstruction": 160,
+          "scaffold-overlaps-source-footprint": 4
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 9.121403400793104,
+        "buildMs": 127.05187500000466,
+        "assessmentMs": 4370.686083999928
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals",
+          "candidate-routes"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 13,
+        "edgesTested": 1238,
+        "candidateRoutes": 4097,
+        "topologyQueries": 7852,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "corridor-2-7",
+      "category": "corridor",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "An empty covered walkway between brick walls, broad straight path, low arched ceiling and flat continuous paving.",
+      "selectedScale": 10,
+      "sourceSha256": "3deff24d4be94dee2bc86c7bc6d3091f3ebc6ec2bf0c1d51aad186022ed87f00",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": false,
+        "required": [],
+        "evidence": [],
+        "ambiguities": [
+          "No supported spatial topology was specified; generic objects or open scenery cannot be accepted as an inferred interior."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "no-verified-exterior-entry",
+      "metrics": {
+        "sourceTriangles": 702590,
+        "sourceVertices": 351382,
+        "indexReferences": 910589,
+        "indexCells": 1300,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 2420,
+        "supportedPoints": 1581,
+        "enclosurePoints": 0,
+        "entryCandidates": 321,
+        "rejected": {
+          "unsupported-footprint": 746,
+          "body-or-head-obstruction": 93
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 93.34195899998304,
+        "assessmentMs": 607.7579169999808
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 0,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "narrow_passage-2-7",
+      "category": "narrow_passage",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person.",
+      "selectedScale": 6,
+      "sourceSha256": "594aadf3c943e1769cc9893a1841eac9f1ab5f3fd2c69382feea5f86583c4273",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "corridor"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 0.6
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": true,
+      "selectedPassed": true,
+      "expandedPassed": true,
+      "strategy": "expanded",
+      "fixed6Passed": true,
+      "availableSuccess": true,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "passed",
+          "strategy": "expanded",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 3.000000000000001
+        },
+        {
+          "scale": 10,
+          "status": "passed",
+          "strategy": "expanded",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 3.200000000000001
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "reasons": [],
+        "forwardEndpointDistance": 0.006500000171383633,
+        "returnEndpointDistance": 0.002849999999993358,
+        "status": "passed"
+      },
+      "failure": null,
+      "metrics": {
+        "sourceTriangles": 1248202,
+        "sourceVertices": 624710,
+        "indexReferences": 1460917,
+        "indexCells": 960,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1701,
+        "supportedPoints": 1194,
+        "enclosurePoints": 16,
+        "entryCandidates": 308,
+        "rejected": {
+          "unsupported-footprint": 478,
+          "body-or-head-obstruction": 29,
+          "scaffold-overlaps-source-footprint": 50,
+          "authored-to-generated-seam": 2
+        },
+        "routeLength": 3.000000000000001,
+        "routeDisplacement": 3,
+        "continuousEnclosedDistance": 2.9999999999999964,
+        "maximumConnectedDisplacement": 5.556977595779923,
+        "buildMs": 170.3076669999864,
+        "assessmentMs": 11072.430749999941
+      },
+      "searchDiagnostics": {
+        "mode": "expanded",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 4,
+        "entriesTested": 80,
+        "edgesTested": 3626,
+        "candidateRoutes": 294,
+        "topologyQueries": 5057,
+        "approachBuilds": 3,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": [
+        {
+          "kind": "enclosed-passage",
+          "routeIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "supportTriangleIds": [
+            1032753,
+            1050767,
+            1045190,
+            1032700,
+            1019981,
+            1014342,
+            1020057,
+            1032804,
+            1045267,
+            1021447,
+            1039689,
+            1034122,
+            1021395,
+            1008686,
+            1003158,
+            1008762,
+            1021499,
+            1034198,
+            1008722,
+            1027107,
+            1021411,
+            1008670,
+            995998,
+            990354,
+            996075,
+            1008775,
+            1021487,
+            997450,
+            1010087,
+            997399,
+            984611,
+            978996,
+            984686,
+            997503,
+            1010162,
+            984646,
+            997414,
+            984594,
+            971862,
+            966208,
+            971938,
+            984699,
+            997486,
+            971898,
+            986021,
+            971846,
+            958872,
+            954639,
+            960531,
+            971950,
+            986097
+          ],
+          "structuralTriangleIds": [
+            412671,
+            430808,
+            425191,
+            412619,
+            399874,
+            395564,
+            399946,
+            412723,
+            425263,
+            707328,
+            500687,
+            1034054,
+            401338,
+            419662,
+            414042,
+            401286,
+            388370,
+            382727,
+            388443,
+            401390,
+            414115,
+            1022745,
+            388407,
+            407020,
+            401302,
+            388355,
+            375415,
+            369713,
+            375487,
+            388459,
+            401375,
+            1009977,
+            376882,
+            389816,
+            376830,
+            363924,
+            358273,
+            363996,
+            376934,
+            389888,
+            998735,
+            363961,
+            376847,
+            363908,
+            351021,
+            345395,
+            351093,
+            364013,
+            376919,
+            985836,
+            352468,
+            365348,
+            351005,
+            339718,
+            334174,
+            339790,
+            352520,
+            365421,
+            974531
+          ],
+          "measurements": {
+            "continuousDistance": 1,
+            "minimumRoofCoverage": 1,
+            "maximumRoofHeight": 3.8425621502144085,
+            "declaredMinimumWidth": 0.6,
+            "broadCenterlineDiameter": 0,
+            "minimumBoundaryDirections": 3
+          }
+        },
+        {
+          "kind": "explicit-cover",
+          "routeIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "supportTriangleIds": [
+            1032753,
+            1050767,
+            1045190,
+            1032700,
+            1019981,
+            1014342,
+            1020057,
+            1032804,
+            1045267,
+            1021447,
+            1039689,
+            1034122,
+            1021395,
+            1008686,
+            1003158,
+            1008762,
+            1021499,
+            1034198,
+            1008722,
+            1027107,
+            1021411,
+            1008670,
+            995998,
+            990354,
+            996075,
+            1008775,
+            1021487,
+            997450,
+            1010087,
+            997399,
+            984611,
+            978996,
+            984686,
+            997503,
+            1010162,
+            984646,
+            997414,
+            984594,
+            971862,
+            966208,
+            971938,
+            984699,
+            997486,
+            971898,
+            986021,
+            971846,
+            958872,
+            954639,
+            960531,
+            971950,
+            986097
+          ],
+          "structuralTriangleIds": [
+            412671,
+            430808,
+            425191,
+            412619,
+            399874,
+            395564,
+            399946,
+            412723,
+            425263,
+            707328,
+            500687,
+            1034054,
+            401338,
+            419662,
+            414042,
+            401286,
+            388370,
+            382727,
+            388443,
+            401390,
+            414115,
+            1022745,
+            388407,
+            407020,
+            401302,
+            388355,
+            375415,
+            369713,
+            375487,
+            388459,
+            401375,
+            1009977,
+            376882,
+            389816,
+            376830,
+            363924,
+            358273,
+            363996,
+            376934,
+            389888,
+            998735,
+            363961,
+            376847,
+            363908,
+            351021,
+            345395,
+            351093,
+            364013,
+            376919,
+            985836,
+            352468,
+            365348,
+            351005,
+            339718,
+            334174,
+            339790,
+            352520,
+            365421,
+            974531
+          ],
+          "measurements": {
+            "continuousDistance": 1,
+            "minimumRoofCoverage": 1,
+            "maximumRoofHeight": 3.8425621502144085,
+            "declaredMinimumWidth": 0.6,
+            "broadCenterlineDiameter": 0,
+            "minimumBoundaryDirections": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "chamber-2-7",
+      "category": "chamber",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+      "selectedScale": 6,
+      "sourceSha256": "7241fe8446a75299314f00c5a5bc70893cc20f4ab7c63444c6f77f67d1921a09",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "no-verified-exterior-entry",
+      "metrics": {
+        "sourceTriangles": 1597526,
+        "sourceVertices": 799666,
+        "indexReferences": 1850176,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1688,
+        "supportedPoints": 1401,
+        "enclosurePoints": 0,
+        "entryCandidates": 200,
+        "rejected": {
+          "unsupported-footprint": 246,
+          "body-or-head-obstruction": 41,
+          "scaffold-overlaps-source-footprint": 48
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 213.8896249999525,
+        "assessmentMs": 1740.0433750000084
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 48,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "cave-2-7",
+      "category": "cave",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.",
+      "selectedScale": 6,
+      "sourceSha256": "bc528fa49a4c2d671206c150c39991ddf3047794aaf672c2441dd55163d00685",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "cave"
+          },
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "passage"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 1126980,
+        "sourceVertices": 563538,
+        "indexReferences": 1318619,
+        "indexCells": 992,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 901,
+        "supportedPoints": 335,
+        "enclosurePoints": 79,
+        "entryCandidates": 27,
+        "rejected": {
+          "unsupported-footprint": 525,
+          "body-or-head-obstruction": 41,
+          "scaffold-overlaps-source-footprint": 23
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 4.604345773288535,
+        "buildMs": 150.54470799991395,
+        "assessmentMs": 3196.8055409999797
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [],
+        "componentsExplored": 1,
+        "entriesTested": 27,
+        "edgesTested": 507,
+        "candidateRoutes": 313,
+        "topologyQueries": 2626,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "large_open_interior-2-7",
+      "category": "large_open_interior",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles.",
+      "selectedScale": 12,
+      "sourceSha256": "d7aa255ae47867ea3c6df7a2562315511a79b396d47f4ccda9c11ffbeffadc3d",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "doorway-crossing",
+          "broad-covered-interior"
+        ],
+        "evidence": [
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          },
+          {
+            "kind": "broad-covered-interior",
+            "source": "text",
+            "cue": "warehouse"
+          },
+          {
+            "kind": "broad-covered-interior",
+            "source": "text",
+            "cue": "interior"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement.",
+          "Alternative topology wording is not resolved by this lexical compiler; conservative conjunction retained."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 1586842,
+        "sourceVertices": 793910,
+        "indexReferences": 2139576,
+        "indexCells": 3844,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 7988,
+        "supportedPoints": 5573,
+        "enclosurePoints": 113,
+        "entryCandidates": 323,
+        "rejected": {
+          "unsupported-footprint": 2094,
+          "body-or-head-obstruction": 321,
+          "scaffold-overlaps-source-footprint": 42
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 9.895453501482386,
+        "buildMs": 222.7252500000177,
+        "assessmentMs": 8965.58516700007
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 2,
+        "entriesTested": 48,
+        "edgesTested": 7214,
+        "candidateRoutes": 665,
+        "topologyQueries": 14912,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "doorway-2-7",
+      "category": "doorway",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening.",
+      "selectedScale": 10,
+      "sourceSha256": "63c6ce8785a9cdf0462f6df5079fff737ef7aa67bc3796211b6f05d31bf78080",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "arch"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 771472,
+        "sourceVertices": 385464,
+        "indexReferences": 967987,
+        "indexCells": 2028,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1701,
+        "supportedPoints": 1019,
+        "enclosurePoints": 286,
+        "entryCandidates": 183,
+        "rejected": {
+          "unsupported-footprint": 554,
+          "body-or-head-obstruction": 128,
+          "scaffold-overlaps-source-footprint": 20
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 8.28009661779378,
+        "buildMs": 110.60754100000486,
+        "assessmentMs": 5358.049457999994
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals",
+          "candidate-routes"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 26,
+        "edgesTested": 1826,
+        "candidateRoutes": 4097,
+        "topologyQueries": 28673,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "large_open_interior-2-42",
+      "category": "large_open_interior",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles.",
+      "selectedScale": 16,
+      "sourceSha256": "185a62eabee619fae3843600702cb259b0a43af9e6f22137a09598938cebf36f",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "doorway-crossing",
+          "broad-covered-interior"
+        ],
+        "evidence": [
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          },
+          {
+            "kind": "broad-covered-interior",
+            "source": "text",
+            "cue": "warehouse"
+          },
+          {
+            "kind": "broad-covered-interior",
+            "source": "text",
+            "cue": "interior"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement.",
+          "Alternative topology wording is not resolved by this lexical compiler; conservative conjunction retained."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "no-exterior-entry-found",
+      "metrics": {
+        "sourceTriangles": 1817372,
+        "sourceVertices": 909625,
+        "indexReferences": 2804524,
+        "indexCells": 6724,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 24083,
+        "supportedPoints": 16884,
+        "enclosurePoints": 0,
+        "entryCandidates": 0,
+        "rejected": {
+          "unsupported-footprint": 2506,
+          "body-or-head-obstruction": 4692,
+          "footprint-height-spread": 1
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 262.92587499995716,
+        "assessmentMs": 1956.7492909999564
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [],
+        "componentsExplored": 0,
+        "entriesTested": 0,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "doorway-2-42",
+      "category": "doorway",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening.",
+      "selectedScale": 6,
+      "sourceSha256": "8a6bdf101d8d1b01b96832bee7e7d3277374fdba8a398656e7d70a2c1b2e6fda",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "arch"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": false,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 963096,
+        "sourceVertices": 481990,
+        "indexReferences": 1122595,
+        "indexCells": 992,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1031,
+        "supportedPoints": 440,
+        "enclosurePoints": 15,
+        "entryCandidates": 104,
+        "rejected": {
+          "unsupported-footprint": 532,
+          "body-or-head-obstruction": 59,
+          "scaffold-overlaps-source-footprint": 25
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 6.212889826803627,
+        "buildMs": 139.67620799993165,
+        "assessmentMs": 5108.473832999938
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 2,
+        "entriesTested": 48,
+        "edgesTested": 707,
+        "candidateRoutes": 3252,
+        "topologyQueries": 11719,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "corridor-2-42",
+      "category": "corridor",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "An empty covered walkway between brick walls, broad straight path, low arched ceiling and flat continuous paving.",
+      "selectedScale": 6,
+      "sourceSha256": "79b792cfba58bb085aa025625e66ad170eaf5d21cecf1c18f4ed654f523345fe",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": false,
+        "required": [],
+        "evidence": [],
+        "ambiguities": [
+          "No supported spatial topology was specified; generic objects or open scenery cannot be accepted as an inferred interior."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "no-verified-exterior-entry",
+      "metrics": {
+        "sourceTriangles": 1062398,
+        "sourceVertices": 531894,
+        "indexReferences": 1255675,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1749,
+        "supportedPoints": 1084,
+        "enclosurePoints": 0,
+        "entryCandidates": 73,
+        "rejected": {
+          "unsupported-footprint": 537,
+          "body-or-head-obstruction": 128
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 156.52974999998696,
+        "assessmentMs": 635.3628340000287
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 0,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "chamber-2-42",
+      "category": "chamber",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+      "selectedScale": 16,
+      "sourceSha256": "22a79d784e63af8b34e5b2565e1bfdfc759f8d3a6ecf3c1bdd198f02763bb0bc",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "supported-nodes",
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "no-verified-exterior-entry",
+      "metrics": {
+        "sourceTriangles": 2052202,
+        "sourceVertices": 1028753,
+        "indexReferences": 3109841,
+        "indexCells": 6724,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 21377,
+        "supportedPoints": 20000,
+        "enclosurePoints": 0,
+        "entryCandidates": 409,
+        "rejected": {
+          "unsupported-footprint": 1212,
+          "body-or-head-obstruction": 159,
+          "footprint-height-spread": 6,
+          "scaffold-overlaps-source-footprint": 48
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 296.6001249999972,
+        "assessmentMs": 2554.4096660000505
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "supported-nodes",
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 48,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "narrow_passage-2-42",
+      "category": "narrow_passage",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person.",
+      "selectedScale": 6,
+      "sourceSha256": "959d16f942eda033df6c66c738c6db0abf5862cee35852436f22c670b237e489",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "corridor"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 0.6
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "no-verified-exterior-entry",
+      "metrics": {
+        "sourceTriangles": 1468980,
+        "sourceVertices": 737630,
+        "indexReferences": 1705564,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1737,
+        "supportedPoints": 1458,
+        "enclosurePoints": 0,
+        "entryCandidates": 200,
+        "rejected": {
+          "unsupported-footprint": 279,
+          "scaffold-overlaps-source-footprint": 48
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 210.1266249998007,
+        "assessmentMs": 1623.9623749998864
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals"
+        ],
+        "componentsExplored": 0,
+        "entriesTested": 48,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "courtyard-2-42",
+      "category": "courtyard",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A square cloister courtyard with a wide doorway, level tiled floor and empty central space bordered by covered arcades.",
+      "selectedScale": 10,
+      "sourceSha256": "443c614d9e2df544032a989b6cfa769715330eb95081d630d635f84192ace40f",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "open-courtyard",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "open-courtyard",
+            "source": "text",
+            "cue": "courtyard"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement.",
+          "Both open-sky and covered requirements occur; they must be witnessed on different route portions."
+        ],
+        "requirements": {
+          "openSky": true,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "no-verified-exterior-entry",
+      "metrics": {
+        "sourceTriangles": 1697748,
+        "sourceVertices": 849887,
+        "indexReferences": 2209475,
+        "indexCells": 2704,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 6510,
+        "supportedPoints": 4695,
+        "enclosurePoints": 0,
+        "entryCandidates": 7,
+        "rejected": {
+          "unsupported-footprint": 1601,
+          "body-or-head-obstruction": 211,
+          "footprint-height-spread": 1,
+          "scaffold-overlaps-source-footprint": 7
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0,
+        "buildMs": 248.04595900001004,
+        "assessmentMs": 1250.798375000013
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [],
+        "componentsExplored": 0,
+        "entriesTested": 7,
+        "edgesTested": 0,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "cave-2-42",
+      "category": "cave",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.",
+      "selectedScale": 6,
+      "sourceSha256": "2799c15cc829face3643046c5d400024b6ea2e4f53eddb89f68e4cdc234bd1a3",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "cave"
+          },
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "passage"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "no-connected-3m-route-found",
+      "metrics": {
+        "sourceTriangles": 1880112,
+        "sourceVertices": 941903,
+        "indexReferences": 2194609,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 1757,
+        "supportedPoints": 870,
+        "enclosurePoints": 0,
+        "entryCandidates": 5,
+        "rejected": {
+          "unsupported-footprint": 708,
+          "body-or-head-obstruction": 177,
+          "footprint-height-spread": 1
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 0.3999999999999999,
+        "buildMs": 273.27008399995975,
+        "assessmentMs": 1271.378500000108
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [],
+        "componentsExplored": 2,
+        "entriesTested": 5,
+        "edgesTested": 8,
+        "candidateRoutes": 0,
+        "topologyQueries": 0,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "bridge-2-42",
+      "category": "bridge",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A covered wooden footbridge with parallel side walls, high roof and flat uninterrupted deck, open entrances at both ends.",
+      "selectedScale": 12,
+      "sourceSha256": "08e209f8cc1ba52619cfd02edc04abc6d4522232c238eb19998801bfb2a16e00",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "elevated-bridge"
+        ],
+        "evidence": [
+          {
+            "kind": "elevated-bridge",
+            "source": "text",
+            "cue": "footbridge"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 0.6
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "topology-queries"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "topology-queries"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "topology-queries"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 1648866,
+        "sourceVertices": 824278,
+        "indexReferences": 2294975,
+        "indexCells": 3100,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 10287,
+        "supportedPoints": 4046,
+        "enclosurePoints": 83,
+        "entryCandidates": 392,
+        "rejected": {
+          "unsupported-footprint": 2637,
+          "body-or-head-obstruction": 3579,
+          "footprint-height-spread": 9,
+          "scaffold-overlaps-source-footprint": 1
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 13.023056476879766,
+        "buildMs": 235.85725000011735,
+        "assessmentMs": 35393.13187499996
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals",
+          "topology-queries"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 2,
+        "edgesTested": 5538,
+        "candidateRoutes": 833,
+        "topologyQueries": 160000,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    },
+    {
+      "id": "tunnel-2-42",
+      "category": "tunnel",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom.",
+      "selectedScale": 16,
+      "sourceSha256": "57449dddb406c34b47e052c63fae7c8e3c3f974c1949cc3f49f7af6e51e38faf",
+      "criteriaChanged": false,
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "tunnel"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "v1Passed": false,
+      "selectedPassed": false,
+      "expandedPassed": false,
+      "strategy": "legacy-fallback",
+      "fixed6Passed": false,
+      "availableSuccess": false,
+      "grid": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals"
+          ],
+          "routeLength": 0
+        },
+        {
+          "scale": 16,
+          "status": "failed",
+          "strategy": "legacy-fallback",
+          "exhausted": [
+            "entry-proposals",
+            "candidate-routes"
+          ],
+          "routeLength": 0
+        }
+      ],
+      "browser": {
+        "status": "not-eligible",
+        "reasons": []
+      },
+      "failure": "intent-topology-or-bounded-route-search",
+      "metrics": {
+        "sourceTriangles": 2167308,
+        "sourceVertices": 1085352,
+        "indexReferences": 3140687,
+        "indexCells": 6724,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 11499,
+        "supportedPoints": 7207,
+        "enclosurePoints": 0,
+        "entryCandidates": 491,
+        "rejected": {
+          "unsupported-footprint": 3425,
+          "body-or-head-obstruction": 860,
+          "footprint-height-spread": 4,
+          "scaffold-overlaps-source-footprint": 12
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 20.518284528683196,
+        "buildMs": 313.47795900003985,
+        "assessmentMs": 22494.45104199997
+      },
+      "searchDiagnostics": {
+        "mode": "legacy",
+        "budgets": {
+          "gridCells": 20000,
+          "supportedNodes": 20000,
+          "layersPerColumn": 32,
+          "legacyEntries": 48,
+          "expandedEntries": 192,
+          "edges": 80000,
+          "candidateRoutes": 4096,
+          "topologyQueries": 160000,
+          "approachBuilds": 8,
+          "topologyIndexReferences": 24000000
+        },
+        "exhausted": [
+          "entry-proposals",
+          "candidate-routes"
+        ],
+        "componentsExplored": 1,
+        "entriesTested": 14,
+        "edgesTested": 13625,
+        "candidateRoutes": 4097,
+        "topologyQueries": 52013,
+        "approachBuilds": 0,
+        "routeCrossesBehindSeam": false
+      },
+      "topologyWitnesses": []
+    }
+  ]
+}

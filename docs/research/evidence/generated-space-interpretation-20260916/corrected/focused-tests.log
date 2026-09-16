@@ -1,0 +1,214 @@
+TAP version 13
+# Subtest: unchanged intents retain byte-equivalent criteria JSON and ignore outcome metadata
+ok 1 - unchanged intents retain byte-equivalent criteria JSON and ignore outcome metadata
+  ---
+  duration_ms: 1.981833
+  type: 'test'
+  ...
+# Subtest: wall-enclosed courtyard under open sky does not acquire a roof requirement
+ok 2 - wall-enclosed courtyard under open sky does not acquire a roof requirement
+  ---
+  duration_ms: 390.431542
+  type: 'test'
+  ...
+# Subtest: bare positive roof requires actual cover; absent roof fails without changing navigation
+ok 3 - bare positive roof requires actual cover; absent roof fails without changing navigation
+  ---
+  duration_ms: 90.881083
+  type: 'test'
+  ...
+# Subtest: locally negated roofs do not create cover and override inferred tunnel cover
+ok 4 - locally negated roofs do not create cover and override inferred tunnel cover
+  ---
+  duration_ms: 0.22175
+  type: 'test'
+  ...
+# Subtest: separate open courtyard and covered arcade retain both witnessed requirements
+ok 5 - separate open courtyard and covered arcade retain both witnessed requirements
+  ---
+  duration_ms: 445.765667
+  type: 'test'
+  ...
+# Subtest: localized broad-entrance wording is retained conservatively, not silently reinterpreted
+ok 6 - localized broad-entrance wording is retained conservatively, not silently reinterpreted
+  ---
+  duration_ms: 0.129375
+  type: 'test'
+  ...
+# Subtest: roofless inherently covered topology is unsupported rather than inventing a roof
+ok 7 - roofless inherently covered topology is unsupported rather than inventing a roof
+  ---
+  duration_ms: 0.180875
+  type: 'test'
+  ...
+# Subtest: criteria distinguish topology and conjoin explicit requirements
+ok 8 - criteria distinguish topology and conjoin explicit requirements
+  ---
+  duration_ms: 2.01225
+  type: 'test'
+  ...
+# Subtest: metadata, category, identity and outcomes never feed interpretation
+ok 9 - metadata, category, identity and outcomes never feed interpretation
+  ---
+  duration_ms: 0.241708
+  type: 'test'
+  ...
+# Subtest: local negation and unresolved alternatives are reported honestly
+ok 10 - local negation and unresolved alternatives are reported honestly
+  ---
+  duration_ms: 0.0875
+  type: 'test'
+  ...
+# Subtest: semantic fallback cannot resurrect explicit text exclusions
+ok 11 - semantic fallback cannot resurrect explicit text exclusions
+  ---
+  duration_ms: 0.039083
+  type: 'test'
+  ...
+# Subtest: enclosed passage has fixed body dimensions, original support, reversible route and exterior approach
+ok 12 - enclosed passage has fixed body dimensions, original support, reversible route and exterior approach
+  ---
+  duration_ms: 57.66425
+  type: 'test'
+  ...
+# Subtest: sealed box and disconnected short floors cannot be rescued by authored support
+ok 13 - sealed box and disconnected short floors cannot be rescued by authored support
+  ---
+  duration_ms: 19.590542
+  type: 'test'
+  ...
+# Subtest: broad tall covered interior has genuine roof and side witnesses above old 6m limit
+ok 14 - broad tall covered interior has genuine roof and side witnesses above old 6m limit
+  ---
+  duration_ms: 197.3995
+  type: 'test'
+  ...
+# Subtest: open courtyard requires open sky and at least three real boundaries; bare rooftop fails
+ok 15 - open courtyard requires open sky and at least three real boundaries; bare rooftop fails
+  ---
+  duration_ms: 160.234042
+  type: 'test'
+  ...
+# Subtest: doorway witness crosses aperture between flanks and lintel, not alongside an arch
+ok 16 - doorway witness crosses aperture between flanks and lintel, not alongside an arch
+  ---
+  duration_ms: 239.85075
+  type: 'test'
+  ...
+# Subtest: elevated bridge route stays on narrow deck over void, not the base or building roof
+ok 17 - elevated bridge route stays on narrow deck over void, not the base or building roof
+  ---
+  duration_ms: 334.83675
+  type: 'test'
+  ...
+# Subtest: expanded local boundary search finds recessed entry that global-AABB legacy search misses
+ok 18 - expanded local boundary search finds recessed entry that global-AABB legacy search misses
+  ---
+  duration_ms: 20.668209
+  type: 'test'
+  ...
+# Subtest: explicitly open walled passage and covered bridge honor intent without contradictory defaults
+ok 19 - explicitly open walled passage and covered bridge honor intent without contradictory defaults
+  ---
+  duration_ms: 45.346166
+  type: 'test'
+  ...
+# Subtest: authored approach cannot begin inside a large internal hole
+ok 20 - authored approach cannot begin inside a large internal hole
+  ---
+  duration_ms: 9.106208
+  type: 'test'
+  ...
+# Subtest: two-million-triangle synthetic room keeps bounded original-surface queries practical
+ok 21 - two-million-triangle synthetic room keeps bounded original-surface queries practical # SKIP
+  ---
+  duration_ms: 0.220375
+  type: 'test'
+  ...
+# Subtest: explicit wide tunnel cannot pass on a narrow supported corridor
+ok 22 - explicit wide tunnel cannot pass on a narrow supported corridor
+  ---
+  duration_ms: 10.562625
+  type: 'test'
+  ...
+# Subtest: L-shaped interior enters from its concave outer boundary without filling the recess
+ok 23 - L-shaped interior enters from its concave outer boundary without filling the recess
+  ---
+  duration_ms: 22.494541
+  type: 'test'
+  ...
+# Subtest: longitudinal room length cannot masquerade as explicit tunnel width at a side doorway
+ok 24 - longitudinal room length cannot masquerade as explicit tunnel width at a side doorway
+  ---
+  duration_ms: 4.618166
+  type: 'test'
+  ...
+# Subtest: a thin canopy cannot witness a broad covered interior
+ok 25 - a thin canopy cannot witness a broad covered interior
+  ---
+  duration_ms: 112.886
+  type: 'test'
+  ...
+# Subtest: known architectural proportions prefer the middle candidate over automatically enlarging
+ok 26 - known architectural proportions prefer the middle candidate over automatically enlarging
+  ---
+  duration_ms: 2.225541
+  type: 'test'
+  ...
+# Subtest: doubling geometry halves the preferred scale when both physical equivalents are declared
+ok 27 - doubling geometry halves the preferred scale when both physical equivalents are declared
+  ---
+  duration_ms: 1.41925
+  type: 'test'
+  ...
+# Subtest: low overhead and sub-body wall spacing independently favor the candidate that clears them
+ok 28 - low overhead and sub-body wall spacing independently favor the candidate that clears them
+  ---
+  duration_ms: 0.924666
+  type: 'test'
+  ...
+# Subtest: a flat open scene is explicitly ambiguous, regardless of its overall size
+ok 29 - a flat open scene is explicitly ambiguous, regardless of its overall size
+  ---
+  duration_ms: 0.328459
+  type: 'test'
+  ...
+# Subtest: a vertical wall has no support and cannot fabricate a usable scale
+ok 30 - a vertical wall has no support and cannot fabricate a usable scale
+  ---
+  duration_ms: 0.149958
+  type: 'test'
+  ...
+# Subtest: selection is deterministic, translation invariant, pure and independent of candidate ordering
+ok 31 - selection is deterministic, translation invariant, pure and independent of candidate ordering
+  ---
+  duration_ms: 1.45625
+  type: 'test'
+  ...
+# Subtest: two million synthetic triangles remain within declared geometry-sampling bounds
+ok 32 - two million synthetic triangles remain within declared geometry-sampling bounds
+  ---
+  duration_ms: 601.804333
+  type: 'test'
+  ...
+# Subtest: dense floor tessellation preserves full column coverage and the architectural choice
+ok 33 - dense floor tessellation preserves full column coverage and the architectural choice
+  ---
+  duration_ms: 136.881292
+  type: 'test'
+  ...
+# Subtest: rejects invalid meshes and scale sets, including corruption late in a large index buffer
+ok 34 - rejects invalid meshes and scale sets, including corruption late in a large index buffer
+  ---
+  duration_ms: 5.04175
+  type: 'test'
+  ...
+1..34
+# tests 34
+# suites 0
+# pass 33
+# fail 0
+# cancelled 0
+# skipped 1
+# todo 0
+# duration_ms 1346.011458

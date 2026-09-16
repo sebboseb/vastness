@@ -1,0 +1,26 @@
+{
+  "assessment": "failed",
+  "audit": [],
+  "blocked": "",
+  "caseId": "courtyard-1-42",
+  "errors": 0,
+  "generatedTravel": 0,
+  "glbSha256": "9e1df2a956a459ac91917dc0ccd92804235bf901dd094fdf201fb3fcf7dfe269",
+  "identity": "9e72f0298d46143cb396ab7aa4df1b1de48cbb62fe5d2a7f74230f2a4686f490",
+  "mode": "inspection",
+  "pathRemaining": 0,
+  "pendingVisits": 0,
+  "pitch": -14.440669090923238,
+  "position": [
+    6.600480007007719,
+    6.007237605750561,
+    9.594926471114158
+  ],
+  "ready": true,
+  "representation": "coarse",
+  "support": null,
+  "visits": [],
+  "walking": "",
+  "worldId": "intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b",
+  "yaw": 34.50852298766841
+}

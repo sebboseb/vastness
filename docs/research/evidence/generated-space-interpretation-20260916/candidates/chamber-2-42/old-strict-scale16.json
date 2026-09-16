@@ -1,0 +1,16 @@
+{
+  "status": "failed",
+  "transform": {
+    "scale": 16,
+    "yaw": 0,
+    "position": [
+      0,
+      8.013033866882324,
+      0
+    ]
+  },
+  "assessmentError": "Error: Passage search exceeds supported-node budget",
+  "sourceSha256": "22a79d784e63af8b34e5b2565e1bfdfc759f8d3a6ecf3c1bdd198f02763bb0bc",
+  "selectionFreeze": "a023b551f38752982a7f6f7b29d4c5e8010f4628762e8f4ee146ce888bdcb6c7",
+  "elapsedMs": 6488.040000000037
+}

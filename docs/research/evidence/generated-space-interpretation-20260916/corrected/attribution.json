@@ -1,0 +1,749 @@
+{
+  "schemaVersion": 1,
+  "interpretation": "Failure taxonomy aggregates both selected-scale searches, rather than attributing failure solely to the last fallback attempt. No bounded search proves impossibility. Scale misses are demonstrated because another predeclared scale has a valid generated route. No irreparable generation-failure count is established.",
+  "strictEndpointScaleEffect": {
+    "fixed6": 12,
+    "automatic": 21,
+    "recovered": [
+      "large_open_interior-1-7",
+      "courtyard-1-7",
+      "bridge-1-7",
+      "large_open_interior-1-42",
+      "bridge-1-42",
+      "tunnel-1-42",
+      "large_open_interior-2-7",
+      "courtyard-2-42",
+      "bridge-2-42"
+    ],
+    "lost": []
+  },
+  "failureTaxonomy": {
+    "no-connected-3m-route-found": 3,
+    "no-exterior-approach-admitted-by-prescreen": 12,
+    "topology-witness-entry-seam-or-bounded-search": 18
+  },
+  "attribution": {
+    "demonstrated-scale-interpretation-miss": 2,
+    "unresolved-generation-versus-interpretation": 31,
+    "verified-usable-selected-space": 3
+  },
+  "selectedFailureBudgetCounts": {
+    "candidate-routes": 9,
+    "entry-proposals": 33,
+    "supported-nodes": 1,
+    "topology-queries": 3
+  },
+  "rows": [
+    {
+      "id": "large_open_interior-1-7",
+      "category": "large_open_interior",
+      "selectedScale": 12,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": true,
+      "availableScales": [
+        16
+      ],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "demonstrated-scale-interpretation-miss",
+      "supportedPoints": 2789,
+      "maximumConnectedDisplacement": 12.092973166264782,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "tunnel-1-7",
+      "category": "tunnel",
+      "selectedScale": 6,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "no-connected-3m-route-found",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 340,
+      "maximumConnectedDisplacement": 0.39999999999999947,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "doorway-1-7",
+      "category": "doorway",
+      "selectedScale": 10,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 1836,
+      "maximumConnectedDisplacement": 12.731064370271639,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "narrow_passage-1-7",
+      "category": "narrow_passage",
+      "selectedScale": 6,
+      "selectedPass": true,
+      "browserPass": true,
+      "scaleMiss": false,
+      "availableScales": [
+        6,
+        10,
+        12,
+        16
+      ],
+      "failure": null,
+      "attribution": "verified-usable-selected-space",
+      "supportedPoints": 384,
+      "maximumConnectedDisplacement": 3.2,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 1,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "chamber-1-7",
+      "category": "chamber",
+      "selectedScale": 6,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 1141,
+      "maximumConnectedDisplacement": 6,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "cave-1-7",
+      "category": "cave",
+      "selectedScale": 10,
+      "selectedPass": true,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [
+        10
+      ],
+      "failure": null,
+      "attribution": "verified-usable-selected-space",
+      "supportedPoints": 1550,
+      "maximumConnectedDisplacement": 5.830951894845301,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 9,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": true
+    },
+    {
+      "id": "corridor-1-7",
+      "category": "corridor",
+      "selectedScale": 10,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": true,
+      "availableScales": [
+        12
+      ],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "demonstrated-scale-interpretation-miss",
+      "supportedPoints": 1294,
+      "maximumConnectedDisplacement": 5.403702434442518,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 10,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "courtyard-1-7",
+      "category": "courtyard",
+      "selectedScale": 10,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 1405,
+      "maximumConnectedDisplacement": 9.234717104492159,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "bridge-1-7",
+      "category": "bridge",
+      "selectedScale": 12,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 1871,
+      "maximumConnectedDisplacement": 9.850888284819801,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals",
+        "topology-queries"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "large_open_interior-1-42",
+      "category": "large_open_interior",
+      "selectedScale": 10,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "no-exterior-approach-admitted-by-prescreen",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 1969,
+      "maximumConnectedDisplacement": 0,
+      "prescreenedExteriorApproachExists": false,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "bridge-1-42",
+      "category": "bridge",
+      "selectedScale": 16,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 2092,
+      "maximumConnectedDisplacement": 15.358385331798392,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals",
+        "topology-queries"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "doorway-1-42",
+      "category": "doorway",
+      "selectedScale": 6,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "no-exterior-approach-admitted-by-prescreen",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 1176,
+      "maximumConnectedDisplacement": 0,
+      "prescreenedExteriorApproachExists": false,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "narrow_passage-1-42",
+      "category": "narrow_passage",
+      "selectedScale": 6,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "no-exterior-approach-admitted-by-prescreen",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 1155,
+      "maximumConnectedDisplacement": 0,
+      "prescreenedExteriorApproachExists": false,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "cave-1-42",
+      "category": "cave",
+      "selectedScale": 10,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "no-connected-3m-route-found",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 1157,
+      "maximumConnectedDisplacement": 2.4738633753705965,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "courtyard-1-42",
+      "category": "courtyard",
+      "selectedScale": 6,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 638,
+      "maximumConnectedDisplacement": 5.9363288318623315,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "corridor-1-42",
+      "category": "corridor",
+      "selectedScale": 16,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 11170,
+      "maximumConnectedDisplacement": 16.815469068687918,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "tunnel-1-42",
+      "category": "tunnel",
+      "selectedScale": 16,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 5726,
+      "maximumConnectedDisplacement": 19.964969321288727,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "chamber-1-42",
+      "category": "chamber",
+      "selectedScale": 6,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "no-exterior-approach-admitted-by-prescreen",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 1383,
+      "maximumConnectedDisplacement": 0,
+      "prescreenedExteriorApproachExists": false,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "courtyard-2-7",
+      "category": "courtyard",
+      "selectedScale": 6,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 644,
+      "maximumConnectedDisplacement": 6.648308055437865,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "bridge-2-7",
+      "category": "bridge",
+      "selectedScale": 16,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "no-exterior-approach-admitted-by-prescreen",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 4423,
+      "maximumConnectedDisplacement": 0,
+      "prescreenedExteriorApproachExists": false,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "tunnel-2-7",
+      "category": "tunnel",
+      "selectedScale": 10,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 844,
+      "maximumConnectedDisplacement": 9.121403400793104,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "corridor-2-7",
+      "category": "corridor",
+      "selectedScale": 10,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "no-exterior-approach-admitted-by-prescreen",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 1581,
+      "maximumConnectedDisplacement": 0,
+      "prescreenedExteriorApproachExists": false,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "narrow_passage-2-7",
+      "category": "narrow_passage",
+      "selectedScale": 6,
+      "selectedPass": true,
+      "browserPass": true,
+      "scaleMiss": false,
+      "availableScales": [
+        6,
+        10
+      ],
+      "failure": null,
+      "attribution": "verified-usable-selected-space",
+      "supportedPoints": 1194,
+      "maximumConnectedDisplacement": 5.556977595779923,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 2,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "chamber-2-7",
+      "category": "chamber",
+      "selectedScale": 6,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "no-exterior-approach-admitted-by-prescreen",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 1401,
+      "maximumConnectedDisplacement": 0,
+      "prescreenedExteriorApproachExists": false,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "cave-2-7",
+      "category": "cave",
+      "selectedScale": 6,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 335,
+      "maximumConnectedDisplacement": 4.604345773288535,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "large_open_interior-2-7",
+      "category": "large_open_interior",
+      "selectedScale": 12,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 5573,
+      "maximumConnectedDisplacement": 10.089598604503552,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "doorway-2-7",
+      "category": "doorway",
+      "selectedScale": 10,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 1019,
+      "maximumConnectedDisplacement": 9.476286192385707,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "large_open_interior-2-42",
+      "category": "large_open_interior",
+      "selectedScale": 16,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "no-exterior-approach-admitted-by-prescreen",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 16884,
+      "maximumConnectedDisplacement": 0,
+      "prescreenedExteriorApproachExists": false,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "doorway-2-42",
+      "category": "doorway",
+      "selectedScale": 6,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 440,
+      "maximumConnectedDisplacement": 6.212889826803627,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "corridor-2-42",
+      "category": "corridor",
+      "selectedScale": 6,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "no-exterior-approach-admitted-by-prescreen",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 1084,
+      "maximumConnectedDisplacement": 0,
+      "prescreenedExteriorApproachExists": false,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "chamber-2-42",
+      "category": "chamber",
+      "selectedScale": 16,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "no-exterior-approach-admitted-by-prescreen",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 20000,
+      "maximumConnectedDisplacement": 0,
+      "prescreenedExteriorApproachExists": false,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals",
+        "supported-nodes"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "narrow_passage-2-42",
+      "category": "narrow_passage",
+      "selectedScale": 6,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "no-exterior-approach-admitted-by-prescreen",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 1458,
+      "maximumConnectedDisplacement": 0,
+      "prescreenedExteriorApproachExists": false,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "courtyard-2-42",
+      "category": "courtyard",
+      "selectedScale": 10,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "no-exterior-approach-admitted-by-prescreen",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 4695,
+      "maximumConnectedDisplacement": 0,
+      "prescreenedExteriorApproachExists": false,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "cave-2-42",
+      "category": "cave",
+      "selectedScale": 6,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "no-connected-3m-route-found",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 870,
+      "maximumConnectedDisplacement": 0.3999999999999999,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "bridge-2-42",
+      "category": "bridge",
+      "selectedScale": 12,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 4046,
+      "maximumConnectedDisplacement": 13.171180660821568,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "entry-proposals",
+        "topology-queries"
+      ],
+      "sameScaleFallbackRescue": false
+    },
+    {
+      "id": "tunnel-2-42",
+      "category": "tunnel",
+      "selectedScale": 16,
+      "selectedPass": false,
+      "browserPass": false,
+      "scaleMiss": false,
+      "availableScales": [],
+      "failure": "topology-witness-entry-seam-or-bounded-search",
+      "attribution": "unresolved-generation-versus-interpretation",
+      "supportedPoints": 7207,
+      "maximumConnectedDisplacement": 20.518284528683196,
+      "prescreenedExteriorApproachExists": true,
+      "topologyQualifiedSeamRejections": 0,
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "sameScaleFallbackRescue": false
+    }
+  ]
+}
