@@ -45,9 +45,9 @@ export function diagnose(attempt: Attempt) {
   else if (m.entryCandidates === 0) cause = 'no-exterior-entry';
   else if (m.enclosurePoints === 0) cause = 'enclosure-missing';
   else if ((m.rejected['authored-to-generated-seam'] ?? 0) > 0) cause = 'exterior-seam-rejected';
-  else cause = 'disconnected-or-no-3m-enclosed-route';
+  else cause = m.maximumConnectedDisplacement >= 3 ? 'sustained-enclosure-or-bounded-route' : 'disconnected-or-no-3m-route';
  }
- return {cause, certainty, topologyFailure: attempt.status === 'failed', rawSupportExists: m.testedFloorPoints > 0, supportedFreeSpaceExists: m.supportedPoints > 0,
+ return {cause, certainty, topologyFailure: attempt.status === 'failed' && !['enclosure-missing', 'sustained-enclosure-or-bounded-route'].includes(cause), rawSupportExists: m.testedFloorPoints > 0, supportedFreeSpaceExists: m.supportedPoints > 0,
   evidence: {sampledFloorHits: m.testedFloorPoints, supportedPoints: m.supportedPoints, enclosurePoints: m.enclosurePoints, entryCandidates: m.entryCandidates, rejected: m.rejected, maximumConnectedDisplacement: m.maximumConnectedDisplacement, routeLength: m.routeLength, routeDisplacement: m.routeDisplacement, continuousEnclosedDistance: m.continuousEnclosedDistance},
   proxyFalseClosure: attempt.shellComparison ? {testedSamples: attempt.shellComparison.testedSamples, blockedOriginalClearSamples: attempt.shellComparison.proxyBlockedSamples} : null};
 }

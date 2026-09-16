@@ -26,6 +26,7 @@ test('taxonomy distinguishes missing sampled support, patchy footprints, sealed 
   const before = JSON.stringify(mesh), attempt = assessMesh(mesh, hash, [1])[0], diagnosis = diagnose(attempt);
   assert.equal(diagnosis.cause, cause); assert.equal(JSON.stringify(mesh), before);
   if (cause === 'patchy-support-footprint') {assert.equal(diagnosis.rawSupportExists, true); assert.equal(diagnosis.supportedFreeSpaceExists, false);}
+  if (cause === 'enclosure-missing') assert.equal(diagnosis.topologyFailure, false);
  }
 });
 test('scale-sensitive accepted assessment preserves original source hash, route, footprint IDs and seam', () => {
