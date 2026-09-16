@@ -13,6 +13,7 @@ const ids = (value: any, generated = false) => Array.isArray(value) && value.len
 export function verifyObservations(input: {forward: any; returned: any; persisted: any; assessment: PassageAssessment; assessmentSha256: string; caseId: string; worldId: string; sourceSha256: string}) {
  const {forward: f, returned: r, persisted, assessment: a} = input, reasons: string[] = [];
  const require = (condition: unknown, reason: string) => {if (!condition) reasons.push(reason);};
+ const sourceIds = (value: any, generated = false) => ids(value, generated) && value.every((id: number) => id < a.metrics.sourceTriangles);
  require(a.status === 'passed' && a.sourceSha256 === input.sourceSha256 && a.approachVerified, 'Source assessment is not an accepted hash-bound passage');
  require(persisted?.glbSha256 === input.sourceSha256 && persisted?.assessmentSha256 === input.assessmentSha256, 'Persisted case does not bind source and exact saved assessment');
  require(typeof persisted?.identity === 'string' && /^[a-f0-9]{64}$/.test(persisted.identity), 'Missing persisted case identity');
@@ -21,13 +22,13 @@ export function verifyObservations(input: {forward: any; returned: any; persiste
   require(snapshot?.identity === persisted?.identity, `${name}: persisted identity mismatch`);
   require(snapshot?.ready === true && snapshot?.representation === 'coarse' && snapshot?.assessment === 'passed', `${name}: coarse accepted scene is not ready`);
   require(snapshot?.pathRemaining === 0 && snapshot?.walking === '' && snapshot?.blocked === '' && snapshot?.errors === 0 && snapshot?.pendingVisits === 0, `${name}: motion, error or persistence work remains`);
-  require(Array.isArray(snapshot?.audit) && snapshot.audit.length > 0 && snapshot.audit.every((sample: any) => sample.valid === true && sample.headClearance >= 1.8 && point(sample.position) && ids(sample.supportTriangleIds)), `${name}: missing or invalid support audit`);
+  require(Array.isArray(snapshot?.audit) && snapshot.audit.length > 0 && snapshot.audit.every((sample: any) => sample.valid === true && sample.headClearance >= 1.8 && point(sample.position) && sourceIds(sample.supportTriangleIds)), `${name}: missing or invalid support audit`);
  }
  require(f?.mode === 'generated' && Number.isFinite(f?.generatedTravel) && f.generatedTravel >= 3, 'Forward snapshot did not complete at least3m generated traversal');
  require(r?.mode === 'scaffold', 'Return did not reach scaffold mode');
- require(f?.support?.valid === true && f.support.headClearance >= 1.8 && ids(f.support.supportTriangleIds, true) && Array.isArray(f.support.supportSamples) && f.support.supportSamples.length === 9 && f.support.supportSamples.every((s: any) => Number.isInteger(s.triangleId) && s.triangleId >= 0), 'Forward endpoint lacks genuine generated support');
- const forwardAudit = Array.isArray(f?.audit) ? f.audit : [], firstGenerated = forwardAudit.findIndex((s: any) => ids(s.supportTriangleIds, true));
- require(firstGenerated >= 0 && forwardAudit.slice(firstGenerated).every((s: any) => ids(s.supportTriangleIds, true)), 'Forward interior audit lacks continuous generated support identities');
+ require(f?.support?.valid === true && f.support.headClearance >= 1.8 && sourceIds(f.support.supportTriangleIds, true) && Array.isArray(f.support.supportSamples) && f.support.supportSamples.length === 9 && f.support.supportSamples.every((s: any) => Number.isInteger(s.triangleId) && s.triangleId >= 0 && s.triangleId < a.metrics.sourceTriangles), 'Forward endpoint lacks genuine generated support');
+ const forwardAudit = Array.isArray(f?.audit) ? f.audit : [], firstGenerated = forwardAudit.findIndex((s: any) => sourceIds(s.supportTriangleIds, true));
+ require(firstGenerated >= 0 && forwardAudit.slice(firstGenerated).every((s: any) => sourceIds(s.supportTriangleIds, true)), 'Forward interior audit lacks continuous generated support identities');
  const forwardEndpointDistance = distance(f?.position, a.route.at(-1)), returnEndpointDistance = distance(r?.position, a.approachStart);
  require(forwardEndpointDistance <= .03, 'Forward endpoint is outside .03m of accepted route end');
  require(returnEndpointDistance <= .03, 'Return endpoint is outside .03m of approach start');

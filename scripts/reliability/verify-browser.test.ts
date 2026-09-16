@@ -35,6 +35,7 @@ test('forged success flags cannot hide wrong endpoint, missing audit, stale iden
  const changes: ((input: any) => void)[] = [
   i => {i.forward.position = i.assessment.route[0];}, i => {i.returned.position = i.assessment.route.at(-1);},
   i => {i.forward.audit = [];}, i => {i.forward.audit[0].valid = false;}, i => {i.forward.support.supportTriangleIds = [-1];},
+  i => {i.forward.audit[0].supportTriangleIds = [99999999];},
   i => {i.forward.identity = 'c'.repeat(64);}, i => {i.persisted.assessmentSha256 = 'c'.repeat(64);}, i => {i.returned.pendingVisits = 1;},
   i => {i.returned.visits = i.forward.visits;}, i => {i.persisted.visits = [];}, i => {i.returned.visits[1].eventId = i.forward.visits[0].eventId;},
   i => {i.forward.worldId = 'other';}, i => {i.forward.caseId = 'test-scale12';}, i => {i.forward.glbSha256 = 'c'.repeat(64);},
