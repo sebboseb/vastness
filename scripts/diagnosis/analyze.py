@@ -25,12 +25,13 @@ for c in plan['candidates']:
      ys=[p[1] for p in e['triangle']];foot=e['approach']['seam'][1];height=attempt['options']['height']
      kind='wholly-above-player' if min(ys)>=foot+height else 'wholly-below-feet' if max(ys)<=foot else 'intersects-or-straddles-height-band'
      projections[kind]+=1;sample('projection:'+kind,e)
-    if e['stage']=='prescreen' and e['kind']=='rejected':prescreens[e.get('reason','unspecified')]+=1;sample('prescreen:'+e.get('reason','unspecified'),e)
+    if e['stage']=='prescreen' and e['kind']=='rejected':prescreens[e.get('firstFailure',e.get('reason','unspecified'))]+=1;sample('prescreen:'+e.get('firstFailure',e.get('reason','unspecified')),e)
+    if e['stage']=='prescreen' and e['kind'] in ['support-edge-not-found','edge-contact-missing']:prescreens[e['kind']]+=1;sample('prescreen:'+e['kind'],e)
     if e['stage']=='topology' and e['kind']=='route-rejected':topologies[e['firstFailingTopology']]+=1;sample('topology:'+e['firstFailingTopology'],e)
     if e['stage']=='topology' and e['kind']=='node-predicate' and e.get('firstFailure'):predicates[e['firstFailure']]+=1;sample('predicate:'+e['firstFailure'],e)
     if e['stage']=='topology' and e['kind'] in ['aperture-node','aperture-axis','aperture-wider-regions'] and e.get('firstFailure'):predicates[e['firstFailure']]+=1;sample('predicate:'+e['firstFailure'],e)
     if e['stage']=='topology' and e['kind']=='deck-node':
-     for reason in e.get('failures',[]):predicates['deck:'+reason]+=1;sample('predicate:deck:'+reason,e)
+     for reason in ([e['firstFailure']] if e.get('firstFailure') else [])+e.get('otherExecutedFailures',[]):predicates['deck:'+reason]+=1;sample('predicate:deck:'+reason,e)
     if e['stage']=='seam' and e['kind'] in ['swept-forward','swept-reverse']:
      m=e['movement'];reason=m.get('reason') if m.get('blocked') else 'endpoint-mismatch' if e['endpointDistance']>e['endpointTolerance'] else 'passed';seams[e['kind']+':'+str(reason)]+=1
      if reason!='passed':sample('seam:'+str(reason),e)
