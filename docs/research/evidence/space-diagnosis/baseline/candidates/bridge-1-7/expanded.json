@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "5a4c29d4289eeb9c9bdbaa2b1015a14da2964f30bbafe9336eac7b0f7db60b71",
+  "status": "failed",
+  "transform": {
+    "scale": 12,
+    "yaw": 0,
+    "position": [
+      0,
+      3.797618865966797,
+      0
+    ]
+  },
+  "options": {
+    "radius": 0.3,
+    "height": 1.8,
+    "eyeHeight": 1.65,
+    "maxStep": 0.25,
+    "maxSlopeDegrees": 35,
+    "sampleStep": 0.05,
+    "contactTolerance": 0.015
+  },
+  "bounds": {
+    "min": [
+      -6.011211633682251,
+      0,
+      -6.006859302520752
+    ],
+    "max": [
+      5.993160724639893,
+      7.637542963027954,
+      6.004456043243408
+    ]
+  },
+  "route": [],
+  "samples": [],
+  "entry": null,
+  "approachDirection": null,
+  "seam": null,
+  "approach": null,
+  "approachStart": null,
+  "approachVerified": false,
+  "shellComparison": null,
+  "metrics": {
+    "sourceTriangles": 859044,
+    "sourceVertices": 429968,
+    "indexReferences": 1176010,
+    "indexCells": 3844,
+    "indexPitch": 0.2,
+    "gridPitch": 0.2,
+    "testedFloorPoints": 4451,
+    "supportedPoints": 1871,
+    "enclosurePoints": 205,
+    "entryCandidates": 802,
+    "rejected": {
+      "unsupported-footprint": 2091,
+      "body-or-head-obstruction": 459,
+      "footprint-height-spread": 26,
+      "scaffold-overlaps-source-footprint": 45
+    },
+    "routeLength": 0,
+    "routeDisplacement": 0,
+    "continuousEnclosedDistance": 0,
+    "maximumConnectedDisplacement": 9.850888284819801,
+    "buildMs": 129.07395799999358,
+    "assessmentMs": 16151.211624999996
+  },
+  "reasons": [
+    "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+  ],
+  "limitations": [
+    "Synthetic-frozen bounded proposal search; failure does not prove geometry irreparable.",
+    "Original triangles and corrected navigator are unchanged. Scaffolding excludes the entire source XZ projection beyond a 2mm contact-boundary tolerance.",
+    "Witnesses are geometric operational definitions, not semantic recognition. Courtyards must be within 0.75m of source minimum height; bridge-like detached roof slabs can be geometrically indistinguishable from decks.",
+    "Exterior proposals require a clear projected corridor all the way beyond the global bounds, so scaffolding cannot seed an internal hole. This can conservatively reject exteriors behind detached source fragments.",
+    "Doorway flank rays are limited to 3m on each side; broader apertures may be missed. Deck edges must be within 2.5m on each side.",
+    "Topology witnesses use 0.2m route vertices and original ray triangle IDs; dense samples independently preserve support/body checks. Legacy Enclosure fields retain their old 6m roof range on dense samples; tall roofs are recorded in topologyWitnesses.",
+    "Enclosure-point count covers queried witness nodes only. Component count is reached-entry components, not an exhaustive mesh decomposition."
+  ],
+  "criteria": {
+    "version": 1,
+    "supported": true,
+    "required": [
+      "elevated-bridge"
+    ],
+    "evidence": [
+      {
+        "kind": "elevated-bridge",
+        "source": "text",
+        "cue": "bridge"
+      }
+    ],
+    "ambiguities": [],
+    "requirements": {
+      "openSky": false,
+      "covered": false,
+      "opposingWalls": false,
+      "minimumWidth": 2.4
+    },
+    "physical": {
+      "radius": 0.3,
+      "height": 1.8,
+      "eyeHeight": 1.65,
+      "maxStep": 0.25,
+      "maxSlopeDegrees": 35,
+      "minimumDisplacement": 3,
+      "reversible": true
+    }
+  },
+  "topologyWitnesses": [],
+  "searchDiagnostics": {
+    "mode": "expanded",
+    "budgets": {
+      "gridCells": 20000,
+      "supportedNodes": 20000,
+      "layersPerColumn": 32,
+      "legacyEntries": 48,
+      "expandedEntries": 192,
+      "edges": 80000,
+      "candidateRoutes": 4096,
+      "topologyQueries": 160000,
+      "approachBuilds": 8,
+      "topologyIndexReferences": 24000000
+    },
+    "exhausted": [
+      "entry-proposals",
+      "topology-queries"
+    ],
+    "componentsExplored": 2,
+    "entriesTested": 58,
+    "edgesTested": 2580,
+    "candidateRoutes": 963,
+    "topologyQueries": 160000,
+    "approachBuilds": 0,
+    "routeCrossesBehindSeam": false
+  },
+  "diagnosisFreeze": "2efc00a4787de0000075de48b31b351e3c92aff1a6b3e208810cee3381d56ba4",
+  "evaluationMode": "expanded",
+  "elapsedMs": 16151.310500000021,
+  "traceSummary": {
+    "events": 1486819,
+    "uncompressedBytes": 476366045,
+    "counts": {
+      "result:begin": 1,
+      "result:assessment-start": 1,
+      "support:grid": 1,
+      "support:column": 3844,
+      "support:rejected": 2576,
+      "support:node": 1871,
+      "support:duplicate-layer": 4,
+      "proposal:eligible": 802,
+      "proposal:direction-excluded": 6682,
+      "proposal:rank-selection": 192,
+      "proposal:selected": 192,
+      "proposal:omitted": 610,
+      "budget:exhausted": 2,
+      "proposal:attempt": 58,
+      "prescreen:edge-support-probe": 2682,
+      "prescreen:projection-start": 49,
+      "prescreen:projection-blocked": 45,
+      "prescreen:rejected": 45,
+      "prescreen:body-sample": 152,
+      "prescreen:passed": 4,
+      "component:entry-search": 4,
+      "component:node-visited": 2903,
+      "edge:tested": 2580,
+      "component:node-discovered": 2899,
+      "route:candidate": 963,
+      "topology:ray": 160000,
+      "topology:node-feature": 1027,
+      "topology:deck-edge-probe": 1165546,
+      "topology:deck-node": 69156,
+      "topology:route-rejected": 963,
+      "prescreen:support-edge-not-found": 9,
+      "topology:ray-not-executed": 60819,
+      "proposal:not-attempted": 134,
+      "result:assessment-complete": 1,
+      "result:historical-parity": 1,
+      "result:complete": 1
+    },
+    "sha256": "14ae5c5dba7217f3b4d6a695429391c1f24be4f145eedf27ef658cc1979a1983",
+    "parity": {
+      "passed": true,
+      "previous": "892abcc6faeb3b74f48953de15cf9959f88f442d1ba8806ab7721efb7dd4dd58"
+    }
+  }
+}

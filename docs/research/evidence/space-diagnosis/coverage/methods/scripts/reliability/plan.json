@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "studyId": "generated-space-reliability-20260916",
+  "declaredBeforeExecution": true,
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "baselineCommit": "ceb1c34",
+  "primaryScale": 6,
+  "secondaryScales": [
+    10,
+    12
+  ],
+  "candidateCount": 36,
+  "noGenerationRetries": true,
+  "decision": {
+    "continueThresholdPrimary": 0.8,
+    "minimumCategoryPassesOfFour": 2,
+    "topologyFailureTrigger": 0.2,
+    "note": "Explore fallback if primary full-pipeline pass rate <80%, any category has fewer than2/4 passes, or topology failures affect at least20% of all planned jobs. Fixed scales10/12 reported separately, never substitute for primary."
+  },
+  "candidates": [
+    {
+      "id": "large_open_interior-1-7",
+      "category": "large_open_interior",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "An enormous empty vaulted hall with a broad entrance and a continuous level floor, widely spaced perimeter columns and clear central space."
+    },
+    {
+      "id": "tunnel-1-7",
+      "category": "tunnel",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof."
+    },
+    {
+      "id": "doorway-1-7",
+      "category": "doorway",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides."
+    },
+    {
+      "id": "narrow_passage-1-7",
+      "category": "narrow_passage",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends."
+    },
+    {
+      "id": "chamber-1-7",
+      "category": "chamber",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space."
+    },
+    {
+      "id": "cave-1-7",
+      "category": "cave",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space."
+    },
+    {
+      "id": "corridor-1-7",
+      "category": "corridor",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end."
+    },
+    {
+      "id": "courtyard-1-7",
+      "category": "courtyard",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "An empty courtyard enclosed by stone walls, broad entrance gate and flat continuous paving under an open sky."
+    },
+    {
+      "id": "bridge-1-7",
+      "category": "bridge",
+      "promptVariant": 1,
+      "seed": 7,
+      "text": "A stone bridge with a flat continuous deck, tall solid side parapets and an empty walkway joining two broad stone landings."
+    },
+    {
+      "id": "large_open_interior-1-42",
+      "category": "large_open_interior",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "An enormous empty vaulted hall with a broad entrance and a continuous level floor, widely spaced perimeter columns and clear central space."
+    },
+    {
+      "id": "bridge-1-42",
+      "category": "bridge",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A stone bridge with a flat continuous deck, tall solid side parapets and an empty walkway joining two broad stone landings."
+    },
+    {
+      "id": "doorway-1-42",
+      "category": "doorway",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides."
+    },
+    {
+      "id": "narrow_passage-1-42",
+      "category": "narrow_passage",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends."
+    },
+    {
+      "id": "cave-1-42",
+      "category": "cave",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space."
+    },
+    {
+      "id": "courtyard-1-42",
+      "category": "courtyard",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "An empty courtyard enclosed by stone walls, broad entrance gate and flat continuous paving under an open sky."
+    },
+    {
+      "id": "corridor-1-42",
+      "category": "corridor",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end."
+    },
+    {
+      "id": "tunnel-1-42",
+      "category": "tunnel",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof."
+    },
+    {
+      "id": "chamber-1-42",
+      "category": "chamber",
+      "promptVariant": 1,
+      "seed": 42,
+      "text": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space."
+    },
+    {
+      "id": "courtyard-2-7",
+      "category": "courtyard",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A square cloister courtyard with a wide doorway, level tiled floor and empty central space bordered by covered arcades."
+    },
+    {
+      "id": "bridge-2-7",
+      "category": "bridge",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A covered wooden footbridge with parallel side walls, high roof and flat uninterrupted deck, open entrances at both ends."
+    },
+    {
+      "id": "tunnel-2-7",
+      "category": "tunnel",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom."
+    },
+    {
+      "id": "corridor-2-7",
+      "category": "corridor",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "An empty covered walkway between brick walls, broad straight path, low arched ceiling and flat continuous paving."
+    },
+    {
+      "id": "narrow_passage-2-7",
+      "category": "narrow_passage",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person."
+    },
+    {
+      "id": "chamber-2-7",
+      "category": "chamber",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture."
+    },
+    {
+      "id": "cave-2-7",
+      "category": "cave",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps."
+    },
+    {
+      "id": "large_open_interior-2-7",
+      "category": "large_open_interior",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles."
+    },
+    {
+      "id": "doorway-2-7",
+      "category": "doorway",
+      "promptVariant": 2,
+      "seed": 7,
+      "text": "Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening."
+    },
+    {
+      "id": "large_open_interior-2-42",
+      "category": "large_open_interior",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles."
+    },
+    {
+      "id": "doorway-2-42",
+      "category": "doorway",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening."
+    },
+    {
+      "id": "corridor-2-42",
+      "category": "corridor",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "An empty covered walkway between brick walls, broad straight path, low arched ceiling and flat continuous paving."
+    },
+    {
+      "id": "chamber-2-42",
+      "category": "chamber",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture."
+    },
+    {
+      "id": "narrow_passage-2-42",
+      "category": "narrow_passage",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person."
+    },
+    {
+      "id": "courtyard-2-42",
+      "category": "courtyard",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A square cloister courtyard with a wide doorway, level tiled floor and empty central space bordered by covered arcades."
+    },
+    {
+      "id": "cave-2-42",
+      "category": "cave",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps."
+    },
+    {
+      "id": "bridge-2-42",
+      "category": "bridge",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A covered wooden footbridge with parallel side walls, high roof and flat uninterrupted deck, open entrances at both ends."
+    },
+    {
+      "id": "tunnel-2-42",
+      "category": "tunnel",
+      "promptVariant": 2,
+      "seed": 42,
+      "text": "A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom."
+    }
+  ]
+}

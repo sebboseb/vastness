@@ -1,0 +1,902 @@
+[
+  {
+    "id": "large_open_interior-1-7",
+    "label": "entry-prism · large_open_interior-1-7 · scale12",
+    "worldId": "intent-c55fe14c-883c-4acb-9e7f-dcbeaa1ad5ca",
+    "rawIntent": "An enormous empty vaulted hall with a broad entrance and a continuous level floor, widely spaced perimeter columns and clear central space.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "An enormous empty vaulted hall with a broad entrance and a continuous level floor, widely spaced perimeter columns and clear central space.",
+      "axes": {
+        "scale": "vast",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-c55fe14c-883c-4acb-9e7f-dcbeaa1ad5ca/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/large_open_interior-1-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "tunnel-1-7",
+    "label": "entry-prism · tunnel-1-7 · scale6",
+    "worldId": "intent-80ee3fa8-9011-455a-bf8d-a37c3e130d5b",
+    "rawIntent": "A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "open"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-80ee3fa8-9011-455a-bf8d-a37c3e130d5b/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/tunnel-1-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "doorway-1-7",
+    "label": "entry-prism · doorway-1-7 · scale10",
+    "worldId": "intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425",
+    "rawIntent": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-1-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-1-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-1-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/doorway-1-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "narrow_passage-1-7",
+    "label": "entry-prism · narrow_passage-1-7 · scale6",
+    "worldId": "intent-1c865fea-e0f7-4711-9292-48aa4492f947",
+    "rawIntent": "A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.",
+      "axes": {
+        "scale": "human",
+        "density": "balanced",
+        "mood": "unspecified",
+        "openness": "open"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-1c865fea-e0f7-4711-9292-48aa4492f947/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/narrow_passage-1-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "chamber-1-7",
+    "label": "entry-prism · chamber-1-7 · scale6",
+    "worldId": "intent-c5cda12d-76af-4b8b-b88c-eccc7719dd26",
+    "rawIntent": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "enclosed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-c5cda12d-76af-4b8b-b88c-eccc7719dd26/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-1-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-1-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-1-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/chamber-1-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "cave-1-7",
+    "label": "entry-prism · cave-1-7 · scale10",
+    "worldId": "intent-a6868007-efd5-433a-9061-f36ccde7d864",
+    "rawIntent": "A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "enclosed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-a6868007-efd5-433a-9061-f36ccde7d864/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/cave-1-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "corridor-1-7",
+    "label": "entry-prism · corridor-1-7 · scale10",
+    "worldId": "intent-55e2d591-69a3-4910-91b9-c5df74cf01dc",
+    "rawIntent": "A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end.",
+      "axes": {
+        "scale": "human",
+        "density": "balanced",
+        "mood": "unspecified",
+        "openness": "open"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-55e2d591-69a3-4910-91b9-c5df74cf01dc/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/corridor-1-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "courtyard-1-7",
+    "label": "entry-prism · courtyard-1-7 · scale10",
+    "worldId": "intent-04c10b05-bc48-4dd0-b38a-9781ef431ad3",
+    "rawIntent": "An empty courtyard enclosed by stone walls, broad entrance gate and flat continuous paving under an open sky.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "An empty courtyard enclosed by stone walls, broad entrance gate and flat continuous paving under an open sky.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "enclosed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-04c10b05-bc48-4dd0-b38a-9781ef431ad3/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/courtyard-1-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "bridge-1-7",
+    "label": "entry-prism · bridge-1-7 · scale12",
+    "worldId": "intent-cc01fd39-0b1d-49b3-8c83-851c3cb8678a",
+    "rawIntent": "A stone bridge with a flat continuous deck, tall solid side parapets and an empty walkway joining two broad stone landings.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A stone bridge with a flat continuous deck, tall solid side parapets and an empty walkway joining two broad stone landings.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-cc01fd39-0b1d-49b3-8c83-851c3cb8678a/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/bridge-1-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "large_open_interior-1-42",
+    "label": "entry-prism · large_open_interior-1-42 · scale10",
+    "worldId": "intent-b1764ccd-cc0d-42fd-baca-9a23011d0305",
+    "rawIntent": "An enormous empty vaulted hall with a broad entrance and a continuous level floor, widely spaced perimeter columns and clear central space.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "An enormous empty vaulted hall with a broad entrance and a continuous level floor, widely spaced perimeter columns and clear central space.",
+      "axes": {
+        "scale": "vast",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-b1764ccd-cc0d-42fd-baca-9a23011d0305/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/large_open_interior-1-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "bridge-1-42",
+    "label": "entry-prism · bridge-1-42 · scale16",
+    "worldId": "intent-ac3e6278-91f7-4ea0-826f-712434efa055",
+    "rawIntent": "A stone bridge with a flat continuous deck, tall solid side parapets and an empty walkway joining two broad stone landings.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A stone bridge with a flat continuous deck, tall solid side parapets and an empty walkway joining two broad stone landings.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-ac3e6278-91f7-4ea0-826f-712434efa055/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/bridge-1-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "doorway-1-42",
+    "label": "entry-prism · doorway-1-42 · scale6",
+    "worldId": "intent-097b6f72-50f1-456f-9360-78b93105a73b",
+    "rawIntent": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-097b6f72-50f1-456f-9360-78b93105a73b/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-1-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-1-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-1-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/doorway-1-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "narrow_passage-1-42",
+    "label": "entry-prism · narrow_passage-1-42 · scale6",
+    "worldId": "intent-067ca302-ef70-480d-a667-68fe0cbd8d35",
+    "rawIntent": "A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.",
+      "axes": {
+        "scale": "human",
+        "density": "balanced",
+        "mood": "unspecified",
+        "openness": "open"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-067ca302-ef70-480d-a667-68fe0cbd8d35/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/narrow_passage-1-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "cave-1-42",
+    "label": "entry-prism · cave-1-42 · scale10",
+    "worldId": "intent-9dfb5a7c-0711-4aad-a454-4834fde830a3",
+    "rawIntent": "A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "enclosed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-9dfb5a7c-0711-4aad-a454-4834fde830a3/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/cave-1-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "courtyard-1-42",
+    "label": "entry-prism · courtyard-1-42 · scale6",
+    "worldId": "intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b",
+    "rawIntent": "An empty courtyard enclosed by stone walls, broad entrance gate and flat continuous paving under an open sky.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "An empty courtyard enclosed by stone walls, broad entrance gate and flat continuous paving under an open sky.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "enclosed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/courtyard-1-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "corridor-1-42",
+    "label": "entry-prism · corridor-1-42 · scale16",
+    "worldId": "intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99",
+    "rawIntent": "A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end.",
+      "axes": {
+        "scale": "human",
+        "density": "balanced",
+        "mood": "unspecified",
+        "openness": "open"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/corridor-1-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "tunnel-1-42",
+    "label": "entry-prism · tunnel-1-42 · scale16",
+    "worldId": "intent-75f21af9-274b-4869-9577-28999d937b28",
+    "rawIntent": "A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "open"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-75f21af9-274b-4869-9577-28999d937b28/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/tunnel-1-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "chamber-1-42",
+    "label": "entry-prism · chamber-1-42 · scale6",
+    "worldId": "intent-de172b53-3529-42f6-b4d4-b6df0779e568",
+    "rawIntent": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "enclosed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-de172b53-3529-42f6-b4d4-b6df0779e568/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-1-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-1-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-1-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/chamber-1-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "courtyard-2-7",
+    "label": "entry-prism · courtyard-2-7 · scale6",
+    "worldId": "intent-7ee56718-e7ad-4578-b2c1-d28ea7c60da7",
+    "rawIntent": "A square cloister courtyard with a wide doorway, level tiled floor and empty central space bordered by covered arcades.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A square cloister courtyard with a wide doorway, level tiled floor and empty central space bordered by covered arcades.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-7ee56718-e7ad-4578-b2c1-d28ea7c60da7/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/courtyard-2-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "bridge-2-7",
+    "label": "entry-prism · bridge-2-7 · scale16",
+    "worldId": "intent-b594160c-b12e-44af-9695-d5fa3c60684e",
+    "rawIntent": "A covered wooden footbridge with parallel side walls, high roof and flat uninterrupted deck, open entrances at both ends.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A covered wooden footbridge with parallel side walls, high roof and flat uninterrupted deck, open entrances at both ends.",
+      "axes": {
+        "scale": "human",
+        "density": "balanced",
+        "mood": "unspecified",
+        "openness": "open"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-b594160c-b12e-44af-9695-d5fa3c60684e/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/bridge-2-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "tunnel-2-7",
+    "label": "entry-prism · tunnel-2-7 · scale10",
+    "worldId": "intent-a9d26274-03b2-4a00-9bd1-be926b6c87b3",
+    "rawIntent": "A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-a9d26274-03b2-4a00-9bd1-be926b6c87b3/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/tunnel-2-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "corridor-2-7",
+    "label": "entry-prism · corridor-2-7 · scale10",
+    "worldId": "intent-4ba9ab8f-3fbc-4529-82b7-55843b4b5040",
+    "rawIntent": "An empty covered walkway between brick walls, broad straight path, low arched ceiling and flat continuous paving.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "An empty covered walkway between brick walls, broad straight path, low arched ceiling and flat continuous paving.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-4ba9ab8f-3fbc-4529-82b7-55843b4b5040/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/corridor-2-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "narrow_passage-2-7",
+    "label": "entry-prism · narrow_passage-2-7 · scale6",
+    "worldId": "intent-80e66e4f-2132-44a3-8601-5a0a22051ee5",
+    "rawIntent": "A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-80e66e4f-2132-44a3-8601-5a0a22051ee5/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/narrow_passage-2-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "chamber-2-7",
+    "label": "entry-prism · chamber-2-7 · scale6",
+    "worldId": "intent-4f3db60b-8939-481c-b8bb-6f8d19ec3286",
+    "rawIntent": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "quiet",
+        "openness": "enclosed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-4f3db60b-8939-481c-b8bb-6f8d19ec3286/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-2-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-2-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-2-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/chamber-2-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "cave-2-7",
+    "label": "entry-prism · cave-2-7 · scale6",
+    "worldId": "intent-164b48a7-ccb4-41a6-abe2-c118491bdb3e",
+    "rawIntent": "A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.",
+      "axes": {
+        "scale": "human",
+        "density": "balanced",
+        "mood": "unspecified",
+        "openness": "enclosed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-164b48a7-ccb4-41a6-abe2-c118491bdb3e/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/cave-2-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "large_open_interior-2-7",
+    "label": "entry-prism · large_open_interior-2-7 · scale12",
+    "worldId": "intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983",
+    "rawIntent": "A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles.",
+      "axes": {
+        "scale": "vast",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "enclosed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/large_open_interior-2-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "doorway-2-7",
+    "label": "entry-prism · doorway-2-7 · scale10",
+    "worldId": "intent-79c22dd8-039b-446e-a28b-b017bf48ee5c",
+    "rawIntent": "Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening.",
+      "axes": {
+        "scale": "human",
+        "density": "balanced",
+        "mood": "unspecified",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-79c22dd8-039b-446e-a28b-b017bf48ee5c/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-7/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-7/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-7/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/doorway-2-7/selected-assessment.json"
+    }
+  },
+  {
+    "id": "large_open_interior-2-42",
+    "label": "entry-prism · large_open_interior-2-42 · scale16",
+    "worldId": "intent-24a42e86-197e-4cd1-a9a5-6627ceea7388",
+    "rawIntent": "A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles.",
+      "axes": {
+        "scale": "vast",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "enclosed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-24a42e86-197e-4cd1-a9a5-6627ceea7388/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/large_open_interior-2-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "doorway-2-42",
+    "label": "entry-prism · doorway-2-42 · scale6",
+    "worldId": "intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2",
+    "rawIntent": "Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening.",
+      "axes": {
+        "scale": "human",
+        "density": "balanced",
+        "mood": "unspecified",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/doorway-2-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "corridor-2-42",
+    "label": "entry-prism · corridor-2-42 · scale6",
+    "worldId": "intent-6405f041-e587-4ea4-9701-e0f8f3ced639",
+    "rawIntent": "An empty covered walkway between brick walls, broad straight path, low arched ceiling and flat continuous paving.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "An empty covered walkway between brick walls, broad straight path, low arched ceiling and flat continuous paving.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-6405f041-e587-4ea4-9701-e0f8f3ced639/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/corridor-2-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "chamber-2-42",
+    "label": "entry-prism · chamber-2-42 · scale16",
+    "worldId": "intent-79a8d1ec-2343-4492-af86-afdc16a76c4a",
+    "rawIntent": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "quiet",
+        "openness": "enclosed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-79a8d1ec-2343-4492-af86-afdc16a76c4a/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-2-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-2-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-2-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/chamber-2-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "narrow_passage-2-42",
+    "label": "entry-prism · narrow_passage-2-42 · scale6",
+    "worldId": "intent-c51a5de0-80bb-4922-b019-681f2618e8bb",
+    "rawIntent": "A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-c51a5de0-80bb-4922-b019-681f2618e8bb/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/narrow_passage-2-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "courtyard-2-42",
+    "label": "entry-prism · courtyard-2-42 · scale10",
+    "worldId": "intent-aa874065-02b6-40fe-9aa8-7d954776c8b8",
+    "rawIntent": "A square cloister courtyard with a wide doorway, level tiled floor and empty central space bordered by covered arcades.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A square cloister courtyard with a wide doorway, level tiled floor and empty central space bordered by covered arcades.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-aa874065-02b6-40fe-9aa8-7d954776c8b8/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/courtyard-2-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "cave-2-42",
+    "label": "entry-prism · cave-2-42 · scale6",
+    "worldId": "intent-7f95f53b-4060-4980-99bb-2f337ff8ba88",
+    "rawIntent": "A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.",
+      "axes": {
+        "scale": "human",
+        "density": "balanced",
+        "mood": "unspecified",
+        "openness": "enclosed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-7f95f53b-4060-4980-99bb-2f337ff8ba88/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/cave-2-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "bridge-2-42",
+    "label": "entry-prism · bridge-2-42 · scale12",
+    "worldId": "intent-10a3cf02-3d09-4837-933f-b0aa040d8d35",
+    "rawIntent": "A covered wooden footbridge with parallel side walls, high roof and flat uninterrupted deck, open entrances at both ends.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A covered wooden footbridge with parallel side walls, high roof and flat uninterrupted deck, open entrances at both ends.",
+      "axes": {
+        "scale": "human",
+        "density": "balanced",
+        "mood": "unspecified",
+        "openness": "open"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-10a3cf02-3d09-4837-933f-b0aa040d8d35/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/bridge-2-42/selected-assessment.json"
+    }
+  },
+  {
+    "id": "tunnel-2-42",
+    "label": "entry-prism · tunnel-2-42 · scale16",
+    "worldId": "intent-006d2630-6cd8-441d-a6b0-4387a59866fc",
+    "rawIntent": "A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom.",
+    "semantics": {
+      "version": 1,
+      "kind": "intention-destination",
+      "concept": "A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom.",
+      "axes": {
+        "scale": "human",
+        "density": "sparse",
+        "mood": "unspecified",
+        "openness": "mixed"
+      },
+      "representation": "abstract-solid"
+    },
+    "files": {
+      "scene": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-006d2630-6cd8-441d-a6b0-4387a59866fc/scene.json",
+      "colors": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-42/colors.json",
+      "glb": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-42/collider.glb",
+      "ply": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-42/scene.ply",
+      "assessment": "/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis/entry-prism/candidates/tunnel-2-42/selected-assessment.json"
+    }
+  }
+]

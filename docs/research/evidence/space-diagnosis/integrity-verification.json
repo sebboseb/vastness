@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-09-16T13:43:05.577939+00:00",
+  "inventories": [
+    {
+      "inventory": ".runtime/interpretation-study/original-integrity.json",
+      "sha256": "0cfe16a7f69ce5e8ec9c9ca9a74cc5e8cfb1d8b77cbf55bd6a071affc783db9b",
+      "files": 2877,
+      "bytes": 3678337509,
+      "passed": true
+    },
+    {
+      "inventory": ".runtime/space-diagnosis/prior-integrity.json",
+      "sha256": "a53de183e7c22a65279327086f841cf35cb76a316d721a7b16df5d330b307837",
+      "files": 1209,
+      "bytes": 47128777,
+      "passed": true
+    }
+  ],
+  "passed": true
+}
