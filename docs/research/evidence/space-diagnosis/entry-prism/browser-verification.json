@@ -1,0 +1,237 @@
+{
+  "phase": "entry-prism",
+  "eligible": 3,
+  "passed": 3,
+  "recoveredVerified": 0,
+  "previouslyUnresolvedVerified": 0,
+  "rows": [
+    {
+      "id": "large_open_interior-1-7",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": false
+    },
+    {
+      "id": "tunnel-1-7",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "doorway-1-7",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "narrow_passage-1-7",
+      "status": "passed",
+      "recovered": false,
+      "previouslyUnresolved": false,
+      "generatedTravel": 3.3121370162754675,
+      "reasons": [],
+      "forwardEndpointDistance": 0,
+      "returnEndpointDistance": 0.00509999999998989
+    },
+    {
+      "id": "chamber-1-7",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "cave-1-7",
+      "status": "passed",
+      "recovered": false,
+      "previouslyUnresolved": false,
+      "generatedTravel": 4.510498022571657,
+      "reasons": [],
+      "forwardEndpointDistance": 0.0006506930099362179,
+      "returnEndpointDistance": 0.00015000000001919034
+    },
+    {
+      "id": "corridor-1-7",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": false
+    },
+    {
+      "id": "courtyard-1-7",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "bridge-1-7",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "large_open_interior-1-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "bridge-1-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "doorway-1-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "narrow_passage-1-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "cave-1-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "courtyard-1-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "corridor-1-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "tunnel-1-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "chamber-1-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "courtyard-2-7",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "bridge-2-7",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "tunnel-2-7",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "corridor-2-7",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "narrow_passage-2-7",
+      "status": "passed",
+      "recovered": false,
+      "previouslyUnresolved": false,
+      "generatedTravel": 3.110714400862459,
+      "reasons": [],
+      "forwardEndpointDistance": 0.0017000000353124948,
+      "returnEndpointDistance": 0.005399999999999849
+    },
+    {
+      "id": "chamber-2-7",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "cave-2-7",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "large_open_interior-2-7",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "doorway-2-7",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "large_open_interior-2-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "doorway-2-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "corridor-2-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "chamber-2-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "narrow_passage-2-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "courtyard-2-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "cave-2-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "bridge-2-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    },
+    {
+      "id": "tunnel-2-42",
+      "status": "not-eligible",
+      "recovered": false,
+      "previouslyUnresolved": true
+    }
+  ]
+}

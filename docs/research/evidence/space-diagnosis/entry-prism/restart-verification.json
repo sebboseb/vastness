@@ -1,0 +1,361 @@
+{
+  "verifiedAt": "2026-09-16T12:57:55.573549+00:00",
+  "previousPid": 30130,
+  "currentPid": 33250,
+  "passed": true,
+  "checkedCases": 36,
+  "visitedCases": 3,
+  "rows": [
+    {
+      "id": "large_open_interior-1-7",
+      "identity": "d7c72e1a11413a4574308895a58f1ff68c323a4e4e079be72c83a0ea1571aa56",
+      "worldId": "intent-c55fe14c-883c-4acb-9e7f-dcbeaa1ad5ca",
+      "glbSha256": "b6315fe62b32374bbf3db71538e16b19b8d342eaa975417e0eb1594222048457",
+      "assessmentSha256": "ebd1422b09c36eaa04f7907a4fb43ba1cd4160ea0029db03fccdc749db57f67a",
+      "visits": []
+    },
+    {
+      "id": "tunnel-1-7",
+      "identity": "5e4ad77542187be4839fd7a277128e6f9a98b31dd3c766b80e95f1b75042610c",
+      "worldId": "intent-80ee3fa8-9011-455a-bf8d-a37c3e130d5b",
+      "glbSha256": "03ea4b0ea0d52c31609a350bac8362969bde7ee7141a8542bacd3038af67cffe",
+      "assessmentSha256": "82760347b6f25dd0f5c33307309ea7ec621bec80514442a67a2572090f40a3a1",
+      "visits": []
+    },
+    {
+      "id": "doorway-1-7",
+      "identity": "716db99583163a36b568c1e20af0fffc4eeae9320cf8d37b5c242a974555991f",
+      "worldId": "intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425",
+      "glbSha256": "3b2e6b1800b0f9565cf699eea62f1af945e8ce64f453f6360ad2e96770d92810",
+      "assessmentSha256": "6e5e91dce00d78c35f4d664836910a82b146961529c07eb2aa9e7d1a91f83106",
+      "visits": []
+    },
+    {
+      "id": "narrow_passage-1-7",
+      "identity": "970ccb1c737b10121b3e6faccaf75f0d800e74ae5d9f30295acad73adc898d4a",
+      "worldId": "intent-1c865fea-e0f7-4711-9292-48aa4492f947",
+      "glbSha256": "75e8c7130f57c8786a79c28cc81daa1007039c13ca4ae61bfd97bd4a027c0774",
+      "assessmentSha256": "ab2e85546c7ee126c3c9054c366c3c839b54af79b0e979f4d50eb335d6314024",
+      "visits": [
+        {
+          "eventId": "dbd519d6-ae7b-48e0-aa50-83b239f18871",
+          "event": "crossed",
+          "position": [
+            2.9973644028663666,
+            1.683496228083794,
+            1.3885441064834598
+          ],
+          "at": "2026-09-16T12:56:20.076Z"
+        },
+        {
+          "eventId": "31d4dfc0-614f-4fa2-a075-acd8448d2209",
+          "event": "returned",
+          "position": [
+            3.004564402866373,
+            1.6833345720522206,
+            1.3885441064834598
+          ],
+          "at": "2026-09-16T12:56:27.880Z"
+        }
+      ]
+    },
+    {
+      "id": "chamber-1-7",
+      "identity": "3ff3e2747469125977f22ffb361f5d5b8a1b9eb369942ef2a05880985ee0a338",
+      "worldId": "intent-c5cda12d-76af-4b8b-b88c-eccc7719dd26",
+      "glbSha256": "d526aec6874c3a1259fe4af64beb770ab96888df3909b58f4e0bd7f79e2ad464",
+      "assessmentSha256": "9aefcd2089c4958617098201d3f62cfa698ba0a1e574fbb82729019c92da2425",
+      "visits": []
+    },
+    {
+      "id": "cave-1-7",
+      "identity": "58513e6dbb9cf513a6a421342821ffd9075e6a340bdbe1a5a738acdf288955df",
+      "worldId": "intent-a6868007-efd5-433a-9061-f36ccde7d864",
+      "glbSha256": "a56bb24593ddd9164444ec54f03365f5e8712636a983ae6e50a82fa1f4b172bf",
+      "assessmentSha256": "dee3a9678ba2f28426177dcd1a0d8a92fbdb5a0f1d2454e71fc5494820b9b70c",
+      "visits": [
+        {
+          "eventId": "c3eb55c4-b355-4ab0-bcb2-e872c3694b34",
+          "event": "crossed",
+          "position": [
+            -4.695262351191043,
+            1.7947794327178475,
+            0.18408615589141863
+          ],
+          "at": "2026-09-16T12:56:49.047Z"
+        },
+        {
+          "eventId": "02710163-7a0a-4b79-a78e-8d2b9f8ffed1",
+          "event": "returned",
+          "position": [
+            -4.707712351191039,
+            1.7920702147410168,
+            0.18408615589141863
+          ],
+          "at": "2026-09-16T12:56:59.155Z"
+        }
+      ]
+    },
+    {
+      "id": "corridor-1-7",
+      "identity": "2b8da74aa50b2f6c9e0b1f25fb45e5398752305de642179d45d1f36eb5bb7637",
+      "worldId": "intent-55e2d591-69a3-4910-91b9-c5df74cf01dc",
+      "glbSha256": "5383ef9cabe2f2d88fba3b08d8c4b97f2bb7f519e882a7253b8773899b5339d7",
+      "assessmentSha256": "2b73f2eb42e8dc6c8c75ef5aafff87e475128a739f0bcbd6c10663941eae4076",
+      "visits": []
+    },
+    {
+      "id": "courtyard-1-7",
+      "identity": "9849f66e8767d8212e2e1617c9ac976d69807c374c566bae8e253be45a783e24",
+      "worldId": "intent-04c10b05-bc48-4dd0-b38a-9781ef431ad3",
+      "glbSha256": "7616b93737b806eddb845bcee9d60cc1c29989cd2d7bd7ec9ebeefcd3134b305",
+      "assessmentSha256": "0c96c50c51334e668662dff13c88d8e54fd11583168f5308ca4d55717ab1dbdd",
+      "visits": []
+    },
+    {
+      "id": "bridge-1-7",
+      "identity": "7835ea8bfd5aff158cc36e70bd896a139dc525cb76d65734e9197b3207963b17",
+      "worldId": "intent-cc01fd39-0b1d-49b3-8c83-851c3cb8678a",
+      "glbSha256": "5a4c29d4289eeb9c9bdbaa2b1015a14da2964f30bbafe9336eac7b0f7db60b71",
+      "assessmentSha256": "ef03750e33a1a37ae2105b9188098a2530777f3406965d3b62d7d461af8e637b",
+      "visits": []
+    },
+    {
+      "id": "large_open_interior-1-42",
+      "identity": "b152c3c68e8e59fb53f315224ba04917fb104fdc474d633c86915729e3669267",
+      "worldId": "intent-b1764ccd-cc0d-42fd-baca-9a23011d0305",
+      "glbSha256": "2e43864cb5022f8d122ffa76f060afe903e6051feea8b04f43530bce40909c5d",
+      "assessmentSha256": "ecf1aad30330480ee249b9811cbd059738d3859851db9c7e18b02cbb98baf02c",
+      "visits": []
+    },
+    {
+      "id": "bridge-1-42",
+      "identity": "04106349cde897438f6dcda6252929d6dee7fea071b1225be5fa381e359acc83",
+      "worldId": "intent-ac3e6278-91f7-4ea0-826f-712434efa055",
+      "glbSha256": "261279b0fcb27df5ec822c9db09bb85e296c12aba270e7f26dacce3aa5e0d026",
+      "assessmentSha256": "cddd6cacd6f76ec0eb0ffe7c9632a043f2368d61d7278771c3cc1aec2e0f833d",
+      "visits": []
+    },
+    {
+      "id": "doorway-1-42",
+      "identity": "fcb10c40858ba13b745a2b07a20abb1cbd0af3ddc45bad1008175dabb465e8bf",
+      "worldId": "intent-097b6f72-50f1-456f-9360-78b93105a73b",
+      "glbSha256": "7dc260e05158dda0e43ecd63d5f6e7db5bb57e6bab7265be5aed0f7513eb3206",
+      "assessmentSha256": "96aa973ce14b4e0f4163a81f9192106f1b3f241903ee47558cebff706db975be",
+      "visits": []
+    },
+    {
+      "id": "narrow_passage-1-42",
+      "identity": "22876411f3d7c686c955ffd325513d0f95e89e85548761b342b08490e819e716",
+      "worldId": "intent-067ca302-ef70-480d-a667-68fe0cbd8d35",
+      "glbSha256": "afcbf5920dd1230ee9c845fd59726ecd00de692d6a35cb787046beb8212b98ea",
+      "assessmentSha256": "904bbf8181e24f9f72a376977d644cdd5f6fbc2bb91d9cacf12d66b4a6600e2f",
+      "visits": []
+    },
+    {
+      "id": "cave-1-42",
+      "identity": "91d4de02218b2de277cddfe2992f675d80516f0e02ea85108972130facc81e02",
+      "worldId": "intent-9dfb5a7c-0711-4aad-a454-4834fde830a3",
+      "glbSha256": "2e23286835d759ed91268f1b782689060c5e7501cf0008357a4d3e01a1eac9ad",
+      "assessmentSha256": "6f420eb9ff1023ebd236d774033c7066eea3f133241223658ece61dfc964ac59",
+      "visits": []
+    },
+    {
+      "id": "courtyard-1-42",
+      "identity": "8fff6d1a8068666dc3abf191bbc7c0ba85ec197bc1ddf2649ff9866611c1a4a6",
+      "worldId": "intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b",
+      "glbSha256": "9e1df2a956a459ac91917dc0ccd92804235bf901dd094fdf201fb3fcf7dfe269",
+      "assessmentSha256": "47b4daa00f6986cbdfdb6e01a23f6a6ad129820943a3d8fcaac306ea1c3f3be4",
+      "visits": []
+    },
+    {
+      "id": "corridor-1-42",
+      "identity": "b5f2e2b6ae914905daf4958a11bc03a24985c83992799b7545fc3b44faa5c170",
+      "worldId": "intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99",
+      "glbSha256": "589e5e427db97ef45a76411ea1629c08f55b39b82efe3688359e8d5c795c7eae",
+      "assessmentSha256": "407b523c20e00c90a372f822c2864ce0b80155b22ce62fa99cbd3532ac9f1418",
+      "visits": []
+    },
+    {
+      "id": "tunnel-1-42",
+      "identity": "72e7af4f351b302e251961679fe0426d9da401c2a0c89a209f6e684ce1e52a41",
+      "worldId": "intent-75f21af9-274b-4869-9577-28999d937b28",
+      "glbSha256": "ca0f3ceb9e7248fd493d597a5f715df12cc911c647b7e631c1586f32a9dc001e",
+      "assessmentSha256": "898d18a3a92b45b6066492db16df255991fc29478c960cce79898ed0f4950258",
+      "visits": []
+    },
+    {
+      "id": "chamber-1-42",
+      "identity": "1e79b7f39acb362ac605ef65c8348ced3e1c8c13af860d8ed81655e9e6e61e96",
+      "worldId": "intent-de172b53-3529-42f6-b4d4-b6df0779e568",
+      "glbSha256": "2b6e56636c72bdccdd387c4a30a7e98526d15efeab66d47c396287f81d7a8a76",
+      "assessmentSha256": "c84c8e9bbcfb313a453e134c69221fbff9492fa609b3ebc67f629f70863f3b54",
+      "visits": []
+    },
+    {
+      "id": "courtyard-2-7",
+      "identity": "ddf7ea818a9bc8fc9c0eda464309251446b5d03d937f008954b777924098df34",
+      "worldId": "intent-7ee56718-e7ad-4578-b2c1-d28ea7c60da7",
+      "glbSha256": "6bccae253afbe6bdb595f3501e195ac7798c8e7e6784e76340a0688b262186df",
+      "assessmentSha256": "9e442d448fbd96ae8856bc264838d87ef0df9850c3706514d72118aa38ab0df1",
+      "visits": []
+    },
+    {
+      "id": "bridge-2-7",
+      "identity": "e0b86ba3e6b5f84d96fd865f538fd7ee7b5613928dd582896ca0addf2b1896fb",
+      "worldId": "intent-b594160c-b12e-44af-9695-d5fa3c60684e",
+      "glbSha256": "68e8a625f16c7bdda99cdd299323526ff70d8131a49d55bc25e4d8ccb9c8ed98",
+      "assessmentSha256": "7dbdfcddfbd24345490f3bebbd673421eb797fd9bdf20a8ef806be7598d37f03",
+      "visits": []
+    },
+    {
+      "id": "tunnel-2-7",
+      "identity": "d3d864100641999c69624250a00b01a500406e5642f00c857f9906b13ca99890",
+      "worldId": "intent-a9d26274-03b2-4a00-9bd1-be926b6c87b3",
+      "glbSha256": "0ff7a321ed9c1d36fdf48c1def049eb5144c42380eed28f161a7aa2a2167467a",
+      "assessmentSha256": "b3d7070094884f1ee70a4f48e2ba346ab3d3853e259b815490f0ba148b0e3eea",
+      "visits": []
+    },
+    {
+      "id": "corridor-2-7",
+      "identity": "56cde0a246bde90454e2ac15b585f25c2ca26e08528adeb8ca1fee1b6a26d853",
+      "worldId": "intent-4ba9ab8f-3fbc-4529-82b7-55843b4b5040",
+      "glbSha256": "3deff24d4be94dee2bc86c7bc6d3091f3ebc6ec2bf0c1d51aad186022ed87f00",
+      "assessmentSha256": "c961964be758f1f1e6a261fbac2a1bc13a7527a448e8fb569ce0a2e19e6764cf",
+      "visits": []
+    },
+    {
+      "id": "narrow_passage-2-7",
+      "identity": "b082577177b76b0cf3407449a09849352a50f808d1a494c68f4b003aa28606c4",
+      "worldId": "intent-80e66e4f-2132-44a3-8601-5a0a22051ee5",
+      "glbSha256": "594aadf3c943e1769cc9893a1841eac9f1ab5f3fd2c69382feea5f86583c4273",
+      "assessmentSha256": "443620b4f65f078f8817837ffcf4ff44a2efb899845f0a6434cf0caa2038f05e",
+      "visits": [
+        {
+          "eventId": "93c1ca92-b5ca-41fc-97c4-97c9a82da30a",
+          "event": "crossed",
+          "position": [
+            1.387245547771454,
+            1.679193230171209,
+            2.9986894908905035
+          ],
+          "at": "2026-09-16T12:56:34.656Z"
+        },
+        {
+          "eventId": "e246e5b9-4550-4cc6-b809-f6b5251022ec",
+          "event": "returned",
+          "position": [
+            1.387245547771454,
+            1.679193100039332,
+            3.0060394908905037
+          ],
+          "at": "2026-09-16T12:56:41.855Z"
+        }
+      ]
+    },
+    {
+      "id": "chamber-2-7",
+      "identity": "e0c087f242750c0c1a6bee4af3f02492165ae6526f7f0adc314aa78ffad675e1",
+      "worldId": "intent-4f3db60b-8939-481c-b8bb-6f8d19ec3286",
+      "glbSha256": "7241fe8446a75299314f00c5a5bc70893cc20f4ab7c63444c6f77f67d1921a09",
+      "assessmentSha256": "69d3253e64a5e39053d3d926f77b6d6bbebdefbc3f80e31464e3e47598376221",
+      "visits": []
+    },
+    {
+      "id": "cave-2-7",
+      "identity": "55a253392fd105a1dfb49443296e2ffd2f691aa6fcf74cdfcb513c52063c7191",
+      "worldId": "intent-164b48a7-ccb4-41a6-abe2-c118491bdb3e",
+      "glbSha256": "bc528fa49a4c2d671206c150c39991ddf3047794aaf672c2441dd55163d00685",
+      "assessmentSha256": "c146fc4423aa46fd0c783cd0fee9bee76ce2c320c0ca5eb4c765eef7166643f0",
+      "visits": []
+    },
+    {
+      "id": "large_open_interior-2-7",
+      "identity": "580ddd1da68250b01449839395733f8824cd92a6d58b00a45768535d1409dad0",
+      "worldId": "intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983",
+      "glbSha256": "d7aa255ae47867ea3c6df7a2562315511a79b396d47f4ccda9c11ffbeffadc3d",
+      "assessmentSha256": "b746e195fb726ed253757e19c8cdba67884150ffe9d701af492c4d73a4950a08",
+      "visits": []
+    },
+    {
+      "id": "doorway-2-7",
+      "identity": "133ddf8e11a688ff38145c8e4f8ca3cd29201af2c5e8e553743abca1670f99b8",
+      "worldId": "intent-79c22dd8-039b-446e-a28b-b017bf48ee5c",
+      "glbSha256": "63c6ce8785a9cdf0462f6df5079fff737ef7aa67bc3796211b6f05d31bf78080",
+      "assessmentSha256": "e77da23782db4b17f46bfcbecac95ec1bc2eb2194d188fdfd26d1bb5d12614f6",
+      "visits": []
+    },
+    {
+      "id": "large_open_interior-2-42",
+      "identity": "6162ccc2f0a107097966c92a7be03a6777dff92baf454c53637649f7ee8c5f61",
+      "worldId": "intent-24a42e86-197e-4cd1-a9a5-6627ceea7388",
+      "glbSha256": "185a62eabee619fae3843600702cb259b0a43af9e6f22137a09598938cebf36f",
+      "assessmentSha256": "9e7004cad57f4ec81f66cd07f0e2595550f676d1f758def9f04c65fac2f50fdb",
+      "visits": []
+    },
+    {
+      "id": "doorway-2-42",
+      "identity": "dea4fde15bad3d20e2cc63091da2a64699e974dd4321e4d60b835cbe4b4102dd",
+      "worldId": "intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2",
+      "glbSha256": "8a6bdf101d8d1b01b96832bee7e7d3277374fdba8a398656e7d70a2c1b2e6fda",
+      "assessmentSha256": "7de245dcfdfb2db096e3890b0cfcfe596f327ad1b0eb84c63dcd2ffd7a01ec19",
+      "visits": []
+    },
+    {
+      "id": "corridor-2-42",
+      "identity": "b5735c303bcaedda55117d685dd8a99b2e653f0a63819d611212038978130243",
+      "worldId": "intent-6405f041-e587-4ea4-9701-e0f8f3ced639",
+      "glbSha256": "79b792cfba58bb085aa025625e66ad170eaf5d21cecf1c18f4ed654f523345fe",
+      "assessmentSha256": "857c636765d21a7a56df29248e8e8c43fc120ca13ea0b3d5290917c11cfe3e56",
+      "visits": []
+    },
+    {
+      "id": "chamber-2-42",
+      "identity": "5ba25c3dec5bab3a7bc0baa608b600b766d0a8028a548b21e5056f81b2927d9e",
+      "worldId": "intent-79a8d1ec-2343-4492-af86-afdc16a76c4a",
+      "glbSha256": "22a79d784e63af8b34e5b2565e1bfdfc759f8d3a6ecf3c1bdd198f02763bb0bc",
+      "assessmentSha256": "4e25aa951af90709ff9326b6157647cb454c384aace23b55e58efd1b57bf5343",
+      "visits": []
+    },
+    {
+      "id": "narrow_passage-2-42",
+      "identity": "1c404d162742c9d4238deb02d7c09ad6c3e085c87ec87b153c39c4ba5c23a337",
+      "worldId": "intent-c51a5de0-80bb-4922-b019-681f2618e8bb",
+      "glbSha256": "959d16f942eda033df6c66c738c6db0abf5862cee35852436f22c670b237e489",
+      "assessmentSha256": "6d7daacf2396f8d34c35e9374bc1b3c134cd69e8ad5aaa4a467773ca061b4ee2",
+      "visits": []
+    },
+    {
+      "id": "courtyard-2-42",
+      "identity": "6bbff0f473adbe0308deeca198fa98cd26f803f482618246adfe59656482efc9",
+      "worldId": "intent-aa874065-02b6-40fe-9aa8-7d954776c8b8",
+      "glbSha256": "443c614d9e2df544032a989b6cfa769715330eb95081d630d635f84192ace40f",
+      "assessmentSha256": "59fe293143b8e306b3e2949d5f6793f25d6f3021229f73aa9ed0d9b09b79b8c3",
+      "visits": []
+    },
+    {
+      "id": "cave-2-42",
+      "identity": "db74b3218314326bae3283e8e213b5f8473b20013328fd5d1deb889d5a81c9f9",
+      "worldId": "intent-7f95f53b-4060-4980-99bb-2f337ff8ba88",
+      "glbSha256": "2799c15cc829face3643046c5d400024b6ea2e4f53eddb89f68e4cdc234bd1a3",
+      "assessmentSha256": "7b6198d25ccb7051e6d6493e1518d29c68c72855388918740a416b1455d28dca",
+      "visits": []
+    },
+    {
+      "id": "bridge-2-42",
+      "identity": "7c9669e29c5084a89c04e4c16494830396e8b17fda94d7baefe55510e45a50bf",
+      "worldId": "intent-10a3cf02-3d09-4837-933f-b0aa040d8d35",
+      "glbSha256": "08e209f8cc1ba52619cfd02edc04abc6d4522232c238eb19998801bfb2a16e00",
+      "assessmentSha256": "4f2b8104d312a430eb74119af56b0618f2edda3950e0d73f580a03920951e339",
+      "visits": []
+    },
+    {
+      "id": "tunnel-2-42",
+      "identity": "76bebbafe9d34a48b0bab63a1f766b60c98d51c341eb4e9e9a4811b78fd12eb3",
+      "worldId": "intent-006d2630-6cd8-441d-a6b0-4387a59866fc",
+      "glbSha256": "57449dddb406c34b47e052c63fae7c8e3c3f974c1949cc3f49f7af6e51e38faf",
+      "assessmentSha256": "41f655058e41850b3d619301502f0fdf0ed1a989fc951132d187566ce3d4b356",
+      "visits": []
+    }
+  ]
+}

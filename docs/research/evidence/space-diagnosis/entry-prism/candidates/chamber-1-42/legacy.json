@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2b6e56636c72bdccdd387c4a30a7e98526d15efeab66d47c396287f81d7a8a76",
+  "status": "failed",
+  "transform": {
+    "scale": 6,
+    "yaw": 0,
+    "position": [
+      0,
+      3.0063246488571167,
+      0
+    ]
+  },
+  "options": {
+    "radius": 0.3,
+    "height": 1.8,
+    "eyeHeight": 1.65,
+    "maxStep": 0.25,
+    "maxSlopeDegrees": 35,
+    "sampleStep": 0.05,
+    "contactTolerance": 0.015
+  },
+  "bounds": {
+    "min": [
+      -3.0031338930130005,
+      0,
+      -3.0073564052581787
+    ],
+    "max": [
+      3.0056172609329224,
+      6.0092453956604,
+      3.006954073905945
+    ]
+  },
+  "route": [],
+  "samples": [],
+  "entry": null,
+  "approachDirection": null,
+  "seam": null,
+  "approach": null,
+  "approachStart": null,
+  "approachVerified": false,
+  "shellComparison": null,
+  "metrics": {
+    "sourceTriangles": 2279942,
+    "sourceVertices": 1141676,
+    "indexReferences": 2643858,
+    "indexCells": 1024,
+    "indexPitch": 0.2,
+    "gridPitch": 0.2,
+    "testedFloorPoints": 2229,
+    "supportedPoints": 1383,
+    "enclosurePoints": 0,
+    "entryCandidates": 199,
+    "rejected": {
+      "unsupported-footprint": 404,
+      "body-or-head-obstruction": 432,
+      "scaffold-intersects-support-or-body-prism": 48
+    },
+    "routeLength": 0,
+    "routeDisplacement": 0,
+    "continuousEnclosedDistance": 0,
+    "maximumConnectedDisplacement": 0,
+    "buildMs": 303.53483399993274,
+    "assessmentMs": 2172.498874999932
+  },
+  "reasons": [
+    "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+  ],
+  "limitations": [
+    "Synthetic-frozen bounded proposal search; failure does not prove geometry irreparable.",
+    "Original triangles and corrected navigator are unchanged. The full exterior approach prism excludes all original geometry from seamY-0.25 through seamY+1.8 beyond a 2mm contact-boundary tolerance.",
+    "Witnesses are geometric operational definitions, not semantic recognition. Courtyards must be within 0.75m of source minimum height; bridge-like detached roof slabs can be geometrically indistinguishable from decks.",
+    "Exterior proposals require a continuously clear 1.2m-wide support/body prism to beyond source bounds plus body-radius margin; overhead and deep-below geometry cannot independently reject an otherwise clear prism. This remains conservative around near-floor irregularities.",
+    "Doorway flank rays are limited to 3m on each side; broader apertures may be missed. Deck edges must be within 2.5m on each side.",
+    "Topology witnesses use 0.2m route vertices and original ray triangle IDs; dense samples independently preserve support/body checks. Legacy Enclosure fields retain their old 6m roof range on dense samples; tall roofs are recorded in topologyWitnesses.",
+    "Enclosure-point count covers queried witness nodes only. Component count is reached-entry components, not an exhaustive mesh decomposition.",
+    "Entry correction runs the frozen same-mode predecessor first, then at most one separately bounded prism pass on failure; per-pass counters are in trace events, and returned counters describe the selected correction pass only."
+  ],
+  "criteria": {
+    "version": 1,
+    "supported": true,
+    "required": [
+      "enclosed-passage",
+      "doorway-crossing"
+    ],
+    "evidence": [
+      {
+        "kind": "enclosed-passage",
+        "source": "text",
+        "cue": "chamber"
+      },
+      {
+        "kind": "doorway-crossing",
+        "source": "text",
+        "cue": "doorway"
+      }
+    ],
+    "ambiguities": [
+      "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement."
+    ],
+    "requirements": {
+      "openSky": false,
+      "covered": true,
+      "opposingWalls": false,
+      "minimumWidth": 2.4
+    },
+    "physical": {
+      "radius": 0.3,
+      "height": 1.8,
+      "eyeHeight": 1.65,
+      "maxStep": 0.25,
+      "maxSlopeDegrees": 35,
+      "minimumDisplacement": 3,
+      "reversible": true
+    }
+  },
+  "topologyWitnesses": [],
+  "searchDiagnostics": {
+    "mode": "legacy",
+    "budgets": {
+      "gridCells": 20000,
+      "supportedNodes": 20000,
+      "layersPerColumn": 32,
+      "legacyEntries": 48,
+      "expandedEntries": 192,
+      "edges": 80000,
+      "candidateRoutes": 4096,
+      "topologyQueries": 160000,
+      "approachBuilds": 8,
+      "topologyIndexReferences": 24000000
+    },
+    "exhausted": [
+      "entry-proposals"
+    ],
+    "componentsExplored": 0,
+    "entriesTested": 48,
+    "edgesTested": 0,
+    "candidateRoutes": 0,
+    "topologyQueries": 0,
+    "approachBuilds": 0,
+    "routeCrossesBehindSeam": false
+  },
+  "diagnosisFreeze": "159335c9df017f7613c5dad23e1da597ba71fa6d523b871ac5120e0cd49f4f01",
+  "evaluationMode": "legacy",
+  "elapsedMs": 4415.929708999931,
+  "traceSummary": {
+    "events": 31304,
+    "uncompressedBytes": 12836055,
+    "counts": {
+      "result:begin": 1,
+      "result:entry-pass-start": 2,
+      "result:assessment-start": 2,
+      "support:grid": 2,
+      "support:column": 2048,
+      "support:rejected": 1672,
+      "support:node": 2766,
+      "support:duplicate-layer": 20,
+      "proposal:legacy-body-sample": 8558,
+      "proposal:eligible": 398,
+      "proposal:direction-unexecuted": 628,
+      "proposal:direction-excluded": 10038,
+      "proposal:selected": 96,
+      "proposal:omitted": 302,
+      "budget:exhausted": 2,
+      "proposal:attempt": 96,
+      "prescreen:edge-support-probe": 4332,
+      "prescreen:projection-start": 96,
+      "prescreen:projection-blocked": 48,
+      "prescreen:rejected": 96,
+      "result:assessment-complete": 2,
+      "result:entry-pass-complete": 2,
+      "prescreen:entry-prism-blocked": 48,
+      "prescreen:entry-prism-proof": 48,
+      "result:complete": 1
+    },
+    "sha256": "ef56338cc715d8cf215d93de3a68da7c3547df41aedd53e0b6a291f41c45fd6f",
+    "parity": null
+  }
+}
