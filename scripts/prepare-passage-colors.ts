@@ -56,7 +56,7 @@ export async function preparePassageColors(scenePath: string, plyPath: string, o
   const result = projectCoarseColors(scene.mesh.positions, samples, options);
   const hash = (bytes: Uint8Array) => createHash('sha256').update(bytes).digest('hex');
   if (JSON.stringify(scene.mesh) !== geometryBefore) throw new Error('Projection unexpectedly changed source geometry');
-  const output = {schemaVersion: 1, algorithm: 'local-dc-hue-palette-v1', coordinateSpace: 'source-model',
+  const output = {schemaVersion: 1, algorithm: 'local-dc-chroma-palette-v2', coordinateSpace: 'source-model',
     source: {scene: {name: basename(scenePath), sha256: hash(sceneBytes)}, ply: {name: basename(plyPath), sha256: hash(plyBytes)}},
     geometry: {sha256: hash(Buffer.from(geometryBefore)), hashEncoding: 'JSON.stringify(scene.mesh)', unchanged: true},
     ...result, gaussian: {sourceCount: samples.sourceCount, filteredCount: samples.filteredCount, minOpacity: samples.minOpacity},

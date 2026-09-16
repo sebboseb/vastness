@@ -18,7 +18,11 @@ function validateTriples(values: ArrayLike<number>, name: string, maximum: numbe
 }
 
 const colorAt = (values: ArrayLike<number>, index: number): RGB => [values[index * 3], values[index * 3 + 1], values[index * 3 + 2]];
-const colorDistance = (a: RGB, b: RGB) => (a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2 + (a[2] - b[2]) ** 2;
+const chroma = (color: RGB) => Math.max(...color) - Math.min(...color);
+// Deliberately prioritize chroma contrast over extra brightness shades. Plain RGB quantization
+// merged the generated mushroom's small orange patch into much more common same-hue brown.
+// This weights measured color differences; it never boosts or invents a sample's brightness.
+const colorDistance = (a: RGB, b: RGB) => (a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2 + (a[2] - b[2]) ** 2 + 10 * (chroma(a) - chroma(b)) ** 2;
 
 // Six hue families plus neutral. Low chroma stays neutral; saturated minority cues receive their
 // own family even when the scene is mostly dark. This is color classification, not object semantics.

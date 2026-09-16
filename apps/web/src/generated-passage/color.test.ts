@@ -65,6 +65,22 @@ test('nearest representative search crosses cell boundaries and respects the max
   assert.ok(Math.abs(result.stats.maxMatchedDistance - .002) < 1e-12);
 });
 
+test('a rare vivid orange patch survives muted brown of the same hue family', () => {
+  const positions: number[] = [], colors: number[] = [];
+  for (let i = 0; i < 1000; i++) {
+    positions.push(i * .02, 0, 0);
+    const value = .12 + (i % 31) / 31 * .83;
+    colors.push(...(i % 3 === 0 ? [value, value, value] : i % 3 === 1 ? [value * .8, value * .48, value * .3] : [value * .85, value * .75, value * .4]));
+  }
+  for (const color of [[.2, .5, .15], [.3, .45, .52], [.25, .28, .38], [.17, .07, .16], [.95, .44, .13]]) {
+    positions.push(positions.length / 3 * .02, 0, 0); colors.push(...color);
+  }
+  const result = projectCoarseColors(positions, {positions, colors}, {cellSize: .005, maxDistance: .01});
+  const orange = result.colors.slice(-4, -1);
+  assert.ok(orange[0] > .8 && orange[1] < .55 && orange[2] < .22, `saturated local orange must not become brown: ${orange}`);
+  assert.ok(result.palette.length <= 12);
+});
+
 test('invalid projection input fails explicitly rather than manufacturing geometry colors', () => {
   assert.throws(() => projectCoarseColors([0, 0], {positions: [], colors: []}), /triples/);
   assert.throws(() => projectCoarseColors([0, NaN, 0], {positions: [], colors: []}), /finite/);
