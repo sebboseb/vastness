@@ -36,7 +36,7 @@ export async function createIntentionService(options:{dataDir?:string;workerUrl?
   if(path==='/api/intent/health'){json(response,200,{status:'ok',workerOrigin:options.workerUrl??process.env.INTENTION_WORKER_URL??'http://127.0.0.1:14321'});return;}
   if(path==='/api/intent/worlds'&&request.method==='GET'){json(response,200,[...worlds.values()].sort((a,b)=>b.createdAt.localeCompare(a.createdAt)));return;}
   if(path==='/api/intent/worlds'&&request.method==='POST'){
-   const input=InputSchema.parse(await body(request));const derived=deriveIntent(input);const id='intent-'+randomUUID();const world:WorldRecord={id,createdAt:now(),rawIntent:input,...derived,status:'requested',jobId:id,request:{id,prompt:JSON.stringify(derived.semantics),seed:42},events:[{type:'intent-recorded',at:now()},{type:'constraints-derived',at:now()}]};worlds.set(id,world);await save(world);json(response,202,world);launch(world);return;
+   const {seed=42,...input}=InputSchema.extend({seed:z.number().int().min(0).max(2147483647).optional()}).parse(await body(request));const derived=deriveIntent(input);const id='intent-'+randomUUID();const world:WorldRecord={id,createdAt:now(),rawIntent:input,...derived,status:'requested',jobId:id,request:{id,prompt:JSON.stringify(derived.semantics),seed},events:[{type:'intent-recorded',at:now()},{type:'constraints-derived',at:now()}]};worlds.set(id,world);await save(world);json(response,202,world);launch(world);return;
   }
   const match=/^\/api\/intent\/worlds\/([a-zA-Z0-9_-]+)(?:\/(scene|visit|retry-validation))?$/.exec(path);
   if(match){const world=worlds.get(match[1]);if(!world){json(response,404,{error:'Unknown prototype world'});return;}

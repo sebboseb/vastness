@@ -91,6 +91,6 @@ export async function createPassageService(options: {directory?: string; sources
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  const service = await createPassageService(); service.server.listen(4312, '127.0.0.1', () => console.log('Generated passage inspection API http://127.0.0.1:4312'));
+  const service = await createPassageService({directory: process.env.PASSAGE_DATA_DIR}); service.server.listen(4312, '127.0.0.1', () => console.log('Generated passage inspection API http://127.0.0.1:4312'));
   for (const signal of ['SIGINT', 'SIGTERM'] as const) process.once(signal, () => {void service.close().then(() => process.exit(0));});
 }

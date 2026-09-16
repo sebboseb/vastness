@@ -103,3 +103,19 @@ test('validation retry reuses the successful job and accepted hashes without wor
   assert.deepEqual(await (await fetch(base+ready.sceneUrl)).json(),{jobId:id,hashes:artifacts.map(artifact=>artifact.sha256)});
  }finally{releaseRetry();await service.close();await rm(dir,{recursive:true,force:true});}
 });
+
+test('development seed override is validated, persisted and sent unchanged; existing clients retain seed42',async()=>{
+ const dir=await mkdtemp(join(tmpdir(),'vastness-study-seeds-'));const requests:{id:string;seed:number;prompt:string}[]=[];
+ const worker={async submit(request:{id:string;seed:number;prompt:string}){requests.push(request);return {id:request.id,status:'running'} as WorkerJob;},async status(id:string){return {id,status:'failed',error:'test terminal job'} as WorkerJob;},async importArtifacts(){throw new Error('failed job cannot import');}};
+ let service=await createIntentionService({dataDir:dir,worker,pollMs:5});
+ async function listen(){await new Promise<void>(done=>service.server.listen(0,'127.0.0.1',done));const address=service.server.address();assert.ok(address&&typeof address==='object');return `http://127.0.0.1:${address.port}`;}
+ let origin=await listen();const post=(seed?:unknown)=>fetch(origin+'/api/intent/worlds',{method:'POST',body:JSON.stringify({text:'An empty stone chamber',source:'text',...(seed===undefined?{}:{seed})})});
+ try{
+  for(const invalid of [-1,1.5,'7',2147483648])assert.equal((await post(invalid)).status,400);
+  const first=await(await post()).json(),second=await(await post(7)).json();
+  assert.equal(first.request.seed,42);assert.equal(second.request.seed,7);assert.deepEqual(first.rawIntent,second.rawIntent);assert.equal(second.rawIntent.seed,undefined);assert.deepEqual(first.semantics,second.semantics);
+  for(let i=0;i<100&&requests.length<2;i++)await delay(5);assert.deepEqual(requests.map(r=>r.seed),[42,7]);
+  await service.close();service=await createIntentionService({dataDir:dir,worker,pollMs:5});origin=await listen();
+  const restored=await(await fetch(origin+'/api/intent/worlds/'+second.id)).json();assert.equal(restored.request.seed,7);assert.deepEqual(restored.semantics,second.semantics);
+ }finally{await service.close();await rm(dir,{recursive:true,force:true});}
+});
