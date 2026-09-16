@@ -1,0 +1,34 @@
+{
+  "candidate": "arch",
+  "rawIntent": {
+    "text": "A wide stone arch doorway with attached continuous flat stone floor through the opening. Empty human passage, clear headroom, no central object, no steps.",
+    "source": "text"
+  },
+  "declaredAt": "2026-09-16T08:15:50.340826+00:00",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "worldId": "intent-e44e1be5-6a27-4437-be52-5851aa6945ef",
+  "jobId": "intent-e44e1be5-6a27-4437-be52-5851aa6945ef",
+  "request": {
+    "id": "intent-e44e1be5-6a27-4437-be52-5851aa6945ef",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A wide stone arch doorway with attached continuous flat stone floor through the opening. Empty human passage, clear headroom, no central object, no steps.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A wide stone arch doorway with attached continuous flat stone floor through the opening. Empty human passage, clear headroom, no central object, no steps.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "mixed"
+    },
+    "representation": "abstract-solid"
+  },
+  "collected": true,
+  "gpuStatus": "succeeded",
+  "macStatus": "ready",
+  "finishedAt": "2026-09-16T08:19:05.356037+00:00",
+  "generationSeconds": 179.58737281399954,
+  "geometryAssessment": "pending separate generated-support assessment"
+}

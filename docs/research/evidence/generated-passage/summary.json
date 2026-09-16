@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 1,
+  "measuredDate": "2026-09-16",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "candidates": [
+    {
+      "id": "arch",
+      "worldId": "intent-e44e1be5-6a27-4437-be52-5851aa6945ef",
+      "rawIntent": {
+        "text": "A wide stone arch doorway with attached continuous flat stone floor through the opening. Empty human passage, clear headroom, no central object, no steps.",
+        "source": "text"
+      },
+      "semantics": {
+        "version": 1,
+        "kind": "intention-destination",
+        "concept": "A wide stone arch doorway with attached continuous flat stone floor through the opening. Empty human passage, clear headroom, no central object, no steps.",
+        "axes": {
+          "scale": "human",
+          "density": "sparse",
+          "mood": "unspecified",
+          "openness": "mixed"
+        },
+        "representation": "abstract-solid"
+      },
+      "glbSha256": "caab9c299983c56f96e4c8eda324f976624914fe70de61b36e5c03fb91dcf811",
+      "gpuSeconds": 179.58737281399954,
+      "attempts": [
+        {
+          "scale": 6,
+          "status": "failed",
+          "metrics": {
+            "sourceTriangles": 2125234,
+            "sourceVertices": 1064802,
+            "indexReferences": 2472670,
+            "indexCells": 1024,
+            "indexPitch": 0.2,
+            "gridPitch": 0.2,
+            "testedFloorPoints": 2201,
+            "supportedPoints": 1393,
+            "enclosurePoints": 667,
+            "entryCandidates": 199,
+            "rejected": {
+              "unsupported-footprint": 525,
+              "body-or-head-obstruction": 283
+            },
+            "routeLength": 0,
+            "routeDisplacement": 0,
+            "continuousEnclosedDistance": 0,
+            "maximumConnectedDisplacement": 7.353910524340097,
+            "buildMs": 130.39833399999998,
+            "assessmentMs": 13491.02225
+          },
+          "approachVerified": false,
+          "shellComparison": {
+            "sourceSha256": "caab9c299983c56f96e4c8eda324f976624914fe70de61b36e5c03fb91dcf811",
+            "testedSamples": 0,
+            "proxyBlockedSamples": 0,
+            "originalClearSamples": 0,
+            "method": "Original accepted support/clearance samples compared against hash-matched prior surface-shell AABBs, with the earlier walker body band foot+0.2..foot+1.8. Rotated shell boxes are conservatively re-bounded; no proxy cells are removed."
+          }
+        },
+        {
+          "scale": 10,
+          "status": "failed",
+          "metrics": {
+            "sourceTriangles": 2125234,
+            "sourceVertices": 1064802,
+            "indexReferences": 2720218,
+            "indexCells": 2704,
+            "indexPitch": 0.2,
+            "gridPitch": 0.2,
+            "testedFloorPoints": 6199,
+            "supportedPoints": 4185,
+            "enclosurePoints": 1132,
+            "entryCandidates": 358,
+            "rejected": {
+              "unsupported-footprint": 1039,
+              "body-or-head-obstruction": 975
+            },
+            "routeLength": 0,
+            "routeDisplacement": 0,
+            "continuousEnclosedDistance": 0,
+            "maximumConnectedDisplacement": 13.010764773832477,
+            "buildMs": 181.08345799999915,
+            "assessmentMs": 15044.359165999998
+          },
+          "approachVerified": false,
+          "shellComparison": {
+            "sourceSha256": "caab9c299983c56f96e4c8eda324f976624914fe70de61b36e5c03fb91dcf811",
+            "testedSamples": 0,
+            "proxyBlockedSamples": 0,
+            "originalClearSamples": 0,
+            "method": "Original accepted support/clearance samples compared against hash-matched prior surface-shell AABBs, with the earlier walker body band foot+0.2..foot+1.8. Rotated shell boxes are conservatively re-bounded; no proxy cells are removed."
+          }
+        },
+        {
+          "scale": 12,
+          "status": "failed",
+          "metrics": {
+            "sourceTriangles": 2125234,
+            "sourceVertices": 1064802,
+            "indexReferences": 2848169,
+            "indexCells": 3844,
+            "indexPitch": 0.2,
+            "gridPitch": 0.2,
+            "testedFloorPoints": 8953,
+            "supportedPoints": 6161,
+            "enclosurePoints": 538,
+            "entryCandidates": 437,
+            "rejected": {
+              "unsupported-footprint": 1364,
+              "body-or-head-obstruction": 1428
+            },
+            "routeLength": 0,
+            "routeDisplacement": 0,
+            "continuousEnclosedDistance": 0,
+            "maximumConnectedDisplacement": 15.839191898578667,
+            "buildMs": 236.27591699999903,
+            "assessmentMs": 21550.253792000003
+          },
+          "approachVerified": false,
+          "shellComparison": {
+            "sourceSha256": "caab9c299983c56f96e4c8eda324f976624914fe70de61b36e5c03fb91dcf811",
+            "testedSamples": 0,
+            "proxyBlockedSamples": 0,
+            "originalClearSamples": 0,
+            "method": "Original accepted support/clearance samples compared against hash-matched prior surface-shell AABBs, with the earlier walker body band foot+0.2..foot+1.8. Rotated shell boxes are conservatively re-bounded; no proxy cells are removed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "tunnel",
+      "worldId": "intent-dac5feaf-60b5-4aa9-990b-1d02d749e686",
+      "rawIntent": {
+        "text": "A wide short open-ended stone tunnel with a continuous flat floor through both openings. Empty human passage, clear headroom, no central object, no steps.",
+        "source": "text"
+      },
+      "semantics": {
+        "version": 1,
+        "kind": "intention-destination",
+        "concept": "A wide short open-ended stone tunnel with a continuous flat floor through both openings. Empty human passage, clear headroom, no central object, no steps.",
+        "axes": {
+          "scale": "human",
+          "density": "sparse",
+          "mood": "unspecified",
+          "openness": "open"
+        },
+        "representation": "abstract-solid"
+      },
+      "glbSha256": "bc5a2f21fc24dc7aaf20db120167f69fe3788588fd8848586d50b3c778eb5472",
+      "gpuSeconds": 69.3311431789989,
+      "attempts": [
+        {
+          "scale": 6,
+          "status": "passed",
+          "metrics": {
+            "sourceTriangles": 664376,
+            "sourceVertices": 332417,
+            "indexReferences": 780919,
+            "indexCells": 704,
+            "indexPitch": 0.2,
+            "gridPitch": 0.2,
+            "testedFloorPoints": 901,
+            "supportedPoints": 539,
+            "enclosurePoints": 232,
+            "entryCandidates": 91,
+            "rejected": {
+              "unsupported-footprint": 289,
+              "body-or-head-obstruction": 73,
+              "authored-to-generated-seam": 3
+            },
+            "routeLength": 3.2,
+            "routeDisplacement": 3.0066592756745827,
+            "continuousEnclosedDistance": 3.1999999999999993,
+            "maximumConnectedDisplacement": 5.646237685397242,
+            "buildMs": 75.11808400000001,
+            "assessmentMs": 5213.014542
+          },
+          "approachVerified": true,
+          "shellComparison": {
+            "sourceSha256": "bc5a2f21fc24dc7aaf20db120167f69fe3788588fd8848586d50b3c778eb5472",
+            "testedSamples": 73,
+            "proxyBlockedSamples": 12,
+            "originalClearSamples": 73,
+            "method": "Original accepted support/clearance samples compared against hash-matched prior surface-shell AABBs, with the earlier walker body band foot+0.2..foot+1.8. Rotated shell boxes are conservatively re-bounded; no proxy cells are removed."
+          }
+        },
+        {
+          "scale": 10,
+          "status": "passed",
+          "metrics": {
+            "sourceTriangles": 664376,
+            "sourceVertices": 332417,
+            "indexReferences": 863507,
+            "indexCells": 1872,
+            "indexPitch": 0.2,
+            "gridPitch": 0.2,
+            "testedFloorPoints": 2552,
+            "supportedPoints": 1793,
+            "enclosurePoints": 863,
+            "entryCandidates": 173,
+            "rejected": {
+              "unsupported-footprint": 621,
+              "body-or-head-obstruction": 134,
+              "footprint-height-spread": 4,
+              "authored-to-generated-seam": 1
+            },
+            "routeLength": 3.0000000000000004,
+            "routeDisplacement": 3.000000000000001,
+            "continuousEnclosedDistance": 2.9999999999999996,
+            "maximumConnectedDisplacement": 3.000000000000001,
+            "buildMs": 46.633875000000444,
+            "assessmentMs": 1596.4246670000002
+          },
+          "approachVerified": true,
+          "shellComparison": {
+            "sourceSha256": "bc5a2f21fc24dc7aaf20db120167f69fe3788588fd8848586d50b3c778eb5472",
+            "testedSamples": 71,
+            "proxyBlockedSamples": 0,
+            "originalClearSamples": 71,
+            "method": "Original accepted support/clearance samples compared against hash-matched prior surface-shell AABBs, with the earlier walker body band foot+0.2..foot+1.8. Rotated shell boxes are conservatively re-bounded; no proxy cells are removed."
+          }
+        },
+        {
+          "scale": 12,
+          "status": "passed",
+          "metrics": {
+            "sourceTriangles": 664376,
+            "sourceVertices": 332417,
+            "indexReferences": 907254,
+            "indexCells": 2666,
+            "indexPitch": 0.2,
+            "gridPitch": 0.2,
+            "testedFloorPoints": 3668,
+            "supportedPoints": 2738,
+            "enclosurePoints": 1327,
+            "entryCandidates": 215,
+            "rejected": {
+              "unsupported-footprint": 755,
+              "body-or-head-obstruction": 169,
+              "footprint-height-spread": 6,
+              "authored-to-generated-seam": 1
+            },
+            "routeLength": 3,
+            "routeDisplacement": 3,
+            "continuousEnclosedDistance": 3,
+            "maximumConnectedDisplacement": 12.185236969382254,
+            "buildMs": 46.890167000000474,
+            "assessmentMs": 7087.3444580000005
+          },
+          "approachVerified": true,
+          "shellComparison": {
+            "sourceSha256": "bc5a2f21fc24dc7aaf20db120167f69fe3788588fd8848586d50b3c778eb5472",
+            "testedSamples": 72,
+            "proxyBlockedSamples": 48,
+            "originalClearSamples": 72,
+            "method": "Original accepted support/clearance samples compared against hash-matched prior surface-shell AABBs, with the earlier walker body band foot+0.2..foot+1.8. Rotated shell boxes are conservatively re-bounded; no proxy cells are removed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "courtyard",
+      "worldId": "intent-885b00f4-d697-47ac-98e5-84714bdd2210",
+      "rawIntent": {
+        "text": "An open courtyard with surrounding stone walls, a broad empty doorway and a continuous flat floor through it. Clear human passage and headroom, no central object, no steps.",
+        "source": "text"
+      },
+      "semantics": {
+        "version": 1,
+        "kind": "intention-destination",
+        "concept": "An open courtyard with surrounding stone walls, a broad empty doorway and a continuous flat floor through it. Clear human passage and headroom, no central object, no steps.",
+        "axes": {
+          "scale": "human",
+          "density": "sparse",
+          "mood": "unspecified",
+          "openness": "open"
+        },
+        "representation": "abstract-solid"
+      },
+      "glbSha256": "a4bfd87d64cf98a5895d2536b89d14a162c26a527432df3d782a00d891919eb0",
+      "gpuSeconds": 76.82659602299827,
+      "attempts": [
+        {
+          "scale": 6,
+          "status": "passed",
+          "metrics": {
+            "sourceTriangles": 1431264,
+            "sourceVertices": 716779,
+            "indexReferences": 1660336,
+            "indexCells": 1024,
+            "indexPitch": 0.2,
+            "gridPitch": 0.2,
+            "testedFloorPoints": 1501,
+            "supportedPoints": 791,
+            "enclosurePoints": 778,
+            "entryCandidates": 48,
+            "rejected": {
+              "unsupported-footprint": 518,
+              "body-or-head-obstruction": 187,
+              "authored-to-generated-seam": 14
+            },
+            "routeLength": 3.0000000000000004,
+            "routeDisplacement": 3.0000000000000004,
+            "continuousEnclosedDistance": 2.4799999999999995,
+            "maximumConnectedDisplacement": 3.0000000000000004,
+            "buildMs": 100.04033300000003,
+            "assessmentMs": 5814.696083000001
+          },
+          "approachVerified": true,
+          "shellComparison": {
+            "sourceSha256": "a4bfd87d64cf98a5895d2536b89d14a162c26a527432df3d782a00d891919eb0",
+            "testedSamples": 69,
+            "proxyBlockedSamples": 0,
+            "originalClearSamples": 69,
+            "method": "Original accepted support/clearance samples compared against hash-matched prior surface-shell AABBs, with the earlier walker body band foot+0.2..foot+1.8. Rotated shell boxes are conservatively re-bounded; no proxy cells are removed."
+          }
+        },
+        {
+          "scale": 10,
+          "status": "passed",
+          "metrics": {
+            "sourceTriangles": 1431264,
+            "sourceVertices": 716779,
+            "indexReferences": 1821439,
+            "indexCells": 2704,
+            "indexPitch": 0.2,
+            "gridPitch": 0.2,
+            "testedFloorPoints": 4154,
+            "supportedPoints": 2736,
+            "enclosurePoints": 2054,
+            "entryCandidates": 124,
+            "rejected": {
+              "unsupported-footprint": 998,
+              "body-or-head-obstruction": 413
+            },
+            "routeLength": 3.0000000000000004,
+            "routeDisplacement": 3.0000000000000004,
+            "continuousEnclosedDistance": 3,
+            "maximumConnectedDisplacement": 3.0000000000000004,
+            "buildMs": 97.65858300000036,
+            "assessmentMs": 3393.3075
+          },
+          "approachVerified": true,
+          "shellComparison": {
+            "sourceSha256": "a4bfd87d64cf98a5895d2536b89d14a162c26a527432df3d782a00d891919eb0",
+            "testedSamples": 71,
+            "proxyBlockedSamples": 0,
+            "originalClearSamples": 71,
+            "method": "Original accepted support/clearance samples compared against hash-matched prior surface-shell AABBs, with the earlier walker body band foot+0.2..foot+1.8. Rotated shell boxes are conservatively re-bounded; no proxy cells are removed."
+          }
+        },
+        {
+          "scale": 12,
+          "status": "passed",
+          "metrics": {
+            "sourceTriangles": 1431264,
+            "sourceVertices": 716779,
+            "indexReferences": 1906795,
+            "indexCells": 3844,
+            "indexPitch": 0.2,
+            "gridPitch": 0.2,
+            "testedFloorPoints": 6003,
+            "supportedPoints": 4162,
+            "enclosurePoints": 1444,
+            "entryCandidates": 162,
+            "rejected": {
+              "unsupported-footprint": 1440,
+              "body-or-head-obstruction": 401
+            },
+            "routeLength": 3,
+            "routeDisplacement": 3,
+            "continuousEnclosedDistance": 2.8000000000000007,
+            "maximumConnectedDisplacement": 3,
+            "buildMs": 103.2367090000007,
+            "assessmentMs": 2169.640042000001
+          },
+          "approachVerified": true,
+          "shellComparison": {
+            "sourceSha256": "a4bfd87d64cf98a5895d2536b89d14a162c26a527432df3d782a00d891919eb0",
+            "testedSamples": 72,
+            "proxyBlockedSamples": 14,
+            "originalClearSamples": 72,
+            "method": "Original accepted support/clearance samples compared against hash-matched prior surface-shell AABBs, with the earlier walker body band foot+0.2..foot+1.8. Rotated shell boxes are conservatively re-bounded; no proxy cells are removed."
+          }
+        }
+      ]
+    }
+  ],
+  "browser": {
+    "tunnel": {
+      "forwardGeneratedMetres": 3.2999521091562354,
+      "roundTripGeneratedMetres": 6.5801317166827795,
+      "finalMode": "scaffold",
+      "blocked": "",
+      "pendingVisits": 0,
+      "errorCount": 0,
+      "invalidAuditSamples": 0,
+      "auditSamples": 766,
+      "navigationP95Ms": 2.800000011920929,
+      "navigationMaxMs": 7.300000011920929,
+      "visits": [
+        {
+          "eventId": "c24bcfeb-bdac-49a6-98ad-5c8c4b473fe7",
+          "event": "crossed",
+          "position": [
+            -0.46138509511947623,
+            1.6664400708698879,
+            -2.999154795337654
+          ],
+          "at": "2026-09-16T08:33:42.476Z"
+        },
+        {
+          "eventId": "5d6e5aad-d0a4-4cbf-9510-03b4ca3d61ad",
+          "event": "returned",
+          "position": [
+            -0.46138509511947623,
+            1.6663471317133638,
+            -3.0035047953376024
+          ],
+          "at": "2026-09-16T08:35:11.802Z"
+        }
+      ],
+      "identity": "6efaa562994eaf3eb18bf6fae2d72b3010ef5d902b93f2905ad1968a1bc34a9e"
+    },
+    "courtyard": {
+      "forwardGeneratedMetres": 3.0988499999999974,
+      "roundTripGeneratedMetres": 6.181799999999913,
+      "finalMode": "scaffold",
+      "blocked": "",
+      "pendingVisits": 0,
+      "errorCount": 0,
+      "invalidAuditSamples": 0,
+      "auditSamples": 736,
+      "navigationP95Ms": 2.299999952316284,
+      "navigationMaxMs": 3.199999988079071,
+      "visits": [
+        {
+          "eventId": "c543184b-6a61-452e-917e-987080f11901",
+          "event": "crossed",
+          "position": [
+            -2.999744050786829,
+            1.6621995860126473,
+            1.1969733953475954
+          ],
+          "at": "2026-09-16T08:35:51.737Z"
+        },
+        {
+          "eventId": "d07b3952-6ec6-40a7-b95b-59e5c63a7fcc",
+          "event": "returned",
+          "position": [
+            -3.0085940507867504,
+            1.662118987869478,
+            1.1969733953475954
+          ],
+          "at": "2026-09-16T08:36:51.296Z"
+        }
+      ],
+      "identity": "a0d1f5fc5b7cfd1be6d8801eac7ff6a95cc2d5d4a58b738f24ad05868503ceb7"
+    }
+  },
+  "isolation": {
+    "baseline": "bf9345d",
+    "unchangedPaths": [
+      "services/gpu-worker",
+      "services/intention-prototype",
+      "apps/web/src/intention-generation",
+      "apps/web/src/m1-prototype",
+      "packages",
+      "services/orchestrator"
+    ],
+    "diffEmpty": true
+  },
+  "restart": true,
+  "checks": {
+    "existingTests": 33,
+    "passageTests": 24,
+    "typecheck": "passed",
+    "builds": [
+      "M0",
+      "generated-passage"
+    ]
+  },
+  "fallbackModels": {
+    "executed": false,
+    "reason": "Two of three new TRELLIS candidates passed and were physically traversed."
+  }
+}
