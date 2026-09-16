@@ -1,0 +1,14 @@
+F
+======================================================================
+FAIL: test_reexport_keeps_complete_deduplicated_asset_manifest (test_reliability_export.EvidenceExportTest.test_reexport_keeps_complete_deduplicated_asset_manifest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/seb/Documents/ChatGPT/vastness/scripts/tests/test_reliability_export.py", line 34, in test_reexport_keeps_complete_deduplicated_asset_manifest
+    self.assertEqual(len(assets), 2)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+AssertionError: 0 != 2
+
+----------------------------------------------------------------------
+Ran 1 test in 0.088s
+
+FAILED (failures=1)
