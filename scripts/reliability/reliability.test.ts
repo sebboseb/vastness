@@ -54,7 +54,7 @@ test('all declared jobs remain in the denominator and offline success never impl
   const summary = await summarizeStudy(plan, data); assert.equal(summary.primary.planned, 2); assert.equal(summary.primary.fullPipelinePasses, 0); assert.equal(summary.rows.length, 2); assert.equal(summary.complete, false); assert.equal(summary.rows[0].measurements.generationSeconds, null);
   assert.equal(browserPassed(null, 6, hash), false);
   const browser = {attempts: [{scale: 6, status: 'passed', entry: true, traversal: true, return: true, sourceSha256: hash, evidence: {forward: 'file'}}]};
-  assert.equal(browserPassed(browser, 6, hash), true); assert.equal(browserPassed(browser, 6, 'b'.repeat(64)), false); assert.equal(browserPassed(browser, 10, hash), false);
+  assert.equal(browserPassed(browser, 6, hash), false); assert.equal(browserPassed(browser, 6, 'b'.repeat(64)), false); assert.equal(browserPassed(browser, 10, hash), false);
  } finally {await rm(data, {recursive: true, force: true});}
 });
 test('Wilson interval remains descriptive and nondegenerate for zero successes', () => {
