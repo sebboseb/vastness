@@ -1,10 +1,11 @@
 import assert from 'node:assert/strict';
 import {test} from 'node:test';
-import {mkdtemp, mkdir, rm} from 'node:fs/promises';
+import {mkdtemp, mkdir, rm, writeFile, readFile} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
-import {assessMesh, diagnose, isAssessment, assessCandidate, readJson, saveJson, type Plan} from './assess.ts';
+import {assessMesh, diagnose, isAssessment, assessCandidate, readJson, saveJson, sha256, type Plan} from './assess.ts';
 import {browserPassed, summarizeStudy, wilson} from './summarize.ts';
+import {prepareInspection} from './prepare-inspection.ts';
 import type {TriangleMesh, Vec3} from '../../apps/web/src/generated-passage/navigation.ts';
 
 function room({width = 3, floor = true, roof = true, sealed = false} = {}): TriangleMesh {
@@ -58,4 +59,28 @@ test('all declared jobs remain in the denominator and offline success never impl
 });
 test('Wilson interval remains descriptive and nondegenerate for zero successes', () => {
  const interval = wilson(0, 36)!; assert.ok(interval.lower < 1e-10); assert.ok(Math.abs(interval.upper - .0964186) < 1e-6); assert.equal(wilson(0, 0), null);
+});
+
+test('failed geometry is explicitly inspection-only and assessment errors are never delivered as navigation assessments', async () => {
+ const root = await mkdtemp(join(tmpdir(), 'reliability-inspection-')), data = join(root, '.runtime/reliability');
+ const candidate = {id: 'open-floor', category: 'courtyard', promptVariant: 1, seed: 7, text: 'open floor'}, plan: Plan = {studyId: 'test', primaryScale: 6, secondaryScales: [10, 12], candidates: [candidate]};
+ try {
+  const directory = join(data, 'candidates', candidate.id), worldDir = join(root, '.runtime/intention-generation/worlds/test-world');
+  await mkdir(directory, {recursive: true}); await mkdir(worldDir, {recursive: true});
+  const glb = Buffer.from('fixture identity GLB'), ply = Buffer.from('fixture identity PLY'), sourceHash = sha256(glb);
+  await writeFile(join(directory, 'collider.glb'), glb); await writeFile(join(directory, 'scene.ply'), ply);
+  await saveJson(join(worldDir, 'scene.json'), {sources: {glb: {sha256: sourceHash}}, mesh: {positions: []}});
+  await saveJson(join(directory, 'colors.json'), {source: {scene: {sha256: sha256(await readFile(join(worldDir, 'scene.json')))}, ply: {sha256: sha256(ply)}}});
+  await saveJson(join(directory, 'generation-report.json'), {artifacts: [{path: 'scene.ply', sha256: sha256(ply)}]});
+  await saveJson(join(directory, 'world.json'), {id: 'test-world', status: 'ready', semantics: {}}); await saveJson(join(directory, 'candidate.json'), {macStatus: 'ready'});
+  const attempts = assessMesh(room({roof: false}), sourceHash, [6]);
+  await saveJson(join(directory, 'assessment.json'), {source: {sha256: sourceHash}, attempts});
+  assert.equal((await prepareInspection(plan, root, data)).cases.length, 0);
+  assert.deepEqual((await prepareInspection(plan, root, data, false, true)).cases, ['open-floor']);
+  let sources = await readJson(join(data, 'inspection/index.json'));
+  assert.match(sources[0].label, /inspection only/); assert.equal((await readJson(sources[0].files.assessment)).status, 'failed');
+  await saveJson(join(directory, 'assessment.json'), {source: {sha256: sourceHash}, attempts: [{status: 'failed', sourceSha256: sourceHash, transform: {scale: 6}, assessmentError: {stage: 'parser', message: 'Unsupported GLB layout', resourceBound: false}}]});
+  await prepareInspection(plan, root, data, false, true); sources = await readJson(join(data, 'inspection/index.json'));
+  assert.equal(sources[0].files.assessment, undefined);
+ } finally {await rm(root, {recursive: true, force: true});}
 });
