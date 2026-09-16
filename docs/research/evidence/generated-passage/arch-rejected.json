@@ -1,0 +1,26 @@
+{
+  "caseId": "arch",
+  "worldId": "intent-e44e1be5-6a27-4437-be52-5851aa6945ef",
+  "ready": true,
+  "mode": "inspection",
+  "position": [
+    6.586493273613103,
+    6.000600649409003,
+    9.57884708954977
+  ],
+  "yaw": 34.5085229876684,
+  "pitch": -14.440669090923238,
+  "representation": "coarse",
+  "assessment": "failed",
+  "generatedTravel": 0,
+  "support": null,
+  "blocked": "",
+  "walking": "",
+  "pathRemaining": 0,
+  "visits": [],
+  "pendingVisits": 0,
+  "errors": 0,
+  "glbSha256": "caab9c299983c56f96e4c8eda324f976624914fe70de61b36e5c03fb91dcf811",
+  "identity": "46305612464f32f49616a0daa21f36a6a81b5c74e42a7570766814329a5016d4",
+  "audit": []
+}

@@ -1,0 +1,47 @@
+{
+  "caseId": "courtyard",
+  "worldId": "intent-885b00f4-d697-47ac-98e5-84714bdd2210",
+  "ready": true,
+  "mode": "inspection",
+  "position": [
+    6.6054892048239715,
+    5.2226817158522545,
+    9.584047231078149
+  ],
+  "yaw": 34.5085229876684,
+  "pitch": -14.440669090923238,
+  "representation": "coarse",
+  "assessment": "passed",
+  "generatedTravel": 0,
+  "support": null,
+  "blocked": "",
+  "walking": "",
+  "pathRemaining": 0,
+  "visits": [
+    {
+      "eventId": "c543184b-6a61-452e-917e-987080f11901",
+      "event": "crossed",
+      "position": [
+        -2.999744050786829,
+        1.6621995860126473,
+        1.1969733953475954
+      ],
+      "at": "2026-09-16T08:35:51.737Z"
+    },
+    {
+      "eventId": "d07b3952-6ec6-40a7-b95b-59e5c63a7fcc",
+      "event": "returned",
+      "position": [
+        -3.0085940507867504,
+        1.662118987869478,
+        1.1969733953475954
+      ],
+      "at": "2026-09-16T08:36:51.296Z"
+    }
+  ],
+  "pendingVisits": 0,
+  "errors": 0,
+  "glbSha256": "a4bfd87d64cf98a5895d2536b89d14a162c26a527432df3d782a00d891919eb0",
+  "identity": "a0d1f5fc5b7cfd1be6d8801eac7ff6a95cc2d5d4a58b738f24ad05868503ceb7",
+  "audit": []
+}

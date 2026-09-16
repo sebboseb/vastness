@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "local-dc-chroma-palette-v2",
+  "coordinateSpace": "source-model",
+  "source": {
+    "scene": {
+      "name": "scene.json",
+      "sha256": "55efa7fbb7fb4d7f78e83983fa9ba596512af35aeec9535e881dbd7b84ffff6c"
+    },
+    "ply": {
+      "name": "scene.ply",
+      "sha256": "048442ea6b98bcb58d2115c90e552dfa54d15b7f43569a3d3447d49aa31b5a4a"
+    }
+  },
+  "geometry": {
+    "sha256": "56a231bc9d56aedc37cddbe24bc59d277487c1bbd9ab1e61e453037fa731a1c3",
+    "hashEncoding": "JSON.stringify(scene.mesh)",
+    "unchanged": true
+  },
+  "palette": [
+    [
+      0.6423663716977803,
+      0.5428000287547785,
+      0.4593943806842984
+    ],
+    [
+      0.6657176204181096,
+      0.5864313422042793,
+      0.47335583761993105
+    ],
+    [
+      0.7735007267815809,
+      0.7291039824485779,
+      0.6515601346326452
+    ],
+    [
+      0.42753583835928066,
+      0.32471311829592053,
+      0.25975879093534066
+    ],
+    [
+      0.4953638409486914,
+      0.4120087584365258,
+      0.2990925765011163
+    ],
+    [
+      0.6524317833707496,
+      0.552427133401582,
+      0.4063289351164861
+    ],
+    [
+      0.5478196932678729,
+      0.42269549142997875,
+      0.32378999796588864
+    ],
+    [
+      0.7857713859081268,
+      0.7294952276349068,
+      0.627336937725544
+    ],
+    [
+      0.7705928696327214,
+      0.7464153825460351,
+      0.7025707990463362
+    ],
+    [
+      0.7120882725254516,
+      0.6492926002089879,
+      0.5541329379085961
+    ],
+    [
+      0.578230115367631,
+      0.4869012959752371,
+      0.3660009699183857
+    ],
+    [
+      0.7258635078903084,
+      0.6520567060621834,
+      0.5292901207225821
+    ]
+  ],
+  "stats": {
+    "vertexCount": 26194,
+    "sampleCount": 1148127,
+    "retainedSamples": 294185,
+    "searchedCells": 728450,
+    "matchedVertices": 26194,
+    "unmatchedVertices": 0,
+    "maxMatchedDistance": 0.01793132533892383,
+    "paletteSize": 12,
+    "cellSize": 0.006740456917457733,
+    "maxDistance": 0.02696182766983093
+  },
+  "gaussian": {
+    "sourceCount": 1149280,
+    "filteredCount": 1153,
+    "minOpacity": 0.1
+  },
+  "limitations": [
+    "DC appearance only; no emission, material physics or higher-order SH",
+    "Nearest fine-cell representative; bounded approximate projection, not texture reconstruction",
+    "Unmatched vertices use a neutral fallback; surfaces closer than the spatial cell may share a representative"
+  ]
+}
