@@ -1,0 +1,26 @@
+{
+  "name": "coverage",
+  "predecessor": "entry-prism",
+  "routeModule": "scripts/diagnosis/routes-coverage.ts",
+  "criteriaModule": "scripts/diagnosis/criteria-traced.ts",
+  "methodFiles": [
+    "scripts/diagnosis/routes-traced.ts",
+    "scripts/diagnosis/routes-traced.test.ts",
+    "scripts/diagnosis/trace-method.md",
+    "scripts/diagnosis/entry.test.ts",
+    "scripts/diagnosis/entry-method.md",
+    "scripts/diagnosis/criteria-traced.test.ts",
+    "scripts/diagnosis/criteria-trace-method.md",
+    "scripts/diagnosis/runner.test.ts",
+    "scripts/diagnosis/entry-prism.json",
+    "scripts/diagnosis/routes-entry.ts",
+    "scripts/diagnosis/coverage.test.ts",
+    "scripts/diagnosis/coverage-method.md",
+    "scripts/diagnosis/runner-parallel.test.ts",
+    "scripts/diagnosis/coverage.json"
+  ],
+  "rationale": "Completed baseline and entry-prism doorway-1-7 traces spend4096 route checks on7 admitted roots and revisit1602 nodes, leaving148 of192 selected proposals unscreened. Available topology query budget remains. This isolates deterministic route-work starvation.",
+  "hypothesis": "Predecessor-first bounded round-robin candidate scheduling across the identical selected and prism-screened proposal population may recover late-entry routes. Per-entry BFS paths, all witness predicates, navigator, global per-pass caps and selected scale are unchanged. No proposal population or ranking correction is bundled.",
+  "changedAcceptance": true,
+  "shards": 3
+}
