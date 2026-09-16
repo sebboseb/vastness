@@ -44,7 +44,7 @@ def main():
                'visual-review.json', 'browser.json', 'browser-verification.json', 'evidence-manifest.json',
                'remote-evidence-index.json', 'collector-result.json', 'image-prompt.txt',
                'request.json', 'worker-manifest.json', 'image.log', 'trellis.log',
-               'gpu-memory.csv', 'source-rgb.png'}
+               'gpu-memory.csv', 'source-rgb.png', 'colors.json'}
     for row in summary['rows']:
         directory = data / 'candidates' / row['id']
         for name in sorted(allowed):
@@ -61,6 +61,21 @@ def main():
                          'note': 'Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git.'})
     for source in sorted((data / 'inspection').glob('*.json')):
         copy(source, Path('inspection') / source.name)
+    case_assets = []
+    for case in json.loads((data / 'inspection' / 'index.json').read_text()):
+        assets = {}
+        for kind, filename in case['files'].items():
+            source = Path(filename)
+            content = source.read_bytes()
+            checksum = hashlib.sha256(content).hexdigest()
+            relative = Path('inspection-assets') / (checksum + source.suffix)
+            if kind in {'scene', 'colors'} and not (output / relative).exists():
+                copy(source, relative)
+            assets[kind] = {'retainedPath': str(source), 'bytes': len(content),
+                            'sha256': checksum,
+                            'exportedPath': str(relative) if kind in {'scene', 'colors'} else None}
+        case_assets.append({'caseId': case['id'], 'worldId': case['worldId'], 'assets': assets})
+    (output / 'case-assets.json').write_text(json.dumps(case_assets, indent=2) + '\n')
     (output / 'retained-artifacts.json').write_text(json.dumps(retained, indent=2) + '\n')
     (output / 'export-manifest.json').write_text(json.dumps({'studyId': summary['studyId'],
         'sourceDirectory': str(data), 'files': exported}, indent=2) + '\n')
