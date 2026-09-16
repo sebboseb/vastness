@@ -16,6 +16,10 @@ def main():
     summary = json.loads((data / 'summary.json').read_text())
     if not summary['complete'] or len(summary['rows']) != 36:
         raise SystemExit('Refusing to export an incomplete 36-candidate study')
+    if any(row['macStatus'] == 'ready' and row['preparationStatus'] != 'preparation-failed'
+           and any(scale['geometryPassed'] and scale['browserStatus'] == 'not-assessed'
+                   for scale in row['scales']) for row in summary['rows']):
+        raise SystemExit('Finish every eligible declared-scale browser trial before export')
     output.mkdir(parents=True, exist_ok=True)
     exported = []
 
