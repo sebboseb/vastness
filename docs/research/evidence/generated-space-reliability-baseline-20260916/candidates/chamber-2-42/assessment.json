@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "chamber-2-42",
+  "source": {
+    "filename": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-2-42/collider.glb",
+    "sha256": "22a79d784e63af8b34e5b2565e1bfdfc759f8d3a6ecf3c1bdd198f02763bb0bc",
+    "bytes": 36972272
+  },
+  "attempts": [
+    {
+      "schemaVersion": 1,
+      "sourceSha256": "22a79d784e63af8b34e5b2565e1bfdfc759f8d3a6ecf3c1bdd198f02763bb0bc",
+      "status": "failed",
+      "transform": {
+        "scale": 6,
+        "yaw": 0,
+        "position": [
+          0,
+          3.0048877000808716,
+          0
+        ]
+      },
+      "options": {
+        "radius": 0.3,
+        "height": 1.8,
+        "eyeHeight": 1.65,
+        "maxStep": 0.25,
+        "maxSlopeDegrees": 35,
+        "sampleStep": 0.05,
+        "contactTolerance": 0.015
+      },
+      "bounds": {
+        "min": [
+          -3.0046573877334595,
+          0,
+          -3.0056172609329224
+        ],
+        "max": [
+          2.9995765686035156,
+          6.005919814109802,
+          3.0040751695632935
+        ]
+      },
+      "route": [],
+      "samples": [],
+      "entry": null,
+      "approachDirection": null,
+      "seam": null,
+      "approach": null,
+      "approachStart": null,
+      "approachVerified": false,
+      "shellComparison": {
+        "sourceSha256": "22a79d784e63af8b34e5b2565e1bfdfc759f8d3a6ecf3c1bdd198f02763bb0bc",
+        "testedSamples": 0,
+        "proxyBlockedSamples": 0,
+        "originalClearSamples": 0,
+        "method": "Original accepted support/clearance samples compared against hash-matched prior surface-shell AABBs, with the earlier walker body band foot+0.2..foot+1.8. Rotated shell boxes are conservatively re-bounded; no proxy cells are removed."
+      },
+      "metrics": {
+        "sourceTriangles": 2052202,
+        "sourceVertices": 1028753,
+        "indexReferences": 2419458,
+        "indexCells": 1024,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 3376,
+        "supportedPoints": 1408,
+        "enclosurePoints": 679,
+        "entryCandidates": 200,
+        "rejected": {
+          "unsupported-footprint": 452,
+          "body-or-head-obstruction": 1516
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 7.353910524340097,
+        "buildMs": 140.7494590000133,
+        "assessmentMs": 14293.404458999983
+      },
+      "reasons": [
+        "No reversible generated-supported route with an opening/interior and 3m endpoint displacement was found within the bounded search."
+      ],
+      "limitations": [
+        "Original source triangle winding defines upward support; no face deletion, authored destination support, or occupancy clearing.",
+        "Nine footprint contact probes; projected triangle-union continuity is checked for all nine during movement. The full disk is used for swept body collision.",
+        "Upright cylinder body model; 1.5cm contact tolerance, bounded step and slope, no jumping or falling.",
+        "Search is a bounded 0.2m proposal grid by default with at most 48 exterior entry proposals; failure is not a proof that every possible route is impossible.",
+        "At least 1m contiguous route has either a roof covering all nine footprint probes 1.8–6m abovefoot or opposing torso-height source walls. Semantic room recognition is not claimed."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "sourceSha256": "22a79d784e63af8b34e5b2565e1bfdfc759f8d3a6ecf3c1bdd198f02763bb0bc",
+      "status": "failed",
+      "transform": {
+        "scale": 10,
+        "yaw": 0,
+        "position": [
+          0,
+          5.008146166801453,
+          0
+        ]
+      },
+      "options": {
+        "radius": 0.3,
+        "height": 1.8,
+        "eyeHeight": 1.65,
+        "maxStep": 0.25,
+        "maxSlopeDegrees": 35,
+        "sampleStep": 0.05,
+        "contactTolerance": 0.015
+      },
+      "bounds": {
+        "min": [
+          -5.007762312889099,
+          0,
+          -5.009362101554871
+        ],
+        "max": [
+          4.999294281005859,
+          10.00986635684967,
+          5.006791949272156
+        ]
+      },
+      "route": [],
+      "samples": [],
+      "entry": null,
+      "approachDirection": null,
+      "seam": null,
+      "approach": null,
+      "approachStart": null,
+      "approachVerified": false,
+      "shellComparison": {
+        "sourceSha256": "22a79d784e63af8b34e5b2565e1bfdfc759f8d3a6ecf3c1bdd198f02763bb0bc",
+        "testedSamples": 0,
+        "proxyBlockedSamples": 0,
+        "originalClearSamples": 0,
+        "method": "Original accepted support/clearance samples compared against hash-matched prior surface-shell AABBs, with the earlier walker body band foot+0.2..foot+1.8. Rotated shell boxes are conservatively re-bounded; no proxy cells are removed."
+      },
+      "metrics": {
+        "sourceTriangles": 2052202,
+        "sourceVertices": 1028753,
+        "indexReferences": 2686840,
+        "indexCells": 2704,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 9627,
+        "supportedPoints": 6231,
+        "enclosurePoints": 2820,
+        "entryCandidates": 360,
+        "rejected": {
+          "unsupported-footprint": 1085,
+          "body-or-head-obstruction": 2305,
+          "footprint-height-spread": 6
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 13.010764773832477,
+        "buildMs": 133.46333399997093,
+        "assessmentMs": 18709.650083999964
+      },
+      "reasons": [
+        "No reversible generated-supported route with an opening/interior and 3m endpoint displacement was found within the bounded search."
+      ],
+      "limitations": [
+        "Original source triangle winding defines upward support; no face deletion, authored destination support, or occupancy clearing.",
+        "Nine footprint contact probes; projected triangle-union continuity is checked for all nine during movement. The full disk is used for swept body collision.",
+        "Upright cylinder body model; 1.5cm contact tolerance, bounded step and slope, no jumping or falling.",
+        "Search is a bounded 0.2m proposal grid by default with at most 48 exterior entry proposals; failure is not a proof that every possible route is impossible.",
+        "At least 1m contiguous route has either a roof covering all nine footprint probes 1.8–6m abovefoot or opposing torso-height source walls. Semantic room recognition is not claimed."
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "sourceSha256": "22a79d784e63af8b34e5b2565e1bfdfc759f8d3a6ecf3c1bdd198f02763bb0bc",
+      "status": "failed",
+      "transform": {
+        "scale": 12,
+        "yaw": 0,
+        "position": [
+          0,
+          6.009775400161743,
+          0
+        ]
+      },
+      "options": {
+        "radius": 0.3,
+        "height": 1.8,
+        "eyeHeight": 1.65,
+        "maxStep": 0.25,
+        "maxSlopeDegrees": 35,
+        "sampleStep": 0.05,
+        "contactTolerance": 0.015
+      },
+      "bounds": {
+        "min": [
+          -6.009314775466919,
+          0,
+          -6.011234521865845
+        ],
+        "max": [
+          5.999153137207031,
+          12.011839628219604,
+          6.008150339126587
+        ]
+      },
+      "route": [],
+      "samples": [],
+      "entry": null,
+      "approachDirection": null,
+      "seam": null,
+      "approach": null,
+      "approachStart": null,
+      "approachVerified": false,
+      "shellComparison": {
+        "sourceSha256": "22a79d784e63af8b34e5b2565e1bfdfc759f8d3a6ecf3c1bdd198f02763bb0bc",
+        "testedSamples": 0,
+        "proxyBlockedSamples": 0,
+        "originalClearSamples": 0,
+        "method": "Original accepted support/clearance samples compared against hash-matched prior surface-shell AABBs, with the earlier walker body band foot+0.2..foot+1.8. Rotated shell boxes are conservatively re-bounded; no proxy cells are removed."
+      },
+      "metrics": {
+        "sourceTriangles": 2052202,
+        "sourceVertices": 1028753,
+        "indexReferences": 2826056,
+        "indexCells": 3844,
+        "indexPitch": 0.2,
+        "gridPitch": 0.2,
+        "testedFloorPoints": 13950,
+        "supportedPoints": 12453,
+        "enclosurePoints": 6562,
+        "entryCandidates": 437,
+        "rejected": {
+          "unsupported-footprint": 1372,
+          "body-or-head-obstruction": 117,
+          "footprint-height-spread": 8
+        },
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0,
+        "maximumConnectedDisplacement": 15.839191898578667,
+        "buildMs": 235.19737499998882,
+        "assessmentMs": 22440.682334000012
+      },
+      "reasons": [
+        "No reversible generated-supported route with an opening/interior and 3m endpoint displacement was found within the bounded search."
+      ],
+      "limitations": [
+        "Original source triangle winding defines upward support; no face deletion, authored destination support, or occupancy clearing.",
+        "Nine footprint contact probes; projected triangle-union continuity is checked for all nine during movement. The full disk is used for swept body collision.",
+        "Upright cylinder body model; 1.5cm contact tolerance, bounded step and slope, no jumping or falling.",
+        "Search is a bounded 0.2m proposal grid by default with at most 48 exterior entry proposals; failure is not a proof that every possible route is impossible.",
+        "At least 1m contiguous route has either a roof covering all nine footprint probes 1.8–6m abovefoot or opposing torso-height source walls. Semantic room recognition is not claimed."
+      ]
+    }
+  ],
+  "acceptedAttempt": null,
+  "primaryScale": 6,
+  "rawTopology": {
+    "triangles": 2052202,
+    "vertices": 1028753,
+    "upwardFaces": 1068992,
+    "slopeQualifiedFaces": 513352,
+    "degenerateFaces": 0,
+    "limitation": "Triangle winding/normal counts describe potential surface support, not valid player footprints, connectivity or mesh manifoldness."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "courtyard-2-42",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 10,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "e2eabc7f6db7b82ec221e74e54e3e12b5210230cc66e96f5cbc1dea0f8aa0ebf",
+        "forward": "21fda30050292608e4bdcaeb088529499ef58b209ba553099dbec8713bb0043f",
+        "returned": "f63bd541d84039fdab128cf966cfb3bda0888bccf8974a37230e1be4d6dd9ac8",
+        "persisted": "bba3c32a9bdc7ae4f21d473e274663a599ecfb57774e2b7d21fcf7b703b9c09e"
+      },
+      "forwardEndpointDistance": 2.220446049250313e-16,
+      "returnEndpointDistance": 0.0016500000000156945
+    },
+    {
+      "scale": 12,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    }
+  ]
+}

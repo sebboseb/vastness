@@ -1,0 +1,71 @@
+
+> vastness@0.1.0 check
+> npm run typecheck && npm test && npm run build
+
+
+> vastness@0.1.0 typecheck
+> tsc --noEmit
+
+
+> vastness@0.1.0 test
+> tsx --test packages/*/src/*.test.ts services/orchestrator/src/*.test.ts apps/web/src/*.test.ts
+
+(node:45368) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ reproducible fixture artifacts describe solid rooms with a traversable shared aperture (394.244875ms)
+(node:45369) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ actual Python inventory matches the shared capability schema without claiming GPU validation (59.007459ms)
+(node:45370) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ public pose input rejects non-finite positions and impossible pitch (1.1225ms)
+✔ job IDs cannot address parent paths in artifact storage (0.270708ms)
+(node:45371) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ a walker stops at a wall, including a frame large enough to tunnel through it (0.650041ms)
+✔ walk through a 3.2m portal and return, but its solid jamb stops a wider approach (0.163583ms)
+✔ floor is walkable and diagonal wall contact slides without escaping (0.0755ms)
+✔ an unloaded portal barrier stops the walker until removed (0.080042ms)
+(node:45372) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ world imports real fixture bytes and exposes connected chunks and immutable artifacts over HTTP (394.730333ms)
+✔ restart restores singleton identity, topology, saved player and original artifacts without fixture sources (19.403875ms)
+✔ invalid player requests return actionable errors and preserve the last saved pose (20.423875ms)
+✔ missing chunks and assets return JSON errors and artifact paths cannot escape storage (18.226875ms)
+✔ missing initial fixture is visible and initialization can recover without restarting (11.452417ms)
+✔ late older pose saves cannot overwrite a newer exit pose, including after restart (12.882209ms)
+(node:45373) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ Mac submits real Python jobs, imports verified bytes and keeps accepted artifacts offline after restart (434.745333ms)
+✔ artifact import rejects hostile URLs, wrong hashes, redirects and invalid formats (17.030375ms)
+✔ Mac rejects malformed worker capabilities at the HTTP boundary (4.325458ms)
+✔ overlapping identical submissions share one worker request and retain provenance (8.763833ms)
+✔ HTTP/1.0 artifact EOF remains safe while file writes apply backpressure (156.674ms)
+✔ worker transport preserves authentication, JSON bounds and response failure handling (4.466167ms)
+✔ worker response deadline covers a body stalled after headers (15001.580708ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 15858.474791
+
+> vastness@0.1.0 build
+> vite build apps/web
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1244 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     4.22 kB │ gzip:   1.76 kB
+dist/assets/index-CjVqJj1w.css      8.39 kB │ gzip:   2.74 kB
+dist/assets/index-BxrjwBEz.js   2,033.43 kB │ gzip: 521.92 kB
+
+(!) Some chunks are larger than 1600 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.38s

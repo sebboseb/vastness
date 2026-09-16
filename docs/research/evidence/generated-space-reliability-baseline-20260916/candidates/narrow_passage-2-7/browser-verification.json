@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "narrow_passage-2-7",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "c1c3a33bd5c1028de10e102a6916f3d81c114a6d5d241488119ab2bc8017a896",
+        "forward": "2ecab54e5f9ff1fbaebceee026c9e4f794266e233c6c68e0cc5a26a82680a534",
+        "returned": "7a287df6367d5bd5a60dda9a6a2815103f2e9866103b0aba8d172ce0195105f9",
+        "persisted": "54c07f3e11d915b3ae34e976c387b408e4c833ee1502540a13552af9d9132a22"
+      },
+      "forwardEndpointDistance": 0.004552079620444685,
+      "returnEndpointDistance": 0.002400000000001512
+    },
+    {
+      "scale": 10,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/narrow_passage-2-7-scale10.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "cd6f000a433cfd178bb23b2dec0b5bfe8f48c2ac224e44c808583c75d9d20d07",
+        "forward": "d03ee6395719a7791ab1366b974056e55afe265a3956b64025b293b40d5866fd",
+        "returned": "d03ee6395719a7791ab1366b974056e55afe265a3956b64025b293b40d5866fd"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 12,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/narrow_passage-2-7-scale12.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "aee69d9021b8ccea0232bdfdfdd5c834d174c474cf1533743743ecebedc39e9e",
+        "forward": "e5a5572d948844bf728d1bb8dc85408a8a10480f9da8e12ff56fb686608d0b99",
+        "returned": "e5a5572d948844bf728d1bb8dc85408a8a10480f9da8e12ff56fb686608d0b99"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    }
+  ]
+}

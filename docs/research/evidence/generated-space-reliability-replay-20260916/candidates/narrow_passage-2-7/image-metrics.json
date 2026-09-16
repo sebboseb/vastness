@@ -1,0 +1,26 @@
+{
+  "loadSeconds": 2.5362945329979993,
+  "generationSeconds": 1.0761693989988999,
+  "alphaSeconds": 0.36048055499850307,
+  "tokenCounts": [
+    60,
+    60
+  ],
+  "tokenLimit": 77,
+  "promptTruncated": false,
+  "foregroundFraction": 0.8524883758650519,
+  "torchPeakAllocatedBytes": 8288533504,
+  "torchPeakReservedBytes": 9502195712,
+  "torchVersion": "2.4.0+cu121",
+  "torchCudaVersion": "12.1",
+  "gpuName": "NVIDIA GeForce RTX 3090",
+  "alphaMethod": "white-matte-or-full-frame-v1",
+  "conditioningMode": "white-matte",
+  "matteForegroundFraction": 0.9623794555664062,
+  "transparentPaddingPixels": 16,
+  "conditioningSize": [
+    544,
+    544
+  ],
+  "alphaLimitation": "Color key may remove pale material; RGB retained for inspection."
+}

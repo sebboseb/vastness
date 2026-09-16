@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-vast-hall",
+  "sourceObservation": "Image depicts a high vaulted hall with perimeter columns and broad uninterrupted central floor.",
+  "generatedObservation": "Scale10 browser entry, greater-than3m generated-support traversal and return succeed; scale12 entry fails tolerance mismatch. Primary strict enclosed route not accepted.",
+  "evidence": [
+    "source-rgb.png",
+    "diagnostic.json",
+    "browser"
+  ]
+}

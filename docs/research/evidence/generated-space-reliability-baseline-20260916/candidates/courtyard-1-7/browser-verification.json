@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "courtyard-1-7",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 10,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/courtyard-1-7-scale10.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "4b2084944ff1af4d8b6952d8f49197b2ff952f5f20572f4bafef6f7f5f4292a0",
+        "forward": "1a2d90519be7f27169dbac0b1819b2a7dc81eb88e9d15beb5f497e6cefbc79c3",
+        "returned": "1a2d90519be7f27169dbac0b1819b2a7dc81eb88e9d15beb5f497e6cefbc79c3"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 12,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/courtyard-1-7-scale12.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "b76248f538a0cb9282a6b5d74c5fdb6a82c398cd178fdb93aa979bbbac52cd2d",
+        "forward": "afb0ed4a392e73457fc3d597fe6c447f77b830169f34371fefa3d0075fff4ba0",
+        "returned": "afb0ed4a392e73457fc3d597fe6c447f77b830169f34371fefa3d0075fff4ba0"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    }
+  ]
+}

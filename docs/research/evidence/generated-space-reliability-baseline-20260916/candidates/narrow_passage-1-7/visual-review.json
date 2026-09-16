@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-stone-passage",
+  "sourceObservation": "Image shows a narrow masonry passage with a continuous visible floor and narrow far opening.",
+  "generatedObservation": "All scales pass original-triangle assessment but browser entry fails support-gap-or-step before reaching generated support. Do not classify this reproduced tolerance mismatch as missing floor.",
+  "evidence": [
+    "source-rgb.png",
+    "diagnostic.json",
+    "browser"
+  ]
+}

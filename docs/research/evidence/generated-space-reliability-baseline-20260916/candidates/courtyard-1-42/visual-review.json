@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-courtyard-with-closed-door",
+  "sourceObservation": "Image shows a paved courtyard with enclosing masonry and open sky, but the distant doorway contains a closed dark door.",
+  "generatedObservation": "Primary browser enters, traverses5.82m on original generated support and returns; endpoint faces nearby coarse walls and an irregular opening, not a polished complete courtyard.",
+  "evidence": [
+    "source-rgb.png",
+    "diagnostic.json",
+    "browser"
+  ]
+}

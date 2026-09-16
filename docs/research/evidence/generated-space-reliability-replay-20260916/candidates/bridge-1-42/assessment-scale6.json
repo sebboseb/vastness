@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "261279b0fcb27df5ec822c9db09bb85e296c12aba270e7f26dacce3aa5e0d026",
+  "status": "failed",
+  "transform": {
+    "scale": 6,
+    "yaw": 0,
+    "position": [
+      0,
+      1.6198060512542725,
+      0
+    ]
+  },
+  "options": {
+    "radius": 0.3,
+    "height": 1.8,
+    "eyeHeight": 1.65,
+    "maxStep": 0.25,
+    "maxSlopeDegrees": 35,
+    "sampleStep": 0.05,
+    "contactTolerance": 0.015
+  },
+  "bounds": {
+    "min": [
+      -2.3542175889015198,
+      0,
+      -3.0072158575057983
+    ],
+    "max": [
+      2.4024930596351624,
+      3.1701237559318542,
+      3.0074833631515503
+    ]
+  },
+  "route": [],
+  "samples": [],
+  "entry": null,
+  "approachDirection": null,
+  "seam": null,
+  "approach": null,
+  "approachStart": null,
+  "approachVerified": false,
+  "shellComparison": {
+    "sourceSha256": "261279b0fcb27df5ec822c9db09bb85e296c12aba270e7f26dacce3aa5e0d026",
+    "testedSamples": 0,
+    "proxyBlockedSamples": 0,
+    "originalClearSamples": 0,
+    "method": "Original accepted support/clearance samples compared against hash-matched prior surface-shell AABBs, with the earlier walker body band foot+0.2..foot+1.8. Rotated shell boxes are conservatively re-bounded; no proxy cells are removed."
+  },
+  "metrics": {
+    "sourceTriangles": 562340,
+    "sourceVertices": 281262,
+    "indexReferences": 657653,
+    "indexCells": 800,
+    "indexPitch": 0.2,
+    "gridPitch": 0.2,
+    "testedFloorPoints": 599,
+    "supportedPoints": 49,
+    "enclosurePoints": 0,
+    "entryCandidates": 14,
+    "rejected": {
+      "unsupported-footprint": 463,
+      "body-or-head-obstruction": 85
+    },
+    "routeLength": 0,
+    "routeDisplacement": 0,
+    "continuousEnclosedDistance": 0,
+    "maximumConnectedDisplacement": 0.8246211251235324,
+    "buildMs": 34.02129200001946,
+    "assessmentMs": 287.50708300000406
+  },
+  "reasons": [
+    "Supported points are exterior surfaces/roofs; no generated overhead opening or opposing body-height walls were found."
+  ],
+  "limitations": [
+    "Original source triangle winding defines upward support; no face deletion, authored destination support, or occupancy clearing.",
+    "Nine footprint contact probes; projected triangle-union continuity is checked for all nine during movement. The full disk is used for swept body collision.",
+    "Upright cylinder body model; 1.5cm contact tolerance, bounded step and slope, no jumping or falling.",
+    "Search is a bounded 0.2m proposal grid by default with at most 48 exterior entry proposals; failure is not a proof that every possible route is impossible.",
+    "At least 1m contiguous route has either a roof covering all nine footprint probes 1.8–6m abovefoot or opposing torso-height source walls. Semantic room recognition is not claimed."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "cave-2-7",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "96cc15d23e697dc62c3001fa053c2888259767e1176a28c5523586b324ad2004",
+        "forward": "0ceb5db879dbcd91a1ca0b421a7c78708a0a0527cf1fdd4d3c51cf2d4814b3ee",
+        "returned": "e47a09ec75d488ada216e05b256ea6816bbff5db3102b3a64a6a83290b530367",
+        "persisted": "883db9e56252f28f006275d1ca90d4be515afcbbf34a4bc3b89c3e1199ed31e6"
+      },
+      "forwardEndpointDistance": 0.0003500000485833819,
+      "returnEndpointDistance": 0.0038999999999984603
+    },
+    {
+      "scale": 10,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 12,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    }
+  ]
+}

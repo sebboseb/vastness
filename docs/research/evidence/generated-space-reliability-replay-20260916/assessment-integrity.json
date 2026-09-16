@@ -1,0 +1,932 @@
+{
+  "capturedAt": "2026-09-16T10:14:20.905535+00:00",
+  "complete": true,
+  "passed": true,
+  "errors": [],
+  "baselineHashesVerified": 145,
+  "baselineUnchanged": true,
+  "assessedCandidates": 36,
+  "scaleAttempts": 108,
+  "allPreparedColorsIdentical": true,
+  "statusChanges": [
+    {
+      "id": "chamber-1-7",
+      "scale": 12,
+      "baseline": "failed",
+      "replay": "passed"
+    },
+    {
+      "id": "bridge-1-7",
+      "scale": 12,
+      "baseline": "failed",
+      "replay": "passed"
+    },
+    {
+      "id": "tunnel-2-7",
+      "scale": 12,
+      "baseline": "failed",
+      "replay": "passed"
+    },
+    {
+      "id": "courtyard-2-42",
+      "scale": 10,
+      "baseline": "failed",
+      "replay": "passed"
+    },
+    {
+      "id": "cave-2-42",
+      "scale": 12,
+      "baseline": "failed",
+      "replay": "passed"
+    }
+  ],
+  "acceptedRouteChanges": [
+    {
+      "id": "tunnel-1-7",
+      "scale": 12,
+      "entryChanged": true,
+      "baselineRoutePoints": 16,
+      "replayRoutePoints": 16
+    },
+    {
+      "id": "bridge-1-42",
+      "scale": 12,
+      "entryChanged": true,
+      "baselineRoutePoints": 34,
+      "replayRoutePoints": 35
+    },
+    {
+      "id": "tunnel-2-7",
+      "scale": 10,
+      "entryChanged": true,
+      "baselineRoutePoints": 37,
+      "replayRoutePoints": 43
+    }
+  ],
+  "cases": [
+    {
+      "id": "large_open_interior-1-7",
+      "sourceSha256": "b6315fe62b32374bbf3db71538e16b19b8d342eaa975417e0eb1594222048457",
+      "assessmentSha256": "b38d6398bf1d6027a0160edc4668a1ea0ef86b148fe3300f681282058f60a5e2",
+      "diagnosticSha256": "3c6b8e5c5c4897093eb1e17c344e24fa261e5fcf518437e868ace5ced405f8ea",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "tunnel-1-7",
+      "sourceSha256": "03ea4b0ea0d52c31609a350bac8362969bde7ee7141a8542bacd3038af67cffe",
+      "assessmentSha256": "953b50ddb8757d516ee040df54c54db763b75436e395cccee722b81a88e1bef7",
+      "diagnosticSha256": "91a7195549dc623359707f554d738099d754d270e6c1f2386786aa0328805668",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "doorway-1-7",
+      "sourceSha256": "3b2e6b1800b0f9565cf699eea62f1af945e8ce64f453f6360ad2e96770d92810",
+      "assessmentSha256": "bfa16543571047ea261e779868b0ee5ce90e6f7730fb99868f0614182eab7a37",
+      "diagnosticSha256": "cf697d10c9b4769d6e3aa5ea9515adc1d6ffc6e3543b2a4db6581488d0b193a4",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "failed"
+        }
+      ]
+    },
+    {
+      "id": "narrow_passage-1-7",
+      "sourceSha256": "75e8c7130f57c8786a79c28cc81daa1007039c13ca4ae61bfd97bd4a027c0774",
+      "assessmentSha256": "a172b23d448888aedf7dc1c4b9a214c6083a0bd31abdf20fb62720f08bfce2f3",
+      "diagnosticSha256": "5f9544a1547aac92fbb6e687be374457a7c4b2c2bfa2e0e43620779e45502467",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "chamber-1-7",
+      "sourceSha256": "d526aec6874c3a1259fe4af64beb770ab96888df3909b58f4e0bd7f79e2ad464",
+      "assessmentSha256": "9c0417fb0953af1cd4c9033bbd442d30da85846dfd54971a7abdd96192b0b6e3",
+      "diagnosticSha256": "c4981a3debf50ccc143a30fcfccbb32b3c869241d45f2f3729bb60e78ee22de8",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "cave-1-7",
+      "sourceSha256": "a56bb24593ddd9164444ec54f03365f5e8712636a983ae6e50a82fa1f4b172bf",
+      "assessmentSha256": "9ad2fed24b7625f9247e85d1ae9ead2223689d901fac367edfa0fcc1b28ad9fe",
+      "diagnosticSha256": "a40dcde2e229aa9b9752c98450a87ad7f0da3ba153b087795a90edd548fb8cc8",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "corridor-1-7",
+      "sourceSha256": "5383ef9cabe2f2d88fba3b08d8c4b97f2bb7f519e882a7253b8773899b5339d7",
+      "assessmentSha256": "c81c12b2e602b27c242dbe51a42d7a7df4ed4aab33d147cef1d93c9be234fcb7",
+      "diagnosticSha256": "81779c4e19c08a11e77f5efaad75568a18f5ce10c01bc8d36a844649e66ccba9",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "courtyard-1-7",
+      "sourceSha256": "7616b93737b806eddb845bcee9d60cc1c29989cd2d7bd7ec9ebeefcd3134b305",
+      "assessmentSha256": "1e2be6b144824c4db203576acf7bfda1a930635426c51018c5d7f238fd0a21af",
+      "diagnosticSha256": "7b5c87d98030bc9a06af41d95750699b11d1c198e13f7cfe85446c9abd527658",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "bridge-1-7",
+      "sourceSha256": "5a4c29d4289eeb9c9bdbaa2b1015a14da2964f30bbafe9336eac7b0f7db60b71",
+      "assessmentSha256": "a9261d1ff009249ae34fc9c5d2b3d190ca97773ce2c5893f3f8e694988fc7fc8",
+      "diagnosticSha256": "b4a88cf024c0e2bbbd3aec183b6c9e28bf65dadc7ae43cccc2934db25883031d",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "large_open_interior-1-42",
+      "sourceSha256": "2e43864cb5022f8d122ffa76f060afe903e6051feea8b04f43530bce40909c5d",
+      "assessmentSha256": "3c25db08c7cf698b581e68a727d2efe8cb0f0116029e6a969908ae8de152bf70",
+      "diagnosticSha256": "4bb17aaf5f9872a7c100a91c9ef89db46491157a54b04825af3ee394811a2d66",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "bridge-1-42",
+      "sourceSha256": "261279b0fcb27df5ec822c9db09bb85e296c12aba270e7f26dacce3aa5e0d026",
+      "assessmentSha256": "3f973e76d12427ce3c4552b5947e025272600baae9bbfbcb6abc7f6e84d9c505",
+      "diagnosticSha256": "051a5cbb76eedddcd0121614e85c206e705a4842fe74bb34e29eebb8bb05c8d5",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "doorway-1-42",
+      "sourceSha256": "7dc260e05158dda0e43ecd63d5f6e7db5bb57e6bab7265be5aed0f7513eb3206",
+      "assessmentSha256": "e05528bebd89f5e77eaa4b110fb8673e545ee4356f8e403c79daac53937888bf",
+      "diagnosticSha256": "fbddfb2f8aa5b435f2d7096877e2eca0a904364822e8cb7117ad9dfddc48d661",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "failed"
+        }
+      ]
+    },
+    {
+      "id": "narrow_passage-1-42",
+      "sourceSha256": "afcbf5920dd1230ee9c845fd59726ecd00de692d6a35cb787046beb8212b98ea",
+      "assessmentSha256": "a2eae491a984714dee8853e7bb887fefb0ada3a8fe4b9fa9ae871ecd880f631c",
+      "diagnosticSha256": "9a864417aa0bc32013b657af612b04e0e48ce48e18e12f396cbaf794a4e72c2b",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "failed"
+        }
+      ]
+    },
+    {
+      "id": "cave-1-42",
+      "sourceSha256": "2e23286835d759ed91268f1b782689060c5e7501cf0008357a4d3e01a1eac9ad",
+      "assessmentSha256": "b617ad9d8b33425aaaacb5e2e2a46a6f42c4275a6421ac04fa0bd8c08a70faa2",
+      "diagnosticSha256": "3e4f13adb8cb114b66661b500205d9e8635ec61ce87fdda20ddf07a559e255e8",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "courtyard-1-42",
+      "sourceSha256": "9e1df2a956a459ac91917dc0ccd92804235bf901dd094fdf201fb3fcf7dfe269",
+      "assessmentSha256": "b1d8c06873f7b2e407f3d45862c723fb9ac9310be6961d47b5937019411a7ce0",
+      "diagnosticSha256": "593f545ffd72d32527b68961590d2d20614ad186ba7caa3bb22d2e29b9cb8245",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "corridor-1-42",
+      "sourceSha256": "589e5e427db97ef45a76411ea1629c08f55b39b82efe3688359e8d5c795c7eae",
+      "assessmentSha256": "54e39b13237ca57188c94733523f3c52dd1d2674e1c76b40a1d8a222c88d6567",
+      "diagnosticSha256": "5421e056885a6d3b4c2cd50c906e9fad34166181a300f1dd3beadf859fd920ba",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "tunnel-1-42",
+      "sourceSha256": "ca0f3ceb9e7248fd493d597a5f715df12cc911c647b7e631c1586f32a9dc001e",
+      "assessmentSha256": "1e2fe6d65a68287e6165e22498e6e84a55b203e5e5071d82c1ffaea3f84dfbc1",
+      "diagnosticSha256": "f56c329fe433509eded534e66c5c9eb2de8332ba00824ce8ce7b772fd8b8f614",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "failed"
+        }
+      ]
+    },
+    {
+      "id": "chamber-1-42",
+      "sourceSha256": "2b6e56636c72bdccdd387c4a30a7e98526d15efeab66d47c396287f81d7a8a76",
+      "assessmentSha256": "6edab1ea7f961c1aadc8e1529d02acf7462d56a8867654074f77063c442f86a0",
+      "diagnosticSha256": "ab08a9ef8b2d42adc4c928ec123be361f8af7a056ef471795d11b48b2f6ceacb",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "failed"
+        }
+      ]
+    },
+    {
+      "id": "courtyard-2-7",
+      "sourceSha256": "6bccae253afbe6bdb595f3501e195ac7798c8e7e6784e76340a0688b262186df",
+      "assessmentSha256": "f4a91aec061bd386238fb5556351c3742a26455c196a16b680dc0e0cc40df44c",
+      "diagnosticSha256": "562679fc6198c723d2a77e5d5daddeebfaae2cd2dce8c4f0dc28786f48556382",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "bridge-2-7",
+      "sourceSha256": "68e8a625f16c7bdda99cdd299323526ff70d8131a49d55bc25e4d8ccb9c8ed98",
+      "assessmentSha256": "c760e90aa72ae2987af54697956df5adc811086eb0f16cd916d52dc19507cf6b",
+      "diagnosticSha256": "d89d1c2f958d65b7041ac0bbb7c9772fc77633e1897563c337f14de939cb8e47",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "failed"
+        }
+      ]
+    },
+    {
+      "id": "tunnel-2-7",
+      "sourceSha256": "0ff7a321ed9c1d36fdf48c1def049eb5144c42380eed28f161a7aa2a2167467a",
+      "assessmentSha256": "3dadef0f2ecc60dbcff635af5228f5d8b1903e0342cdb6b1df4c805ce377c971",
+      "diagnosticSha256": "4dd6fea96eb6983330d448332791f4ed89a0e323a7959d41f3a4e5d31a83e11e",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "corridor-2-7",
+      "sourceSha256": "3deff24d4be94dee2bc86c7bc6d3091f3ebc6ec2bf0c1d51aad186022ed87f00",
+      "assessmentSha256": "204c5182b3e9311e2812736478317de25dec598cc570d949862a99cbb3514e79",
+      "diagnosticSha256": "c49dcb7cb384f1957448b8d11ea6b5ca5117ddb0a1055097e7d58e5cdecaa44d",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "narrow_passage-2-7",
+      "sourceSha256": "594aadf3c943e1769cc9893a1841eac9f1ab5f3fd2c69382feea5f86583c4273",
+      "assessmentSha256": "1654723470ad2309e5bf7e9d9fae417488ccc438c25d70c82dc8ddcc84d4d7d8",
+      "diagnosticSha256": "9f38c55f248029e01958212cd21d1bf570ad070ac5e1fd6613e160a3efe732ed",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "chamber-2-7",
+      "sourceSha256": "7241fe8446a75299314f00c5a5bc70893cc20f4ab7c63444c6f77f67d1921a09",
+      "assessmentSha256": "76fa5096ffe074d5bd6d87e1548498ba1f9d74ceab55529bcb94f76d7e75880f",
+      "diagnosticSha256": "e11fe3257c48f78f028e8d5c913d550eddefa743b88878525ad05ac6b2389575",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "failed"
+        }
+      ]
+    },
+    {
+      "id": "cave-2-7",
+      "sourceSha256": "bc528fa49a4c2d671206c150c39991ddf3047794aaf672c2441dd55163d00685",
+      "assessmentSha256": "1263adc6ae8cedc0f96b4d6b349595000cb812c6ed00486deefc24e31c049960",
+      "diagnosticSha256": "63dd5318088a20a37e786dad57e037ed7c184eafd584b173dab17b45ac62135d",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "failed"
+        }
+      ]
+    },
+    {
+      "id": "large_open_interior-2-7",
+      "sourceSha256": "d7aa255ae47867ea3c6df7a2562315511a79b396d47f4ccda9c11ffbeffadc3d",
+      "assessmentSha256": "0b4b23df26ebcc0c7fc05b82e093a9fa3ad20275bbaeefbc4a9a8cfc87d3d396",
+      "diagnosticSha256": "8d26e7c1484565a36cdae43c83f54fd292dfe871401b2e7b64e6a27e638b7acd",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "doorway-2-7",
+      "sourceSha256": "63c6ce8785a9cdf0462f6df5079fff737ef7aa67bc3796211b6f05d31bf78080",
+      "assessmentSha256": "b3019ea5bed9d2d98804a0acf06cb0ae3e7d39c4aebd5a2bc03d747e8c6fe79b",
+      "diagnosticSha256": "8734a8b157abad974330f8aa0d53af6826b79d2ddff092659407b24950848c2e",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "large_open_interior-2-42",
+      "sourceSha256": "185a62eabee619fae3843600702cb259b0a43af9e6f22137a09598938cebf36f",
+      "assessmentSha256": "f1ec069f9ee120cf089be295980dd1be8d0adb905af927246b8d682802acc05e",
+      "diagnosticSha256": "04b18905e650ceba9aa2ce7d876c549f1b83910c7d9907eaa4f5f5319ac21503",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "failed"
+        }
+      ]
+    },
+    {
+      "id": "doorway-2-42",
+      "sourceSha256": "8a6bdf101d8d1b01b96832bee7e7d3277374fdba8a398656e7d70a2c1b2e6fda",
+      "assessmentSha256": "77c60570b2405ea8d0c3b9c9f80ac022b8d02cad1d538c5dc01f63a4c53b46aa",
+      "diagnosticSha256": "fcf42d54b992f00de2633bd927fcc3e911ec31bf3e6077262e3f07357b51411e",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "corridor-2-42",
+      "sourceSha256": "79b792cfba58bb085aa025625e66ad170eaf5d21cecf1c18f4ed654f523345fe",
+      "assessmentSha256": "4b189f6fc30ef8b1024ba1b82473f5b5a767fe40580eb3eb07e09c25e149d050",
+      "diagnosticSha256": "15b56cc9824541cd9638edc5179990cd1a2dfe39b5e746e3bc8d84f0ddf1738a",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "chamber-2-42",
+      "sourceSha256": "22a79d784e63af8b34e5b2565e1bfdfc759f8d3a6ecf3c1bdd198f02763bb0bc",
+      "assessmentSha256": "3932c9f3eb0d6c28e701e1ec79451f8fe61a5a6e599904da50be53edb1a1a775",
+      "diagnosticSha256": "14949c1fa2ce919031f131ec5d059adc8382ad1b0bdf841ebbbf06caf59f052f",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "failed"
+        }
+      ]
+    },
+    {
+      "id": "narrow_passage-2-42",
+      "sourceSha256": "959d16f942eda033df6c66c738c6db0abf5862cee35852436f22c670b237e489",
+      "assessmentSha256": "ed24e38643a8d1bb4ea7f67c6ae72cfa494bf9b2c7786ea3b4287ad5a9ab12ec",
+      "diagnosticSha256": "eef90e32805c723a437f8117b0e9d79942f461576e5497225e4c1cf9eaa9e16e",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "failed"
+        }
+      ]
+    },
+    {
+      "id": "courtyard-2-42",
+      "sourceSha256": "443c614d9e2df544032a989b6cfa769715330eb95081d630d635f84192ace40f",
+      "assessmentSha256": "ad4ebc89e0072670aa9ab6a95125536c56c5f979c97062a33beef2a853c771c6",
+      "diagnosticSha256": "788069c87333562fe9b3ccc2cf75ff25f0ffac38f52d05a092cf2acded53a47a",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "failed"
+        }
+      ]
+    },
+    {
+      "id": "cave-2-42",
+      "sourceSha256": "2799c15cc829face3643046c5d400024b6ea2e4f53eddb89f68e4cdc234bd1a3",
+      "assessmentSha256": "89d5c5c9ad46b4ea988005d3d76929c01de17f7b7f6ccd2467fe69ed459d04e7",
+      "diagnosticSha256": "5168069ac0e79b8e19a4ae00cc9b1c8f8f9f2488cd4a541affa04e85e36c6a09",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "bridge-2-42",
+      "sourceSha256": "08e209f8cc1ba52619cfd02edc04abc6d4522232c238eb19998801bfb2a16e00",
+      "assessmentSha256": "71030841490a0df7ec0928ed9369f4c7fcef10d558b76989271250efdfbbdbe7",
+      "diagnosticSha256": "eaa865157ea4585d6c16c560fc3032f49fea33dea204178ed25023d0521d75ca",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "passed",
+          "replay": "passed"
+        },
+        {
+          "scale": 12,
+          "baseline": "passed",
+          "replay": "passed"
+        }
+      ]
+    },
+    {
+      "id": "tunnel-2-42",
+      "sourceSha256": "57449dddb406c34b47e052c63fae7c8e3c3f974c1949cc3f49f7af6e51e38faf",
+      "assessmentSha256": "047db2a978b95f0d80444817ef92c0fa0770c59fba8bbcaf379b7277830d7e85",
+      "diagnosticSha256": "69e1437d54cac65a41c302e99fd982f4317ed99ad89df6a8b161f138cb3fba63",
+      "colorsIdentical": true,
+      "scales": [
+        {
+          "scale": 6,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 10,
+          "baseline": "failed",
+          "replay": "failed"
+        },
+        {
+          "scale": 12,
+          "baseline": "failed",
+          "replay": "failed"
+        }
+      ]
+    }
+  ]
+}

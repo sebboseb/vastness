@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "doorway-2-42",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/doorway-2-42.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "fc2570f72f309fa2a5d4f89f4ab7cbe573a4a6c36d969eb668f6fbfec76ab50c",
+        "forward": "321d1f786f2a85e3c8f9c8407b3a86a45bc559a58ac8e599967e61193cfc4cba",
+        "returned": "321d1f786f2a85e3c8f9c8407b3a86a45bc559a58ac8e599967e61193cfc4cba"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 10,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/doorway-2-42-scale10.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "79d60112c0e6d5b43c837ae200073fcbfc00b05db580de7456efafa4ff3c960b",
+        "forward": "856dd35838b670e39058d1704d8946d97d662506fcf82eb11c3dee21f882d6a0",
+        "returned": "856dd35838b670e39058d1704d8946d97d662506fcf82eb11c3dee21f882d6a0"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 12,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "04dcae0bf985c274774aa245d4347d53f64fba645914312df71c8c6ce4431de0",
+        "forward": "1443f7a49ba73101d89a2fa7c79ad92286b609415599659eef3f79784f7e8b43",
+        "returned": "5b4ce98f7239d9d935f0021596d6a3eeadfe8f533dd6fd89d7532aa7f3b0274e",
+        "persisted": "bb1923849ea27822274fb0cb28d4dd88211e46a45529881f7def02376e9b375f"
+      },
+      "forwardEndpointDistance": 0,
+      "returnEndpointDistance": 0.0019500000000176598
+    }
+  ]
+}

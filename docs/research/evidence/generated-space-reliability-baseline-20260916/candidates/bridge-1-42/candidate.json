@@ -1,0 +1,54 @@
+{
+  "candidate": "bridge-1-42",
+  "id": "bridge-1-42",
+  "category": "bridge",
+  "promptVariant": 1,
+  "seed": 42,
+  "text": "A stone bridge with a flat continuous deck, tall solid side parapets and an empty walkway joining two broad stone landings.",
+  "rawIntent": {
+    "text": "A stone bridge with a flat continuous deck, tall solid side parapets and an empty walkway joining two broad stone landings.",
+    "source": "text",
+    "seed": 42
+  },
+  "declaredAt": "2026-09-16T09:14:44.341805+00:00",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A stone bridge with a flat continuous deck, tall solid side parapets and an empty walkway joining two broad stone landings.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "mixed"
+    },
+    "representation": "abstract-solid"
+  },
+  "submissionAttemptedAt": "2026-09-16T09:14:44.355381+00:00",
+  "worldId": "intent-ac3e6278-91f7-4ea0-826f-712434efa055",
+  "jobId": "intent-ac3e6278-91f7-4ea0-826f-712434efa055",
+  "request": {
+    "id": "intent-ac3e6278-91f7-4ea0-826f-712434efa055",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A stone bridge with a flat continuous deck, tall solid side parapets and an empty walkway joining two broad stone landings.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "collected": true,
+  "gpuStatus": "succeeded",
+  "macStatus": "ready",
+  "finishedAt": "2026-09-16T09:15:57.002067+00:00",
+  "generationSeconds": 65.44191685799888,
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 1856.0,
+        "sampledPeakMiB": 15529.0,
+        "samples": 583
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  },
+  "failureStage": null,
+  "geometryAssessment": "pending separate generated-support assessment"
+}

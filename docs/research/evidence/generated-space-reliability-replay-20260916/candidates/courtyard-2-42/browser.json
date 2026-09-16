@@ -1,0 +1,20 @@
+{
+  "attempts": [
+    {
+      "scale": 10,
+      "status": "passed",
+      "entry": true,
+      "traversal": true,
+      "return": true,
+      "sourceSha256": "443c614d9e2df544032a989b6cfa769715330eb95081d630d635f84192ace40f",
+      "evidence": {
+        "forward": "browser/scale10-forward.json",
+        "returned": "browser/scale10-returned.json",
+        "screenshots": [
+          "browser/scale10-forward.png",
+          "browser/scale10-returned.png"
+        ]
+      }
+    }
+  ]
+}

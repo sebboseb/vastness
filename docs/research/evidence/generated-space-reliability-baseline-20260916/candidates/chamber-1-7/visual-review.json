@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-chamber-with-obstacle",
+  "sourceObservation": "Image shows an enclosed arched room with multiple openings and a level foreground, but adds a raised platform despite uninterrupted-floor intent.",
+  "generatedObservation": "Primary original-triangle route passes offline; actual browser entry fails tolerance mismatch. Larger scales fail original external seam verification.",
+  "evidence": [
+    "source-rgb.png",
+    "diagnostic.json",
+    "browser"
+  ]
+}

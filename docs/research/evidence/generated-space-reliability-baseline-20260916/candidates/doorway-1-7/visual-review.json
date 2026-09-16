@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-doorway-with-floor",
+  "sourceObservation": "Image shows a thick rectangular doorway and a floor, with a shallow raised sill and bright background through the apparent opening.",
+  "generatedObservation": "Coarse overview shows a freestanding rectangular doorway and attached generated base. Strict sustained-enclosure criterion rejects all scales despite long connected support evidence; do not equate this with absent floor or blocked doorway. Overview error text belongs to the prior tunnel selection, not this inspection-only case.",
+  "evidence": [
+    "source-rgb.png",
+    "diagnostic.json",
+    "browser/scale6-overview.png"
+  ]
+}

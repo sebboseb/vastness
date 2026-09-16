@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-railway-passage-with-obstacles",
+  "sourceObservation": "Image shows a high rocky passage with rails crossing the floor and multiple arched openings; an adjacent smooth floor remains visible.",
+  "generatedObservation": "Offline routes pass at scale6/10; both actual browser entries stop at support-gap-or-step before generated support. Scale12 fails original seam assessment.",
+  "evidence": [
+    "source-rgb.png",
+    "diagnostic.json",
+    "browser"
+  ]
+}

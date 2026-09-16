@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "rock-passage-with-rail-and-distant-doorway",
+  "sourceObservation": "Source shows high rock walls around a broad pale walkway, a railway along one edge and a dark far doorway.",
+  "generatedObservation": "Coarse exterior view shows a box-like shell with rocky surface cues and a dark recess. None of the fixed scales produces an accepted route; the exterior view does not prove absence of interior free space.",
+  "evidence": [
+    "source-rgb.png",
+    "browser/scale6-overview-clean.png",
+    "diagnostic.json"
+  ]
+}

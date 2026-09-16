@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "courtyard-1-42",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "9eda61993fcd1d6a6fd603d76ea12491fac00b535eda44424067cc5b8f218e8e",
+        "forward": "e7627676931e685d5583969eea5cc1941e943352d7c36ed8671f89e52162d8b7",
+        "returned": "b7c42488d815bc8a1fa51ea350ce5acceca94a5d6d580803b55e5c42695687dc",
+        "persisted": "a0059f554f58b4556c3df7c59d295a35f3c1234a3297e5feb05ea48681871aa6"
+      },
+      "forwardEndpointDistance": 0.0007000002928290773,
+      "returnEndpointDistance": 0.005399999999990079
+    },
+    {
+      "scale": 10,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/courtyard-1-42-scale10.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "d27c2e57797006be133d01281b1fe1d581c209227297ec59b11e737ef954dc35",
+        "forward": "0fee802e9d36be8008ecdfd5212c1e38bbc516c00b26a94938309be5b8f6338d",
+        "returned": "0fee802e9d36be8008ecdfd5212c1e38bbc516c00b26a94938309be5b8f6338d"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 12,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/courtyard-1-42-scale12.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "2bae6f659b5a3fd6af2ee97e8a221513a9fe855247bf3558a613c7a33f0f7eb0",
+        "forward": "a39852a01816fb6d141d854acf632ae45f8297453b75eda103c0ac91491edc88",
+        "returned": "a39852a01816fb6d141d854acf632ae45f8297453b75eda103c0ac91491edc88"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    }
+  ]
+}

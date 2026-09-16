@@ -1,0 +1,64 @@
+{
+  "id": "intent-79a8d1ec-2343-4492-af86-afdc16a76c4a",
+  "createdAt": "2026-09-16T09:44:14.296Z",
+  "rawIntent": {
+    "text": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "quiet",
+      "openness": "enclosed"
+    },
+    "representation": "abstract-solid"
+  },
+  "derivation": {
+    "compiler": "lexical-semantic-v1",
+    "cues": {
+      "vast": [],
+      "intimate": [],
+      "sparse": [
+        "quiet"
+      ],
+      "dense": [],
+      "open": [],
+      "enclosed": [
+        "chamber"
+      ],
+      "quiet": [
+        "quiet"
+      ],
+      "ominous": [],
+      "luminous": [],
+      "joyful": []
+    },
+    "limitations": [
+      "Rule-based axis extraction; no general language reasoning",
+      "Negation handling is local, not a complete semantic parser",
+      "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+      "Concept is bounded to 600 characters; original input is retained separately"
+    ]
+  },
+  "status": "requested",
+  "jobId": "intent-79a8d1ec-2343-4492-af86-afdc16a76c4a",
+  "request": {
+    "id": "intent-79a8d1ec-2343-4492-af86-afdc16a76c4a",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"quiet\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "events": [
+    {
+      "type": "intent-recorded",
+      "at": "2026-09-16T09:44:14.296Z"
+    },
+    {
+      "type": "constraints-derived",
+      "at": "2026-09-16T09:44:14.296Z"
+    }
+  ]
+}

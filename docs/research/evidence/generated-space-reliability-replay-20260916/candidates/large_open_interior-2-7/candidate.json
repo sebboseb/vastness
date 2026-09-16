@@ -1,0 +1,54 @@
+{
+  "candidate": "large_open_interior-2-7",
+  "id": "large_open_interior-2-7",
+  "category": "large_open_interior",
+  "promptVariant": 2,
+  "seed": 7,
+  "text": "A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles.",
+  "rawIntent": {
+    "text": "A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles.",
+    "source": "text",
+    "seed": 7
+  },
+  "declaredAt": "2026-09-16T09:37:00.150574+00:00",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles.",
+    "axes": {
+      "scale": "vast",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "enclosed"
+    },
+    "representation": "abstract-solid"
+  },
+  "submissionAttemptedAt": "2026-09-16T09:37:00.169369+00:00",
+  "worldId": "intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983",
+  "jobId": "intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983",
+  "request": {
+    "id": "intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles.\",\"axes\":{\"scale\":\"vast\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 7
+  },
+  "collected": true,
+  "gpuStatus": "succeeded",
+  "macStatus": "ready",
+  "finishedAt": "2026-09-16T09:38:47.357551+00:00",
+  "generationSeconds": 93.74813696699857,
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 1786.0,
+        "sampledPeakMiB": 21331.0,
+        "samples": 865
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  },
+  "failureStage": null,
+  "geometryAssessment": "pending separate generated-support assessment"
+}

@@ -1,0 +1,765 @@
+{
+  "capturedAt": "2026-09-16T09:56:12.377Z",
+  "passed": true,
+  "candidates": 36,
+  "scaleAttempts": 108,
+  "errors": [],
+  "cases": [
+    {
+      "id": "large_open_interior-1-7",
+      "sourceSha256": "b6315fe62b32374bbf3db71538e16b19b8d342eaa975417e0eb1594222048457",
+      "assessmentSha256": "0e00e89f6feceebdd265584496c4f1932b39f997d7f20195dc2c16fcda201749",
+      "diagnosticSha256": "b8be49daa8ad52ac9eb56feb0629e3732027403accd5a0f98c0bd5f6aef912b2",
+      "colorsSha256": "9941393b13f633966e2f585980d83f0e1d36f0e7d8ad0a85b8b937ebeb536a53",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "tunnel-1-7",
+      "sourceSha256": "03ea4b0ea0d52c31609a350bac8362969bde7ee7141a8542bacd3038af67cffe",
+      "assessmentSha256": "ba2c97bec6bec34c20700d88ea50604e645f1c475684ce3549a5c42af8949055",
+      "diagnosticSha256": "2ce63edd436c24c680b0a3848e1f9bf993976399d84349e6e0d75ffd08016a41",
+      "colorsSha256": "68a7005a7beb3de21960039ace7002108dd84a48fb8f3ad62c8f9a99b130b14b",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "doorway-1-7",
+      "sourceSha256": "3b2e6b1800b0f9565cf699eea62f1af945e8ce64f453f6360ad2e96770d92810",
+      "assessmentSha256": "d0c91cca651e6e46c246cf292d7839d4f8cc8fe1b0ad5c28cf821f97302a94d5",
+      "diagnosticSha256": "ba4d1dd92d9a711bec43a5f7689f647183a48fff1b93ccb09b97eb846bb09885",
+      "colorsSha256": "615b5497a6facbedf1798e259c39789484fb40b972d4d78548106003a5614472",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "id": "narrow_passage-1-7",
+      "sourceSha256": "75e8c7130f57c8786a79c28cc81daa1007039c13ca4ae61bfd97bd4a027c0774",
+      "assessmentSha256": "5318a42b6567fafc1da2b4e63244045daf591a35fb1ee07fb41c4cd14015d683",
+      "diagnosticSha256": "5269320e87181ab007acaf0c982fd5359c8cf0792175b3d339775fc8f13e9c24",
+      "colorsSha256": "8b3ff3cc7412bafd451d07fb7ff9adb16f85825977951ebc7865da648fb6c359",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "passed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "chamber-1-7",
+      "sourceSha256": "d526aec6874c3a1259fe4af64beb770ab96888df3909b58f4e0bd7f79e2ad464",
+      "assessmentSha256": "1c5615cd6edac3b2ae861cae86c40d112909165221e1cdf1e1f110bef21e3a0e",
+      "diagnosticSha256": "8a5cc6663933a92bde8f7c46d042622279b8574a0fe34fb267b6925b8a749696",
+      "colorsSha256": "7dd43e0affaa1912c019ddb225036a5876138036d139ea1924c11893fccdbafa",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "passed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "id": "cave-1-7",
+      "sourceSha256": "a56bb24593ddd9164444ec54f03365f5e8712636a983ae6e50a82fa1f4b172bf",
+      "assessmentSha256": "dd9ccf2e6a564225512b9c51ad1509ed8903508d91808f926fe0ccb9139ab111",
+      "diagnosticSha256": "0380ebe743ce48b2a6bb6073c03bf652e7ed9667afd431718e4e7c2a98f7e788",
+      "colorsSha256": "afe31c34efa1ebdc94e524cc822772a0b87b805039aa32d7ee521eeda38c45d0",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "corridor-1-7",
+      "sourceSha256": "5383ef9cabe2f2d88fba3b08d8c4b97f2bb7f519e882a7253b8773899b5339d7",
+      "assessmentSha256": "0c4d50a2902a82bdf737fe43c893e6114b8d64456e92307621801ab38835f4b7",
+      "diagnosticSha256": "81779c4e19c08a11e77f5efaad75568a18f5ce10c01bc8d36a844649e66ccba9",
+      "colorsSha256": "b4a8fd22b9d99524c340ede5a9ff5b00c08d38905901a4d9aa01f576aec64bf0",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "passed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "courtyard-1-7",
+      "sourceSha256": "7616b93737b806eddb845bcee9d60cc1c29989cd2d7bd7ec9ebeefcd3134b305",
+      "assessmentSha256": "e72d3376d0692fff05a501e8209a8560585215f0b98a16550a281e5d8b8f2806",
+      "diagnosticSha256": "7b5c87d98030bc9a06af41d95750699b11d1c198e13f7cfe85446c9abd527658",
+      "colorsSha256": "27ab250b9af22c8134e05c998e5b34eb4224335540b5452a7475933e81822471",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "bridge-1-7",
+      "sourceSha256": "5a4c29d4289eeb9c9bdbaa2b1015a14da2964f30bbafe9336eac7b0f7db60b71",
+      "assessmentSha256": "2ae82a2293e1036ef2df96627002b73e5a6a4880e31adbe94b03c357c2ce0f3e",
+      "diagnosticSha256": "2d0c7b49ba325b8e889901daa06b1494f2d7b3f964cc5443db84acd76a0a1142",
+      "colorsSha256": "728c5458ea99574f4ea5a53118ee389cd6ca6e29e35cfe7f8401c2524c9ee1bf",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "id": "large_open_interior-1-42",
+      "sourceSha256": "2e43864cb5022f8d122ffa76f060afe903e6051feea8b04f43530bce40909c5d",
+      "assessmentSha256": "21b19340d52db038c07bc0ef169ec6698f895345b5a402dbb20d4392aabc2522",
+      "diagnosticSha256": "4bb17aaf5f9872a7c100a91c9ef89db46491157a54b04825af3ee394811a2d66",
+      "colorsSha256": "a3613f74a76ecf83ab1a6291109a0fd10853e86bb7769986d4ea232ae1556118",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "bridge-1-42",
+      "sourceSha256": "261279b0fcb27df5ec822c9db09bb85e296c12aba270e7f26dacce3aa5e0d026",
+      "assessmentSha256": "db57ce28427c5651cc623947a38142766da067f8a25c202c0a912c9852994db1",
+      "diagnosticSha256": "9b1d0e2ca87275088f311c1ce424730f892fe42de0ba81dac34547353b289a4a",
+      "colorsSha256": "88478239d9d2c95eaa888bfef0cd2a19eeeba06feb2dddd318b59d59799cd638",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "doorway-1-42",
+      "sourceSha256": "7dc260e05158dda0e43ecd63d5f6e7db5bb57e6bab7265be5aed0f7513eb3206",
+      "assessmentSha256": "7c17377e40df0ec72cb7b18e6556cc1f44befd7269ebed3b55322d1575a8ed3f",
+      "diagnosticSha256": "fbddfb2f8aa5b435f2d7096877e2eca0a904364822e8cb7117ad9dfddc48d661",
+      "colorsSha256": "b21332af7558de1f98f5cd0360058607442d22c7f5c1b70b3f6ba015ba9a923a",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "id": "narrow_passage-1-42",
+      "sourceSha256": "afcbf5920dd1230ee9c845fd59726ecd00de692d6a35cb787046beb8212b98ea",
+      "assessmentSha256": "04c2dc079dcbe86f4e73548950ad304801aece3ca142d0b4832d0b760cf45f32",
+      "diagnosticSha256": "9a864417aa0bc32013b657af612b04e0e48ce48e18e12f396cbaf794a4e72c2b",
+      "colorsSha256": "7deac73a3b67e2c6f2eb95fb6f734f3c0a80c0ecb0e0e59fbfc795ec2867ebfc",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "id": "cave-1-42",
+      "sourceSha256": "2e23286835d759ed91268f1b782689060c5e7501cf0008357a4d3e01a1eac9ad",
+      "assessmentSha256": "28ad65a4e2c2afc4a2dd5758e95738e48714eaf5a421ca9213065a9c506e0953",
+      "diagnosticSha256": "3e4f13adb8cb114b66661b500205d9e8635ec61ce87fdda20ddf07a559e255e8",
+      "colorsSha256": "0c1b3bf759f17550456d3789e6eff507c9a1a4b1ae4a3ee134438881c999a062",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "courtyard-1-42",
+      "sourceSha256": "9e1df2a956a459ac91917dc0ccd92804235bf901dd094fdf201fb3fcf7dfe269",
+      "assessmentSha256": "5673a375fc6829235d416c919f1ac6bc2731dab345ada103ddc539af65ee759e",
+      "diagnosticSha256": "593f545ffd72d32527b68961590d2d20614ad186ba7caa3bb22d2e29b9cb8245",
+      "colorsSha256": "7746d602bc52f0fbb06aca1af39f886950c61a35e9979d6ea87056b5189ced58",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "passed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "corridor-1-42",
+      "sourceSha256": "589e5e427db97ef45a76411ea1629c08f55b39b82efe3688359e8d5c795c7eae",
+      "assessmentSha256": "20dae4dc2583e5f46cde8c16910033322b94f952572ffbbdef9c5805bd8bc632",
+      "diagnosticSha256": "5421e056885a6d3b4c2cd50c906e9fad34166181a300f1dd3beadf859fd920ba",
+      "colorsSha256": "51552090b66c0599fbaf5e2fb72befbc37276e548dc6f5fb90185ad5f4f7a302",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "passed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "tunnel-1-42",
+      "sourceSha256": "ca0f3ceb9e7248fd493d597a5f715df12cc911c647b7e631c1586f32a9dc001e",
+      "assessmentSha256": "53bae48cd6129e58b94ca19fa09d7130725265f2670f9e5a9b7a805fd28a14a1",
+      "diagnosticSha256": "f56c329fe433509eded534e66c5c9eb2de8332ba00824ce8ce7b772fd8b8f614",
+      "colorsSha256": "572ae5a82c2413bea08edc9c15a875cb025ce40ec562e5fcee9c0d5153e7af65",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "id": "chamber-1-42",
+      "sourceSha256": "2b6e56636c72bdccdd387c4a30a7e98526d15efeab66d47c396287f81d7a8a76",
+      "assessmentSha256": "f37f662cd6792576ddf33ae870115a176d6dbf6a06919b721184fe1b930994ff",
+      "diagnosticSha256": "ab08a9ef8b2d42adc4c928ec123be361f8af7a056ef471795d11b48b2f6ceacb",
+      "colorsSha256": "2b4b3cdafde98abab105c7bfb83702d50b72224a12632f965fb5ebd9c493d176",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "id": "courtyard-2-7",
+      "sourceSha256": "6bccae253afbe6bdb595f3501e195ac7798c8e7e6784e76340a0688b262186df",
+      "assessmentSha256": "04b6ccfcb622ee09929ebf2a3c8b1babe055f7d4be2fece34195336e9c0f9d1b",
+      "diagnosticSha256": "562679fc6198c723d2a77e5d5daddeebfaae2cd2dce8c4f0dc28786f48556382",
+      "colorsSha256": "c9439516d111fefd21f5faa11c71a924503e5a5c28a90a06cad2b2b25b28bd2d",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "passed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "bridge-2-7",
+      "sourceSha256": "68e8a625f16c7bdda99cdd299323526ff70d8131a49d55bc25e4d8ccb9c8ed98",
+      "assessmentSha256": "481edcf111b24cdf69d5e91db519d06b5af3b205bddf71d3f2a4663f8e3e4517",
+      "diagnosticSha256": "d89d1c2f958d65b7041ac0bbb7c9772fc77633e1897563c337f14de939cb8e47",
+      "colorsSha256": "e62d79a839985a3edf283679decbf3e8149f5eafa7182649048887ccf68d3a09",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "id": "tunnel-2-7",
+      "sourceSha256": "0ff7a321ed9c1d36fdf48c1def049eb5144c42380eed28f161a7aa2a2167467a",
+      "assessmentSha256": "f9b01177f3b4560162fccee21e127e617e1d8d4f34e9f2ad3540904dda473cef",
+      "diagnosticSha256": "5f1ef070b801b63f33b0708cbd4659b705cfb99712b3276ced0becc9ad53a679",
+      "colorsSha256": "d1b0f0c7ce3a18abed733b89650fefa791cfd65210021e222e81f1eed1def829",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "passed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "id": "corridor-2-7",
+      "sourceSha256": "3deff24d4be94dee2bc86c7bc6d3091f3ebc6ec2bf0c1d51aad186022ed87f00",
+      "assessmentSha256": "44dc208d953f5cfe6dc7741e60c2bfb977c22d0f16ce7b261f288b4dc8d401b6",
+      "diagnosticSha256": "c49dcb7cb384f1957448b8d11ea6b5ca5117ddb0a1055097e7d58e5cdecaa44d",
+      "colorsSha256": "fc3f63726962619750b485ca433734fc9040c8d8eb1d50ec8812573af7e860d1",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "narrow_passage-2-7",
+      "sourceSha256": "594aadf3c943e1769cc9893a1841eac9f1ab5f3fd2c69382feea5f86583c4273",
+      "assessmentSha256": "7ebb37a596b61970975289b15cd7a55c0ef7cd539aa9816897bbe7a494c45de0",
+      "diagnosticSha256": "9f38c55f248029e01958212cd21d1bf570ad070ac5e1fd6613e160a3efe732ed",
+      "colorsSha256": "0fc0109474c2fbbdb5ad415a38db07a8625ae50d6ded24116345e5427a57549d",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "passed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "chamber-2-7",
+      "sourceSha256": "7241fe8446a75299314f00c5a5bc70893cc20f4ab7c63444c6f77f67d1921a09",
+      "assessmentSha256": "9c332f4a3c88499b794351e7642760af8775219f8638f90e08d0c5fb3f8ec643",
+      "diagnosticSha256": "e11fe3257c48f78f028e8d5c913d550eddefa743b88878525ad05ac6b2389575",
+      "colorsSha256": "ad053394dec9805dbf65df1db2ebb1e4eda38c613d90034c55c1b4333a911ba4",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "id": "cave-2-7",
+      "sourceSha256": "bc528fa49a4c2d671206c150c39991ddf3047794aaf672c2441dd55163d00685",
+      "assessmentSha256": "48c44312d78e3bd149659935a2351ad9e7c9269331d9c9e15c02131570553618",
+      "diagnosticSha256": "63dd5318088a20a37e786dad57e037ed7c184eafd584b173dab17b45ac62135d",
+      "colorsSha256": "c6b9ff9b806a782ead4388afcbc412af1df15e43e241fa535ee412af7e467230",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "passed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "id": "large_open_interior-2-7",
+      "sourceSha256": "d7aa255ae47867ea3c6df7a2562315511a79b396d47f4ccda9c11ffbeffadc3d",
+      "assessmentSha256": "21ebd69bb39f36451f4b9d8ff36adcbd352201036ba273dddff7d156d4a35816",
+      "diagnosticSha256": "8d26e7c1484565a36cdae43c83f54fd292dfe871401b2e7b64e6a27e638b7acd",
+      "colorsSha256": "d90d72a045719ea87d9a6d3726e469618cb3b7e01be54399f4233450fbe0d55b",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "doorway-2-7",
+      "sourceSha256": "63c6ce8785a9cdf0462f6df5079fff737ef7aa67bc3796211b6f05d31bf78080",
+      "assessmentSha256": "3ec5856463b3a949493fbafeb8d05414b03202c146435df5366748620f42c79f",
+      "diagnosticSha256": "8734a8b157abad974330f8aa0d53af6826b79d2ddff092659407b24950848c2e",
+      "colorsSha256": "2411d6df6af63c4f453738149d8912276b5432b21a7a5d7073aaf950eed611d0",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "passed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "large_open_interior-2-42",
+      "sourceSha256": "185a62eabee619fae3843600702cb259b0a43af9e6f22137a09598938cebf36f",
+      "assessmentSha256": "162e72b7cb77c58accc53f80fbf9293c9694fb92bce48576397cf6333e252283",
+      "diagnosticSha256": "04b18905e650ceba9aa2ce7d876c549f1b83910c7d9907eaa4f5f5319ac21503",
+      "colorsSha256": "26eef5a6d55a2592632122503ac7bf831cc6cc16276b803ed0c8314e2846db91",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "id": "doorway-2-42",
+      "sourceSha256": "8a6bdf101d8d1b01b96832bee7e7d3277374fdba8a398656e7d70a2c1b2e6fda",
+      "assessmentSha256": "4148d703c1f01096160f1e57daac484a783c84f749adbc2c29c116761c61b9e4",
+      "diagnosticSha256": "fcf42d54b992f00de2633bd927fcc3e911ec31bf3e6077262e3f07357b51411e",
+      "colorsSha256": "8ee86da03e422876819637c48441856a6c4b16ec662482eca186f71757474219",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "passed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "corridor-2-42",
+      "sourceSha256": "79b792cfba58bb085aa025625e66ad170eaf5d21cecf1c18f4ed654f523345fe",
+      "assessmentSha256": "70ccff169d7e4da1c6a26ef4d1840b860cee8121c4966038cd9077475ec9f98a",
+      "diagnosticSha256": "15b56cc9824541cd9638edc5179990cd1a2dfe39b5e746e3bc8d84f0ddf1738a",
+      "colorsSha256": "aa1e89459dae014a96de236b4c4645b65ecfb6d5c073fa2b3213c6ce2f946d11",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "passed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "chamber-2-42",
+      "sourceSha256": "22a79d784e63af8b34e5b2565e1bfdfc759f8d3a6ecf3c1bdd198f02763bb0bc",
+      "assessmentSha256": "4e7eb26ca799aaef769131010b5969eaa65b148afd2a498cdd0508aa6bafb992",
+      "diagnosticSha256": "14949c1fa2ce919031f131ec5d059adc8382ad1b0bdf841ebbbf06caf59f052f",
+      "colorsSha256": "209c6f6215680786227ef0f6ed13cf3829dc5a4d1aee4d6ce6fd0dfce9ca575d",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "id": "narrow_passage-2-42",
+      "sourceSha256": "959d16f942eda033df6c66c738c6db0abf5862cee35852436f22c670b237e489",
+      "assessmentSha256": "9834812779636e9faf8e7aec174e624240c9cb867f9292d83028f50c339507cc",
+      "diagnosticSha256": "eef90e32805c723a437f8117b0e9d79942f461576e5497225e4c1cf9eaa9e16e",
+      "colorsSha256": "647db70a2b8fb00cf5d6e3efcdf9c635f85a9970ca5e0c055317c622a6218da0",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "id": "courtyard-2-42",
+      "sourceSha256": "443c614d9e2df544032a989b6cfa769715330eb95081d630d635f84192ace40f",
+      "assessmentSha256": "6320dbbd3f545544699ec7b0f0ada16b42ebb84354d5846190723c795d0bd56c",
+      "diagnosticSha256": "fc0dfe9edfd2516bdb6f08336df28c719df3735deb97a9e4928236c9018615d8",
+      "colorsSha256": "6ad6b7bbd156f57b39437061bd9d234bf3d31db7b21d1c9cd2918c55abd7aa58",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "id": "cave-2-42",
+      "sourceSha256": "2799c15cc829face3643046c5d400024b6ea2e4f53eddb89f68e4cdc234bd1a3",
+      "assessmentSha256": "684377010ddd4b53ffe5328c15a2b77b7af6cb0a1667165e928ccbbadfcfd567",
+      "diagnosticSha256": "7292e6fb9965368dcc8bf69aef0e32b8fef9a5afcfc643669aed77ca000ee86c",
+      "colorsSha256": "29b4a06f016919309856b9b8890565914b4757017dd4804aea71e49bc7e44822",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    },
+    {
+      "id": "bridge-2-42",
+      "sourceSha256": "08e209f8cc1ba52619cfd02edc04abc6d4522232c238eb19998801bfb2a16e00",
+      "assessmentSha256": "df2cac877c9df0bfba5eb92b8e0e06f46d845388ee36ecb887188169d0bc4fd3",
+      "diagnosticSha256": "eaa865157ea4585d6c16c560fc3032f49fea33dea204178ed25023d0521d75ca",
+      "colorsSha256": "9f3ddee2bddcb35d4a4bb386c424f0570cfb19feecf5d5a312fcf02755bf10f0",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "passed"
+        },
+        {
+          "scale": 12,
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "id": "tunnel-2-42",
+      "sourceSha256": "57449dddb406c34b47e052c63fae7c8e3c3f974c1949cc3f49f7af6e51e38faf",
+      "assessmentSha256": "42f3c1138ee805ada9b5effe4866b67a6665315153bfff676814a76c44e3b0c8",
+      "diagnosticSha256": "69e1437d54cac65a41c302e99fd982f4317ed99ad89df6a8b161f138cb3fba63",
+      "colorsSha256": "96000b0aa16296e488828ac605c416fed8e47918ad2993e313e3f2448d35589a",
+      "scales": [
+        {
+          "scale": 6,
+          "status": "failed"
+        },
+        {
+          "scale": 10,
+          "status": "failed"
+        },
+        {
+          "scale": 12,
+          "status": "failed"
+        }
+      ]
+    }
+  ]
+}

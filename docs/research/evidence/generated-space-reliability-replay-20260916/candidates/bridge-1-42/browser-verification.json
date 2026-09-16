@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "bridge-1-42",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 10,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 12,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "7c2e55da060f2311d90df11a1fe15b89b1bd2aa255bd677d5330a695c0ab04cc",
+        "forward": "de7b98b60d356e9d529905f81fc870e50bec3f2ed39233612088f07157a5cf55",
+        "returned": "4eb1ed912529cff33ff8420c84d801ced5e6bc6732c0c11771852a1431504f5f",
+        "persisted": "ccbc8839965907906a4e0931f8ab6a6d0e13585da07e5e831ee3eead766a9af9"
+      },
+      "forwardEndpointDistance": 2.220446049250313e-16,
+      "returnEndpointDistance": 0.0019499999999945672
+    }
+  ]
+}

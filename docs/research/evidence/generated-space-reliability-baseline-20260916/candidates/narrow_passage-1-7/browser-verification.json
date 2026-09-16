@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "narrow_passage-1-7",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/narrow_passage-1-7.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "af1cb0bdfafafe4dd8d0343b206a50fada16465a6ffcc4b700636bacc8ae8310",
+        "forward": "c8b225b06ab9c07dd89412bab19d079d4ea4f50270121dd6eec66262b9a2f254",
+        "returned": "c8b225b06ab9c07dd89412bab19d079d4ea4f50270121dd6eec66262b9a2f254"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 10,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/narrow_passage-1-7-scale10.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "040a427d56e536763034cdf06046e0596af167d3e753e9fe773f58a59270e794",
+        "forward": "b940fba7a6ea65c3f39daf715bd51d00e3fd3b340b6121ae33e4bcb2796aacc7",
+        "returned": "b940fba7a6ea65c3f39daf715bd51d00e3fd3b340b6121ae33e4bcb2796aacc7"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 12,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/narrow_passage-1-7-scale12.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "89033655fe45c3f15490108797d6b7f13413b621e44cbd3aee89dc274bcf63e2",
+        "forward": "9d172693292258f6613753d32fb8ded9d5532485e77905ee15d7301e64ac8679",
+        "returned": "9d172693292258f6613753d32fb8ded9d5532485e77905ee15d7301e64ac8679"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    }
+  ]
+}

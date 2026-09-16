@@ -1,0 +1,27 @@
+{
+  "identity": "1bfea1430a0a6359ec37102860926d969baf4e569e9500e45a0b9caf60b974b6",
+  "glbSha256": "9e1df2a956a459ac91917dc0ccd92804235bf901dd094fdf201fb3fcf7dfe269",
+  "assessmentSha256": "9eda61993fcd1d6a6fd603d76ea12491fac00b535eda44424067cc5b8f218e8e",
+  "visits": [
+    {
+      "eventId": "5031a043-2a36-468a-a8e5-090db881fada",
+      "event": "crossed",
+      "position": [
+        -0.2080373287200925,
+        1.6756857691291687,
+        -2.909136743346417
+      ],
+      "at": "2026-09-16T09:24:21.350Z"
+    },
+    {
+      "eventId": "666a5f0a-38d7-44ad-957a-8ce7b5bbd384",
+      "event": "returned",
+      "position": [
+        -0.2080373287200925,
+        1.675600217888627,
+        -2.928636743346426
+      ],
+      "at": "2026-09-16T09:24:34.131Z"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-cave-chamber",
+  "sourceObservation": "Image depicts rocky enclosing walls and ceiling with smooth foreground floor and a small rear opening.",
+  "generatedObservation": "Coarse geometry is a low compact cave-like mass; original support does not yield a3m qualifying route at scale6/10. Scale12 passes offline but browser entry fails tolerance mismatch.",
+  "evidence": [
+    "source-rgb.png",
+    "browser/scale6-overview-clean.png",
+    "diagnostic.json"
+  ]
+}

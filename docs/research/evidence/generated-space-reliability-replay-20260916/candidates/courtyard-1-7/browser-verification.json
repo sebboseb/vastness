@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "courtyard-1-7",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 10,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "02f007d5b992b16260bde5bc67f7b652d637e1d47b91b3282a98be593e70b26c",
+        "forward": "c167eccf390ab6719375e234873852ba92873cf2e5b81ce2e50eba639b6a6c50",
+        "returned": "03d9f0b40c49bbd30372a4322c71e832721125e3a8f4ceffcec7c4fc46d7bfac",
+        "persisted": "62167e1b03e071ec2c6dad9e9e95f0234009088705f74151cea7ebbf60c67e12"
+      },
+      "forwardEndpointDistance": 0.0012004243398018898,
+      "returnEndpointDistance": 0.0009830194732209918
+    },
+    {
+      "scale": 12,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "603ed1d151e640f6fd1e0cf41b94270ab21b910ba8b14ca9afb20ee196d9c890",
+        "forward": "c799658865c9e555f5b673b3d971ac1393c4c938b3f3eecfc3dc13abe71305ec",
+        "returned": "5ac36cfca2c812779c0813cd0727173feabaefdc1c659b1ecf465c8b4c7b77cb",
+        "persisted": "463859f57fb5f6900083967d342ddb098f3354681f9bca8f87940ed4d41378dd"
+      },
+      "forwardEndpointDistance": 0.0025500104937492634,
+      "returnEndpointDistance": 0.0013500000000021828
+    }
+  ]
+}

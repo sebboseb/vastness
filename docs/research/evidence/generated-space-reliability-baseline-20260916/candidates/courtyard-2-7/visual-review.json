@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "courtyard-request-becomes-covered-hall",
+  "sourceObservation": "Image shows a richly columned covered interior with solid roof, not an open square cloister courtyard.",
+  "generatedObservation": "Primary generated route completes entry,3.09mtraversal andreturn, but requested courtyard identity is already weakened at image stage. Secondary10/12 browser entry hits tolerance mismatch.",
+  "evidence": [
+    "source-rgb.png",
+    "diagnostic.json",
+    "browser"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "id": "intent-c51a5de0-80bb-4922-b019-681f2618e8bb",
+  "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+  "seed": 42
+}

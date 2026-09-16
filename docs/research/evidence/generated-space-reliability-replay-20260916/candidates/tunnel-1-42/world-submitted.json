@@ -1,0 +1,62 @@
+{
+  "id": "intent-75f21af9-274b-4869-9577-28999d937b28",
+  "createdAt": "2026-09-16T09:23:48.211Z",
+  "rawIntent": {
+    "text": "A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "open"
+    },
+    "representation": "abstract-solid"
+  },
+  "derivation": {
+    "compiler": "lexical-semantic-v1",
+    "cues": {
+      "vast": [],
+      "intimate": [],
+      "sparse": [
+        "empty"
+      ],
+      "dense": [],
+      "open": [
+        "open"
+      ],
+      "enclosed": [],
+      "quiet": [],
+      "ominous": [],
+      "luminous": [],
+      "joyful": []
+    },
+    "limitations": [
+      "Rule-based axis extraction; no general language reasoning",
+      "Negation handling is local, not a complete semantic parser",
+      "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+      "Concept is bounded to 600 characters; original input is retained separately"
+    ]
+  },
+  "status": "requested",
+  "jobId": "intent-75f21af9-274b-4869-9577-28999d937b28",
+  "request": {
+    "id": "intent-75f21af9-274b-4869-9577-28999d937b28",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"open\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "events": [
+    {
+      "type": "intent-recorded",
+      "at": "2026-09-16T09:23:48.211Z"
+    },
+    {
+      "type": "constraints-derived",
+      "at": "2026-09-16T09:23:48.211Z"
+    }
+  ]
+}

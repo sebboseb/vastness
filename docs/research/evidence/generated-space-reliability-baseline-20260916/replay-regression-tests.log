@@ -1,0 +1,22 @@
+(node:35658) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ walking uses genuine support triangles and returns on the same surface (6.627334ms)
+✔ unsupported gaps cannot be crossed, including a 1mm gap between movement samples (0.291625ms)
+✔ actual walls block the full radius without tunneling through large displacement (1.162917ms)
+✔ swept body clearance catches an obstacle between otherwise clear endpoints (0.186125ms)
+✔ explicit exterior scaffold permits a continuous crossing but cannot provide interior support (2.62375ms)
+✔ low ceilings and radius-offset obstacles fail the original-triangle body check (0.363083ms)
+✔ bounded steps work forward and backward, while a tall ledge stays impassable (1.398375ms)
+✔ slope bound and upward source winding govern support (0.568833ms)
+✔ a roof is not an interior, but a supported tunnel has source roof evidence (0.446792ms)
+✔ numerical seam contact crosses and returns independently of frame steps and coordinate phase (85.627083ms)
+✔ real 1mm and 2cm seam gaps remain impassable at every frame step (7.804417ms)
+✔ saved tunnel raw mesh supports frame-sized seam, route and return replays (4895.538709ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5146.423875

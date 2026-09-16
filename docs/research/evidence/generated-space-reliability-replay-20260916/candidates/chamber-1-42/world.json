@@ -1,0 +1,107 @@
+{
+  "id": "intent-de172b53-3529-42f6-b4d4-b6df0779e568",
+  "createdAt": "2026-09-16T09:25:20.137Z",
+  "rawIntent": {
+    "text": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "enclosed"
+    },
+    "representation": "abstract-solid"
+  },
+  "derivation": {
+    "compiler": "lexical-semantic-v1",
+    "cues": {
+      "vast": [],
+      "intimate": [],
+      "sparse": [
+        "empty"
+      ],
+      "dense": [],
+      "open": [
+        "open"
+      ],
+      "enclosed": [
+        "underground",
+        "chamber"
+      ],
+      "quiet": [],
+      "ominous": [],
+      "luminous": [],
+      "joyful": []
+    },
+    "limitations": [
+      "Rule-based axis extraction; no general language reasoning",
+      "Negation handling is local, not a complete semantic parser",
+      "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+      "Concept is bounded to 600 characters; original input is retained separately"
+    ]
+  },
+  "status": "ready",
+  "jobId": "intent-de172b53-3529-42f6-b4d4-b6df0779e568",
+  "request": {
+    "id": "intent-de172b53-3529-42f6-b4d4-b6df0779e568",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "events": [
+    {
+      "type": "intent-recorded",
+      "at": "2026-09-16T09:25:20.137Z"
+    },
+    {
+      "type": "constraints-derived",
+      "at": "2026-09-16T09:25:20.137Z"
+    },
+    {
+      "type": "gpu-job-submitted",
+      "at": "2026-09-16T09:25:20.215Z"
+    },
+    {
+      "type": "artifacts-processing",
+      "at": "2026-09-16T09:26:59.162Z"
+    },
+    {
+      "type": "destination-validated",
+      "at": "2026-09-16T09:27:14.473Z"
+    }
+  ],
+  "workerJob": {
+    "id": "intent-de172b53-3529-42f6-b4d4-b6df0779e568",
+    "status": "succeeded",
+    "progress": 1,
+    "logs": [
+      "Queued command-v1",
+      "Running command-v1",
+      "{\"status\": \"succeeded\", \"report\": \"/home/vastness/.local/share/vastness-intention-worker/shared/data/artifacts/.intent-de172b53-3529-42f6-b4d4-b6df0779e568.tmp/generation-report.json\", \"error\": null}\n",
+      "Visual and collision artifacts are ready"
+    ],
+    "backend": "command-v1",
+    "error": null
+  },
+  "artifacts": [
+    {
+      "url": "/api/intent/artifacts/048515fd4c3598259628041f8e56aeba9d3973236d4105f0b99b191363f6f6bb/scene.ply",
+      "sha256": "048515fd4c3598259628041f8e56aeba9d3973236d4105f0b99b191363f6f6bb",
+      "bytes": 104481057,
+      "format": "ply",
+      "backend": "command-v1"
+    },
+    {
+      "url": "/api/intent/artifacts/2b6e56636c72bdccdd387c4a30a7e98526d15efeab66d47c396287f81d7a8a76/collider.glb",
+      "sha256": "2b6e56636c72bdccdd387c4a30a7e98526d15efeab66d47c396287f81d7a8a76",
+      "bytes": 41060224,
+      "format": "glb",
+      "backend": "command-v1"
+    }
+  ],
+  "sceneUrl": "/api/intent/worlds/intent-de172b53-3529-42f6-b4d4-b6df0779e568/scene"
+}

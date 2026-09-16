@@ -1,0 +1,54 @@
+{
+  "candidate": "narrow_passage-2-42",
+  "id": "narrow_passage-2-42",
+  "category": "narrow_passage",
+  "promptVariant": 2,
+  "seed": 42,
+  "text": "A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person.",
+  "rawIntent": {
+    "text": "A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person.",
+    "source": "text",
+    "seed": 42
+  },
+  "declaredAt": "2026-09-16T09:45:52.600354+00:00",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "mixed"
+    },
+    "representation": "abstract-solid"
+  },
+  "submissionAttemptedAt": "2026-09-16T09:45:52.689457+00:00",
+  "worldId": "intent-c51a5de0-80bb-4922-b019-681f2618e8bb",
+  "jobId": "intent-c51a5de0-80bb-4922-b019-681f2618e8bb",
+  "request": {
+    "id": "intent-c51a5de0-80bb-4922-b019-681f2618e8bb",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "collected": true,
+  "gpuStatus": "succeeded",
+  "macStatus": "ready",
+  "finishedAt": "2026-09-16T09:47:16.606971+00:00",
+  "generationSeconds": 74.59922857300262,
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 1811.0,
+        "sampledPeakMiB": 18061.0,
+        "samples": 675
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  },
+  "failureStage": null,
+  "geometryAssessment": "pending separate generated-support assessment"
+}

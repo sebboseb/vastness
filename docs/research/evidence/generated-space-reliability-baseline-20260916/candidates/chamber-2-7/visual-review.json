@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "chamber-with-unrequested-person-and-platform",
+  "sourceObservation": "Source shows a pale chamber with ceiling lights, raised platform and an unrequested seated person.",
+  "generatedObservation": "Single exterior overview looks box-like and exposes no visible entrance from this angle. This view alone does not establish a sealed interior; all scales lack an accepted route.",
+  "evidence": [
+    "source-rgb.png",
+    "browser",
+    "diagnostic.json"
+  ]
+}

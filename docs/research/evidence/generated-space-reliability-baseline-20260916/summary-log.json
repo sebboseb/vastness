@@ -1,0 +1,1079 @@
+{
+  "schemaVersion": 1,
+  "studyId": "generated-space-reliability-20260916",
+  "generatedAt": "2026-09-16T09:56:38.272Z",
+  "complete": true,
+  "primaryComplete": true,
+  "primary": {
+    "scale": 6,
+    "planned": 36,
+    "geometryPasses": 12,
+    "geometryWilson95": {
+      "lower": 0.2021461882430531,
+      "upper": 0.4966600212884348
+    },
+    "fullPipelinePasses": 5,
+    "fullPipelineWilson95": {
+      "lower": 0.06081815009132838,
+      "upper": 0.286595303893562
+    },
+    "browser": {
+      "eligible": 12,
+      "passed": 5,
+      "failed": 7,
+      "invalidEvidence": 0,
+      "notAssessed": 0,
+      "conditionalPassRateAmongTested": 0.4166666666666667
+    }
+  },
+  "secondary": [
+    {
+      "scale": 10,
+      "planned": 36,
+      "geometryPasses": 18,
+      "geometryWilson95": {
+        "lower": 0.34474325409626827,
+        "upper": 0.6552567459037317
+      },
+      "fullPipelinePasses": 4,
+      "fullPipelineWilson95": {
+        "lower": 0.04406640300315648,
+        "upper": 0.25314808590364857
+      },
+      "browser": {
+        "eligible": 18,
+        "passed": 4,
+        "failed": 14,
+        "invalidEvidence": 0,
+        "notAssessed": 0,
+        "conditionalPassRateAmongTested": 0.2222222222222222
+      }
+    },
+    {
+      "scale": 12,
+      "planned": 36,
+      "geometryPasses": 19,
+      "geometryWilson95": {
+        "lower": 0.37005938022987594,
+        "upper": 0.6801395848482095
+      },
+      "fullPipelinePasses": 5,
+      "fullPipelineWilson95": {
+        "lower": 0.06081815009132838,
+        "upper": 0.286595303893562
+      },
+      "browser": {
+        "eligible": 19,
+        "passed": 5,
+        "failed": 14,
+        "invalidEvidence": 0,
+        "notAssessed": 0,
+        "conditionalPassRateAmongTested": 0.2631578947368421
+      }
+    }
+  ],
+  "scaleAdjustedGeometryPasses": 24,
+  "scaleAdjustedFullPipelinePasses": 11,
+  "scaleAdjustedFullPipelineWilson95": {
+    "lower": 0.1800445159482992,
+    "upper": 0.4685627285051034
+  },
+  "scaleAdjustedBrowser": {
+    "planned": 36,
+    "fullPipelinePasses": 11,
+    "fullPipelineWilson95": {
+      "lower": 0.1800445159482992,
+      "upper": 0.4685627285051034
+    },
+    "eligibleCandidates": 24,
+    "browserTestedCandidates": 24,
+    "browserNotAssessedCandidates": 0,
+    "unresolvedEligibleCandidates": 0,
+    "note": "Any fixed scale6/10/12 full browser pass; tested means at least one eligible scale tested. Unresolved means no pass yet and at least one eligible scale untested."
+  },
+  "topologyFailures": 6,
+  "topologyFailureFractionOfPlanned": 0.16666666666666666,
+  "categories": [
+    {
+      "category": "large_open_interior",
+      "primary": {
+        "planned": 4,
+        "geometryPasses": 0,
+        "geometryWilson95": {
+          "lower": 0,
+          "upper": 0.4898908364545973
+        },
+        "fullPipelinePasses": 0,
+        "fullPipelineWilson95": {
+          "lower": 0,
+          "upper": 0.4898908364545973
+        },
+        "browser": {
+          "eligible": 0,
+          "passed": 0,
+          "failed": 0,
+          "invalidEvidence": 0,
+          "notAssessed": 0,
+          "conditionalPassRateAmongTested": null
+        }
+      },
+      "secondary": [
+        {
+          "scale": 10,
+          "planned": 4,
+          "geometryPasses": 3,
+          "geometryWilson95": {
+            "lower": 0.30064184258240184,
+            "upper": 0.9544127391902995
+          },
+          "fullPipelinePasses": 2,
+          "fullPipelineWilson95": {
+            "lower": 0.15003898915214947,
+            "upper": 0.8499610108478506
+          },
+          "browser": {
+            "eligible": 3,
+            "passed": 2,
+            "failed": 1,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": 0.6666666666666666
+          }
+        },
+        {
+          "scale": 12,
+          "planned": 4,
+          "geometryPasses": 3,
+          "geometryWilson95": {
+            "lower": 0.30064184258240184,
+            "upper": 0.9544127391902995
+          },
+          "fullPipelinePasses": 1,
+          "fullPipelineWilson95": {
+            "lower": 0.04558726080970055,
+            "upper": 0.6993581574175981
+          },
+          "browser": {
+            "eligible": 3,
+            "passed": 1,
+            "failed": 2,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": 0.3333333333333333
+          }
+        }
+      ],
+      "scaleAdjusted": {
+        "planned": 4,
+        "fullPipelinePasses": 2,
+        "fullPipelineWilson95": {
+          "lower": 0.15003898915214947,
+          "upper": 0.8499610108478506
+        },
+        "eligibleCandidates": 3,
+        "browserTestedCandidates": 3,
+        "browserNotAssessedCandidates": 0,
+        "unresolvedEligibleCandidates": 0,
+        "note": "Any fixed scale6/10/12 full browser pass; tested means at least one eligible scale tested. Unresolved means no pass yet and at least one eligible scale untested."
+      }
+    },
+    {
+      "category": "tunnel",
+      "primary": {
+        "planned": 4,
+        "geometryPasses": 1,
+        "geometryWilson95": {
+          "lower": 0.04558726080970055,
+          "upper": 0.6993581574175981
+        },
+        "fullPipelinePasses": 0,
+        "fullPipelineWilson95": {
+          "lower": 0,
+          "upper": 0.4898908364545973
+        },
+        "browser": {
+          "eligible": 1,
+          "passed": 0,
+          "failed": 1,
+          "invalidEvidence": 0,
+          "notAssessed": 0,
+          "conditionalPassRateAmongTested": 0
+        }
+      },
+      "secondary": [
+        {
+          "scale": 10,
+          "planned": 4,
+          "geometryPasses": 2,
+          "geometryWilson95": {
+            "lower": 0.15003898915214947,
+            "upper": 0.8499610108478506
+          },
+          "fullPipelinePasses": 0,
+          "fullPipelineWilson95": {
+            "lower": 0,
+            "upper": 0.4898908364545973
+          },
+          "browser": {
+            "eligible": 2,
+            "passed": 0,
+            "failed": 2,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": 0
+          }
+        },
+        {
+          "scale": 12,
+          "planned": 4,
+          "geometryPasses": 1,
+          "geometryWilson95": {
+            "lower": 0.04558726080970055,
+            "upper": 0.6993581574175981
+          },
+          "fullPipelinePasses": 0,
+          "fullPipelineWilson95": {
+            "lower": 0,
+            "upper": 0.4898908364545973
+          },
+          "browser": {
+            "eligible": 1,
+            "passed": 0,
+            "failed": 1,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": 0
+          }
+        }
+      ],
+      "scaleAdjusted": {
+        "planned": 4,
+        "fullPipelinePasses": 0,
+        "fullPipelineWilson95": {
+          "lower": 0,
+          "upper": 0.4898908364545973
+        },
+        "eligibleCandidates": 2,
+        "browserTestedCandidates": 2,
+        "browserNotAssessedCandidates": 0,
+        "unresolvedEligibleCandidates": 0,
+        "note": "Any fixed scale6/10/12 full browser pass; tested means at least one eligible scale tested. Unresolved means no pass yet and at least one eligible scale untested."
+      }
+    },
+    {
+      "category": "doorway",
+      "primary": {
+        "planned": 4,
+        "geometryPasses": 2,
+        "geometryWilson95": {
+          "lower": 0.15003898915214947,
+          "upper": 0.8499610108478506
+        },
+        "fullPipelinePasses": 1,
+        "fullPipelineWilson95": {
+          "lower": 0.04558726080970055,
+          "upper": 0.6993581574175981
+        },
+        "browser": {
+          "eligible": 2,
+          "passed": 1,
+          "failed": 1,
+          "invalidEvidence": 0,
+          "notAssessed": 0,
+          "conditionalPassRateAmongTested": 0.5
+        }
+      },
+      "secondary": [
+        {
+          "scale": 10,
+          "planned": 4,
+          "geometryPasses": 2,
+          "geometryWilson95": {
+            "lower": 0.15003898915214947,
+            "upper": 0.8499610108478506
+          },
+          "fullPipelinePasses": 0,
+          "fullPipelineWilson95": {
+            "lower": 0,
+            "upper": 0.4898908364545973
+          },
+          "browser": {
+            "eligible": 2,
+            "passed": 0,
+            "failed": 2,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": 0
+          }
+        },
+        {
+          "scale": 12,
+          "planned": 4,
+          "geometryPasses": 2,
+          "geometryWilson95": {
+            "lower": 0.15003898915214947,
+            "upper": 0.8499610108478506
+          },
+          "fullPipelinePasses": 2,
+          "fullPipelineWilson95": {
+            "lower": 0.15003898915214947,
+            "upper": 0.8499610108478506
+          },
+          "browser": {
+            "eligible": 2,
+            "passed": 2,
+            "failed": 0,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": 1
+          }
+        }
+      ],
+      "scaleAdjusted": {
+        "planned": 4,
+        "fullPipelinePasses": 2,
+        "fullPipelineWilson95": {
+          "lower": 0.15003898915214947,
+          "upper": 0.8499610108478506
+        },
+        "eligibleCandidates": 2,
+        "browserTestedCandidates": 2,
+        "browserNotAssessedCandidates": 0,
+        "unresolvedEligibleCandidates": 0,
+        "note": "Any fixed scale6/10/12 full browser pass; tested means at least one eligible scale tested. Unresolved means no pass yet and at least one eligible scale untested."
+      }
+    },
+    {
+      "category": "narrow_passage",
+      "primary": {
+        "planned": 4,
+        "geometryPasses": 2,
+        "geometryWilson95": {
+          "lower": 0.15003898915214947,
+          "upper": 0.8499610108478506
+        },
+        "fullPipelinePasses": 1,
+        "fullPipelineWilson95": {
+          "lower": 0.04558726080970055,
+          "upper": 0.6993581574175981
+        },
+        "browser": {
+          "eligible": 2,
+          "passed": 1,
+          "failed": 1,
+          "invalidEvidence": 0,
+          "notAssessed": 0,
+          "conditionalPassRateAmongTested": 0.5
+        }
+      },
+      "secondary": [
+        {
+          "scale": 10,
+          "planned": 4,
+          "geometryPasses": 2,
+          "geometryWilson95": {
+            "lower": 0.15003898915214947,
+            "upper": 0.8499610108478506
+          },
+          "fullPipelinePasses": 0,
+          "fullPipelineWilson95": {
+            "lower": 0,
+            "upper": 0.4898908364545973
+          },
+          "browser": {
+            "eligible": 2,
+            "passed": 0,
+            "failed": 2,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": 0
+          }
+        },
+        {
+          "scale": 12,
+          "planned": 4,
+          "geometryPasses": 2,
+          "geometryWilson95": {
+            "lower": 0.15003898915214947,
+            "upper": 0.8499610108478506
+          },
+          "fullPipelinePasses": 0,
+          "fullPipelineWilson95": {
+            "lower": 0,
+            "upper": 0.4898908364545973
+          },
+          "browser": {
+            "eligible": 2,
+            "passed": 0,
+            "failed": 2,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": 0
+          }
+        }
+      ],
+      "scaleAdjusted": {
+        "planned": 4,
+        "fullPipelinePasses": 1,
+        "fullPipelineWilson95": {
+          "lower": 0.04558726080970055,
+          "upper": 0.6993581574175981
+        },
+        "eligibleCandidates": 2,
+        "browserTestedCandidates": 2,
+        "browserNotAssessedCandidates": 0,
+        "unresolvedEligibleCandidates": 0,
+        "note": "Any fixed scale6/10/12 full browser pass; tested means at least one eligible scale tested. Unresolved means no pass yet and at least one eligible scale untested."
+      }
+    },
+    {
+      "category": "chamber",
+      "primary": {
+        "planned": 4,
+        "geometryPasses": 1,
+        "geometryWilson95": {
+          "lower": 0.04558726080970055,
+          "upper": 0.6993581574175981
+        },
+        "fullPipelinePasses": 0,
+        "fullPipelineWilson95": {
+          "lower": 0,
+          "upper": 0.4898908364545973
+        },
+        "browser": {
+          "eligible": 1,
+          "passed": 0,
+          "failed": 1,
+          "invalidEvidence": 0,
+          "notAssessed": 0,
+          "conditionalPassRateAmongTested": 0
+        }
+      },
+      "secondary": [
+        {
+          "scale": 10,
+          "planned": 4,
+          "geometryPasses": 0,
+          "geometryWilson95": {
+            "lower": 0,
+            "upper": 0.4898908364545973
+          },
+          "fullPipelinePasses": 0,
+          "fullPipelineWilson95": {
+            "lower": 0,
+            "upper": 0.4898908364545973
+          },
+          "browser": {
+            "eligible": 0,
+            "passed": 0,
+            "failed": 0,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": null
+          }
+        },
+        {
+          "scale": 12,
+          "planned": 4,
+          "geometryPasses": 0,
+          "geometryWilson95": {
+            "lower": 0,
+            "upper": 0.4898908364545973
+          },
+          "fullPipelinePasses": 0,
+          "fullPipelineWilson95": {
+            "lower": 0,
+            "upper": 0.4898908364545973
+          },
+          "browser": {
+            "eligible": 0,
+            "passed": 0,
+            "failed": 0,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": null
+          }
+        }
+      ],
+      "scaleAdjusted": {
+        "planned": 4,
+        "fullPipelinePasses": 0,
+        "fullPipelineWilson95": {
+          "lower": 0,
+          "upper": 0.4898908364545973
+        },
+        "eligibleCandidates": 1,
+        "browserTestedCandidates": 1,
+        "browserNotAssessedCandidates": 0,
+        "unresolvedEligibleCandidates": 0,
+        "note": "Any fixed scale6/10/12 full browser pass; tested means at least one eligible scale tested. Unresolved means no pass yet and at least one eligible scale untested."
+      }
+    },
+    {
+      "category": "cave",
+      "primary": {
+        "planned": 4,
+        "geometryPasses": 1,
+        "geometryWilson95": {
+          "lower": 0.04558726080970055,
+          "upper": 0.6993581574175981
+        },
+        "fullPipelinePasses": 1,
+        "fullPipelineWilson95": {
+          "lower": 0.04558726080970055,
+          "upper": 0.6993581574175981
+        },
+        "browser": {
+          "eligible": 1,
+          "passed": 1,
+          "failed": 0,
+          "invalidEvidence": 0,
+          "notAssessed": 0,
+          "conditionalPassRateAmongTested": 1
+        }
+      },
+      "secondary": [
+        {
+          "scale": 10,
+          "planned": 4,
+          "geometryPasses": 1,
+          "geometryWilson95": {
+            "lower": 0.04558726080970055,
+            "upper": 0.6993581574175981
+          },
+          "fullPipelinePasses": 0,
+          "fullPipelineWilson95": {
+            "lower": 0,
+            "upper": 0.4898908364545973
+          },
+          "browser": {
+            "eligible": 1,
+            "passed": 0,
+            "failed": 1,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": 0
+          }
+        },
+        {
+          "scale": 12,
+          "planned": 4,
+          "geometryPasses": 2,
+          "geometryWilson95": {
+            "lower": 0.15003898915214947,
+            "upper": 0.8499610108478506
+          },
+          "fullPipelinePasses": 0,
+          "fullPipelineWilson95": {
+            "lower": 0,
+            "upper": 0.4898908364545973
+          },
+          "browser": {
+            "eligible": 2,
+            "passed": 0,
+            "failed": 2,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": 0
+          }
+        }
+      ],
+      "scaleAdjusted": {
+        "planned": 4,
+        "fullPipelinePasses": 1,
+        "fullPipelineWilson95": {
+          "lower": 0.04558726080970055,
+          "upper": 0.6993581574175981
+        },
+        "eligibleCandidates": 4,
+        "browserTestedCandidates": 4,
+        "browserNotAssessedCandidates": 0,
+        "unresolvedEligibleCandidates": 0,
+        "note": "Any fixed scale6/10/12 full browser pass; tested means at least one eligible scale tested. Unresolved means no pass yet and at least one eligible scale untested."
+      }
+    },
+    {
+      "category": "corridor",
+      "primary": {
+        "planned": 4,
+        "geometryPasses": 3,
+        "geometryWilson95": {
+          "lower": 0.30064184258240184,
+          "upper": 0.9544127391902995
+        },
+        "fullPipelinePasses": 0,
+        "fullPipelineWilson95": {
+          "lower": 0,
+          "upper": 0.4898908364545973
+        },
+        "browser": {
+          "eligible": 3,
+          "passed": 0,
+          "failed": 3,
+          "invalidEvidence": 0,
+          "notAssessed": 0,
+          "conditionalPassRateAmongTested": 0
+        }
+      },
+      "secondary": [
+        {
+          "scale": 10,
+          "planned": 4,
+          "geometryPasses": 3,
+          "geometryWilson95": {
+            "lower": 0.30064184258240184,
+            "upper": 0.9544127391902995
+          },
+          "fullPipelinePasses": 1,
+          "fullPipelineWilson95": {
+            "lower": 0.04558726080970055,
+            "upper": 0.6993581574175981
+          },
+          "browser": {
+            "eligible": 3,
+            "passed": 1,
+            "failed": 2,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": 0.3333333333333333
+          }
+        },
+        {
+          "scale": 12,
+          "planned": 4,
+          "geometryPasses": 4,
+          "geometryWilson95": {
+            "lower": 0.5101091635454027,
+            "upper": 1
+          },
+          "fullPipelinePasses": 2,
+          "fullPipelineWilson95": {
+            "lower": 0.15003898915214947,
+            "upper": 0.8499610108478506
+          },
+          "browser": {
+            "eligible": 4,
+            "passed": 2,
+            "failed": 2,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": 0.5
+          }
+        }
+      ],
+      "scaleAdjusted": {
+        "planned": 4,
+        "fullPipelinePasses": 2,
+        "fullPipelineWilson95": {
+          "lower": 0.15003898915214947,
+          "upper": 0.8499610108478506
+        },
+        "eligibleCandidates": 4,
+        "browserTestedCandidates": 4,
+        "browserNotAssessedCandidates": 0,
+        "unresolvedEligibleCandidates": 0,
+        "note": "Any fixed scale6/10/12 full browser pass; tested means at least one eligible scale tested. Unresolved means no pass yet and at least one eligible scale untested."
+      }
+    },
+    {
+      "category": "courtyard",
+      "primary": {
+        "planned": 4,
+        "geometryPasses": 2,
+        "geometryWilson95": {
+          "lower": 0.15003898915214947,
+          "upper": 0.8499610108478506
+        },
+        "fullPipelinePasses": 2,
+        "fullPipelineWilson95": {
+          "lower": 0.15003898915214947,
+          "upper": 0.8499610108478506
+        },
+        "browser": {
+          "eligible": 2,
+          "passed": 2,
+          "failed": 0,
+          "invalidEvidence": 0,
+          "notAssessed": 0,
+          "conditionalPassRateAmongTested": 1
+        }
+      },
+      "secondary": [
+        {
+          "scale": 10,
+          "planned": 4,
+          "geometryPasses": 3,
+          "geometryWilson95": {
+            "lower": 0.30064184258240184,
+            "upper": 0.9544127391902995
+          },
+          "fullPipelinePasses": 0,
+          "fullPipelineWilson95": {
+            "lower": 0,
+            "upper": 0.4898908364545973
+          },
+          "browser": {
+            "eligible": 3,
+            "passed": 0,
+            "failed": 3,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": 0
+          }
+        },
+        {
+          "scale": 12,
+          "planned": 4,
+          "geometryPasses": 3,
+          "geometryWilson95": {
+            "lower": 0.30064184258240184,
+            "upper": 0.9544127391902995
+          },
+          "fullPipelinePasses": 0,
+          "fullPipelineWilson95": {
+            "lower": 0,
+            "upper": 0.4898908364545973
+          },
+          "browser": {
+            "eligible": 3,
+            "passed": 0,
+            "failed": 3,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": 0
+          }
+        }
+      ],
+      "scaleAdjusted": {
+        "planned": 4,
+        "fullPipelinePasses": 2,
+        "fullPipelineWilson95": {
+          "lower": 0.15003898915214947,
+          "upper": 0.8499610108478506
+        },
+        "eligibleCandidates": 3,
+        "browserTestedCandidates": 3,
+        "browserNotAssessedCandidates": 0,
+        "unresolvedEligibleCandidates": 0,
+        "note": "Any fixed scale6/10/12 full browser pass; tested means at least one eligible scale tested. Unresolved means no pass yet and at least one eligible scale untested."
+      }
+    },
+    {
+      "category": "bridge",
+      "primary": {
+        "planned": 4,
+        "geometryPasses": 0,
+        "geometryWilson95": {
+          "lower": 0,
+          "upper": 0.4898908364545973
+        },
+        "fullPipelinePasses": 0,
+        "fullPipelineWilson95": {
+          "lower": 0,
+          "upper": 0.4898908364545973
+        },
+        "browser": {
+          "eligible": 0,
+          "passed": 0,
+          "failed": 0,
+          "invalidEvidence": 0,
+          "notAssessed": 0,
+          "conditionalPassRateAmongTested": null
+        }
+      },
+      "secondary": [
+        {
+          "scale": 10,
+          "planned": 4,
+          "geometryPasses": 2,
+          "geometryWilson95": {
+            "lower": 0.15003898915214947,
+            "upper": 0.8499610108478506
+          },
+          "fullPipelinePasses": 1,
+          "fullPipelineWilson95": {
+            "lower": 0.04558726080970055,
+            "upper": 0.6993581574175981
+          },
+          "browser": {
+            "eligible": 2,
+            "passed": 1,
+            "failed": 1,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": 0.5
+          }
+        },
+        {
+          "scale": 12,
+          "planned": 4,
+          "geometryPasses": 2,
+          "geometryWilson95": {
+            "lower": 0.15003898915214947,
+            "upper": 0.8499610108478506
+          },
+          "fullPipelinePasses": 0,
+          "fullPipelineWilson95": {
+            "lower": 0,
+            "upper": 0.4898908364545973
+          },
+          "browser": {
+            "eligible": 2,
+            "passed": 0,
+            "failed": 2,
+            "invalidEvidence": 0,
+            "notAssessed": 0,
+            "conditionalPassRateAmongTested": 0
+          }
+        }
+      ],
+      "scaleAdjusted": {
+        "planned": 4,
+        "fullPipelinePasses": 1,
+        "fullPipelineWilson95": {
+          "lower": 0.04558726080970055,
+          "upper": 0.6993581574175981
+        },
+        "eligibleCandidates": 3,
+        "browserTestedCandidates": 3,
+        "browserNotAssessedCandidates": 0,
+        "unresolvedEligibleCandidates": 0,
+        "note": "Any fixed scale6/10/12 full browser pass; tested means at least one eligible scale tested. Unresolved means no pass yet and at least one eligible scale untested."
+      }
+    }
+  ],
+  "promptPairs": [
+    {
+      "key": "large_open_interior/1",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 0,
+      "primaryFullPipelinePasses": 0
+    },
+    {
+      "key": "tunnel/1",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 0,
+      "primaryFullPipelinePasses": 0
+    },
+    {
+      "key": "doorway/1",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 0,
+      "primaryFullPipelinePasses": 0
+    },
+    {
+      "key": "narrow_passage/1",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 1,
+      "primaryFullPipelinePasses": 0
+    },
+    {
+      "key": "chamber/1",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 1,
+      "primaryFullPipelinePasses": 0
+    },
+    {
+      "key": "cave/1",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 0,
+      "primaryFullPipelinePasses": 0
+    },
+    {
+      "key": "corridor/1",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 2,
+      "primaryFullPipelinePasses": 0
+    },
+    {
+      "key": "courtyard/1",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 1,
+      "primaryFullPipelinePasses": 1
+    },
+    {
+      "key": "bridge/1",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 0,
+      "primaryFullPipelinePasses": 0
+    },
+    {
+      "key": "courtyard/2",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 1,
+      "primaryFullPipelinePasses": 1
+    },
+    {
+      "key": "bridge/2",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 0,
+      "primaryFullPipelinePasses": 0
+    },
+    {
+      "key": "tunnel/2",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 1,
+      "primaryFullPipelinePasses": 0
+    },
+    {
+      "key": "corridor/2",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 1,
+      "primaryFullPipelinePasses": 0
+    },
+    {
+      "key": "narrow_passage/2",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 1,
+      "primaryFullPipelinePasses": 1
+    },
+    {
+      "key": "chamber/2",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 0,
+      "primaryFullPipelinePasses": 0
+    },
+    {
+      "key": "cave/2",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 1,
+      "primaryFullPipelinePasses": 1
+    },
+    {
+      "key": "large_open_interior/2",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 0,
+      "primaryFullPipelinePasses": 0
+    },
+    {
+      "key": "doorway/2",
+      "seeds": [
+        7,
+        42
+      ],
+      "primaryGeometryPasses": 2,
+      "primaryFullPipelinePasses": 1
+    }
+  ],
+  "pairedSeedConsistency": {
+    "bothPrimaryFullPass": 0,
+    "onePrimaryFullPass": 5,
+    "neitherPrimaryFullPass": 13,
+    "bothPrimaryGeometryPass": 2,
+    "onePrimaryGeometryPass": 8
+  },
+  "measurements": {
+    "generationSeconds": {
+      "measured": 36,
+      "missing": 0,
+      "min": 64.48222607899515,
+      "median": 75.67016737900121,
+      "max": 159.51133239100454,
+      "total": 2910.425466715009
+    },
+    "glbBytes": {
+      "measured": 36,
+      "missing": 0,
+      "min": 10124028,
+      "median": 22697416,
+      "max": 41060224,
+      "total": 846650068
+    },
+    "plyBytes": {
+      "measured": 36,
+      "missing": 0,
+      "min": 25846944,
+      "median": 52672672,
+      "max": 110040737,
+      "total": 2068464013
+    },
+    "meshTriangles": {
+      "measured": 36,
+      "missing": 0,
+      "min": 562340,
+      "median": 1260686,
+      "max": 2279942,
+      "total": 47017148
+    },
+    "sampledPeakWholeDeviceMiB": {
+      "measured": 36,
+      "missing": 0,
+      "min": 15245,
+      "median": 18162,
+      "max": 23338,
+      "total": 668475
+    }
+  },
+  "failureCounts": {
+    "enclosure-missing": 3,
+    "sustained-enclosure-or-bounded-route": 15,
+    "browser-failure": 7,
+    "disconnected-or-no-3m-route": 3,
+    "exterior-seam-rejected": 1,
+    "passed": 5,
+    "no-exterior-entry": 2
+  },
+  "continuation": {
+    "status": "benchmark-fallbacks",
+    "primaryThresholdAlreadyUnreachable": true,
+    "topologyTriggerReached": false
+  },
+  "limitations": [
+    "Descriptive convenience sample; Wilson intervals do not establish population generalizability.",
+    "Secondary scales never replace primary failures.",
+    "Browser acceptance requires explicit source-bound browser evidence; offline replay does not qualify.",
+    "Topology failures count bounded support/clearance/entry/connectivity rejections at primary scale; enclosure-only and ambiguous sustained-enclosure findings are excluded. No claim of universal impossibility.",
+    "Maximum connected displacement describes checked graph edges; it alone proves neither exterior entry nor an accepted enclosed route."
+  ]
+}

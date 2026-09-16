@@ -1,0 +1,88 @@
+TAP version 13
+# Subtest: taxonomy distinguishes missing sampled support, patchy footprints, sealed entry and open floor without changing geometry
+ok 1 - taxonomy distinguishes missing sampled support, patchy footprints, sealed entry and open floor without changing geometry
+  ---
+  duration_ms: 74.511125
+  type: 'test'
+  ...
+# Subtest: scale-sensitive accepted assessment preserves original source hash, route, footprint IDs and seam
+ok 2 - scale-sensitive accepted assessment preserves original source hash, route, footprint IDs and seam
+  ---
+  duration_ms: 66.899083
+  type: 'test'
+  ...
+# Subtest: a bounded failure at one scale does not prevent subsequent scale assessment
+ok 3 - a bounded failure at one scale does not prevent subsequent scale assessment
+  ---
+  duration_ms: 25.141083
+  type: 'test'
+  ...
+# Subtest: all declared jobs remain in the denominator and offline success never implies browser acceptance
+ok 4 - all declared jobs remain in the denominator and offline success never implies browser acceptance
+  ---
+  duration_ms: 7.118333
+  type: 'test'
+  ...
+# Subtest: Wilson interval remains descriptive and nondegenerate for zero successes
+ok 5 - Wilson interval remains descriptive and nondegenerate for zero successes
+  ---
+  duration_ms: 0.080625
+  type: 'test'
+  ...
+# Subtest: scale sensitivity reports primary successes lost at a larger scale separately from secondary rescues
+ok 6 - scale sensitivity reports primary successes lost at a larger scale separately from secondary rescues
+  ---
+  duration_ms: 0.278334
+  type: 'test'
+  ...
+# Subtest: CSV retains zero route metrics as no accepted route and unknown measurements as empty cells
+ok 7 - CSV retains zero route metrics as no accepted route and unknown measurements as empty cells
+  ---
+  duration_ms: 0.276375
+  type: 'test'
+  ...
+# Subtest: adjusted browser sensitivity counts unique candidates and retains unresolved secondary testing
+ok 8 - adjusted browser sensitivity counts unique candidates and retains unresolved secondary testing
+  ---
+  duration_ms: 0.263834
+  type: 'test'
+  ...
+# Subtest: failed geometry is explicitly inspection-only and assessment errors are never delivered as navigation assessments
+ok 9 - failed geometry is explicitly inspection-only and assessment errors are never delivered as navigation assessments
+  ---
+  duration_ms: 4564.50425
+  type: 'test'
+  ...
+# Subtest: real assessed endpoints, original support and persisted new visit pair verify independently
+ok 10 - real assessed endpoints, original support and persisted new visit pair verify independently
+  ---
+  duration_ms: 63.415709
+  type: 'test'
+  ...
+# Subtest: forged success flags cannot hide wrong endpoint, missing audit, stale identity, pending persistence or invalid visits
+ok 11 - forged success flags cannot hide wrong endpoint, missing audit, stale identity, pending persistence or invalid visits
+  ---
+  duration_ms: 338.697125
+  type: 'test'
+  ...
+# Subtest: file-backed verifier rejects flags without evidence and binds exact saved assessment bytes
+ok 12 - file-backed verifier rejects flags without evidence and binds exact saved assessment bytes
+  ---
+  duration_ms: 28.1655
+  type: 'test'
+  ...
+# Subtest: primary completion never hides untested eligible secondary scales or invalid evidence
+ok 13 - primary completion never hides untested eligible secondary scales or invalid evidence
+  ---
+  duration_ms: 1.667084
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4849.618459

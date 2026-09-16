@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "corridor-2-7",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 10,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 12,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "e6be990837c0952ba056975d90ba2cb1b950093d4cd6726b652e647b915f6712",
+        "forward": "f4134e5f0326a97e7e856fd643510c84774a6fed2c654f57cc4198ece1244288",
+        "returned": "2872219eed2c395394c854cfa1a071d8881719b2b1c9b80791f9aa57ad7e74d2",
+        "persisted": "d4f2934ca2fe09277f85d7c22024e82057213bb0c66b8b98e4f0a498d2ff5dc9"
+      },
+      "forwardEndpointDistance": 0.0005000123114591149,
+      "returnEndpointDistance": 0.0028500000000013515
+    }
+  ]
+}

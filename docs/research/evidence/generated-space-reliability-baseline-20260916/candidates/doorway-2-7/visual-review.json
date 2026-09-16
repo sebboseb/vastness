@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-stone-doorway",
+  "sourceObservation": "Source shows a stone arch doorway with a bright opening and floor crossing beneath it.",
+  "generatedObservation": "Coarse view retains the arch and surrounding walls on generated support. Primary and scale12 browser round trips complete; scale10 hits the baseline numerical seam.",
+  "evidence": [
+    "source-rgb.png",
+    "browser",
+    "diagnostic.json"
+  ]
+}

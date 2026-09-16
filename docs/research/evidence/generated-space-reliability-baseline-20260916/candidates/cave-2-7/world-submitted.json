@@ -1,0 +1,60 @@
+{
+  "id": "intent-164b48a7-ccb4-41a6-abe2-c118491bdb3e",
+  "createdAt": "2026-09-16T09:35:26.376Z",
+  "rawIntent": {
+    "text": "A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.",
+    "axes": {
+      "scale": "human",
+      "density": "balanced",
+      "mood": "unspecified",
+      "openness": "enclosed"
+    },
+    "representation": "abstract-solid"
+  },
+  "derivation": {
+    "compiler": "lexical-semantic-v1",
+    "cues": {
+      "vast": [],
+      "intimate": [],
+      "sparse": [],
+      "dense": [],
+      "open": [],
+      "enclosed": [
+        "cave"
+      ],
+      "quiet": [],
+      "ominous": [],
+      "luminous": [],
+      "joyful": []
+    },
+    "limitations": [
+      "Rule-based axis extraction; no general language reasoning",
+      "Negation handling is local, not a complete semantic parser",
+      "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+      "Concept is bounded to 600 characters; original input is retained separately"
+    ]
+  },
+  "status": "requested",
+  "jobId": "intent-164b48a7-ccb4-41a6-abe2-c118491bdb3e",
+  "request": {
+    "id": "intent-164b48a7-ccb4-41a6-abe2-c118491bdb3e",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.\",\"axes\":{\"scale\":\"human\",\"density\":\"balanced\",\"mood\":\"unspecified\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 7
+  },
+  "events": [
+    {
+      "type": "intent-recorded",
+      "at": "2026-09-16T09:35:26.376Z"
+    },
+    {
+      "type": "constraints-derived",
+      "at": "2026-09-16T09:35:26.376Z"
+    }
+  ]
+}

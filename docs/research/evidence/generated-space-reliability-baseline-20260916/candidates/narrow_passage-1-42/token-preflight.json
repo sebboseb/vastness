@@ -1,0 +1,48 @@
+{
+  "id": "narrow_passage-1-42",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.",
+    "axes": {
+      "scale": "human",
+      "density": "balanced",
+      "mood": "unspecified",
+      "openness": "open"
+    },
+    "representation": "abstract-solid"
+  },
+  "derivation": {
+    "compiler": "lexical-semantic-v1",
+    "cues": {
+      "vast": [],
+      "intimate": [],
+      "sparse": [],
+      "dense": [],
+      "open": [
+        "open"
+      ],
+      "enclosed": [],
+      "quiet": [],
+      "ominous": [],
+      "luminous": [],
+      "joyful": []
+    },
+    "limitations": [
+      "Rule-based axis extraction; no general language reasoning",
+      "Negation handling is local, not a complete semantic parser",
+      "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+      "Concept is bounded to 600 characters; original input is retained separately"
+    ]
+  },
+  "imagePrompt": "human scale, balanced forms, open space, unspecified atmosphere. A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.. Sculptural architectural diorama, three-quarter view, entire structure isolated on white background, no text.",
+  "tokenCounts": [
+    60,
+    60
+  ],
+  "tokenLimits": [
+    77,
+    77
+  ],
+  "promptLengthPass": true
+}

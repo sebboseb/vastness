@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "courtyard-or-roofed-atrium",
+  "sourceObservation": "Source shows a columned two-storey atrium with a large overhead opening, broad floor and doors. It is ambiguous whether the opening reaches open sky.",
+  "generatedObservation": "Coarse view preserves a compact multi-storey arcade shell. Exterior entry fails at scale6 and scaffold-seam validation fails at10/12.",
+  "evidence": [
+    "source-rgb.png",
+    "browser",
+    "diagnostic.json"
+  ]
+}

@@ -1,0 +1,7790 @@
+{
+  "assessment": "passed",
+  "audit": [
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.09999996423721312,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -4.185920352074504
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.09999996423721312,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -4.173470352074504
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -4.1610203520745035
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -4.148570352074503
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -4.135970352074503
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -4.123520352074503
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.09999996423721312,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -4.111070352074503
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.09999996423721312,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -4.098470352074503
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -4.087220352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -4.0734203520745025
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -4.060970352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -4.048520352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -4.035920352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.09999996423721312,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -4.023470352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.19999998807907104,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -4.011170352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.999920352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.19999998807907104,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.985970352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.973670352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.961070352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.948470352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.9360203520745016
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.9234203520745017
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.910970352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.898370352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.886370352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.09999996423721312,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.873470352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.861020352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.848420352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.09999996423721312,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.835970352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.823370352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.8112203520745025
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.7998203520745024
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.7858703520745025
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.773420352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.09999996423721312,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.760970352074503
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.7492703520745025
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.7359203520745026
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.7249703520745023
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.711020352074503
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.698420352074503
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.09999996423721312,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.6868703520745023
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.673970352074503
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.660920352074503
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.648620352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.6358703520745026
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.624920352074503
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.611270352074502
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.5985203520745026
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.5860703520745028
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.573470352074503
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.09999996423721312,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.560870352074503
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.548420352074503
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.09999996423721312,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.535970352074503
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.5235203520745033
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.5109203520745034
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.4987703520745037
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.4858703520745036
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.09999996423721312,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.4734203520745037
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.460970352074504
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.449570352074504
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.435920352074504
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.423470352074504
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.4116203520745043
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.3984203520745044
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.387320352074504
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.373370352074504
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.3609203520745043
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.3484703520745045
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.3367703520745047
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.09999996423721312,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.3235703520745044
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        -0.4902062773704525,
+        1.6540422654006044,
+        -3.3109703520745044
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.4000000357627869,
+      "position": [
+        -0.4902062773704525,
+        1.6540996518386046,
+        -3.298520352074505
+      ],
+      "supportTriangleIds": [
+        -1,
+        779723
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.40000003576278687,
+      "position": [
+        -0.4902062773704525,
+        1.6546336826586856,
+        -3.2860703520745043
+      ],
+      "supportTriangleIds": [
+        -1,
+        779722
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.30000001192092896,
+      "position": [
+        -0.4902062773704525,
+        1.65508721543163,
+        -3.2748203520745043
+      ],
+      "supportTriangleIds": [
+        -1,
+        300191
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.19999998807907104,
+      "position": [
+        -0.4902062773704525,
+        1.6553057411412375,
+        -3.2623703520745044
+      ],
+      "supportTriangleIds": [
+        -1,
+        300191
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.20000004768371585,
+      "position": [
+        -0.4902062773704525,
+        1.655527949241386,
+        -3.2499203520745046
+      ],
+      "supportTriangleIds": [
+        -1,
+        779720
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.19999998807907104,
+      "position": [
+        -0.4902062773704525,
+        1.655763679393671,
+        -3.2359703520745047
+      ],
+      "supportTriangleIds": [
+        -1,
+        779719
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.19999998807907104,
+      "position": [
+        -0.4902062773704525,
+        1.6558630277600117,
+        -3.223520352074505
+      ],
+      "supportTriangleIds": [
+        -1,
+        779718
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.3999999761581421,
+      "position": [
+        -0.4902062773704525,
+        1.6559556580506094,
+        -3.210920352074505
+      ],
+      "supportTriangleIds": [
+        -1,
+        787141,
+        779716,
+        764251
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.3999999761581421,
+      "position": [
+        -0.4902062773704525,
+        1.6560358774864004,
+        -3.198470352074505
+      ],
+      "supportTriangleIds": [
+        -1,
+        787140,
+        779717,
+        764250
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.5,
+      "position": [
+        -0.4902062773704525,
+        1.656094829059997,
+        -3.185870352074505
+      ],
+      "supportTriangleIds": [
+        -1,
+        307399,
+        779715,
+        290966
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.800000011920929,
+      "position": [
+        -0.4902062773704525,
+        1.656127487189883,
+        -3.173570352074505
+      ],
+      "supportTriangleIds": [
+        -1,
+        307399,
+        779714,
+        290967
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.9000000357627869,
+      "position": [
+        -0.4902062773704525,
+        1.6561583483545554,
+        -3.160970352074505
+      ],
+      "supportTriangleIds": [
+        -1,
+        787138,
+        779712,
+        764248
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.5,
+      "position": [
+        -0.4902062773704525,
+        1.6561854566406664,
+        -3.149270352074505
+      ],
+      "supportTriangleIds": [
+        -1,
+        787137,
+        779713,
+        764247
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.2999999523162842,
+      "position": [
+        -0.4902062773704525,
+        1.656214469320135,
+        -3.136220352074505
+      ],
+      "supportTriangleIds": [
+        -1,
+        787136,
+        779710,
+        764246
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.5999999642372131,
+      "position": [
+        -0.4902062773704525,
+        1.656239922178594,
+        -3.123470352074505
+      ],
+      "supportTriangleIds": [
+        -1,
+        787134,
+        779708,
+        764244
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.5,
+      "position": [
+        -0.4902062773704525,
+        1.6562593017494474,
+        -3.111020352074505
+      ],
+      "supportTriangleIds": [
+        -1,
+        787134,
+        779708,
+        764245
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.5999999642372131,
+      "position": [
+        -0.4902062773704525,
+        1.6562772022703596,
+        -3.0985703520745047
+      ],
+      "supportTriangleIds": [
+        -1,
+        787133,
+        779707,
+        764242
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.5,
+      "position": [
+        -0.4902062773704525,
+        1.6562921524808778,
+        -3.0859703520745048
+      ],
+      "supportTriangleIds": [
+        -1,
+        787132,
+        779706,
+        764243
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.3999999761581421,
+      "position": [
+        -0.4902062773704525,
+        1.656306171941709,
+        -3.073370352074505
+      ],
+      "supportTriangleIds": [
+        -1,
+        787130,
+        779704,
+        764240
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.800000011920929,
+      "position": [
+        -0.4902062773704525,
+        1.656318469856396,
+        -3.0619703520745047
+      ],
+      "supportTriangleIds": [
+        -1,
+        787131,
+        779705,
+        764241
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.8999999761581421,
+      "position": [
+        -0.4902062773704525,
+        1.656331992302746,
+        -3.0483203520745046
+      ],
+      "supportTriangleIds": [
+        -1,
+        787128,
+        779702,
+        764238
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.8999999761581421,
+      "position": [
+        -0.4902062773704525,
+        1.6563427544150104,
+        -3.0358703520745047
+      ],
+      "supportTriangleIds": [
+        -1,
+        787126,
+        779703,
+        764237
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.5,
+      "position": [
+        -0.4902062773704525,
+        1.6563500458245863,
+        -3.0235703520745045
+      ],
+      "supportTriangleIds": [
+        -1,
+        787126,
+        779700,
+        764236
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.8999999761581421,
+      "position": [
+        -0.4902062773704525,
+        1.6563561709066157,
+        -3.0109703520745046
+      ],
+      "supportTriangleIds": [
+        -1,
+        787125,
+        779701,
+        764235
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.4902062773704525,
+        1.6563739631994372,
+        -2.9985203520745047
+      ],
+      "supportTriangleIds": [
+        779723,
+        790329,
+        787124,
+        779698,
+        764234,
+        759484,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.5999999642372131,
+      "position": [
+        -0.4902062773704525,
+        1.6564001030050026,
+        -2.985920352074505
+      ],
+      "supportTriangleIds": [
+        779722,
+        790328,
+        787122,
+        779697,
+        764232,
+        759484,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.5,
+      "position": [
+        -0.4902062773704525,
+        1.6564228561619527,
+        -2.973470352074505
+      ],
+      "supportTriangleIds": [
+        300191,
+        310581,
+        787123,
+        779696,
+        764233,
+        759485,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.6000000238418579,
+      "position": [
+        -0.4902062773704525,
+        1.6564371872706865,
+        -2.961020352074505
+      ],
+      "supportTriangleIds": [
+        300190,
+        310580,
+        787120,
+        779694,
+        764230,
+        282231,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.5999999642372131,
+      "position": [
+        -0.4902062773704525,
+        1.6564465289499986,
+        -2.948570352074505
+      ],
+      "supportTriangleIds": [
+        779720,
+        790327,
+        787121,
+        779694,
+        764231,
+        759482,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.7999999523162842,
+      "position": [
+        -0.4902062773704525,
+        1.656451529138906,
+        -2.935970352074505
+      ],
+      "supportTriangleIds": [
+        779719,
+        790324,
+        787118,
+        779692,
+        764229,
+        759480,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.800000011920929,
+      "position": [
+        -0.4902062773704525,
+        1.656453525248367,
+        -2.923520352074505
+      ],
+      "supportTriangleIds": [
+        779718,
+        790325,
+        787119,
+        779692,
+        764228,
+        759480,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.699999988079071,
+      "position": [
+        -0.4902062773704525,
+        1.6564587100040138,
+        -2.910920352074505
+      ],
+      "supportTriangleIds": [
+        779716,
+        790323,
+        787116,
+        779691,
+        764226,
+        759478,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.7999999523162842,
+      "position": [
+        -0.4902062773704525,
+        1.656463624983701,
+        -2.898470352074505
+      ],
+      "supportTriangleIds": [
+        779717,
+        790322,
+        787114,
+        779690,
+        764226,
+        759478,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.699999988079071,
+      "position": [
+        -0.4902062773704525,
+        1.6564626416344588,
+        -2.886020352074506
+      ],
+      "supportTriangleIds": [
+        779715,
+        790321,
+        787114,
+        779688,
+        764224,
+        759476,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.300000011920929,
+      "position": [
+        -0.4902062773704525,
+        1.656460487960723,
+        -2.8734203520745054
+      ],
+      "supportTriangleIds": [
+        779714,
+        790320,
+        787112,
+        779688,
+        764222,
+        760741,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.300000011920929,
+      "position": [
+        -0.4902062773704525,
+        1.6564546483896738,
+        -2.862320352074505
+      ],
+      "supportTriangleIds": [
+        779712,
+        790318,
+        787112,
+        779687,
+        764222,
+        760739,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.4902062773704525,
+        1.656453602264092,
+        -2.849720352074505
+      ],
+      "supportTriangleIds": [
+        779713,
+        790319,
+        787111,
+        779686,
+        764221,
+        760739,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.9000000357627869,
+      "position": [
+        -0.4902062773704525,
+        1.6564700953435552,
+        -2.836220352074505
+      ],
+      "supportTriangleIds": [
+        779710,
+        790317,
+        787110,
+        779684,
+        764220,
+        759472,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5,
+      "position": [
+        -0.4902062773704525,
+        1.6564829368020693,
+        -2.823470352074505
+      ],
+      "supportTriangleIds": [
+        779708,
+        790315,
+        787109,
+        779684,
+        764219,
+        759470,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5,
+      "position": [
+        -0.4902062773704525,
+        1.6565016895012552,
+        -2.811020352074505
+      ],
+      "supportTriangleIds": [
+        779708,
+        790314,
+        787108,
+        779682,
+        764218,
+        759470,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.800000011920929,
+      "position": [
+        -0.4902062773704525,
+        1.6565208408648888,
+        -2.799920352074505
+      ],
+      "supportTriangleIds": [
+        779707,
+        790313,
+        787106,
+        779683,
+        764216,
+        759468,
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.7000000476837158,
+      "position": [
+        -0.4902062773704525,
+        1.6565494875564215,
+        -2.787170352074505
+      ],
+      "supportTriangleIds": [
+        779706,
+        790312,
+        787106,
+        779680,
+        764217,
+        759468,
+        764251,
+        -1,
+        787141
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5,
+      "position": [
+        -0.4902062773704525,
+        1.6565807249791378,
+        -2.7748703520745046
+      ],
+      "supportTriangleIds": [
+        779704,
+        790310,
+        787105,
+        779680,
+        764215,
+        759466,
+        764250,
+        -1,
+        787140
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.800000011920929,
+      "position": [
+        -0.4902062773704525,
+        1.6566166855674576,
+        -2.7618203520745044
+      ],
+      "supportTriangleIds": [
+        779705,
+        790311,
+        787104,
+        779678,
+        764214,
+        759466,
+        290966,
+        -1,
+        307399
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.699999988079071,
+      "position": [
+        -0.4902062773704525,
+        1.6566550213668787,
+        -2.7483203520745043
+      ],
+      "supportTriangleIds": [
+        779702,
+        790308,
+        787102,
+        779677,
+        764212,
+        759464,
+        290967,
+        -1,
+        307399
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5,
+      "position": [
+        -0.4902062773704525,
+        1.656692330600508,
+        -2.736020352074505
+      ],
+      "supportTriangleIds": [
+        779703,
+        790309,
+        787103,
+        779676,
+        764213,
+        759464,
+        764248,
+        -1,
+        787138
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.7999999523162842,
+      "position": [
+        -0.4902062773704525,
+        1.6567288570251233,
+        -2.7244703520745044
+      ],
+      "supportTriangleIds": [
+        779700,
+        790306,
+        787100,
+        779675,
+        764210,
+        759462,
+        764247,
+        -1,
+        787137
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5,
+      "position": [
+        -0.4902062773704525,
+        1.656783229788035,
+        -2.7109703520745043
+      ],
+      "supportTriangleIds": [
+        779701,
+        790307,
+        787101,
+        779674,
+        764211,
+        759462,
+        764246,
+        -1,
+        787136
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.399999976158142,
+      "position": [
+        -0.4902062773704525,
+        1.6568377225786115,
+        -2.6985203520745045
+      ],
+      "supportTriangleIds": [
+        779698,
+        790304,
+        787098,
+        779672,
+        764208,
+        759460,
+        764244,
+        779723,
+        787134
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.199999988079071,
+      "position": [
+        -0.4902062773704525,
+        1.6568940129386056,
+        -2.6872703520745045
+      ],
+      "supportTriangleIds": [
+        779699,
+        790302,
+        787098,
+        779672,
+        764208,
+        759461,
+        764245,
+        779722,
+        787134
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.199999988079071,
+      "position": [
+        -0.4902062773704525,
+        1.6569604293091031,
+        -2.6742203520745043
+      ],
+      "supportTriangleIds": [
+        779696,
+        790303,
+        787096,
+        779670,
+        764206,
+        759458,
+        764242,
+        300191,
+        787133
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.9000000357627869,
+      "position": [
+        -0.4902062773704525,
+        1.6570314849092629,
+        -2.6608703520745043
+      ],
+      "supportTriangleIds": [
+        779694,
+        790300,
+        787094,
+        779671,
+        764205,
+        759457,
+        764243,
+        300190,
+        787132
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.2000000476837158,
+      "position": [
+        -0.4902062773704525,
+        1.6570977613396567,
+        -2.648570352074504
+      ],
+      "supportTriangleIds": [
+        779694,
+        790301,
+        787094,
+        779668,
+        764204,
+        759456,
+        764240,
+        779720,
+        787130
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.399999976158142,
+      "position": [
+        -0.4902062773704525,
+        1.6571643710538315,
+        -2.6364203520745044
+      ],
+      "supportTriangleIds": [
+        779692,
+        790299,
+        787092,
+        779668,
+        764202,
+        759454,
+        764241,
+        779719,
+        787131
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.899999976158142,
+      "position": [
+        -0.4902062773704525,
+        1.6572379753348392,
+        -2.6235203520745047
+      ],
+      "supportTriangleIds": [
+        779692,
+        790298,
+        787092,
+        779666,
+        764203,
+        759454,
+        764238,
+        779718,
+        787128
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5,
+      "position": [
+        -0.4902062773704525,
+        1.6573117822175885,
+        -2.610920352074505
+      ],
+      "supportTriangleIds": [
+        779691,
+        790297,
+        787090,
+        779667,
+        764200,
+        759452,
+        764237,
+        779716,
+        787126
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.9000000357627869,
+      "position": [
+        -0.47867049048167626,
+        1.657323906575309,
+        -2.6103475337291817
+      ],
+      "supportTriangleIds": [
+        780608,
+        790296,
+        787861,
+        780584,
+        765601,
+        760716,
+        765637,
+        780635,
+        787896
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.300000011920929,
+      "position": [
+        -0.46608599569392023,
+        1.6573344190856385,
+        -2.6097226409888292
+      ],
+      "supportTriangleIds": [
+        780608,
+        791047,
+        787860,
+        780582,
+        765600,
+        760716,
+        765636,
+        780634,
+        787896
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5999999642372131,
+      "position": [
+        -0.4530520546637448,
+        1.657344633063938,
+        -2.609075430650607
+      ],
+      "supportTriangleIds": [
+        781424,
+        791807,
+        788735,
+        781399,
+        767711,
+        761994,
+        767747,
+        781450,
+        788770
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.4000000357627869,
+      "position": [
+        -0.4412166369466885,
+        1.6573535854541857,
+        -2.608487733906704
+      ],
+      "supportTriangleIds": [
+        781424,
+        791806,
+        788734,
+        781399,
+        767710,
+        763191,
+        767747,
+        781450,
+        788770
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.42833251133065287,
+        1.6573586994220164,
+        -2.607847962767772
+      ],
+      "supportTriangleIds": [
+        782267,
+        792561,
+        789499,
+        782240,
+        773085,
+        763190,
+        773121,
+        782293,
+        789535
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5999999642372131,
+      "position": [
+        -0.41529857030047707,
+        1.6573628410132584,
+        -2.6072007524295495
+      ],
+      "supportTriangleIds": [
+        782266,
+        792560,
+        789498,
+        782240,
+        773084,
+        764219,
+        773120,
+        782292,
+        789534
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5,
+      "position": [
+        -0.4034631525834208,
+        1.6573671930121534,
+        -2.6066130556856466
+      ],
+      "supportTriangleIds": [
+        783102,
+        793325,
+        790278,
+        783077,
+        774102,
+        764219,
+        774139,
+        783129,
+        790315
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.699999988079071,
+      "position": [
+        -0.3917775502805047,
+        1.6573713095049851,
+        -2.6060327981410336
+      ],
+      "supportTriangleIds": [
+        783102,
+        793324,
+        790278,
+        783076,
+        774102,
+        765619,
+        774138,
+        783128,
+        790314
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.699999988079071,
+      "position": [
+        -0.3776949013513492,
+        1.6573795503832904,
+        -2.605333513407782
+      ],
+      "supportTriangleIds": [
+        783908,
+        794087,
+        791028,
+        783883,
+        775406,
+        765618,
+        775442,
+        783934,
+        791065
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.2000000476837158,
+      "position": [
+        -0.3654100373918735,
+        1.6573867786588752,
+        -2.6047234990660093
+      ],
+      "supportTriangleIds": [
+        783908,
+        794086,
+        791789,
+        784667,
+        775406,
+        767729,
+        775442,
+        783934,
+        791825
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.7999999523162842,
+      "position": [
+        -0.35312517343239747,
+        1.657387369297456,
+        -2.6041134847242366
+      ],
+      "supportTriangleIds": [
+        784692,
+        794867,
+        791788,
+        784667,
+        776773,
+        767728,
+        776808,
+        784719,
+        791824
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5,
+      "position": [
+        -0.34039086323050166,
+        1.6573870591192073,
+        -2.6034811527845942
+      ],
+      "supportTriangleIds": [
+        785505,
+        794866,
+        792543,
+        785479,
+        777735,
+        773103,
+        777771,
+        785531,
+        792579
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.699999988079071,
+      "position": [
+        -0.32870526092758556,
+        1.6573795441930028,
+        -2.6029008952399812
+      ],
+      "supportTriangleIds": [
+        785504,
+        795631,
+        792542,
+        785478,
+        777734,
+        773102,
+        777770,
+        785531,
+        792578
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5,
+      "position": [
+        -0.3158211353115496,
+        1.657371781579776,
+        -2.602261124101049
+      ],
+      "supportTriangleIds": [
+        786277,
+        795630,
+        793307,
+        786251,
+        778725,
+        774121,
+        778761,
+        786303,
+        793343
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.300000011920929,
+      "position": [
+        -0.3041355330086335,
+        1.6573648144064408,
+        -2.601680866556436
+      ],
+      "supportTriangleIds": [
+        786276,
+        796424,
+        793306,
+        786251,
+        778724,
+        774120,
+        778760,
+        786302,
+        793342
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.300000011920929,
+      "position": [
+        -0.29035251490775793,
+        1.6573531562046646,
+        -2.600996460221764
+      ],
+      "supportTriangleIds": [
+        787109,
+        797211,
+        794069,
+        787083,
+        779673,
+        775425,
+        779709,
+        787135,
+        794105
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.699999988079071,
+      "position": [
+        -0.2786525149154581,
+        1.6573391698964806,
+        -2.6009960357322273
+      ],
+      "supportTriangleIds": [
+        787108,
+        797211,
+        794068,
+        787082,
+        779672,
+        775424,
+        779708,
+        787134,
+        794104
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.800000011920929,
+      "position": [
+        -0.26470251492463953,
+        1.6573229114266737,
+        -2.600995529610087
+      ],
+      "supportTriangleIds": [
+        787879,
+        798017,
+        794849,
+        787853,
+        780591,
+        776791,
+        780627,
+        787905,
+        794885
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.0999999642372131,
+      "position": [
+        -0.2522525149328337,
+        1.6573092466352704,
+        -2.6009950779096824
+      ],
+      "supportTriangleIds": [
+        787878,
+        798016,
+        794848,
+        787852,
+        780590,
+        777753,
+        780626,
+        787904,
+        794884
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.699999988079071,
+      "position": [
+        -0.239952514940929,
+        1.657301619825357,
+        -2.600994631651451
+      ],
+      "supportTriangleIds": [
+        788753,
+        798833,
+        795613,
+        788727,
+        781407,
+        777752,
+        781443,
+        788779,
+        795648
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.600000023841858,
+      "position": [
+        -0.2275025149491232,
+        1.6572990613766774,
+        -2.6009941799510465
+      ],
+      "supportTriangleIds": [
+        788752,
+        798832,
+        795612,
+        788726,
+        781406,
+        778743,
+        781442,
+        788778,
+        796443
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.699999988079071,
+      "position": [
+        -0.21505251495731736,
+        1.6572989609521982,
+        -2.600993728250642
+      ],
+      "supportTriangleIds": [
+        789517,
+        799653,
+        796407,
+        789491,
+        782249,
+        778742,
+        782285,
+        789542,
+        796442
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.4000000357627869,
+      "position": [
+        -0.20230251496570892,
+        1.6572969696513138,
+        -2.60099326566589
+      ],
+      "supportTriangleIds": [
+        789516,
+        799652,
+        797193,
+        789490,
+        782248,
+        779691,
+        782284,
+        789542,
+        797229
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.300000011920929,
+      "position": [
+        -0.1898525149739031,
+        1.6572959110884626,
+        -2.6009928139654854
+      ],
+      "supportTriangleIds": [
+        790296,
+        800485,
+        797192,
+        790271,
+        783084,
+        779690,
+        783121,
+        790322,
+        797228
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.800000011920929,
+      "position": [
+        -0.1783025149815048,
+        1.6572928688406685,
+        -2.600992394918122
+      ],
+      "supportTriangleIds": [
+        790296,
+        800484,
+        797999,
+        790270,
+        783084,
+        780609,
+        783120,
+        790322,
+        798035
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.800000011920929,
+      "position": [
+        -0.1646525149904885,
+        1.6572934441067393,
+        -2.600991899680329
+      ],
+      "supportTriangleIds": [
+        791046,
+        801326,
+        797998,
+        791020,
+        783890,
+        780608,
+        783926,
+        791073,
+        798034
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.699999988079071,
+      "position": [
+        -0.15235251499858415,
+        1.6572946240364304,
+        -2.600991453422098
+      ],
+      "supportTriangleIds": [
+        791807,
+        801326,
+        798815,
+        791781,
+        784675,
+        781425,
+        784711,
+        791833,
+        798851
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.8999999761581421,
+      "position": [
+        -0.13990251500677797,
+        1.6572959025427527,
+        -2.6009910017216935
+      ],
+      "supportTriangleIds": [
+        791806,
+        802190,
+        798814,
+        791780,
+        784675,
+        781424,
+        784710,
+        791832,
+        798850
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.699999988079071,
+      "position": [
+        -0.127302515015071,
+        1.6573004575497543,
+        -2.6009905445791155
+      ],
+      "supportTriangleIds": [
+        792561,
+        803135,
+        799635,
+        792535,
+        785487,
+        782267,
+        785523,
+        792587,
+        799671
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5999999642372131,
+      "position": [
+        -0.11485251502326518,
+        1.657311837805356,
+        -2.600990092878711
+      ],
+      "supportTriangleIds": [
+        792560,
+        803135,
+        799634,
+        792534,
+        785486,
+        782266,
+        785522,
+        792586,
+        799670
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.9000000357627869,
+      "position": [
+        -0.10240251503145902,
+        1.6573271081345984,
+        -2.600989641178306
+      ],
+      "supportTriangleIds": [
+        793325,
+        804071,
+        800467,
+        793299,
+        786259,
+        783103,
+        786295,
+        793351,
+        800503
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.699999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6573474771645826,
+        -2.6009891986846925
+      ],
+      "supportTriangleIds": [
+        793324,
+        804070,
+        800466,
+        793298,
+        786258,
+        783102,
+        786294,
+        793350,
+        800502
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6573991991324446,
+        -2.5883891986846925
+      ],
+      "supportTriangleIds": [
+        793322,
+        804069,
+        800464,
+        793298,
+        786256,
+        783100,
+        786292,
+        793349,
+        800500
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.657452927396532,
+        -2.5759391986846927
+      ],
+      "supportTriangleIds": [
+        793322,
+        804068,
+        800464,
+        793296,
+        786256,
+        783100,
+        786292,
+        793348,
+        800500
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.6575087040098486,
+        -2.5633391986846927
+      ],
+      "supportTriangleIds": [
+        793321,
+        804066,
+        800462,
+        793296,
+        786254,
+        783098,
+        786290,
+        793346,
+        800498
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.0999999642372131,
+      "position": [
+        -0.0902062773704526,
+        1.6575763734106408,
+        -2.5510391986846925
+      ],
+      "supportTriangleIds": [
+        793320,
+        804067,
+        800462,
+        793294,
+        786255,
+        783098,
+        786291,
+        793346,
+        800498
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.9000000357627869,
+      "position": [
+        -0.0902062773704526,
+        1.6576462982878313,
+        -2.5385891986846927
+      ],
+      "supportTriangleIds": [
+        793318,
+        804064,
+        800460,
+        793295,
+        786253,
+        783096,
+        786289,
+        793344,
+        800496
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.699999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6577161687490356,
+        -2.5259891986846927
+      ],
+      "supportTriangleIds": [
+        793318,
+        804065,
+        800460,
+        793292,
+        786252,
+        783096,
+        786288,
+        793345,
+        800496
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2,
+      "position": [
+        -0.0902062773704526,
+        1.6577819166548464,
+        -2.5136891986846925
+      ],
+      "supportTriangleIds": [
+        793316,
+        804063,
+        800458,
+        793291,
+        786250,
+        783094,
+        786286,
+        793342,
+        800494
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6578557350689562,
+        -2.5009391986846925
+      ],
+      "supportTriangleIds": [
+        793317,
+        804062,
+        800458,
+        793290,
+        786250,
+        783094,
+        786286,
+        793341,
+        800494
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.399999976158142,
+      "position": [
+        -0.0902062773704526,
+        1.6579318935232528,
+        -2.4884891986846926
+      ],
+      "supportTriangleIds": [
+        793314,
+        804061,
+        800456,
+        793288,
+        786248,
+        783092,
+        786284,
+        793340,
+        800492
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6580253768674882,
+        -2.4760391986846924
+      ],
+      "supportTriangleIds": [
+        793314,
+        804060,
+        800457,
+        793288,
+        786248,
+        783092,
+        786285,
+        793338,
+        800493
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.9000000357627869,
+      "position": [
+        -0.0902062773704526,
+        1.6581193187713268,
+        -2.4634391986846924
+      ],
+      "supportTriangleIds": [
+        793312,
+        804058,
+        800454,
+        793287,
+        786246,
+        783090,
+        786282,
+        793338,
+        800490
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.658222104459472,
+        -2.450989198684693
+      ],
+      "supportTriangleIds": [
+        793312,
+        804059,
+        800454,
+        793286,
+        786247,
+        783090,
+        786281,
+        793336,
+        800490
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2,
+      "position": [
+        -0.0902062773704526,
+        1.6583296410324564,
+        -2.438389198684693
+      ],
+      "supportTriangleIds": [
+        793310,
+        804056,
+        800452,
+        793285,
+        786244,
+        783088,
+        786280,
+        793336,
+        800488
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.899999976158142,
+      "position": [
+        -0.0902062773704526,
+        1.6584434545220728,
+        -2.4259391986846928
+      ],
+      "supportTriangleIds": [
+        793308,
+        804054,
+        800450,
+        793284,
+        786244,
+        783087,
+        786279,
+        793334,
+        800487
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6585632890089663,
+        -2.413489198684694
+      ],
+      "supportTriangleIds": [
+        793308,
+        804054,
+        800450,
+        793280,
+        786242,
+        783086,
+        786278,
+        793335,
+        800486
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6586862176096016,
+        -2.4009891986846923
+      ],
+      "supportTriangleIds": [
+        793306,
+        804053,
+        800448,
+        793281,
+        786240,
+        783084,
+        786277,
+        793332,
+        800484
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6588187060873556,
+        -2.388539198684693
+      ],
+      "supportTriangleIds": [
+        793306,
+        804052,
+        800448,
+        793276,
+        786240,
+        783084,
+        786276,
+        793332,
+        800484
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.658953775097607,
+        -2.3760891986846926
+      ],
+      "supportTriangleIds": [
+        793305,
+        804050,
+        800446,
+        793277,
+        786239,
+        783082,
+        786274,
+        793330,
+        800483
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.65909772017533,
+        -2.3634891986846926
+      ],
+      "supportTriangleIds": [
+        793304,
+        804051,
+        800446,
+        793268,
+        786238,
+        783082,
+        786275,
+        793331,
+        800482
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.659242123603626,
+        -2.350889198684693
+      ],
+      "supportTriangleIds": [
+        793302,
+        804048,
+        800442,
+        793263,
+        786236,
+        783080,
+        786272,
+        793328,
+        800480
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6593737269332849,
+        -2.338589198684693
+      ],
+      "supportTriangleIds": [
+        793303,
+        804049,
+        800442,
+        793262,
+        786237,
+        783080,
+        786273,
+        793327,
+        800480
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.699999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6595054198862669,
+        -2.325989198684693
+      ],
+      "supportTriangleIds": [
+        793300,
+        804047,
+        800438,
+        793258,
+        786230,
+        783078,
+        786270,
+        793326,
+        800478
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.9000000357627869,
+      "position": [
+        -0.0902062773704526,
+        1.659624639324688,
+        -2.3135391986846936
+      ],
+      "supportTriangleIds": [
+        793301,
+        804046,
+        800438,
+        793258,
+        786231,
+        783078,
+        786271,
+        793325,
+        800478
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2,
+      "position": [
+        -0.0902062773704526,
+        1.6597706798067895,
+        -2.3022891986846936
+      ],
+      "supportTriangleIds": [
+        793298,
+        804044,
+        800432,
+        793250,
+        786225,
+        783076,
+        786269,
+        793324,
+        800476
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.899999976158142,
+      "position": [
+        -0.0902062773704526,
+        1.65995424948495,
+        -2.288489198684694
+      ],
+      "supportTriangleIds": [
+        793298,
+        804045,
+        800425,
+        793250,
+        786224,
+        783076,
+        786268,
+        793322,
+        800476
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.700000047683716,
+      "position": [
+        -0.0902062773704526,
+        1.660114347581564,
+        -2.276039198684694
+      ],
+      "supportTriangleIds": [
+        793296,
+        804042,
+        800424,
+        793192,
+        786214,
+        783074,
+        786267,
+        793322,
+        800474
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.699999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.660275401435818,
+        -2.263439198684694
+      ],
+      "supportTriangleIds": [
+        793296,
+        804043,
+        800419,
+        793193,
+        786208,
+        783881,
+        786266,
+        793321,
+        800474
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.5,
+      "position": [
+        -0.0902062773704526,
+        1.660417927601505,
+        -2.2509891986846937
+      ],
+      "supportTriangleIds": [
+        793294,
+        804040,
+        800418,
+        793186,
+        786208,
+        783879,
+        786264,
+        793320,
+        800472
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.600000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.660558836085976,
+        -2.238389198684694
+      ],
+      "supportTriangleIds": [
+        793295,
+        804040,
+        800415,
+        793186,
+        786205,
+        783879,
+        786265,
+        793318,
+        800473
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.5,
+      "position": [
+        -0.0902062773704526,
+        1.660684910679734,
+        -2.225939198684694
+      ],
+      "supportTriangleIds": [
+        793292,
+        804038,
+        800414,
+        793178,
+        786204,
+        783877,
+        786262,
+        793318,
+        800470
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.399999976158142,
+      "position": [
+        -0.0902062773704526,
+        1.6608109130831674,
+        -2.2134891986846936
+      ],
+      "supportTriangleIds": [
+        793291,
+        804037,
+        800398,
+        793179,
+        786197,
+        783875,
+        786261,
+        793316,
+        800469
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.700000047683716,
+      "position": [
+        -0.0902062773704526,
+        1.6609381968743018,
+        -2.200989198684693
+      ],
+      "supportTriangleIds": [
+        793290,
+        804036,
+        800398,
+        793172,
+        786196,
+        783875,
+        786260,
+        793317,
+        800468
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6610639585431357,
+        -2.188539198684693
+      ],
+      "supportTriangleIds": [
+        793288,
+        804034,
+        800344,
+        793173,
+        786146,
+        783873,
+        786259,
+        793314,
+        800466
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.5,
+      "position": [
+        -0.0902062773704526,
+        1.6611906042759224,
+        -2.175939198684693
+      ],
+      "supportTriangleIds": [
+        793288,
+        804035,
+        800344,
+        793164,
+        786147,
+        783873,
+        786258,
+        793314,
+        800466
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6613069356766423,
+        -2.1633391986846933
+      ],
+      "supportTriangleIds": [
+        793287,
+        804027,
+        800338,
+        793164,
+        786141,
+        783871,
+        786256,
+        793312,
+        800464
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.5,
+      "position": [
+        -0.0902062773704526,
+        1.6614115868107913,
+        -2.1510391986846935
+      ],
+      "supportTriangleIds": [
+        793286,
+        804026,
+        800338,
+        793158,
+        786140,
+        783871,
+        786257,
+        793312,
+        800464
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.600000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6615100374770984,
+        -2.1384391986846936
+      ],
+      "supportTriangleIds": [
+        793285,
+        804019,
+        800332,
+        793152,
+        786132,
+        783865,
+        786254,
+        793310,
+        800462
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.661603890375159,
+        -2.1258391986846936
+      ],
+      "supportTriangleIds": [
+        793284,
+        804011,
+        800333,
+        793152,
+        786133,
+        783865,
+        786255,
+        793308,
+        800462
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.5,
+      "position": [
+        -0.0902062773704526,
+        1.6616996929017456,
+        -2.113689198684694
+      ],
+      "supportTriangleIds": [
+        793280,
+        804010,
+        800322,
+        793147,
+        786125,
+        783052,
+        786253,
+        793308,
+        800460
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.200000047683716,
+      "position": [
+        -0.0902062773704526,
+        1.661802387805673,
+        -2.1007891986846943
+      ],
+      "supportTriangleIds": [
+        793281,
+        804002,
+        800323,
+        793146,
+        786124,
+        783052,
+        786252,
+        793306,
+        800460
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.400000035762787,
+      "position": [
+        -0.0902062773704526,
+        1.661910416304803,
+        -2.088339198684694
+      ],
+      "supportTriangleIds": [
+        793276,
+        804003,
+        800316,
+        793140,
+        786118,
+        783046,
+        786250,
+        793306,
+        800458
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.662021017564831,
+        -2.0758891986846937
+      ],
+      "supportTriangleIds": [
+        793277,
+        803988,
+        800316,
+        793140,
+        786119,
+        783046,
+        786250,
+        793305,
+        800458
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.662117277107929,
+        -2.0634391986846943
+      ],
+      "supportTriangleIds": [
+        793268,
+        803989,
+        800308,
+        793134,
+        786112,
+        783034,
+        786248,
+        793304,
+        800456
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6622144871548057,
+        -2.0508391986846943
+      ],
+      "supportTriangleIds": [
+        793263,
+        803980,
+        800308,
+        793135,
+        786107,
+        783026,
+        786248,
+        793302,
+        800457
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.799999952316284,
+      "position": [
+        -0.0902062773704526,
+        1.6622843403861371,
+        -2.038389198684694
+      ],
+      "supportTriangleIds": [
+        793262,
+        803981,
+        800300,
+        793128,
+        786106,
+        783026,
+        786246,
+        793303,
+        800454
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6623524449394185,
+        -2.025939198684694
+      ],
+      "supportTriangleIds": [
+        793258,
+        803975,
+        800290,
+        793128,
+        786099,
+        783020,
+        786247,
+        793300,
+        800454
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.699999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.662409501956159,
+        -2.0133391986846947
+      ],
+      "supportTriangleIds": [
+        793258,
+        803975,
+        800290,
+        793122,
+        786098,
+        783020,
+        786244,
+        793301,
+        800452
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6624614301719445,
+        -2.001039198684695
+      ],
+      "supportTriangleIds": [
+        793250,
+        803954,
+        800282,
+        793122,
+        786092,
+        783014,
+        786242,
+        793298,
+        800450
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.900000035762787,
+      "position": [
+        -0.0902062773704526,
+        1.6625056507933516,
+        -1.9885891986846944
+      ],
+      "supportTriangleIds": [
+        793250,
+        803955,
+        800282,
+        793116,
+        786093,
+        783014,
+        786242,
+        793298,
+        800450
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.699999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6625451200876211,
+        -1.9759891986846945
+      ],
+      "supportTriangleIds": [
+        793192,
+        803897,
+        800274,
+        793110,
+        786086,
+        782962,
+        786240,
+        793296,
+        800448
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.700000047683716,
+      "position": [
+        -0.0902062773704526,
+        1.662576976483079,
+        -1.9635391986846948
+      ],
+      "supportTriangleIds": [
+        793193,
+        803896,
+        800274,
+        793110,
+        786087,
+        782962,
+        786240,
+        793296,
+        800448
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3,
+      "position": [
+        -0.0902062773704526,
+        1.662599299656203,
+        -1.950939198684695
+      ],
+      "supportTriangleIds": [
+        793186,
+        803888,
+        800266,
+        793105,
+        786081,
+        782952,
+        786239,
+        793294,
+        800446
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6626151352567915,
+        -1.9384891986846944
+      ],
+      "supportTriangleIds": [
+        793186,
+        803889,
+        800266,
+        793104,
+        786080,
+        782952,
+        786238,
+        793295,
+        800446
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.700000047683716,
+      "position": [
+        -0.0902062773704526,
+        1.662625309778859,
+        -1.9258891986846949
+      ],
+      "supportTriangleIds": [
+        793178,
+        803881,
+        800258,
+        793099,
+        786074,
+        782942,
+        786236,
+        793292,
+        800442
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6626330671717469,
+        -1.9134391986846944
+      ],
+      "supportTriangleIds": [
+        793179,
+        803880,
+        800259,
+        793098,
+        786075,
+        782942,
+        786237,
+        793291,
+        800442
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.099999964237213,
+      "position": [
+        -0.0902062773704526,
+        1.6626377464103026,
+        -1.9009891986846943
+      ],
+      "supportTriangleIds": [
+        793172,
+        803869,
+        800252,
+        793092,
+        786068,
+        782932,
+        786230,
+        793290,
+        800438
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.600000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6626429119526902,
+        -1.8885391986846949
+      ],
+      "supportTriangleIds": [
+        793173,
+        803869,
+        800245,
+        793093,
+        786063,
+        782932,
+        786231,
+        793288,
+        800438
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.600000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6626442893241975,
+        -1.8759391986846945
+      ],
+      "supportTriangleIds": [
+        793164,
+        803859,
+        800244,
+        793086,
+        786062,
+        782924,
+        786224,
+        793288,
+        800432
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.899999976158142,
+      "position": [
+        -0.0902062773704526,
+        1.6626436023188118,
+        -1.8634891986846944
+      ],
+      "supportTriangleIds": [
+        793164,
+        803859,
+        800237,
+        793087,
+        786056,
+        782924,
+        786224,
+        793287,
+        800425
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.66263330367154,
+        -1.8510391986846944
+      ],
+      "supportTriangleIds": [
+        793158,
+        803849,
+        800236,
+        793076,
+        786057,
+        782916,
+        786214,
+        793286,
+        800424
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.699999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6626200104901343,
+        -1.8399391986846945
+      ],
+      "supportTriangleIds": [
+        793158,
+        803848,
+        800231,
+        793076,
+        786050,
+        782917,
+        786215,
+        793285,
+        800419
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.899999976158142,
+      "position": [
+        -0.0902062773704526,
+        1.662581511076408,
+        -1.8258391986846945
+      ],
+      "supportTriangleIds": [
+        793152,
+        803839,
+        800230,
+        793046,
+        786051,
+        782906,
+        786209,
+        793284,
+        800418
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.662536613688446,
+        -1.8135391986846945
+      ],
+      "supportTriangleIds": [
+        793147,
+        803828,
+        800224,
+        793028,
+        786042,
+        782898,
+        786205,
+        793280,
+        800415
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.900000035762787,
+      "position": [
+        -0.0902062773704526,
+        1.6625704211780574,
+        -1.8010891986846942
+      ],
+      "supportTriangleIds": [
+        793146,
+        803829,
+        800224,
+        793028,
+        786043,
+        782898,
+        786204,
+        793281,
+        800414
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 4.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6626282293285777,
+        -1.7898391986846942
+      ],
+      "supportTriangleIds": [
+        793140,
+        803818,
+        800217,
+        793025,
+        786037,
+        782890,
+        786197,
+        793276,
+        800399
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 4.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6626800101543342,
+        -1.7767891986846938
+      ],
+      "supportTriangleIds": [
+        793140,
+        803819,
+        800216,
+        793024,
+        786036,
+        782890,
+        786196,
+        793277,
+        800398
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 4,
+      "position": [
+        -0.0902062773704526,
+        1.662721957038506,
+        -1.7632891986846937
+      ],
+      "supportTriangleIds": [
+        793134,
+        803808,
+        800204,
+        793019,
+        786024,
+        782882,
+        786146,
+        793268,
+        800344
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.900000035762787,
+      "position": [
+        -0.0902062773704526,
+        1.6627486237811409,
+        -1.750839198684694
+      ],
+      "supportTriangleIds": [
+        793135,
+        803809,
+        800204,
+        793018,
+        786024,
+        782882,
+        786147,
+        793263,
+        800344
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 4.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6627663999690538,
+        -1.7383891986846938
+      ],
+      "supportTriangleIds": [
+        793128,
+        803799,
+        800176,
+        792990,
+        785998,
+        782874,
+        786141,
+        793262,
+        800338
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 4,
+      "position": [
+        -0.0902062773704526,
+        1.6627752917473018,
+        -1.7259391986846937
+      ],
+      "supportTriangleIds": [
+        793128,
+        803798,
+        800177,
+        792991,
+        785999,
+        782874,
+        786140,
+        793258,
+        800339
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 4,
+      "position": [
+        -0.0902062773704526,
+        1.6627684494101806,
+        -1.713339198684694
+      ],
+      "supportTriangleIds": [
+        793122,
+        803789,
+        800130,
+        792982,
+        785972,
+        782866,
+        786132,
+        793258,
+        800332
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6627685633208165,
+        -1.702239198684694
+      ],
+      "supportTriangleIds": [
+        793122,
+        803789,
+        800131,
+        792982,
+        785967,
+        782866,
+        786133,
+        793250,
+        800333
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 4,
+      "position": [
+        -0.0902062773704526,
+        1.6627686865360545,
+        -1.6887391986846938
+      ],
+      "supportTriangleIds": [
+        793116,
+        803779,
+        800122,
+        792980,
+        785966,
+        782858,
+        786124,
+        793250,
+        800322
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.662776367182,
+        -1.677339198684694
+      ],
+      "supportTriangleIds": [
+        793110,
+        803779,
+        800118,
+        792980,
+        785958,
+        782858,
+        786124,
+        793192,
+        800323
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6627899959687873,
+        -1.6632391986846935
+      ],
+      "supportTriangleIds": [
+        793110,
+        803769,
+        800118,
+        792978,
+        785959,
+        782850,
+        786118,
+        793193,
+        800316
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6628057285520756,
+        -1.6509391986846933
+      ],
+      "supportTriangleIds": [
+        793105,
+        803759,
+        800087,
+        792976,
+        785925,
+        782840,
+        786112,
+        793186,
+        800316
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.200000047683716,
+      "position": [
+        -0.0902062773704526,
+        1.6628097868222385,
+        -1.6383391986846938
+      ],
+      "supportTriangleIds": [
+        793104,
+        803759,
+        800086,
+        792976,
+        785924,
+        782840,
+        786112,
+        793186,
+        800308
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.5,
+      "position": [
+        -0.0902062773704526,
+        1.6627825203540687,
+        -1.6260391986846934
+      ],
+      "supportTriangleIds": [
+        793099,
+        803750,
+        800076,
+        792975,
+        785923,
+        782832,
+        786107,
+        793178,
+        800301
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6627499513867403,
+        -1.6134391986846932
+      ],
+      "supportTriangleIds": [
+        793098,
+        803751,
+        800076,
+        792974,
+        785922,
+        782832,
+        786106,
+        793179,
+        800300
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.600000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6627088447691625,
+        -1.6009891986846936
+      ],
+      "supportTriangleIds": [
+        793092,
+        803741,
+        800074,
+        792973,
+        785920,
+        782820,
+        786099,
+        793172,
+        800290
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.5,
+      "position": [
+        -0.0902062773704526,
+        1.6626366430806236,
+        -1.5885391986846933
+      ],
+      "supportTriangleIds": [
+        793093,
+        803740,
+        800074,
+        792972,
+        785920,
+        782820,
+        786098,
+        793173,
+        800290
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6625472506824912,
+        -1.5760891986846937
+      ],
+      "supportTriangleIds": [
+        793086,
+        803731,
+        800072,
+        792970,
+        785918,
+        782804,
+        786092,
+        793164,
+        800282
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6625086199018666,
+        -1.5634891986846935
+      ],
+      "supportTriangleIds": [
+        793087,
+        803730,
+        800071,
+        792971,
+        785916,
+        782804,
+        786093,
+        793164,
+        800282
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.662546491399995,
+        -1.5511891986846935
+      ],
+      "supportTriangleIds": [
+        793076,
+        803720,
+        800070,
+        792968,
+        785916,
+        782796,
+        786086,
+        793158,
+        800274
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.600000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6625783477954523,
+        -1.5387391986846934
+      ],
+      "supportTriangleIds": [
+        793076,
+        803721,
+        800068,
+        792969,
+        785915,
+        782796,
+        786087,
+        793152,
+        800274
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.662598455003441,
+        -1.5273391986846936
+      ],
+      "supportTriangleIds": [
+        793046,
+        803697,
+        800068,
+        792966,
+        785914,
+        782768,
+        786081,
+        793152,
+        800266
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6626158169269782,
+        -1.5136891986846936
+      ],
+      "supportTriangleIds": [
+        793028,
+        803696,
+        800067,
+        792967,
+        785913,
+        782769,
+        786080,
+        793147,
+        800266
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.66262576849306,
+        -1.5009391986846936
+      ],
+      "supportTriangleIds": [
+        793028,
+        803651,
+        800066,
+        792964,
+        785912,
+        782738,
+        786074,
+        793146,
+        800258
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6626333263686406,
+        -1.4886391986846932
+      ],
+      "supportTriangleIds": [
+        793025,
+        803650,
+        800064,
+        792962,
+        785910,
+        782732,
+        786075,
+        793140,
+        800259
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.699999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6626380354446006,
+        -1.476039198684693
+      ],
+      "supportTriangleIds": [
+        793024,
+        803639,
+        800064,
+        792962,
+        785911,
+        782732,
+        786068,
+        793140,
+        800252
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.662642936482444,
+        -1.4635891986846934
+      ],
+      "supportTriangleIds": [
+        793019,
+        803638,
+        800062,
+        792960,
+        785909,
+        782726,
+        786063,
+        793134,
+        800245
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.900000035762787,
+      "position": [
+        -0.0902062773704526,
+        1.6626443924290308,
+        -1.4509891986846932
+      ],
+      "supportTriangleIds": [
+        793018,
+        803630,
+        800062,
+        792960,
+        785908,
+        782726,
+        786062,
+        793135,
+        800244
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6626428702398752,
+        -1.438539198684693
+      ],
+      "supportTriangleIds": [
+        792990,
+        803589,
+        800060,
+        792959,
+        785906,
+        782690,
+        786056,
+        793128,
+        800237
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6626327854826697,
+        -1.4260891986846933
+      ],
+      "supportTriangleIds": [
+        792991,
+        803588,
+        800061,
+        792958,
+        785906,
+        782690,
+        786057,
+        793128,
+        800236
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.662614034151435,
+        -1.413639198684693
+      ],
+      "supportTriangleIds": [
+        792982,
+        803576,
+        800058,
+        792957,
+        785904,
+        782688,
+        786050,
+        793122,
+        800231
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.799999952316284,
+      "position": [
+        -0.0902062773704526,
+        1.6625800764077938,
+        -1.4010391986846928
+      ],
+      "supportTriangleIds": [
+        792982,
+        803577,
+        800056,
+        792956,
+        785904,
+        782688,
+        786051,
+        793122,
+        800230
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 3,
+      "position": [
+        -0.0902062773704526,
+        1.662533150809569,
+        -1.3885891986846923
+      ],
+      "supportTriangleIds": [
+        792980,
+        803548,
+        800056,
+        792954,
+        785902,
+        782686,
+        786042,
+        793116,
+        800224
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.599999964237213,
+      "position": [
+        -0.0902062773704526,
+        1.6624695433488794,
+        -1.3759891986846924
+      ],
+      "supportTriangleIds": [
+        792980,
+        803548,
+        800054,
+        792954,
+        785900,
+        782686,
+        786043,
+        793110,
+        800225
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.700000047683716,
+      "position": [
+        -0.0902062773704526,
+        1.6624017420328958,
+        -1.3635391986846928
+      ],
+      "supportTriangleIds": [
+        792978,
+        803546,
+        800054,
+        792953,
+        785900,
+        782684,
+        786037,
+        793110,
+        800216
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.699999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.662324734079317,
+        -1.3509391986846926
+      ],
+      "supportTriangleIds": [
+        792976,
+        803544,
+        800053,
+        792952,
+        785899,
+        782683,
+        786036,
+        793105,
+        800216
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.5,
+      "position": [
+        -0.0902062773704526,
+        1.662329751126169,
+        -1.3384891986846923
+      ],
+      "supportTriangleIds": [
+        792976,
+        803544,
+        800052,
+        792950,
+        785898,
+        782682,
+        786024,
+        793104,
+        800204
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.700000047683716,
+      "position": [
+        -0.0902062773704526,
+        1.6624112533877058,
+        -1.3258891986846928
+      ],
+      "supportTriangleIds": [
+        792975,
+        803543,
+        800050,
+        792950,
+        785896,
+        782680,
+        786024,
+        793099,
+        800204
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.662494604850009,
+        -1.3134391986846925
+      ],
+      "supportTriangleIds": [
+        792974,
+        803542,
+        800050,
+        792948,
+        785896,
+        782680,
+        785998,
+        793098,
+        800176
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.400000035762787,
+      "position": [
+        -0.0902062773704526,
+        1.6625679191713958,
+        -1.3023391986846924
+      ],
+      "supportTriangleIds": [
+        792973,
+        803540,
+        800049,
+        792949,
+        785895,
+        782678,
+        785999,
+        793092,
+        800177
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.700000047683716,
+      "position": [
+        -0.0902062773704526,
+        1.662649290757635,
+        -1.2886891986846924
+      ],
+      "supportTriangleIds": [
+        792972,
+        803541,
+        800048,
+        792946,
+        785894,
+        782678,
+        785972,
+        793093,
+        800130
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6627227766485158,
+        -1.2759391986846924
+      ],
+      "supportTriangleIds": [
+        792970,
+        803538,
+        800046,
+        792946,
+        785893,
+        782676,
+        785967,
+        793086,
+        800122
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6627900279100498,
+        -1.263489198684692
+      ],
+      "supportTriangleIds": [
+        792971,
+        803539,
+        800046,
+        792944,
+        785892,
+        782676,
+        785966,
+        793087,
+        800122
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6628556607231544,
+        -1.2508891986846926
+      ],
+      "supportTriangleIds": [
+        792968,
+        803537,
+        800044,
+        792942,
+        785890,
+        782674,
+        785958,
+        793076,
+        800118
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6629170119907504,
+        -1.2385891986846922
+      ],
+      "supportTriangleIds": [
+        792969,
+        803536,
+        800044,
+        792942,
+        785891,
+        782674,
+        785959,
+        793076,
+        800118
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6629676880539226,
+        -1.2261391986846926
+      ],
+      "supportTriangleIds": [
+        792966,
+        803535,
+        800042,
+        792940,
+        785888,
+        782672,
+        785925,
+        793046,
+        800086
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.663009365908695,
+        -1.2148891986846926
+      ],
+      "supportTriangleIds": [
+        792967,
+        803534,
+        800042,
+        792940,
+        785889,
+        782672,
+        785924,
+        793028,
+        800086
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.599999964237213,
+      "position": [
+        -0.0902062773704526,
+        1.663037053304221,
+        -1.2009891986846923
+      ],
+      "supportTriangleIds": [
+        792964,
+        803532,
+        800040,
+        792938,
+        785886,
+        782670,
+        785923,
+        793028,
+        800076
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6630558958522972,
+        -1.1883891986846928
+      ],
+      "supportTriangleIds": [
+        792962,
+        803530,
+        800040,
+        792938,
+        785886,
+        782668,
+        785922,
+        793025,
+        800076
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2,
+      "position": [
+        -0.0902062773704526,
+        1.6630681354747268,
+        -1.1760891986846924
+      ],
+      "supportTriangleIds": [
+        792962,
+        803531,
+        800038,
+        792936,
+        785884,
+        782668,
+        785920,
+        793024,
+        800074
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.099999964237213,
+      "position": [
+        -0.0902062773704526,
+        1.663082571618956,
+        -1.1634891986846922
+      ],
+      "supportTriangleIds": [
+        792960,
+        803529,
+        800037,
+        792936,
+        785882,
+        782666,
+        785920,
+        793019,
+        800074
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6631071179841683,
+        -1.1510391986846926
+      ],
+      "supportTriangleIds": [
+        792960,
+        803528,
+        800036,
+        792934,
+        785882,
+        782666,
+        785918,
+        793018,
+        800072
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.099999964237213,
+      "position": [
+        -0.0902062773704526,
+        1.6631354472773132,
+        -1.1385891986846923
+      ],
+      "supportTriangleIds": [
+        792959,
+        803527,
+        800035,
+        792935,
+        785880,
+        782664,
+        785916,
+        792990,
+        800071
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2,
+      "position": [
+        -0.0902062773704526,
+        1.663179902437578,
+        -1.1259891986846922
+      ],
+      "supportTriangleIds": [
+        792958,
+        803526,
+        800034,
+        792932,
+        785880,
+        783497,
+        785916,
+        792991,
+        800070
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2,
+      "position": [
+        -0.0902062773704526,
+        1.6632203722443062,
+        -1.1147391986846922
+      ],
+      "supportTriangleIds": [
+        792957,
+        803525,
+        800033,
+        792933,
+        785879,
+        783495,
+        785915,
+        792982,
+        800068
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.9000000357627869,
+      "position": [
+        -0.0902062773704526,
+        1.663276431924128,
+        -1.1009391986846924
+      ],
+      "supportTriangleIds": [
+        792956,
+        803524,
+        800032,
+        792930,
+        785878,
+        783495,
+        785914,
+        792982,
+        800068
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6633172644265948,
+        -1.088489198684692
+      ],
+      "supportTriangleIds": [
+        792954,
+        803523,
+        800030,
+        792930,
+        785876,
+        783493,
+        785913,
+        792980,
+        800067
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.6633296555692427,
+        -1.0760391986846924
+      ],
+      "supportTriangleIds": [
+        792954,
+        803522,
+        800030,
+        792928,
+        785877,
+        783493,
+        785912,
+        792980,
+        800066
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.663336332982007,
+        -1.063589198684692
+      ],
+      "supportTriangleIds": [
+        792953,
+        803520,
+        800028,
+        792926,
+        785874,
+        783491,
+        785910,
+        792978,
+        800064
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.66332963820488,
+        -1.0511391986846923
+      ],
+      "supportTriangleIds": [
+        792952,
+        803521,
+        800028,
+        792926,
+        785875,
+        783491,
+        785911,
+        792976,
+        800064
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.663326238361179,
+        -1.0385391986846924
+      ],
+      "supportTriangleIds": [
+        792950,
+        803518,
+        800026,
+        792924,
+        785872,
+        783489,
+        785909,
+        792976,
+        800062
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6633288492008425,
+        -1.0259391986846922
+      ],
+      "supportTriangleIds": [
+        792950,
+        803519,
+        800027,
+        792924,
+        785872,
+        783489,
+        785908,
+        792975,
+        800062
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.6633297178524888,
+        -1.013489198684692
+      ],
+      "supportTriangleIds": [
+        792948,
+        803517,
+        800024,
+        792923,
+        785870,
+        783487,
+        785906,
+        792974,
+        800060
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6633291551415383,
+        -1.0010391986846925
+      ],
+      "supportTriangleIds": [
+        792949,
+        803516,
+        800024,
+        792922,
+        785870,
+        783487,
+        785906,
+        792973,
+        800061
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.2999999523162842,
+      "position": [
+        -0.0902062773704526,
+        1.6633301156022091,
+        -0.988589198684692
+      ],
+      "supportTriangleIds": [
+        792946,
+        803514,
+        800022,
+        792920,
+        785868,
+        783485,
+        785904,
+        792972,
+        800058
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.2000000476837158,
+      "position": [
+        -0.0902062773704526,
+        1.663331781545387,
+        -0.9761391986846925
+      ],
+      "supportTriangleIds": [
+        792946,
+        803514,
+        800022,
+        792920,
+        785867,
+        782652,
+        785902,
+        792970,
+        800056
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.6633341706435532,
+        -0.963689198684692
+      ],
+      "supportTriangleIds": [
+        792944,
+        803512,
+        800020,
+        792918,
+        785866,
+        782650,
+        785902,
+        792971,
+        800056
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6633366978685535,
+        -0.951089198684692
+      ],
+      "supportTriangleIds": [
+        792942,
+        803510,
+        800019,
+        792918,
+        785864,
+        782651,
+        785900,
+        792968,
+        800054
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6633446319627296,
+        -0.9384891986846924
+      ],
+      "supportTriangleIds": [
+        792942,
+        803510,
+        800018,
+        792916,
+        785864,
+        782648,
+        785900,
+        792969,
+        800054
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6633541505499552,
+        -0.926189198684692
+      ],
+      "supportTriangleIds": [
+        792940,
+        803509,
+        800016,
+        792916,
+        785862,
+        782646,
+        785899,
+        792966,
+        800053
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.0999999642372131,
+      "position": [
+        -0.0902062773704526,
+        1.6633780051431404,
+        -0.9135891986846918
+      ],
+      "supportTriangleIds": [
+        792940,
+        803508,
+        800016,
+        792914,
+        785862,
+        782646,
+        785898,
+        792967,
+        800052
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.663403975915781,
+        -0.9011391986846922
+      ],
+      "supportTriangleIds": [
+        792938,
+        803507,
+        800014,
+        792915,
+        785860,
+        782644,
+        785896,
+        792964,
+        800050
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6634382803449883,
+        -0.888539198684692
+      ],
+      "supportTriangleIds": [
+        792938,
+        803506,
+        800014,
+        792912,
+        785861,
+        782644,
+        785896,
+        792962,
+        800050
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.0999999642372131,
+      "position": [
+        -0.0902062773704526,
+        1.66347562992583,
+        -0.8760891986846917
+      ],
+      "supportTriangleIds": [
+        792936,
+        803504,
+        800012,
+        792913,
+        785859,
+        782642,
+        785895,
+        792962,
+        800048
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.2000000476837158,
+      "position": [
+        -0.0902062773704526,
+        1.6635194796039765,
+        -0.8636391986846921
+      ],
+      "supportTriangleIds": [
+        792936,
+        803505,
+        800012,
+        792910,
+        785858,
+        782642,
+        785894,
+        792960,
+        800048
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.0999999642372131,
+      "position": [
+        -0.0902062773704526,
+        1.66356324667169,
+        -0.8513391986846917
+      ],
+      "supportTriangleIds": [
+        792934,
+        803502,
+        800010,
+        792910,
+        785856,
+        782640,
+        785893,
+        792960,
+        800046
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.2999999523162842,
+      "position": [
+        -0.0902062773704526,
+        1.6636091418950811,
+        -0.8385891986846916
+      ],
+      "supportTriangleIds": [
+        792935,
+        803503,
+        800010,
+        792908,
+        785857,
+        782640,
+        785892,
+        792959,
+        800046
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.9000000357627869,
+      "position": [
+        -0.0902062773704526,
+        1.663651103823539,
+        -0.826139198684692
+      ],
+      "supportTriangleIds": [
+        792932,
+        803500,
+        800008,
+        792906,
+        785854,
+        782638,
+        785890,
+        792958,
+        800044
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.663691832342948,
+        -0.8136891986846917
+      ],
+      "supportTriangleIds": [
+        792933,
+        803500,
+        800008,
+        792906,
+        785855,
+        782638,
+        785891,
+        792957,
+        800044
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.2999999523162842,
+      "position": [
+        -0.0902062773704526,
+        1.6637319586520485,
+        -0.8010891986846915
+      ],
+      "supportTriangleIds": [
+        792930,
+        803498,
+        800006,
+        792904,
+        785852,
+        782636,
+        785888,
+        792956,
+        800042
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.663771858338169,
+        -0.7884891986846914
+      ],
+      "supportTriangleIds": [
+        792930,
+        803496,
+        800006,
+        792904,
+        785852,
+        782636,
+        785889,
+        792954,
+        800042
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.663781729833694,
+        -0.7760391986846911
+      ],
+      "supportTriangleIds": [
+        792928,
+        803496,
+        800004,
+        792902,
+        785850,
+        783467,
+        785886,
+        792954,
+        800040
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.899999976158142,
+      "position": [
+        -0.0902062773704526,
+        1.6637891235921007,
+        -0.7635891986846914
+      ],
+      "supportTriangleIds": [
+        792926,
+        803494,
+        800004,
+        792903,
+        785850,
+        783464,
+        785886,
+        792953,
+        800040
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6637826203235568,
+        -0.7514391986846916
+      ],
+      "supportTriangleIds": [
+        792926,
+        803494,
+        800002,
+        792900,
+        785848,
+        783465,
+        785884,
+        792952,
+        800038
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.663777226653134,
+        -0.7383891986846911
+      ],
+      "supportTriangleIds": [
+        792924,
+        803493,
+        800000,
+        792900,
+        785846,
+        783463,
+        785882,
+        792950,
+        800037
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6637877635077831,
+        -0.7269891986846913
+      ],
+      "supportTriangleIds": [
+        792924,
+        803492,
+        800000,
+        792898,
+        785846,
+        783463,
+        785882,
+        792950,
+        800036
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.663802407429341,
+        -0.7134891986846913
+      ],
+      "supportTriangleIds": [
+        792923,
+        803490,
+        799998,
+        792898,
+        785845,
+        783461,
+        785880,
+        792948,
+        800035
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6638265365595073,
+        -0.701039198684691
+      ],
+      "supportTriangleIds": [
+        792922,
+        803490,
+        799998,
+        792896,
+        785844,
+        782628,
+        785880,
+        792949,
+        800034
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.4000000357627869,
+      "position": [
+        -0.0902062773704526,
+        1.663848967384549,
+        -0.6887391986846912
+      ],
+      "supportTriangleIds": [
+        792920,
+        803489,
+        799996,
+        792897,
+        785843,
+        782626,
+        785879,
+        792946,
+        800032
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.663869231678185,
+        -0.6759891986846912
+      ],
+      "supportTriangleIds": [
+        792920,
+        803488,
+        799996,
+        792894,
+        785842,
+        782626,
+        785878,
+        792946,
+        800032
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.699999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6638879252601202,
+        -0.6635391986846909
+      ],
+      "supportTriangleIds": [
+        792918,
+        803487,
+        799994,
+        792895,
+        785840,
+        782624,
+        785876,
+        792944,
+        800030
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.899999976158142,
+      "position": [
+        -0.0902062773704526,
+        1.6639053320517008,
+        -0.6510891986846913
+      ],
+      "supportTriangleIds": [
+        792918,
+        803486,
+        799994,
+        792892,
+        785841,
+        782624,
+        785877,
+        792942,
+        800030
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.0999999642372131,
+      "position": [
+        -0.0902062773704526,
+        1.6639241666319695,
+        -0.639389198684691
+      ],
+      "supportTriangleIds": [
+        792916,
+        803485,
+        799992,
+        792892,
+        785838,
+        782622,
+        785874,
+        792942,
+        800028
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6639486271891732,
+        -0.6260391986846909
+      ],
+      "supportTriangleIds": [
+        792916,
+        803484,
+        799992,
+        792890,
+        785839,
+        782622,
+        785875,
+        792940,
+        800029
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.7000000476837158,
+      "position": [
+        -0.0902062773704526,
+        1.6639683314003777,
+        -0.6135891986846913
+      ],
+      "supportTriangleIds": [
+        792914,
+        803482,
+        799990,
+        792889,
+        785836,
+        782620,
+        785872,
+        792940,
+        800026
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6639861297794454,
+        -0.601139198684691
+      ],
+      "supportTriangleIds": [
+        792915,
+        803483,
+        799990,
+        792888,
+        785836,
+        782620,
+        785872,
+        792938,
+        800027
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5,
+      "position": [
+        -0.0902062773704526,
+        1.6640111297870863,
+        -0.5886891986846914
+      ],
+      "supportTriangleIds": [
+        792912,
+        803480,
+        799988,
+        792887,
+        785834,
+        782618,
+        785870,
+        792938,
+        800024
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.66403815308621,
+        -0.5765391986846915
+      ],
+      "supportTriangleIds": [
+        792913,
+        803480,
+        799988,
+        792886,
+        785834,
+        782618,
+        785870,
+        792936,
+        800024
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6640686566517202,
+        -0.563489198684691
+      ],
+      "supportTriangleIds": [
+        792910,
+        803478,
+        799986,
+        792884,
+        785832,
+        782616,
+        785868,
+        792936,
+        800022
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6640974382754543,
+        -0.5511891986846913
+      ],
+      "supportTriangleIds": [
+        792910,
+        803476,
+        799987,
+        792884,
+        785833,
+        782614,
+        785867,
+        792934,
+        800021
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.9000000357627869,
+      "position": [
+        -0.0902062773704526,
+        1.6641198642267017,
+        -0.538739198684691
+      ],
+      "supportTriangleIds": [
+        792908,
+        803476,
+        799984,
+        792882,
+        785830,
+        782614,
+        785866,
+        792935,
+        800020
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.2999999523162842,
+      "position": [
+        -0.0902062773704526,
+        1.6641438428633863,
+        -0.5261391986846908
+      ],
+      "supportTriangleIds": [
+        792906,
+        803474,
+        799982,
+        792882,
+        785828,
+        782612,
+        785864,
+        792932,
+        800019
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.2000000476837158,
+      "position": [
+        -0.0902062773704526,
+        1.6641706739054896,
+        -0.5136891986846912
+      ],
+      "supportTriangleIds": [
+        792906,
+        803474,
+        799982,
+        792880,
+        785828,
+        782612,
+        785864,
+        792933,
+        800018
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.9000000357627869,
+      "position": [
+        -0.0902062773704526,
+        1.6642005299277098,
+        -0.5012391986846909
+      ],
+      "supportTriangleIds": [
+        792904,
+        803473,
+        799980,
+        792880,
+        785826,
+        782610,
+        785862,
+        792930,
+        800016
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.099999964237213,
+      "position": [
+        -0.0902062773704526,
+        1.6642300088851174,
+        -0.4892391986846909
+      ],
+      "supportTriangleIds": [
+        792904,
+        803472,
+        799980,
+        792878,
+        785826,
+        782610,
+        785862,
+        792930,
+        800016
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.8999999761581421,
+      "position": [
+        -0.0902062773704526,
+        1.664265440670362,
+        -0.4773891986846907
+      ],
+      "supportTriangleIds": [
+        792902,
+        803471,
+        799978,
+        792878,
+        785825,
+        782608,
+        785860,
+        792928,
+        800014
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2,
+      "position": [
+        -0.0902062773704526,
+        1.664312746919998,
+        -0.46358919868469106
+      ],
+      "supportTriangleIds": [
+        792903,
+        803470,
+        799978,
+        792876,
+        785824,
+        782608,
+        785861,
+        792926,
+        800014
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.899999976158142,
+      "position": [
+        -0.0902062773704526,
+        1.6643647844184588,
+        -0.4511391986846908
+      ],
+      "supportTriangleIds": [
+        792900,
+        803468,
+        799976,
+        792877,
+        785823,
+        782606,
+        785859,
+        792926,
+        800012
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.699999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6644197165945382,
+        -0.4386891986846912
+      ],
+      "supportTriangleIds": [
+        792900,
+        803469,
+        799976,
+        792874,
+        785822,
+        782606,
+        785858,
+        792924,
+        800012
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6644725520678705,
+        -0.4271391986846908
+      ],
+      "supportTriangleIds": [
+        792898,
+        803466,
+        799974,
+        792874,
+        785820,
+        782604,
+        785856,
+        792924,
+        800010
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6645893122362352,
+        -0.4136391986846908
+      ],
+      "supportTriangleIds": [
+        792898,
+        803467,
+        799974,
+        792872,
+        785821,
+        782604,
+        785857,
+        792923,
+        800010
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.2000000476837158,
+      "position": [
+        -0.0902062773704526,
+        1.665091263849399,
+        -0.4011891986846912
+      ],
+      "supportTriangleIds": [
+        792896,
+        803464,
+        799972,
+        792871,
+        785818,
+        782602,
+        785854,
+        792922,
+        800008
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 2.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6658151128143777,
+        -0.3887391986846909
+      ],
+      "supportTriangleIds": [
+        792897,
+        803464,
+        799972,
+        792870,
+        785818,
+        782602,
+        785855,
+        792920,
+        800008
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.4000000357627869,
+      "position": [
+        -0.0902062773704526,
+        1.6666388778982082,
+        -0.37628919868469135
+      ],
+      "supportTriangleIds": [
+        792894,
+        803462,
+        799970,
+        792868,
+        785816,
+        782600,
+        785852,
+        792920,
+        800006
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.0999999642372131,
+      "position": [
+        -0.0902062773704526,
+        1.6677838573990298,
+        -0.36383919868469106
+      ],
+      "supportTriangleIds": [
+        792895,
+        803462,
+        799971,
+        792869,
+        785817,
+        782600,
+        785852,
+        792918,
+        800006
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.0999999642372131,
+      "position": [
+        -0.0902062773704526,
+        1.6692033980311556,
+        -0.35123919868469095
+      ],
+      "supportTriangleIds": [
+        792892,
+        803460,
+        799968,
+        792866,
+        785814,
+        782598,
+        785850,
+        792918,
+        800004
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.6707132188457214,
+        -0.3387891986846914
+      ],
+      "supportTriangleIds": [
+        792892,
+        803461,
+        799968,
+        792863,
+        785813,
+        782599,
+        785850,
+        792916,
+        800003
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.6722067151449211,
+        -0.32618919868469126
+      ],
+      "supportTriangleIds": [
+        792890,
+        803458,
+        799966,
+        792862,
+        785812,
+        782596,
+        785848,
+        792916,
+        800002
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.6734862278158629,
+        -0.31373919868469097
+      ],
+      "supportTriangleIds": [
+        792889,
+        803456,
+        799966,
+        792860,
+        785811,
+        782594,
+        785846,
+        792914,
+        800000
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.8999999761581421,
+      "position": [
+        -0.0902062773704526,
+        1.6746217141237465,
+        -0.30143919868469127
+      ],
+      "supportTriangleIds": [
+        792888,
+        803456,
+        799964,
+        792860,
+        785810,
+        782594,
+        785846,
+        792915,
+        800000
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.675381366861699,
+        -0.2900391986846914
+      ],
+      "supportTriangleIds": [
+        792887,
+        803454,
+        800805,
+        792858,
+        785809,
+        782592,
+        785845,
+        792912,
+        799998
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.6762410510451164,
+        -0.2760891986846911
+      ],
+      "supportTriangleIds": [
+        792886,
+        803454,
+        800803,
+        792859,
+        785808,
+        782592,
+        785844,
+        792913,
+        799998
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.6767374640123376,
+        -0.2637891986846914
+      ],
+      "supportTriangleIds": [
+        792884,
+        803453,
+        800801,
+        792857,
+        785806,
+        782590,
+        785843,
+        792910,
+        799996
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.8999999761581421,
+      "position": [
+        -0.0902062773704526,
+        1.6771782779484097,
+        -0.2511891986846913
+      ],
+      "supportTriangleIds": [
+        792884,
+        803452,
+        800797,
+        792856,
+        785807,
+        782590,
+        785842,
+        792910,
+        799996
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.8999999761581421,
+      "position": [
+        -0.0902062773704526,
+        1.677491381408172,
+        -0.23873919868469104
+      ],
+      "supportTriangleIds": [
+        792882,
+        803451,
+        800797,
+        792854,
+        785804,
+        782588,
+        785840,
+        792908,
+        799994
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.677833805218779,
+        -0.22628919868469144
+      ],
+      "supportTriangleIds": [
+        792882,
+        803450,
+        800795,
+        792855,
+        785805,
+        782588,
+        785841,
+        792906,
+        799994
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6780549131680478,
+        -0.21383919868469117
+      ],
+      "supportTriangleIds": [
+        792880,
+        803448,
+        800795,
+        792853,
+        785802,
+        782586,
+        785838,
+        792906,
+        799992
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.0999999642372131,
+      "position": [
+        -0.0902062773704526,
+        1.6782246379984955,
+        -0.20138919868469157
+      ],
+      "supportTriangleIds": [
+        792880,
+        803449,
+        800793,
+        792852,
+        785798,
+        782586,
+        785839,
+        792904,
+        799993
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6783770533062217,
+        -0.18878919868469143
+      ],
+      "supportTriangleIds": [
+        792878,
+        803446,
+        800792,
+        792851,
+        785799,
+        782584,
+        785836,
+        792904,
+        799990
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.0999999642372131,
+      "position": [
+        -0.0902062773704526,
+        1.6787518362698144,
+        -0.1764891986846917
+      ],
+      "supportTriangleIds": [
+        792878,
+        803447,
+        320507,
+        792850,
+        785797,
+        782583,
+        785836,
+        792902,
+        799990
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.9000000357627869,
+      "position": [
+        -0.0902062773704526,
+        1.679037449940138,
+        -0.16388919868469157
+      ],
+      "supportTriangleIds": [
+        792876,
+        803444,
+        320506,
+        792849,
+        785795,
+        782582,
+        785834,
+        792903,
+        799988
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.8999999761581421,
+      "position": [
+        -0.0902062773704526,
+        1.6792485024042862,
+        -0.15278919868469143
+      ],
+      "supportTriangleIds": [
+        792877,
+        803444,
+        320502,
+        792849,
+        785795,
+        782582,
+        785834,
+        792900,
+        799988
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.679491923548346,
+        -0.1386891986846913
+      ],
+      "supportTriangleIds": [
+        792874,
+        803442,
+        800787,
+        313152,
+        785792,
+        782580,
+        785832,
+        792900,
+        799986
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.2000000476837158,
+      "position": [
+        -0.0902062773704526,
+        1.6798065788686418,
+        -0.12638919868469156
+      ],
+      "supportTriangleIds": [
+        792874,
+        803442,
+        800785,
+        792845,
+        785793,
+        782578,
+        785831,
+        792898,
+        799987
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.0999999642372131,
+      "position": [
+        -0.0902062773704526,
+        1.6801413387230248,
+        -0.1139391986846913
+      ],
+      "supportTriangleIds": [
+        792872,
+        803440,
+        799942,
+        792843,
+        785793,
+        782578,
+        785830,
+        792898,
+        799984
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6804295980440458,
+        -0.10133919868469116
+      ],
+      "supportTriangleIds": [
+        792871,
+        803440,
+        800783,
+        792843,
+        785790,
+        782576,
+        785828,
+        792896,
+        799982
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.2000000476837158,
+      "position": [
+        -0.0902062773704526,
+        1.6806490808324062,
+        -0.0887391986846917
+      ],
+      "supportTriangleIds": [
+        792870,
+        803438,
+        800783,
+        792839,
+        785791,
+        782576,
+        785828,
+        792897,
+        799982
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.6808681230126588,
+        -0.07628919868469142
+      ],
+      "supportTriangleIds": [
+        792868,
+        803436,
+        800781,
+        792836,
+        785788,
+        782574,
+        785826,
+        792894,
+        799980
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6810909055462622,
+        -0.06383919868469115
+      ],
+      "supportTriangleIds": [
+        792869,
+        803437,
+        800781,
+        792835,
+        785789,
+        782574,
+        785826,
+        792895,
+        799980
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.681301333797304,
+        -0.05138919868469156
+      ],
+      "supportTriangleIds": [
+        792866,
+        803434,
+        800779,
+        792834,
+        785786,
+        783405,
+        785825,
+        792892,
+        799978
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.681519387553684,
+        -0.03878919868469142
+      ],
+      "supportTriangleIds": [
+        792863,
+        803430,
+        800779,
+        792833,
+        785787,
+        783405,
+        785824,
+        792892,
+        799978
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.6816596825715715,
+        -0.02648919868469169
+      ],
+      "supportTriangleIds": [
+        792862,
+        803431,
+        800777,
+        792832,
+        785785,
+        783403,
+        785823,
+        792890,
+        799976
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.2000000476837158,
+      "position": [
+        -0.0902062773704526,
+        1.6817794308377043,
+        -0.013889198684691554
+      ],
+      "supportTriangleIds": [
+        792861,
+        803429,
+        800775,
+        792830,
+        785784,
+        783403,
+        785822,
+        792889,
+        799976
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.0999999642372131,
+      "position": [
+        -0.0902062773704526,
+        1.6819156544523484,
+        -0.0014391986846912805
+      ],
+      "supportTriangleIds": [
+        792860,
+        803428,
+        800775,
+        792830,
+        785783,
+        783401,
+        785820,
+        792888,
+        799974
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5,
+      "position": [
+        -0.0902062773704526,
+        1.68204471461704,
+        0.011010801315308311
+      ],
+      "supportTriangleIds": [
+        792858,
+        803426,
+        800774,
+        792828,
+        785782,
+        783401,
+        785821,
+        792887,
+        799974
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.0999999642372131,
+      "position": [
+        -0.0902062773704526,
+        1.6820056806294348,
+        0.023610801315308447
+      ],
+      "supportTriangleIds": [
+        792859,
+        803427,
+        800773,
+        792828,
+        785781,
+        783397,
+        785818,
+        792886,
+        799972
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.6819518522398518,
+        0.03606080131530872
+      ],
+      "supportTriangleIds": [
+        792857,
+        803424,
+        800772,
+        792826,
+        785781,
+        783395,
+        785818,
+        792884,
+        799972
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6818239863265294,
+        0.04716080131530817
+      ],
+      "supportTriangleIds": [
+        792856,
+        803425,
+        800771,
+        792826,
+        306114,
+        783394,
+        785816,
+        792884,
+        799970
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6814556971409218,
+        0.06111080131530844
+      ],
+      "supportTriangleIds": [
+        792854,
+        803422,
+        800769,
+        792827,
+        785774,
+        783393,
+        785815,
+        792882,
+        799971
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.800000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6817311285700338,
+        0.0735608013153087
+      ],
+      "supportTriangleIds": [
+        792855,
+        324884,
+        799926,
+        792824,
+        785775,
+        782558,
+        785814,
+        792882,
+        799968
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.2999999523162842,
+      "position": [
+        -0.0902062773704526,
+        1.68182744077736,
+        0.0855608013153087
+      ],
+      "supportTriangleIds": [
+        792853,
+        803420,
+        799924,
+        792825,
+        785773,
+        782558,
+        785813,
+        792880,
+        799968
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.681399857914761,
+        0.09861080131530844
+      ],
+      "supportTriangleIds": [
+        792852,
+        803421,
+        799925,
+        792822,
+        785773,
+        782559,
+        785812,
+        792880,
+        799966
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6810600273310623,
+        0.11031080131530872
+      ],
+      "supportTriangleIds": [
+        792851,
+        803418,
+        799923,
+        792822,
+        785771,
+        782556,
+        785811,
+        792878,
+        799966
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.8999999761581421,
+      "position": [
+        -0.0902062773704526,
+        1.6807605402685606,
+        0.1235108013153083
+      ],
+      "supportTriangleIds": [
+        792850,
+        803419,
+        799920,
+        792820,
+        785768,
+        782556,
+        785810,
+        792878,
+        799964
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.8999999761581421,
+      "position": [
+        -0.0902062773704526,
+        1.6810399878577973,
+        0.13611080131530842
+      ],
+      "supportTriangleIds": [
+        792849,
+        803417,
+        799921,
+        792820,
+        785769,
+        782554,
+        785809,
+        792876,
+        800803
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6812665887435576,
+        0.1470608013153087
+      ],
+      "supportTriangleIds": [
+        792849,
+        803416,
+        799919,
+        792818,
+        306101,
+        782554,
+        785808,
+        792877,
+        800803
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6815246068745322,
+        0.15966080131530813
+      ],
+      "supportTriangleIds": [
+        313152,
+        803415,
+        799919,
+        792819,
+        785767,
+        782552,
+        785806,
+        792874,
+        800801
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.6817749115331584,
+        0.1736108013153084
+      ],
+      "supportTriangleIds": [
+        792845,
+        803414,
+        799916,
+        792816,
+        785764,
+        782553,
+        785807,
+        792874,
+        800797
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6819426298349611,
+        0.1860608013153087
+      ],
+      "supportTriangleIds": [
+        792843,
+        803412,
+        799917,
+        792817,
+        785765,
+        782550,
+        785804,
+        792872,
+        800797
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1,
+      "position": [
+        -0.0902062773704526,
+        1.6820985918044549,
+        0.19851080131530827
+      ],
+      "supportTriangleIds": [
+        792843,
+        803410,
+        799914,
+        792815,
+        785763,
+        782549,
+        785805,
+        792872,
+        800795
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5,
+      "position": [
+        -0.0902062773704526,
+        1.6821702284526154,
+        0.210060801315308
+      ],
+      "supportTriangleIds": [
+        792839,
+        803410,
+        799915,
+        792814,
+        785762,
+        782548,
+        785802,
+        792870,
+        800795
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.4000000357627869,
+      "position": [
+        -0.0902062773704526,
+        1.6822511425191868,
+        0.223560801315308
+      ],
+      "supportTriangleIds": [
+        792836,
+        803408,
+        799912,
+        792057,
+        785760,
+        782547,
+        785798,
+        792868,
+        800793
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.9000000357627869,
+      "position": [
+        -0.0902062773704526,
+        1.6823036857460456,
+        0.23601080131530824
+      ],
+      "supportTriangleIds": [
+        792837,
+        803408,
+        799913,
+        792808,
+        785761,
+        782546,
+        785797,
+        792869,
+        321402
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6823542772081836,
+        0.2484608013153085
+      ],
+      "supportTriangleIds": [
+        792834,
+        803406,
+        799910,
+        792806,
+        785758,
+        782544,
+        785797,
+        792866,
+        320507
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6823507303353646,
+        0.2609108013153081
+      ],
+      "supportTriangleIds": [
+        792833,
+        803406,
+        799911,
+        793569,
+        785758,
+        782544,
+        785795,
+        792863,
+        320503
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.682323438634417,
+        0.2733608013153084
+      ],
+      "supportTriangleIds": [
+        792832,
+        803405,
+        799909,
+        793567,
+        785756,
+        782542,
+        785795,
+        792862,
+        320502
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5,
+      "position": [
+        -0.0902062773704526,
+        1.6822336877605502,
+        0.2859608013153085
+      ],
+      "supportTriangleIds": [
+        792830,
+        803404,
+        799906,
+        793567,
+        785756,
+        782542,
+        785792,
+        792861,
+        800787
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.2000000476837158,
+      "position": [
+        -0.0902062773704526,
+        1.6821424050250997,
+        0.29841080131530806
+      ],
+      "supportTriangleIds": [
+        792830,
+        803403,
+        799907,
+        793565,
+        785754,
+        782540,
+        785793,
+        792860,
+        800785
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5,
+      "position": [
+        -0.0902062773704526,
+        1.6821199608614794,
+        0.31101080131530817
+      ],
+      "supportTriangleIds": [
+        792828,
+        803402,
+        799905,
+        793565,
+        785754,
+        782540,
+        785793,
+        792858,
+        799942
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.6820515384484949,
+        0.32346080131530847
+      ],
+      "supportTriangleIds": [
+        792828,
+        803400,
+        799904,
+        793563,
+        785752,
+        782538,
+        785790,
+        792859,
+        800783
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.100000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6819207451850446,
+        0.3345608013153079
+      ],
+      "supportTriangleIds": [
+        792829,
+        803400,
+        799903,
+        793563,
+        785752,
+        782539,
+        785791,
+        792857,
+        800783
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.199999988079071,
+      "position": [
+        -0.0902062773704526,
+        1.6817474234533496,
+        0.3485108013153082
+      ],
+      "supportTriangleIds": [
+        792826,
+        803398,
+        799902,
+        792798,
+        785750,
+        782536,
+        785788,
+        792856,
+        800781
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.600000023841858,
+      "position": [
+        -0.0902062773704526,
+        1.6816630756700286,
+        0.360810801315308
+      ],
+      "supportTriangleIds": [
+        792827,
+        803396,
+        799901,
+        792798,
+        785750,
+        782535,
+        785789,
+        792854,
+        800781
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.4000000357627869,
+      "position": [
+        -0.0902062773704526,
+        1.681822588070239,
+        0.37341080131530807
+      ],
+      "supportTriangleIds": [
+        792824,
+        803396,
+        799901,
+        792796,
+        785748,
+        782534,
+        785786,
+        792855,
+        800779
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.300000011920929,
+      "position": [
+        -0.0902062773704526,
+        1.681972303555491,
+        0.3857108013153085
+      ],
+      "supportTriangleIds": [
+        792825,
+        803394,
+        799898,
+        792796,
+        785748,
+        782533,
+        785787,
+        792853,
+        800779
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 1.5999999642372131,
+      "position": [
+        -0.0902062773704526,
+        1.682102156897535,
+        0.3984608013153085
+      ],
+      "supportTriangleIds": [
+        792822,
+        803394,
+        799899,
+        792794,
+        785746,
+        782532,
+        785785,
+        792852,
+        800777
+      ],
+      "valid": true
+    }
+  ],
+  "blocked": "",
+  "caseId": "doorway-2-42",
+  "errors": 0,
+  "generatedTravel": 3.499746237669028,
+  "glbSha256": "8a6bdf101d8d1b01b96832bee7e7d3277374fdba8a398656e7d70a2c1b2e6fda",
+  "identity": "2184fbbd40d1ef643ea6dd37de5867701d4c554d343e9cd908081b2e03dc27c8",
+  "mode": "generated",
+  "pathRemaining": 0,
+  "pendingVisits": 0,
+  "pitch": 0,
+  "position": [
+    -0.0902062773704526,
+    1.682102156897535,
+    0.3984608013153085
+  ],
+  "ready": true,
+  "representation": "coarse",
+  "support": {
+    "blockedTriangleId": null,
+    "eye": [
+      -0.0902062773704526,
+      1.682102156897535,
+      0.3984608013153085
+    ],
+    "foot": [
+      -0.0902062773704526,
+      0.032102156897534984,
+      0.3984608013153085
+    ],
+    "headClearance": 1.8,
+    "reason": null,
+    "supportSamples": [
+      {
+        "normalY": 0.9999985098838806,
+        "position": [
+          -0.0902062773704526,
+          0.03021723422455612,
+          0.3984608013153085
+        ],
+        "triangleId": 792822
+      },
+      {
+        "normalY": 0.9997663497924804,
+        "position": [
+          0.20979372262954735,
+          0.032102156897534984,
+          0.3984608013153085
+        ],
+        "triangleId": 803394
+      },
+      {
+        "normalY": 0.9999698996543884,
+        "position": [
+          0.12192575698551164,
+          0.03099524983352952,
+          0.6105928356712726
+        ],
+        "triangleId": 799899
+      },
+      {
+        "normalY": 0.9999971389770508,
+        "position": [
+          -0.0902062773704526,
+          0.03086972889477634,
+          0.6984608013153084
+        ],
+        "triangleId": 792794
+      },
+      {
+        "normalY": 0.9999738335609436,
+        "position": [
+          -0.30233831172641684,
+          0.030019663667523736,
+          0.6105928356712728
+        ],
+        "triangleId": 785746
+      },
+      {
+        "normalY": 0.9999632835388184,
+        "position": [
+          -0.3902062773704526,
+          0.02831387533161002,
+          0.39846080131530853
+        ],
+        "triangleId": 782532
+      },
+      {
+        "normalY": 0.9999146461486816,
+        "position": [
+          -0.3023383117264169,
+          0.028324360835518585,
+          0.18632876695934425
+        ],
+        "triangleId": 785785
+      },
+      {
+        "normalY": 0.9998481273651124,
+        "position": [
+          -0.09020627737045268,
+          0.028222106500625836,
+          0.09846080131530847
+        ],
+        "triangleId": 792852
+      },
+      {
+        "normalY": 0.9999213218688964,
+        "position": [
+          0.1219257569855116,
+          0.03166619781089929,
+          0.18632876695934417
+        ],
+        "triangleId": 800777
+      }
+    ],
+    "supportTriangleIds": [
+      792822,
+      803394,
+      799899,
+      792794,
+      785746,
+      782532,
+      785785,
+      792852,
+      800777
+    ],
+    "valid": true
+  },
+  "visits": [
+    {
+      "at": "2026-09-16T10:17:03.671Z",
+      "event": "crossed",
+      "eventId": "1c3ae725-d42c-4306-ae41-b608eb93df75",
+      "position": [
+        -0.4902062773704525,
+        1.6563739631994372,
+        -2.9985203520745047
+      ]
+    }
+  ],
+  "walking": "",
+  "worldId": "intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2",
+  "yaw": 180
+}

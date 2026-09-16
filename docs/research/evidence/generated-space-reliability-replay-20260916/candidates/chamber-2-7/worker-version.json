@@ -1,0 +1,7 @@
+{
+  "service": "vastness-gpu-worker",
+  "version": "0.1.0",
+  "backend": "command-v1",
+  "python": "3.12.3",
+  "gitCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+}

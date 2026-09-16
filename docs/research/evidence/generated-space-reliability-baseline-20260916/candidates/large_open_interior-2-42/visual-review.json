@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-empty-warehouse",
+  "sourceObservation": "Source depicts a broad warehouse floor with spaced columns and high ceiling.",
+  "generatedObservation": "Coarse exterior overview is box-like with small surface recesses and no evident entrance from this angle. All scales fail the bounded route search; the view alone cannot prove a sealed interior.",
+  "evidence": [
+    "source-rgb.png",
+    "browser",
+    "diagnostic.json"
+  ]
+}

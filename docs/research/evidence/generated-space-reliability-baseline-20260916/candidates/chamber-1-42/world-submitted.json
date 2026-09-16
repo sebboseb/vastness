@@ -1,0 +1,65 @@
+{
+  "id": "intent-de172b53-3529-42f6-b4d4-b6df0779e568",
+  "createdAt": "2026-09-16T09:25:20.137Z",
+  "rawIntent": {
+    "text": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "enclosed"
+    },
+    "representation": "abstract-solid"
+  },
+  "derivation": {
+    "compiler": "lexical-semantic-v1",
+    "cues": {
+      "vast": [],
+      "intimate": [],
+      "sparse": [
+        "empty"
+      ],
+      "dense": [],
+      "open": [
+        "open"
+      ],
+      "enclosed": [
+        "underground",
+        "chamber"
+      ],
+      "quiet": [],
+      "ominous": [],
+      "luminous": [],
+      "joyful": []
+    },
+    "limitations": [
+      "Rule-based axis extraction; no general language reasoning",
+      "Negation handling is local, not a complete semantic parser",
+      "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+      "Concept is bounded to 600 characters; original input is retained separately"
+    ]
+  },
+  "status": "requested",
+  "jobId": "intent-de172b53-3529-42f6-b4d4-b6df0779e568",
+  "request": {
+    "id": "intent-de172b53-3529-42f6-b4d4-b6df0779e568",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "events": [
+    {
+      "type": "intent-recorded",
+      "at": "2026-09-16T09:25:20.137Z"
+    },
+    {
+      "type": "constraints-derived",
+      "at": "2026-09-16T09:25:20.137Z"
+    }
+  ]
+}

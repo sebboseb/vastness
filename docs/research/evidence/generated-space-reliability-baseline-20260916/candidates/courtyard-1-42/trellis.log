@@ -1,0 +1,87 @@
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/lib/python3.10/site-packages/xformers/ops/fmha/flash.py:211: FutureWarning: `torch.library.impl_abstract` was renamed to `torch.library.register_fake`. Please use that instead; we will remove `torch.library.impl_abstract` in a future version of PyTorch.
+  @torch.library.impl_abstract("xformers_flash::flash_fwd")
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/lib/python3.10/site-packages/xformers/ops/fmha/flash.py:344: FutureWarning: `torch.library.impl_abstract` was renamed to `torch.library.register_fake`. Please use that instead; we will remove `torch.library.impl_abstract` in a future version of PyTorch.
+  @torch.library.impl_abstract("xformers_flash::flash_bwd")
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/lib/python3.10/site-packages/spconv/pytorch/functional.py:47: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  _TORCH_CUSTOM_FWD = amp.custom_fwd(cast_inputs=torch.float16)
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/lib/python3.10/site-packages/spconv/pytorch/functional.py:97: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/lib/python3.10/site-packages/spconv/pytorch/functional.py:163: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/lib/python3.10/site-packages/spconv/pytorch/functional.py:243: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/lib/python3.10/site-packages/spconv/pytorch/functional.py:332: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/lib/python3.10/site-packages/spconv/pytorch/functional.py:369: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/lib/python3.10/site-packages/spconv/pytorch/functional.py:389: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/lib/python3.10/site-packages/spconv/pytorch/functional.py:412: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/src/dinov2/dinov2/layers/swiglu_ffn.py:43: UserWarning: xFormers is available (SwiGLU)
+  warnings.warn("xFormers is available (SwiGLU)")
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/src/dinov2/dinov2/layers/attention.py:27: UserWarning: xFormers is available (Attention)
+  warnings.warn("xFormers is available (Attention)")
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/src/dinov2/dinov2/layers/block.py:33: UserWarning: xFormers is available (Block)
+  warnings.warn("xFormers is available (Block)")
+[SPARSE] Backend: spconv, Attention: xformers
+Warp 1.17.0 initialized:
+   CUDA Toolkit 12.9, Driver 13.3
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 3090" (24 GiB, sm_86, mempool enabled)
+   Kernel cache:
+     /home/vastness/.cache/warp/1.17.0
+[SPARSE][CONV] spconv algo: native
+[ATTENTION] Using backend: xformers
+Sampling:   0%|          | 0/12 [00:00<?, ?it/s]Sampling:   8%|▊         | 1/12 [00:00<00:02,  4.24it/s]Sampling:  17%|█▋        | 2/12 [00:00<00:02,  4.07it/s]Sampling:  25%|██▌       | 3/12 [00:00<00:02,  4.45it/s]Sampling:  33%|███▎      | 4/12 [00:00<00:01,  4.42it/s]Sampling:  42%|████▏     | 5/12 [00:01<00:01,  4.42it/s]Sampling:  50%|█████     | 6/12 [00:01<00:01,  4.42it/s]Sampling:  58%|█████▊    | 7/12 [00:01<00:01,  4.40it/s]Sampling:  67%|██████▋   | 8/12 [00:01<00:00,  4.42it/s]Sampling:  75%|███████▌  | 9/12 [00:02<00:00,  4.41it/s]Sampling:  83%|████████▎ | 10/12 [00:02<00:00,  4.42it/s]Sampling:  92%|█████████▏| 11/12 [00:02<00:00,  5.21it/s]Sampling: 100%|██████████| 12/12 [00:02<00:00,  5.73it/s]Sampling: 100%|██████████| 12/12 [00:02<00:00,  4.75it/s]
+Sampling:   0%|          | 0/12 [00:00<?, ?it/s]Sampling:   8%|▊         | 1/12 [00:00<00:06,  1.83it/s]Sampling:  17%|█▋        | 2/12 [00:00<00:04,  2.08it/s]Sampling:  25%|██▌       | 3/12 [00:01<00:04,  2.18it/s]Sampling:  33%|███▎      | 4/12 [00:01<00:03,  2.23it/s]Sampling:  42%|████▏     | 5/12 [00:02<00:03,  2.23it/s]Sampling:  50%|█████     | 6/12 [00:02<00:02,  2.25it/s]Sampling:  58%|█████▊    | 7/12 [00:03<00:02,  2.26it/s]Sampling:  67%|██████▋   | 8/12 [00:03<00:01,  2.27it/s]Sampling:  75%|███████▌  | 9/12 [00:04<00:01,  2.26it/s]Sampling:  83%|████████▎ | 10/12 [00:04<00:00,  2.28it/s]Sampling:  92%|█████████▏| 11/12 [00:04<00:00,  2.69it/s]Sampling: 100%|██████████| 12/12 [00:04<00:00,  3.08it/s]Sampling: 100%|██████████| 12/12 [00:04<00:00,  2.44it/s]
+{
+  "loadSeconds": 26.310507942995173,
+  "generationSeconds": 8.861043184006121,
+  "exportAndValidationSeconds": 17.340871995998896,
+  "totalSeconds": 52.51242312300019,
+  "torchPeakAllocatedBytes": 11742304768,
+  "torchPeakReservedBytes": 16538140672,
+  "torchVersion": "2.4.0+cu121",
+  "torchCudaVersion": "12.1",
+  "gpuName": "NVIDIA GeForce RTX 3090",
+  "computeCapability": [
+    8,
+    6
+  ],
+  "gaussianCount": 743136,
+  "meshVertexCount": 719697,
+  "meshTriangleCount": 1437656,
+  "meshBounds": [
+    [
+      -0.5013395547866821,
+      -0.5013673305511475,
+      -0.5010462999343872
+    ],
+    [
+      0.501323401927948,
+      0.5002081990242004,
+      0.5011962652206421
+    ]
+  ],
+  "sourceToOutputRotation": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  ],
+  "scaleMetres": null,
+  "collisionAssessment": "unassessed_raw_mesh_proxy"
+}

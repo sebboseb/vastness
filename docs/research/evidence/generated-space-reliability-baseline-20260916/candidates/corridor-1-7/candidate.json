@@ -1,0 +1,54 @@
+{
+  "candidate": "corridor-1-7",
+  "id": "corridor-1-7",
+  "category": "corridor",
+  "promptVariant": 1,
+  "seed": 7,
+  "text": "A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end.",
+  "rawIntent": {
+    "text": "A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end.",
+    "source": "text",
+    "seed": 7
+  },
+  "declaredAt": "2026-09-16T09:09:07.868747+00:00",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end.",
+    "axes": {
+      "scale": "human",
+      "density": "balanced",
+      "mood": "unspecified",
+      "openness": "open"
+    },
+    "representation": "abstract-solid"
+  },
+  "submissionAttemptedAt": "2026-09-16T09:09:07.882334+00:00",
+  "worldId": "intent-55e2d591-69a3-4910-91b9-c5df74cf01dc",
+  "jobId": "intent-55e2d591-69a3-4910-91b9-c5df74cf01dc",
+  "request": {
+    "id": "intent-55e2d591-69a3-4910-91b9-c5df74cf01dc",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end.\",\"axes\":{\"scale\":\"human\",\"density\":\"balanced\",\"mood\":\"unspecified\",\"openness\":\"open\"},\"representation\":\"abstract-solid\"}",
+    "seed": 7
+  },
+  "collected": true,
+  "gpuStatus": "succeeded",
+  "macStatus": "ready",
+  "finishedAt": "2026-09-16T09:10:28.809569+00:00",
+  "generationSeconds": 73.14392725299695,
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 2589.0,
+        "sampledPeakMiB": 16195.0,
+        "samples": 656
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  },
+  "failureStage": null,
+  "geometryAssessment": "pending separate generated-support assessment"
+}

@@ -1,0 +1,36 @@
+{
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "passed",
+      "entry": true,
+      "traversal": true,
+      "return": true,
+      "sourceSha256": "d526aec6874c3a1259fe4af64beb770ab96888df3909b58f4e0bd7f79e2ad464",
+      "evidence": {
+        "forward": "browser/scale6-forward.json",
+        "returned": "browser/scale6-returned.json",
+        "screenshots": [
+          "browser/scale6-forward.png",
+          "browser/scale6-returned.png"
+        ]
+      }
+    },
+    {
+      "scale": 12,
+      "status": "passed",
+      "entry": true,
+      "traversal": true,
+      "return": true,
+      "sourceSha256": "d526aec6874c3a1259fe4af64beb770ab96888df3909b58f4e0bd7f79e2ad464",
+      "evidence": {
+        "forward": "browser/scale12-forward.json",
+        "returned": "browser/scale12-returned.json",
+        "screenshots": [
+          "browser/scale12-forward.png",
+          "browser/scale12-returned.png"
+        ]
+      }
+    }
+  ]
+}

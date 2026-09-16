@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-pale-corridor",
+  "sourceObservation": "Source shows a pale corridor with a bright end doorway and flat floor.",
+  "generatedObservation": "Coarse view contains an open-front box and visible internal support. Primary browser route completes; larger-scale entries hit the numerical seam failure.",
+  "evidence": [
+    "source-rgb.png",
+    "browser",
+    "diagnostic.json"
+  ]
+}

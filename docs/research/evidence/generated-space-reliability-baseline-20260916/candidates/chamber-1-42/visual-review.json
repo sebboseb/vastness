@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-stone-chamber",
+  "sourceObservation": "Image shows a high roof with circular skylight, masonry walls, level foreground floor and a small dark rear doorway.",
+  "generatedObservation": "All declared scales fail the bounded sustained-enclosure route search despite some supported connectivity; exact impossible-topology claim is not justified.",
+  "evidence": [
+    "source-rgb.png",
+    "diagnostic.json",
+    "browser"
+  ]
+}

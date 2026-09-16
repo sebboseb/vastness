@@ -1,0 +1,75 @@
+{"at": "2026-09-16T08:58:02.714234+00:00", "event": "preflight", "promptLengthPasses": 36, "candidateCount": 36}
+{"at": "2026-09-16T08:59:09.723050+00:00", "event": "preflight", "promptLengthPasses": 36, "candidateCount": 36}
+{"at": "2026-09-16T08:59:09.846421+00:00", "event": "submitted", "candidate": "large_open_interior-1-7", "jobId": "intent-c55fe14c-883c-4acb-9e7f-dcbeaa1ad5ca"}
+{"at": "2026-09-16T09:01:56.464837+00:00", "event": "collected", "candidate": "large_open_interior-1-7", "jobId": "intent-c55fe14c-883c-4acb-9e7f-dcbeaa1ad5ca", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 159.51133239100454}
+{"at": "2026-09-16T09:01:56.551494+00:00", "event": "submitted", "candidate": "tunnel-1-7", "jobId": "intent-80ee3fa8-9011-455a-bf8d-a37c3e130d5b"}
+{"at": "2026-09-16T09:03:14.609828+00:00", "event": "collected", "candidate": "tunnel-1-7", "jobId": "intent-80ee3fa8-9011-455a-bf8d-a37c3e130d5b", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 70.18354256900056}
+{"at": "2026-09-16T09:03:14.681728+00:00", "event": "submitted", "candidate": "doorway-1-7", "jobId": "intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425"}
+{"at": "2026-09-16T09:04:33.637519+00:00", "event": "collected", "candidate": "doorway-1-7", "jobId": "intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 68.64225567500398}
+{"at": "2026-09-16T09:04:33.660013+00:00", "event": "submitted", "candidate": "narrow_passage-1-7", "jobId": "intent-1c865fea-e0f7-4711-9292-48aa4492f947"}
+{"at": "2026-09-16T09:05:59.434307+00:00", "event": "collected", "candidate": "narrow_passage-1-7", "jobId": "intent-1c865fea-e0f7-4711-9292-48aa4492f947", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 72.2287581510027}
+{"at": "2026-09-16T09:05:59.456312+00:00", "event": "submitted", "candidate": "chamber-1-7", "jobId": "intent-c5cda12d-76af-4b8b-b88c-eccc7719dd26"}
+{"at": "2026-09-16T09:07:41.758580+00:00", "event": "collected", "candidate": "chamber-1-7", "jobId": "intent-c5cda12d-76af-4b8b-b88c-eccc7719dd26", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 90.11204043700127}
+{"at": "2026-09-16T09:07:41.775818+00:00", "event": "submitted", "candidate": "cave-1-7", "jobId": "intent-a6868007-efd5-433a-9061-f36ccde7d864"}
+{"at": "2026-09-16T09:09:07.868343+00:00", "event": "collected", "candidate": "cave-1-7", "jobId": "intent-a6868007-efd5-433a-9061-f36ccde7d864", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 77.58481451699481}
+{"at": "2026-09-16T09:09:07.885742+00:00", "event": "submitted", "candidate": "corridor-1-7", "jobId": "intent-55e2d591-69a3-4910-91b9-c5df74cf01dc"}
+{"at": "2026-09-16T09:10:28.809764+00:00", "event": "collected", "candidate": "corridor-1-7", "jobId": "intent-55e2d591-69a3-4910-91b9-c5df74cf01dc", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 73.14392725299695}
+{"at": "2026-09-16T09:10:28.827285+00:00", "event": "submitted", "candidate": "courtyard-1-7", "jobId": "intent-04c10b05-bc48-4dd0-b38a-9781ef431ad3"}
+{"at": "2026-09-16T09:12:03.217082+00:00", "event": "collected", "candidate": "courtyard-1-7", "jobId": "intent-04c10b05-bc48-4dd0-b38a-9781ef431ad3", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 84.77033285600191}
+{"at": "2026-09-16T09:12:03.239121+00:00", "event": "submitted", "candidate": "bridge-1-7", "jobId": "intent-cc01fd39-0b1d-49b3-8c83-851c3cb8678a"}
+{"at": "2026-09-16T09:13:26.650039+00:00", "event": "collected", "candidate": "bridge-1-7", "jobId": "intent-cc01fd39-0b1d-49b3-8c83-851c3cb8678a", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 74.14889771000162}
+{"at": "2026-09-16T09:13:26.669643+00:00", "event": "submitted", "candidate": "large_open_interior-1-42", "jobId": "intent-b1764ccd-cc0d-42fd-baca-9a23011d0305"}
+{"at": "2026-09-16T09:14:44.341428+00:00", "event": "collected", "candidate": "large_open_interior-1-42", "jobId": "intent-b1764ccd-cc0d-42fd-baca-9a23011d0305", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 67.21277312200255}
+{"at": "2026-09-16T09:14:44.357514+00:00", "event": "submitted", "candidate": "bridge-1-42", "jobId": "intent-ac3e6278-91f7-4ea0-826f-712434efa055"}
+{"at": "2026-09-16T09:15:57.002292+00:00", "event": "collected", "candidate": "bridge-1-42", "jobId": "intent-ac3e6278-91f7-4ea0-826f-712434efa055", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 65.44191685799888}
+{"at": "2026-09-16T09:15:57.019784+00:00", "event": "submitted", "candidate": "doorway-1-42", "jobId": "intent-097b6f72-50f1-456f-9360-78b93105a73b"}
+{"at": "2026-09-16T09:17:41.891552+00:00", "event": "collected", "candidate": "doorway-1-42", "jobId": "intent-097b6f72-50f1-456f-9360-78b93105a73b", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 91.945961575002}
+{"at": "2026-09-16T09:17:41.912569+00:00", "event": "submitted", "candidate": "narrow_passage-1-42", "jobId": "intent-067ca302-ef70-480d-a667-68fe0cbd8d35"}
+{"at": "2026-09-16T09:19:37.959683+00:00", "event": "collected", "candidate": "narrow_passage-1-42", "jobId": "intent-067ca302-ef70-480d-a667-68fe0cbd8d35", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 102.79582064200076}
+{"at": "2026-09-16T09:19:37.981467+00:00", "event": "submitted", "candidate": "cave-1-42", "jobId": "intent-9dfb5a7c-0711-4aad-a454-4834fde830a3"}
+{"at": "2026-09-16T09:20:57.282546+00:00", "event": "collected", "candidate": "cave-1-42", "jobId": "intent-9dfb5a7c-0711-4aad-a454-4834fde830a3", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 71.7302464769964}
+{"at": "2026-09-16T09:20:57.301676+00:00", "event": "submitted", "candidate": "courtyard-1-42", "jobId": "intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b"}
+{"at": "2026-09-16T09:22:23.100170+00:00", "event": "collected", "candidate": "courtyard-1-42", "jobId": "intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 75.18075865999708}
+{"at": "2026-09-16T09:22:23.118598+00:00", "event": "submitted", "candidate": "corridor-1-42", "jobId": "intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99"}
+{"at": "2026-09-16T09:23:48.193554+00:00", "event": "collected", "candidate": "corridor-1-42", "jobId": "intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 74.0422591059978}
+{"at": "2026-09-16T09:23:48.212766+00:00", "event": "submitted", "candidate": "tunnel-1-42", "jobId": "intent-75f21af9-274b-4869-9577-28999d937b28"}
+{"at": "2026-09-16T09:25:20.120394+00:00", "event": "collected", "candidate": "tunnel-1-42", "jobId": "intent-75f21af9-274b-4869-9577-28999d937b28", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 81.36546384500252}
+{"at": "2026-09-16T09:25:20.138431+00:00", "event": "submitted", "candidate": "chamber-1-42", "jobId": "intent-de172b53-3529-42f6-b4d4-b6df0779e568"}
+{"at": "2026-09-16T09:27:17.441104+00:00", "event": "collected", "candidate": "chamber-1-42", "jobId": "intent-de172b53-3529-42f6-b4d4-b6df0779e568", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 97.57427841699973}
+{"at": "2026-09-16T09:27:17.521219+00:00", "event": "submitted", "candidate": "courtyard-2-7", "jobId": "intent-7ee56718-e7ad-4578-b2c1-d28ea7c60da7"}
+{"at": "2026-09-16T09:28:36.751455+00:00", "event": "collected", "candidate": "courtyard-2-7", "jobId": "intent-7ee56718-e7ad-4578-b2c1-d28ea7c60da7", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 70.26409212600265}
+{"at": "2026-09-16T09:28:36.769861+00:00", "event": "submitted", "candidate": "bridge-2-7", "jobId": "intent-b594160c-b12e-44af-9695-d5fa3c60684e"}
+{"at": "2026-09-16T09:29:52.409554+00:00", "event": "collected", "candidate": "bridge-2-7", "jobId": "intent-b594160c-b12e-44af-9695-d5fa3c60684e", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 67.01230608000333}
+{"at": "2026-09-16T09:29:52.429516+00:00", "event": "submitted", "candidate": "tunnel-2-7", "jobId": "intent-a9d26274-03b2-4a00-9bd1-be926b6c87b3"}
+{"at": "2026-09-16T09:31:20.988038+00:00", "event": "collected", "candidate": "tunnel-2-7", "jobId": "intent-a9d26274-03b2-4a00-9bd1-be926b6c87b3", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 78.15387166599976}
+{"at": "2026-09-16T09:31:21.004608+00:00", "event": "submitted", "candidate": "corridor-2-7", "jobId": "intent-4ba9ab8f-3fbc-4529-82b7-55843b4b5040"}
+{"at": "2026-09-16T09:32:35.390699+00:00", "event": "collected", "candidate": "corridor-2-7", "jobId": "intent-4ba9ab8f-3fbc-4529-82b7-55843b4b5040", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 64.48222607899515}
+{"at": "2026-09-16T09:32:35.411182+00:00", "event": "submitted", "candidate": "narrow_passage-2-7", "jobId": "intent-80e66e4f-2132-44a3-8601-5a0a22051ee5"}
+{"at": "2026-09-16T09:34:01.869582+00:00", "event": "collected", "candidate": "narrow_passage-2-7", "jobId": "intent-80e66e4f-2132-44a3-8601-5a0a22051ee5", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 75.39647712199803}
+{"at": "2026-09-16T09:34:01.890168+00:00", "event": "submitted", "candidate": "chamber-2-7", "jobId": "intent-4f3db60b-8939-481c-b8bb-6f8d19ec3286"}
+{"at": "2026-09-16T09:35:26.357623+00:00", "event": "collected", "candidate": "chamber-2-7", "jobId": "intent-4f3db60b-8939-481c-b8bb-6f8d19ec3286", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 75.9438576360044}
+{"at": "2026-09-16T09:35:26.377244+00:00", "event": "submitted", "candidate": "cave-2-7", "jobId": "intent-164b48a7-ccb4-41a6-abe2-c118491bdb3e"}
+{"at": "2026-09-16T09:37:00.150162+00:00", "event": "collected", "candidate": "cave-2-7", "jobId": "intent-164b48a7-ccb4-41a6-abe2-c118491bdb3e", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 82.07551497699751}
+{"at": "2026-09-16T09:37:00.171724+00:00", "event": "submitted", "candidate": "large_open_interior-2-7", "jobId": "intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983"}
+{"at": "2026-09-16T09:38:47.357766+00:00", "event": "collected", "candidate": "large_open_interior-2-7", "jobId": "intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 93.74813696699857}
+{"at": "2026-09-16T09:38:47.379869+00:00", "event": "submitted", "candidate": "doorway-2-7", "jobId": "intent-79c22dd8-039b-446e-a28b-b017bf48ee5c"}
+{"at": "2026-09-16T09:39:59.373183+00:00", "event": "collected", "candidate": "doorway-2-7", "jobId": "intent-79c22dd8-039b-446e-a28b-b017bf48ee5c", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 64.72332124500099}
+{"at": "2026-09-16T09:39:59.390452+00:00", "event": "submitted", "candidate": "large_open_interior-2-42", "jobId": "intent-24a42e86-197e-4cd1-a9a5-6627ceea7388"}
+{"at": "2026-09-16T09:41:35.872057+00:00", "event": "collected", "candidate": "large_open_interior-2-42", "jobId": "intent-24a42e86-197e-4cd1-a9a5-6627ceea7388", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 84.8346585870022}
+{"at": "2026-09-16T09:41:35.889958+00:00", "event": "submitted", "candidate": "doorway-2-42", "jobId": "intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2"}
+{"at": "2026-09-16T09:42:58.244536+00:00", "event": "collected", "candidate": "doorway-2-42", "jobId": "intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 71.16667463599879}
+{"at": "2026-09-16T09:42:58.267412+00:00", "event": "submitted", "candidate": "corridor-2-42", "jobId": "intent-6405f041-e587-4ea4-9701-e0f8f3ced639"}
+{"at": "2026-09-16T09:44:14.275550+00:00", "event": "collected", "candidate": "corridor-2-42", "jobId": "intent-6405f041-e587-4ea4-9701-e0f8f3ced639", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 69.00505364599667}
+{"at": "2026-09-16T09:44:14.298457+00:00", "event": "submitted", "candidate": "chamber-2-42", "jobId": "intent-79a8d1ec-2343-4492-af86-afdc16a76c4a"}
+{"at": "2026-09-16T09:45:52.600067+00:00", "event": "collected", "candidate": "chamber-2-42", "jobId": "intent-79a8d1ec-2343-4492-af86-afdc16a76c4a", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 83.92963533599686}
+{"at": "2026-09-16T09:45:52.692178+00:00", "event": "submitted", "candidate": "narrow_passage-2-42", "jobId": "intent-c51a5de0-80bb-4922-b019-681f2618e8bb"}
+{"at": "2026-09-16T09:47:16.607257+00:00", "event": "collected", "candidate": "narrow_passage-2-42", "jobId": "intent-c51a5de0-80bb-4922-b019-681f2618e8bb", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 74.59922857300262}
+{"at": "2026-09-16T09:47:16.626391+00:00", "event": "submitted", "candidate": "courtyard-2-42", "jobId": "intent-aa874065-02b6-40fe-9aa8-7d954776c8b8"}
+{"at": "2026-09-16T09:48:59.178900+00:00", "event": "collected", "candidate": "courtyard-2-42", "jobId": "intent-aa874065-02b6-40fe-9aa8-7d954776c8b8", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 83.29690489800123}
+{"at": "2026-09-16T09:48:59.205235+00:00", "event": "submitted", "candidate": "cave-2-42", "jobId": "intent-7f95f53b-4060-4980-99bb-2f337ff8ba88"}
+{"at": "2026-09-16T09:50:43.810043+00:00", "event": "collected", "candidate": "cave-2-42", "jobId": "intent-7f95f53b-4060-4980-99bb-2f337ff8ba88", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 90.41818812499696}
+{"at": "2026-09-16T09:50:43.832731+00:00", "event": "submitted", "candidate": "bridge-2-42", "jobId": "intent-10a3cf02-3d09-4837-933f-b0aa040d8d35"}
+{"at": "2026-09-16T09:52:25.894975+00:00", "event": "collected", "candidate": "bridge-2-42", "jobId": "intent-10a3cf02-3d09-4837-933f-b0aa040d8d35", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 89.22147864100407}
+{"at": "2026-09-16T09:52:25.920311+00:00", "event": "submitted", "candidate": "tunnel-2-42", "jobId": "intent-006d2630-6cd8-441d-a6b0-4387a59866fc"}
+{"at": "2026-09-16T09:54:14.881569+00:00", "event": "collected", "candidate": "tunnel-2-42", "jobId": "intent-006d2630-6cd8-441d-a6b0-4387a59866fc", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": 94.5384601140031}
+{"at": "2026-09-16T09:54:14.882011+00:00", "event": "batch-complete", "candidateCount": 36}

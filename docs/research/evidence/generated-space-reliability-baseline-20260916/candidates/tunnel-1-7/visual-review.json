@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-arched-passage",
+  "sourceObservation": "Image shows a vaulted passage with visible floor and a far opening; a raised sill interrupts the floor near the exit.",
+  "generatedObservation": "Scale10 and12 browser runs cannot cross external scaffold seam; support-gap-or-step occurs before generated support. Offline route acceptance therefore overstates full-pipeline success.",
+  "evidence": [
+    "source-rgb.png",
+    "browser/scale10-forward.png",
+    "browser/scale12-forward.png"
+  ]
+}

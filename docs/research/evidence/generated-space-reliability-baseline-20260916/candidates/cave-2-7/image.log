@@ -1,0 +1,6 @@
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/lib/python3.10/site-packages/xformers/ops/fmha/flash.py:211: FutureWarning: `torch.library.impl_abstract` was renamed to `torch.library.register_fake`. Please use that instead; we will remove `torch.library.impl_abstract` in a future version of PyTorch.
+  @torch.library.impl_abstract("xformers_flash::flash_fwd")
+/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/lib/python3.10/site-packages/xformers/ops/fmha/flash.py:344: FutureWarning: `torch.library.impl_abstract` was renamed to `torch.library.register_fake`. Please use that instead; we will remove `torch.library.impl_abstract` in a future version of PyTorch.
+  @torch.library.impl_abstract("xformers_flash::flash_bwd")
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|█▍        | 1/7 [00:00<00:00,  6.38it/s]Loading pipeline components...:  57%|█████▋    | 4/7 [00:00<00:00, 14.68it/s]Loading pipeline components...:  86%|████████▌ | 6/7 [00:00<00:00, 11.56it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00,  8.88it/s]
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:01,  2.50it/s] 75%|███████▌  | 3/4 [00:00<00:00,  6.32it/s]100%|██████████| 4/4 [00:00<00:00,  6.43it/s]

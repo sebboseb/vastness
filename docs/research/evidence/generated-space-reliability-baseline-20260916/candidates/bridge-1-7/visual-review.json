@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "weak-bridge-conditioning",
+  "sourceObservation": "Image resembles a broken architectural wall and arch with stairs and a thin railing, not a clear flat deck between two broad landings.",
+  "generatedObservation": "Primary has supported connectivity but no accepted sustained enclosed route. Secondary10 offline pass still fails browser entry.",
+  "evidence": [
+    "source-rgb.png",
+    "diagnostic.json",
+    "browser"
+  ]
+}

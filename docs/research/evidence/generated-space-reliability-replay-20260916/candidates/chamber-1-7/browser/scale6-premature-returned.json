@@ -1,0 +1,118 @@
+{
+  "assessment": "passed",
+  "audit": [
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.19999998807907104,
+      "position": [
+        1.3884430646896364,
+        1.664617225742747,
+        4.1494010064668965
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.19999998807907104,
+      "position": [
+        1.3884430646896364,
+        1.664617225742747,
+        4.099301006466896
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        1.3884430646896364,
+        1.664617225742747,
+        4.0492010064668955
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0.10000002384185792,
+      "position": [
+        1.3884430646896364,
+        1.664617225742747,
+        3.9994010064668952
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        1.3884430646896364,
+        1.664617225742747,
+        3.949301006466896
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        1.3884430646896364,
+        1.664617225742747,
+        3.900701006466896
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    },
+    {
+      "headClearance": 1.8,
+      "navigationMs": 0,
+      "position": [
+        1.3884430646896364,
+        1.664617225742747,
+        3.849251006466896
+      ],
+      "supportTriangleIds": [
+        -1
+      ],
+      "valid": true
+    }
+  ],
+  "blocked": "",
+  "caseId": "chamber-1-7",
+  "errors": 0,
+  "generatedTravel": 0,
+  "glbSha256": "d526aec6874c3a1259fe4af64beb770ab96888df3909b58f4e0bd7f79e2ad464",
+  "identity": "fe9eb1a0a0dfcba01cb4534d0cf6c87cc1d696efe7fe5db845da462e812ce539",
+  "mode": "scaffold",
+  "pathRemaining": 16,
+  "pendingVisits": 0,
+  "pitch": 0,
+  "position": [
+    1.3884430646896364,
+    1.664617225742747,
+    3.849251006466896
+  ],
+  "ready": true,
+  "representation": "coarse",
+  "support": null,
+  "visits": [],
+  "walking": "generated-route",
+  "worldId": "intent-c5cda12d-76af-4b8b-b88c-eccc7719dd26",
+  "yaw": 0
+}

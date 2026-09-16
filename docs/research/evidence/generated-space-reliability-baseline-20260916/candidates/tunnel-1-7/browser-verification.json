@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "tunnel-1-7",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 10,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/tunnel-1-7-scale10.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "caf894ee4cac909bda07353f73058d96ede9dc7547719de4cf5588ec500fa2c9",
+        "forward": "3118a1b116e522726fa65bcd8bfdd5bcc6ec2168637e7571bb777ca34bf3b747",
+        "returned": "3118a1b116e522726fa65bcd8bfdd5bcc6ec2168637e7571bb777ca34bf3b747"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 12,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/tunnel-1-7-scale12.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "4b03f0c2aa97ab2a0bd9d74d199700ab3f201dbd14b96d21cbaafb06d8b9ccda",
+        "forward": "15a64f8951335f80c81b1b6755eb19ec0449cc60d3d3de8a9ff1f24e08c64495",
+        "returned": "15a64f8951335f80c81b1b6755eb19ec0449cc60d3d3de8a9ff1f24e08c64495"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-open-sided-corridor",
+  "sourceObservation": "Image shows a covered colonnaded corridor with broad smooth floor and visible far end.",
+  "generatedObservation": "Primary browser traverses3.05m but return stops at support-gap-or-step. Secondary10/12 complete roundtrips. Endpoint camera close to a coarse wall is not independent proof of good spatial fidelity.",
+  "evidence": [
+    "source-rgb.png",
+    "diagnostic.json",
+    "browser"
+  ]
+}

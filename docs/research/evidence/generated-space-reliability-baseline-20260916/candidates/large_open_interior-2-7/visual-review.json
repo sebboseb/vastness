@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-empty-warehouse",
+  "sourceObservation": "Source shows an empty warehouse with broad flat floor and overhead beams.",
+  "generatedObservation": "Coarse view preserves a partial interior shell and floor with large block-like wall masses. Primary route rejected; larger eligible routes encounter the baseline numerical seam.",
+  "evidence": [
+    "source-rgb.png",
+    "browser",
+    "diagnostic.json"
+  ]
+}

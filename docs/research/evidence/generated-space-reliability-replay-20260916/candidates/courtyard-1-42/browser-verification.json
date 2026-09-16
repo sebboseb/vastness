@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "courtyard-1-42",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "3647ba8a7a88cbc42e383ca27d4f66f003cb19f2d294b13a92c6c062de2d93e1",
+        "forward": "820f1be094175df641fa3660c7bc41ead0d94e216f9c99169e3fe494ad3cbdf5",
+        "returned": "76f4a193d5ff97299d67b92bf23d720e3cb9cf0ce81c371ecdf196e1eee60425",
+        "persisted": "f50180f7c4d129a18782db505f6f9d8faf25ee6ca18696df05edecc5dd261b60"
+      },
+      "forwardEndpointDistance": 0.002703074481542126,
+      "returnEndpointDistance": 0
+    },
+    {
+      "scale": 10,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "3e0556c06d075175af6fcda73b331c1b2fd73c3e4ed7b5532fa123e72a617184",
+        "forward": "5d3373e6cf656beebc2ec001978d8f53676e333d0ee9a7e97b74e4b6436771c5",
+        "returned": "a4baba29529030585af13799b2342b52d8f5506c691641a363c19e0b30cab463",
+        "persisted": "698c78547c647ee6ba2e5f95bbdcc0a56b835124d078afe22e30bb0822eb71cf"
+      },
+      "forwardEndpointDistance": 0.000300006607792478,
+      "returnEndpointDistance": 5.551115123125783e-17
+    },
+    {
+      "scale": 12,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "c56ff12c487582c6540c42f74a20169eacac525ca579794f52109148655637e4",
+        "forward": "58c1fecc62a4744e69e8bff90a6f81dff8c03e2665b8b89e295c46fa28318c73",
+        "returned": "69f531cac8e7c3df725b13a096ec85ce46e5e0e91b4f7dde2d4e7649634dba6a",
+        "persisted": "f170c2954bf8f2ab262b2f40c25cabcae3ebbe693e552866c885147152f47862"
+      },
+      "forwardEndpointDistance": 0.0016001060490353086,
+      "returnEndpointDistance": 0
+    }
+  ]
+}

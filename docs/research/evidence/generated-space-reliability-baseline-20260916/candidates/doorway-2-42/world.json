@@ -1,0 +1,100 @@
+{
+  "id": "intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2",
+  "createdAt": "2026-09-16T09:41:35.889Z",
+  "rawIntent": {
+    "text": "Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening.",
+    "axes": {
+      "scale": "human",
+      "density": "balanced",
+      "mood": "unspecified",
+      "openness": "mixed"
+    },
+    "representation": "abstract-solid"
+  },
+  "derivation": {
+    "compiler": "lexical-semantic-v1",
+    "cues": {
+      "vast": [],
+      "intimate": [],
+      "sparse": [],
+      "dense": [],
+      "open": [],
+      "enclosed": [],
+      "quiet": [],
+      "ominous": [],
+      "luminous": [],
+      "joyful": []
+    },
+    "limitations": [
+      "Rule-based axis extraction; no general language reasoning",
+      "Negation handling is local, not a complete semantic parser",
+      "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+      "Concept is bounded to 600 characters; original input is retained separately"
+    ]
+  },
+  "status": "ready",
+  "jobId": "intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2",
+  "request": {
+    "id": "intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening.\",\"axes\":{\"scale\":\"human\",\"density\":\"balanced\",\"mood\":\"unspecified\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "events": [
+    {
+      "type": "intent-recorded",
+      "at": "2026-09-16T09:41:35.889Z"
+    },
+    {
+      "type": "constraints-derived",
+      "at": "2026-09-16T09:41:35.889Z"
+    },
+    {
+      "type": "gpu-job-submitted",
+      "at": "2026-09-16T09:41:36.045Z"
+    },
+    {
+      "type": "artifacts-processing",
+      "at": "2026-09-16T09:42:48.129Z"
+    },
+    {
+      "type": "destination-validated",
+      "at": "2026-09-16T09:42:56.904Z"
+    }
+  ],
+  "workerJob": {
+    "id": "intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2",
+    "status": "succeeded",
+    "progress": 1,
+    "logs": [
+      "Queued command-v1",
+      "Running command-v1",
+      "{\"status\": \"succeeded\", \"report\": \"/home/vastness/.local/share/vastness-intention-worker/shared/data/artifacts/.intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2.tmp/generation-report.json\", \"error\": null}\n",
+      "Visual and collision artifacts are ready"
+    ],
+    "backend": "command-v1",
+    "error": null
+  },
+  "artifacts": [
+    {
+      "url": "/api/intent/artifacts/9a51e78abb5ec74ee978fde22887d72806a3fdb7d8c97f41573e8fe98708e12f/scene.ply",
+      "sha256": "9a51e78abb5ec74ee978fde22887d72806a3fdb7d8c97f41573e8fe98708e12f",
+      "bytes": 40500128,
+      "format": "ply",
+      "backend": "command-v1"
+    },
+    {
+      "url": "/api/intent/artifacts/8a6bdf101d8d1b01b96832bee7e7d3277374fdba8a398656e7d70a2c1b2e6fda/collider.glb",
+      "sha256": "8a6bdf101d8d1b01b96832bee7e7d3277374fdba8a398656e7d70a2c1b2e6fda",
+      "bytes": 17341836,
+      "format": "glb",
+      "backend": "command-v1"
+    }
+  ],
+  "sceneUrl": "/api/intent/worlds/intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2/scene"
+}

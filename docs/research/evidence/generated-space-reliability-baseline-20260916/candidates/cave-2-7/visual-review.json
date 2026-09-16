@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-rock-cavity",
+  "sourceObservation": "Source shows a faceted sandstone cavity, large vertical opening and scattered floor obstacles.",
+  "generatedObservation": "Coarse view becomes a small partial rock shell on generated support rather than the full depicted cavern. Primary browser traversal and return complete.",
+  "evidence": [
+    "source-rgb.png",
+    "browser",
+    "diagnostic.json"
+  ]
+}

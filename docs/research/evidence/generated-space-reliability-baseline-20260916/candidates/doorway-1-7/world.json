@@ -1,0 +1,102 @@
+{
+  "id": "intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425",
+  "createdAt": "2026-09-16T09:03:14.680Z",
+  "rawIntent": {
+    "text": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "mixed"
+    },
+    "representation": "abstract-solid"
+  },
+  "derivation": {
+    "compiler": "lexical-semantic-v1",
+    "cues": {
+      "vast": [],
+      "intimate": [],
+      "sparse": [
+        "empty"
+      ],
+      "dense": [],
+      "open": [],
+      "enclosed": [],
+      "quiet": [],
+      "ominous": [],
+      "luminous": [],
+      "joyful": []
+    },
+    "limitations": [
+      "Rule-based axis extraction; no general language reasoning",
+      "Negation handling is local, not a complete semantic parser",
+      "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+      "Concept is bounded to 600 characters; original input is retained separately"
+    ]
+  },
+  "status": "ready",
+  "jobId": "intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425",
+  "request": {
+    "id": "intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 7
+  },
+  "events": [
+    {
+      "type": "intent-recorded",
+      "at": "2026-09-16T09:03:14.680Z"
+    },
+    {
+      "type": "constraints-derived",
+      "at": "2026-09-16T09:03:14.680Z"
+    },
+    {
+      "type": "gpu-job-submitted",
+      "at": "2026-09-16T09:03:14.784Z"
+    },
+    {
+      "type": "artifacts-processing",
+      "at": "2026-09-16T09:04:24.941Z"
+    },
+    {
+      "type": "destination-validated",
+      "at": "2026-09-16T09:04:30.882Z"
+    }
+  ],
+  "workerJob": {
+    "id": "intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425",
+    "status": "succeeded",
+    "progress": 1,
+    "logs": [
+      "Queued command-v1",
+      "Running command-v1",
+      "{\"status\": \"succeeded\", \"report\": \"/home/vastness/.local/share/vastness-intention-worker/shared/data/artifacts/.intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425.tmp/generation-report.json\", \"error\": null}\n",
+      "Visual and collision artifacts are ready"
+    ],
+    "backend": "command-v1",
+    "error": null
+  },
+  "artifacts": [
+    {
+      "url": "/api/intent/artifacts/21d0edd07b098b72a2cfb9a249886ce06a052d1eed564d84625a278a3a509097/scene.ply",
+      "sha256": "21d0edd07b098b72a2cfb9a249886ce06a052d1eed564d84625a278a3a509097",
+      "bytes": 36576800,
+      "format": "ply",
+      "backend": "command-v1"
+    },
+    {
+      "url": "/api/intent/artifacts/3b2e6b1800b0f9565cf699eea62f1af945e8ce64f453f6360ad2e96770d92810/collider.glb",
+      "sha256": "3b2e6b1800b0f9565cf699eea62f1af945e8ce64f453f6360ad2e96770d92810",
+      "bytes": 14308356,
+      "format": "glb",
+      "backend": "command-v1"
+    }
+  ],
+  "sceneUrl": "/api/intent/worlds/intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425/scene"
+}

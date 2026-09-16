@@ -1,0 +1,30 @@
+import {appendFile,readFile,writeFile} from 'node:fs/promises';
+import {execFileSync} from 'node:child_process';
+import {join} from 'node:path';
+import {assessCandidate,readJson,saveJson,sha256} from '../../.worktrees/reliability-numerical-replay/scripts/reliability/assess.ts';
+import {prepareInspection} from '../../.worktrees/reliability-numerical-replay/scripts/reliability/prepare-inspection.ts';
+import {summarizeStudy,rowsCsv} from '../../.worktrees/reliability-numerical-replay/scripts/reliability/summarize.ts';
+const root='/Users/seb/Documents/ChatGPT/vastness',worktree=join(root,'.worktrees/reliability-numerical-replay'),data=join(root,'.runtime/reliability-replay'),baseline=join(root,'.runtime/reliability');
+const plan=await readJson(join(root,'scripts/reliability/plan.json')),reference=await readJson(join(data,'baseline-reference.json'));
+const commit=execFileSync('git',['rev-parse','HEAD'],{cwd:worktree,encoding:'utf8'}).trim();
+if(commit!==reference.replayCodeCommit)throw new Error('Replay code commit differs from prepared provenance');
+const baselineHash=sha256(await readFile(join(baseline,'summary.json')));
+if(baselineHash!==reference.baselineSummarySha256)throw new Error('Frozen baseline summary changed');
+const files=['scripts/passage-geometry.ts','apps/web/src/generated-passage/navigation.ts','scripts/prepare-passage-colors.ts','apps/web/src/generated-passage/color.ts','scripts/reliability/assess.ts','scripts/reliability/summarize.ts','scripts/reliability/verify-browser.ts'];
+const helpers=[];
+for(const path of files)helpers.push({path,sha256:sha256(await readFile(join(worktree,path)))});
+await saveJson(join(data,'analysis-provenance.json'),{startedAt:new Date().toISOString(),pid:process.pid,worktree,commit,baselineSummarySha256:baselineHash,newGpuJobs:0,geometryEdits:0,helpers});
+const colors=[];
+for(const candidate of plan.candidates){
+ const result=await assessCandidate(candidate,{root,data,plan});
+ const line=JSON.stringify({at:new Date().toISOString(),...result});console.log(line);await appendFile(join(data,'analysis-events.jsonl'),line+'\n');
+ const prepared=await prepareInspection(plan,root,data,true,true);
+ const originalColorHash=sha256(await readFile(join(baseline,'candidates',candidate.id,'colors.json'))),replayColorHash=sha256(await readFile(join(data,'candidates',candidate.id,'colors.json')));
+ colors.push({id:candidate.id,baselineSha256:originalColorHash,replaySha256:replayColorHash,identical:originalColorHash===replayColorHash});
+ await saveJson(join(data,'color-identity.json'),{generatedAt:new Date().toISOString(),checked:colors.length,allIdentical:colors.every(c=>c.identical),cases:colors});
+ if(originalColorHash!==replayColorHash)throw new Error('Regenerated renderer colors differ from frozen baseline: '+candidate.id);
+ const summary=await summarizeStudy(plan,data);await saveJson(join(data,'summary.json'),summary);await writeFile(join(data,'rows.jsonl'),summary.rows.map(row=>JSON.stringify(row)).join('\n')+'\n');await writeFile(join(data,'rows.csv'),rowsCsv(summary.rows,plan.primaryScale));
+ console.log(JSON.stringify({event:'inspection-ready',id:candidate.id,caseCount:prepared.cases.length,colorIdentical:true}));
+}
+if(sha256(await readFile(join(baseline,'summary.json')))!==baselineHash)throw new Error('Frozen baseline summary changed during replay');
+console.log(JSON.stringify({event:'complete',done:plan.candidates.length,allColorsIdentical:true}));

@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-rocky-cave",
+  "sourceObservation": "Image shows rocky walls, high irregular ceiling and sandy floor with a clear foreground walking area.",
+  "generatedObservation": "Coarse generated mesh resembles a compact roofed pavilion on a generated base rather than a broad cave; irregular supporting details remain. Primary bounded route fails; secondary12 entry hits tolerance mismatch.",
+  "evidence": [
+    "source-rgb.png",
+    "diagnostic.json",
+    "browser"
+  ]
+}

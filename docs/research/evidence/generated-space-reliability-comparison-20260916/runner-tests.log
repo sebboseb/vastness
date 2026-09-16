@@ -1,0 +1,19 @@
+.{"at": "2026-09-16T09:58:48.582319+00:00", "event": "submitted", "candidate": "one", "jobId": "job-1"}
+{"at": "2026-09-16T09:58:48.584442+00:00", "event": "collected", "candidate": "one", "jobId": "job-1", "gpuStatus": "failed", "macStatus": "failed", "generationSeconds": null}
+{"at": "2026-09-16T09:58:48.586592+00:00", "event": "submitted", "candidate": "two", "jobId": "job-2"}
+{"at": "2026-09-16T09:58:48.588768+00:00", "event": "collected", "candidate": "two", "jobId": "job-2", "gpuStatus": "failed", "macStatus": "failed", "generationSeconds": null}
+.{"at": "2026-09-16T09:58:49.093755+00:00", "event": "submitted", "candidate": "one", "jobId": "job-1"}
+{"at": "2026-09-16T09:58:49.095440+00:00", "event": "collected", "candidate": "one", "jobId": "job-1", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": null}
+{"at": "2026-09-16T09:58:49.097849+00:00", "event": "collected", "candidate": "one", "jobId": "job-1", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": null}
+.{"at": "2026-09-16T09:58:49.603782+00:00", "event": "submitted", "candidate": "one", "jobId": "job-1"}
+{"at": "2026-09-16T09:58:49.610586+00:00", "event": "collected", "candidate": "one", "jobId": "job-1", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": null}
+.{"at": "2026-09-16T09:58:50.114942+00:00", "event": "submitted", "candidate": "one", "jobId": "job-1"}
+{"at": "2026-09-16T09:58:50.125737+00:00", "event": "collected", "candidate": "one", "jobId": "job-1", "gpuStatus": "succeeded", "macStatus": "ready", "generationSeconds": null}
+.{"at": "2026-09-16T09:58:50.628872+00:00", "event": "collected", "candidate": "one", "id": "one", "text": "Test corridor", "seed": 7, "category": "corridor", "promptVariant": 1, "rawIntent": {"text": "Test corridor", "source": "text", "seed": 7}, "declaredAt": "2026-09-16T09:58:50.628334+00:00", "workerCommit": "fixed", "semantics": {}, "collected": true, "gpuStatus": "not_submitted", "macStatus": "not_submitted", "failureStage": "prompt_length", "finishedAt": "2026-09-16T09:58:50.628710+00:00"}
+.{"at": "2026-09-16T09:58:51.134216+00:00", "event": "submitted", "candidate": "one", "jobId": "job-1"}
+{"at": "2026-09-16T09:58:51.135819+00:00", "event": "collected", "candidate": "one", "jobId": "job-1", "gpuStatus": "failed", "macStatus": "failed", "generationSeconds": null}
+.
+----------------------------------------------------------------------
+Ran 7 tests in 3.574s
+
+OK

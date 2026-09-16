@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-corridor",
+  "sourceObservation": "Image has a broad unobstructed hallway floor, arched side openings and a far doorway.",
+  "generatedObservation": "All scales pass offline route assessment. Browser stalls at the external entry seam with support-gap-or-step before generated support.",
+  "evidence": [
+    "source-rgb.png",
+    "diagnostic.json",
+    "browser"
+  ]
+}
