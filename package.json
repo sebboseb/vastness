@@ -23,7 +23,11 @@
     "intention": "node scripts/dev-intention.mjs",
     "test:intention": "tsx --test services/intention-prototype/*.test.ts scripts/tests/intention-geometry.test.ts apps/web/src/intention-generation/*.test.ts",
     "build:intention": "vite build apps/web --config apps/web/vite.intention-generation.config.ts",
-    "check:intention": "npm run check && npm run test:intention && npm run build:intention"
+    "check:intention": "npm run check && npm run test:intention && npm run build:intention",
+    "passage": "node scripts/dev-passage.mjs",
+    "test:passage": "tsx --test services/passage-prototype/*.test.ts scripts/tests/passage-geometry.test.ts apps/web/src/generated-passage/*.test.ts",
+    "build:passage": "vite build apps/web --config apps/web/vite.generated-passage.config.ts",
+    "check:passage": "npm run check && npm run test:passage && npm run build:passage"
   },
   "dependencies": {
     "playcanvas": "2.22.1",
