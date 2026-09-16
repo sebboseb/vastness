@@ -22,7 +22,10 @@ export function summarizeRows(rows: any[], plan: Plan) {
  const count = (selected: any[], scale: number) => {
   const geometryPasses = selected.filter(row => row.scales.find((a: any) => a.scale === scale)?.geometryPassed).length;
   const fullPipelinePasses = selected.filter(row => row.scales.find((a: any) => a.scale === scale)?.fullPipelinePassed).length;
-  return {planned: selected.length, geometryPasses, geometryWilson95: wilson(geometryPasses, selected.length), fullPipelinePasses, fullPipelineWilson95: wilson(fullPipelinePasses, selected.length)};
+  const eligible = selected.filter(row => row.scales.find((a: any) => a.scale === scale)?.geometryPassed && row.macStatus === 'ready');
+  const browserPassed = eligible.filter(row => row.scales.find((a: any) => a.scale === scale)?.browserStatus === 'passed').length;
+  const browserFailed = eligible.filter(row => row.scales.find((a: any) => a.scale === scale)?.browserStatus === 'failed').length;
+  return {planned: selected.length, geometryPasses, geometryWilson95: wilson(geometryPasses, selected.length), fullPipelinePasses, fullPipelineWilson95: wilson(fullPipelinePasses, selected.length), browser: {eligible: eligible.length, passed: browserPassed, failed: browserFailed, notAssessed: eligible.length - browserPassed - browserFailed, conditionalPassRateAmongTested: browserPassed + browserFailed ? browserPassed / (browserPassed + browserFailed) : null}};
  };
  const categories = [...new Set(rows.map(row => row.category))].map(category => ({category, primary: count(rows.filter(r => r.category === category), plan.primaryScale), secondary: plan.secondaryScales.map(scale => ({scale, ...count(rows.filter(r => r.category === category), scale)}))}));
  const promptPairs = [...new Set(rows.map(r => `${r.category}/${r.promptVariant}`))].map(key => {
@@ -30,7 +33,7 @@ export function summarizeRows(rows: any[], plan: Plan) {
   return {key, seeds: paired.map(r => r.seed), primaryGeometryPasses: paired.filter(r => r.scales.find((a: any) => a.scale === plan.primaryScale)?.geometryPassed).length, primaryFullPipelinePasses: paired.filter(r => r.scales.find((a: any) => a.scale === plan.primaryScale)?.fullPipelinePassed).length};
  });
  const primary = count(rows, plan.primaryScale), topologyFailures = rows.filter(r => r.scales.find((a: any) => a.scale === plan.primaryScale)?.diagnosis?.topologyFailure).length;
- const complete = rows.every(r => r.collected && r.assessmentPresent && r.scales.filter((a: any) => a.scale === plan.primaryScale).every((a: any) => !a.geometryPassed || r.macStatus !== 'ready' || a.browserStatus !== 'not-assessed'));
+ const complete = rows.every(r => r.collected && r.assessmentPresent && r.scales.filter((a: any) => a.scale === plan.primaryScale).every((a: any) => !a.geometryPassed || r.macStatus !== 'ready' || r.preparationStatus === 'preparation-failed' || a.browserStatus !== 'not-assessed'));
  const canStillMeetThreshold = (primary.fullPipelinePasses + rows.filter(r => !r.collected || !r.assessmentPresent || r.scales.find((a: any) => a.scale === plan.primaryScale)?.browserStatus === 'not-assessed' && r.scales.find((a: any) => a.scale === plan.primaryScale)?.geometryPassed).length) / rows.length >= .8;
  return {schemaVersion: 1, studyId: plan.studyId, generatedAt: new Date().toISOString(), complete, primary: {scale: plan.primaryScale, ...primary}, secondary: plan.secondaryScales.map(scale => ({scale, ...count(rows, scale)})),
   scaleAdjustedGeometryPasses: rows.filter(r => r.scales.some((a: any) => a.geometryPassed)).length, topologyFailures, topologyFailureFractionOfPlanned: topologyFailures / rows.length,
@@ -42,11 +45,12 @@ export function summarizeRows(rows: any[], plan: Plan) {
 }
 
 export async function summarizeStudy(plan: Plan, data: string) {
- const rows = [];
+ const rows = [], preparation = await readJson(join(data, 'inspection/preparation.json'));
  for (const candidate of plan.candidates) {
   const directory = join(data, 'candidates', candidate.id);
   const state = await readJson(join(directory, 'candidate.json')), report = await readJson(join(directory, 'generation-report.json'));
   const batch: StudyAssessment | null = await readJson(join(directory, 'assessment.json')), browser = await readJson(join(directory, 'browser.json'));
+  const visualReview = await readJson(join(directory, 'visual-review.json')), prepared = preparation?.find((p: any) => p.id === candidate.id);
   const scales = [plan.primaryScale, ...plan.secondaryScales].map(scale => {
    const attempt = batch?.attempts.find(a => a.transform.scale === scale), geometryPassed = attempt?.status === 'passed';
    const evidence = browser?.attempts?.find((a: any) => a.scale === scale), accepted = browserPassed(browser, scale, batch?.source?.sha256 ?? null);
@@ -56,8 +60,9 @@ export async function summarizeStudy(plan: Plan, data: string) {
   const primary = scales[0];
   rows.push({...candidate, collected: state?.collected === true, assessmentPresent: batch !== null, jobId: state?.jobId ?? null, worldId: state?.worldId ?? null, sourceSha256: batch?.source?.sha256 ?? null,
    gpuStatus: state?.gpuStatus ?? 'pending', macStatus: state?.macStatus ?? 'pending', failureStage: state?.failureStage ?? report?.stage ?? null,
-   primaryCause: !state?.collected ? 'pending' : state.gpuStatus !== 'succeeded' ? `pipeline-${state.failureStage ?? report?.stage ?? 'generation'}` : !batch ? 'assessment-pending' : !primary.geometryPassed ? primary.diagnosis?.cause : state.macStatus !== 'ready' ? 'pipeline-import' : primary.browserStatus === 'failed' ? 'browser-failure' : primary.browserStatus === 'not-assessed' ? 'browser-pending' : 'passed',
-   scales, rawTopology: batch?.rawTopology ?? null, sourceImageFidelity: 'not-assessed', scaleSensitive: !primary.geometryPassed && scales.slice(1).some(a => a.geometryPassed),
+   primaryCause: !state?.collected ? 'pending' : state.gpuStatus !== 'succeeded' ? `pipeline-${state.failureStage ?? report?.stage ?? 'generation'}` : !batch ? 'assessment-pending' : !primary.geometryPassed ? primary.diagnosis?.cause : state.macStatus !== 'ready' ? 'pipeline-import' : prepared?.status === 'preparation-failed' ? 'pipeline-inspection-preparation' : primary.browserStatus === 'failed' ? 'browser-failure' : primary.browserStatus === 'not-assessed' ? 'browser-pending' : 'passed',
+   preparationStatus: prepared?.status ?? 'not-prepared', preparationError: prepared?.status === 'preparation-failed' ? prepared.reason : null,
+   scales, rawTopology: batch?.rawTopology ?? null, sourceImageFidelity: visualReview?.sourceImageFidelity ?? 'not-assessed', visualReview, scaleSensitive: !primary.geometryPassed && scales.slice(1).some(a => a.geometryPassed),
    measurements: {generationSeconds: report?.wallSeconds ?? state?.generationSeconds ?? null, stageSeconds: Object.fromEntries(Object.entries(report?.stages ?? {}).map(([key, value]: [string, any]) => [key, value.wallSeconds ?? null])),
     wholeDeviceMemory: report?.deviceMemoryMeasurement ?? null, glbBytes: report?.artifacts?.find((a: any) => a.path === 'collider.glb')?.bytes ?? null, plyBytes: report?.artifacts?.find((a: any) => a.path === 'scene.ply')?.bytes ?? null,
     meshTriangles: report?.stages?.trellis?.metrics?.meshTriangleCount ?? null, tokenCounts: report?.stages?.image?.metrics?.tokenCounts ?? null},
