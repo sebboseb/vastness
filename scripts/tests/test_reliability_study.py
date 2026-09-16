@@ -21,6 +21,9 @@ class StudyTests(unittest.TestCase):
         self.posts = []
         self.worlds = []
         self.drop = False
+        self.processing_reads_remaining = 0
+        self.final_world_status = 'failed'
+        self.worker_status = 'failed'
         owner = self
 
         class Handler(BaseHTTPRequestHandler):
@@ -39,9 +42,14 @@ class StudyTests(unittest.TestCase):
                 elif self.path == '/api/intent/worlds':
                     self.reply(owner.worlds)
                 elif self.path.startswith('/api/intent/worlds/'):
-                    self.reply(next(w for w in owner.worlds if self.path.endswith(w['id'])))
+                    world = next(w for w in owner.worlds if self.path.endswith(w['id']))
+                    status = owner.final_world_status
+                    if owner.processing_reads_remaining:
+                        owner.processing_reads_remaining -= 1
+                        status = 'processing'
+                    self.reply({**world, 'status': status})
                 elif self.path.startswith('/jobs/'):
-                    self.reply({'status': 'failed', 'logs': ['out of memory'], 'error': 'OOM'})
+                    self.reply({'status': owner.worker_status, 'logs': [], 'error': None})
 
             def do_POST(self):
                 raw = json.loads(self.rfile.read(int(self.headers['Content-Length'])))
@@ -99,6 +107,52 @@ class StudyTests(unittest.TestCase):
         state = json.loads((self.args.output / 'one/candidate.json').read_text())
         self.assertEqual(state['failureStage'], 'prompt_length')
         self.assertTrue(state['collected'])
+
+    def test_mac_processing_beyond_twenty_polls_waits_for_terminal_state(self):
+        self.worker_status = 'succeeded'
+        self.final_world_status = 'ready'
+        self.processing_reads_remaining = 25
+        self.run_row()
+        state = json.loads((self.args.output / 'one/candidate.json').read_text())
+        self.assertTrue(state['collected'])
+        self.assertEqual(state['macStatus'], 'ready')
+        self.assertEqual(self.processing_reads_remaining, 0)
+        self.assertEqual(len(self.posts), 1)
+
+    def test_mac_deadline_preserves_ids_and_resume_uses_same_generation(self):
+        self.worker_status = 'succeeded'
+        self.final_world_status = 'ready'
+        self.processing_reads_remaining = 100
+        self.args.timeout = 0
+        with self.assertRaisesRegex(TimeoutError, 'Mac preparation'):
+            self.run_row()
+        state = json.loads((self.args.output / 'one/candidate.json').read_text())
+        self.assertFalse(state.get('collected', False))
+        self.assertEqual(state['jobId'], 'job-1')
+        self.assertEqual(json.loads((self.args.output / 'one/world.json').read_text())['status'], 'processing')
+        self.args.timeout = 2
+        self.processing_reads_remaining = 0
+        self.run_row()
+        resumed = json.loads((self.args.output / 'one/candidate.json').read_text())
+        self.assertEqual(resumed['jobId'], state['jobId'])
+        self.assertEqual(resumed['macStatus'], 'ready')
+        self.assertTrue(resumed['collected'])
+        self.assertEqual(len(self.posts), 1)
+
+    def test_legacy_nonterminal_collected_record_is_reconciled(self):
+        self.worker_status = 'succeeded'
+        self.final_world_status = 'ready'
+        self.run_row()
+        path = self.args.output / 'one/candidate.json'
+        state = json.loads(path.read_text())
+        state['macStatus'] = 'processing'
+        study.save(path, state)
+        self.run_row()
+        resumed = json.loads(path.read_text())
+        self.assertEqual(resumed['jobId'], state['jobId'])
+        self.assertEqual(resumed['macStatus'], 'ready')
+        self.assertTrue(resumed['collected'])
+        self.assertEqual(len(self.posts), 1)
 
     def test_changed_immutable_manifest_refused(self):
         path = self.args.output / 'manifest.json'

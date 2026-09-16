@@ -237,7 +237,13 @@ def candidate(row, tokens, args, plan):
         if state['rawIntent'] != raw:
             raise ValueError('Saved request differs from declared plan')
         if state.get('collected'):
-            return
+            if state.get('macStatus') in {'ready', 'failed', 'not_submitted'}:
+                return
+            # Older runners could mark a still-processing Mac world collected.
+            # Reconcile its durable IDs; never submit replacement generation.
+            state['collected'] = False
+            state.pop('finishedAt', None)
+            save(path, state)
     else:
         state = {'candidate': row['id'], **row, 'rawIntent': raw, 'declaredAt': now(),
                  'workerCommit': plan['workerCommit'], 'semantics': tokens['semantics']}
@@ -288,12 +294,14 @@ def candidate(row, tokens, args, plan):
             raise TimeoutError('Polling deadline reached; resume same job')
         time.sleep(args.poll_seconds)
     report = None if job['status'] == 'not_submitted' else collect(args, out, state, job)
-    for _ in range(20):
+    while True:
         world = get(args.api_url + '/api/intent/worlds/' + state['worldId'], args.output, deadline)
+        save(out / 'world.json', world)
         if world['status'] in {'ready', 'failed'}:
             break
+        if time.monotonic() >= deadline:
+            raise TimeoutError('Mac preparation deadline reached; resume saved world/job IDs')
         time.sleep(args.poll_seconds)
-    save(out / 'world.json', world)
     state.update(collected=True, gpuStatus=job['status'], macStatus=world['status'], finishedAt=now(),
                  generationSeconds=report.get('wallSeconds') if report else None,
                  deviceMemoryMeasurement=report.get('deviceMemoryMeasurement') if report else None,
