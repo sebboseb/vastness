@@ -1,88 +1,86 @@
-# Compiler correction outcomes
+# Independent compiler outcome notes
 
-Read-only targeted audit, 2026-09-16. Both changed walkway cases have complete expanded, legacy and selected records. No assessments, new corrections, source edits or geometry changes were run. Doorway-scope outcomes have not been inspected; that phase is reserved for a later appended audit after freezing and completion.
+Read-only audit of frozen saved records in `/Users/seb/Documents/ChatGPT/vastness/.runtime/space-diagnosis`. Written only in the diagnosis-criteria worktree. No assessor, compiler experiment, retuning, source edit or GPU work was run. Trace references below are relative to the root evidence directory, not this worktree. Sequence numbers are zero-based.
 
-## Walkway alias: omission fixed, zero whole-case recoveries
+## Completion and denominators
 
-The compiler omission is fixed for **2/2 changed cases**, `corridor-2-7` and `corridor-2-42`. Both now compile to the existing enclosed-passage requirement and reach actual geometry assessment. **Whole-case recoveries are 0/2 changed cases**: both selected assessments remain failed after expanded and legacy search. This targeted note does not claim a complete 36-case phase aggregate.
+Walkway is complete for all 36 candidates: exactly `corridor-2-7` and `corridor-2-42` change criteria relative to coverage. All 36 selected geometry verdicts are unchanged, including three passes. This fixes a compiler vocabulary omission in two inputs, with zero whole-case recoveries and zero regressions.
 
-The immediate predecessor is `coverage`, whose compiler was still the observational unchanged compiler. Its four corridor attempts report “Intent has no supported topology criteria.” with zero tested entries, route candidates, topology queries and seam builds. Their final fair-pass completion events are:
+Doorway-scope is now complete for all 36 candidates. Exactly `chamber-1-7` and `chamber-1-42` change criteria relative to walkway; both remain failed. All 36 selected geometry verdicts are unchanged: **3/36 passed, zero recoveries and zero regressions**. The unchanged passing cases are `narrow_passage-1-7`, `narrow_passage-2-7` and `cave-1-7`. Among the 31 previously unresolved cases, this phase demonstrates **0/31 whole-case recoveries**; it does not classify those cases as irreparable generation failures.
 
-| Candidate | Expanded seq | Legacy seq |
-| --- | ---: | ---: |
-| corridor-2-7 | 32529 | 49362 |
-| corridor-2-42 | 23466 | 26022 |
+For all 34 cases whose criteria do not change, the complete selected assessment matches the preceding phase after removing only `diagnosisFreeze`, `traceSummary`, `elapsedMs` and the two metric timings `buildMs`/`assessmentMs`. All 36 intent traces were compared as well as all 36 selected assessments. All 47 current method files match the hashes declared in the doorway-scope freeze, whose timestamp is `2026-09-16T13:25:16.559Z` and whose selection hash remains `a023b551f38752982a7f6f7b29d4c5e8010f4628762e8f4ee146ce888bdcb6c7`.
 
-Paths are `coverage/candidates/<id>/<mode>.ndjson.gz`, relative to this report's directory. Earlier baseline evidence remains immutable: baseline completion seq10840/16451 for seed7 and seq7819/8671 for seed42 documents the same unsupported stopping condition.
+These are geometry-assessment counts. This read-only audit performed no browser run and does not overwrite the prior cave first-attempt browser failure or equate later repeats with primary success.
 
-### What changed, and what did not
+## Walkway correction
 
-The identical normalized intent is: “an empty covered walkway between brick walls, broad straight path, low arched ceiling and flat continuous paving.” In both `walkway/candidates/<id>/intent-trace.json` records, `walkway:0` applies the alias with no uncertainty markers. Exact half-open normalized UTF-16 spans are covered `[9,16)`, walkway `[17,24)`, walls `[39,44)`, and the evidence phrase “empty covered walkway between brick walls” `[3,44)`. `walkway:1` records supported true, required `[enclosed-passage]`, new positive text evidence and removal of the obsolete no-topology notice. The retained original trace still records the earlier unsupported decision; it is not the final corrected result.
+The two corridor-2 intents explicitly say covered walkway between brick walls. Their original unsupported requirement array becomes `[enclosed-passage]`; physical dimensions, cover/wall/width requirements, source hashes, transforms and locked scales remain unchanged. Exact normalized spans are covered `[9,16)`, walkway `[17,24)`, walls `[39,44)` and phrase `[3,44)`. Both final traces record `walkway:0` applied and `walkway:1` corrected criteria.
 
-The quantitative requirements and physical objects were compared for exact equality between coverage and walkway: openSky false, covered true, opposingWalls true, minimumWidth 2.4; radius0.3, height1.8, eyeHeight1.65, maximumStep0.25, maximumSlope35, displacement3 and reversible true. The “broad straight path” request remains constrained. The raw intent, semantics, source SHA, transform and navigator options are also identical. No same-named method changed hash between the two freezes; both name `routes-coverage.ts` as route module and share selection hash `a023b551f38752982a7f6f7b29d4c5e8010f4628762e8f4ee146ce888bdcb6c7`.
+The compiler's repaired eligibility is not geometry success:
 
-| Candidate | Locked scale | Original source SHA-256 |
+- `corridor-2-7`, scale 10: final fair expanded/legacy passes consider 4,063/2,583 routes, all rejected at enclosed-passage. No seam is built. In `walkway/candidates/corridor-2-7/expanded.ndjson.gz`, seq714186 fails opposing width against 2.4 m; seq714235 passes that width but fails the broad supported region; seq714430 rejects route 1 before explicit cover. Legacy seq477466/477516/477714 corroborate those gates. The broad adjective describes the path; these failures do not justify removing its width requirement.
+- `corridor-2-42`, scale 6: passage and cover witnesses qualify expanded route 11 (seq68645/68659/68661), but forward and reverse seam attempts fail `support-gap-or-step` (seq68662/68663; rejected seq68664), ending 0.6351191186543668 m and 1.4168041877674336 m short. Legacy route 21 likewise qualifies at seq49407/49421/49423 then fails both movements at seq49424/49425, ending 0.8326441279939676 m and 1.4203929242250073 m short (rejected seq49426). These are latest fair-pass events. Earlier passes repeat qualified/rejected attempts; they are not additional successful cases.
+
+The detailed root note `.runtime/space-diagnosis/compiler-outcome.md` retains predecessor unsupported events and all eight corridor predecessor/current trace hashes. This audit also compared all 36 coverage/walkway selected criteria and verdicts from their completed records.
+
+## Doorway scope: exact criterion change and safe consumption
+
+Both `chamber-1-7` and `chamber-1-42` contain normalized `broad[42,47)` attached to `doorway[48,55)`. `doorway-scope:0` records the direct text binding without uncertainty; `doorway-scope:1` records the corrected result. Only global minimumWidth changes from 2.4 to 0.6, with `widthByTopology:{'doorway-crossing':2.4}` added. Supported status, topology order `[enclosed-passage,doorway-crossing]`, evidence, conjunctive ambiguity, roof/wall flags and physical dimensions are unchanged. Source SHA, transform and navigator options were compared exactly to walkway; both locked scales stay 6.
+
+| Case | Original source SHA-256 |
+| --- | --- |
+| chamber-1-7 | d526aec6874c3a1259fe4af64beb770ab96888df3909b58f4e0bd7f79e2ad464 |
+| chamber-1-42 | 2b6e56636c72bdccdd387c4a30a7e98526d15efeab66d47c396287f81d7a8a76 |
+
+All four scoped attempts bind diagnosisFreeze `641ff273558a427b72ec1bbf10b88415c308ce70ab1857f0f8ad72b6bfee1f64`. Each recorded conservative-predecessor assessment-start uses global width 2.4 with no override field; only the appended scoped-coverage assessment-start uses global 0.6 plus local 2.4. No unmodified predecessor is observed receiving the smaller global field.
+
+### chamber-1-7: topology advances, seam remains failed
+
+The immediately preceding walkway fair pass rejected all 742 expanded and two legacy routes at enclosed-passage; neither mode built a seam. Representative predecessor events: expanded seq157977 and legacy seq45183, each leaving doorway and explicit-cover unexecuted.
+
+The new scoped expanded pass considers 613 routes: 590 reject enclosed-passage, 20 reject doorway-crossing and three qualify all topology witnesses but fail seam. Scoped node predicates have no broad-region failure: 16,276 observations fail opposing walls and 156 pass. These are repeated node observations, not independent candidate counts.
+
+At `doorway-scope/candidates/chamber-1-7/expanded.ndjson.gz`:
+
+- Seq243299 records route 1's enclosed-passage witness at global width 0.6, continuous distance 1.0000000000000002 m and roof coverage 1. The route now reaches the aperture gate; seq243303/243306 record missing flank failures using local threshold 2.4, and seq243511 rejects doorway-crossing with explicit-cover still unexecuted.
+- Route 7's aperture witness at seq250852 measures 4.954194919030584 m against `declaredMinimumWidth:2.4`, opposite-side signed distances 0.8000000000000003/-1, roof coverage 1 and open space on both sides. It references original flank triangles 972357 and 716288 plus original roof triangles. Seq250868 records all three witness kinds: enclosed-passage, doorway-crossing and explicit-cover.
+- Route 27's aperture at seq255008 measures the same width. Route 75 at seq260663 measures 4.954170685425696 m, also with declared minimum 2.4. The local aperture requirement was retained quantitatively, not discarded.
+
+All three qualified expanded routes fail both seam directions:
+
+| Route / proposal | Forward seq / remaining m | Reverse seq / remaining m | Recorded movement failure |
+| --- | --- | --- | --- |
+| 7 / 953:3 | 250869 / 1.4228265790914998 | 250870 / 2.305960317837949 | support-gap-or-step |
+| 27 / 947:3 | 255025 / 1.422910016166921 | 255026 / 2.3060955434429404 | support-gap-or-step |
+| 75 / 971:3 | 260680 / 1.4228465251472535 | 260681 / 2.305992644204169 | support-gap-or-step |
+
+For route 7, the forward movement starts at `[-0.21155693531036368,1.6622045410264195,4.19955299794674]` toward `[-0.21155693531036368,1.8223539047778035,1.7954667091369636]`. Last-valid support has authored `-1` and original triangle1232991. Last-valid support does not override the failed swept move or establish a valid seam.
+
+The scoped legacy pass considers two routes. Both now pass enclosed-passage and fail doorway-crossing; neither reaches seam testing. Seq60125 records route 1's one-metre covered passage witness. Aperture seq60129 (left flank), seq60176 (opposite crossing sides) and seq60236 (right flank) remain failures; seq60337 rejects doorway-crossing. This is a stage change, not a whole-route acceptance.
+
+Expanded returned counts fall from 742 to 613 routes because the scoped pass reaches seam-build attempts and uses the inherited per-entry stopping behavior after a seam failure. This is not evidence that the frozen prior search was discarded: the complete conservative predecessor still executes first with its original width, and its trace remains present. Counts from the returned final pass must not be mistaken for total multi-pass work.
+
+### chamber-1-42: compiler changes, geometry remains censored by entry screening
+
+Neither mode reaches a component, route candidate, topology query or seam build. The scoped expanded pass tries 192 proposals: 187 reached prism screens reject and five have no support edge. Legacy tries 48, all rejected by the prism. This reproduces the predecessor's entry-stage outcome; a scope fix cannot establish a usable aperture where no entry reaches topology assessment.
+
+Expanded seq64574 records proposal `0:0` blocked by original triangle115464 inside the support/body prism; seq64576 records first failure `source-entry-prism`, leaving body prescreen and final seam unexecuted. The triangle's Y range is approximately 5.73977–5.76248, clipping the support band `[5.751104273714782,6.016104273714782]`; it is not merely a detached overhead triangle. Legacy seq60295/60297 records the same representative proposal and blocker. These first blockers do not prove that all possible exterior access is impossible.
+
+## Scope trace integrity anchors
+
+These eight complete gzips were read end-to-end, SHA-256 recomputed against traceSummary, event count matched and seq checked contiguous from zero. No partial trace was read.
+
+| Phase / case / mode | Events | SHA-256 |
 | --- | ---: | --- |
-| corridor-2-7 | 10 | 3deff24d4be94dee2bc86c7bc6d3091f3ebc6ec2bf0c1d51aad186022ed87f00 |
-| corridor-2-42 | 6 | 79b792cfba58bb085aa025625e66ad170eaf5d21cecf1c18f4ed654f523345fe |
+| walkway / chamber-1-7 / expanded | 223637 | 51d234cc33e490adf5895c89e9dcb353eadfffc102c2af919a2f00d8f940eb6a |
+| walkway / chamber-1-7 / legacy | 45247 | 55a51a120759d1918da6c0ca04c8a2258ba7bad10ec617850793559beab79deb |
+| walkway / chamber-1-42 / expanded | 55328 | 06af259153605d20c400723c678ed5dda8e0243177d046cb88d577a2a5d399b2 |
+| walkway / chamber-1-42 / legacy | 46983 | 70f654bfc00b766c02032df563f2aae4678fc2c9dacdeabfb8a112b6a29f7d37 |
+| doorway-scope / chamber-1-7 / expanded | 300553 | c55e560b4684564ed410f04b3f16154226b7bb81bf71d63e8db3f16f1a58ecc0 |
+| doorway-scope / chamber-1-7 / legacy | 60470 | 4ac2d693ec41d17b29b0456fe66c016d549f2c44cb3247abe387739149d5c7ca |
+| doorway-scope / chamber-1-42 / expanded | 73836 | 94302a82499163c1c558bb8f47cf416aaee80765651e256dd0925a574b05ad0f |
+| doorway-scope / chamber-1-42 / legacy | 62663 | 933281a541059b4ad4fbc4dcb38adde09acf2ab9bbc2ca6585124adeb3812f67 |
 
-Coverage attempts bind diagnosisFreeze `11eda9be71cd8e43f0fb0c6e71cb62a21c1952c81a4e5fe9d0c2292bb01c9ed2`; walkway attempts bind `a4da4c9e46d361f012f200fd03d6fb0747fb623a6ee880f3accb4bde655e2cbe`. Freeze records were inspected for shared-method equality; this is not a claim that the entire unrelated cohort was re-audited.
+## Bounded implications
 
-### corridor-2-7: retained width predicates reject all considered routes
-
-The final fair pass now considers 4,063 expanded routes and 2,583 legacy routes. Every one rejects enclosed-passage; no route reaches seam construction. Across all three evaluator passes, there are 11,479 expanded and 7,394 legacy route-candidate observations, all rejected at topology. Counts repeat routes/nodes and are not independent geometric examples.
-
-Exact fair-pass predicate counts:
-
-| Mode | Opposing-wall-width first failures | Broad-supported-region first failures | Passed node predicates | Seam builds |
-| --- | ---: | ---: | ---: | ---: |
-| expanded | 126438 | 17410 | 0 | 0 |
-| legacy | 73510 | 16239 | 0 | 0 |
-
-Representative saved events in `walkway/candidates/corridor-2-7/expanded.ndjson.gz`, all `pass:coverage-round-robin`:
-
-- Seq714186, route1/node1019: opposing-wall-width fails. Side distances `[null,null,0.5446706297668995,1.207623353008066]` cannot satisfy the retained 2.4 m threshold. Broad-region and roof predicates are unexecuted.
-- Seq714235, route1/node1013: opposing width passes with `[null,null,5.275944693547002,2.7783243096576253]`, then broad-supported-region fails at minimumWidth2.4. Required roof is unexecuted.
-- Seq714430: route1 rejects enclosed-passage; explicit-cover remains unexecuted. Seq1071601 completes the failed fair pass.
-
-Legacy corroboration: seq477466, route1/node20, passes opposing width `[1.8022521272801855,0.9487095732603623,null,null]` but fails broad-supported-region; seq477516/node111 fails opposing width; seq477714 rejects route1 before explicit-cover; seq702589 completes failure.
-
-Both returned fair-pass diagnostics record entry-proposals exhausted. This is still bounded-search failure, not proof that the artifact has no possible valid route or an irreparable generation defect. Because the adjective describes the path itself, this evidence does not justify deleting width as a scope fix.
-
-### corridor-2-42: topology witnesses are found, but reversible seam fails
-
-The final fair pass considers 11 expanded routes and 21 legacy routes. In each mode, one route satisfies the enclosed-passage and explicit-cover witnesses, then fails both forward and reverse seam movement. The same candidate is also topology-qualified and seam-rejected in the two predecessor passes. Those six qualified-attempt observations across modes/passes are not six distinct traversable successes.
-
-Expanded `walkway/candidates/corridor-2-42/expanded.ndjson.gz`, fair pass:
-
-- Seq68645 records route11 enclosed-passage witness: continuousDistance1, minimumRoofCoverage1, maximumRoofHeight2.5482539721161217, declaredMinimumWidth2.4, broadCenterlineDiameter2.4, minimumBoundaryDirections2.
-- Seq68659 records explicit-cover, continuousDistance1.0000000000000004 and roof coverage1. Seq68661 marks route11 topology-qualified.
-- Seq68662, proposal `1072:3`: forward seam from `[-0.20912880897521946,1.6612282603018065,4.205578583478928]` toward `[-0.20912880897521946,1.7077438465440096,2.593353128433228]` is blocked with `support-gap-or-step`, ending 0.6351191186543668 m short. Retained last-valid support references authored `-1` and original triangle786706.
-- Seq68663: reverse is also blocked with `support-gap-or-step`, ending 1.4168041877674336 m short. Seq68664 records seam-rejected.
-
-Legacy `walkway/candidates/corridor-2-42/legacy.ndjson.gz`, fair pass:
-
-- Seq49407 records route21 enclosed-passage witness with continuousDistance1, roof coverage1, maximumRoofHeight2.534675788111097 and declaredMinimumWidth2.4. Seq49421 records explicit-cover and seq49423 qualifies the route.
-- Seq49424, proposal `1065:3`: forward movement reports `support-gap-or-step`, 0.8326441279939676 m short; retained last-valid support references `-1` and original triangle786707.
-- Seq49425: reverse reports the same reason, 1.4203929242250073 m short. Seq49426 rejects the seam.
-
-The movement's retained support object is last-valid state; its `valid:true` and null support reason do not override the movement's `blocked:true` and `support-gap-or-step`. These records establish failed movement, not whether its underlying cause is mesh geometry, conservative support policy or a numerical issue. They are not the separately observed synthetic far-approach `unsupported-footprint` start failure. Both returned fair-pass diagnostics also retain entry-proposals exhaustion; other proposals/routes remain outside the bounded search proof.
-
-### Completed gzip integrity anchors
-
-Every listed gzip was read end-to-end, SHA-256 recomputed against its attempt traceSummary, event count matched and seq checked contiguous from zero. No partial gzip or doorway-scope outcome was read.
-
-| Phase / candidate / mode | Events | SHA-256 |
-| --- | ---: | --- |
-| coverage / corridor-2-7 / expanded | 32532 | ebd876f45858c22580e7bcba5194384d47134b5da9f0b2c00b426bba641aeb9f |
-| coverage / corridor-2-7 / legacy | 49365 | 9d8bec1e0e7e26e0c3ab95ffd9ed394df2ed4327c9ecef88812caa50278fd9be |
-| coverage / corridor-2-42 / expanded | 23469 | cbcab4b450a414a4df1dc0375e094118a85bf4e76a840282a80a4cd24e2c766c |
-| coverage / corridor-2-42 / legacy | 26025 | eff272940dfc236c15f762c18556aae46290450f3c0d208cc1840d2fa7351133 |
-| walkway / corridor-2-7 / expanded | 1071604 | 0b3b66d32d0400eb4e013a44c4c659167cf55716b8c25558287a1720b18ec537 |
-| walkway / corridor-2-7 / legacy | 702592 | 976d45911e18e846f3391d836ab6d2b89ad12a1fee0c83be9529726a0915b1b5 |
-| walkway / corridor-2-42 / expanded | 68669 | 5722c08f9792b57fe51d8afc16a34d31cd1ddc0ca361bd1a9eb0631a1aa06098 |
-| walkway / corridor-2-42 / legacy | 49431 | 9f814724910b4cf075b58e7d5ef4c4d0d641928f5844b6b0f608ddca3327aed6 |
-
-## Doorway scope
-
-Pending separate freeze, completed assessment records and authorization to inspect. No outcome conclusion is made here.
+A compiler rejection condition can be incorrect even when repairing it does not produce a complete accepted case. The saved traces now distinguish that repair from subsequent quantitative topology and seam failures. They do not establish irreparable geometry, a new successful generated interior, or a model-comparison verdict. Movement failures are recorded reasons, not a proved diagnosis of their underlying geometric/numerical cause. No additional correction is proposed or tuned from this audit.

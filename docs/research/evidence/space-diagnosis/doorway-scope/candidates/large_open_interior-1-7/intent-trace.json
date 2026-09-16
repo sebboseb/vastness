@@ -1,0 +1,569 @@
+{
+  "rawIntent": {
+    "text": "An enormous empty vaulted hall with a broad entrance and a continuous level floor, widely spaced perimeter columns and clear central space.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "An enormous empty vaulted hall with a broad entrance and a continuous level floor, widely spaced perimeter columns and clear central space.",
+    "axes": {
+      "scale": "vast",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "mixed"
+    },
+    "representation": "abstract-solid"
+  },
+  "criteria": {
+    "version": 1,
+    "supported": true,
+    "required": [
+      "broad-covered-interior"
+    ],
+    "evidence": [
+      {
+        "kind": "broad-covered-interior",
+        "source": "text",
+        "cue": "hall"
+      }
+    ],
+    "ambiguities": [],
+    "requirements": {
+      "openSky": false,
+      "covered": true,
+      "opposingWalls": false,
+      "minimumWidth": 2.4
+    },
+    "physical": {
+      "radius": 0.3,
+      "height": 1.8,
+      "eyeHeight": 1.65,
+      "maxStep": 0.25,
+      "maxSlopeDegrees": 35,
+      "minimumDisplacement": 3,
+      "reversible": true
+    }
+  },
+  "events": [
+    {
+      "stage": "intent",
+      "kind": "compiler-observation",
+      "decisionId": "intent:0",
+      "compiler": "deriveCorrectedSpatialCriteria",
+      "traceVersion": "criteria-observation-v1",
+      "authority": "unchanged frozen compiler return value",
+      "matchObservation": "Full lexical inspection of retained normalized input; this is not a low-level execution log of short-circuit regex calls.",
+      "scopeObservation": "Nearby noun associations are explicitly labeled hypotheses, not parsed intent or acceptance inputs."
+    },
+    {
+      "stage": "intent",
+      "kind": "normalized-source",
+      "decisionId": "intent:1",
+      "source": "text",
+      "normalizedText": "an enormous empty vaulted hall with a broad entrance and a continuous level floor, widely spaced perimeter columns and clear central space.",
+      "rawCodeUnits": 139,
+      "normalizedCodeUnits": 139,
+      "retainedCodeUnits": 139,
+      "compilerOmittedCodeUnits": 0,
+      "normalization": [
+        "NFKC",
+        "lowercase",
+        "collapse whitespace",
+        "first 2400 UTF-16 code units"
+      ],
+      "spanBasis": "All spans refer to normalizedText. No raw-input offsets are inferred after normalization."
+    },
+    {
+      "stage": "intent",
+      "kind": "normalized-source",
+      "decisionId": "intent:2",
+      "source": "semantic-concept",
+      "normalizedText": "an enormous empty vaulted hall with a broad entrance and a continuous level floor, widely spaced perimeter columns and clear central space.",
+      "rawCodeUnits": 139,
+      "normalizedCodeUnits": 139,
+      "retainedCodeUnits": 139,
+      "compilerOmittedCodeUnits": 0,
+      "normalization": [
+        "NFKC",
+        "lowercase",
+        "collapse whitespace",
+        "first 2400 UTF-16 code units"
+      ],
+      "spanBasis": "All spans refer to normalizedText. No raw-input offsets are inferred after normalization."
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:3",
+      "span": {
+        "source": "text",
+        "start": 26,
+        "end": 30,
+        "text": "hall",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:topology:broad-covered-interior:26:30",
+      "family": "topology:broad-covered-interior",
+      "pattern": "\\b(halls?|rooms?|interiors?|atriums?|atria|hangars?|warehouses?|cathedrals?)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:4",
+      "cueId": "text:topology:broad-covered-interior:26:30",
+      "family": "topology:broad-covered-interior",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 26,
+        "text": "an enormous empty vaulted ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "topology-decision",
+      "decisionId": "intent:5",
+      "cueId": "text:topology:broad-covered-interior:26:30",
+      "span": {
+        "source": "text",
+        "start": 26,
+        "end": 30,
+        "text": "hall",
+        "offsets": "normalized-utf16"
+      },
+      "topology": "broad-covered-interior",
+      "decision": "included-topology-evidence",
+      "source": "text",
+      "appliesTo": "conjunctive route requirements",
+      "excludedTopologies": []
+    },
+    {
+      "stage": "intent",
+      "kind": "semantic-fallback",
+      "decisionId": "intent:6",
+      "source": "semantic-concept",
+      "state": "not-evaluated",
+      "reason": "original text already supplies topology evidence",
+      "textExcludedTopologies": [],
+      "conceptAvailable": true
+    },
+    {
+      "stage": "intent",
+      "kind": "semantic-fallback",
+      "decisionId": "intent:7",
+      "source": "semantic-openness",
+      "field": "axes.openness",
+      "state": "not-evaluated",
+      "reason": "positive topology evidence already exists",
+      "observedEnclosedValue": false,
+      "accepted": false,
+      "consequence": "none"
+    },
+    {
+      "stage": "intent",
+      "kind": "topology-compilation",
+      "decisionId": "intent:8",
+      "evidence": [
+        {
+          "kind": "broad-covered-interior",
+          "source": "text",
+          "cue": "hall"
+        }
+      ],
+      "required": [
+        "broad-covered-interior"
+      ],
+      "excludedTopologies": [],
+      "observedEvidenceMatchesFrozenCompiler": true,
+      "alternatives": "The frozen compiler retains conjunctive requirements; it does not choose between alternatives."
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:9",
+      "span": {
+        "source": "text",
+        "start": 38,
+        "end": 43,
+        "text": "broad",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:minimum-width:38:43",
+      "family": "minimum-width",
+      "pattern": "\\b(broad|wide|spacious|vast|large)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:10",
+      "cueId": "text:minimum-width:38:43",
+      "family": "minimum-width",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 38,
+        "text": "an enormous empty vaulted hall with a ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "original-requirements",
+      "decisionId": "intent:11",
+      "requirements": {
+        "openSky": false,
+        "covered": true,
+        "opposingWalls": false,
+        "minimumWidth": 2.4
+      },
+      "openSky": {
+        "inherentCourtyard": false,
+        "positiveCueIds": []
+      },
+      "covered": {
+        "inherentBroadInterior": true,
+        "positiveCueIds": [],
+        "inherentCoverEvidence": [],
+        "inherentCoverSuppressedByOpenSky": false
+      },
+      "opposingWalls": {
+        "positiveCueIds": [],
+        "result": false
+      },
+      "minimumWidth": {
+        "positiveCueIds": [
+          "text:minimum-width:38:43"
+        ],
+        "defaultMetres": 0.6,
+        "positiveModifierMetres": 2.4,
+        "resultMetres": 2.4,
+        "appliedScope": "one global minimumWidth field, regardless of the modifier’s nearby noun; downstream witnesses decide where to consume that field"
+      }
+    },
+    {
+      "stage": "intent",
+      "kind": "roof-correction",
+      "decisionId": "intent:12",
+      "before": {
+        "openSky": false,
+        "covered": true,
+        "opposingWalls": false,
+        "minimumWidth": 2.4
+      },
+      "after": {
+        "openSky": false,
+        "covered": true,
+        "opposingWalls": false,
+        "minimumWidth": 2.4
+      },
+      "observedInputs": {
+        "positiveRoof": false,
+        "negativeRoof": false,
+        "explicitOpen": false,
+        "inheritedOpenSky": false,
+        "openSky": false,
+        "explicitCover": false,
+        "inherentCover": false,
+        "lacksRoof": false,
+        "inherentBroadInterior": true
+      },
+      "enclosedContribution": {
+        "positiveCueIds": [],
+        "state": "eligible-as-cover-cue"
+      },
+      "positiveRoofCueIds": [],
+      "negativeRoofCueIds": [],
+      "rule": "Negated/absent roof cues can request open sky. With open sky, enclosed alone is lateral; separate positive roof cues still require cover. Explicit rooflessness conflicts with frozen broad-covered-interior topology.",
+      "observedRequirementsMatchFrozenCompiler": true,
+      "supportedBefore": true,
+      "supportedAfter": true
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:13",
+      "span": {
+        "source": "text",
+        "start": 38,
+        "end": 43,
+        "text": "broad",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:scope-modifier:38:43",
+      "family": "scope-modifier",
+      "pattern": "\\b(?:broad|wide|spacious|vast|large|narrow|compact|small|tall|high|low|open|enclosed)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:14",
+      "cueId": "text:scope-modifier:38:43",
+      "family": "scope-modifier",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 38,
+        "text": "an enormous empty vaulted hall with a ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "modifier-scope-observation",
+      "decisionId": "intent:15",
+      "modifier": {
+        "source": "text",
+        "start": 38,
+        "end": 43,
+        "text": "broad",
+        "offsets": "normalized-utf16"
+      },
+      "originalNegationMatched": false,
+      "likelyReferent": {
+        "source": "text",
+        "start": 44,
+        "end": 52,
+        "text": "entrance",
+        "offsets": "normalized-utf16"
+      },
+      "confidence": "lexical-proximity-hypothesis-only",
+      "inspectionRule": "first recognized following noun within 48 normalized code units, stopping at punctuation or a listed conjunction/preposition",
+      "frozenAppliedScope": "global-minimum-width-field",
+      "requirementMetres": 2.4,
+      "limitation": "This is not a syntactic attachment or an assertion of intended meaning; narrowness and height adjectives have no dedicated dimension fields."
+    },
+    {
+      "stage": "intent",
+      "kind": "scope-warning",
+      "decisionId": "intent:16",
+      "code": "possible-local-width-promoted-to-global",
+      "modifier": {
+        "source": "text",
+        "start": 38,
+        "end": 43,
+        "text": "broad",
+        "offsets": "normalized-utf16"
+      },
+      "likelyReferent": {
+        "source": "text",
+        "start": 44,
+        "end": 52,
+        "text": "entrance",
+        "offsets": "normalized-utf16"
+      },
+      "observation": "A width modifier next to a local opening noun sets the same global minimumWidth field as a whole-space modifier.",
+      "severity": "hypothesis-needing-intent-review",
+      "changesAcceptance": false
+    },
+    {
+      "stage": "intent",
+      "kind": "final-criteria",
+      "decisionId": "intent:17",
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "broad-covered-interior"
+        ],
+        "evidence": [
+          {
+            "kind": "broad-covered-interior",
+            "source": "text",
+            "cue": "hall"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "changedByTracing": false,
+      "sourceOfAcceptance": "deriveCorrectedSpatialCriteria"
+    },
+    {
+      "stage": "intent",
+      "kind": "walkway-alias-decision",
+      "decisionId": "walkway:0",
+      "methodVersion": "covered-walled-walkway-alias-v1",
+      "applied": false,
+      "reasons": [
+        "existing-supported-criteria-preserved"
+      ],
+      "attachment": null,
+      "uncertainty": [],
+      "baselineSupported": true,
+      "baselineRequired": [
+        "broad-covered-interior"
+      ],
+      "rule": "One directly covered/roofed walkway that is directly walled or immediately between qualified walls; existing unsupported empty topology only.",
+      "source": "normalized-original-text-only",
+      "semanticFallbackAdded": false,
+      "limitations": [
+        "Finite lexical attachment grammar, not syntactic or semantic certainty.",
+        "Any listed uncertainty or negation marker declines this alias, including unrelated negation.",
+        "No source geometry or route evidence is inspected. Acceptance still requires the existing enclosed-passage and physical witnesses."
+      ]
+    },
+    {
+      "stage": "intent",
+      "kind": "walkway-final-criteria",
+      "decisionId": "walkway:1",
+      "methodVersion": "covered-walled-walkway-alias-v1",
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "broad-covered-interior"
+        ],
+        "evidence": [
+          {
+            "kind": "broad-covered-interior",
+            "source": "text",
+            "cue": "hall"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "changedByAlias": false,
+      "sourceOfAcceptance": "unchanged-baseline-criteria",
+      "requirementsPreserved": true,
+      "physicalPreserved": true
+    },
+    {
+      "stage": "intent",
+      "kind": "doorway-scope-decision",
+      "decisionId": "doorway-scope:0",
+      "methodVersion": "local-doorway-width-scope-v1",
+      "applied": false,
+      "reasons": [
+        "requires-supported-conjunction-including-doorway",
+        "not-every-positive-width-cue-has-direct-doorway-attachment"
+      ],
+      "modifiers": [
+        {
+          "modifier": {
+            "source": "text",
+            "start": 38,
+            "end": 43,
+            "text": "broad",
+            "offsets": "normalized-utf16"
+          },
+          "originalNegationMatched": false,
+          "noun": null,
+          "boundToTextTopology": false,
+          "attachment": null
+        }
+      ],
+      "uncertainty": [],
+      "baselineRequired": [
+        "broad-covered-interior"
+      ],
+      "baselineMinimumWidth": 2.4,
+      "rule": "Supported conjunctive topologies with doorway-crossing; every positive width modifier directly attaches to a text-evidenced doorway, arch, archway or door opening.",
+      "globalMinimumWidth": 2.4,
+      "widthByTopology": null,
+      "limitations": [
+        "Finite lexical attachment grammar; no general syntactic certainty is claimed.",
+        "Bare opening, entrance, landing, independent whole-space width, negation and unresolved scope preserve the baseline.",
+        "The route consumer must enforce the topology-specific aperture width; all other geometric and physical obligations remain required."
+      ]
+    },
+    {
+      "stage": "intent",
+      "kind": "doorway-final-criteria",
+      "decisionId": "doorway-scope:1",
+      "methodVersion": "local-doorway-width-scope-v1",
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "broad-covered-interior"
+        ],
+        "evidence": [
+          {
+            "kind": "broad-covered-interior",
+            "source": "text",
+            "cue": "hall"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "changedByScope": false,
+      "sourceOfAcceptance": "unchanged-walkway-baseline",
+      "physicalPreserved": true,
+      "topologyRequirementsPreserved": true,
+      "localWidthRequirementPreserved": true
+    }
+  ]
+}

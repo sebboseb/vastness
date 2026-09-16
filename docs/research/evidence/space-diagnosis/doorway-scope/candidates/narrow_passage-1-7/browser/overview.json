@@ -1,0 +1,26 @@
+{
+  "assessment": "passed",
+  "audit": [],
+  "blocked": "",
+  "caseId": "narrow_passage-1-7",
+  "errors": 0,
+  "generatedTravel": 0,
+  "glbSha256": "75e8c7130f57c8786a79c28cc81daa1007039c13ca4ae61bfd97bd4a027c0774",
+  "identity": "cef5e46c06a99d1cf4573b9d4019cd37e7a69aa02e6e18c4a21027328a436cc6",
+  "mode": "inspection",
+  "pathRemaining": 0,
+  "pendingVisits": 0,
+  "pitch": -14.440669090923237,
+  "position": [
+    6.581806945160084,
+    4.961021285320257,
+    9.580378351807594
+  ],
+  "ready": true,
+  "representation": "coarse",
+  "support": null,
+  "visits": [],
+  "walking": "",
+  "worldId": "intent-1c865fea-e0f7-4711-9292-48aa4492f947",
+  "yaw": 34.5085229876684
+}
