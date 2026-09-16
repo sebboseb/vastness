@@ -1,0 +1,102 @@
+{
+  "id": "intent-1c865fea-e0f7-4711-9292-48aa4492f947",
+  "createdAt": "2026-09-16T09:04:33.658Z",
+  "rawIntent": {
+    "text": "A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.",
+    "axes": {
+      "scale": "human",
+      "density": "balanced",
+      "mood": "unspecified",
+      "openness": "open"
+    },
+    "representation": "abstract-solid"
+  },
+  "derivation": {
+    "compiler": "lexical-semantic-v1",
+    "cues": {
+      "vast": [],
+      "intimate": [],
+      "sparse": [],
+      "dense": [],
+      "open": [
+        "open"
+      ],
+      "enclosed": [],
+      "quiet": [],
+      "ominous": [],
+      "luminous": [],
+      "joyful": []
+    },
+    "limitations": [
+      "Rule-based axis extraction; no general language reasoning",
+      "Negation handling is local, not a complete semantic parser",
+      "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+      "Concept is bounded to 600 characters; original input is retained separately"
+    ]
+  },
+  "status": "ready",
+  "jobId": "intent-1c865fea-e0f7-4711-9292-48aa4492f947",
+  "request": {
+    "id": "intent-1c865fea-e0f7-4711-9292-48aa4492f947",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.\",\"axes\":{\"scale\":\"human\",\"density\":\"balanced\",\"mood\":\"unspecified\",\"openness\":\"open\"},\"representation\":\"abstract-solid\"}",
+    "seed": 7
+  },
+  "events": [
+    {
+      "type": "intent-recorded",
+      "at": "2026-09-16T09:04:33.658Z"
+    },
+    {
+      "type": "constraints-derived",
+      "at": "2026-09-16T09:04:33.658Z"
+    },
+    {
+      "type": "gpu-job-submitted",
+      "at": "2026-09-16T09:04:33.841Z"
+    },
+    {
+      "type": "artifacts-processing",
+      "at": "2026-09-16T09:05:47.248Z"
+    },
+    {
+      "type": "destination-validated",
+      "at": "2026-09-16T09:05:56.443Z"
+    }
+  ],
+  "workerJob": {
+    "id": "intent-1c865fea-e0f7-4711-9292-48aa4492f947",
+    "status": "succeeded",
+    "progress": 1,
+    "logs": [
+      "Queued command-v1",
+      "Running command-v1",
+      "{\"status\": \"succeeded\", \"report\": \"/home/vastness/.local/share/vastness-intention-worker/shared/data/artifacts/.intent-1c865fea-e0f7-4711-9292-48aa4492f947.tmp/generation-report.json\", \"error\": null}\n",
+      "Visual and collision artifacts are ready"
+    ],
+    "backend": "command-v1",
+    "error": null
+  },
+  "artifacts": [
+    {
+      "url": "/api/intent/artifacts/045470697efb988eb6d24c57dceebb6d57a1012528733f3a11b79dd23cdd2d96/scene.ply",
+      "sha256": "045470697efb988eb6d24c57dceebb6d57a1012528733f3a11b79dd23cdd2d96",
+      "bytes": 45746464,
+      "format": "ply",
+      "backend": "command-v1"
+    },
+    {
+      "url": "/api/intent/artifacts/75e8c7130f57c8786a79c28cc81daa1007039c13ca4ae61bfd97bd4a027c0774/collider.glb",
+      "sha256": "75e8c7130f57c8786a79c28cc81daa1007039c13ca4ae61bfd97bd4a027c0774",
+      "bytes": 24188820,
+      "format": "glb",
+      "backend": "command-v1"
+    }
+  ],
+  "sceneUrl": "/api/intent/worlds/intent-1c865fea-e0f7-4711-9292-48aa4492f947/scene"
+}

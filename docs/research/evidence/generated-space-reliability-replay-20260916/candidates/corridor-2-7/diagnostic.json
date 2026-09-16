@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "corridor-2-7",
+  "sourceSha256": "3deff24d4be94dee2bc86c7bc6d3091f3ebc6ec2bf0c1d51aad186022ed87f00",
+  "primaryScale": 6,
+  "rawTopology": {
+    "triangles": 702590,
+    "vertices": 351382,
+    "upwardFaces": 350008,
+    "slopeQualifiedFaces": 140099,
+    "degenerateFaces": 0,
+    "limitation": "Triangle winding/normal counts describe potential surface support, not valid player footprints, connectivity or mesh manifoldness."
+  },
+  "scaleSensitive": true,
+  "secondaryRescue": true,
+  "attempts": [
+    {
+      "scale": 6,
+      "cause": "sustained-enclosure-or-bounded-route",
+      "certainty": "bounded-search-evidence",
+      "topologyFailure": false,
+      "rawSupportExists": true,
+      "supportedFreeSpaceExists": true,
+      "evidence": {
+        "sampledFloorHits": 879,
+        "supportedPoints": 311,
+        "enclosurePoints": 25,
+        "entryCandidates": 125,
+        "rejected": {
+          "unsupported-footprint": 386,
+          "body-or-head-obstruction": 182
+        },
+        "maximumConnectedDisplacement": 5.015974481593781,
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0
+      },
+      "proxyFalseClosure": {
+        "testedSamples": 0,
+        "blockedOriginalClearSamples": 0
+      }
+    },
+    {
+      "scale": 10,
+      "cause": "exterior-seam-rejected",
+      "certainty": "bounded-search-evidence",
+      "topologyFailure": true,
+      "rawSupportExists": true,
+      "supportedFreeSpaceExists": true,
+      "evidence": {
+        "sampledFloorHits": 2420,
+        "supportedPoints": 1581,
+        "enclosurePoints": 629,
+        "entryCandidates": 321,
+        "rejected": {
+          "unsupported-footprint": 746,
+          "body-or-head-obstruction": 93,
+          "authored-to-generated-seam": 12
+        },
+        "maximumConnectedDisplacement": 10.031948963187562,
+        "routeLength": 0,
+        "routeDisplacement": 0,
+        "continuousEnclosedDistance": 0
+      },
+      "proxyFalseClosure": {
+        "testedSamples": 0,
+        "blockedOriginalClearSamples": 0
+      }
+    },
+    {
+      "scale": 12,
+      "cause": "passed",
+      "certainty": "verified-bounded-route",
+      "topologyFailure": false,
+      "rawSupportExists": true,
+      "supportedFreeSpaceExists": true,
+      "evidence": {
+        "sampledFloorHits": 3536,
+        "supportedPoints": 2396,
+        "enclosurePoints": 959,
+        "entryCandidates": 389,
+        "rejected": {
+          "unsupported-footprint": 967,
+          "body-or-head-obstruction": 173,
+          "authored-to-generated-seam": 5
+        },
+        "maximumConnectedDisplacement": 12.265398485169571,
+        "routeLength": 3.0000000000000004,
+        "routeDisplacement": 3.0000000000000004,
+        "continuousEnclosedDistance": 2.9999999999999996
+      },
+      "proxyFalseClosure": {
+        "testedSamples": 69,
+        "blockedOriginalClearSamples": 58
+      }
+    }
+  ],
+  "auxiliaryErrors": [],
+  "visualFidelity": "not-assessed",
+  "browserAcceptance": "not-assessed",
+  "limitations": [
+    "Offline geometry is not browser acceptance.",
+    "A zero sampled-floor count is not a proof that no floor triangle exists between proposal points.",
+    "Support uses original upward-facing triangles and nine footprint probes; rejected footprints are not literally absent floors.",
+    "No-exterior-entry and no-route findings describe the unchanged bounded search, not mathematical impossibility.",
+    "Enclosure criterion is identical for every category, including bridges and courtyards."
+  ]
+}

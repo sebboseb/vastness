@@ -1,0 +1,5 @@
+{
+  "id": "intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983",
+  "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles.\",\"axes\":{\"scale\":\"vast\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+  "seed": 7
+}

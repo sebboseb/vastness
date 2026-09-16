@@ -1,0 +1,54 @@
+{
+  "candidate": "cave-2-7",
+  "id": "cave-2-7",
+  "category": "cave",
+  "promptVariant": 2,
+  "seed": 7,
+  "text": "A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.",
+  "rawIntent": {
+    "text": "A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.",
+    "source": "text",
+    "seed": 7
+  },
+  "declaredAt": "2026-09-16T09:35:26.358877+00:00",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.",
+    "axes": {
+      "scale": "human",
+      "density": "balanced",
+      "mood": "unspecified",
+      "openness": "enclosed"
+    },
+    "representation": "abstract-solid"
+  },
+  "submissionAttemptedAt": "2026-09-16T09:35:26.374523+00:00",
+  "worldId": "intent-164b48a7-ccb4-41a6-abe2-c118491bdb3e",
+  "jobId": "intent-164b48a7-ccb4-41a6-abe2-c118491bdb3e",
+  "request": {
+    "id": "intent-164b48a7-ccb4-41a6-abe2-c118491bdb3e",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.\",\"axes\":{\"scale\":\"human\",\"density\":\"balanced\",\"mood\":\"unspecified\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 7
+  },
+  "collected": true,
+  "gpuStatus": "succeeded",
+  "macStatus": "ready",
+  "finishedAt": "2026-09-16T09:37:00.149973+00:00",
+  "generationSeconds": 82.07551497699751,
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 1788.0,
+        "sampledPeakMiB": 19396.0,
+        "samples": 748
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  },
+  "failureStage": null,
+  "geometryAssessment": "pending separate generated-support assessment"
+}

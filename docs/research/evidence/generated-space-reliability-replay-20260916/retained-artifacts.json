@@ -1,0 +1,1190 @@
+[
+  {
+    "candidate": "large_open_interior-1-7",
+    "jobId": "intent-c55fe14c-883c-4acb-9e7f-dcbeaa1ad5ca",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/large_open_interior-1-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 43180960,
+        "sha256": "2cc4926182e909828c408dfd29af340a02248e67b3a5c78846e8fe24514c6710"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 15282260,
+        "sha256": "b6315fe62b32374bbf3db71538e16b19b8d342eaa975417e0eb1594222048457"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 309117,
+        "sha256": "db5969fd81878c750ec29c6aaa2ee9cc9ed39d046a31d9b6968dbc7a0e7cac69"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 356580,
+        "sha256": "6e08edff1a6f97842dc497b8bb1abd9e8bc16b2691386a513df1277a85d8dfaa"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 313,
+        "sha256": "351f52634f615b442cdbead92a852b4475f93cb687e86c144ba70a85e827ab61"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "tunnel-1-7",
+    "jobId": "intent-80ee3fa8-9011-455a-bf8d-a37c3e130d5b",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/tunnel-1-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 41607712,
+        "sha256": "bce58a1f9c1fcaf64c9fbd4f3671abda09732190483ef16b5159863fb52ede38"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 13634316,
+        "sha256": "03ea4b0ea0d52c31609a350bac8362969bde7ee7141a8542bacd3038af67cffe"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 309905,
+        "sha256": "206c6751fa060a70a289ffb8ac62b23ad0ddfe1c111d2c8f6029c12ac6a17fc9"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 355211,
+        "sha256": "044bde84a7fed9b1a7369a0c214cfad7ddb6d11324f324bf4721d919fc3a2a8e"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 289,
+        "sha256": "a16fc8bb88eff4a641d5bfb95e6379e064a78a54c6072e96a86847ceaa33b41d"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "doorway-1-7",
+    "jobId": "intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/doorway-1-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 36576800,
+        "sha256": "21d0edd07b098b72a2cfb9a249886ce06a052d1eed564d84625a278a3a509097"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 14308356,
+        "sha256": "3b2e6b1800b0f9565cf699eea62f1af945e8ce64f453f6360ad2e96770d92810"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 298323,
+        "sha256": "1111ab5d2bbb20649f17d17ba27640c531a4c580efe8fb536f04755e723879ff"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 348336,
+        "sha256": "a74965f54a85350c7667b3d88642b43d7793e3459eac0bbc22120ccda8155431"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 296,
+        "sha256": "a3506ca0733aab21fbe50054068ba552143721a825b3b132b3ec5cb2e0d9c3c9"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "narrow_passage-1-7",
+    "jobId": "intent-1c865fea-e0f7-4711-9292-48aa4492f947",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/narrow_passage-1-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 45746464,
+        "sha256": "045470697efb988eb6d24c57dceebb6d57a1012528733f3a11b79dd23cdd2d96"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 24188820,
+        "sha256": "75e8c7130f57c8786a79c28cc81daa1007039c13ca4ae61bfd97bd4a027c0774"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 335477,
+        "sha256": "45b91e2d75e1597018ac31947a6071bd140592374336e4a0b54093bbc6de60fe"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 388275,
+        "sha256": "3cfa739a8a0ffe48a24cf923af22468707c624081cafc2afa9d95a79fba52874"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 299,
+        "sha256": "4c46a9f6a26e305a8443a796d1e6e8aac362507df8b4e1f227f36f9eb8d9d892"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "chamber-1-7",
+    "jobId": "intent-c5cda12d-76af-4b8b-b88c-eccc7719dd26",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/chamber-1-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 73159713,
+        "sha256": "60e7fddec7f1a82997083d25d54f1cd726cca80c9a3f69731938f375921b102a"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 30127576,
+        "sha256": "d526aec6874c3a1259fe4af64beb770ab96888df3909b58f4e0bd7f79e2ad464"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 320071,
+        "sha256": "b421e81404caa146590111fd99c9b39a505803c525601bedc527794850a066e7"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 367820,
+        "sha256": "49f19206ac169f636a9f449364393fca7958417d492a322b88bf4469712ec7d3"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 298,
+        "sha256": "668d5deecb676a1bf39d3f07fe81f6769d3818af42b70aa864528c30064edd1d"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "cave-1-7",
+    "jobId": "intent-a6868007-efd5-433a-9061-f36ccde7d864",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/cave-1-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 54528800,
+        "sha256": "a197855654c44654e4b0f7e512427b5be7c1562fb63613ba3af732f7b33aa2cb"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 22919080,
+        "sha256": "a56bb24593ddd9164444ec54f03365f5e8712636a983ae6e50a82fa1f4b172bf"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 399010,
+        "sha256": "e561df295c6f596ff32ce5547f0c1b7ac9ee7e5b61a3e869ba2d8110717da8a3"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 459733,
+        "sha256": "5e1155346bbd630800726dc3facf8c44836c2e330224dc898f3ef1b5120c83c3"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 302,
+        "sha256": "9986a23156c380f5876cf2ac756849d87d867cb9ef8f0d57ce3c29455bc138fe"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "corridor-1-7",
+    "jobId": "intent-55e2d591-69a3-4910-91b9-c5df74cf01dc",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/corridor-1-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 26913184,
+        "sha256": "4cc81b10ed3f944320ab937dcee8b40afcb5cdbf8348492ca834704050147853"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 13326084,
+        "sha256": "5383ef9cabe2f2d88fba3b08d8c4b97f2bb7f519e882a7253b8773899b5339d7"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 304504,
+        "sha256": "683a60fa968386416c8c6bd0b71e971f970774bfe63d86d54b27279a53734556"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 350190,
+        "sha256": "5235a8d9794cad15dcb234a4f6a12708a1dcfa3211e567477540af4b35dbfcbe"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 287,
+        "sha256": "aa4da30888cd9395ed8026564781c3a6c8bb3ec91b723ee448274d514d423d73"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "courtyard-1-7",
+    "jobId": "intent-04c10b05-bc48-4dd0-b38a-9781ef431ad3",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/courtyard-1-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 60741280,
+        "sha256": "427bb18f3721110559708f49cddef51352a0f7b206648ac9e5e58d8225f29497"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 27807040,
+        "sha256": "7616b93737b806eddb845bcee9d60cc1c29989cd2d7bd7ec9ebeefcd3134b305"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 375328,
+        "sha256": "cf26240c88a67cc381cfb70333709c8cf6422ad05a19492631c5d4ac24bda849"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 439958,
+        "sha256": "d317e340cc71b3a75d5d3a0d89c6441695a4de4a549e2068b69e5976cd1d1da3"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 287,
+        "sha256": "41c4f46e2c7f84dda566b602379fd9b56b162a053637d0ff9d01eaf4c1a01e74"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "bridge-1-7",
+    "jobId": "intent-cc01fd39-0b1d-49b3-8c83-851c3cb8678a",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/bridge-1-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 50411808,
+        "sha256": "6ee683d0c94a8ce6057b8f28085a4764cf70753785fbf87281307129beb38b3c"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 15468952,
+        "sha256": "5a4c29d4289eeb9c9bdbaa2b1015a14da2964f30bbafe9336eac7b0f7db60b71"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 352459,
+        "sha256": "7212f99502b1a5b66027f01868475149caee3c1a9f4df74b793c8e1355ee2da2"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 409316,
+        "sha256": "2d5d90aab9516ae506d43be549ea836baafc83e8c65a14f0baea3b6bcb9798c9"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 298,
+        "sha256": "cc0a1ce1c548ba2a343c54d4667ca13c54f9717cb3b09968316e5dceb06c4deb"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "large_open_interior-1-42",
+    "jobId": "intent-b1764ccd-cc0d-42fd-baca-9a23011d0305",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/large_open_interior-1-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 34439968,
+        "sha256": "540308532636d6bf703034019c4a623f40765604e3f2be4203d875ba2c01b90b"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 13399956,
+        "sha256": "2e43864cb5022f8d122ffa76f060afe903e6051feea8b04f43530bce40909c5d"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 334914,
+        "sha256": "3941a55d3033e071e98ec87a969c7f2b894be1c0a3c972132e82d842875f7bcb"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 392165,
+        "sha256": "2ebf3f194a9585238918fd170e080a8b893b244f67f1398cca3431ec6f5206c2"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 313,
+        "sha256": "351f52634f615b442cdbead92a852b4475f93cb687e86c144ba70a85e827ab61"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "bridge-1-42",
+    "jobId": "intent-ac3e6278-91f7-4ea0-826f-712434efa055",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/bridge-1-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 28401568,
+        "sha256": "8cc4dde63061e46bbddf6188c05d38c7bd30a32ec6356f89d8157ee4e48ec58b"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 10124028,
+        "sha256": "261279b0fcb27df5ec822c9db09bb85e296c12aba270e7f26dacce3aa5e0d026"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 405090,
+        "sha256": "bcdf1558cd078e2fbd78cbbc5841be7aeb82052ad905dd6d90fc3b3b29b6c779"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 474982,
+        "sha256": "5dd09eec921c753e4cab363235f568b2f81851c83f290a33e6e2245da7fcc5a3"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 298,
+        "sha256": "cc0a1ce1c548ba2a343c54d4667ca13c54f9717cb3b09968316e5dceb06c4deb"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "doorway-1-42",
+    "jobId": "intent-097b6f72-50f1-456f-9360-78b93105a73b",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/doorway-1-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 88039201,
+        "sha256": "2a969a59398a3bb59cb2bf5e0b79f96e1f0ba72a7a88db68ce79e11d69d2ddf0"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 39929224,
+        "sha256": "7dc260e05158dda0e43ecd63d5f6e7db5bb57e6bab7265be5aed0f7513eb3206"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 368657,
+        "sha256": "542fd5893f58a06e2f121c18724855c0e730e7886207287fcbca2ffdcb3b0f0d"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 425784,
+        "sha256": "61193895823e50fd1033bf74631c29f9f0dc3ebca13d6cfb5a1dcb5032072ed5"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 296,
+        "sha256": "a3506ca0733aab21fbe50054068ba552143721a825b3b132b3ec5cb2e0d9c3c9"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "narrow_passage-1-42",
+    "jobId": "intent-067ca302-ef70-480d-a667-68fe0cbd8d35",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/narrow_passage-1-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 110040737,
+        "sha256": "0e866e90c819780ba48d8c44f58782d1e3aa5fa0284f8027bb838b10bebd3218"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 38328904,
+        "sha256": "afcbf5920dd1230ee9c845fd59726ecd00de692d6a35cb787046beb8212b98ea"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 397361,
+        "sha256": "e23c33121688e82c1f85989f90ccb12b958afff44368d723b815ad9678d9887c"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 459724,
+        "sha256": "4b026a8d313fdf007445bf32758318699bf71bbd7f55394deeb9b371117459c3"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 299,
+        "sha256": "4c46a9f6a26e305a8443a796d1e6e8aac362507df8b4e1f227f36f9eb8d9d892"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "cave-1-42",
+    "jobId": "intent-9dfb5a7c-0711-4aad-a454-4834fde830a3",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/cave-1-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 45065376,
+        "sha256": "ebbab16a0c00b79b805e876350fa44aa256c99ec6ba0d62f9596fa1f663082f7"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 19092988,
+        "sha256": "2e23286835d759ed91268f1b782689060c5e7501cf0008357a4d3e01a1eac9ad"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 423918,
+        "sha256": "2f39e745293fdda305c714d1c254b86c3baa5b4e5660c4523daf707e3fd28350"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 488881,
+        "sha256": "0509ad8970a5bece6048a29f1a2ab56d1542b9ea8538d40a1f12f2ed2d478b5f"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 302,
+        "sha256": "9986a23156c380f5876cf2ac756849d87d867cb9ef8f0d57ce3c29455bc138fe"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "courtyard-1-42",
+    "jobId": "intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/courtyard-1-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 50533664,
+        "sha256": "b0a36c318b77891a173806d2647e0f00ca61ee92761c13bb23c5afe9a775f32c"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 25889040,
+        "sha256": "9e1df2a956a459ac91917dc0ccd92804235bf901dd094fdf201fb3fcf7dfe269"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 391344,
+        "sha256": "b05223ac0270f252fb1cb5e9855cb0ff7acc037ee4aa9fd594f41774002f9222"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 455179,
+        "sha256": "6bc008f1fa7fd1906dfff28209168291de22d9cc7a59d01e9d7626d6e9788786"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 287,
+        "sha256": "41c4f46e2c7f84dda566b602379fd9b56b162a053637d0ff9d01eaf4c1a01e74"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "corridor-1-42",
+    "jobId": "intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/corridor-1-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 48124832,
+        "sha256": "4e3ad1ac15449ab0ad9123be5badc6d78071020f9666a0df783ccac6b2b7ed25"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 25938024,
+        "sha256": "589e5e427db97ef45a76411ea1629c08f55b39b82efe3688359e8d5c795c7eae"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 364179,
+        "sha256": "d878a95d517fd4146d621a9139084b005d451d380ac4e6a351c21df58282500f"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 420995,
+        "sha256": "7b51dfc8978cdac4cca697ac91c2fb9cb180c4d777eaabba66bf4346ae9b6b74"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 287,
+        "sha256": "aa4da30888cd9395ed8026564781c3a6c8bb3ec91b723ee448274d514d423d73"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "tunnel-1-42",
+    "jobId": "intent-75f21af9-274b-4869-9577-28999d937b28",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/tunnel-1-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 68085281,
+        "sha256": "974382575fc778cf31bdc5a5c491e492e8d3f1ca6535bf6a04f559a326edc8e4"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 21862156,
+        "sha256": "ca0f3ceb9e7248fd493d597a5f715df12cc911c647b7e631c1586f32a9dc001e"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 369998,
+        "sha256": "7a97f02f960b78432714dcb825ec75dc91e6e8a48b6a6ece1bbc1bb8c5e1ab82"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 424673,
+        "sha256": "d97e1cefd0cd5ae1a66116aaa603ff75272dcfae0300af0e8b7f05e8d3b1eab2"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 289,
+        "sha256": "a16fc8bb88eff4a641d5bfb95e6379e064a78a54c6072e96a86847ceaa33b41d"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "chamber-1-42",
+    "jobId": "intent-de172b53-3529-42f6-b4d4-b6df0779e568",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/chamber-1-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 104481057,
+        "sha256": "048515fd4c3598259628041f8e56aeba9d3973236d4105f0b99b191363f6f6bb"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 41060224,
+        "sha256": "2b6e56636c72bdccdd387c4a30a7e98526d15efeab66d47c396287f81d7a8a76"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 363387,
+        "sha256": "b8aa048afb3039ca3f33f6ce665885b7eee2e97c48819da6fbbf3abd51a50b6e"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 419118,
+        "sha256": "d0f35f79ab1c8e5fd59f335ddfdfb08ec5191bd3e53ff1bb079ba38e0dade3fc"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 298,
+        "sha256": "668d5deecb676a1bf39d3f07fe81f6769d3818af42b70aa864528c30064edd1d"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "courtyard-2-7",
+    "jobId": "intent-7ee56718-e7ad-4578-b2c1-d28ea7c60da7",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/courtyard-2-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 41899296,
+        "sha256": "895271074767ad6e79da1db6304c63174b2ac6a68ce240eece103c6b4cf92bdd"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 13327308,
+        "sha256": "6bccae253afbe6bdb595f3501e195ac7798c8e7e6784e76340a0688b262186df"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 327309,
+        "sha256": "951f0bbe39c54d753af29b8924610485827f5c54069777df11425e2818403a66"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 381568,
+        "sha256": "bf00ac1c74d66233019739722496509128491caf0e8522fc4995caea89c71db7"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 294,
+        "sha256": "f6fee7e8342ff293e57e8690ae5d708182709ff81c21d5a9e0a05ecacd74ee66"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "bridge-2-7",
+    "jobId": "intent-b594160c-b12e-44af-9695-d5fa3c60684e",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/bridge-2-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 33650080,
+        "sha256": "c21048e420b4b4a6a08cbd7eda0dc2c12e3e77b1b6d81cf79b4f99a65ee361ca"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 10783768,
+        "sha256": "68e8a625f16c7bdda99cdd299323526ff70d8131a49d55bc25e4d8ccb9c8ed98"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 359196,
+        "sha256": "4fe4adcd82f0fae1a864c945c57b03eb3614ebe4dbc673fcf1721a312f0845f0"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 420775,
+        "sha256": "2a7d8ef271339c193c0f3355aa014b97544a116e41073d1a20b0e99b492feff1"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 297,
+        "sha256": "a23ec6ceb608d91eb281cfc60857590db19ccb0a3e98417756f715d2c4909470"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "tunnel-2-7",
+    "jobId": "intent-a9d26274-03b2-4a00-9bd1-be926b6c87b3",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/tunnel-2-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 57995168,
+        "sha256": "83d6bf9875a7a716211bfe656c380a8b80aaf565044d3ebea2a458d1cb255919"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 17419744,
+        "sha256": "0ff7a321ed9c1d36fdf48c1def049eb5144c42380eed28f161a7aa2a2167467a"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 406668,
+        "sha256": "2947c115ebe64c81d593b3d7dbce4d8b528154eb40a700ec3c676aa423a4710d"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 467308,
+        "sha256": "774a5108e51d425e6b1f2e85a80e724d8da838987d15c3df13b44d48c16c4a1c"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 291,
+        "sha256": "3245891ede1d03a578843632fdcae3061c44f4fcdd3555cf372ff6123a97bb8f"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "corridor-2-7",
+    "jobId": "intent-4ba9ab8f-3fbc-4529-82b7-55843b4b5040",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/corridor-2-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 27265696,
+        "sha256": "8a37239f645790e816b8d1e92874dc4f78068651c8c806cccc044fef79f9f91f"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 12648472,
+        "sha256": "3deff24d4be94dee2bc86c7bc6d3091f3ebc6ec2bf0c1d51aad186022ed87f00"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 368687,
+        "sha256": "47aaee56c73922034a6c0d8b5bce40216f9da46a2f38dabe5822213f5fb08570"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 426854,
+        "sha256": "9489c8d9f383bad0e824a0e32f6490aef62ad87875dc46cf540ffb687d58a078"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 288,
+        "sha256": "b9bd98a6dfdfdb6cbe7b541d6c584252ea3ad06f228dd7879f3e9729b3c50161"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "narrow_passage-2-7",
+    "jobId": "intent-80e66e4f-2132-44a3-8601-5a0a22051ee5",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/narrow_passage-2-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 53521312,
+        "sha256": "9b0e8840097914ee32d84abb6182db9766b2f59810a08feafa5dfaf808f680d0"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 22475752,
+        "sha256": "594aadf3c943e1769cc9893a1841eac9f1ab5f3fd2c69382feea5f86583c4273"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 309273,
+        "sha256": "6880a6a672a13834eff10b8cadcb50f5867e0e1540654d98ecd1dadae269cdec"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 355751,
+        "sha256": "a1d35d481bd6e52665bf7c035db3771a118be6d8d287583f47a4abcac401d124"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 294,
+        "sha256": "09fa4f0eb53f9c5ab8eab4cae5433f70950f88e7c2a42e4899e9122b11d060db"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "chamber-2-7",
+    "jobId": "intent-4f3db60b-8939-481c-b8bb-6f8d19ec3286",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/chamber-2-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 54158880,
+        "sha256": "2821414fc40a318c630a8e4cbfd981da8c485ad738d4390e042273f85a17bf40"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 28767112,
+        "sha256": "7241fe8446a75299314f00c5a5bc70893cc20f4ab7c63444c6f77f67d1921a09"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 219350,
+        "sha256": "e21e7722a5f9eaf62e01740ecfa9bc32b0b5f5dea62dc1c15d73c783fa207898"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 259343,
+        "sha256": "6f6a0f4d8ba188ab5387bc92eaefa4b44fb5e022fd8ac731a401c47da3b31343"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 303,
+        "sha256": "3959a7f933725b069103bb2b4f51e12b34227ae7c1695cc1ce79adf9359bb1ea"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "cave-2-7",
+    "jobId": "intent-164b48a7-ccb4-41a6-abe2-c118491bdb3e",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/cave-2-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 68263713,
+        "sha256": "8caf50f37ee90945e0f12dbf73fa9c2a0af729a979f4077d1db5a7250e183ef0"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 20287024,
+        "sha256": "bc528fa49a4c2d671206c150c39991ddf3047794aaf672c2441dd55163d00685"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 389650,
+        "sha256": "4f5a81c7f1f34ee6dbd093659e17a20a03dd0b004838af6680349d003282b15c"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 448075,
+        "sha256": "872a5be28e71041bd45611c320ede4776fab722994df15481e4aa412fa119436"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 298,
+        "sha256": "81930f0cbff1abe919d8c9f131f5f1329d6b4701e753933f9bb3604e2b72ee4b"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "large_open_interior-2-7",
+    "jobId": "intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/large_open_interior-2-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 98708129,
+        "sha256": "c37b6a69d0b14de441871ae1c76d396ae23ebe7c9268eed36bba2a03860eb195"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 28569828,
+        "sha256": "d7aa255ae47867ea3c6df7a2562315511a79b396d47f4ccda9c11ffbeffadc3d"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 314835,
+        "sha256": "e42883828f0697fd8b006f6382277789b9e0108687ede49c3bf20b92ec7202c1"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 365886,
+        "sha256": "ce1d4306d7bc42f0446b09c5fe69f8ff011beeaf68a856fec42567b4588a4d2d"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 303,
+        "sha256": "fcc64c84edf332368252a8354618a32317fe2c7c279c09d46f706489841d2e2a"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "doorway-2-7",
+    "jobId": "intent-79c22dd8-039b-446e-a28b-b017bf48ee5c",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/doorway-2-7",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 25846944,
+        "sha256": "90631a748b25accf8edd99c00ece01f4761e7ea5a958f11bafc00bab33002577"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 13884036,
+        "sha256": "63c6ce8785a9cdf0462f6df5079fff737ef7aa67bc3796211b6f05d31bf78080"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 388351,
+        "sha256": "0312d0211e8e81acba6e5f100fc1cb12896d0edb7ece7aad72b6bebb69e03a7f"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 450363,
+        "sha256": "f769689301b7f4de7b87764d44e37efc9047d66014e73fc55f5992dc6cc238ac"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 298,
+        "sha256": "a0c51cf6f121ee8bc27a3b8fbf9c8d974d5ede747a828601c91f9a1d8d10001d"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "large_open_interior-2-42",
+    "jobId": "intent-24a42e86-197e-4cd1-a9a5-6627ceea7388",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/large_open_interior-2-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 72171809,
+        "sha256": "7237fe28543cb069443205b1da9475ad12abcb27556725b80d1542d5937f0077"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 32724772,
+        "sha256": "185a62eabee619fae3843600702cb259b0a43af9e6f22137a09598938cebf36f"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 344226,
+        "sha256": "cc1f0e203235c6ff53f8c3a1bcf3b97076bdd035c299723856091a7642d5bbc3"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 401397,
+        "sha256": "a82ace040011ac07c4c3e2bb4e338e5524dee6bf31be54b2be2811a9da3d9193"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 303,
+        "sha256": "fcc64c84edf332368252a8354618a32317fe2c7c279c09d46f706489841d2e2a"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "doorway-2-42",
+    "jobId": "intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/doorway-2-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 40500128,
+        "sha256": "9a51e78abb5ec74ee978fde22887d72806a3fdb7d8c97f41573e8fe98708e12f"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 17341836,
+        "sha256": "8a6bdf101d8d1b01b96832bee7e7d3277374fdba8a398656e7d70a2c1b2e6fda"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 442313,
+        "sha256": "a0926511d0b7b40fff00318c24b794b28bf4e6688a4d261afbfc5d34ae3427f7"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 514371,
+        "sha256": "029cfcb255209b33c47272cbcb2c09b0387aae2dd6c021de43c1a2971408fbcc"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 298,
+        "sha256": "a0c51cf6f121ee8bc27a3b8fbf9c8d974d5ede747a828601c91f9a1d8d10001d"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "corridor-2-42",
+    "jobId": "intent-6405f041-e587-4ea4-9701-e0f8f3ced639",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/corridor-2-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 36198176,
+        "sha256": "4b1801127892abc7bd220b51dac2fc025644fa5a3513f36f83f2f49b4ab6eb44"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 19132312,
+        "sha256": "79b792cfba58bb085aa025625e66ad170eaf5d21cecf1c18f4ed654f523345fe"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 377028,
+        "sha256": "bb9be9fcc84b83b3fd3b51034c7ef492579d2f90670a36cecab21de17b596722"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 438452,
+        "sha256": "7c2cf83614529493a5eea96cd3b7d5f04e8015f58ad9150f9be0fd86381e3ec2"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 288,
+        "sha256": "b9bd98a6dfdfdb6cbe7b541d6c584252ea3ad06f228dd7879f3e9729b3c50161"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "chamber-2-42",
+    "jobId": "intent-79a8d1ec-2343-4492-af86-afdc16a76c4a",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/chamber-2-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 70328737,
+        "sha256": "9e5e3f4952d42c38ce1ba09860c7ce44e80e8cc279dbae6f02717de56c51bfff"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 36972272,
+        "sha256": "22a79d784e63af8b34e5b2565e1bfdfc759f8d3a6ecf3c1bdd198f02763bb0bc"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 228182,
+        "sha256": "5816336bc1d857eec8dc3ebb2f89bbb8dc6b1eb874d0833406ca3c475f4fffbe"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 270628,
+        "sha256": "f4a6f4238c86f522a65e6d327d0b9539cf4baef89cd597aab2b5600600df0793"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 303,
+        "sha256": "3959a7f933725b069103bb2b4f51e12b34227ae7c1695cc1ce79adf9359bb1ea"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "narrow_passage-2-42",
+    "jobId": "intent-c51a5de0-80bb-4922-b019-681f2618e8bb",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/narrow_passage-2-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 51824032,
+        "sha256": "e03c9d0d75afd9b8bd362074169115c5ac76c2f88d25d4f048c99772bf05d9f5"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 26480124,
+        "sha256": "959d16f942eda033df6c66c738c6db0abf5862cee35852436f22c670b237e489"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 405535,
+        "sha256": "5140cf88616a729044c6321d6ee1e6a8679ba084b8df2b3ff3b0ec0dc43503bd"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 470672,
+        "sha256": "53cd49d4319ffc176aa33cca593b48c5b4d0831e00e488cfd0a26e34de0a9565"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 294,
+        "sha256": "09fa4f0eb53f9c5ab8eab4cae5433f70950f88e7c2a42e4899e9122b11d060db"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "courtyard-2-42",
+    "jobId": "intent-aa874065-02b6-40fe-9aa8-7d954776c8b8",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/courtyard-2-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 71671329,
+        "sha256": "13ed7a14b02e7f25375816dbc451d3c884b49c7942f18546da5d6bfba8deff0b"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 30572428,
+        "sha256": "443c614d9e2df544032a989b6cfa769715330eb95081d630d635f84192ace40f"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 356849,
+        "sha256": "34b4a0b037abba15ece83c758c222a65ccce4ffe5f525d246aa4567eff0d3769"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 415896,
+        "sha256": "3ebe86e29013af495b5504abd890ba332f472a218caf33cde62a2a544677907f"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 294,
+        "sha256": "f6fee7e8342ff293e57e8690ae5d708182709ff81c21d5a9e0a05ecacd74ee66"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "cave-2-42",
+    "jobId": "intent-7f95f53b-4060-4980-99bb-2f337ff8ba88",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/cave-2-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 76543393,
+        "sha256": "6f9e70c7d16696b5818372673643dad964e63e7f10b89e2139fce76457ee4e8b"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 33864988,
+        "sha256": "2799c15cc829face3643046c5d400024b6ea2e4f53eddb89f68e4cdc234bd1a3"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 429830,
+        "sha256": "e2a58d05b483bf7a7282cb7077c991733b399581b6cff5e34d8eb3eb6d0879dd"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 494130,
+        "sha256": "485754a0e8ba0f03535bd806f5f3814ffdffc4d9b6e2feb0b94092b7418bfb35"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 298,
+        "sha256": "81930f0cbff1abe919d8c9f131f5f1329d6b4701e753933f9bb3604e2b72ee4b"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "bridge-2-42",
+    "jobId": "intent-10a3cf02-3d09-4837-933f-b0aa040d8d35",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/bridge-2-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 82538273,
+        "sha256": "7693a548b71955d8d75cc4bbab43edfcd5a2c0cbcb24b1536593e0f9545d5684"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 29678536,
+        "sha256": "08e209f8cc1ba52619cfd02edc04abc6d4522232c238eb19998801bfb2a16e00"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 416825,
+        "sha256": "671977e669c97755ee19019a067b81f10959d33c325c24193299179b1e016a93"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 495958,
+        "sha256": "c1cc61b5c9f7601bce90f5fbcee4fe5a64ce2cfc73794a39a567a548d4d7a0cf"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 297,
+        "sha256": "a23ec6ceb608d91eb281cfc60857590db19ccb0a3e98417756f715d2c4909470"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  },
+  {
+    "candidate": "tunnel-2-42",
+    "jobId": "intent-006d2630-6cd8-441d-a6b0-4387a59866fc",
+    "localDirectory": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability-replay/candidates/tunnel-2-42",
+    "artifacts": [
+      {
+        "path": "scene.ply",
+        "bytes": 95300513,
+        "sha256": "9b9edd3282083ac1a44cdf201742b24ae8740819a689ba43394224c68b15bd3a"
+      },
+      {
+        "path": "collider.glb",
+        "bytes": 39032728,
+        "sha256": "57449dddb406c34b47e052c63fae7c8e3c3f974c1949cc3f49f7af6e51e38faf"
+      },
+      {
+        "path": "source-rgb.png",
+        "bytes": 447686,
+        "sha256": "f5e09fd2a7df56bd9ed46fa6946dcec4a8219b06160dcc5b05a852def6cf01d8"
+      },
+      {
+        "path": "source-rgba.png",
+        "bytes": 514104,
+        "sha256": "05c5c197e6377e970499ec46d11697200ae3144490b9b88de5bb1fc3181cbad8"
+      },
+      {
+        "path": "image-prompt.txt",
+        "bytes": 291,
+        "sha256": "3245891ede1d03a578843632fdcae3061c44f4fcdd3555cf372ff6123a97bb8f"
+      }
+    ],
+    "note": "Original mesh, splat and conditioning files retained locally and on the GPU worker; not copied into Git."
+  }
+]

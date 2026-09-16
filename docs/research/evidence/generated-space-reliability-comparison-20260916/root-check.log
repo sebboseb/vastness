@@ -1,0 +1,243 @@
+
+> vastness@0.1.0 check
+> npm run typecheck && npm test && npm run build
+
+
+> vastness@0.1.0 typecheck
+> tsc --noEmit
+
+
+> vastness@0.1.0 test
+> tsx --test packages/*/src/*.test.ts services/orchestrator/src/*.test.ts apps/web/src/*.test.ts apps/web/src/m1-prototype/*.test.ts scripts/tests/m1-geometry.test.ts
+
+TAP version 13
+# Subtest: reproducible fixture artifacts describe solid rooms with a traversable shared aperture
+ok 1 - reproducible fixture artifacts describe solid rooms with a traversable shared aperture
+  ---
+  duration_ms: 430.7895
+  type: 'test'
+  ...
+# Subtest: actual generated chunk supports a closed circuit, real obstacle blocking, and bounded flat-floor walking
+ok 2 - actual generated chunk supports a closed circuit, real obstacle blocking, and bounded flat-floor walking
+  ---
+  duration_ms: 56.635917
+  type: 'test'
+  ...
+# Subtest: intention is proximity-gated, causal, persisted, and cannot replace an accepted result
+ok 3 - intention is proximity-gated, causal, persisted, and cannot replace an accepted result
+  ---
+  duration_ms: 2.314917
+  type: 'test'
+  ...
+# Subtest: real generated approach, gated seam, shared destination and return stay walkable for both intentions
+ok 4 - real generated approach, gated seam, shared destination and return stay walkable for both intentions
+  ---
+  duration_ms: 258.635208
+  type: 'test'
+  ...
+# Subtest: semantic fixture reveals detail on approach and safely resets after Seek
+ok 5 - semantic fixture reveals detail on approach and safely resets after Seek
+  ---
+  duration_ms: 11.53675
+  type: 'test'
+  ...
+# Subtest: solid and hybrid treatments preserve generated geometry through material and visibility changes
+    # Subtest: each placement has the complete original base buffers and transform
+    ok 1 - each placement has the complete original base buffers and transform
+      ---
+      duration_ms: 14.29275
+      type: 'test'
+      ...
+    # Subtest: stress overlays match shared classified faces exactly and retain all solid mass
+    ok 2 - stress overlays match shared classified faces exactly and retain all solid mass
+      ---
+      duration_ms: 31.428333
+      type: 'test'
+      ...
+    # Subtest: sparse glyphs appear nearby in hybrid mode and disappear at distance or in solid mode
+    ok 3 - sparse glyphs appear nearby in hybrid mode and disappear at distance or in solid mode
+      ---
+      duration_ms: 10.074167
+      type: 'test'
+      ...
+    1..3
+ok 6 - solid and hybrid treatments preserve generated geometry through material and visibility changes
+  ---
+  duration_ms: 135.074042
+  type: 'test'
+  ...
+# Subtest: actual Python inventory matches the shared capability schema without claiming GPU validation
+ok 7 - actual Python inventory matches the shared capability schema without claiming GPU validation
+  ---
+  duration_ms: 63.324708
+  type: 'test'
+  ...
+# Subtest: public pose input rejects non-finite positions and impossible pitch
+ok 8 - public pose input rejects non-finite positions and impossible pitch
+  ---
+  duration_ms: 0.979917
+  type: 'test'
+  ...
+# Subtest: job IDs cannot address parent paths in artifact storage
+ok 9 - job IDs cannot address parent paths in artifact storage
+  ---
+  duration_ms: 0.393958
+  type: 'test'
+  ...
+# Subtest: a walker stops at a wall, including a frame large enough to tunnel through it
+ok 10 - a walker stops at a wall, including a frame large enough to tunnel through it
+  ---
+  duration_ms: 0.929334
+  type: 'test'
+  ...
+# Subtest: walk through a 3.2m portal and return, but its solid jamb stops a wider approach
+ok 11 - walk through a 3.2m portal and return, but its solid jamb stops a wider approach
+  ---
+  duration_ms: 0.524208
+  type: 'test'
+  ...
+# Subtest: floor is walkable and diagonal wall contact slides without escaping
+ok 12 - floor is walkable and diagonal wall contact slides without escaping
+  ---
+  duration_ms: 0.078667
+  type: 'test'
+  ...
+# Subtest: an unloaded portal barrier stops the walker until removed
+ok 13 - an unloaded portal barrier stops the walker until removed
+  ---
+  duration_ms: 0.05375
+  type: 'test'
+  ...
+# Subtest: identity verification rejects truncation and same-size corruption
+ok 14 - identity verification rejects truncation and same-size corruption
+  ---
+  duration_ms: 0.779167
+  type: 'test'
+  ...
+# Subtest: preparation rejects mismatched sources before creating output
+ok 15 - preparation rejects mismatched sources before creating output
+  ---
+  duration_ms: 4.5545
+  type: 'test'
+  ...
+# Subtest: scaled and grounded surface boxes cover triangle interiors without filling gaps
+ok 16 - scaled and grounded surface boxes cover triangle interiors without filling gaps
+  ---
+  duration_ms: 6.337041
+  type: 'test'
+  ...
+# Subtest: verified real asset retains navigable AABB recesses and conservatively blocks its surface
+ok 17 - verified real asset retains navigable AABB recesses and conservatively blocks its surface
+  ---
+  duration_ms: 1247.455958
+  type: 'test'
+  ...
+# (node:41341) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: world imports real fixture bytes and exposes connected chunks and immutable artifacts over HTTP
+ok 18 - world imports real fixture bytes and exposes connected chunks and immutable artifacts over HTTP
+  ---
+  duration_ms: 411.405125
+  type: 'test'
+  ...
+# Subtest: restart restores singleton identity, topology, saved player and original artifacts without fixture sources
+ok 19 - restart restores singleton identity, topology, saved player and original artifacts without fixture sources
+  ---
+  duration_ms: 33.612166
+  type: 'test'
+  ...
+# Subtest: invalid player requests return actionable errors and preserve the last saved pose
+ok 20 - invalid player requests return actionable errors and preserve the last saved pose
+  ---
+  duration_ms: 30.677709
+  type: 'test'
+  ...
+# Subtest: missing chunks and assets return JSON errors and artifact paths cannot escape storage
+ok 21 - missing chunks and assets return JSON errors and artifact paths cannot escape storage
+  ---
+  duration_ms: 21.3315
+  type: 'test'
+  ...
+# Subtest: missing initial fixture is visible and initialization can recover without restarting
+ok 22 - missing initial fixture is visible and initialization can recover without restarting
+  ---
+  duration_ms: 19.043917
+  type: 'test'
+  ...
+# Subtest: late older pose saves cannot overwrite a newer exit pose, including after restart
+ok 23 - late older pose saves cannot overwrite a newer exit pose, including after restart
+  ---
+  duration_ms: 14.8965
+  type: 'test'
+  ...
+# (node:41342) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Mac submits real Python jobs, imports verified bytes and keeps accepted artifacts offline after restart
+ok 24 - Mac submits real Python jobs, imports verified bytes and keeps accepted artifacts offline after restart
+  ---
+  duration_ms: 483.397792
+  type: 'test'
+  ...
+# Subtest: artifact import rejects hostile URLs, wrong hashes, redirects and invalid formats
+ok 25 - artifact import rejects hostile URLs, wrong hashes, redirects and invalid formats
+  ---
+  duration_ms: 22.234875
+  type: 'test'
+  ...
+# Subtest: Mac rejects malformed worker capabilities at the HTTP boundary
+ok 26 - Mac rejects malformed worker capabilities at the HTTP boundary
+  ---
+  duration_ms: 5.812083
+  type: 'test'
+  ...
+# Subtest: overlapping identical submissions share one worker request and retain provenance
+ok 27 - overlapping identical submissions share one worker request and retain provenance
+  ---
+  duration_ms: 9.899083
+  type: 'test'
+  ...
+# Subtest: HTTP/1.0 artifact EOF remains safe while file writes apply backpressure
+ok 28 - HTTP/1.0 artifact EOF remains safe while file writes apply backpressure
+  ---
+  duration_ms: 155.322833
+  type: 'test'
+  ...
+# Subtest: worker transport preserves authentication, JSON bounds and response failure handling
+ok 29 - worker transport preserves authentication, JSON bounds and response failure handling
+  ---
+  duration_ms: 4.309
+  type: 'test'
+  ...
+# Subtest: worker response deadline covers a body stalled after headers
+ok 30 - worker response deadline covers a body stalled after headers
+  ---
+  duration_ms: 15006.707542
+  type: 'test'
+  ...
+1..30
+# tests 33
+# suites 0
+# pass 33
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 15859.047792
+
+> vastness@0.1.0 build
+> vite build apps/web
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1244 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     4.22 kB │ gzip:   1.76 kB
+dist/assets/index-CjVqJj1w.css      8.39 kB │ gzip:   2.72 kB
+dist/assets/index-BxrjwBEz.js   2,033.43 kB │ gzip: 524.04 kB
+
+(!) Some chunks are larger than 1600 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.58s

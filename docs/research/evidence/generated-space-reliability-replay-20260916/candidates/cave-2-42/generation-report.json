@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 1,
+  "backend": "sdxl-turbo-trellis-intention-v3",
+  "status": "succeeded",
+  "startedAt": "2026-09-16T09:48:59.355857+00:00",
+  "stage": "complete",
+  "pins": {
+    "backend": "sdxl-turbo-trellis-intention-v3",
+    "imageModel": {
+      "repo": "stabilityai/sdxl-turbo",
+      "revision": "71153311d3dbb46851df1931d3ca6e939de83304",
+      "files": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 11852,
+          "sha256": null
+        },
+        {
+          "path": "README.md",
+          "bytes": 5883,
+          "sha256": null
+        },
+        {
+          "path": "model_index.json",
+          "bytes": 685,
+          "sha256": null
+        },
+        {
+          "path": "scheduler/scheduler_config.json",
+          "bytes": 459,
+          "sha256": null
+        },
+        {
+          "path": "text_encoder/config.json",
+          "bytes": 565,
+          "sha256": null
+        },
+        {
+          "path": "text_encoder/model.fp16.safetensors",
+          "bytes": 246144152,
+          "sha256": "660c6f5b1abae9dc498ac2d21e1347d2abdb0cf6c0c0c8576cd796491d9a6cdd"
+        },
+        {
+          "path": "text_encoder_2/config.json",
+          "bytes": 575,
+          "sha256": null
+        },
+        {
+          "path": "text_encoder_2/model.fp16.safetensors",
+          "bytes": 1389382176,
+          "sha256": "ec310df2af79c318e24d20511b601a591ca8cd4f1fce1d8dff822a356bcdb1f4"
+        },
+        {
+          "path": "tokenizer/merges.txt",
+          "bytes": 524619,
+          "sha256": null
+        },
+        {
+          "path": "tokenizer/special_tokens_map.json",
+          "bytes": 586,
+          "sha256": null
+        },
+        {
+          "path": "tokenizer/tokenizer_config.json",
+          "bytes": 704,
+          "sha256": null
+        },
+        {
+          "path": "tokenizer/vocab.json",
+          "bytes": 1059962,
+          "sha256": null
+        },
+        {
+          "path": "tokenizer_2/merges.txt",
+          "bytes": 524619,
+          "sha256": null
+        },
+        {
+          "path": "tokenizer_2/special_tokens_map.json",
+          "bytes": 460,
+          "sha256": null
+        },
+        {
+          "path": "tokenizer_2/tokenizer_config.json",
+          "bytes": 855,
+          "sha256": null
+        },
+        {
+          "path": "tokenizer_2/vocab.json",
+          "bytes": 1059962,
+          "sha256": null
+        },
+        {
+          "path": "unet/config.json",
+          "bytes": 1776,
+          "sha256": null
+        },
+        {
+          "path": "unet/diffusion_pytorch_model.fp16.safetensors",
+          "bytes": 5135149760,
+          "sha256": "48fa46161a745f48d4054df3fe13804ee255486bca893403b60373c188fd1bdb"
+        },
+        {
+          "path": "vae/config.json",
+          "bytes": 607,
+          "sha256": null
+        },
+        {
+          "path": "vae/diffusion_pytorch_model.fp16.safetensors",
+          "bytes": 167335342,
+          "sha256": "02ee4bd18e5d16e7fe5fc5b85b4aefa2cba6db28897f674226c9d6ddd2f34f06"
+        }
+      ]
+    },
+    "packages": {
+      "diffusers": "0.30.3",
+      "accelerate": "0.34.2",
+      "psutil": "6.1.0"
+    },
+    "imageParameters": {
+      "steps": 4,
+      "guidanceScale": 0,
+      "width": 512,
+      "height": 512
+    },
+    "rejectedAlphaModel": {
+      "model": "u2netp",
+      "url": "https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2netp.onnx",
+      "bytes": 4574861,
+      "md5": "8e83ca70e441ab06c318d82300c84806",
+      "sha256": "309c8469258dda742793dce0ebea8e6dd393174f89934733ecc8b14c76f4ddd8"
+    },
+    "alpha": {
+      "method": "white-matte-or-full-frame-v1",
+      "opaqueMaxMinChannel": 224,
+      "transparentMinChannel": 236,
+      "fullFrameAtForegroundFraction": 0.98,
+      "transparentPaddingPixels": 16,
+      "rejectAtForegroundFraction": 0.01
+    }
+  },
+  "nvidiaExecution": "completed",
+  "stages": {
+    "image": {
+      "command": [
+        "/home/vastness/.local/share/vastness-intention-models/20260915-01/env/bin/python",
+        "/home/vastness/.local/share/vastness-intention-worker/releases/04986defd1de38609cfb69c8d6c78ae4704e5670/repo/services/gpu-worker/intention_generation/image_stage.py",
+        "--weights",
+        "/home/vastness/.local/share/vastness-intention-models/20260915-01/weights/sdxl-turbo",
+        "--seed",
+        "42",
+        "--output",
+        "/home/vastness/.local/share/vastness-intention-worker/shared/data/artifacts/.intent-7f95f53b-4060-4980-99bb-2f337ff8ba88.tmp"
+      ],
+      "status": "succeeded",
+      "exitCode": 0,
+      "wallSeconds": 8.162749835006252,
+      "metrics": {
+        "loadSeconds": 2.5658984820038313,
+        "generationSeconds": 1.383074908000708,
+        "alphaSeconds": 0.3703200969976024,
+        "tokenCounts": [
+          59,
+          59
+        ],
+        "tokenLimit": 77,
+        "promptTruncated": false,
+        "foregroundFraction": 0.8858131487889274,
+        "torchPeakAllocatedBytes": 8283339776,
+        "torchPeakReservedBytes": 9552527360,
+        "torchVersion": "2.4.0+cu121",
+        "torchCudaVersion": "12.1",
+        "gpuName": "NVIDIA GeForce RTX 3090",
+        "alphaMethod": "white-matte-or-full-frame-v1",
+        "conditioningMode": "unsegmented-full-frame",
+        "matteForegroundFraction": 0.9987144470214844,
+        "transparentPaddingPixels": 16,
+        "conditioningSize": [
+          544,
+          544
+        ],
+        "alphaLimitation": "Nonwhite background retained as image conditioning; may become geometry."
+      }
+    },
+    "trellis": {
+      "command": [
+        "/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/env/bin/python",
+        "/home/vastness/.local/share/vastness-intention-worker/releases/04986defd1de38609cfb69c8d6c78ae4704e5670/repo/services/gpu-worker/intention_generation/trellis_stage.py",
+        "--trellis-root",
+        "/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/src/TRELLIS",
+        "--weights-root",
+        "/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/weights/trellis-image-large",
+        "--dinov2-root",
+        "/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/src/dinov2",
+        "--dinov2-weights",
+        "/home/vastness/.local/share/vastness-benchmarks/trellis-20260915-02/weights/dinov2/dinov2_vitl14_reg4_pretrain.pth",
+        "--image",
+        "/home/vastness/.local/share/vastness-intention-worker/shared/data/artifacts/.intent-7f95f53b-4060-4980-99bb-2f337ff8ba88.tmp/source-rgba.png",
+        "--seed",
+        "42",
+        "--output",
+        "/home/vastness/.local/share/vastness-intention-worker/shared/data/artifacts/.intent-7f95f53b-4060-4980-99bb-2f337ff8ba88.tmp"
+      ],
+      "status": "succeeded",
+      "exitCode": 0,
+      "wallSeconds": 75.27927951799938,
+      "metrics": {
+        "loadSeconds": 26.972311044999515,
+        "generationSeconds": 11.829320614000608,
+        "exportAndValidationSeconds": 28.643682566995267,
+        "totalSeconds": 67.44531422599539,
+        "torchPeakAllocatedBytes": 12722251776,
+        "torchPeakReservedBytes": 18247319552,
+        "torchVersion": "2.4.0+cu121",
+        "torchCudaVersion": "12.1",
+        "gpuName": "NVIDIA GeForce RTX 3090",
+        "computeCapability": [
+          8,
+          6
+        ],
+        "gaussianCount": 1125632,
+        "meshVertexCount": 941903,
+        "meshTriangleCount": 1880112,
+        "meshBounds": [
+          [
+            -0.5014379024505615,
+            -0.34219643473625183,
+            -0.5014014840126038
+          ],
+          [
+            0.5012316107749939,
+            0.3547390401363373,
+            0.501672089099884
+          ]
+        ],
+        "sourceToOutputRotation": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ],
+        "scaleMetres": null,
+        "collisionAssessment": "unassessed_raw_mesh_proxy"
+      }
+    }
+  },
+  "artifacts": [
+    {
+      "path": "scene.ply",
+      "bytes": 76543393,
+      "sha256": "6f9e70c7d16696b5818372673643dad964e63e7f10b89e2139fce76457ee4e8b"
+    },
+    {
+      "path": "collider.glb",
+      "bytes": 33864988,
+      "sha256": "2799c15cc829face3643046c5d400024b6ea2e4f53eddb89f68e4cdc234bd1a3"
+    },
+    {
+      "path": "source-rgb.png",
+      "bytes": 429830,
+      "sha256": "e2a58d05b483bf7a7282cb7077c991733b399581b6cff5e34d8eb3eb6d0879dd"
+    },
+    {
+      "path": "source-rgba.png",
+      "bytes": 494130,
+      "sha256": "485754a0e8ba0f03535bd806f5f3814ffdffc4d9b6e2feb0b94092b7418bfb35"
+    },
+    {
+      "path": "image-prompt.txt",
+      "bytes": 298,
+      "sha256": "81930f0cbff1abe919d8c9f131f5f1329d6b4701e753933f9bb3604e2b72ee4b"
+    }
+  ],
+  "vastnessGit": {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exitCode": 0,
+    "stdout": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+    "stderr": ""
+  },
+  "limitations": [
+    "Asset/diorama generation, not guaranteed walkable room geometry.",
+    "Scale remains model units until Mac preparation.",
+    "Semantic fidelity requires qualitative inspection."
+  ],
+  "request": {
+    "id": "intent-7f95f53b-4060-4980-99bb-2f337ff8ba88",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.\",\"axes\":{\"scale\":\"human\",\"density\":\"balanced\",\"mood\":\"unspecified\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.",
+    "axes": {
+      "scale": "human",
+      "density": "balanced",
+      "mood": "unspecified",
+      "openness": "enclosed"
+    },
+    "representation": "abstract-solid"
+  },
+  "compiledImagePrompt": "human scale, balanced forms, enclosed space, unspecified atmosphere. A wide cave passage through rough rock, two visible openings and a smooth level stone floor without boulders or steps.. Sculptural architectural diorama, three-quarter view, entire structure isolated on white background, no text.",
+  "trellisPreflight": {
+    "os": "Linux",
+    "python": "3.10.21",
+    "nvidia": {
+      "argv": [
+        "nvidia-smi",
+        "--query-gpu=index,uuid,name,driver_version,memory.total,memory.free",
+        "--format=csv"
+      ],
+      "exitCode": 0,
+      "stdout": "index, uuid, name, driver_version, memory.total [MiB], memory.free [MiB]\n0, GPU-02ec26d3-2fcf-7527-1110-7120a701ec49, NVIDIA GeForce RTX 3090, 610.62, 24576 MiB, 21742 MiB",
+      "stderr": ""
+    },
+    "nvcc": {
+      "argv": [
+        "nvcc",
+        "--version"
+      ],
+      "exitCode": 0,
+      "stdout": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2023 NVIDIA Corporation\nBuilt on Mon_Apr__3_17:16:06_PDT_2023\nCuda compilation tools, release 12.1, V12.1.105\nBuild cuda_12.1.r12.1/compiler.32688072_0",
+      "stderr": ""
+    },
+    "packages": {
+      "torch": "2.4.0+cu121",
+      "torchvision": "0.19.0+cu121",
+      "xformers": "0.0.27.post2",
+      "kaolin": "0.17.0",
+      "spconv-cu120": "2.3.6"
+    },
+    "source": {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exitCode": 0,
+      "stdout": "442aa1e1afb9014e80681d3bf604e8d728a86ee7",
+      "stderr": ""
+    },
+    "dinov2": {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exitCode": 0,
+      "stdout": "7b187bd4df8efce2cbcbbb67bd01532c19bf4c9c",
+      "stderr": ""
+    },
+    "weights": {
+      "model": {
+        "repo": "microsoft/TRELLIS-image-large",
+        "revision": "25e0d31ffbebe4b5a97464dd851910efc3002d96"
+      },
+      "files": {
+        "pipeline.json": "2686b6c9b3b0a100b544d5f9dc7b3ecb15c9d98be9852d68e8731bd8dbe52a42",
+        "README.md": "9b64b43ea1d58635f14f2ebe5664c22be6fee8943943ece39a14e98b1da4378c",
+        ".gitattributes": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+        "ckpts/slat_dec_mesh_swin8_B_64l8m256c_fp16.json": "293900795cb69cc972d1a20a4940ee12f7e007952c2ae92d128dda91b96ac317",
+        "ckpts/slat_enc_swin8_B_64l8_fp16.safetensors": "21dceac6bee917ab6458ff52c9757ba89a779d03031c7bd17f9e7f0103bfd436",
+        "ckpts/slat_dec_gs_swin8_B_64l8gs32_fp16.json": "ebe9d3eade6d9cb7662efae109197e97d7ab58aebd5e8ede0c8991dfce88a06a",
+        "ckpts/slat_flow_img_dit_L_64l8p2_fp16.safetensors": "693fb2a58ad497bd222007301eeec49d14d60f8c12d2f2f00c221fa747b4c66c",
+        "ckpts/slat_enc_swin8_B_64l8_fp16.json": "7b7e2bd3e831bdd5a6129cea36424a47ad73c1b9ad109d1de54e0f14af4d28a2",
+        "ckpts/slat_dec_mesh_swin8_B_64l8m256c_fp16.safetensors": "3e87aba94b5786407eb06d0502c1ed0885a0027a3f2b8537bfe15b0a92c01859",
+        "ckpts/ss_flow_img_dit_L_16l8_fp16.json": "bf69161da7ece9a87394dd4441f0cfa6d4261696a214a8f68388c81fa9a6b5b7",
+        "ckpts/ss_enc_conv3d_16l8_fp16.json": "12efe92a0d7dcd790f251acb94a6950957ea4398268e2838ef7319c3f20b071e",
+        "ckpts/slat_dec_gs_swin8_B_64l8gs32_fp16.safetensors": "38c84bcef5ce0af1f48b1b5558dabc7575a13346043c41a7e0610f1fa619a161",
+        "ckpts/slat_flow_img_dit_L_64l8p2_fp16.json": "c0a9bd57227f55cf75ff02562c27bb05c50174f06955f56a79dea2982fd7a8f9",
+        "ckpts/slat_dec_rf_swin8_B_64l8r16_fp16.json": "9b46a04602988b9cd83f1d0537de1cb93c4c1b6d35a0bbbcb07bb37bac66b766",
+        "ckpts/ss_dec_conv3d_16l8_fp16.safetensors": "1c76d4a40519aa2d711cc263a8404105231ac26db31d946bed48b84fee79009a",
+        "ckpts/ss_flow_img_dit_L_16l8_fp16.safetensors": "96dc6bfd4136fd950af564dd16b4ae533c9ba6af8f26c670646b2a9f2789b1db",
+        "ckpts/ss_dec_conv3d_16l8_fp16.json": "646781293f1cda74720de85d1cef50a957fb4aebd9a4bd014e454e32f2330ac5",
+        "ckpts/slat_dec_rf_swin8_B_64l8r16_fp16.safetensors": "737da6578d01948016b7c39786113af0d64a46f7922f6b8b5e698b84643be514",
+        "ckpts/ss_enc_conv3d_16l8_fp16.safetensors": "107874eeaa0feb82f51b19db5da7db534fb7e7f19e5a122b9ff1bc2e258bfc6d"
+      }
+    },
+    "dinov2Weights": {
+      "model": {
+        "name": "dinov2_vitl14_reg",
+        "url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitl14/dinov2_vitl14_reg4_pretrain.pth",
+        "sha256": null
+      },
+      "files": {
+        "dinov2_vitl14_reg4_pretrain.pth": "36e4deffbaef061a2576705b0c36f93621e2ae20bf6274694821b0b492551b51"
+      }
+    },
+    "problems": [],
+    "readyForAttempt": true,
+    "note": "Read-only inspection; no torch import, CUDA inference or artifact generation."
+  },
+  "imageWeights": {
+    "model": {
+      "repo": "stabilityai/sdxl-turbo",
+      "revision": "71153311d3dbb46851df1931d3ca6e939de83304"
+    },
+    "plannedBytes": 6941205599,
+    "files": {
+      "LICENSE.md": "d6f6b1a4dce5c852bd6d7d9482d002baf0ccdb71e662250b73be9eec8764ee8d",
+      "README.md": "98dabafc7a0c2981bac309d83ae7012e3f2fe276947ba1cdc5f3ebfc977f8d8b",
+      "model_index.json": "c3c2f99e3e94b5940bb072f7cf66858ab05d115dc5899b3cb36a7781e91769e0",
+      "scheduler/scheduler_config.json": "13847eb34084bc56e9f8b10f84d2c650cf8cb00016b2530429af0b894d4e1aa2",
+      "text_encoder/config.json": "f73737aca344421ae12c5302aad65570218d4911872ac2e656d685a23bee270a",
+      "text_encoder/model.fp16.safetensors": "660c6f5b1abae9dc498ac2d21e1347d2abdb0cf6c0c0c8576cd796491d9a6cdd",
+      "text_encoder_2/config.json": "d798a4e0dea19feb3e4f17d311e02507055ce3ee81d015a43123517433f2a7ef",
+      "text_encoder_2/model.fp16.safetensors": "ec310df2af79c318e24d20511b601a591ca8cd4f1fce1d8dff822a356bcdb1f4",
+      "tokenizer/merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+      "tokenizer/special_tokens_map.json": "6a757fc443f84ad1def3b893aac3858178f2a1513e3cf97b35ff131b5d88edd5",
+      "tokenizer/tokenizer_config.json": "7eb36a76a02551ce8583dbee08d062e672997a5fe1db82ebc642d88c7e79cc96",
+      "tokenizer/vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "tokenizer_2/merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+      "tokenizer_2/special_tokens_map.json": "f118ab3a983206e4f32583448de6bd6aae4ee21869135cef1f5848a753cdaab6",
+      "tokenizer_2/tokenizer_config.json": "516314ccab66918d7cb647480ac27abd3520d14e1e5825aac99f50c851c16071",
+      "tokenizer_2/vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "unet/config.json": "6ae877bd8daca6088f44c6251e07d7e252da53ace0d5895a0c6cbcbd5c132cb4",
+      "unet/diffusion_pytorch_model.fp16.safetensors": "48fa46161a745f48d4054df3fe13804ee255486bca893403b60373c188fd1bdb",
+      "vae/config.json": "85a181424a5fd0cc292e44e467be66a5263976eee1baf36d208133f9d49d4269",
+      "vae/diffusion_pytorch_model.fp16.safetensors": "02ee4bd18e5d16e7fe5fc5b85b4aefa2cba6db28897f674226c9d6ddd2f34f06"
+    }
+  },
+  "packageVersions": {
+    "torch": "2.4.0+cu121",
+    "transformers": "4.46.3",
+    "diffusers": "0.30.3",
+    "accelerate": "0.34.2",
+    "rembg": "2.0.60",
+    "onnxruntime": "1.19.2"
+  },
+  "finishedAt": "2026-09-16T09:50:29.775983+00:00",
+  "wallSeconds": 90.41818812499696,
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 2585.0,
+        "sampledPeakMiB": 21932.0,
+        "samples": 832
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  }
+}

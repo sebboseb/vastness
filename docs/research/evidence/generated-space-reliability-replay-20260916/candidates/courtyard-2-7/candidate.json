@@ -1,0 +1,54 @@
+{
+  "candidate": "courtyard-2-7",
+  "id": "courtyard-2-7",
+  "category": "courtyard",
+  "promptVariant": 2,
+  "seed": 7,
+  "text": "A square cloister courtyard with a wide doorway, level tiled floor and empty central space bordered by covered arcades.",
+  "rawIntent": {
+    "text": "A square cloister courtyard with a wide doorway, level tiled floor and empty central space bordered by covered arcades.",
+    "source": "text",
+    "seed": 7
+  },
+  "declaredAt": "2026-09-16T09:27:17.443587+00:00",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A square cloister courtyard with a wide doorway, level tiled floor and empty central space bordered by covered arcades.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "mixed"
+    },
+    "representation": "abstract-solid"
+  },
+  "submissionAttemptedAt": "2026-09-16T09:27:17.515403+00:00",
+  "worldId": "intent-7ee56718-e7ad-4578-b2c1-d28ea7c60da7",
+  "jobId": "intent-7ee56718-e7ad-4578-b2c1-d28ea7c60da7",
+  "request": {
+    "id": "intent-7ee56718-e7ad-4578-b2c1-d28ea7c60da7",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A square cloister courtyard with a wide doorway, level tiled floor and empty central space bordered by covered arcades.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 7
+  },
+  "collected": true,
+  "gpuStatus": "succeeded",
+  "macStatus": "ready",
+  "finishedAt": "2026-09-16T09:28:36.751222+00:00",
+  "generationSeconds": 70.26409212600265,
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 1809.0,
+        "sampledPeakMiB": 17199.0,
+        "samples": 631
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  },
+  "failureStage": null,
+  "geometryAssessment": "pending separate generated-support assessment"
+}

@@ -1,0 +1,54 @@
+{
+  "candidate": "doorway-2-7",
+  "id": "doorway-2-7",
+  "category": "doorway",
+  "promptVariant": 2,
+  "seed": 7,
+  "text": "Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening.",
+  "rawIntent": {
+    "text": "Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening.",
+    "source": "text",
+    "seed": 7
+  },
+  "declaredAt": "2026-09-16T09:38:47.358264+00:00",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening.",
+    "axes": {
+      "scale": "human",
+      "density": "balanced",
+      "mood": "unspecified",
+      "openness": "mixed"
+    },
+    "representation": "abstract-solid"
+  },
+  "submissionAttemptedAt": "2026-09-16T09:38:47.377810+00:00",
+  "worldId": "intent-79c22dd8-039b-446e-a28b-b017bf48ee5c",
+  "jobId": "intent-79c22dd8-039b-446e-a28b-b017bf48ee5c",
+  "request": {
+    "id": "intent-79c22dd8-039b-446e-a28b-b017bf48ee5c",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"Two tall stone walls joined by an arch, with a broad human doorway and a continuous level stone path through the opening.\",\"axes\":{\"scale\":\"human\",\"density\":\"balanced\",\"mood\":\"unspecified\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 7
+  },
+  "collected": true,
+  "gpuStatus": "succeeded",
+  "macStatus": "ready",
+  "finishedAt": "2026-09-16T09:39:59.372941+00:00",
+  "generationSeconds": 64.72332124500099,
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 1788.0,
+        "sampledPeakMiB": 15245.0,
+        "samples": 575
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  },
+  "failureStage": null,
+  "geometryAssessment": "pending separate generated-support assessment"
+}

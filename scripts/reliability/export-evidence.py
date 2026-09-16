@@ -33,7 +33,7 @@ def main():
                          'sha256': hashlib.sha256(target.read_bytes()).hexdigest()})
 
     for source in data.iterdir():
-        if source.is_file() and source.suffix in {'.json', '.jsonl', '.csv', '.js', '.log'}:
+        if source.is_file() and source.suffix in {'.json', '.jsonl', '.csv', '.js', '.mjs', '.log'}:
             copy(source, Path(source.name))
     for name in ['declared-batch.json', 'preflight.json', 'runner-provenance.json', 'events.jsonl']:
         copy(data / 'candidates' / name, Path(name))

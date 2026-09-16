@@ -1,0 +1,54 @@
+{
+  "candidate": "tunnel-1-7",
+  "id": "tunnel-1-7",
+  "category": "tunnel",
+  "promptVariant": 1,
+  "seed": 7,
+  "text": "A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof.",
+  "rawIntent": {
+    "text": "A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof.",
+    "source": "text",
+    "seed": 7
+  },
+  "declaredAt": "2026-09-16T09:01:56.465373+00:00",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "open"
+    },
+    "representation": "abstract-solid"
+  },
+  "submissionAttemptedAt": "2026-09-16T09:01:56.548626+00:00",
+  "worldId": "intent-80ee3fa8-9011-455a-bf8d-a37c3e130d5b",
+  "jobId": "intent-80ee3fa8-9011-455a-bf8d-a37c3e130d5b",
+  "request": {
+    "id": "intent-80ee3fa8-9011-455a-bf8d-a37c3e130d5b",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A short stone tunnel open at both ends, with a continuous flat floor and broad empty passage beneath a curved roof.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"open\"},\"representation\":\"abstract-solid\"}",
+    "seed": 7
+  },
+  "collected": true,
+  "gpuStatus": "succeeded",
+  "macStatus": "ready",
+  "finishedAt": "2026-09-16T09:03:14.609613+00:00",
+  "generationSeconds": 70.18354256900056,
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 1808.0,
+        "sampledPeakMiB": 17171.0,
+        "samples": 629
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  },
+  "failureStage": null,
+  "geometryAssessment": "pending separate generated-support assessment"
+}

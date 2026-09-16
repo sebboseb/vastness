@@ -1,0 +1,60 @@
+{
+  "id": "intent-006d2630-6cd8-441d-a6b0-4387a59866fc",
+  "createdAt": "2026-09-16T09:52:25.917Z",
+  "rawIntent": {
+    "text": "A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "mixed"
+    },
+    "representation": "abstract-solid"
+  },
+  "derivation": {
+    "compiler": "lexical-semantic-v1",
+    "cues": {
+      "vast": [],
+      "intimate": [],
+      "sparse": [
+        "empty"
+      ],
+      "dense": [],
+      "open": [],
+      "enclosed": [],
+      "quiet": [],
+      "ominous": [],
+      "luminous": [],
+      "joyful": []
+    },
+    "limitations": [
+      "Rule-based axis extraction; no general language reasoning",
+      "Negation handling is local, not a complete semantic parser",
+      "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+      "Concept is bounded to 600 characters; original input is retained separately"
+    ]
+  },
+  "status": "requested",
+  "jobId": "intent-006d2630-6cd8-441d-a6b0-4387a59866fc",
+  "request": {
+    "id": "intent-006d2630-6cd8-441d-a6b0-4387a59866fc",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "events": [
+    {
+      "type": "intent-recorded",
+      "at": "2026-09-16T09:52:25.918Z"
+    },
+    {
+      "type": "constraints-derived",
+      "at": "2026-09-16T09:52:25.918Z"
+    }
+  ]
+}

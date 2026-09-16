@@ -1,0 +1,6 @@
+{
+  "issue": "Persistent browser helper captured baseline path despite reassigned REPL binding. First replay hall10 trace temporarily wrote baseline runtime files; frozen committed evidence unchanged.",
+  "recovery": "Copied actual first replay trace to replay directory, restored baseline runtime trace from frozen archive, removed newly created overview from baseline, rebound helpers to literal replay paths. No movement retry or GPU regeneration.",
+  "candidate": "large_open_interior-1-7",
+  "scale": 10
+}

@@ -1,0 +1,44 @@
+{
+  "startedAt": "2026-09-16T09:58:22.678Z",
+  "pid": 60314,
+  "worktree": "/Users/seb/Documents/ChatGPT/vastness/.worktrees/reliability-numerical-replay",
+  "commit": "1eae3700a1242d9893abcdb8e3a56c818e49da82",
+  "baselineSummarySha256": "228636c655c7b18d1bdb605bbcbcef66b32860d8ec3081453a79cc2d803bc175",
+  "newGpuJobs": 0,
+  "geometryEdits": 0,
+  "helpers": [
+    {
+      "path": "scripts/passage-geometry.ts",
+      "sha256": "ee386797faffe7b55dc53c7286a5e7b14ef44c267fcd98dfe09fcbf09a93fd79"
+    },
+    {
+      "path": "apps/web/src/generated-passage/navigation.ts",
+      "sha256": "8c58a786e9d7fed8384d2ea7144d20b6c55edc6b2eaa45e7047d9f4ab482c73d"
+    },
+    {
+      "path": "scripts/prepare-passage-colors.ts",
+      "sha256": "58332f6d71416b232caa746b25062baadc660e2984bca9f6071229a17f289cd3"
+    },
+    {
+      "path": "apps/web/src/generated-passage/color.ts",
+      "sha256": "d2df29e75d2e62fd28354d522e006617ab64bdc58482b9d31e99751be6adaf45"
+    },
+    {
+      "path": "scripts/reliability/assess.ts",
+      "sha256": "e88c4d96dde4ba705f09ce88a3d7bfa1010869101e43de6d29c214e0e7dac2c9"
+    },
+    {
+      "path": "scripts/reliability/summarize.ts",
+      "sha256": "8947431c9392bf7df5db3ae8aa795aa54bf59e5b0c18dd2652b9cf7352f353b4"
+    },
+    {
+      "path": "scripts/reliability/verify-browser.ts",
+      "sha256": "d042c67b5f411043c953e4ec61006ae5f7f610a9e6632d9051c2f8d3d7bd6dbe"
+    }
+  ],
+  "finishedAt": "2026-09-16T10:14:33.765789+00:00",
+  "candidatesAssessed": 36,
+  "scaleAssessments": 108,
+  "colorIdentityVerified": 36,
+  "baselineUnchanged": true
+}

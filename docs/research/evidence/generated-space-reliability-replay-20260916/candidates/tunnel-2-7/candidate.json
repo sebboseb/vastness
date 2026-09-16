@@ -1,0 +1,54 @@
+{
+  "candidate": "tunnel-2-7",
+  "id": "tunnel-2-7",
+  "category": "tunnel",
+  "promptVariant": 2,
+  "seed": 7,
+  "text": "A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom.",
+  "rawIntent": {
+    "text": "A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom.",
+    "source": "text",
+    "seed": 7
+  },
+  "declaredAt": "2026-09-16T09:29:52.409924+00:00",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "mixed"
+    },
+    "representation": "abstract-solid"
+  },
+  "submissionAttemptedAt": "2026-09-16T09:29:52.426518+00:00",
+  "worldId": "intent-a9d26274-03b2-4a00-9bd1-be926b6c87b3",
+  "jobId": "intent-a9d26274-03b2-4a00-9bd1-be926b6c87b3",
+  "request": {
+    "id": "intent-a9d26274-03b2-4a00-9bd1-be926b6c87b3",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 7
+  },
+  "collected": true,
+  "gpuStatus": "succeeded",
+  "macStatus": "ready",
+  "finishedAt": "2026-09-16T09:31:20.987831+00:00",
+  "generationSeconds": 78.15387166599976,
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 1807.0,
+        "sampledPeakMiB": 18808.0,
+        "samples": 709
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  },
+  "failureStage": null,
+  "geometryAssessment": "pending separate generated-support assessment"
+}

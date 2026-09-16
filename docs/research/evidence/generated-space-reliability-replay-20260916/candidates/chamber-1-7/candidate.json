@@ -1,0 +1,54 @@
+{
+  "candidate": "chamber-1-7",
+  "id": "chamber-1-7",
+  "category": "chamber",
+  "promptVariant": 1,
+  "seed": 7,
+  "text": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+  "rawIntent": {
+    "text": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+    "source": "text",
+    "seed": 7
+  },
+  "declaredAt": "2026-09-16T09:05:59.436494+00:00",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "enclosed"
+    },
+    "representation": "abstract-solid"
+  },
+  "submissionAttemptedAt": "2026-09-16T09:05:59.452768+00:00",
+  "worldId": "intent-c5cda12d-76af-4b8b-b88c-eccc7719dd26",
+  "jobId": "intent-c5cda12d-76af-4b8b-b88c-eccc7719dd26",
+  "request": {
+    "id": "intent-c5cda12d-76af-4b8b-b88c-eccc7719dd26",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 7
+  },
+  "collected": true,
+  "gpuStatus": "succeeded",
+  "macStatus": "ready",
+  "finishedAt": "2026-09-16T09:07:41.758397+00:00",
+  "generationSeconds": 90.11204043700127,
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 1806.0,
+        "sampledPeakMiB": 20077.0,
+        "samples": 829
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  },
+  "failureStage": null,
+  "geometryAssessment": "pending separate generated-support assessment"
+}

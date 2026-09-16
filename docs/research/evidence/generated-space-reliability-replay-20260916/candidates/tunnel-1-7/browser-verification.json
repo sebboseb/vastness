@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "tunnel-1-7",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 10,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "a3022e22095e93ac92618ed687fb2ce9175b23d8623833dfa28996f7ea7442d8",
+        "forward": "4cf459c8df3d068a27881c266a423092dc6c679807ec11c9aff30baff6779beb",
+        "returned": "4b29354dda83a6a73b458c7bb661481bc4b1d56f79712107bdc8d53ccb309ed9",
+        "persisted": "ba907bcda7b1c5345260ea4fef15972d31aba8d85a72ae8c96261560dd3043e1"
+      },
+      "forwardEndpointDistance": 0.0019333111447309747,
+      "returnEndpointDistance": 0.0001500000000040913
+    },
+    {
+      "scale": 12,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "bbd3e5adb0aaa5829c138b5b709f3d1ee005435561a30ea06ebe16da2afa4ba8",
+        "forward": "0be800851b05e3abc6519d5b4cb4b18855c24e4649efe12367c12aa3b92ae1c6",
+        "returned": "576eef4ac2417bae9c69908e567acf12769518cb5803ac25d77368daee2d4cf7",
+        "persisted": "17bed8d93c10d78574c7272bfab55adce660c5ca47f4cd67bb7a0130f030a42b"
+      },
+      "forwardEndpointDistance": 0.0024500288975074975,
+      "returnEndpointDistance": 2.220446049250313e-16
+    }
+  ]
+}

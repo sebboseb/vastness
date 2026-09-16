@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "doorway-2-42",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "627fdae333f9c2a74a445c4bb66dff3f57162fa443d47c0de2ebb64bcba7d42d",
+        "forward": "ffdd517a6a05e7f7132070913de2e850d145c15f23d40756e9c141533abf8ef9",
+        "returned": "175f1b9d66a794ca9bef2e529c23778ae8b21ee48e65b82dfe4ee7060092a8f5",
+        "persisted": "4c32d55c1ddb46472ce32b9a86b70c7d75ff07692e8c19e13c63b3e9c465a5b9"
+      },
+      "forwardEndpointDistance": 0.0005500285237957753,
+      "returnEndpointDistance": 0.0043500000000076255
+    },
+    {
+      "scale": 10,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "e8e1af7cbec54ee8f0f5ad12d2b46c7fa6a0b3b73ae159bc3624d670892b9807",
+        "forward": "c0fc3a223a02d3e3893f1bc45c2f154fe0a11fb2f7d1a6ec411d0c3dfa5e895a",
+        "returned": "d1afd8729d88de694aad8839d3feec610f8103fb1f75bdfac8563b9967dc065f",
+        "persisted": "82348fe30cdeef43874942200856a36a85d28426ef88a4a46f72047230ddd723"
+      },
+      "forwardEndpointDistance": 0,
+      "returnEndpointDistance": 0
+    },
+    {
+      "scale": 12,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "9f71192dec6b34707133ddd0f99144edd4a22989857355a1b97ff4c4f34d066b",
+        "forward": "1236a2a0be10dc10a3aae7beb06f73da48d35035b18d000de6449c75f6c8105d",
+        "returned": "e4722f6bce2ea9c11e3b631e7a26d7888c8a9ea945f30db8347f33851b9b0f90",
+        "persisted": "8d49fab689632e879b9fb169e9c7d3728966a446a52932c96c64de219a82b385"
+      },
+      "forwardEndpointDistance": 0.001100008686258098,
+      "returnEndpointDistance": 0
+    }
+  ]
+}

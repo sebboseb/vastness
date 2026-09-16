@@ -1,0 +1,5 @@
+{
+  "issue": "Initial recorder observed empty walking field before first animation frame started; premature files retained.",
+  "recovery": "Waited for same ongoing forward motion to complete, then returned once and captured terminal traces. No motion retry or regeneration.",
+  "forwardTravel": 3.1408342973299286
+}

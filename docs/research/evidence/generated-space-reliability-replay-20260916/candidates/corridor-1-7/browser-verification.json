@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "corridor-1-7",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "7844b349b6198427acdb70cc690bf0dd10f2b252750c9486b64c7200ff83743e",
+        "forward": "a12bb4424ce00fa9a36a6998abcfa034fb0793d7b8865645be91042655181d05",
+        "returned": "8512df163c9891f27b71b969073727a6987b930eb2d46b25927530b2332cc268",
+        "persisted": "2993facc3440a6c14968e35a0c6cd529d5ec7b90a04664cc8d60f6a331a3bcec"
+      },
+      "forwardEndpointDistance": 0.0038500062069380804,
+      "returnEndpointDistance": 0.0035999999999951626
+    },
+    {
+      "scale": 10,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "8a2588815782de488a799c18a0b829525b4a86ce5ac048060a5dc3581fdbce29",
+        "forward": "a01838d45bd9208774e5b6ba4cbe829f82aa7518539b8b727a85e721e81c07c8",
+        "returned": "5644e52520c0cd0c681b3e9e91adc7f46ec9c616e278c622ca887bfee1712cb7",
+        "persisted": "cc506b4ef2cd14031071fd0798027849a0964e81ffbbedfaf4fe71f43210eaa6"
+      },
+      "forwardEndpointDistance": 0.00030000007097683745,
+      "returnEndpointDistance": 0.0016499999999970427
+    },
+    {
+      "scale": 12,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "ce7265e615cbfc7a78ce9b189dc20b329a583d6698ac3e73bbb9f0193390f5fb",
+        "forward": "1ed556d4a3a317143dc9ccb916be5c4d8cfa1ddf5f7f62ea326d11cdfbf2d469",
+        "returned": "8f1c42437b4013fdb194bbd22cca52af8f2b76f5b894152f8a4d9818ad67d4ad",
+        "persisted": "502580efdf720adc4791d14ce1c011119daa29c9b68cbf96af2b754de5930ba4"
+      },
+      "forwardEndpointDistance": 0.000800000308318511,
+      "returnEndpointDistance": 0.00030000000000196536
+    }
+  ]
+}

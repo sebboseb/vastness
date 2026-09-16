@@ -1,0 +1,154 @@
+
+> vastness@0.1.0 check:passage
+> npm run check && npm run test:passage && npm run build:passage
+
+
+> vastness@0.1.0 check
+> npm run typecheck && npm test && npm run build
+
+
+> vastness@0.1.0 typecheck
+> tsc --noEmit
+
+
+> vastness@0.1.0 test
+> tsx --test packages/*/src/*.test.ts services/orchestrator/src/*.test.ts apps/web/src/*.test.ts apps/web/src/m1-prototype/*.test.ts scripts/tests/m1-geometry.test.ts
+
+(node:61345) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ reproducible fixture artifacts describe solid rooms with a traversable shared aperture (414.503334ms)
+(node:61346) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+﹣ actual generated chunk supports a closed circuit, real obstacle blocking, and bounded flat-floor walking (0.538333ms) # SKIP
+(node:61347) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ intention is proximity-gated, causal, persisted, and cannot replace an accepted result (2.341709ms)
+﹣ real generated approach, gated seam, shared destination and return stay walkable for both intentions (0.0755ms) # SKIP
+(node:61348) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ semantic fixture reveals detail on approach and safely resets after Seek (9.753666ms)
+(node:61349) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+﹣ solid and hybrid treatments preserve generated geometry through material and visibility changes (0.432792ms) # Prepare the verified M1 scene.json or set M1_SCENE_PATH
+(node:61350) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ actual Python inventory matches the shared capability schema without claiming GPU validation (49.261ms)
+(node:61351) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ public pose input rejects non-finite positions and impossible pitch (1.171875ms)
+✔ job IDs cannot address parent paths in artifact storage (0.289792ms)
+(node:61352) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ a walker stops at a wall, including a frame large enough to tunnel through it (0.997458ms)
+✔ walk through a 3.2m portal and return, but its solid jamb stops a wider approach (0.157416ms)
+✔ floor is walkable and diagonal wall contact slides without escaping (0.07325ms)
+✔ an unloaded portal barrier stops the walker until removed (0.074667ms)
+(node:61353) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ identity verification rejects truncation and same-size corruption (1.117375ms)
+✔ preparation rejects mismatched sources before creating output (6.371208ms)
+✔ scaled and grounded surface boxes cover triangle interiors without filling gaps (4.851208ms)
+﹣ verified real asset retains navigable AABB recesses and conservatively blocks its surface (0.044375ms) # SKIP
+(node:61354) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ world imports real fixture bytes and exposes connected chunks and immutable artifacts over HTTP (399.505209ms)
+✔ restart restores singleton identity, topology, saved player and original artifacts without fixture sources (24.875792ms)
+✔ invalid player requests return actionable errors and preserve the last saved pose (22.6305ms)
+✔ missing chunks and assets return JSON errors and artifact paths cannot escape storage (18.363959ms)
+✔ missing initial fixture is visible and initialization can recover without restarting (10.733667ms)
+✔ late older pose saves cannot overwrite a newer exit pose, including after restart (13.790667ms)
+(node:61355) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ Mac submits real Python jobs, imports verified bytes and keeps accepted artifacts offline after restart (437.076125ms)
+✔ artifact import rejects hostile URLs, wrong hashes, redirects and invalid formats (15.915042ms)
+✔ Mac rejects malformed worker capabilities at the HTTP boundary (5.003125ms)
+✔ overlapping identical submissions share one worker request and retain provenance (8.479167ms)
+✔ HTTP/1.0 artifact EOF remains safe while file writes apply backpressure (147.673542ms)
+✔ worker transport preserves authentication, JSON bounds and response failure handling (3.477833ms)
+✔ worker response deadline covers a body stalled after headers (15000.602792ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 4
+ℹ todo 0
+ℹ duration_ms 15818.211042
+
+> vastness@0.1.0 build
+> vite build apps/web
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1244 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     4.22 kB │ gzip:   1.76 kB
+dist/assets/index-CjVqJj1w.css      8.39 kB │ gzip:   2.74 kB
+dist/assets/index-BxrjwBEz.js   2,033.43 kB │ gzip: 521.92 kB
+
+(!) Some chunks are larger than 1600 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.29s
+
+> vastness@0.1.0 test:passage
+> tsx --test services/passage-prototype/*.test.ts scripts/tests/passage-geometry.test.ts apps/web/src/generated-passage/*.test.ts
+
+(node:62410) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ Gaussian DC follows PlayCanvas conversion, without a fabricated brightness or emission boost (1.279917ms)
+✔ projection preserves spatially separate red, amber and neutral cues without distant color bleed (0.977458ms)
+✔ minority saturated colors survive a dark majority while neutral vertices remain neutral (2.973792ms)
+✔ nearest representative search crosses cell boundaries and respects the maximum radius (0.143625ms)
+✔ a rare vivid orange patch survives muted brown of the same hue family (8.208ms)
+✔ invalid projection input fails explicitly rather than manufacturing geometry colors (0.207334ms)
+✔ PLY reader validates layout and filters transparent samples before color projection (0.903459ms)
+✔ offline preparation records actual source and untouched mesh hashes and is reproducible (9.889417ms)
+(node:62411) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ walking uses genuine support triangles and returns on the same surface (6.696916ms)
+✔ unsupported gaps cannot be crossed, including a 1mm gap between movement samples (0.313792ms)
+✔ actual walls block the full radius without tunneling through large displacement (1.461083ms)
+✔ swept body clearance catches an obstacle between otherwise clear endpoints (0.297167ms)
+✔ explicit exterior scaffold permits a continuous crossing but cannot provide interior support (2.199667ms)
+✔ low ceilings and radius-offset obstacles fail the original-triangle body check (0.338ms)
+✔ bounded steps work forward and backward, while a tall ledge stays impassable (1.461792ms)
+✔ slope bound and upward source winding govern support (0.449667ms)
+✔ a roof is not an interior, but a supported tunnel has source roof evidence (0.381375ms)
+✔ numerical seam contact crosses and returns independently of frame steps and coordinate phase (97.320916ms)
+✔ real 1mm and 2cm seam gaps remain impassable at every frame step (9.172209ms)
+﹣ saved tunnel raw mesh supports frame-sized seam, route and return replays (0.046875ms) # Set VASTNESS_SEAM_REGRESSION_CANDIDATE_DIR to retained tunnel-1-7 evidence
+(node:62412) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ assessment finds an auditable reversible route on generated floor through an actual opening (40.186125ms)
+✔ an isolated floating overhead patch cannot turn an open floor into a meaningful passage (139.774125ms)
+✔ sealed geometry, absent support and insufficient headroom fail without modifying triangles (6.206792ms)
+✔ a declared uniform transform can make a small real opening human-sized without removing surfaces (21.52225ms)
+✔ a hash-matched conservative proxy can obstruct a route that original triangles demonstrably permit (16.128375ms)
+﹣ verified real tunnel has a reversible generated-floor route, sustained enclosure and genuine approach seam (0.042792ms) # SKIP
+(node:62413) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+✔ accepted artifact identity and idempotent crossing survive service restart; rejected geometry stays closed (55.58075ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 2
+ℹ todo 0
+ℹ duration_ms 365.003125
+
+> vastness@0.1.0 build:passage
+> vite build apps/web --config apps/web/vite.generated-passage.config.ts
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1233 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/generated-passage/generated-passage.html                     1.31 kB │ gzip:   0.68 kB
+dist/generated-passage/assets/generated-passage-DanD5BKd.css      0.65 kB │ gzip:   0.39 kB
+dist/generated-passage/assets/generated-passage-BvitO3Bi.js   1,992.13 kB │ gzip: 514.23 kB
+✓ built in 1.23s

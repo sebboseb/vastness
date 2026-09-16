@@ -1,0 +1,4 @@
+{
+  "issue": "Browser control call timed out while long return was running.",
+  "recovery": "Reconnected to same tab after same return finished; captured existing terminal state. No repeated motion."
+}

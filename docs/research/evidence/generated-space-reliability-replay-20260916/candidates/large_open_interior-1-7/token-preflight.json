@@ -1,0 +1,50 @@
+{
+  "id": "large_open_interior-1-7",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "An enormous empty vaulted hall with a broad entrance and a continuous level floor, widely spaced perimeter columns and clear central space.",
+    "axes": {
+      "scale": "vast",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "mixed"
+    },
+    "representation": "abstract-solid"
+  },
+  "derivation": {
+    "compiler": "lexical-semantic-v1",
+    "cues": {
+      "vast": [
+        "enormous"
+      ],
+      "intimate": [],
+      "sparse": [
+        "empty"
+      ],
+      "dense": [],
+      "open": [],
+      "enclosed": [],
+      "quiet": [],
+      "ominous": [],
+      "luminous": [],
+      "joyful": []
+    },
+    "limitations": [
+      "Rule-based axis extraction; no general language reasoning",
+      "Negation handling is local, not a complete semantic parser",
+      "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+      "Concept is bounded to 600 characters; original input is retained separately"
+    ]
+  },
+  "imagePrompt": "vast scale, sparse forms, mixed space, unspecified atmosphere. An enormous empty vaulted hall with a broad entrance and a continuous level floor, widely spaced perimeter columns and clear central space.. Sculptural architectural diorama, three-quarter view, entire structure isolated on white background, no text.",
+  "tokenCounts": [
+    63,
+    63
+  ],
+  "tokenLimits": [
+    77,
+    77
+  ],
+  "promptLengthPass": true
+}
