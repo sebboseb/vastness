@@ -41,7 +41,7 @@ def main():
     allowed = {'candidate.json', 'world.json', 'world-submitted.json', 'worker-job.json',
                'worker-version.json', 'generation-report.json', 'image-metrics.json',
                'trellis-metrics.json', 'diagnostic.json', 'assessment.json', 'token-preflight.json',
-               'visual-review.json', 'browser.json', 'evidence-manifest.json',
+               'visual-review.json', 'browser.json', 'browser-verification.json', 'evidence-manifest.json',
                'remote-evidence-index.json', 'collector-result.json', 'image-prompt.txt',
                'request.json', 'worker-manifest.json', 'image.log', 'trellis.log',
                'gpu-memory.csv', 'source-rgb.png'}
