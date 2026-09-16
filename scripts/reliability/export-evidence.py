@@ -49,6 +49,8 @@ def main():
         directory = data / 'candidates' / row['id']
         for name in sorted(allowed):
             copy(directory / name, Path('candidates') / row['id'] / name)
+        for source in sorted(directory.glob('assessment-scale*.json')):
+            copy(source, Path('candidates') / row['id'] / source.name)
         for source in sorted((directory / 'browser').glob('*')):
             if source.is_file() and source.suffix in {'.json', '.png', '.txt'}:
                 copy(source, Path('candidates') / row['id'] / 'browser' / source.name)
