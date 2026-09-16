@@ -3,7 +3,7 @@ import {test} from 'node:test';
 import {mkdtemp, mkdir, rm, writeFile, readFile} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
-import {assessMesh, diagnose, isAssessment, assessCandidate, readJson, saveJson, sha256, type Plan} from './assess.ts';
+import {assessMesh, diagnose, isAssessment, assessCandidate, readJson, saveJson, sha256, scaleSensitivity, type Plan} from './assess.ts';
 import {browserPassed, summarizeStudy, wilson} from './summarize.ts';
 import {prepareInspection} from './prepare-inspection.ts';
 import type {TriangleMesh, Vec3} from '../../apps/web/src/generated-passage/navigation.ts';
@@ -59,6 +59,10 @@ test('all declared jobs remain in the denominator and offline success never impl
 });
 test('Wilson interval remains descriptive and nondegenerate for zero successes', () => {
  const interval = wilson(0, 36)!; assert.ok(interval.lower < 1e-10); assert.ok(Math.abs(interval.upper - .0964186) < 1e-6); assert.equal(wilson(0, 0), null);
+});
+test('scale sensitivity reports primary successes lost at a larger scale separately from secondary rescues', () => {
+ assert.deepEqual(scaleSensitivity([{status: 'passed'}, {status: 'failed'}, {status: 'failed'}]), {scaleSensitive: true, secondaryRescue: false});
+ assert.deepEqual(scaleSensitivity([{status: 'failed'}, {status: 'passed'}, {status: 'passed'}]), {scaleSensitive: true, secondaryRescue: true});
 });
 
 test('failed geometry is explicitly inspection-only and assessment errors are never delivered as navigation assessments', async () => {

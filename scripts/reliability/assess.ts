@@ -14,6 +14,7 @@ export type StudyAssessment = {schemaVersion: 1; candidateId: string; source: {f
 export const isAssessment = (attempt: Attempt): attempt is PassageAssessment => !('assessmentError' in attempt);
 export const isResourceBound = (message: string) => /budget|too many|oversized|exceeds|bounds|dimensions/i.test(message);
 export const sha256 = (bytes: Uint8Array) => createHash('sha256').update(bytes).digest('hex');
+export const scaleSensitivity = (attempts: Pick<Attempt, 'status'>[]) => ({scaleSensitive: attempts.slice(1).some(a => a.status !== attempts[0]?.status), secondaryRescue: attempts[0]?.status !== 'passed' && attempts.slice(1).some(a => a.status === 'passed')});
 export async function readJson(path: string): Promise<any | null> {
  try {return JSON.parse(await readFile(path, 'utf8'));} catch (error) {if ((error as NodeJS.ErrnoException).code === 'ENOENT') return null; throw error;}
 }
@@ -98,7 +99,7 @@ export async function assessCandidate(candidate: Candidate, options: {root: stri
  const batch: StudyAssessment = {schemaVersion: 1, candidateId: candidate.id, source, attempts, acceptedAttempt: accepted < 0 ? null : accepted, primaryScale: options.plan.primaryScale, rawTopology: topology};
  await saveJson(output, batch);
  await saveJson(join(directory, 'diagnostic.json'), {schemaVersion: 1, candidateId: candidate.id, sourceSha256: source?.sha256 ?? null, primaryScale: options.plan.primaryScale,
-  rawTopology: topology, scaleSensitive: attempts[0].status !== 'passed' && attempts.slice(1).some(a => a.status === 'passed'), attempts: attempts.map(a => ({scale: a.transform.scale, ...diagnose(a)})), auxiliaryErrors,
+  rawTopology: topology, ...scaleSensitivity(attempts), attempts: attempts.map(a => ({scale: a.transform.scale, ...diagnose(a)})), auxiliaryErrors,
   visualFidelity: 'not-assessed', browserAcceptance: 'not-assessed', limitations: ['Offline geometry is not browser acceptance.', 'A zero sampled-floor count is not a proof that no floor triangle exists between proposal points.', 'Support uses original upward-facing triangles and nine footprint probes; rejected footprints are not literally absent floors.', 'No-exterior-entry and no-route findings describe the unchanged bounded search, not mathematical impossibility.', 'Enclosure criterion is identical for every category, including bridges and courtyards.']});
  return {id: candidate.id, status: 'assessed', attempts: attempts.map(a => ({scale: a.transform.scale, status: a.status, cause: diagnose(a).cause}))};
 }
