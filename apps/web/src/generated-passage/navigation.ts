@@ -36,6 +36,9 @@ export function parsePassageGlb(buffer: ArrayBuffer): TriangleMesh {
 export type PassageBounds = {min: Vec3; max: Vec3};
 type FloorHit = {y: number; triangleId: number; normalY: number};
 type Point2 = [number, number];
+// Point contacts and swept support must use the same projected boundary.
+const FLOOR_BARYCENTRIC_EPSILON = 1e-7;
+const APPROACH_OUTWARD_EPSILON = 1e-9;
 
 function polygonNear(polygon: Vec3[], x: number, z: number, radius: number) {
  let positive = false, negative = false;
@@ -152,18 +155,21 @@ export function createSurfaceNavigator(mesh: TriangleMesh, transform: PassageTra
   const dx = x - approach.seam[0], dz = z - approach.seam[2];
   return [dx * approach.outward[0] + dz * approach.outward[2], dx * -approach.outward[2] + dz * approach.outward[0]];
  }
+ // Barycentric contacts may extend at most two epsilons beyond an axis extent.
+ // Expand candidate lookup only; the unchanged triangle predicate decides support.
+ const supportQueryPadding = 2 * FLOOR_BARYCENTRIC_EPSILON * Math.max(bounds.max[0] - bounds.min[0], bounds.max[2] - bounds.min[2]);
  function floors(x: number, z: number, low = -Infinity, high = Infinity) {
   const hits: FloorHit[] = [];
-  query(x, x, z, z, id => {
+  query(x - supportQueryPadding, x + supportQueryPadding, z - supportQueryPadding, z + supportQueryPadding, id => {
    if (normalY[id] < slopeY || maxY[id] < low - 1e-6 || minY[id] > high + 1e-6) return;
    const w = weights(id, x, z);
-   if (!w || w.some(value => value < -1e-7)) return;
+   if (!w || w.some(value => value < -FLOOR_BARYCENTRIC_EPSILON)) return;
    const y = height(id, w);
    if (y >= low - 1e-6 && y <= high + 1e-6 && !hits.some(hit => Math.abs(hit.y - y) < 0.001)) hits.push({y, triangleId: id, normalY: normalY[id]});
   });
   if (approach && approach.seam[1] >= low && approach.seam[1] <= high) {
    const [outward, lateral] = approachCoordinates(x, z);
-   if (outward >= -1e-9 && outward <= approach.length && Math.abs(lateral) <= approach.width / 2) hits.push({y: approach.seam[1], triangleId: -1, normalY: 1});
+   if (outward >= -APPROACH_OUTWARD_EPSILON && outward <= approach.length && Math.abs(lateral) <= approach.width / 2) hits.push({y: approach.seam[1], triangleId: -1, normalY: 1});
   }
   return hits.sort((a, b) => b.y - a.y);
  }
@@ -209,11 +215,11 @@ export function createSurfaceNavigator(mesh: TriangleMesh, transform: PassageTra
   for (const [dx, dz] of probes) {
    const a: Point2 = [from[0] + dx, from[2] + dz], b: Point2 = [to[0] + dx, to[2] + dz], intervals: Point2[] = [];
    const low = Math.min(from[1], to[1]) - options.eyeHeight - options.maxStep - options.radius * Math.tan(options.maxSlopeDegrees * Math.PI / 180), high = Math.max(from[1], to[1]) - options.eyeHeight + options.maxStep;
-   query(Math.min(a[0], b[0]), Math.max(a[0], b[0]), Math.min(a[1], b[1]), Math.max(a[1], b[1]), id => {
+   query(Math.min(a[0], b[0]) - supportQueryPadding, Math.max(a[0], b[0]) + supportQueryPadding, Math.min(a[1], b[1]) - supportQueryPadding, Math.max(a[1], b[1]) + supportQueryPadding, id => {
     if (normalY[id] < slopeY || minY[id] > high || maxY[id] < low) return;
     const wa = weights(id, a[0], a[1]), wb = weights(id, b[0], b[1]); if (!wa || !wb) return;
     let start = 0, end = 1;
-    const constraints = [...wa.map((v, i): Point2 => [v, wb[i]]), [height(id, wa) - low, height(id, wb) - low] as Point2, [high - height(id, wa), high - height(id, wb)] as Point2];
+    const constraints = [...wa.map((v, i): Point2 => [v + FLOOR_BARYCENTRIC_EPSILON, wb[i] + FLOOR_BARYCENTRIC_EPSILON]), [height(id, wa) - low, height(id, wb) - low] as Point2, [high - height(id, wa), high - height(id, wb)] as Point2];
     for (const [v0, v1] of constraints) {
      if (v0 < -1e-9 && v1 < -1e-9) return;
      if (v0 < 0 && v1 >= 0) start = Math.max(start, -v0 / (v1 - v0));
@@ -223,7 +229,7 @@ export function createSurfaceNavigator(mesh: TriangleMesh, transform: PassageTra
    });
    if (approach && approach.seam[1] >= low && approach.seam[1] <= high) {
     const ca = approachCoordinates(a[0], a[1]), cb = approachCoordinates(b[0], b[1]);
-    const constraints: Point2[] = [[ca[0], cb[0]], [approach.length - ca[0], approach.length - cb[0]], [approach.width / 2 + ca[1], approach.width / 2 + cb[1]], [approach.width / 2 - ca[1], approach.width / 2 - cb[1]]];
+    const constraints: Point2[] = [[ca[0] + APPROACH_OUTWARD_EPSILON, cb[0] + APPROACH_OUTWARD_EPSILON], [approach.length - ca[0], approach.length - cb[0]], [approach.width / 2 + ca[1], approach.width / 2 + cb[1]], [approach.width / 2 - ca[1], approach.width / 2 - cb[1]]];
     let start = 0, end = 1;
     for (const [v0, v1] of constraints) {
      if (v0 < 0 && v1 < 0) {end = -1; break;}
