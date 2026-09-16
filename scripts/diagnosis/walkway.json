@@ -1,0 +1,30 @@
+{
+  "name": "walkway",
+  "predecessor": "coverage",
+  "routeModule": "scripts/diagnosis/routes-coverage.ts",
+  "criteriaModule": "scripts/diagnosis/criteria-walkway.ts",
+  "methodFiles": [
+    "scripts/diagnosis/routes-traced.ts",
+    "scripts/diagnosis/routes-traced.test.ts",
+    "scripts/diagnosis/trace-method.md",
+    "scripts/diagnosis/entry.test.ts",
+    "scripts/diagnosis/entry-method.md",
+    "scripts/diagnosis/criteria-traced.test.ts",
+    "scripts/diagnosis/criteria-trace-method.md",
+    "scripts/diagnosis/runner.test.ts",
+    "scripts/diagnosis/entry-prism.json",
+    "scripts/diagnosis/routes-entry.ts",
+    "scripts/diagnosis/coverage.test.ts",
+    "scripts/diagnosis/coverage-method.md",
+    "scripts/diagnosis/runner-parallel.test.ts",
+    "scripts/diagnosis/coverage.json",
+    "scripts/diagnosis/criteria-traced.ts",
+    "scripts/diagnosis/criteria-walkway.test.ts",
+    "scripts/diagnosis/walkway-method.md",
+    "scripts/diagnosis/walkway.json"
+  ],
+  "rationale": "Two frozen requests explicitly describe a covered walkway between brick walls but the baseline compiler emits unsupported criteria and never searches their geometry.",
+  "hypothesis": "A narrowly matched positive covered-and-walled walkway should compile to the existing enclosed-passage criterion while preserving every physical and modifier requirement. Geometry and coverage search remain unchanged; uncertain or previously supported inputs delegate unchanged.",
+  "changedAcceptance": true,
+  "shards": 3
+}

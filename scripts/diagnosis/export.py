@@ -13,7 +13,9 @@ for row in summary['rows']:
  selected=json.loads((directory/'selected-assessment.json').read_text());expanded=json.loads((directory/'expanded.json').read_text())
  attempts=[expanded]
  if expanded['status']!='passed':attempts.append(json.loads((directory/'legacy.json').read_text()))
- chosen=next((a for a in attempts if a['status']=='passed'),attempts[0])
+ chosen=attempts[-1]
+ expected={**chosen,'routeStrategy':'expanded' if expanded['status']=='passed' else 'legacy-fallback','expandedStatus':expanded['status']}
+ assert selected==expected
  assert selected['status']==row['status']==chosen['status'] and selected['route']==chosen['route']
  for a in [selected,*attempts]:assert a['diagnosisFreeze']==summary['freeze'] and a['sourceSha256']==selected['sourceSha256'] and a['criteria']==selected['criteria']
 manifest=[]
