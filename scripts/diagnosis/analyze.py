@@ -15,15 +15,15 @@ for c in plan['candidates']:
   if not attempt.exists():continue
   attempt=json.loads(attempt.read_text());path=directory/(mode+'.ndjson.gz');digest=hashlib.sha256(path.read_bytes()).hexdigest()
   assert digest==attempt['traceSummary']['sha256']
-  counts=collections.Counter();predicates=collections.Counter();topologies=collections.Counter();prescreens=collections.Counter();seams=collections.Counter();projections=collections.Counter();samples={};visited=set();routes=0;events=0;stagecounts=collections.Counter()
+  counts=collections.Counter();predicates=collections.Counter();topologies=collections.Counter();prescreens=collections.Counter();seams=collections.Counter();projections=collections.Counter();samples={};visited=set();routes=0;events=0;stagecounts=collections.Counter();passes={}
   def sample(key,e):
    if len(samples.setdefault(key,[]))<4:samples[key].append(e)
   with gzip.open(path,'rt') as f:
    for line in f:
-    e=json.loads(line);assert e['seq']==events;events+=1;counts[e['stage']+':'+e['kind']]+=1;stagecounts[e['stage']]+=1
+    e=json.loads(line);assert e['seq']==events;events+=1;counts[e['stage']+':'+e['kind']]+=1;stagecounts[e['stage']]+=1;passname=e.get('pass','single');passcounts=passes.setdefault(passname,collections.Counter());passcounts[e['stage']+':'+e['kind']]+=1
     if e['stage']=='prescreen' and e['kind']=='projection-blocked':
      ys=[p[1] for p in e['triangle']];foot=e['approach']['seam'][1];height=attempt['options']['height']
-     kind='wholly-above-player' if min(ys)>=foot+height else 'wholly-below-feet' if max(ys)<=foot else 'intersects-or-straddles-height-band'
+     kind='wholly-above-player' if min(ys)>=foot+height else 'wholly-below-support-band' if max(ys)<foot-attempt['options']['maxStep'] else 'below-feet-within-support-band' if max(ys)<=foot else 'intersects-or-straddles-height-band'
      projections[kind]+=1;sample('projection:'+kind,e)
     if e['stage']=='prescreen' and e['kind']=='rejected':prescreens[e.get('firstFailure',e.get('reason','unspecified'))]+=1;sample('prescreen:'+e.get('firstFailure',e.get('reason','unspecified')),e)
     if e['stage']=='prescreen' and e['kind'] in ['support-edge-not-found','edge-contact-missing']:prescreens[e['kind']]+=1;sample('prescreen:'+e['kind'],e)
@@ -38,7 +38,7 @@ for c in plan['candidates']:
     if e['stage']=='component' and e['kind']=='node-visited':visited.add(e['nodeId'])
     if e['stage']=='route' and e['kind']=='candidate':routes+=1
   assert events==attempt['traceSummary']['events'] and dict(counts)==attempt['traceSummary']['counts']
-  modes.append({'mode':mode,'status':attempt['status'],'trace':str(path.relative_to(root)), 'sha256':digest,'events':events,'stageCounts':dict(stagecounts),'eventCounts':dict(counts),'projectionFirstBlockerHeights':dict(projections),'prescreenRejections':dict(prescreens),'topologyFirstFailures':dict(topologies),'predicateFailureObservations':dict(predicates),'seamChecks':dict(seams),'distinctVisitedNodes':len(visited),'candidateRoutes':routes,'budgets':attempt['searchDiagnostics']['exhausted'],'samples':samples})
+  modes.append({'mode':mode,'status':attempt['status'],'trace':str(path.relative_to(root)), 'sha256':digest,'events':events,'passes':{name:dict(v) for name,v in passes.items()},'stageCounts':dict(stagecounts),'eventCounts':dict(counts),'projectionFirstBlockerHeights':dict(projections),'prescreenRejections':dict(prescreens),'topologyFirstFailures':dict(topologies),'predicateFailureObservations':dict(predicates),'seamChecks':dict(seams),'distinctVisitedNodes':len(visited),'candidateRoutes':routes,'budgets':attempt['searchDiagnostics']['exhausted'],'samples':samples})
  previous=next(r for r in old['rows'] if r['id']==c['id'])
  rows.append({'id':c['id'],'category':c['category'],'text':c['text'],'selectedScale':selected['transform']['scale'],'status':selected['status'],'previouslyUnresolved':not(previous['selectedPassed']or previous['availableSuccess']),'criteria':intent['criteria'],'modifierWarnings':[e for e in intent['events'] if e['kind']=='scope-warning'],'modes':modes})
 def aggregate(field):
