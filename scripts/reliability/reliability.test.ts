@@ -4,7 +4,7 @@ import {mkdtemp, mkdir, rm, writeFile, readFile} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {assessMesh, diagnose, isAssessment, assessCandidate, readJson, saveJson, sha256, scaleSensitivity, type Plan} from './assess.ts';
-import {browserPassed, summarizeStudy, wilson} from './summarize.ts';
+import {browserPassed, rowsCsv, summarizeRows, summarizeStudy, wilson} from './summarize.ts';
 import {prepareInspection} from './prepare-inspection.ts';
 import type {TriangleMesh, Vec3} from '../../apps/web/src/generated-passage/navigation.ts';
 
@@ -54,7 +54,7 @@ test('all declared jobs remain in the denominator and offline success never impl
   const summary = await summarizeStudy(plan, data); assert.equal(summary.primary.planned, 2); assert.equal(summary.primary.fullPipelinePasses, 0); assert.equal(summary.rows.length, 2); assert.equal(summary.complete, false); assert.equal(summary.rows[0].measurements.generationSeconds, null);
   assert.equal(browserPassed(null, 6, hash), false);
   const browser = {attempts: [{scale: 6, status: 'passed', entry: true, traversal: true, return: true, sourceSha256: hash, evidence: {forward: 'file'}}]};
-  assert.equal(browserPassed(browser, 6, hash), true); assert.equal(browserPassed(browser, 6, 'b'.repeat(64)), false); assert.equal(browserPassed(browser, 10, hash), false);
+  assert.equal(browserPassed(browser, 6, hash), false); assert.equal(browserPassed(browser, 6, 'b'.repeat(64)), false); assert.equal(browserPassed(browser, 10, hash), false);
  } finally {await rm(data, {recursive: true, force: true});}
 });
 test('Wilson interval remains descriptive and nondegenerate for zero successes', () => {
@@ -63,6 +63,24 @@ test('Wilson interval remains descriptive and nondegenerate for zero successes',
 test('scale sensitivity reports primary successes lost at a larger scale separately from secondary rescues', () => {
  assert.deepEqual(scaleSensitivity([{status: 'passed'}, {status: 'failed'}, {status: 'failed'}]), {scaleSensitive: true, secondaryRescue: false});
  assert.deepEqual(scaleSensitivity([{status: 'failed'}, {status: 'passed'}, {status: 'passed'}]), {scaleSensitive: true, secondaryRescue: true});
+});
+test('CSV retains zero route metrics as no accepted route and unknown measurements as empty cells', () => {
+ const csv = rowsCsv([{id: 'sample', category: 'open, "floor"', scales: [{scale: 6, geometryPassed: false, diagnosis: {cause: 'enclosure-missing'}, metrics: {testedFloorPoints: 99, supportedPoints: 70, enclosurePoints: 0, routeLength: 0, routeDisplacement: 0}}], primaryCause: 'enclosure-missing'}]);
+ assert.match(csv, /"open, ""floor"""/); assert.match(csv, /99,70,0,false,no accepted route,0,0,enclosure-missing/);
+ assert.match(csv, /not-assessed,false,not-assessed,not-assessed,not-assessed,not-assessed/);
+});
+test('adjusted browser sensitivity counts unique candidates and retains unresolved secondary testing', () => {
+ const plan: Plan = {studyId: 'test', primaryScale: 6, secondaryScales: [10, 12], candidates: []};
+ const scale = (scale: number, geometryPassed: boolean, browserStatus: string) => ({scale, geometryPassed, browserStatus, fullPipelinePassed: browserStatus === 'passed'});
+ const rows = [
+  {id: 'a', category: 'test', macStatus: 'ready', scales: [scale(6, false, 'not-assessed'), scale(10, true, 'passed'), scale(12, true, 'passed')]},
+  {id: 'b', category: 'test', macStatus: 'ready', scales: [scale(6, true, 'failed'), scale(10, true, 'not-assessed')]},
+  {id: 'c', category: 'test', macStatus: 'ready', scales: [scale(6, false, 'not-assessed')]},
+ ];
+ const summary = summarizeRows(rows, plan);
+ assert.equal(summary.primary.fullPipelinePasses, 0); assert.equal(summary.scaleAdjustedFullPipelinePasses, 1);
+ assert.equal(summary.scaleAdjustedBrowser.eligibleCandidates, 2); assert.equal(summary.scaleAdjustedBrowser.browserTestedCandidates, 2); assert.equal(summary.scaleAdjustedBrowser.unresolvedEligibleCandidates, 1);
+ assert.equal(summary.categories[0].scaleAdjusted.fullPipelinePasses, 1); assert.deepEqual(summary.scaleAdjustedFullPipelineWilson95, wilson(1, 3));
 });
 
 test('failed geometry is explicitly inspection-only and assessment errors are never delivered as navigation assessments', async () => {
