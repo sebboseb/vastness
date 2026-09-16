@@ -22,15 +22,17 @@ def main():
         raise SystemExit('Finish every eligible declared-scale browser trial before export')
     output.mkdir(parents=True, exist_ok=True)
     exported = []
+    recorded = set()
 
     def copy(source, relative):
-        if not source.exists():
+        if not source.exists() or str(relative) in recorded:
             return
         target = output / relative
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(source, target)
         exported.append({'path': str(relative), 'bytes': target.stat().st_size,
                          'sha256': hashlib.sha256(target.read_bytes()).hexdigest()})
+        recorded.add(str(relative))
 
     for source in data.iterdir():
         if source.is_file() and source.suffix in {'.json', '.jsonl', '.csv', '.js', '.mjs', '.log'}:
@@ -69,7 +71,7 @@ def main():
             content = source.read_bytes()
             checksum = hashlib.sha256(content).hexdigest()
             relative = Path('inspection-assets') / (checksum + source.suffix)
-            if kind in {'scene', 'colors'} and not (output / relative).exists():
+            if kind in {'scene', 'colors'}:
                 copy(source, relative)
             assets[kind] = {'retainedPath': str(source), 'bytes': len(content),
                             'sha256': checksum,
