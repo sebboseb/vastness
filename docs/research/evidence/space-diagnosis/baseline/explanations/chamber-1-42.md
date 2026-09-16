@@ -1,0 +1,541 @@
+# chamber-1-42: failed
+
+An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.
+
+Locked scale: 6. Previously unresolved: True.
+
+## Intent compilation
+
+```json
+{
+  "version": 1,
+  "supported": true,
+  "required": [
+    "enclosed-passage",
+    "doorway-crossing"
+  ],
+  "evidence": [
+    {
+      "kind": "enclosed-passage",
+      "source": "text",
+      "cue": "chamber"
+    },
+    {
+      "kind": "doorway-crossing",
+      "source": "text",
+      "cue": "doorway"
+    }
+  ],
+  "ambiguities": [
+    "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement."
+  ],
+  "requirements": {
+    "openSky": false,
+    "covered": true,
+    "opposingWalls": false,
+    "minimumWidth": 2.4
+  },
+  "physical": {
+    "radius": 0.3,
+    "height": 1.8,
+    "eyeHeight": 1.65,
+    "maxStep": 0.25,
+    "maxSlopeDegrees": 35,
+    "minimumDisplacement": 3,
+    "reversible": true
+  }
+}
+```
+
+Modifier-scope warnings: 1. Exact normalized spans and every compiler decision are in `../candidates/chamber-1-42/intent-trace.json`. Warnings are hypotheses, not automatic corrections.
+
+## expanded: failed
+
+Complete trace: `.runtime/space-diagnosis/baseline/candidates/chamber-1-42/expanded.ndjson.gz`. SHA256 `dfd8fbacba450d7fbcfd239f9fd1c37b80fd7838b7d525a654f5eeccf35302d7`; 18,317 contiguous events.
+
+| Stage | Observed outcome |
+|---|---|
+| Generated support | 1383 valid sampled nodes; 2229 floor tests |
+| Proposals | 220 eligible; 192 attempted; 28 omitted by selection; 0 selected but not attempted |
+| Pre-screen | {"source-projection": 187, "support-edge-not-found": 5}; passed 0 |
+| Components | 0 reached-entry discoveries, 0 distinct visited nodes; not exhaustive mesh decomposition |
+| Routes | 0 candidates; maximum connected displacement 0.0000m |
+| Topology | {} |
+| Final seam | {} |
+| Exhausted bounds | ["entry-proposals"] |
+
+First-failure predicate observations (later short-circuited checks remain untested):
+
+```json
+{}
+```
+
+Representative exact rejection events follow. They are an index into the complete trace, not a replacement for it.
+
+### projection:wholly-below-support-band
+
+```json
+[
+  {
+    "seq": 9245,
+    "stage": "prescreen",
+    "kind": "projection-blocked",
+    "proposalId": "0:0",
+    "triangleId": 114628,
+    "triangle": [
+      [
+        -2.9911755323410034,
+        1.7922768294811249,
+        -2.787836730480194
+      ],
+      [
+        -2.9917101860046387,
+        1.819489449262619,
+        -2.7863223552703857
+      ],
+      [
+        -2.9900357723236084,
+        1.7938034534454346,
+        -2.8087695837020874
+      ]
+    ],
+    "clippedApproachCoordinates": [
+      [
+        0.002,
+        0.1797343169813966
+      ],
+      [
+        0.002271273732185275,
+        0.17896595001220694
+      ],
+      [
+        0.002,
+        0.18260265192337166
+      ]
+    ],
+    "approach": {
+      "seam": [
+        -2.9894389122724534,
+        6.001104273714782,
+        -2.607356405258179
+      ],
+      "outward": [
+        -1,
+        0,
+        0
+      ],
+      "width": 1.2,
+      "length": 2
+    },
+    "contactBoundaryTolerance": 0.002
+  }
+]
+```
+
+### prescreen:source-projection
+
+```json
+[
+  {
+    "seq": 9246,
+    "stage": "prescreen",
+    "kind": "rejected",
+    "proposalId": "0:0",
+    "firstFailure": "source-projection",
+    "unexecuted": [
+      "body-prescreen",
+      "final-seam"
+    ]
+  }
+]
+```
+
+### projection:intersects-or-straddles-height-band
+
+```json
+[
+  {
+    "seq": 9288,
+    "stage": "prescreen",
+    "kind": "projection-blocked",
+    "proposalId": "1195:1",
+    "triangleId": 1046734,
+    "triangle": [
+      [
+        2.9351075291633606,
+        1.6138223111629486,
+        1.4160207509994507
+      ],
+      [
+        2.9349764585494995,
+        1.640097051858902,
+        1.4150216281414032
+      ],
+      [
+        2.9341800212860107,
+        1.641152411699295,
+        1.3925058245658875
+      ]
+    ],
+    "clippedApproachCoordinates": [
+      [
+        0.01643818467855418,
+        -0.3766228437423713
+      ],
+      [
+        0.016307114064693096,
+        -0.3776219666004188
+      ],
+      [
+        0.015510676801204326,
+        -0.40013777017593455
+      ]
+    ],
+    "approach": {
+      "seam": [
+        2.9186693444848064,
+        1.117647485868675,
+        1.792643594741822
+      ],
+      "outward": [
+        1,
+        0,
+        0
+      ],
+      "width": 1.2,
+      "length": 2
+    },
+    "contactBoundaryTolerance": 0.002
+  }
+]
+```
+
+### projection:below-feet-within-support-band
+
+```json
+[
+  {
+    "seq": 9335,
+    "stage": "prescreen",
+    "kind": "projection-blocked",
+    "proposalId": "1357:3",
+    "triangleId": 1605866,
+    "triangle": [
+      [
+        -0.7850541472434998,
+        5.878642916679382,
+        2.998629570007324
+      ],
+      [
+        -0.7848840951919556,
+        5.901297211647034,
+        2.9992815256118774
+      ],
+      [
+        -0.8084457814693451,
+        5.878603935241699,
+        2.9986626505851746
+      ]
+    ],
+    "clippedApproachCoordinates": [
+      [
+        0.002,
+        0.5817955990339693
+      ],
+      [
+        0.0021740451455110055,
+        0.5817502021789553
+      ],
+      [
+        0.002,
+        0.5883764141598787
+      ]
+    ],
+    "approach": {
+      "seam": [
+        -0.20313389301300022,
+        6.0046863253276035,
+        2.9971074804663664
+      ],
+      "outward": [
+        0,
+        0,
+        1
+      ],
+      "width": 1.2,
+      "length": 2
+    },
+    "contactBoundaryTolerance": 0.002
+  }
+]
+```
+
+### prescreen:support-edge-not-found
+
+```json
+[
+  {
+    "seq": 9399,
+    "stage": "prescreen",
+    "kind": "support-edge-not-found",
+    "proposalId": "605:3",
+    "eye": [
+      -2.6031338930130006,
+      2.75738850879821,
+      -0.20735640525817844
+    ],
+    "outward": [
+      0,
+      0,
+      1
+    ],
+    "inside": 1.4999999999999987,
+    "outside": 1.5249999999999986,
+    "maximumScan": 1.5,
+    "unexecuted": [
+      "projection",
+      "body-prescreen",
+      "final-seam"
+    ]
+  }
+]
+```
+
+### projection:wholly-above-player
+
+```json
+[
+  {
+    "seq": 9530,
+    "stage": "prescreen",
+    "kind": "projection-blocked",
+    "proposalId": "1354:3",
+    "triangleId": 420590,
+    "triangle": [
+      [
+        -1.1963714361190796,
+        5.5733184814453125,
+        2.988490104675293
+      ],
+      [
+        -1.205668866634369,
+        5.584140479564667,
+        2.9893121123313904
+      ],
+      [
+        -1.2125865519046783,
+        5.574557304382324,
+        2.9881301522254944
+      ]
+    ],
+    "clippedApproachCoordinates": [
+      [
+        0.0719181135296818,
+        0.5932375431060795
+      ],
+      [
+        0.07251599821746625,
+        0.6
+      ],
+      [
+        0.07176799662901891,
+        0.6
+      ]
+    ],
+    "approach": {
+      "seam": [
+        -0.6031338930130001,
+        1.116842921842047,
+        2.916571991145611
+      ],
+      "outward": [
+        0,
+        0,
+        1
+      ],
+      "width": 1.2,
+      "length": 2
+    },
+    "contactBoundaryTolerance": 0.002
+  }
+]
+```
+
+Read any stage or proposal from the full trace:
+
+```sh
+python3 scripts/diagnosis/trace-query.py baseline chamber-1-42 --mode expanded --stage prescreen --limit 20
+```
+
+Historical assessment parity: `True`. Only timing/harness provenance was excluded from comparison.
+
+## legacy: failed
+
+Complete trace: `.runtime/space-diagnosis/baseline/candidates/chamber-1-42/legacy.ndjson.gz`. SHA256 `1bbacdb11712705ff0c3e312946e0a00b0f5760302a16fef5e080b752b3f92a8`; 15,628 contiguous events.
+
+| Stage | Observed outcome |
+|---|---|
+| Generated support | 1383 valid sampled nodes; 2229 floor tests |
+| Proposals | 199 eligible; 48 attempted; 151 omitted by selection; 0 selected but not attempted |
+| Pre-screen | {"source-projection": 48}; passed 0 |
+| Components | 0 reached-entry discoveries, 0 distinct visited nodes; not exhaustive mesh decomposition |
+| Routes | 0 candidates; maximum connected displacement 0.0000m |
+| Topology | {} |
+| Final seam | {} |
+| Exhausted bounds | ["entry-proposals"] |
+
+First-failure predicate observations (later short-circuited checks remain untested):
+
+```json
+{}
+```
+
+Representative exact rejection events follow. They are an index into the complete trace, not a replacement for it.
+
+### projection:wholly-below-support-band
+
+```json
+[
+  {
+    "seq": 13311,
+    "stage": "prescreen",
+    "kind": "projection-blocked",
+    "proposalId": "0:0",
+    "triangleId": 114628,
+    "triangle": [
+      [
+        -2.9911755323410034,
+        1.7922768294811249,
+        -2.787836730480194
+      ],
+      [
+        -2.9917101860046387,
+        1.819489449262619,
+        -2.7863223552703857
+      ],
+      [
+        -2.9900357723236084,
+        1.7938034534454346,
+        -2.8087695837020874
+      ]
+    ],
+    "clippedApproachCoordinates": [
+      [
+        0.002,
+        0.1797343169813966
+      ],
+      [
+        0.002271273732185275,
+        0.17896595001220694
+      ],
+      [
+        0.002,
+        0.18260265192337166
+      ]
+    ],
+    "approach": {
+      "seam": [
+        -2.9894389122724534,
+        6.001104273714782,
+        -2.607356405258179
+      ],
+      "outward": [
+        -1,
+        0,
+        0
+      ],
+      "width": 1.2,
+      "length": 2
+    },
+    "contactBoundaryTolerance": 0.002
+  }
+]
+```
+
+### prescreen:source-projection
+
+```json
+[
+  {
+    "seq": 13312,
+    "stage": "prescreen",
+    "kind": "rejected",
+    "proposalId": "0:0",
+    "firstFailure": "source-projection",
+    "unexecuted": [
+      "body-prescreen",
+      "final-seam"
+    ]
+  }
+]
+```
+
+### projection:below-feet-within-support-band
+
+```json
+[
+  {
+    "seq": 13948,
+    "stage": "prescreen",
+    "kind": "projection-blocked",
+    "proposalId": "76:1",
+    "triangleId": 2276612,
+    "triangle": [
+      [
+        3.00204598903656,
+        5.982173144817352,
+        -2.821201801300049
+      ],
+      [
+        2.996219515800476,
+        6.002312064170837,
+        -2.8211633563041687
+      ],
+      [
+        2.9961708784103394,
+        6.002207636833191,
+        -2.7979542016983032
+      ]
+    ],
+    "clippedApproachCoordinates": [
+      [
+        0.0062289461493483245,
+        -0.4138453960418702
+      ],
+      [
+        0.002,
+        -0.41381749205764146
+      ],
+      [
+        0.002,
+        -0.397111609553047
+      ]
+    ],
+    "approach": {
+      "seam": [
+        2.9958170428872117,
+        6.00269430441677,
+        -2.4073564052581786
+      ],
+      "outward": [
+        1,
+        0,
+        0
+      ],
+      "width": 1.2,
+      "length": 2
+    },
+    "contactBoundaryTolerance": 0.002
+  }
+]
+```
+
+Read any stage or proposal from the full trace:
+
+```sh
+python3 scripts/diagnosis/trace-query.py baseline chamber-1-42 --mode legacy --stage prescreen --limit 20
+```
+
+Historical assessment parity: `True`. Only timing/harness provenance was excluded from comparison.
+
+A stage with zero events was not reached or was short-circuited. It does not establish that its geometry predicate would fail. All original source artifacts remain unchanged.

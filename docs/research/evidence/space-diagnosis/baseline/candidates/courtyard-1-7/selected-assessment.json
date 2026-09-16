@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "7616b93737b806eddb845bcee9d60cc1c29989cd2d7bd7ec9ebeefcd3134b305",
+  "status": "failed",
+  "transform": {
+    "scale": 10,
+    "yaw": 0,
+    "position": [
+      0,
+      2.548496127128601,
+      0
+    ]
+  },
+  "options": {
+    "radius": 0.3,
+    "height": 1.8,
+    "eyeHeight": 1.65,
+    "maxStep": 0.25,
+    "maxSlopeDegrees": 35,
+    "sampleStep": 0.05,
+    "contactTolerance": 0.015
+  },
+  "bounds": {
+    "min": [
+      -5.004262328147888,
+      0,
+      -5.009357929229736
+    ],
+    "max": [
+      5.000338554382324,
+      5.211349129676819,
+      5.0127846002578735
+    ]
+  },
+  "route": [],
+  "samples": [],
+  "entry": null,
+  "approachDirection": null,
+  "seam": null,
+  "approach": null,
+  "approachStart": null,
+  "approachVerified": false,
+  "shellComparison": null,
+  "metrics": {
+    "sourceTriangles": 1544768,
+    "sourceVertices": 772418,
+    "indexReferences": 1925358,
+    "indexCells": 2704,
+    "indexPitch": 0.2,
+    "gridPitch": 0.2,
+    "testedFloorPoints": 2496,
+    "supportedPoints": 1405,
+    "enclosurePoints": 936,
+    "entryCandidates": 48,
+    "rejected": {
+      "unsupported-footprint": 1001,
+      "body-or-head-obstruction": 90,
+      "scaffold-overlaps-source-footprint": 7
+    },
+    "routeLength": 0,
+    "routeDisplacement": 0,
+    "continuousEnclosedDistance": 0,
+    "maximumConnectedDisplacement": 9.234717104492159,
+    "buildMs": 221.48483299999498,
+    "assessmentMs": 8124.087041999999
+  },
+  "reasons": [
+    "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+  ],
+  "limitations": [
+    "Synthetic-frozen bounded proposal search; failure does not prove geometry irreparable.",
+    "Original triangles and corrected navigator are unchanged. Scaffolding excludes the entire source XZ projection beyond a 2mm contact-boundary tolerance.",
+    "Witnesses are geometric operational definitions, not semantic recognition. Courtyards must be within 0.75m of source minimum height; bridge-like detached roof slabs can be geometrically indistinguishable from decks.",
+    "Exterior proposals require a clear projected corridor all the way beyond the global bounds, so scaffolding cannot seed an internal hole. This can conservatively reject exteriors behind detached source fragments.",
+    "Doorway flank rays are limited to 3m on each side; broader apertures may be missed. Deck edges must be within 2.5m on each side.",
+    "Topology witnesses use 0.2m route vertices and original ray triangle IDs; dense samples independently preserve support/body checks. Legacy Enclosure fields retain their old 6m roof range on dense samples; tall roofs are recorded in topologyWitnesses.",
+    "Enclosure-point count covers queried witness nodes only. Component count is reached-entry components, not an exhaustive mesh decomposition."
+  ],
+  "criteria": {
+    "version": 1,
+    "supported": true,
+    "required": [
+      "open-courtyard",
+      "doorway-crossing"
+    ],
+    "evidence": [
+      {
+        "kind": "open-courtyard",
+        "source": "text",
+        "cue": "courtyard"
+      },
+      {
+        "kind": "doorway-crossing",
+        "source": "text",
+        "cue": "gate"
+      }
+    ],
+    "ambiguities": [
+      "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement."
+    ],
+    "requirements": {
+      "openSky": true,
+      "covered": false,
+      "opposingWalls": true,
+      "minimumWidth": 2.4
+    },
+    "physical": {
+      "radius": 0.3,
+      "height": 1.8,
+      "eyeHeight": 1.65,
+      "maxStep": 0.25,
+      "maxSlopeDegrees": 35,
+      "minimumDisplacement": 3,
+      "reversible": true
+    }
+  },
+  "topologyWitnesses": [],
+  "searchDiagnostics": {
+    "mode": "legacy",
+    "budgets": {
+      "gridCells": 20000,
+      "supportedNodes": 20000,
+      "layersPerColumn": 32,
+      "legacyEntries": 48,
+      "expandedEntries": 192,
+      "edges": 80000,
+      "candidateRoutes": 4096,
+      "topologyQueries": 160000,
+      "approachBuilds": 8,
+      "topologyIndexReferences": 24000000
+    },
+    "exhausted": [
+      "candidate-routes"
+    ],
+    "componentsExplored": 1,
+    "entriesTested": 12,
+    "edgesTested": 3261,
+    "candidateRoutes": 4097,
+    "topologyQueries": 12653,
+    "approachBuilds": 0,
+    "routeCrossesBehindSeam": false
+  },
+  "diagnosisFreeze": "2efc00a4787de0000075de48b31b351e3c92aff1a6b3e208810cee3381d56ba4",
+  "evaluationMode": "legacy",
+  "elapsedMs": 8124.166375000001,
+  "traceSummary": {
+    "events": 363218,
+    "uncompressedBytes": 106897996,
+    "counts": {
+      "result:begin": 1,
+      "result:assessment-start": 1,
+      "support:grid": 1,
+      "support:column": 2704,
+      "support:rejected": 1091,
+      "support:node": 1405,
+      "proposal:direction-excluded": 5505,
+      "proposal:legacy-body-sample": 914,
+      "proposal:eligible": 48,
+      "proposal:direction-unexecuted": 67,
+      "proposal:selected": 48,
+      "proposal:attempt": 12,
+      "prescreen:edge-support-probe": 544,
+      "prescreen:projection-start": 12,
+      "prescreen:projection-blocked": 7,
+      "prescreen:rejected": 7,
+      "prescreen:body-sample": 198,
+      "prescreen:passed": 5,
+      "component:entry-search": 5,
+      "component:node-visited": 4820,
+      "edge:tested": 3261,
+      "component:node-discovered": 4834,
+      "route:candidate": 4096,
+      "topology:ray": 12653,
+      "topology:node-feature": 972,
+      "topology:node-predicate": 155803,
+      "topology:sustained-sample": 155803,
+      "topology:sustained-result": 4096,
+      "topology:route-rejected": 4096,
+      "topology:broad-feature": 168,
+      "route:candidate-not-executed": 1,
+      "budget:exhausted": 1,
+      "proposal:not-attempted": 36,
+      "result:assessment-complete": 1,
+      "result:historical-parity": 1,
+      "result:complete": 1
+    },
+    "sha256": "9f4488cb3d6f14da27ee2cab52257c4901e9f00fd54c50c038c0ab3a59298736",
+    "parity": {
+      "passed": true,
+      "previous": "d0212b1960a1eb618e2746569004a3006657e2ca76c6def71b30509b060a75fb"
+    }
+  },
+  "routeStrategy": "legacy-fallback",
+  "expandedStatus": "failed"
+}

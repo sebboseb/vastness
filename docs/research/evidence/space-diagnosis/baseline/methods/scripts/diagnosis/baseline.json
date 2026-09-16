@@ -1,0 +1,10 @@
+{
+ "name":"baseline",
+ "predecessor":"interpretation-replay",
+ "routeModule":"scripts/diagnosis/routes-traced.ts",
+ "criteriaModule":"scripts/diagnosis/criteria-traced.ts",
+ "methodFiles":["scripts/diagnosis/routes-traced.test.ts","scripts/diagnosis/trace-method.md","scripts/diagnosis/criteria-traced.test.ts","scripts/diagnosis/criteria-trace-method.md","scripts/diagnosis/runner.test.ts","scripts/diagnosis/baseline.json"],
+ "rationale":"Observational instrumentation only; preserve prior corrected decisions and all selected scales.",
+ "hypothesis":"Rejection causes can be made explicit without changing verdicts, route/witness evidence, proposal/search counters or budgets.",
+ "changedAcceptance":false
+}
