@@ -1,0 +1,135 @@
+{
+  "backend": "sdxl-turbo-trellis-intention-v3",
+  "imageModel": {
+    "repo": "stabilityai/sdxl-turbo",
+    "revision": "71153311d3dbb46851df1931d3ca6e939de83304",
+    "files": [
+      {
+        "path": "LICENSE.md",
+        "bytes": 11852,
+        "sha256": null
+      },
+      {
+        "path": "README.md",
+        "bytes": 5883,
+        "sha256": null
+      },
+      {
+        "path": "model_index.json",
+        "bytes": 685,
+        "sha256": null
+      },
+      {
+        "path": "scheduler/scheduler_config.json",
+        "bytes": 459,
+        "sha256": null
+      },
+      {
+        "path": "text_encoder/config.json",
+        "bytes": 565,
+        "sha256": null
+      },
+      {
+        "path": "text_encoder/model.fp16.safetensors",
+        "bytes": 246144152,
+        "sha256": "660c6f5b1abae9dc498ac2d21e1347d2abdb0cf6c0c0c8576cd796491d9a6cdd"
+      },
+      {
+        "path": "text_encoder_2/config.json",
+        "bytes": 575,
+        "sha256": null
+      },
+      {
+        "path": "text_encoder_2/model.fp16.safetensors",
+        "bytes": 1389382176,
+        "sha256": "ec310df2af79c318e24d20511b601a591ca8cd4f1fce1d8dff822a356bcdb1f4"
+      },
+      {
+        "path": "tokenizer/merges.txt",
+        "bytes": 524619,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer/special_tokens_map.json",
+        "bytes": 586,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer/tokenizer_config.json",
+        "bytes": 704,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer/vocab.json",
+        "bytes": 1059962,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer_2/merges.txt",
+        "bytes": 524619,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer_2/special_tokens_map.json",
+        "bytes": 460,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer_2/tokenizer_config.json",
+        "bytes": 855,
+        "sha256": null
+      },
+      {
+        "path": "tokenizer_2/vocab.json",
+        "bytes": 1059962,
+        "sha256": null
+      },
+      {
+        "path": "unet/config.json",
+        "bytes": 1776,
+        "sha256": null
+      },
+      {
+        "path": "unet/diffusion_pytorch_model.fp16.safetensors",
+        "bytes": 5135149760,
+        "sha256": "48fa46161a745f48d4054df3fe13804ee255486bca893403b60373c188fd1bdb"
+      },
+      {
+        "path": "vae/config.json",
+        "bytes": 607,
+        "sha256": null
+      },
+      {
+        "path": "vae/diffusion_pytorch_model.fp16.safetensors",
+        "bytes": 167335342,
+        "sha256": "02ee4bd18e5d16e7fe5fc5b85b4aefa2cba6db28897f674226c9d6ddd2f34f06"
+      }
+    ]
+  },
+  "packages": {
+    "diffusers": "0.30.3",
+    "accelerate": "0.34.2",
+    "psutil": "6.1.0"
+  },
+  "imageParameters": {
+    "steps": 4,
+    "guidanceScale": 0,
+    "width": 512,
+    "height": 512
+  },
+  "rejectedAlphaModel": {
+    "model": "u2netp",
+    "url": "https://github.com/danielgatis/rembg/releases/download/v0.0.0/u2netp.onnx",
+    "bytes": 4574861,
+    "md5": "8e83ca70e441ab06c318d82300c84806",
+    "sha256": "309c8469258dda742793dce0ebea8e6dd393174f89934733ecc8b14c76f4ddd8"
+  },
+  "alpha": {
+    "method": "white-matte-or-full-frame-v1",
+    "opaqueMaxMinChannel": 224,
+    "transparentMinChannel": 236,
+    "fullFrameAtForegroundFraction": 0.98,
+    "transparentPaddingPixels": 16,
+    "rejectAtForegroundFraction": 0.01
+  }
+}
