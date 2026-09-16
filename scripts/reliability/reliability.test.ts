@@ -4,7 +4,7 @@ import {mkdtemp, mkdir, rm, writeFile, readFile} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {assessMesh, diagnose, isAssessment, assessCandidate, readJson, saveJson, sha256, scaleSensitivity, type Plan} from './assess.ts';
-import {browserPassed, summarizeStudy, wilson} from './summarize.ts';
+import {browserPassed, rowsCsv, summarizeStudy, wilson} from './summarize.ts';
 import {prepareInspection} from './prepare-inspection.ts';
 import type {TriangleMesh, Vec3} from '../../apps/web/src/generated-passage/navigation.ts';
 
@@ -63,6 +63,11 @@ test('Wilson interval remains descriptive and nondegenerate for zero successes',
 test('scale sensitivity reports primary successes lost at a larger scale separately from secondary rescues', () => {
  assert.deepEqual(scaleSensitivity([{status: 'passed'}, {status: 'failed'}, {status: 'failed'}]), {scaleSensitive: true, secondaryRescue: false});
  assert.deepEqual(scaleSensitivity([{status: 'failed'}, {status: 'passed'}, {status: 'passed'}]), {scaleSensitive: true, secondaryRescue: true});
+});
+test('CSV retains zero route metrics as no accepted route and unknown measurements as empty cells', () => {
+ const csv = rowsCsv([{id: 'sample', category: 'open, "floor"', scales: [{scale: 6, geometryPassed: false, diagnosis: {cause: 'enclosure-missing'}, metrics: {testedFloorPoints: 99, supportedPoints: 70, enclosurePoints: 0, routeLength: 0, routeDisplacement: 0}}], primaryCause: 'enclosure-missing'}]);
+ assert.match(csv, /"open, ""floor"""/); assert.match(csv, /99,70,0,false,no accepted route,0,0,enclosure-missing/);
+ assert.match(csv, /not-assessed,false,not-assessed,not-assessed,not-assessed,not-assessed/);
 });
 
 test('failed geometry is explicitly inspection-only and assessment errors are never delivered as navigation assessments', async () => {

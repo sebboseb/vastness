@@ -14,6 +14,19 @@ export function browserPassed(browser: any, scale: number, sourceSha256: string 
  const a = browser?.attempts?.find((a: any) => a.scale === scale);
  return Boolean(sourceSha256 && a?.status === 'passed' && a.entry === true && a.traversal === true && a.return === true && a.sourceSha256 === sourceSha256 && a.evidence);
 }
+export function rowsCsv(rows: any[], primaryScale = 6) {
+ const headers = ['id', 'category', 'promptVariant', 'seed', 'gpuStatus', 'macStatus', 'generationSeconds', 'peakWholeDeviceVRAMMiB', 'glbBytes', 'plyBytes', 'sourceTriangles', 'rawUpwardFaces', 'primarySampledFloorHits', 'primaryValidFootprints', 'primaryEnclosurePoints', 'primaryAcceptedReversibleRoute', 'primaryRouteStatus', 'primaryRouteLengthMetres', 'primaryRouteDisplacementMetres', 'primaryCause', 'primaryBrowserStatus', 'primaryFullPipelinePassed', 'scale10GeometryStatus', 'scale10BrowserStatus', 'scale12GeometryStatus', 'scale12BrowserStatus', 'scaleSensitive', 'secondaryRescue'];
+ const cell = (value: unknown) => {const string = value == null ? '' : String(value); return /[",\r\n]/.test(string) ? '"' + string.replaceAll('"', '""') + '"' : string;};
+ const records = rows.map(row => {
+  const primary = row.scales.find((a: any) => a.scale === primaryScale), ten = row.scales.find((a: any) => a.scale === 10), twelve = row.scales.find((a: any) => a.scale === 12);
+  const peaks = Object.values(row.measurements?.wholeDeviceMemory?.devices ?? {}).map((d: any) => d.sampledPeakMiB).filter((n): n is number => typeof n === 'number' && Number.isFinite(n));
+  const geometry = (attempt: any) => !attempt?.diagnosis ? 'not-assessed' : attempt.geometryPassed ? 'passed' : 'failed';
+  return [row.id, row.category, row.promptVariant, row.seed, row.gpuStatus, row.macStatus, row.measurements?.generationSeconds, peaks.length ? Math.max(...peaks) : null, row.measurements?.glbBytes, row.measurements?.plyBytes, row.rawTopology?.triangles, row.rawTopology?.upwardFaces,
+   primary?.metrics?.testedFloorPoints, primary?.metrics?.supportedPoints, primary?.metrics?.enclosurePoints, primary?.geometryPassed ?? false, primary?.metrics ? primary.geometryPassed ? 'accepted reversible route' : 'no accepted route' : 'assessment unavailable', primary?.metrics?.routeLength, primary?.metrics?.routeDisplacement,
+   row.primaryCause, primary?.browserStatus ?? 'not-assessed', primary?.fullPipelinePassed ?? false, geometry(ten), ten?.browserStatus ?? 'not-assessed', geometry(twelve), twelve?.browserStatus ?? 'not-assessed', row.scaleSensitive, row.secondaryRescue];
+ });
+ return [headers, ...records].map(record => record.map(cell).join(',')).join('\r\n') + '\r\n';
+}
 export function summarizeRows(rows: any[], plan: Plan) {
  const distribution = (values: unknown[]) => {
   const numbers = values.filter((n): n is number => typeof n === 'number' && Number.isFinite(n)).sort((a, b) => a - b);
@@ -75,5 +88,6 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
  const root = resolve(value('--root', '.')), data = resolve(value('--data', join(root, '.runtime/reliability'))), plan = await readJson(value('--plan', join(root, 'scripts/reliability/plan.json')));
  const summary = await summarizeStudy(plan, data); await saveJson(join(data, 'summary.json'), summary);
  await writeFile(join(data, 'rows.jsonl'), summary.rows.map(row => JSON.stringify(row)).join('\n') + '\n');
+ await writeFile(join(data, 'rows.csv'), rowsCsv(summary.rows, plan.primaryScale));
  console.log(JSON.stringify({...summary, rows: undefined}, null, 2));
 }
