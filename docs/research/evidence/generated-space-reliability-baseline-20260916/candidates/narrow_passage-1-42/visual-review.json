@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-passage-with-unrequested-person",
+  "sourceObservation": "Image depicts tall masonry walls, a distant narrow door and a person added despite the clear-space request.",
+  "generatedObservation": "Default coarse overview is box-like with a mostly solid visible exterior. Unlike seed7, no scale yields an accepted sustained enclosed route; exact intrinsic topology cause remains uncertain.",
+  "evidence": [
+    "source-rgb.png",
+    "browser/scale6-overview-clean.png",
+    "diagnostic.json"
+  ]
+}

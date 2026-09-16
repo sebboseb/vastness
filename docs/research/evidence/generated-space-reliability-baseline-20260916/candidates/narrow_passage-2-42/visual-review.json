@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-narrow-brick-corridor",
+  "sourceObservation": "Source shows parallel brick walls around a narrow flat walkway with a bright end opening.",
+  "generatedObservation": "Coarse exterior overview is box-like and does not expose the depicted passage from this angle. All scales fail the bounded accepted-route search; a single exterior view does not establish that the interior is sealed.",
+  "evidence": [
+    "source-rgb.png",
+    "browser/scale6-overview-clean.png",
+    "diagnostic.json"
+  ]
+}

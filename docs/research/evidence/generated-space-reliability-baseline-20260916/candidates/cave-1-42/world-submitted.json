@@ -1,0 +1,63 @@
+{
+  "id": "intent-9dfb5a7c-0711-4aad-a454-4834fde830a3",
+  "createdAt": "2026-09-16T09:19:37.980Z",
+  "rawIntent": {
+    "text": "A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "enclosed"
+    },
+    "representation": "abstract-solid"
+  },
+  "derivation": {
+    "compiler": "lexical-semantic-v1",
+    "cues": {
+      "vast": [],
+      "intimate": [],
+      "sparse": [
+        "empty"
+      ],
+      "dense": [],
+      "open": [],
+      "enclosed": [
+        "cave",
+        "chamber"
+      ],
+      "quiet": [],
+      "ominous": [],
+      "luminous": [],
+      "joyful": []
+    },
+    "limitations": [
+      "Rule-based axis extraction; no general language reasoning",
+      "Negation handling is local, not a complete semantic parser",
+      "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+      "Concept is bounded to 600 characters; original input is retained separately"
+    ]
+  },
+  "status": "requested",
+  "jobId": "intent-9dfb5a7c-0711-4aad-a454-4834fde830a3",
+  "request": {
+    "id": "intent-9dfb5a7c-0711-4aad-a454-4834fde830a3",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "events": [
+    {
+      "type": "intent-recorded",
+      "at": "2026-09-16T09:19:37.980Z"
+    },
+    {
+      "type": "constraints-derived",
+      "at": "2026-09-16T09:19:37.980Z"
+    }
+  ]
+}

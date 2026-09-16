@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "corridor-1-42",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "returned: motion, error or persistence work remains",
+        "Return did not reach scaffold mode",
+        "Return endpoint is outside .03m of approach start",
+        "Return does not append exactly one visit to the forward visit sequence",
+        "Observed visits are not a prefix of persisted visits",
+        "Missing distinct new crossed/returned visit pair"
+      ],
+      "evidenceHashes": {
+        "assessment": "8d2a9745aeaec40ad59686d120d435768d857816d0c17ea7ae4fc7f2c5958835",
+        "forward": "4a737e1b9a5090e54443d6311fc7ea094be3d52c923320ae1ee8373c4a4edbda",
+        "returned": "cfa23215c70bb9eb5cbe25c7f35aca4586f6d8a575f470f8b33e651d917a53df",
+        "persisted": "d9154f0e6244113bd446fbf1c8cf08da4881e7b7cbdc7c312fff5ad250d64079"
+      },
+      "forwardEndpointDistance": 0.00029941806561361954,
+      "returnEndpointDistance": 1.5030467185727872
+    },
+    {
+      "scale": 10,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "95526780849e512c60be550ae5d230f594c8af805d01c72f0091920d15171922",
+        "forward": "9ed4b8a7a7d8b586cd36b7c78774e1b4f2445b10816af058d5eb3bc3aed04388",
+        "returned": "ba59684e8420f15bb8f756e80978b9dfdd40a6e282130543ba63d7948f812dec",
+        "persisted": "19b37bc40ccec71289697c1631b69bba8f18954d509b2ba667585a7ae4f9390a"
+      },
+      "forwardEndpointDistance": 0,
+      "returnEndpointDistance": 0.0009000000000218833
+    },
+    {
+      "scale": 12,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "a8751ff5cdc18ef685ce8a92c345ba27cd881c5d16e1455171ee272c6eb0a17c",
+        "forward": "a29a27e7b94cf18d40344a800b2dceaf88650307325251fe7e63ce0f2054d031",
+        "returned": "f6a5e0840a5f296e9505f5fdde18e1e4103e99db125daed2ab448614844b69f3",
+        "persisted": "89c90cab51b4d880764428ecea52368a1c334872699d24edff82b87e89381b14"
+      },
+      "forwardEndpointDistance": 0.0053548171421044545,
+      "returnEndpointDistance": 0.0016500000000307935
+    }
+  ]
+}

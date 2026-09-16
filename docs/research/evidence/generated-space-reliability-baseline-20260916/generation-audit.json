@@ -1,0 +1,619 @@
+{
+  "capturedAt": "2026-09-16T09:55:03.374648+00:00",
+  "studyId": "generated-space-reliability-20260916",
+  "candidateCount": 36,
+  "distinctJobIds": 36,
+  "generationSuccesses": 36,
+  "macReady": 36,
+  "hashVerifiedFiles": 432,
+  "exactRequestPromptTokensVerified": 36,
+  "promptTruncations": 0,
+  "runnerProvenance": {
+    "runnerSha256": "6984ce10b8c633d3c4185f5d67fe6179bf8e94acf703a5326ada42ef453a9fba",
+    "runnerGitCommit": "5fa2530a88c3a4a9b27147231288b437682240e0",
+    "planSha256": "e081fb1593b7faabd380fbbea492237cddff56128d418de94a46c64a79fad90e",
+    "compilerSha256": "a0580746461d9e1915e983ea3807124c1e5ed5dbba90d9926440ec0692e49e85",
+    "collectorSha256": "5caccbe7ba54f66f73f1bc14b3dff1c92451719de123389328bd3c1f3238d337"
+  },
+  "generationSeconds": {
+    "min": 64.48222607899515,
+    "median": 75.67016737900121,
+    "max": 159.51133239100454,
+    "sum": 2910.425466715009
+  },
+  "sampledDevicePeakMiB": 23338.0,
+  "totalPlyGlbBytes": 2915114081,
+  "idleWorker": {
+    "pendingJobs": [],
+    "gpu": "name, memory.used [MiB], memory.total [MiB]\nNVIDIA GeForce RTX 3090, 1639 MiB, 24576 MiB\n",
+    "computeProcesses": "pid, process_name, used_gpu_memory [MiB]\n",
+    "linuxDisk": {
+      "total": 1081101176832,
+      "used": 53910810624,
+      "free": 972198010880
+    },
+    "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+  },
+  "rows": [
+    {
+      "candidate": "large_open_interior-1-7",
+      "jobId": "intent-c55fe14c-883c-4acb-9e7f-dcbeaa1ad5ca",
+      "seed": 7,
+      "generationSeconds": 159.51133239100454,
+      "sampledPeakMiB": 17349.0,
+      "tokenCounts": [
+        63,
+        63
+      ],
+      "artifactBytes": {
+        "collider.glb": 15282260,
+        "scene.ply": 43180960
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "tunnel-1-7",
+      "jobId": "intent-80ee3fa8-9011-455a-bf8d-a37c3e130d5b",
+      "seed": 7,
+      "generationSeconds": 70.18354256900056,
+      "sampledPeakMiB": 17171.0,
+      "tokenCounts": [
+        60,
+        60
+      ],
+      "artifactBytes": {
+        "collider.glb": 13634316,
+        "scene.ply": 41607712
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "doorway-1-7",
+      "jobId": "intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425",
+      "seed": 7,
+      "generationSeconds": 68.64225567500398,
+      "sampledPeakMiB": 16564.0,
+      "tokenCounts": [
+        59,
+        59
+      ],
+      "artifactBytes": {
+        "collider.glb": 14308356,
+        "scene.ply": 36576800
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "narrow_passage-1-7",
+      "jobId": "intent-1c865fea-e0f7-4711-9292-48aa4492f947",
+      "seed": 7,
+      "generationSeconds": 72.2287581510027,
+      "sampledPeakMiB": 17702.0,
+      "tokenCounts": [
+        60,
+        60
+      ],
+      "artifactBytes": {
+        "collider.glb": 24188820,
+        "scene.ply": 45746464
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "chamber-1-7",
+      "jobId": "intent-c5cda12d-76af-4b8b-b88c-eccc7719dd26",
+      "seed": 7,
+      "generationSeconds": 90.11204043700127,
+      "sampledPeakMiB": 20077.0,
+      "tokenCounts": [
+        58,
+        58
+      ],
+      "artifactBytes": {
+        "collider.glb": 30127576,
+        "scene.ply": 73159713
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "cave-1-7",
+      "jobId": "intent-a6868007-efd5-433a-9061-f36ccde7d864",
+      "seed": 7,
+      "generationSeconds": 77.58481451699481,
+      "sampledPeakMiB": 19204.0,
+      "tokenCounts": [
+        60,
+        60
+      ],
+      "artifactBytes": {
+        "collider.glb": 22919080,
+        "scene.ply": 54528800
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "corridor-1-7",
+      "jobId": "intent-55e2d591-69a3-4910-91b9-c5df74cf01dc",
+      "seed": 7,
+      "generationSeconds": 73.14392725299695,
+      "sampledPeakMiB": 16195.0,
+      "tokenCounts": [
+        58,
+        58
+      ],
+      "artifactBytes": {
+        "collider.glb": 13326084,
+        "scene.ply": 26913184
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "courtyard-1-7",
+      "jobId": "intent-04c10b05-bc48-4dd0-b38a-9781ef431ad3",
+      "seed": 7,
+      "generationSeconds": 84.77033285600191,
+      "sampledPeakMiB": 23338.0,
+      "tokenCounts": [
+        57,
+        57
+      ],
+      "artifactBytes": {
+        "collider.glb": 27807040,
+        "scene.ply": 60741280
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "bridge-1-7",
+      "jobId": "intent-cc01fd39-0b1d-49b3-8c83-851c3cb8678a",
+      "seed": 7,
+      "generationSeconds": 74.14889771000162,
+      "sampledPeakMiB": 17838.0,
+      "tokenCounts": [
+        62,
+        62
+      ],
+      "artifactBytes": {
+        "collider.glb": 15468952,
+        "scene.ply": 50411808
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "large_open_interior-1-42",
+      "jobId": "intent-b1764ccd-cc0d-42fd-baca-9a23011d0305",
+      "seed": 42,
+      "generationSeconds": 67.21277312200255,
+      "sampledPeakMiB": 16308.0,
+      "tokenCounts": [
+        63,
+        63
+      ],
+      "artifactBytes": {
+        "collider.glb": 13399956,
+        "scene.ply": 34439968
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "bridge-1-42",
+      "jobId": "intent-ac3e6278-91f7-4ea0-826f-712434efa055",
+      "seed": 42,
+      "generationSeconds": 65.44191685799888,
+      "sampledPeakMiB": 15529.0,
+      "tokenCounts": [
+        62,
+        62
+      ],
+      "artifactBytes": {
+        "collider.glb": 10124028,
+        "scene.ply": 28401568
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "doorway-1-42",
+      "jobId": "intent-097b6f72-50f1-456f-9360-78b93105a73b",
+      "seed": 42,
+      "generationSeconds": 91.945961575002,
+      "sampledPeakMiB": 21155.0,
+      "tokenCounts": [
+        59,
+        59
+      ],
+      "artifactBytes": {
+        "collider.glb": 39929224,
+        "scene.ply": 88039201
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "narrow_passage-1-42",
+      "jobId": "intent-067ca302-ef70-480d-a667-68fe0cbd8d35",
+      "seed": 42,
+      "generationSeconds": 102.79582064200076,
+      "sampledPeakMiB": 22727.0,
+      "tokenCounts": [
+        60,
+        60
+      ],
+      "artifactBytes": {
+        "collider.glb": 38328904,
+        "scene.ply": 110040737
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "cave-1-42",
+      "jobId": "intent-9dfb5a7c-0711-4aad-a454-4834fde830a3",
+      "seed": 42,
+      "generationSeconds": 71.7302464769964,
+      "sampledPeakMiB": 17567.0,
+      "tokenCounts": [
+        60,
+        60
+      ],
+      "artifactBytes": {
+        "collider.glb": 19092988,
+        "scene.ply": 45065376
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "courtyard-1-42",
+      "jobId": "intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b",
+      "seed": 42,
+      "generationSeconds": 75.18075865999708,
+      "sampledPeakMiB": 17905.0,
+      "tokenCounts": [
+        57,
+        57
+      ],
+      "artifactBytes": {
+        "collider.glb": 25889040,
+        "scene.ply": 50533664
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "corridor-1-42",
+      "jobId": "intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99",
+      "seed": 42,
+      "generationSeconds": 74.0422591059978,
+      "sampledPeakMiB": 17480.0,
+      "tokenCounts": [
+        58,
+        58
+      ],
+      "artifactBytes": {
+        "collider.glb": 25938024,
+        "scene.ply": 48124832
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "tunnel-1-42",
+      "jobId": "intent-75f21af9-274b-4869-9577-28999d937b28",
+      "seed": 42,
+      "generationSeconds": 81.36546384500252,
+      "sampledPeakMiB": 19382.0,
+      "tokenCounts": [
+        60,
+        60
+      ],
+      "artifactBytes": {
+        "collider.glb": 21862156,
+        "scene.ply": 68085281
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "chamber-1-42",
+      "jobId": "intent-de172b53-3529-42f6-b4d4-b6df0779e568",
+      "seed": 42,
+      "generationSeconds": 97.57427841699973,
+      "sampledPeakMiB": 22193.0,
+      "tokenCounts": [
+        58,
+        58
+      ],
+      "artifactBytes": {
+        "collider.glb": 41060224,
+        "scene.ply": 104481057
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "courtyard-2-7",
+      "jobId": "intent-7ee56718-e7ad-4578-b2c1-d28ea7c60da7",
+      "seed": 7,
+      "generationSeconds": 70.26409212600265,
+      "sampledPeakMiB": 17199.0,
+      "tokenCounts": [
+        62,
+        62
+      ],
+      "artifactBytes": {
+        "collider.glb": 13327308,
+        "scene.ply": 41899296
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "bridge-2-7",
+      "jobId": "intent-b594160c-b12e-44af-9695-d5fa3c60684e",
+      "seed": 7,
+      "generationSeconds": 67.01230608000333,
+      "sampledPeakMiB": 16218.0,
+      "tokenCounts": [
+        61,
+        61
+      ],
+      "artifactBytes": {
+        "collider.glb": 10783768,
+        "scene.ply": 33650080
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "tunnel-2-7",
+      "jobId": "intent-a9d26274-03b2-4a00-9bd1-be926b6c87b3",
+      "seed": 7,
+      "generationSeconds": 78.15387166599976,
+      "sampledPeakMiB": 18808.0,
+      "tokenCounts": [
+        60,
+        60
+      ],
+      "artifactBytes": {
+        "collider.glb": 17419744,
+        "scene.ply": 57995168
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "corridor-2-7",
+      "jobId": "intent-4ba9ab8f-3fbc-4529-82b7-55843b4b5040",
+      "seed": 7,
+      "generationSeconds": 64.48222607899515,
+      "sampledPeakMiB": 15456.0,
+      "tokenCounts": [
+        58,
+        58
+      ],
+      "artifactBytes": {
+        "collider.glb": 12648472,
+        "scene.ply": 27265696
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "narrow_passage-2-7",
+      "jobId": "intent-80e66e4f-2132-44a3-8601-5a0a22051ee5",
+      "seed": 7,
+      "generationSeconds": 75.39647712199803,
+      "sampledPeakMiB": 18263.0,
+      "tokenCounts": [
+        60,
+        60
+      ],
+      "artifactBytes": {
+        "collider.glb": 22475752,
+        "scene.ply": 53521312
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "chamber-2-7",
+      "jobId": "intent-4f3db60b-8939-481c-b8bb-6f8d19ec3286",
+      "seed": 7,
+      "generationSeconds": 75.9438576360044,
+      "sampledPeakMiB": 18334.0,
+      "tokenCounts": [
+        59,
+        59
+      ],
+      "artifactBytes": {
+        "collider.glb": 28767112,
+        "scene.ply": 54158880
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "cave-2-7",
+      "jobId": "intent-164b48a7-ccb4-41a6-abe2-c118491bdb3e",
+      "seed": 7,
+      "generationSeconds": 82.07551497699751,
+      "sampledPeakMiB": 19396.0,
+      "tokenCounts": [
+        59,
+        59
+      ],
+      "artifactBytes": {
+        "collider.glb": 20287024,
+        "scene.ply": 68263713
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "large_open_interior-2-7",
+      "jobId": "intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983",
+      "seed": 7,
+      "generationSeconds": 93.74813696699857,
+      "sampledPeakMiB": 21331.0,
+      "tokenCounts": [
+        60,
+        60
+      ],
+      "artifactBytes": {
+        "collider.glb": 28569828,
+        "scene.ply": 98708129
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "doorway-2-7",
+      "jobId": "intent-79c22dd8-039b-446e-a28b-b017bf48ee5c",
+      "seed": 7,
+      "generationSeconds": 64.72332124500099,
+      "sampledPeakMiB": 15245.0,
+      "tokenCounts": [
+        60,
+        60
+      ],
+      "artifactBytes": {
+        "collider.glb": 13884036,
+        "scene.ply": 25846944
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "large_open_interior-2-42",
+      "jobId": "intent-24a42e86-197e-4cd1-a9a5-6627ceea7388",
+      "seed": 42,
+      "generationSeconds": 84.8346585870022,
+      "sampledPeakMiB": 19009.0,
+      "tokenCounts": [
+        60,
+        60
+      ],
+      "artifactBytes": {
+        "collider.glb": 32724772,
+        "scene.ply": 72171809
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "doorway-2-42",
+      "jobId": "intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2",
+      "seed": 42,
+      "generationSeconds": 71.16667463599879,
+      "sampledPeakMiB": 17038.0,
+      "tokenCounts": [
+        60,
+        60
+      ],
+      "artifactBytes": {
+        "collider.glb": 17341836,
+        "scene.ply": 40500128
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "corridor-2-42",
+      "jobId": "intent-6405f041-e587-4ea4-9701-e0f8f3ced639",
+      "seed": 42,
+      "generationSeconds": 69.00505364599667,
+      "sampledPeakMiB": 16516.0,
+      "tokenCounts": [
+        58,
+        58
+      ],
+      "artifactBytes": {
+        "collider.glb": 19132312,
+        "scene.ply": 36198176
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "chamber-2-42",
+      "jobId": "intent-79a8d1ec-2343-4492-af86-afdc16a76c4a",
+      "seed": 42,
+      "generationSeconds": 83.92963533599686,
+      "sampledPeakMiB": 19581.0,
+      "tokenCounts": [
+        59,
+        59
+      ],
+      "artifactBytes": {
+        "collider.glb": 36972272,
+        "scene.ply": 70328737
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "narrow_passage-2-42",
+      "jobId": "intent-c51a5de0-80bb-4922-b019-681f2618e8bb",
+      "seed": 42,
+      "generationSeconds": 74.59922857300262,
+      "sampledPeakMiB": 18061.0,
+      "tokenCounts": [
+        60,
+        60
+      ],
+      "artifactBytes": {
+        "collider.glb": 26480124,
+        "scene.ply": 51824032
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "courtyard-2-42",
+      "jobId": "intent-aa874065-02b6-40fe-9aa8-7d954776c8b8",
+      "seed": 42,
+      "generationSeconds": 83.29690489800123,
+      "sampledPeakMiB": 19112.0,
+      "tokenCounts": [
+        62,
+        62
+      ],
+      "artifactBytes": {
+        "collider.glb": 30572428,
+        "scene.ply": 71671329
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "cave-2-42",
+      "jobId": "intent-7f95f53b-4060-4980-99bb-2f337ff8ba88",
+      "seed": 42,
+      "generationSeconds": 90.41818812499696,
+      "sampledPeakMiB": 21932.0,
+      "tokenCounts": [
+        59,
+        59
+      ],
+      "artifactBytes": {
+        "collider.glb": 33864988,
+        "scene.ply": 76543393
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "bridge-2-42",
+      "jobId": "intent-10a3cf02-3d09-4837-933f-b0aa040d8d35",
+      "seed": 42,
+      "generationSeconds": 89.22147864100407,
+      "sampledPeakMiB": 20596.0,
+      "tokenCounts": [
+        61,
+        61
+      ],
+      "artifactBytes": {
+        "collider.glb": 29678536,
+        "scene.ply": 82538273
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    },
+    {
+      "candidate": "tunnel-2-42",
+      "jobId": "intent-006d2630-6cd8-441d-a6b0-4387a59866fc",
+      "seed": 42,
+      "generationSeconds": 94.5384601140031,
+      "sampledPeakMiB": 20696.0,
+      "tokenCounts": [
+        60,
+        60
+      ],
+      "artifactBytes": {
+        "collider.glb": 39032728,
+        "scene.ply": 95300513
+      },
+      "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670"
+    }
+  ],
+  "limitations": [
+    "Generation and Mac preparation success are not geometry or browser acceptance.",
+    "100ms sampled whole-device VRAM includes other processes and may miss peaks."
+  ]
+}

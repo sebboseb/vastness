@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-vaulted-hall",
+  "sourceObservation": "SDXL image visibly contains vaulted ceiling, arched perimeter, a floor and distant door; central platform conflicts with continuous empty floor.",
+  "generatedObservation": "Scale10 browser view is coarse enclosed architecture with irregular boundary voids. Original generated triangles support the complete verified route; this does not establish a complete faithful hall.",
+  "evidence": [
+    "source-rgb.png",
+    "browser/scale10-forward.png",
+    "browser/scale6-overview.png"
+  ]
+}

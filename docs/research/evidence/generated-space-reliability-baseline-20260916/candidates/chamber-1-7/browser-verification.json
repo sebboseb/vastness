@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "chamber-1-7",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/chamber-1-7.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "2ea429acca46be2de65cc9b22b838b9c3641fa619f163ba68199b4c7abb1aa63",
+        "forward": "9e1cb78df711e658a78daf2b08695679a9f091a98e475a8fb728e1e2e06a9089",
+        "returned": "9e1cb78df711e658a78daf2b08695679a9f091a98e475a8fb728e1e2e06a9089"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 10,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 12,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    }
+  ]
+}

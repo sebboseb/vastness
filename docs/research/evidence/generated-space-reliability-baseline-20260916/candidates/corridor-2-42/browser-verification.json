@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "corridor-2-42",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/corridor-2-42.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "7beb7459673ef0e383829f42a673264a0dcaa13ddf93816535b38b8de4617cca",
+        "forward": "9fadd3e441003699b2aef05ae40aba8b26e8c236b4e8354b49c6c31677b7231b",
+        "returned": "9fadd3e441003699b2aef05ae40aba8b26e8c236b4e8354b49c6c31677b7231b"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 10,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/corridor-2-42-scale10.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "926d0ee235dac63323a1647af8d65735d466c815efc128717a215450d7cac865",
+        "forward": "9ce08d137348ae4177fe1b9a6606dcc88ff4917b7ecf198f109504de4ed1d04e",
+        "returned": "9ce08d137348ae4177fe1b9a6606dcc88ff4917b7ecf198f109504de4ed1d04e"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 12,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/corridor-2-42-scale12.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "68331710bfcd699e1e0d073f05b51afc9cfb9132242c94a56dccdbedac1c470a",
+        "forward": "2f27bb7cbb2c3631cc879290243cd91257baab965643d4c9ab252cd8500bb93d",
+        "returned": "2f27bb7cbb2c3631cc879290243cd91257baab965643d4c9ab252cd8500bb93d"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    }
+  ]
+}

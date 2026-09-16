@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-closeup-doorway",
+  "sourceObservation": "Image shows a close-up doorway with foreground floor; background is uniformly bright and side walls fill much of frame.",
+  "generatedObservation": "Default coarse overview appears box-like with doorway-shaped relief on its visible exterior. This single view does not prove a sealed interior; measured supported graph exists but no accepted sustained enclosed route.",
+  "evidence": [
+    "source-rgb.png",
+    "browser/scale6-overview-clean.png",
+    "diagnostic.json"
+  ]
+}

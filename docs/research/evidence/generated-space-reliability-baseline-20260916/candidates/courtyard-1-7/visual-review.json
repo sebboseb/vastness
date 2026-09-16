@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-open-courtyard",
+  "sourceObservation": "Image shows parallel masonry sides and repeated open archways, paving, and open sky.",
+  "generatedObservation": "Coarse geometry becomes a roofed box/diorama on generated support, changing the open-sky identity. Primary exterior seam rejected offline; larger scales encounter browser tolerance mismatch.",
+  "evidence": [
+    "source-rgb.png",
+    "diagnostic.json",
+    "browser"
+  ]
+}

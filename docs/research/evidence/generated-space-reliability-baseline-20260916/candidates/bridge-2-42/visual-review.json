@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "covered-wooden-bridge-without-clear-landings",
+  "sourceObservation": "Source depicts a raised roofed wooden bridge over water with railings and supporting piers, but no clear walk-on landings at either end.",
+  "generatedObservation": "Coarse view preserves the raised roofed structure over a block-like generated base. Scale10 completes a6.08m supported browser round trip at roughly3.13m floor height; endpoint view is close to the railing and faces void. Primary fails; scale12 browser entry fails.",
+  "evidence": [
+    "source-rgb.png",
+    "browser",
+    "diagnostic.json"
+  ]
+}

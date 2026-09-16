@@ -1,0 +1,2630 @@
+[
+  {
+    "caseId": "large_open_interior-1-7",
+    "worldId": "intent-c55fe14c-883c-4acb-9e7f-dcbeaa1ad5ca",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-c55fe14c-883c-4acb-9e7f-dcbeaa1ad5ca/scene.json",
+        "bytes": 2578237,
+        "sha256": "3ff11c233920b9b9dfb5841ca3c75a631dd52cd1ee88f224edfddd3907a39f13",
+        "exportedPath": "inspection-assets/3ff11c233920b9b9dfb5841ca3c75a631dd52cd1ee88f224edfddd3907a39f13.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-7/colors.json",
+        "bytes": 895381,
+        "sha256": "9941393b13f633966e2f585980d83f0e1d36f0e7d8ad0a85b8b937ebeb536a53",
+        "exportedPath": "inspection-assets/9941393b13f633966e2f585980d83f0e1d36f0e7d8ad0a85b8b937ebeb536a53.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-7/collider.glb",
+        "bytes": 15282260,
+        "sha256": "b6315fe62b32374bbf3db71538e16b19b8d342eaa975417e0eb1594222048457",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-7/scene.ply",
+        "bytes": 43180960,
+        "sha256": "2cc4926182e909828c408dfd29af340a02248e67b3a5c78846e8fe24514c6710",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-7/assessment-scale6.json",
+        "bytes": 2774,
+        "sha256": "641eed06ee36b09abbe757e19bcf266df6e1ab6c97ed264828851002f5e78599",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "large_open_interior-1-7-scale10",
+    "worldId": "intent-c55fe14c-883c-4acb-9e7f-dcbeaa1ad5ca",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-c55fe14c-883c-4acb-9e7f-dcbeaa1ad5ca/scene.json",
+        "bytes": 2578237,
+        "sha256": "3ff11c233920b9b9dfb5841ca3c75a631dd52cd1ee88f224edfddd3907a39f13",
+        "exportedPath": "inspection-assets/3ff11c233920b9b9dfb5841ca3c75a631dd52cd1ee88f224edfddd3907a39f13.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-7/colors.json",
+        "bytes": 895381,
+        "sha256": "9941393b13f633966e2f585980d83f0e1d36f0e7d8ad0a85b8b937ebeb536a53",
+        "exportedPath": "inspection-assets/9941393b13f633966e2f585980d83f0e1d36f0e7d8ad0a85b8b937ebeb536a53.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-7/collider.glb",
+        "bytes": 15282260,
+        "sha256": "b6315fe62b32374bbf3db71538e16b19b8d342eaa975417e0eb1594222048457",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-7/scene.ply",
+        "bytes": 43180960,
+        "sha256": "2cc4926182e909828c408dfd29af340a02248e67b3a5c78846e8fe24514c6710",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-7/assessment-scale10.json",
+        "bytes": 236665,
+        "sha256": "26b9bb676659feeeccc37e7dd3d3af23bd036f149afd1220285ee80c89f809e5",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "large_open_interior-1-7-scale12",
+    "worldId": "intent-c55fe14c-883c-4acb-9e7f-dcbeaa1ad5ca",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-c55fe14c-883c-4acb-9e7f-dcbeaa1ad5ca/scene.json",
+        "bytes": 2578237,
+        "sha256": "3ff11c233920b9b9dfb5841ca3c75a631dd52cd1ee88f224edfddd3907a39f13",
+        "exportedPath": "inspection-assets/3ff11c233920b9b9dfb5841ca3c75a631dd52cd1ee88f224edfddd3907a39f13.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-7/colors.json",
+        "bytes": 895381,
+        "sha256": "9941393b13f633966e2f585980d83f0e1d36f0e7d8ad0a85b8b937ebeb536a53",
+        "exportedPath": "inspection-assets/9941393b13f633966e2f585980d83f0e1d36f0e7d8ad0a85b8b937ebeb536a53.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-7/collider.glb",
+        "bytes": 15282260,
+        "sha256": "b6315fe62b32374bbf3db71538e16b19b8d342eaa975417e0eb1594222048457",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-7/scene.ply",
+        "bytes": 43180960,
+        "sha256": "2cc4926182e909828c408dfd29af340a02248e67b3a5c78846e8fe24514c6710",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-7/assessment-scale12.json",
+        "bytes": 226738,
+        "sha256": "92082ffebc3d37fd7985c0be07c87868cfc81f2d70908fc48292f57b6199c62c",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "tunnel-1-7",
+    "worldId": "intent-80ee3fa8-9011-455a-bf8d-a37c3e130d5b",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-80ee3fa8-9011-455a-bf8d-a37c3e130d5b/scene.json",
+        "bytes": 2220267,
+        "sha256": "5e920db6e2ece16a92db529a395055850c2c4df68bd7ffad7d0f9899a87a5635",
+        "exportedPath": "inspection-assets/5e920db6e2ece16a92db529a395055850c2c4df68bd7ffad7d0f9899a87a5635.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-7/colors.json",
+        "bytes": 770701,
+        "sha256": "68a7005a7beb3de21960039ace7002108dd84a48fb8f3ad62c8f9a99b130b14b",
+        "exportedPath": "inspection-assets/68a7005a7beb3de21960039ace7002108dd84a48fb8f3ad62c8f9a99b130b14b.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-7/collider.glb",
+        "bytes": 13634316,
+        "sha256": "03ea4b0ea0d52c31609a350bac8362969bde7ee7141a8542bacd3038af67cffe",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-7/scene.ply",
+        "bytes": 41607712,
+        "sha256": "bce58a1f9c1fcaf64c9fbd4f3671abda09732190483ef16b5159863fb52ede38",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-7/assessment-scale6.json",
+        "bytes": 2778,
+        "sha256": "24262209afeec87399d25a5f8ca16c0034f34bd2440640647a520b65941158b4",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "tunnel-1-7-scale10",
+    "worldId": "intent-80ee3fa8-9011-455a-bf8d-a37c3e130d5b",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-80ee3fa8-9011-455a-bf8d-a37c3e130d5b/scene.json",
+        "bytes": 2220267,
+        "sha256": "5e920db6e2ece16a92db529a395055850c2c4df68bd7ffad7d0f9899a87a5635",
+        "exportedPath": "inspection-assets/5e920db6e2ece16a92db529a395055850c2c4df68bd7ffad7d0f9899a87a5635.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-7/colors.json",
+        "bytes": 770701,
+        "sha256": "68a7005a7beb3de21960039ace7002108dd84a48fb8f3ad62c8f9a99b130b14b",
+        "exportedPath": "inspection-assets/68a7005a7beb3de21960039ace7002108dd84a48fb8f3ad62c8f9a99b130b14b.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-7/collider.glb",
+        "bytes": 13634316,
+        "sha256": "03ea4b0ea0d52c31609a350bac8362969bde7ee7141a8542bacd3038af67cffe",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-7/scene.ply",
+        "bytes": 41607712,
+        "sha256": "bce58a1f9c1fcaf64c9fbd4f3671abda09732190483ef16b5159863fb52ede38",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-7/assessment-scale10.json",
+        "bytes": 220138,
+        "sha256": "caf894ee4cac909bda07353f73058d96ede9dc7547719de4cf5588ec500fa2c9",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "tunnel-1-7-scale12",
+    "worldId": "intent-80ee3fa8-9011-455a-bf8d-a37c3e130d5b",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-80ee3fa8-9011-455a-bf8d-a37c3e130d5b/scene.json",
+        "bytes": 2220267,
+        "sha256": "5e920db6e2ece16a92db529a395055850c2c4df68bd7ffad7d0f9899a87a5635",
+        "exportedPath": "inspection-assets/5e920db6e2ece16a92db529a395055850c2c4df68bd7ffad7d0f9899a87a5635.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-7/colors.json",
+        "bytes": 770701,
+        "sha256": "68a7005a7beb3de21960039ace7002108dd84a48fb8f3ad62c8f9a99b130b14b",
+        "exportedPath": "inspection-assets/68a7005a7beb3de21960039ace7002108dd84a48fb8f3ad62c8f9a99b130b14b.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-7/collider.glb",
+        "bytes": 13634316,
+        "sha256": "03ea4b0ea0d52c31609a350bac8362969bde7ee7141a8542bacd3038af67cffe",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-7/scene.ply",
+        "bytes": 41607712,
+        "sha256": "bce58a1f9c1fcaf64c9fbd4f3671abda09732190483ef16b5159863fb52ede38",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-7/assessment-scale12.json",
+        "bytes": 220341,
+        "sha256": "4b03f0c2aa97ab2a0bd9d74d199700ab3f201dbd14b96d21cbaafb06d8b9ccda",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "doorway-1-7",
+    "worldId": "intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425/scene.json",
+        "bytes": 2229884,
+        "sha256": "df048d33a98683ce0531fb9aeabcda66b6219f70ff909764baa54e1f49987351",
+        "exportedPath": "inspection-assets/df048d33a98683ce0531fb9aeabcda66b6219f70ff909764baa54e1f49987351.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-1-7/colors.json",
+        "bytes": 799124,
+        "sha256": "615b5497a6facbedf1798e259c39789484fb40b972d4d78548106003a5614472",
+        "exportedPath": "inspection-assets/615b5497a6facbedf1798e259c39789484fb40b972d4d78548106003a5614472.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-1-7/collider.glb",
+        "bytes": 14308356,
+        "sha256": "3b2e6b1800b0f9565cf699eea62f1af945e8ce64f453f6360ad2e96770d92810",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-1-7/scene.ply",
+        "bytes": 36576800,
+        "sha256": "21d0edd07b098b72a2cfb9a249886ce06a052d1eed564d84625a278a3a509097",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-1-7/assessment-scale6.json",
+        "bytes": 2787,
+        "sha256": "dae1054baf0878d31347f04122b68bd1b3d06c512fd129f0211e4986c49ca5a7",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "narrow_passage-1-7",
+    "worldId": "intent-1c865fea-e0f7-4711-9292-48aa4492f947",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-1c865fea-e0f7-4711-9292-48aa4492f947/scene.json",
+        "bytes": 2861563,
+        "sha256": "bfa415cde415bbaa60c82bfa021d1dcca05463a43d9e87aa29a66cc2a0b03441",
+        "exportedPath": "inspection-assets/bfa415cde415bbaa60c82bfa021d1dcca05463a43d9e87aa29a66cc2a0b03441.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-7/colors.json",
+        "bytes": 983156,
+        "sha256": "8b3ff3cc7412bafd451d07fb7ff9adb16f85825977951ebc7865da648fb6c359",
+        "exportedPath": "inspection-assets/8b3ff3cc7412bafd451d07fb7ff9adb16f85825977951ebc7865da648fb6c359.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-7/collider.glb",
+        "bytes": 24188820,
+        "sha256": "75e8c7130f57c8786a79c28cc81daa1007039c13ca4ae61bfd97bd4a027c0774",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-7/scene.ply",
+        "bytes": 45746464,
+        "sha256": "045470697efb988eb6d24c57dceebb6d57a1012528733f3a11b79dd23cdd2d96",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-7/assessment-scale6.json",
+        "bytes": 244109,
+        "sha256": "af1cb0bdfafafe4dd8d0343b206a50fada16465a6ffcc4b700636bacc8ae8310",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "narrow_passage-1-7-scale10",
+    "worldId": "intent-1c865fea-e0f7-4711-9292-48aa4492f947",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-1c865fea-e0f7-4711-9292-48aa4492f947/scene.json",
+        "bytes": 2861563,
+        "sha256": "bfa415cde415bbaa60c82bfa021d1dcca05463a43d9e87aa29a66cc2a0b03441",
+        "exportedPath": "inspection-assets/bfa415cde415bbaa60c82bfa021d1dcca05463a43d9e87aa29a66cc2a0b03441.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-7/colors.json",
+        "bytes": 983156,
+        "sha256": "8b3ff3cc7412bafd451d07fb7ff9adb16f85825977951ebc7865da648fb6c359",
+        "exportedPath": "inspection-assets/8b3ff3cc7412bafd451d07fb7ff9adb16f85825977951ebc7865da648fb6c359.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-7/collider.glb",
+        "bytes": 24188820,
+        "sha256": "75e8c7130f57c8786a79c28cc81daa1007039c13ca4ae61bfd97bd4a027c0774",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-7/scene.ply",
+        "bytes": 45746464,
+        "sha256": "045470697efb988eb6d24c57dceebb6d57a1012528733f3a11b79dd23cdd2d96",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-7/assessment-scale10.json",
+        "bytes": 281765,
+        "sha256": "040a427d56e536763034cdf06046e0596af167d3e753e9fe773f58a59270e794",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "narrow_passage-1-7-scale12",
+    "worldId": "intent-1c865fea-e0f7-4711-9292-48aa4492f947",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-1c865fea-e0f7-4711-9292-48aa4492f947/scene.json",
+        "bytes": 2861563,
+        "sha256": "bfa415cde415bbaa60c82bfa021d1dcca05463a43d9e87aa29a66cc2a0b03441",
+        "exportedPath": "inspection-assets/bfa415cde415bbaa60c82bfa021d1dcca05463a43d9e87aa29a66cc2a0b03441.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-7/colors.json",
+        "bytes": 983156,
+        "sha256": "8b3ff3cc7412bafd451d07fb7ff9adb16f85825977951ebc7865da648fb6c359",
+        "exportedPath": "inspection-assets/8b3ff3cc7412bafd451d07fb7ff9adb16f85825977951ebc7865da648fb6c359.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-7/collider.glb",
+        "bytes": 24188820,
+        "sha256": "75e8c7130f57c8786a79c28cc81daa1007039c13ca4ae61bfd97bd4a027c0774",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-7/scene.ply",
+        "bytes": 45746464,
+        "sha256": "045470697efb988eb6d24c57dceebb6d57a1012528733f3a11b79dd23cdd2d96",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-7/assessment-scale12.json",
+        "bytes": 215491,
+        "sha256": "89033655fe45c3f15490108797d6b7f13413b621e44cbd3aee89dc274bcf63e2",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "chamber-1-7",
+    "worldId": "intent-c5cda12d-76af-4b8b-b88c-eccc7719dd26",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-c5cda12d-76af-4b8b-b88c-eccc7719dd26/scene.json",
+        "bytes": 4116284,
+        "sha256": "aa82101a78b29b28cc7346b209d1f1d312bfe6833512a04aaaea2b1179cde6c2",
+        "exportedPath": "inspection-assets/aa82101a78b29b28cc7346b209d1f1d312bfe6833512a04aaaea2b1179cde6c2.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-1-7/colors.json",
+        "bytes": 1403933,
+        "sha256": "7dd43e0affaa1912c019ddb225036a5876138036d139ea1924c11893fccdbafa",
+        "exportedPath": "inspection-assets/7dd43e0affaa1912c019ddb225036a5876138036d139ea1924c11893fccdbafa.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-1-7/collider.glb",
+        "bytes": 30127576,
+        "sha256": "d526aec6874c3a1259fe4af64beb770ab96888df3909b58f4e0bd7f79e2ad464",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-1-7/scene.ply",
+        "bytes": 73159713,
+        "sha256": "60e7fddec7f1a82997083d25d54f1cd726cca80c9a3f69731938f375921b102a",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-1-7/assessment-scale6.json",
+        "bytes": 214310,
+        "sha256": "2ea429acca46be2de65cc9b22b838b9c3641fa619f163ba68199b4c7abb1aa63",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "cave-1-7",
+    "worldId": "intent-a6868007-efd5-433a-9061-f36ccde7d864",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-a6868007-efd5-433a-9061-f36ccde7d864/scene.json",
+        "bytes": 3260417,
+        "sha256": "ce6bfcfd67b042888cdd851a9873f92d1154708e412e516e2d94588bc76e6437",
+        "exportedPath": "inspection-assets/ce6bfcfd67b042888cdd851a9873f92d1154708e412e516e2d94588bc76e6437.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-7/colors.json",
+        "bytes": 1066704,
+        "sha256": "afe31c34efa1ebdc94e524cc822772a0b87b805039aa32d7ee521eeda38c45d0",
+        "exportedPath": "inspection-assets/afe31c34efa1ebdc94e524cc822772a0b87b805039aa32d7ee521eeda38c45d0.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-7/collider.glb",
+        "bytes": 22919080,
+        "sha256": "a56bb24593ddd9164444ec54f03365f5e8712636a983ae6e50a82fa1f4b172bf",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-7/scene.ply",
+        "bytes": 54528800,
+        "sha256": "a197855654c44654e4b0f7e512427b5be7c1562fb63613ba3af732f7b33aa2cb",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-7/assessment-scale6.json",
+        "bytes": 2792,
+        "sha256": "abf34e6c35ef3d5a389f272c5b3a600749ebed48aac4c9adc979f32010f09d28",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "cave-1-7-scale12",
+    "worldId": "intent-a6868007-efd5-433a-9061-f36ccde7d864",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-a6868007-efd5-433a-9061-f36ccde7d864/scene.json",
+        "bytes": 3260417,
+        "sha256": "ce6bfcfd67b042888cdd851a9873f92d1154708e412e516e2d94588bc76e6437",
+        "exportedPath": "inspection-assets/ce6bfcfd67b042888cdd851a9873f92d1154708e412e516e2d94588bc76e6437.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-7/colors.json",
+        "bytes": 1066704,
+        "sha256": "afe31c34efa1ebdc94e524cc822772a0b87b805039aa32d7ee521eeda38c45d0",
+        "exportedPath": "inspection-assets/afe31c34efa1ebdc94e524cc822772a0b87b805039aa32d7ee521eeda38c45d0.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-7/collider.glb",
+        "bytes": 22919080,
+        "sha256": "a56bb24593ddd9164444ec54f03365f5e8712636a983ae6e50a82fa1f4b172bf",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-7/scene.ply",
+        "bytes": 54528800,
+        "sha256": "a197855654c44654e4b0f7e512427b5be7c1562fb63613ba3af732f7b33aa2cb",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-7/assessment-scale12.json",
+        "bytes": 265470,
+        "sha256": "1df6a5a781c39ed6dc9fd26fe50b6bf3d4bcea261782810f6eedcb77cdb7287f",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "corridor-1-7",
+    "worldId": "intent-55e2d591-69a3-4910-91b9-c5df74cf01dc",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-55e2d591-69a3-4910-91b9-c5df74cf01dc/scene.json",
+        "bytes": 1629506,
+        "sha256": "07004af111644c17d1a5eedb3f121333519502b8de72c0b37b4b540868e649df",
+        "exportedPath": "inspection-assets/07004af111644c17d1a5eedb3f121333519502b8de72c0b37b4b540868e649df.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-7/colors.json",
+        "bytes": 551291,
+        "sha256": "b4a8fd22b9d99524c340ede5a9ff5b00c08d38905901a4d9aa01f576aec64bf0",
+        "exportedPath": "inspection-assets/b4a8fd22b9d99524c340ede5a9ff5b00c08d38905901a4d9aa01f576aec64bf0.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-7/collider.glb",
+        "bytes": 13326084,
+        "sha256": "5383ef9cabe2f2d88fba3b08d8c4b97f2bb7f519e882a7253b8773899b5339d7",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-7/scene.ply",
+        "bytes": 26913184,
+        "sha256": "4cc81b10ed3f944320ab937dcee8b40afcb5cdbf8348492ca834704050147853",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-7/assessment-scale6.json",
+        "bytes": 215978,
+        "sha256": "21ceac0b011a4b53216d570ed92dec699919c23806bcc6c7d363be0277854955",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "corridor-1-7-scale10",
+    "worldId": "intent-55e2d591-69a3-4910-91b9-c5df74cf01dc",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-55e2d591-69a3-4910-91b9-c5df74cf01dc/scene.json",
+        "bytes": 1629506,
+        "sha256": "07004af111644c17d1a5eedb3f121333519502b8de72c0b37b4b540868e649df",
+        "exportedPath": "inspection-assets/07004af111644c17d1a5eedb3f121333519502b8de72c0b37b4b540868e649df.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-7/colors.json",
+        "bytes": 551291,
+        "sha256": "b4a8fd22b9d99524c340ede5a9ff5b00c08d38905901a4d9aa01f576aec64bf0",
+        "exportedPath": "inspection-assets/b4a8fd22b9d99524c340ede5a9ff5b00c08d38905901a4d9aa01f576aec64bf0.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-7/collider.glb",
+        "bytes": 13326084,
+        "sha256": "5383ef9cabe2f2d88fba3b08d8c4b97f2bb7f519e882a7253b8773899b5339d7",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-7/scene.ply",
+        "bytes": 26913184,
+        "sha256": "4cc81b10ed3f944320ab937dcee8b40afcb5cdbf8348492ca834704050147853",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-7/assessment-scale10.json",
+        "bytes": 219157,
+        "sha256": "d3f79b9d11a38918f3b93d8130a00b280595609859d28d75caa55cecc8048878",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "corridor-1-7-scale12",
+    "worldId": "intent-55e2d591-69a3-4910-91b9-c5df74cf01dc",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-55e2d591-69a3-4910-91b9-c5df74cf01dc/scene.json",
+        "bytes": 1629506,
+        "sha256": "07004af111644c17d1a5eedb3f121333519502b8de72c0b37b4b540868e649df",
+        "exportedPath": "inspection-assets/07004af111644c17d1a5eedb3f121333519502b8de72c0b37b4b540868e649df.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-7/colors.json",
+        "bytes": 551291,
+        "sha256": "b4a8fd22b9d99524c340ede5a9ff5b00c08d38905901a4d9aa01f576aec64bf0",
+        "exportedPath": "inspection-assets/b4a8fd22b9d99524c340ede5a9ff5b00c08d38905901a4d9aa01f576aec64bf0.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-7/collider.glb",
+        "bytes": 13326084,
+        "sha256": "5383ef9cabe2f2d88fba3b08d8c4b97f2bb7f519e882a7253b8773899b5339d7",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-7/scene.ply",
+        "bytes": 26913184,
+        "sha256": "4cc81b10ed3f944320ab937dcee8b40afcb5cdbf8348492ca834704050147853",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-7/assessment-scale12.json",
+        "bytes": 221138,
+        "sha256": "9c43280036b3d7ee26260fb8005e281a7f7cd758b1e45c43e2faee0b6946295b",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "courtyard-1-7",
+    "worldId": "intent-04c10b05-bc48-4dd0-b38a-9781ef431ad3",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-04c10b05-bc48-4dd0-b38a-9781ef431ad3/scene.json",
+        "bytes": 3564283,
+        "sha256": "050eb42921440bccddbad006558de2f1fea2ab3a4db0983ed28aa21b7953d7b1",
+        "exportedPath": "inspection-assets/050eb42921440bccddbad006558de2f1fea2ab3a4db0983ed28aa21b7953d7b1.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-7/colors.json",
+        "bytes": 1227420,
+        "sha256": "27ab250b9af22c8134e05c998e5b34eb4224335540b5452a7475933e81822471",
+        "exportedPath": "inspection-assets/27ab250b9af22c8134e05c998e5b34eb4224335540b5452a7475933e81822471.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-7/collider.glb",
+        "bytes": 27807040,
+        "sha256": "7616b93737b806eddb845bcee9d60cc1c29989cd2d7bd7ec9ebeefcd3134b305",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-7/scene.ply",
+        "bytes": 60741280,
+        "sha256": "427bb18f3721110559708f49cddef51352a0f7b206648ac9e5e58d8225f29497",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-7/assessment-scale6.json",
+        "bytes": 2835,
+        "sha256": "8d4ac3caa4d1e2595a8f7a445f29882b453199f1d37880154d60edd677165cfb",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "courtyard-1-7-scale10",
+    "worldId": "intent-04c10b05-bc48-4dd0-b38a-9781ef431ad3",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-04c10b05-bc48-4dd0-b38a-9781ef431ad3/scene.json",
+        "bytes": 3564283,
+        "sha256": "050eb42921440bccddbad006558de2f1fea2ab3a4db0983ed28aa21b7953d7b1",
+        "exportedPath": "inspection-assets/050eb42921440bccddbad006558de2f1fea2ab3a4db0983ed28aa21b7953d7b1.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-7/colors.json",
+        "bytes": 1227420,
+        "sha256": "27ab250b9af22c8134e05c998e5b34eb4224335540b5452a7475933e81822471",
+        "exportedPath": "inspection-assets/27ab250b9af22c8134e05c998e5b34eb4224335540b5452a7475933e81822471.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-7/collider.glb",
+        "bytes": 27807040,
+        "sha256": "7616b93737b806eddb845bcee9d60cc1c29989cd2d7bd7ec9ebeefcd3134b305",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-7/scene.ply",
+        "bytes": 60741280,
+        "sha256": "427bb18f3721110559708f49cddef51352a0f7b206648ac9e5e58d8225f29497",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-7/assessment-scale10.json",
+        "bytes": 216516,
+        "sha256": "4b2084944ff1af4d8b6952d8f49197b2ff952f5f20572f4bafef6f7f5f4292a0",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "courtyard-1-7-scale12",
+    "worldId": "intent-04c10b05-bc48-4dd0-b38a-9781ef431ad3",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-04c10b05-bc48-4dd0-b38a-9781ef431ad3/scene.json",
+        "bytes": 3564283,
+        "sha256": "050eb42921440bccddbad006558de2f1fea2ab3a4db0983ed28aa21b7953d7b1",
+        "exportedPath": "inspection-assets/050eb42921440bccddbad006558de2f1fea2ab3a4db0983ed28aa21b7953d7b1.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-7/colors.json",
+        "bytes": 1227420,
+        "sha256": "27ab250b9af22c8134e05c998e5b34eb4224335540b5452a7475933e81822471",
+        "exportedPath": "inspection-assets/27ab250b9af22c8134e05c998e5b34eb4224335540b5452a7475933e81822471.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-7/collider.glb",
+        "bytes": 27807040,
+        "sha256": "7616b93737b806eddb845bcee9d60cc1c29989cd2d7bd7ec9ebeefcd3134b305",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-7/scene.ply",
+        "bytes": 60741280,
+        "sha256": "427bb18f3721110559708f49cddef51352a0f7b206648ac9e5e58d8225f29497",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-7/assessment-scale12.json",
+        "bytes": 224362,
+        "sha256": "b76248f538a0cb9282a6b5d74c5fdb6a82c398cd178fdb93aa979bbbac52cd2d",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "bridge-1-7",
+    "worldId": "intent-cc01fd39-0b1d-49b3-8c83-851c3cb8678a",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-cc01fd39-0b1d-49b3-8c83-851c3cb8678a/scene.json",
+        "bytes": 2700462,
+        "sha256": "35b8777c563267637d9b14a6b0f84431a27fd21d1ceebfadc581dd2fe2ee12b8",
+        "exportedPath": "inspection-assets/35b8777c563267637d9b14a6b0f84431a27fd21d1ceebfadc581dd2fe2ee12b8.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-7/colors.json",
+        "bytes": 968680,
+        "sha256": "728c5458ea99574f4ea5a53118ee389cd6ca6e29e35cfe7f8401c2524c9ee1bf",
+        "exportedPath": "inspection-assets/728c5458ea99574f4ea5a53118ee389cd6ca6e29e35cfe7f8401c2524c9ee1bf.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-7/collider.glb",
+        "bytes": 15468952,
+        "sha256": "5a4c29d4289eeb9c9bdbaa2b1015a14da2964f30bbafe9336eac7b0f7db60b71",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-7/scene.ply",
+        "bytes": 50411808,
+        "sha256": "6ee683d0c94a8ce6057b8f28085a4764cf70753785fbf87281307129beb38b3c",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-7/assessment-scale6.json",
+        "bytes": 2831,
+        "sha256": "4b5793009f8ef306584a4bdaca01719f330896a59dbf682146bd4073a06775e7",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "bridge-1-7-scale10",
+    "worldId": "intent-cc01fd39-0b1d-49b3-8c83-851c3cb8678a",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-cc01fd39-0b1d-49b3-8c83-851c3cb8678a/scene.json",
+        "bytes": 2700462,
+        "sha256": "35b8777c563267637d9b14a6b0f84431a27fd21d1ceebfadc581dd2fe2ee12b8",
+        "exportedPath": "inspection-assets/35b8777c563267637d9b14a6b0f84431a27fd21d1ceebfadc581dd2fe2ee12b8.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-7/colors.json",
+        "bytes": 968680,
+        "sha256": "728c5458ea99574f4ea5a53118ee389cd6ca6e29e35cfe7f8401c2524c9ee1bf",
+        "exportedPath": "inspection-assets/728c5458ea99574f4ea5a53118ee389cd6ca6e29e35cfe7f8401c2524c9ee1bf.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-7/collider.glb",
+        "bytes": 15468952,
+        "sha256": "5a4c29d4289eeb9c9bdbaa2b1015a14da2964f30bbafe9336eac7b0f7db60b71",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-7/scene.ply",
+        "bytes": 50411808,
+        "sha256": "6ee683d0c94a8ce6057b8f28085a4764cf70753785fbf87281307129beb38b3c",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-7/assessment-scale10.json",
+        "bytes": 344278,
+        "sha256": "329bf5061a56443d7d08078cddaf79f415198a280778ef628207009a9b357873",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "large_open_interior-1-42",
+    "worldId": "intent-b1764ccd-cc0d-42fd-baca-9a23011d0305",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-b1764ccd-cc0d-42fd-baca-9a23011d0305/scene.json",
+        "bytes": 1989811,
+        "sha256": "a57524e69af1e4e4f075bfb1cfb25b0c6881ffb5187cade8b0837abc452173d9",
+        "exportedPath": "inspection-assets/a57524e69af1e4e4f075bfb1cfb25b0c6881ffb5187cade8b0837abc452173d9.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-42/colors.json",
+        "bytes": 691348,
+        "sha256": "a3613f74a76ecf83ab1a6291109a0fd10853e86bb7769986d4ea232ae1556118",
+        "exportedPath": "inspection-assets/a3613f74a76ecf83ab1a6291109a0fd10853e86bb7769986d4ea232ae1556118.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-42/collider.glb",
+        "bytes": 13399956,
+        "sha256": "2e43864cb5022f8d122ffa76f060afe903e6051feea8b04f43530bce40909c5d",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-42/scene.ply",
+        "bytes": 34439968,
+        "sha256": "540308532636d6bf703034019c4a623f40765604e3f2be4203d875ba2c01b90b",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-42/assessment-scale6.json",
+        "bytes": 2792,
+        "sha256": "5ee67cec4806713badef46d5871fe2a6524eefb9b666b46ab1176892bbf24943",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "large_open_interior-1-42-scale10",
+    "worldId": "intent-b1764ccd-cc0d-42fd-baca-9a23011d0305",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-b1764ccd-cc0d-42fd-baca-9a23011d0305/scene.json",
+        "bytes": 1989811,
+        "sha256": "a57524e69af1e4e4f075bfb1cfb25b0c6881ffb5187cade8b0837abc452173d9",
+        "exportedPath": "inspection-assets/a57524e69af1e4e4f075bfb1cfb25b0c6881ffb5187cade8b0837abc452173d9.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-42/colors.json",
+        "bytes": 691348,
+        "sha256": "a3613f74a76ecf83ab1a6291109a0fd10853e86bb7769986d4ea232ae1556118",
+        "exportedPath": "inspection-assets/a3613f74a76ecf83ab1a6291109a0fd10853e86bb7769986d4ea232ae1556118.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-42/collider.glb",
+        "bytes": 13399956,
+        "sha256": "2e43864cb5022f8d122ffa76f060afe903e6051feea8b04f43530bce40909c5d",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-42/scene.ply",
+        "bytes": 34439968,
+        "sha256": "540308532636d6bf703034019c4a623f40765604e3f2be4203d875ba2c01b90b",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-42/assessment-scale10.json",
+        "bytes": 221502,
+        "sha256": "34c43b00de22a951e3ce2f21cef4f4afaa25cdae0d9a957dd7e503a7e44561f8",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "large_open_interior-1-42-scale12",
+    "worldId": "intent-b1764ccd-cc0d-42fd-baca-9a23011d0305",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-b1764ccd-cc0d-42fd-baca-9a23011d0305/scene.json",
+        "bytes": 1989811,
+        "sha256": "a57524e69af1e4e4f075bfb1cfb25b0c6881ffb5187cade8b0837abc452173d9",
+        "exportedPath": "inspection-assets/a57524e69af1e4e4f075bfb1cfb25b0c6881ffb5187cade8b0837abc452173d9.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-42/colors.json",
+        "bytes": 691348,
+        "sha256": "a3613f74a76ecf83ab1a6291109a0fd10853e86bb7769986d4ea232ae1556118",
+        "exportedPath": "inspection-assets/a3613f74a76ecf83ab1a6291109a0fd10853e86bb7769986d4ea232ae1556118.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-42/collider.glb",
+        "bytes": 13399956,
+        "sha256": "2e43864cb5022f8d122ffa76f060afe903e6051feea8b04f43530bce40909c5d",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-42/scene.ply",
+        "bytes": 34439968,
+        "sha256": "540308532636d6bf703034019c4a623f40765604e3f2be4203d875ba2c01b90b",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-1-42/assessment-scale12.json",
+        "bytes": 207867,
+        "sha256": "119cf6568f927a272ff316eee73686c2d17abd4a3400ec791e9cf0f9be46f956",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "bridge-1-42",
+    "worldId": "intent-ac3e6278-91f7-4ea0-826f-712434efa055",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-ac3e6278-91f7-4ea0-826f-712434efa055/scene.json",
+        "bytes": 1576921,
+        "sha256": "df1805e7f8ab71fe9e6262208d69f9ccabf3ee12caed67d9762e4adbc57730c7",
+        "exportedPath": "inspection-assets/df1805e7f8ab71fe9e6262208d69f9ccabf3ee12caed67d9762e4adbc57730c7.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-42/colors.json",
+        "bytes": 551463,
+        "sha256": "88478239d9d2c95eaa888bfef0cd2a19eeeba06feb2dddd318b59d59799cd638",
+        "exportedPath": "inspection-assets/88478239d9d2c95eaa888bfef0cd2a19eeeba06feb2dddd318b59d59799cd638.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-42/collider.glb",
+        "bytes": 10124028,
+        "sha256": "261279b0fcb27df5ec822c9db09bb85e296c12aba270e7f26dacce3aa5e0d026",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-42/scene.ply",
+        "bytes": 28401568,
+        "sha256": "8cc4dde63061e46bbddf6188c05d38c7bd30a32ec6356f89d8157ee4e48ec58b",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-42/assessment-scale6.json",
+        "bytes": 2781,
+        "sha256": "e2d55b20c4e348fbaca49da1be590832958315c2c1cd9eda4711f09352fb088e",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "bridge-1-42-scale12",
+    "worldId": "intent-ac3e6278-91f7-4ea0-826f-712434efa055",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-ac3e6278-91f7-4ea0-826f-712434efa055/scene.json",
+        "bytes": 1576921,
+        "sha256": "df1805e7f8ab71fe9e6262208d69f9ccabf3ee12caed67d9762e4adbc57730c7",
+        "exportedPath": "inspection-assets/df1805e7f8ab71fe9e6262208d69f9ccabf3ee12caed67d9762e4adbc57730c7.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-42/colors.json",
+        "bytes": 551463,
+        "sha256": "88478239d9d2c95eaa888bfef0cd2a19eeeba06feb2dddd318b59d59799cd638",
+        "exportedPath": "inspection-assets/88478239d9d2c95eaa888bfef0cd2a19eeeba06feb2dddd318b59d59799cd638.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-42/collider.glb",
+        "bytes": 10124028,
+        "sha256": "261279b0fcb27df5ec822c9db09bb85e296c12aba270e7f26dacce3aa5e0d026",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-42/scene.ply",
+        "bytes": 28401568,
+        "sha256": "8cc4dde63061e46bbddf6188c05d38c7bd30a32ec6356f89d8157ee4e48ec58b",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-1-42/assessment-scale12.json",
+        "bytes": 453551,
+        "sha256": "561c946132711910a888f7b9662be8ccf78b6cb3176d2ff533993bc115a97e09",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "doorway-1-42",
+    "worldId": "intent-097b6f72-50f1-456f-9360-78b93105a73b",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-097b6f72-50f1-456f-9360-78b93105a73b/scene.json",
+        "bytes": 5089916,
+        "sha256": "b2d56c0cad1b247d35e857d863d3737f2c0c5b7abdf42ce08d91d052027ec188",
+        "exportedPath": "inspection-assets/b2d56c0cad1b247d35e857d863d3737f2c0c5b7abdf42ce08d91d052027ec188.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-1-42/colors.json",
+        "bytes": 1743324,
+        "sha256": "b21332af7558de1f98f5cd0360058607442d22c7f5c1b70b3f6ba015ba9a923a",
+        "exportedPath": "inspection-assets/b21332af7558de1f98f5cd0360058607442d22c7f5c1b70b3f6ba015ba9a923a.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-1-42/collider.glb",
+        "bytes": 39929224,
+        "sha256": "7dc260e05158dda0e43ecd63d5f6e7db5bb57e6bab7265be5aed0f7513eb3206",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-1-42/scene.ply",
+        "bytes": 88039201,
+        "sha256": "2a969a59398a3bb59cb2bf5e0b79f96e1f0ba72a7a88db68ce79e11d69d2ddf0",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-1-42/assessment-scale6.json",
+        "bytes": 2798,
+        "sha256": "187be240b20e894798ca8cd331f8cdbc02624c8d344889a60e87a64504143ad7",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "narrow_passage-1-42",
+    "worldId": "intent-067ca302-ef70-480d-a667-68fe0cbd8d35",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-067ca302-ef70-480d-a667-68fe0cbd8d35/scene.json",
+        "bytes": 5484300,
+        "sha256": "25d36d591cf651528e9bd35a0561b221862c09e57c111383c4e5dfb9040f55e2",
+        "exportedPath": "inspection-assets/25d36d591cf651528e9bd35a0561b221862c09e57c111383c4e5dfb9040f55e2.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-42/colors.json",
+        "bytes": 1874529,
+        "sha256": "7deac73a3b67e2c6f2eb95fb6f734f3c0a80c0ecb0e0e59fbfc795ec2867ebfc",
+        "exportedPath": "inspection-assets/7deac73a3b67e2c6f2eb95fb6f734f3c0a80c0ecb0e0e59fbfc795ec2867ebfc.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-42/collider.glb",
+        "bytes": 38328904,
+        "sha256": "afcbf5920dd1230ee9c845fd59726ecd00de692d6a35cb787046beb8212b98ea",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-42/scene.ply",
+        "bytes": 110040737,
+        "sha256": "0e866e90c819780ba48d8c44f58782d1e3aa5fa0284f8027bb838b10bebd3218",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-1-42/assessment-scale6.json",
+        "bytes": 2798,
+        "sha256": "bfcfadba27ca7e5b48c67455db12e24940ed64e890f3c18bee707fa42e641e9b",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "cave-1-42",
+    "worldId": "intent-9dfb5a7c-0711-4aad-a454-4834fde830a3",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-9dfb5a7c-0711-4aad-a454-4834fde830a3/scene.json",
+        "bytes": 2648923,
+        "sha256": "94c32b5d0295563191cf048f84a2cb126c9fb9e4fa873709ead2ade5b2715c9f",
+        "exportedPath": "inspection-assets/94c32b5d0295563191cf048f84a2cb126c9fb9e4fa873709ead2ade5b2715c9f.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-42/colors.json",
+        "bytes": 878810,
+        "sha256": "0c1b3bf759f17550456d3789e6eff507c9a1a4b1ae4a3ee134438881c999a062",
+        "exportedPath": "inspection-assets/0c1b3bf759f17550456d3789e6eff507c9a1a4b1ae4a3ee134438881c999a062.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-42/collider.glb",
+        "bytes": 19092988,
+        "sha256": "2e23286835d759ed91268f1b782689060c5e7501cf0008357a4d3e01a1eac9ad",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-42/scene.ply",
+        "bytes": 45065376,
+        "sha256": "ebbab16a0c00b79b805e876350fa44aa256c99ec6ba0d62f9596fa1f663082f7",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-42/assessment-scale6.json",
+        "bytes": 2794,
+        "sha256": "01c3927026cc725478da69df546e6f714a20025e16a6994e3136b49a4f304dfc",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "cave-1-42-scale12",
+    "worldId": "intent-9dfb5a7c-0711-4aad-a454-4834fde830a3",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-9dfb5a7c-0711-4aad-a454-4834fde830a3/scene.json",
+        "bytes": 2648923,
+        "sha256": "94c32b5d0295563191cf048f84a2cb126c9fb9e4fa873709ead2ade5b2715c9f",
+        "exportedPath": "inspection-assets/94c32b5d0295563191cf048f84a2cb126c9fb9e4fa873709ead2ade5b2715c9f.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-42/colors.json",
+        "bytes": 878810,
+        "sha256": "0c1b3bf759f17550456d3789e6eff507c9a1a4b1ae4a3ee134438881c999a062",
+        "exportedPath": "inspection-assets/0c1b3bf759f17550456d3789e6eff507c9a1a4b1ae4a3ee134438881c999a062.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-42/collider.glb",
+        "bytes": 19092988,
+        "sha256": "2e23286835d759ed91268f1b782689060c5e7501cf0008357a4d3e01a1eac9ad",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-42/scene.ply",
+        "bytes": 45065376,
+        "sha256": "ebbab16a0c00b79b805e876350fa44aa256c99ec6ba0d62f9596fa1f663082f7",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-1-42/assessment-scale12.json",
+        "bytes": 296629,
+        "sha256": "43e79ee8dc94dce16709db8940fb73f9c868a2dacd86b21b8199b4b58921a0ae",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "courtyard-1-42",
+    "worldId": "intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b/scene.json",
+        "bytes": 3202314,
+        "sha256": "aa3f8646c1b469c20962faf9d52e637ff4d7ad095869f2adc5998d59b2aea719",
+        "exportedPath": "inspection-assets/aa3f8646c1b469c20962faf9d52e637ff4d7ad095869f2adc5998d59b2aea719.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-42/colors.json",
+        "bytes": 1079286,
+        "sha256": "7746d602bc52f0fbb06aca1af39f886950c61a35e9979d6ea87056b5189ced58",
+        "exportedPath": "inspection-assets/7746d602bc52f0fbb06aca1af39f886950c61a35e9979d6ea87056b5189ced58.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-42/collider.glb",
+        "bytes": 25889040,
+        "sha256": "9e1df2a956a459ac91917dc0ccd92804235bf901dd094fdf201fb3fcf7dfe269",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-42/scene.ply",
+        "bytes": 50533664,
+        "sha256": "b0a36c318b77891a173806d2647e0f00ca61ee92761c13bb23c5afe9a775f32c",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-42/assessment-scale6.json",
+        "bytes": 394207,
+        "sha256": "9eda61993fcd1d6a6fd603d76ea12491fac00b535eda44424067cc5b8f218e8e",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "courtyard-1-42-scale10",
+    "worldId": "intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b/scene.json",
+        "bytes": 3202314,
+        "sha256": "aa3f8646c1b469c20962faf9d52e637ff4d7ad095869f2adc5998d59b2aea719",
+        "exportedPath": "inspection-assets/aa3f8646c1b469c20962faf9d52e637ff4d7ad095869f2adc5998d59b2aea719.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-42/colors.json",
+        "bytes": 1079286,
+        "sha256": "7746d602bc52f0fbb06aca1af39f886950c61a35e9979d6ea87056b5189ced58",
+        "exportedPath": "inspection-assets/7746d602bc52f0fbb06aca1af39f886950c61a35e9979d6ea87056b5189ced58.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-42/collider.glb",
+        "bytes": 25889040,
+        "sha256": "9e1df2a956a459ac91917dc0ccd92804235bf901dd094fdf201fb3fcf7dfe269",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-42/scene.ply",
+        "bytes": 50533664,
+        "sha256": "b0a36c318b77891a173806d2647e0f00ca61ee92761c13bb23c5afe9a775f32c",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-42/assessment-scale10.json",
+        "bytes": 229487,
+        "sha256": "d27c2e57797006be133d01281b1fe1d581c209227297ec59b11e737ef954dc35",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "courtyard-1-42-scale12",
+    "worldId": "intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b/scene.json",
+        "bytes": 3202314,
+        "sha256": "aa3f8646c1b469c20962faf9d52e637ff4d7ad095869f2adc5998d59b2aea719",
+        "exportedPath": "inspection-assets/aa3f8646c1b469c20962faf9d52e637ff4d7ad095869f2adc5998d59b2aea719.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-42/colors.json",
+        "bytes": 1079286,
+        "sha256": "7746d602bc52f0fbb06aca1af39f886950c61a35e9979d6ea87056b5189ced58",
+        "exportedPath": "inspection-assets/7746d602bc52f0fbb06aca1af39f886950c61a35e9979d6ea87056b5189ced58.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-42/collider.glb",
+        "bytes": 25889040,
+        "sha256": "9e1df2a956a459ac91917dc0ccd92804235bf901dd094fdf201fb3fcf7dfe269",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-42/scene.ply",
+        "bytes": 50533664,
+        "sha256": "b0a36c318b77891a173806d2647e0f00ca61ee92761c13bb23c5afe9a775f32c",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-1-42/assessment-scale12.json",
+        "bytes": 216917,
+        "sha256": "2bae6f659b5a3fd6af2ee97e8a221513a9fe855247bf3558a613c7a33f0f7eb0",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "corridor-1-42",
+    "worldId": "intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99/scene.json",
+        "bytes": 3576339,
+        "sha256": "ee07a0ce18df1898154fcd1a2450c14ed2457fba53530bd5b0e28385aed43580",
+        "exportedPath": "inspection-assets/ee07a0ce18df1898154fcd1a2450c14ed2457fba53530bd5b0e28385aed43580.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-42/colors.json",
+        "bytes": 1232837,
+        "sha256": "51552090b66c0599fbaf5e2fb72befbc37276e548dc6f5fb90185ad5f4f7a302",
+        "exportedPath": "inspection-assets/51552090b66c0599fbaf5e2fb72befbc37276e548dc6f5fb90185ad5f4f7a302.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-42/collider.glb",
+        "bytes": 25938024,
+        "sha256": "589e5e427db97ef45a76411ea1629c08f55b39b82efe3688359e8d5c795c7eae",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-42/scene.ply",
+        "bytes": 48124832,
+        "sha256": "4e3ad1ac15449ab0ad9123be5badc6d78071020f9666a0df783ccac6b2b7ed25",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-42/assessment-scale6.json",
+        "bytes": 212093,
+        "sha256": "8d2a9745aeaec40ad59686d120d435768d857816d0c17ea7ae4fc7f2c5958835",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "corridor-1-42-scale10",
+    "worldId": "intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99/scene.json",
+        "bytes": 3576339,
+        "sha256": "ee07a0ce18df1898154fcd1a2450c14ed2457fba53530bd5b0e28385aed43580",
+        "exportedPath": "inspection-assets/ee07a0ce18df1898154fcd1a2450c14ed2457fba53530bd5b0e28385aed43580.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-42/colors.json",
+        "bytes": 1232837,
+        "sha256": "51552090b66c0599fbaf5e2fb72befbc37276e548dc6f5fb90185ad5f4f7a302",
+        "exportedPath": "inspection-assets/51552090b66c0599fbaf5e2fb72befbc37276e548dc6f5fb90185ad5f4f7a302.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-42/collider.glb",
+        "bytes": 25938024,
+        "sha256": "589e5e427db97ef45a76411ea1629c08f55b39b82efe3688359e8d5c795c7eae",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-42/scene.ply",
+        "bytes": 48124832,
+        "sha256": "4e3ad1ac15449ab0ad9123be5badc6d78071020f9666a0df783ccac6b2b7ed25",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-42/assessment-scale10.json",
+        "bytes": 215278,
+        "sha256": "95526780849e512c60be550ae5d230f594c8af805d01c72f0091920d15171922",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "corridor-1-42-scale12",
+    "worldId": "intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99/scene.json",
+        "bytes": 3576339,
+        "sha256": "ee07a0ce18df1898154fcd1a2450c14ed2457fba53530bd5b0e28385aed43580",
+        "exportedPath": "inspection-assets/ee07a0ce18df1898154fcd1a2450c14ed2457fba53530bd5b0e28385aed43580.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-42/colors.json",
+        "bytes": 1232837,
+        "sha256": "51552090b66c0599fbaf5e2fb72befbc37276e548dc6f5fb90185ad5f4f7a302",
+        "exportedPath": "inspection-assets/51552090b66c0599fbaf5e2fb72befbc37276e548dc6f5fb90185ad5f4f7a302.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-42/collider.glb",
+        "bytes": 25938024,
+        "sha256": "589e5e427db97ef45a76411ea1629c08f55b39b82efe3688359e8d5c795c7eae",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-42/scene.ply",
+        "bytes": 48124832,
+        "sha256": "4e3ad1ac15449ab0ad9123be5badc6d78071020f9666a0df783ccac6b2b7ed25",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-1-42/assessment-scale12.json",
+        "bytes": 220993,
+        "sha256": "a8751ff5cdc18ef685ce8a92c345ba27cd881c5d16e1455171ee272c6eb0a17c",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "tunnel-1-42",
+    "worldId": "intent-75f21af9-274b-4869-9577-28999d937b28",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-75f21af9-274b-4869-9577-28999d937b28/scene.json",
+        "bytes": 3690418,
+        "sha256": "1aabf33c62a67689a578373609960c599354750842c2cc02f67c4fb0c0b7d2aa",
+        "exportedPath": "inspection-assets/1aabf33c62a67689a578373609960c599354750842c2cc02f67c4fb0c0b7d2aa.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-42/colors.json",
+        "bytes": 1318030,
+        "sha256": "572ae5a82c2413bea08edc9c15a875cb025ce40ec562e5fcee9c0d5153e7af65",
+        "exportedPath": "inspection-assets/572ae5a82c2413bea08edc9c15a875cb025ce40ec562e5fcee9c0d5153e7af65.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-42/collider.glb",
+        "bytes": 21862156,
+        "sha256": "ca0f3ceb9e7248fd493d597a5f715df12cc911c647b7e631c1586f32a9dc001e",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-42/scene.ply",
+        "bytes": 68085281,
+        "sha256": "974382575fc778cf31bdc5a5c491e492e8d3f1ca6535bf6a04f559a326edc8e4",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-1-42/assessment-scale6.json",
+        "bytes": 2796,
+        "sha256": "3ad0263b34a81d3fa29b024e8dcf145748c2c56900d0aef8b63b5ea145d1d642",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "chamber-1-42",
+    "worldId": "intent-de172b53-3529-42f6-b4d4-b6df0779e568",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-de172b53-3529-42f6-b4d4-b6df0779e568/scene.json",
+        "bytes": 6164687,
+        "sha256": "cd89aaa965aed7cc3e6cac3e1bfc23f81d1fe02fc335f06ff8572dd84c2b662e",
+        "exportedPath": "inspection-assets/cd89aaa965aed7cc3e6cac3e1bfc23f81d1fe02fc335f06ff8572dd84c2b662e.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-1-42/colors.json",
+        "bytes": 2156662,
+        "sha256": "2b4b3cdafde98abab105c7bfb83702d50b72224a12632f965fb5ebd9c493d176",
+        "exportedPath": "inspection-assets/2b4b3cdafde98abab105c7bfb83702d50b72224a12632f965fb5ebd9c493d176.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-1-42/collider.glb",
+        "bytes": 41060224,
+        "sha256": "2b6e56636c72bdccdd387c4a30a7e98526d15efeab66d47c396287f81d7a8a76",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-1-42/scene.ply",
+        "bytes": 104481057,
+        "sha256": "048515fd4c3598259628041f8e56aeba9d3973236d4105f0b99b191363f6f6bb",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-1-42/assessment-scale6.json",
+        "bytes": 2799,
+        "sha256": "cfaceba67b15f178a48a047fe11bd850abdec8db2713340d83ec7211b49e4187",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "courtyard-2-7",
+    "worldId": "intent-7ee56718-e7ad-4578-b2c1-d28ea7c60da7",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-7ee56718-e7ad-4578-b2c1-d28ea7c60da7/scene.json",
+        "bytes": 2170162,
+        "sha256": "6ec0182de860fad601bce8578bbcca145614d01c98a9b394afb5499a4c130410",
+        "exportedPath": "inspection-assets/6ec0182de860fad601bce8578bbcca145614d01c98a9b394afb5499a4c130410.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-7/colors.json",
+        "bytes": 763850,
+        "sha256": "c9439516d111fefd21f5faa11c71a924503e5a5c28a90a06cad2b2b25b28bd2d",
+        "exportedPath": "inspection-assets/c9439516d111fefd21f5faa11c71a924503e5a5c28a90a06cad2b2b25b28bd2d.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-7/collider.glb",
+        "bytes": 13327308,
+        "sha256": "6bccae253afbe6bdb595f3501e195ac7798c8e7e6784e76340a0688b262186df",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-7/scene.ply",
+        "bytes": 41899296,
+        "sha256": "895271074767ad6e79da1db6304c63174b2ac6a68ce240eece103c6b4cf92bdd",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-7/assessment-scale6.json",
+        "bytes": 216216,
+        "sha256": "e009d967480141f2f5426e8d23402d4b1816144c38fa5bc71c0804abcba577a7",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "courtyard-2-7-scale10",
+    "worldId": "intent-7ee56718-e7ad-4578-b2c1-d28ea7c60da7",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-7ee56718-e7ad-4578-b2c1-d28ea7c60da7/scene.json",
+        "bytes": 2170162,
+        "sha256": "6ec0182de860fad601bce8578bbcca145614d01c98a9b394afb5499a4c130410",
+        "exportedPath": "inspection-assets/6ec0182de860fad601bce8578bbcca145614d01c98a9b394afb5499a4c130410.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-7/colors.json",
+        "bytes": 763850,
+        "sha256": "c9439516d111fefd21f5faa11c71a924503e5a5c28a90a06cad2b2b25b28bd2d",
+        "exportedPath": "inspection-assets/c9439516d111fefd21f5faa11c71a924503e5a5c28a90a06cad2b2b25b28bd2d.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-7/collider.glb",
+        "bytes": 13327308,
+        "sha256": "6bccae253afbe6bdb595f3501e195ac7798c8e7e6784e76340a0688b262186df",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-7/scene.ply",
+        "bytes": 41899296,
+        "sha256": "895271074767ad6e79da1db6304c63174b2ac6a68ce240eece103c6b4cf92bdd",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-7/assessment-scale10.json",
+        "bytes": 268349,
+        "sha256": "afba144082f63ec08ece0fc85b3af2a163385e6c7893dc66e626ca37287af87c",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "courtyard-2-7-scale12",
+    "worldId": "intent-7ee56718-e7ad-4578-b2c1-d28ea7c60da7",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-7ee56718-e7ad-4578-b2c1-d28ea7c60da7/scene.json",
+        "bytes": 2170162,
+        "sha256": "6ec0182de860fad601bce8578bbcca145614d01c98a9b394afb5499a4c130410",
+        "exportedPath": "inspection-assets/6ec0182de860fad601bce8578bbcca145614d01c98a9b394afb5499a4c130410.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-7/colors.json",
+        "bytes": 763850,
+        "sha256": "c9439516d111fefd21f5faa11c71a924503e5a5c28a90a06cad2b2b25b28bd2d",
+        "exportedPath": "inspection-assets/c9439516d111fefd21f5faa11c71a924503e5a5c28a90a06cad2b2b25b28bd2d.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-7/collider.glb",
+        "bytes": 13327308,
+        "sha256": "6bccae253afbe6bdb595f3501e195ac7798c8e7e6784e76340a0688b262186df",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-7/scene.ply",
+        "bytes": 41899296,
+        "sha256": "895271074767ad6e79da1db6304c63174b2ac6a68ce240eece103c6b4cf92bdd",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-7/assessment-scale12.json",
+        "bytes": 365940,
+        "sha256": "b075662eb0dd5469bf1ec9d3bced3a420fb03932bbd61fe1f8887c521d7f20a9",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "bridge-2-7",
+    "worldId": "intent-b594160c-b12e-44af-9695-d5fa3c60684e",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-b594160c-b12e-44af-9695-d5fa3c60684e/scene.json",
+        "bytes": 1757053,
+        "sha256": "d26a9023d30370e6538c84f32df0448c18463b68c77136bbdba65326210b67fb",
+        "exportedPath": "inspection-assets/d26a9023d30370e6538c84f32df0448c18463b68c77136bbdba65326210b67fb.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-7/colors.json",
+        "bytes": 629723,
+        "sha256": "e62d79a839985a3edf283679decbf3e8149f5eafa7182649048887ccf68d3a09",
+        "exportedPath": "inspection-assets/e62d79a839985a3edf283679decbf3e8149f5eafa7182649048887ccf68d3a09.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-7/collider.glb",
+        "bytes": 10783768,
+        "sha256": "68e8a625f16c7bdda99cdd299323526ff70d8131a49d55bc25e4d8ccb9c8ed98",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-7/scene.ply",
+        "bytes": 33650080,
+        "sha256": "c21048e420b4b4a6a08cbd7eda0dc2c12e3e77b1b6d81cf79b4f99a65ee361ca",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-7/assessment-scale6.json",
+        "bytes": 2779,
+        "sha256": "edf1d3b7e410ff0b76a807734d087b42f8eddb807667baee51f871335520f671",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "tunnel-2-7",
+    "worldId": "intent-a9d26274-03b2-4a00-9bd1-be926b6c87b3",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-a9d26274-03b2-4a00-9bd1-be926b6c87b3/scene.json",
+        "bytes": 2945254,
+        "sha256": "c227a5422364d49cb2cfa6aab3219c47d40f58b3ca3743852c9db919d84a0275",
+        "exportedPath": "inspection-assets/c227a5422364d49cb2cfa6aab3219c47d40f58b3ca3743852c9db919d84a0275.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-7/colors.json",
+        "bytes": 1044163,
+        "sha256": "d1b0f0c7ce3a18abed733b89650fefa791cfd65210021e222e81f1eed1def829",
+        "exportedPath": "inspection-assets/d1b0f0c7ce3a18abed733b89650fefa791cfd65210021e222e81f1eed1def829.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-7/collider.glb",
+        "bytes": 17419744,
+        "sha256": "0ff7a321ed9c1d36fdf48c1def049eb5144c42380eed28f161a7aa2a2167467a",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-7/scene.ply",
+        "bytes": 57995168,
+        "sha256": "83d6bf9875a7a716211bfe656c380a8b80aaf565044d3ebea2a458d1cb255919",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-7/assessment-scale6.json",
+        "bytes": 365465,
+        "sha256": "37d291f1f661633435a73ed9ca98799a8b678080be678ebc3a5cac5c8e11b318",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "tunnel-2-7-scale10",
+    "worldId": "intent-a9d26274-03b2-4a00-9bd1-be926b6c87b3",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-a9d26274-03b2-4a00-9bd1-be926b6c87b3/scene.json",
+        "bytes": 2945254,
+        "sha256": "c227a5422364d49cb2cfa6aab3219c47d40f58b3ca3743852c9db919d84a0275",
+        "exportedPath": "inspection-assets/c227a5422364d49cb2cfa6aab3219c47d40f58b3ca3743852c9db919d84a0275.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-7/colors.json",
+        "bytes": 1044163,
+        "sha256": "d1b0f0c7ce3a18abed733b89650fefa791cfd65210021e222e81f1eed1def829",
+        "exportedPath": "inspection-assets/d1b0f0c7ce3a18abed733b89650fefa791cfd65210021e222e81f1eed1def829.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-7/collider.glb",
+        "bytes": 17419744,
+        "sha256": "0ff7a321ed9c1d36fdf48c1def049eb5144c42380eed28f161a7aa2a2167467a",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-7/scene.ply",
+        "bytes": 57995168,
+        "sha256": "83d6bf9875a7a716211bfe656c380a8b80aaf565044d3ebea2a458d1cb255919",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-7/assessment-scale10.json",
+        "bytes": 499232,
+        "sha256": "0a1c8efabb74597bfe05525659be09b11b0ec4ca3c6c2adb5834860f44507a61",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "corridor-2-7",
+    "worldId": "intent-4ba9ab8f-3fbc-4529-82b7-55843b4b5040",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-4ba9ab8f-3fbc-4529-82b7-55843b4b5040/scene.json",
+        "bytes": 1666068,
+        "sha256": "959b7846acdafcdffbe6c1ac137bdeb47f5ba37bf87a7780893b2b0c3a2dd23d",
+        "exportedPath": "inspection-assets/959b7846acdafcdffbe6c1ac137bdeb47f5ba37bf87a7780893b2b0c3a2dd23d.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-7/colors.json",
+        "bytes": 564754,
+        "sha256": "fc3f63726962619750b485ca433734fc9040c8d8eb1d50ec8812573af7e860d1",
+        "exportedPath": "inspection-assets/fc3f63726962619750b485ca433734fc9040c8d8eb1d50ec8812573af7e860d1.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-7/collider.glb",
+        "bytes": 12648472,
+        "sha256": "3deff24d4be94dee2bc86c7bc6d3091f3ebc6ec2bf0c1d51aad186022ed87f00",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-7/scene.ply",
+        "bytes": 27265696,
+        "sha256": "8a37239f645790e816b8d1e92874dc4f78068651c8c806cccc044fef79f9f91f",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-7/assessment-scale6.json",
+        "bytes": 2788,
+        "sha256": "17ae1f87cc60e47f38519e9056ddaf800e3bff605c1ade4cb65a61358523fdac",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "corridor-2-7-scale12",
+    "worldId": "intent-4ba9ab8f-3fbc-4529-82b7-55843b4b5040",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-4ba9ab8f-3fbc-4529-82b7-55843b4b5040/scene.json",
+        "bytes": 1666068,
+        "sha256": "959b7846acdafcdffbe6c1ac137bdeb47f5ba37bf87a7780893b2b0c3a2dd23d",
+        "exportedPath": "inspection-assets/959b7846acdafcdffbe6c1ac137bdeb47f5ba37bf87a7780893b2b0c3a2dd23d.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-7/colors.json",
+        "bytes": 564754,
+        "sha256": "fc3f63726962619750b485ca433734fc9040c8d8eb1d50ec8812573af7e860d1",
+        "exportedPath": "inspection-assets/fc3f63726962619750b485ca433734fc9040c8d8eb1d50ec8812573af7e860d1.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-7/collider.glb",
+        "bytes": 12648472,
+        "sha256": "3deff24d4be94dee2bc86c7bc6d3091f3ebc6ec2bf0c1d51aad186022ed87f00",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-7/scene.ply",
+        "bytes": 27265696,
+        "sha256": "8a37239f645790e816b8d1e92874dc4f78068651c8c806cccc044fef79f9f91f",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-7/assessment-scale12.json",
+        "bytes": 215291,
+        "sha256": "e6be990837c0952ba056975d90ba2cb1b950093d4cd6726b652e647b915f6712",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "narrow_passage-2-7",
+    "worldId": "intent-80e66e4f-2132-44a3-8601-5a0a22051ee5",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-80e66e4f-2132-44a3-8601-5a0a22051ee5/scene.json",
+        "bytes": 3276500,
+        "sha256": "6590e1f8ad670a7a252ea0a48836ec3cda41c0bfe4e461b79236bc2659b092bf",
+        "exportedPath": "inspection-assets/6590e1f8ad670a7a252ea0a48836ec3cda41c0bfe4e461b79236bc2659b092bf.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-7/colors.json",
+        "bytes": 1146469,
+        "sha256": "0fc0109474c2fbbdb5ad415a38db07a8625ae50d6ded24116345e5427a57549d",
+        "exportedPath": "inspection-assets/0fc0109474c2fbbdb5ad415a38db07a8625ae50d6ded24116345e5427a57549d.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-7/collider.glb",
+        "bytes": 22475752,
+        "sha256": "594aadf3c943e1769cc9893a1841eac9f1ab5f3fd2c69382feea5f86583c4273",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-7/scene.ply",
+        "bytes": 53521312,
+        "sha256": "9b0e8840097914ee32d84abb6182db9766b2f59810a08feafa5dfaf808f680d0",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-7/assessment-scale6.json",
+        "bytes": 220973,
+        "sha256": "c1c3a33bd5c1028de10e102a6916f3d81c114a6d5d241488119ab2bc8017a896",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "narrow_passage-2-7-scale10",
+    "worldId": "intent-80e66e4f-2132-44a3-8601-5a0a22051ee5",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-80e66e4f-2132-44a3-8601-5a0a22051ee5/scene.json",
+        "bytes": 3276500,
+        "sha256": "6590e1f8ad670a7a252ea0a48836ec3cda41c0bfe4e461b79236bc2659b092bf",
+        "exportedPath": "inspection-assets/6590e1f8ad670a7a252ea0a48836ec3cda41c0bfe4e461b79236bc2659b092bf.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-7/colors.json",
+        "bytes": 1146469,
+        "sha256": "0fc0109474c2fbbdb5ad415a38db07a8625ae50d6ded24116345e5427a57549d",
+        "exportedPath": "inspection-assets/0fc0109474c2fbbdb5ad415a38db07a8625ae50d6ded24116345e5427a57549d.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-7/collider.glb",
+        "bytes": 22475752,
+        "sha256": "594aadf3c943e1769cc9893a1841eac9f1ab5f3fd2c69382feea5f86583c4273",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-7/scene.ply",
+        "bytes": 53521312,
+        "sha256": "9b0e8840097914ee32d84abb6182db9766b2f59810a08feafa5dfaf808f680d0",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-7/assessment-scale10.json",
+        "bytes": 213354,
+        "sha256": "cd6f000a433cfd178bb23b2dec0b5bfe8f48c2ac224e44c808583c75d9d20d07",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "narrow_passage-2-7-scale12",
+    "worldId": "intent-80e66e4f-2132-44a3-8601-5a0a22051ee5",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-80e66e4f-2132-44a3-8601-5a0a22051ee5/scene.json",
+        "bytes": 3276500,
+        "sha256": "6590e1f8ad670a7a252ea0a48836ec3cda41c0bfe4e461b79236bc2659b092bf",
+        "exportedPath": "inspection-assets/6590e1f8ad670a7a252ea0a48836ec3cda41c0bfe4e461b79236bc2659b092bf.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-7/colors.json",
+        "bytes": 1146469,
+        "sha256": "0fc0109474c2fbbdb5ad415a38db07a8625ae50d6ded24116345e5427a57549d",
+        "exportedPath": "inspection-assets/0fc0109474c2fbbdb5ad415a38db07a8625ae50d6ded24116345e5427a57549d.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-7/collider.glb",
+        "bytes": 22475752,
+        "sha256": "594aadf3c943e1769cc9893a1841eac9f1ab5f3fd2c69382feea5f86583c4273",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-7/scene.ply",
+        "bytes": 53521312,
+        "sha256": "9b0e8840097914ee32d84abb6182db9766b2f59810a08feafa5dfaf808f680d0",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-7/assessment-scale12.json",
+        "bytes": 299111,
+        "sha256": "aee69d9021b8ccea0232bdfdfdd5c834d174c474cf1533743743ecebedc39e9e",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "chamber-2-7",
+    "worldId": "intent-4f3db60b-8939-481c-b8bb-6f8d19ec3286",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-4f3db60b-8939-481c-b8bb-6f8d19ec3286/scene.json",
+        "bytes": 3244726,
+        "sha256": "fbf9b27b7e238e4c276000668a93b19b5ac21ba3157857d429827bbe353775c8",
+        "exportedPath": "inspection-assets/fbf9b27b7e238e4c276000668a93b19b5ac21ba3157857d429827bbe353775c8.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-2-7/colors.json",
+        "bytes": 1119213,
+        "sha256": "ad053394dec9805dbf65df1db2ebb1e4eda38c613d90034c55c1b4333a911ba4",
+        "exportedPath": "inspection-assets/ad053394dec9805dbf65df1db2ebb1e4eda38c613d90034c55c1b4333a911ba4.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-2-7/collider.glb",
+        "bytes": 28767112,
+        "sha256": "7241fe8446a75299314f00c5a5bc70893cc20f4ab7c63444c6f77f67d1921a09",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-2-7/scene.ply",
+        "bytes": 54158880,
+        "sha256": "2821414fc40a318c630a8e4cbfd981da8c485ad738d4390e042273f85a17bf40",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-2-7/assessment-scale6.json",
+        "bytes": 2799,
+        "sha256": "27f98f11f79628fe5b9d1a8369c23e7c1c56aef6b0105aa82cb18831aea2235b",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "cave-2-7",
+    "worldId": "intent-164b48a7-ccb4-41a6-abe2-c118491bdb3e",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-164b48a7-ccb4-41a6-abe2-c118491bdb3e/scene.json",
+        "bytes": 3508755,
+        "sha256": "e1b9e0527be5ee2712a9e68fab63d802af2707b156b6fdea1115bf660de938c6",
+        "exportedPath": "inspection-assets/e1b9e0527be5ee2712a9e68fab63d802af2707b156b6fdea1115bf660de938c6.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-7/colors.json",
+        "bytes": 1209481,
+        "sha256": "c6b9ff9b806a782ead4388afcbc412af1df15e43e241fa535ee412af7e467230",
+        "exportedPath": "inspection-assets/c6b9ff9b806a782ead4388afcbc412af1df15e43e241fa535ee412af7e467230.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-7/collider.glb",
+        "bytes": 20287024,
+        "sha256": "bc528fa49a4c2d671206c150c39991ddf3047794aaf672c2441dd55163d00685",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-7/scene.ply",
+        "bytes": 68263713,
+        "sha256": "8caf50f37ee90945e0f12dbf73fa9c2a0af729a979f4077d1db5a7250e183ef0",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-7/assessment-scale6.json",
+        "bytes": 275100,
+        "sha256": "6d262333fcd89b401ddc3e72cc54bd882a9667008db6042cd38a8e060cee8c38",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "large_open_interior-2-7",
+    "worldId": "intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983/scene.json",
+        "bytes": 4728928,
+        "sha256": "cc80ba8c3bc2937e22594b2289e64910a003d446620ba310b6b6ac8cc7999179",
+        "exportedPath": "inspection-assets/cc80ba8c3bc2937e22594b2289e64910a003d446620ba310b6b6ac8cc7999179.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-7/colors.json",
+        "bytes": 1695537,
+        "sha256": "d90d72a045719ea87d9a6d3726e469618cb3b7e01be54399f4233450fbe0d55b",
+        "exportedPath": "inspection-assets/d90d72a045719ea87d9a6d3726e469618cb3b7e01be54399f4233450fbe0d55b.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-7/collider.glb",
+        "bytes": 28569828,
+        "sha256": "d7aa255ae47867ea3c6df7a2562315511a79b396d47f4ccda9c11ffbeffadc3d",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-7/scene.ply",
+        "bytes": 98708129,
+        "sha256": "c37b6a69d0b14de441871ae1c76d396ae23ebe7c9268eed36bba2a03860eb195",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-7/assessment-scale6.json",
+        "bytes": 2794,
+        "sha256": "3936d6711bdc46da5529372a8f0d69a69041a2daa47338fe9a5fa758d4bc2485",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "large_open_interior-2-7-scale10",
+    "worldId": "intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983/scene.json",
+        "bytes": 4728928,
+        "sha256": "cc80ba8c3bc2937e22594b2289e64910a003d446620ba310b6b6ac8cc7999179",
+        "exportedPath": "inspection-assets/cc80ba8c3bc2937e22594b2289e64910a003d446620ba310b6b6ac8cc7999179.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-7/colors.json",
+        "bytes": 1695537,
+        "sha256": "d90d72a045719ea87d9a6d3726e469618cb3b7e01be54399f4233450fbe0d55b",
+        "exportedPath": "inspection-assets/d90d72a045719ea87d9a6d3726e469618cb3b7e01be54399f4233450fbe0d55b.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-7/collider.glb",
+        "bytes": 28569828,
+        "sha256": "d7aa255ae47867ea3c6df7a2562315511a79b396d47f4ccda9c11ffbeffadc3d",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-7/scene.ply",
+        "bytes": 98708129,
+        "sha256": "c37b6a69d0b14de441871ae1c76d396ae23ebe7c9268eed36bba2a03860eb195",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-7/assessment-scale10.json",
+        "bytes": 212625,
+        "sha256": "5cb37a3611a3f1351c803dbec9228b1c7f2df4e0e828402805e48b942af4cc77",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "large_open_interior-2-7-scale12",
+    "worldId": "intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-d5aee945-ffdd-4ff5-b18c-fa0c95b73983/scene.json",
+        "bytes": 4728928,
+        "sha256": "cc80ba8c3bc2937e22594b2289e64910a003d446620ba310b6b6ac8cc7999179",
+        "exportedPath": "inspection-assets/cc80ba8c3bc2937e22594b2289e64910a003d446620ba310b6b6ac8cc7999179.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-7/colors.json",
+        "bytes": 1695537,
+        "sha256": "d90d72a045719ea87d9a6d3726e469618cb3b7e01be54399f4233450fbe0d55b",
+        "exportedPath": "inspection-assets/d90d72a045719ea87d9a6d3726e469618cb3b7e01be54399f4233450fbe0d55b.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-7/collider.glb",
+        "bytes": 28569828,
+        "sha256": "d7aa255ae47867ea3c6df7a2562315511a79b396d47f4ccda9c11ffbeffadc3d",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-7/scene.ply",
+        "bytes": 98708129,
+        "sha256": "c37b6a69d0b14de441871ae1c76d396ae23ebe7c9268eed36bba2a03860eb195",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-7/assessment-scale12.json",
+        "bytes": 228372,
+        "sha256": "da9c153530feaf900cc105847b155e84cc53cbc0da268903fd13f991971ebcb2",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "doorway-2-7",
+    "worldId": "intent-79c22dd8-039b-446e-a28b-b017bf48ee5c",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-79c22dd8-039b-446e-a28b-b017bf48ee5c/scene.json",
+        "bytes": 1637233,
+        "sha256": "629e85b3db89f46bec3d74949bdf91c39080915f602e59e2bac120d6dd175c2f",
+        "exportedPath": "inspection-assets/629e85b3db89f46bec3d74949bdf91c39080915f602e59e2bac120d6dd175c2f.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-7/colors.json",
+        "bytes": 556800,
+        "sha256": "2411d6df6af63c4f453738149d8912276b5432b21a7a5d7073aaf950eed611d0",
+        "exportedPath": "inspection-assets/2411d6df6af63c4f453738149d8912276b5432b21a7a5d7073aaf950eed611d0.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-7/collider.glb",
+        "bytes": 13884036,
+        "sha256": "63c6ce8785a9cdf0462f6df5079fff737ef7aa67bc3796211b6f05d31bf78080",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-7/scene.ply",
+        "bytes": 25846944,
+        "sha256": "90631a748b25accf8edd99c00ece01f4761e7ea5a958f11bafc00bab33002577",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-7/assessment-scale6.json",
+        "bytes": 249698,
+        "sha256": "bc14cecfac459ba37e166b0049576dffe20c207a08d3daa48378b1f9177d2000",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "doorway-2-7-scale10",
+    "worldId": "intent-79c22dd8-039b-446e-a28b-b017bf48ee5c",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-79c22dd8-039b-446e-a28b-b017bf48ee5c/scene.json",
+        "bytes": 1637233,
+        "sha256": "629e85b3db89f46bec3d74949bdf91c39080915f602e59e2bac120d6dd175c2f",
+        "exportedPath": "inspection-assets/629e85b3db89f46bec3d74949bdf91c39080915f602e59e2bac120d6dd175c2f.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-7/colors.json",
+        "bytes": 556800,
+        "sha256": "2411d6df6af63c4f453738149d8912276b5432b21a7a5d7073aaf950eed611d0",
+        "exportedPath": "inspection-assets/2411d6df6af63c4f453738149d8912276b5432b21a7a5d7073aaf950eed611d0.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-7/collider.glb",
+        "bytes": 13884036,
+        "sha256": "63c6ce8785a9cdf0462f6df5079fff737ef7aa67bc3796211b6f05d31bf78080",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-7/scene.ply",
+        "bytes": 25846944,
+        "sha256": "90631a748b25accf8edd99c00ece01f4761e7ea5a958f11bafc00bab33002577",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-7/assessment-scale10.json",
+        "bytes": 214541,
+        "sha256": "099141753f5ce9866dd15ed2a0a1eb5e9a2b912a0b257046246b29f64f82f7b7",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "doorway-2-7-scale12",
+    "worldId": "intent-79c22dd8-039b-446e-a28b-b017bf48ee5c",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-79c22dd8-039b-446e-a28b-b017bf48ee5c/scene.json",
+        "bytes": 1637233,
+        "sha256": "629e85b3db89f46bec3d74949bdf91c39080915f602e59e2bac120d6dd175c2f",
+        "exportedPath": "inspection-assets/629e85b3db89f46bec3d74949bdf91c39080915f602e59e2bac120d6dd175c2f.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-7/colors.json",
+        "bytes": 556800,
+        "sha256": "2411d6df6af63c4f453738149d8912276b5432b21a7a5d7073aaf950eed611d0",
+        "exportedPath": "inspection-assets/2411d6df6af63c4f453738149d8912276b5432b21a7a5d7073aaf950eed611d0.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-7/collider.glb",
+        "bytes": 13884036,
+        "sha256": "63c6ce8785a9cdf0462f6df5079fff737ef7aa67bc3796211b6f05d31bf78080",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-7/scene.ply",
+        "bytes": 25846944,
+        "sha256": "90631a748b25accf8edd99c00ece01f4761e7ea5a958f11bafc00bab33002577",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-7/assessment-scale12.json",
+        "bytes": 210490,
+        "sha256": "0158a2106da76917b820f3541288fa66b269b474b3ae3c246af89294d97d1aef",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "large_open_interior-2-42",
+    "worldId": "intent-24a42e86-197e-4cd1-a9a5-6627ceea7388",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-24a42e86-197e-4cd1-a9a5-6627ceea7388/scene.json",
+        "bytes": 4181027,
+        "sha256": "79aab07b6b17c8c7a80154d11dd7728a82e901ea0f12516942efaded606d6590",
+        "exportedPath": "inspection-assets/79aab07b6b17c8c7a80154d11dd7728a82e901ea0f12516942efaded606d6590.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-42/colors.json",
+        "bytes": 1470235,
+        "sha256": "26eef5a6d55a2592632122503ac7bf831cc6cc16276b803ed0c8314e2846db91",
+        "exportedPath": "inspection-assets/26eef5a6d55a2592632122503ac7bf831cc6cc16276b803ed0c8314e2846db91.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-42/collider.glb",
+        "bytes": 32724772,
+        "sha256": "185a62eabee619fae3843600702cb259b0a43af9e6f22137a09598938cebf36f",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-42/scene.ply",
+        "bytes": 72171809,
+        "sha256": "7237fe28543cb069443205b1da9475ad12abcb27556725b80d1542d5937f0077",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/large_open_interior-2-42/assessment-scale6.json",
+        "bytes": 2758,
+        "sha256": "02dd1497f79ff70d5684dc8a1a52c3ac76d3a8cb5a3cb5fb2015c198193ed509",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "doorway-2-42",
+    "worldId": "intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2/scene.json",
+        "bytes": 2762736,
+        "sha256": "2cd94f5158723a233814729c7306ebe8c102be5d84e554581fc3cd8aff109eec",
+        "exportedPath": "inspection-assets/2cd94f5158723a233814729c7306ebe8c102be5d84e554581fc3cd8aff109eec.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-42/colors.json",
+        "bytes": 971358,
+        "sha256": "8ee86da03e422876819637c48441856a6c4b16ec662482eca186f71757474219",
+        "exportedPath": "inspection-assets/8ee86da03e422876819637c48441856a6c4b16ec662482eca186f71757474219.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-42/collider.glb",
+        "bytes": 17341836,
+        "sha256": "8a6bdf101d8d1b01b96832bee7e7d3277374fdba8a398656e7d70a2c1b2e6fda",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-42/scene.ply",
+        "bytes": 40500128,
+        "sha256": "9a51e78abb5ec74ee978fde22887d72806a3fdb7d8c97f41573e8fe98708e12f",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-42/assessment-scale6.json",
+        "bytes": 234126,
+        "sha256": "fc2570f72f309fa2a5d4f89f4ab7cbe573a4a6c36d969eb668f6fbfec76ab50c",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "doorway-2-42-scale10",
+    "worldId": "intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2/scene.json",
+        "bytes": 2762736,
+        "sha256": "2cd94f5158723a233814729c7306ebe8c102be5d84e554581fc3cd8aff109eec",
+        "exportedPath": "inspection-assets/2cd94f5158723a233814729c7306ebe8c102be5d84e554581fc3cd8aff109eec.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-42/colors.json",
+        "bytes": 971358,
+        "sha256": "8ee86da03e422876819637c48441856a6c4b16ec662482eca186f71757474219",
+        "exportedPath": "inspection-assets/8ee86da03e422876819637c48441856a6c4b16ec662482eca186f71757474219.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-42/collider.glb",
+        "bytes": 17341836,
+        "sha256": "8a6bdf101d8d1b01b96832bee7e7d3277374fdba8a398656e7d70a2c1b2e6fda",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-42/scene.ply",
+        "bytes": 40500128,
+        "sha256": "9a51e78abb5ec74ee978fde22887d72806a3fdb7d8c97f41573e8fe98708e12f",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-42/assessment-scale10.json",
+        "bytes": 287824,
+        "sha256": "79d60112c0e6d5b43c837ae200073fcbfc00b05db580de7456efafa4ff3c960b",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "doorway-2-42-scale12",
+    "worldId": "intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-7b5959e3-b394-49de-94ff-b68cc7ad22c2/scene.json",
+        "bytes": 2762736,
+        "sha256": "2cd94f5158723a233814729c7306ebe8c102be5d84e554581fc3cd8aff109eec",
+        "exportedPath": "inspection-assets/2cd94f5158723a233814729c7306ebe8c102be5d84e554581fc3cd8aff109eec.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-42/colors.json",
+        "bytes": 971358,
+        "sha256": "8ee86da03e422876819637c48441856a6c4b16ec662482eca186f71757474219",
+        "exportedPath": "inspection-assets/8ee86da03e422876819637c48441856a6c4b16ec662482eca186f71757474219.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-42/collider.glb",
+        "bytes": 17341836,
+        "sha256": "8a6bdf101d8d1b01b96832bee7e7d3277374fdba8a398656e7d70a2c1b2e6fda",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-42/scene.ply",
+        "bytes": 40500128,
+        "sha256": "9a51e78abb5ec74ee978fde22887d72806a3fdb7d8c97f41573e8fe98708e12f",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/doorway-2-42/assessment-scale12.json",
+        "bytes": 448038,
+        "sha256": "04dcae0bf985c274774aa245d4347d53f64fba645914312df71c8c6ce4431de0",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "corridor-2-42",
+    "worldId": "intent-6405f041-e587-4ea4-9701-e0f8f3ced639",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-6405f041-e587-4ea4-9701-e0f8f3ced639/scene.json",
+        "bytes": 2441563,
+        "sha256": "8cf69b5f7138cad6fa3cf853b3fd3501b529afc0a7af18a5c7df68f916486298",
+        "exportedPath": "inspection-assets/8cf69b5f7138cad6fa3cf853b3fd3501b529afc0a7af18a5c7df68f916486298.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-42/colors.json",
+        "bytes": 844925,
+        "sha256": "aa1e89459dae014a96de236b4c4645b65ecfb6d5c073fa2b3213c6ce2f946d11",
+        "exportedPath": "inspection-assets/aa1e89459dae014a96de236b4c4645b65ecfb6d5c073fa2b3213c6ce2f946d11.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-42/collider.glb",
+        "bytes": 19132312,
+        "sha256": "79b792cfba58bb085aa025625e66ad170eaf5d21cecf1c18f4ed654f523345fe",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-42/scene.ply",
+        "bytes": 36198176,
+        "sha256": "4b1801127892abc7bd220b51dac2fc025644fa5a3513f36f83f2f49b4ab6eb44",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-42/assessment-scale6.json",
+        "bytes": 213540,
+        "sha256": "7beb7459673ef0e383829f42a673264a0dcaa13ddf93816535b38b8de4617cca",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "corridor-2-42-scale10",
+    "worldId": "intent-6405f041-e587-4ea4-9701-e0f8f3ced639",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-6405f041-e587-4ea4-9701-e0f8f3ced639/scene.json",
+        "bytes": 2441563,
+        "sha256": "8cf69b5f7138cad6fa3cf853b3fd3501b529afc0a7af18a5c7df68f916486298",
+        "exportedPath": "inspection-assets/8cf69b5f7138cad6fa3cf853b3fd3501b529afc0a7af18a5c7df68f916486298.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-42/colors.json",
+        "bytes": 844925,
+        "sha256": "aa1e89459dae014a96de236b4c4645b65ecfb6d5c073fa2b3213c6ce2f946d11",
+        "exportedPath": "inspection-assets/aa1e89459dae014a96de236b4c4645b65ecfb6d5c073fa2b3213c6ce2f946d11.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-42/collider.glb",
+        "bytes": 19132312,
+        "sha256": "79b792cfba58bb085aa025625e66ad170eaf5d21cecf1c18f4ed654f523345fe",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-42/scene.ply",
+        "bytes": 36198176,
+        "sha256": "4b1801127892abc7bd220b51dac2fc025644fa5a3513f36f83f2f49b4ab6eb44",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-42/assessment-scale10.json",
+        "bytes": 218269,
+        "sha256": "926d0ee235dac63323a1647af8d65735d466c815efc128717a215450d7cac865",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "corridor-2-42-scale12",
+    "worldId": "intent-6405f041-e587-4ea4-9701-e0f8f3ced639",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-6405f041-e587-4ea4-9701-e0f8f3ced639/scene.json",
+        "bytes": 2441563,
+        "sha256": "8cf69b5f7138cad6fa3cf853b3fd3501b529afc0a7af18a5c7df68f916486298",
+        "exportedPath": "inspection-assets/8cf69b5f7138cad6fa3cf853b3fd3501b529afc0a7af18a5c7df68f916486298.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-42/colors.json",
+        "bytes": 844925,
+        "sha256": "aa1e89459dae014a96de236b4c4645b65ecfb6d5c073fa2b3213c6ce2f946d11",
+        "exportedPath": "inspection-assets/aa1e89459dae014a96de236b4c4645b65ecfb6d5c073fa2b3213c6ce2f946d11.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-42/collider.glb",
+        "bytes": 19132312,
+        "sha256": "79b792cfba58bb085aa025625e66ad170eaf5d21cecf1c18f4ed654f523345fe",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-42/scene.ply",
+        "bytes": 36198176,
+        "sha256": "4b1801127892abc7bd220b51dac2fc025644fa5a3513f36f83f2f49b4ab6eb44",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/corridor-2-42/assessment-scale12.json",
+        "bytes": 207757,
+        "sha256": "68331710bfcd699e1e0d073f05b51afc9cfb9132242c94a56dccdbedac1c470a",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "chamber-2-42",
+    "worldId": "intent-79a8d1ec-2343-4492-af86-afdc16a76c4a",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-79a8d1ec-2343-4492-af86-afdc16a76c4a/scene.json",
+        "bytes": 4324700,
+        "sha256": "65cc2427f52ec637a195caeccabb9be4458a5631d11b66f945bcfb26c7536e6c",
+        "exportedPath": "inspection-assets/65cc2427f52ec637a195caeccabb9be4458a5631d11b66f945bcfb26c7536e6c.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-2-42/colors.json",
+        "bytes": 1484851,
+        "sha256": "209c6f6215680786227ef0f6ed13cf3829dc5a4d1aee4d6ce6fd0dfce9ca575d",
+        "exportedPath": "inspection-assets/209c6f6215680786227ef0f6ed13cf3829dc5a4d1aee4d6ce6fd0dfce9ca575d.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-2-42/collider.glb",
+        "bytes": 36972272,
+        "sha256": "22a79d784e63af8b34e5b2565e1bfdfc759f8d3a6ecf3c1bdd198f02763bb0bc",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-2-42/scene.ply",
+        "bytes": 70328737,
+        "sha256": "9e5e3f4952d42c38ce1ba09860c7ce44e80e8cc279dbae6f02717de56c51bfff",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/chamber-2-42/assessment-scale6.json",
+        "bytes": 2803,
+        "sha256": "8ac763a8b8cf4f690eb2697d1f22e1a41364ae4183ed04760fc4efa593d9a5e6",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "narrow_passage-2-42",
+    "worldId": "intent-c51a5de0-80bb-4922-b019-681f2618e8bb",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-c51a5de0-80bb-4922-b019-681f2618e8bb/scene.json",
+        "bytes": 3124844,
+        "sha256": "fd4514600c0d9b8877f7408f78def2085bbb48840d53a57a9837cc4b53dbef9f",
+        "exportedPath": "inspection-assets/fd4514600c0d9b8877f7408f78def2085bbb48840d53a57a9837cc4b53dbef9f.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-42/colors.json",
+        "bytes": 1067769,
+        "sha256": "647db70a2b8fb00cf5d6e3efcdf9c635f85a9970ca5e0c055317c622a6218da0",
+        "exportedPath": "inspection-assets/647db70a2b8fb00cf5d6e3efcdf9c635f85a9970ca5e0c055317c622a6218da0.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-42/collider.glb",
+        "bytes": 26480124,
+        "sha256": "959d16f942eda033df6c66c738c6db0abf5862cee35852436f22c670b237e489",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-42/scene.ply",
+        "bytes": 51824032,
+        "sha256": "e03c9d0d75afd9b8bd362074169115c5ac76c2f88d25d4f048c99772bf05d9f5",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/narrow_passage-2-42/assessment-scale6.json",
+        "bytes": 2756,
+        "sha256": "ff3dcbca38370287d16c0b5aca72b3f94155aa4a476828f17d164538f1b5528e",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "courtyard-2-42",
+    "worldId": "intent-aa874065-02b6-40fe-9aa8-7d954776c8b8",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-aa874065-02b6-40fe-9aa8-7d954776c8b8/scene.json",
+        "bytes": 4878208,
+        "sha256": "03b3c9d18fefa0a955530254a6f680737447ec4466fa81bf1580132d4dd28b9d",
+        "exportedPath": "inspection-assets/03b3c9d18fefa0a955530254a6f680737447ec4466fa81bf1580132d4dd28b9d.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-42/colors.json",
+        "bytes": 1702445,
+        "sha256": "6ad6b7bbd156f57b39437061bd9d234bf3d31db7b21d1c9cd2918c55abd7aa58",
+        "exportedPath": "inspection-assets/6ad6b7bbd156f57b39437061bd9d234bf3d31db7b21d1c9cd2918c55abd7aa58.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-42/collider.glb",
+        "bytes": 30572428,
+        "sha256": "443c614d9e2df544032a989b6cfa769715330eb95081d630d635f84192ace40f",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-42/scene.ply",
+        "bytes": 71671329,
+        "sha256": "13ed7a14b02e7f25375816dbc451d3c884b49c7942f18546da5d6bfba8deff0b",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/courtyard-2-42/assessment-scale6.json",
+        "bytes": 2760,
+        "sha256": "ad77db6ce4cdfdebf30faa9ffa128f5f48e6d1449eff6ca629ba4ba7abe283a1",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "cave-2-42",
+    "worldId": "intent-7f95f53b-4060-4980-99bb-2f337ff8ba88",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-7f95f53b-4060-4980-99bb-2f337ff8ba88/scene.json",
+        "bytes": 4689913,
+        "sha256": "ffefbeb0229623eb701d6dbccae47d5a5f63bb27e2205cdf83be51c4bc5f9f98",
+        "exportedPath": "inspection-assets/ffefbeb0229623eb701d6dbccae47d5a5f63bb27e2205cdf83be51c4bc5f9f98.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-42/colors.json",
+        "bytes": 1599785,
+        "sha256": "29b4a06f016919309856b9b8890565914b4757017dd4804aea71e49bc7e44822",
+        "exportedPath": "inspection-assets/29b4a06f016919309856b9b8890565914b4757017dd4804aea71e49bc7e44822.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-42/collider.glb",
+        "bytes": 33864988,
+        "sha256": "2799c15cc829face3643046c5d400024b6ea2e4f53eddb89f68e4cdc234bd1a3",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-42/scene.ply",
+        "bytes": 76543393,
+        "sha256": "6f9e70c7d16696b5818372673643dad964e63e7f10b89e2139fce76457ee4e8b",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-42/assessment-scale6.json",
+        "bytes": 2833,
+        "sha256": "cdfc135d534139d902abde8f7b58177dd9e2fe2e13e7dccba928d829f0983e36",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "cave-2-42-scale10",
+    "worldId": "intent-7f95f53b-4060-4980-99bb-2f337ff8ba88",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-7f95f53b-4060-4980-99bb-2f337ff8ba88/scene.json",
+        "bytes": 4689913,
+        "sha256": "ffefbeb0229623eb701d6dbccae47d5a5f63bb27e2205cdf83be51c4bc5f9f98",
+        "exportedPath": "inspection-assets/ffefbeb0229623eb701d6dbccae47d5a5f63bb27e2205cdf83be51c4bc5f9f98.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-42/colors.json",
+        "bytes": 1599785,
+        "sha256": "29b4a06f016919309856b9b8890565914b4757017dd4804aea71e49bc7e44822",
+        "exportedPath": "inspection-assets/29b4a06f016919309856b9b8890565914b4757017dd4804aea71e49bc7e44822.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-42/collider.glb",
+        "bytes": 33864988,
+        "sha256": "2799c15cc829face3643046c5d400024b6ea2e4f53eddb89f68e4cdc234bd1a3",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-42/scene.ply",
+        "bytes": 76543393,
+        "sha256": "6f9e70c7d16696b5818372673643dad964e63e7f10b89e2139fce76457ee4e8b",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/cave-2-42/assessment-scale10.json",
+        "bytes": 227988,
+        "sha256": "fb33e840bf19bec92e133738966c73856dc420dde48a71188ae0d43481ccc55a",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "bridge-2-42",
+    "worldId": "intent-10a3cf02-3d09-4837-933f-b0aa040d8d35",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-10a3cf02-3d09-4837-933f-b0aa040d8d35/scene.json",
+        "bytes": 4416229,
+        "sha256": "2b7d1cf6aedbf167c76c8c24536e0688ca4d10d1649a3ed9bc44cdeba40f3804",
+        "exportedPath": "inspection-assets/2b7d1cf6aedbf167c76c8c24536e0688ca4d10d1649a3ed9bc44cdeba40f3804.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-42/colors.json",
+        "bytes": 1587968,
+        "sha256": "9f3ddee2bddcb35d4a4bb386c424f0570cfb19feecf5d5a312fcf02755bf10f0",
+        "exportedPath": "inspection-assets/9f3ddee2bddcb35d4a4bb386c424f0570cfb19feecf5d5a312fcf02755bf10f0.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-42/collider.glb",
+        "bytes": 29678536,
+        "sha256": "08e209f8cc1ba52619cfd02edc04abc6d4522232c238eb19998801bfb2a16e00",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-42/scene.ply",
+        "bytes": 82538273,
+        "sha256": "7693a548b71955d8d75cc4bbab43edfcd5a2c0cbcb24b1536593e0f9545d5684",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-42/assessment-scale6.json",
+        "bytes": 2831,
+        "sha256": "f7e2403649dfe9a19a6b81d29a8d535a8af774f808153ee17e96acbd8e593515",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "bridge-2-42-scale10",
+    "worldId": "intent-10a3cf02-3d09-4837-933f-b0aa040d8d35",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-10a3cf02-3d09-4837-933f-b0aa040d8d35/scene.json",
+        "bytes": 4416229,
+        "sha256": "2b7d1cf6aedbf167c76c8c24536e0688ca4d10d1649a3ed9bc44cdeba40f3804",
+        "exportedPath": "inspection-assets/2b7d1cf6aedbf167c76c8c24536e0688ca4d10d1649a3ed9bc44cdeba40f3804.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-42/colors.json",
+        "bytes": 1587968,
+        "sha256": "9f3ddee2bddcb35d4a4bb386c424f0570cfb19feecf5d5a312fcf02755bf10f0",
+        "exportedPath": "inspection-assets/9f3ddee2bddcb35d4a4bb386c424f0570cfb19feecf5d5a312fcf02755bf10f0.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-42/collider.glb",
+        "bytes": 29678536,
+        "sha256": "08e209f8cc1ba52619cfd02edc04abc6d4522232c238eb19998801bfb2a16e00",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-42/scene.ply",
+        "bytes": 82538273,
+        "sha256": "7693a548b71955d8d75cc4bbab43edfcd5a2c0cbcb24b1536593e0f9545d5684",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-42/assessment-scale10.json",
+        "bytes": 413437,
+        "sha256": "266f24b69c7bf901f9c16589c68d3722c639a210988f28a957adcd933d219e86",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "bridge-2-42-scale12",
+    "worldId": "intent-10a3cf02-3d09-4837-933f-b0aa040d8d35",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-10a3cf02-3d09-4837-933f-b0aa040d8d35/scene.json",
+        "bytes": 4416229,
+        "sha256": "2b7d1cf6aedbf167c76c8c24536e0688ca4d10d1649a3ed9bc44cdeba40f3804",
+        "exportedPath": "inspection-assets/2b7d1cf6aedbf167c76c8c24536e0688ca4d10d1649a3ed9bc44cdeba40f3804.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-42/colors.json",
+        "bytes": 1587968,
+        "sha256": "9f3ddee2bddcb35d4a4bb386c424f0570cfb19feecf5d5a312fcf02755bf10f0",
+        "exportedPath": "inspection-assets/9f3ddee2bddcb35d4a4bb386c424f0570cfb19feecf5d5a312fcf02755bf10f0.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-42/collider.glb",
+        "bytes": 29678536,
+        "sha256": "08e209f8cc1ba52619cfd02edc04abc6d4522232c238eb19998801bfb2a16e00",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-42/scene.ply",
+        "bytes": 82538273,
+        "sha256": "7693a548b71955d8d75cc4bbab43edfcd5a2c0cbcb24b1536593e0f9545d5684",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/bridge-2-42/assessment-scale12.json",
+        "bytes": 223235,
+        "sha256": "1f29079e9b9ef3bca037c16c118a6bbd9aee8d2f32893065f60659973f171812",
+        "exportedPath": null
+      }
+    }
+  },
+  {
+    "caseId": "tunnel-2-42",
+    "worldId": "intent-006d2630-6cd8-441d-a6b0-4387a59866fc",
+    "assets": {
+      "scene": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/intention-generation/worlds/intent-006d2630-6cd8-441d-a6b0-4387a59866fc/scene.json",
+        "bytes": 5416890,
+        "sha256": "a3de83c9391dd5f32897d5394ba85603e3724e649fca732665dc9b370dd87b17",
+        "exportedPath": "inspection-assets/a3de83c9391dd5f32897d5394ba85603e3724e649fca732665dc9b370dd87b17.json"
+      },
+      "colors": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-42/colors.json",
+        "bytes": 1818229,
+        "sha256": "96000b0aa16296e488828ac605c416fed8e47918ad2993e313e3f2448d35589a",
+        "exportedPath": "inspection-assets/96000b0aa16296e488828ac605c416fed8e47918ad2993e313e3f2448d35589a.json"
+      },
+      "glb": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-42/collider.glb",
+        "bytes": 39032728,
+        "sha256": "57449dddb406c34b47e052c63fae7c8e3c3f974c1949cc3f49f7af6e51e38faf",
+        "exportedPath": null
+      },
+      "ply": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-42/scene.ply",
+        "bytes": 95300513,
+        "sha256": "9b9edd3282083ac1a44cdf201742b24ae8740819a689ba43394224c68b15bd3a",
+        "exportedPath": null
+      },
+      "assessment": {
+        "retainedPath": "/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/candidates/tunnel-2-42/assessment-scale6.json",
+        "bytes": 2834,
+        "sha256": "fdd3301a6bd23577dc8772a190d135868329e705552ed2372457ac4fea94b9e2",
+        "exportedPath": null
+      }
+    }
+  }
+]

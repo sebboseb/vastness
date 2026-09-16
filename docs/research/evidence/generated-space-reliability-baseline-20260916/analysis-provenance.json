@@ -1,0 +1,27 @@
+{
+  "capturedAt": "2026-09-16T09:18:06.864Z",
+  "analysisGitCommit": "ca76e602ed88a388c7254074ec985bcd8f77e6b7",
+  "frozenHelpersIdentical": true,
+  "hashes": [
+    {
+      "path": "scripts/passage-geometry.ts",
+      "rootSha256": "ee386797faffe7b55dc53c7286a5e7b14ef44c267fcd98dfe09fcbf09a93fd79",
+      "analysisCopySha256": "ee386797faffe7b55dc53c7286a5e7b14ef44c267fcd98dfe09fcbf09a93fd79"
+    },
+    {
+      "path": "apps/web/src/generated-passage/navigation.ts",
+      "rootSha256": "0cafa5e8d7763fc8e011bcc5ea1a831ae7bb90025ecd47ee4c92a54e45c2a39e",
+      "analysisCopySha256": "0cafa5e8d7763fc8e011bcc5ea1a831ae7bb90025ecd47ee4c92a54e45c2a39e"
+    },
+    {
+      "path": "scripts/prepare-passage-colors.ts",
+      "rootSha256": "58332f6d71416b232caa746b25062baadc660e2984bca9f6071229a17f289cd3",
+      "analysisCopySha256": "58332f6d71416b232caa746b25062baadc660e2984bca9f6071229a17f289cd3"
+    },
+    {
+      "path": "apps/web/src/generated-passage/color.ts",
+      "rootSha256": "d2df29e75d2e62fd28354d522e006617ab64bdc58482b9d31e99751be6adaf45",
+      "analysisCopySha256": "d2df29e75d2e62fd28354d522e006617ab64bdc58482b9d31e99751be6adaf45"
+    }
+  ]
+}

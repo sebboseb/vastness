@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "partial-bridge-conditioning",
+  "sourceObservation": "Image includes a deck over water and arched wall, but adds stairs and lacks two obvious broad level landings.",
+  "generatedObservation": "Primary lacks qualifying enclosure, scale10 fails seam validation, scale12 passes offline but browser entry stalls.",
+  "evidence": [
+    "source-rgb.png",
+    "diagnostic.json",
+    "browser"
+  ]
+}

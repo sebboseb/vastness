@@ -1,0 +1,14 @@
+{
+  "commit": "9b4cf9d49b31ee0821b0a414c409c1150333d39a",
+  "files": {
+    "apps/web/src/generated-passage/navigation.ts": "0cafa5e8d7763fc8e011bcc5ea1a831ae7bb90025ecd47ee4c92a54e45c2a39e",
+    "apps/web/src/generated-passage/main.ts": "20c20719e4fa7404d04180beeb2517181214156eb049d3bb6b7cb4c3b943aac0",
+    "apps/web/src/generated-passage/renderer.ts": "243eb5134672a169ea1902479ab11424c339b526bd1e5c2bf93911ce0d1210e7",
+    "scripts/passage-geometry.ts": "ee386797faffe7b55dc53c7286a5e7b14ef44c267fcd98dfe09fcbf09a93fd79",
+    "scripts/prepare-passage-colors.ts": "58332f6d71416b232caa746b25062baadc660e2984bca9f6071229a17f289cd3",
+    "services/intention-prototype/server.ts": "7924ca2cda8c854774ab960d442d415be32f6279f969569f8a641d2b6939d710",
+    "services/intention-prototype/semantics.ts": "a0580746461d9e1915e983ea3807124c1e5ed5dbba90d9926440ec0692e49e85",
+    "scripts/reliability/plan.json": "e081fb1593b7faabd380fbbea492237cddff56128d418de94a46c64a79fad90e"
+  },
+  "note": "Baseline files unchanged throughout original36job study; analysis/report additions may have later commits."
+}

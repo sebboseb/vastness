@@ -1,0 +1,54 @@
+{
+  "candidate": "courtyard-1-42",
+  "id": "courtyard-1-42",
+  "category": "courtyard",
+  "promptVariant": 1,
+  "seed": 42,
+  "text": "An empty courtyard enclosed by stone walls, broad entrance gate and flat continuous paving under an open sky.",
+  "rawIntent": {
+    "text": "An empty courtyard enclosed by stone walls, broad entrance gate and flat continuous paving under an open sky.",
+    "source": "text",
+    "seed": 42
+  },
+  "declaredAt": "2026-09-16T09:20:57.282887+00:00",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "An empty courtyard enclosed by stone walls, broad entrance gate and flat continuous paving under an open sky.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "enclosed"
+    },
+    "representation": "abstract-solid"
+  },
+  "submissionAttemptedAt": "2026-09-16T09:20:57.298922+00:00",
+  "worldId": "intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b",
+  "jobId": "intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b",
+  "request": {
+    "id": "intent-278ce739-bc1b-42f3-8efc-5c657a19ee6b",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"An empty courtyard enclosed by stone walls, broad entrance gate and flat continuous paving under an open sky.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "collected": true,
+  "gpuStatus": "succeeded",
+  "macStatus": "ready",
+  "finishedAt": "2026-09-16T09:22:23.099950+00:00",
+  "generationSeconds": 75.18075865999708,
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 1788.0,
+        "sampledPeakMiB": 17905.0,
+        "samples": 679
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  },
+  "failureStage": null,
+  "geometryAssessment": "pending separate generated-support assessment"
+}

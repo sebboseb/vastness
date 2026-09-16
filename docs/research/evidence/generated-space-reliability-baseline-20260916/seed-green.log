@@ -1,0 +1,52 @@
+TAP version 13
+# Subtest: HTTP intent is recorded before generation; accepted destination and visits survive restart without regeneration
+ok 1 - HTTP intent is recorded before generation; accepted destination and visits survive restart without regeneration
+  ---
+  duration_ms: 57.93
+  type: 'test'
+  ...
+# Subtest: failed GPU jobs remain failed and cannot be crossed
+ok 2 - failed GPU jobs remain failed and cannot be crossed
+  ---
+  duration_ms: 13.024416
+  type: 'test'
+  ...
+# Subtest: restart reconciles a job accepted before the Mac saved its submission acknowledgment
+ok 3 - restart reconciles a job accepted before the Mac saved its submission acknowledgment
+  ---
+  duration_ms: 7.336208
+  type: 'test'
+  ...
+# Subtest: temporary worker transport failure preserves resumable job and retries without generating again
+ok 4 - temporary worker transport failure preserves resumable job and retries without generating again
+  ---
+  duration_ms: 12.881208
+  type: 'test'
+  ...
+# Subtest: visit identities preserve a fresh crossing after pose reset and deduplicate retries across restart
+ok 5 - visit identities preserve a fresh crossing after pose reset and deduplicate retries across restart
+  ---
+  duration_ms: 15.855416
+  type: 'test'
+  ...
+# Subtest: validation retry reuses the successful job and accepted hashes without worker contact or regeneration
+ok 6 - validation retry reuses the successful job and accepted hashes without worker contact or regeneration
+  ---
+  duration_ms: 28.263666
+  type: 'test'
+  ...
+# Subtest: development seed override is validated, persisted and sent unchanged; existing clients retain seed42
+ok 7 - development seed override is validated, persisted and sent unchanged; existing clients retain seed42
+  ---
+  duration_ms: 12.111292
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 273.686917

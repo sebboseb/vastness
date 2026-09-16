@@ -1,0 +1,13 @@
+{
+  "id": "intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99",
+  "status": "succeeded",
+  "progress": 1,
+  "logs": [
+    "Queued command-v1",
+    "Running command-v1",
+    "{\"status\": \"succeeded\", \"report\": \"/home/vastness/.local/share/vastness-intention-worker/shared/data/artifacts/.intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99.tmp/generation-report.json\", \"error\": null}\n",
+    "Visual and collision artifacts are ready"
+  ],
+  "backend": "command-v1",
+  "error": null
+}

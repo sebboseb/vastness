@@ -1,0 +1,102 @@
+{
+  "id": "intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99",
+  "createdAt": "2026-09-16T09:22:23.117Z",
+  "rawIntent": {
+    "text": "A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end.",
+    "axes": {
+      "scale": "human",
+      "density": "balanced",
+      "mood": "unspecified",
+      "openness": "open"
+    },
+    "representation": "abstract-solid"
+  },
+  "derivation": {
+    "compiler": "lexical-semantic-v1",
+    "cues": {
+      "vast": [],
+      "intimate": [],
+      "sparse": [],
+      "dense": [],
+      "open": [
+        "open"
+      ],
+      "enclosed": [],
+      "quiet": [],
+      "ominous": [],
+      "luminous": [],
+      "joyful": []
+    },
+    "limitations": [
+      "Rule-based axis extraction; no general language reasoning",
+      "Negation handling is local, not a complete semantic parser",
+      "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+      "Concept is bounded to 600 characters; original input is retained separately"
+    ]
+  },
+  "status": "ready",
+  "jobId": "intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99",
+  "request": {
+    "id": "intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A long straight corridor with parallel stone walls, level floor, overhead roof and an open doorway at each end.\",\"axes\":{\"scale\":\"human\",\"density\":\"balanced\",\"mood\":\"unspecified\",\"openness\":\"open\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "events": [
+    {
+      "type": "intent-recorded",
+      "at": "2026-09-16T09:22:23.117Z"
+    },
+    {
+      "type": "constraints-derived",
+      "at": "2026-09-16T09:22:23.117Z"
+    },
+    {
+      "type": "gpu-job-submitted",
+      "at": "2026-09-16T09:22:23.216Z"
+    },
+    {
+      "type": "artifacts-processing",
+      "at": "2026-09-16T09:23:38.359Z"
+    },
+    {
+      "type": "destination-validated",
+      "at": "2026-09-16T09:23:47.204Z"
+    }
+  ],
+  "workerJob": {
+    "id": "intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99",
+    "status": "succeeded",
+    "progress": 1,
+    "logs": [
+      "Queued command-v1",
+      "Running command-v1",
+      "{\"status\": \"succeeded\", \"report\": \"/home/vastness/.local/share/vastness-intention-worker/shared/data/artifacts/.intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99.tmp/generation-report.json\", \"error\": null}\n",
+      "Visual and collision artifacts are ready"
+    ],
+    "backend": "command-v1",
+    "error": null
+  },
+  "artifacts": [
+    {
+      "url": "/api/intent/artifacts/4e3ad1ac15449ab0ad9123be5badc6d78071020f9666a0df783ccac6b2b7ed25/scene.ply",
+      "sha256": "4e3ad1ac15449ab0ad9123be5badc6d78071020f9666a0df783ccac6b2b7ed25",
+      "bytes": 48124832,
+      "format": "ply",
+      "backend": "command-v1"
+    },
+    {
+      "url": "/api/intent/artifacts/589e5e427db97ef45a76411ea1629c08f55b39b82efe3688359e8d5c795c7eae/collider.glb",
+      "sha256": "589e5e427db97ef45a76411ea1629c08f55b39b82efe3688359e8d5c795c7eae",
+      "bytes": 25938024,
+      "format": "glb",
+      "backend": "command-v1"
+    }
+  ],
+  "sceneUrl": "/api/intent/worlds/intent-10250f56-c6e8-489e-ae7f-ef86ab79ad99/scene"
+}

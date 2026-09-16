@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "ambiguous-covered-bridge-conditioning",
+  "sourceObservation": "Image depicts a covered wooden structure with railings, two apparent deck levels and miniature people; continuous level landings at both ends are not clear.",
+  "generatedObservation": "Primary lacks qualifying enclosure; larger scales fail the external seam. No geometry has been repaired or deck/floor added.",
+  "evidence": [
+    "source-rgb.png",
+    "diagnostic.json",
+    "browser"
+  ]
+}

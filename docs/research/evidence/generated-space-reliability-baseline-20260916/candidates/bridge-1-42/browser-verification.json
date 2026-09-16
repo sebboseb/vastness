@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "bridge-1-42",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 10,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 12,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/bridge-1-42-scale12.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "561c946132711910a888f7b9662be8ccf78b6cb3176d2ff533993bc115a97e09",
+        "forward": "32b9aee8b4a82de01838b6a65fe2cada1589e575de2d5441aa56618faaa27e5f",
+        "returned": "32b9aee8b4a82de01838b6a65fe2cada1589e575de2d5441aa56618faaa27e5f"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    }
+  ]
+}

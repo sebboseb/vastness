@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "corridor-1-7",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/corridor-1-7.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "21ceac0b011a4b53216d570ed92dec699919c23806bcc6c7d363be0277854955",
+        "forward": "c6e2db79cfba37038b38d70040d99414a7af5a6fd13f2ca9711d02af5b2062da",
+        "returned": "c6e2db79cfba37038b38d70040d99414a7af5a6fd13f2ca9711d02af5b2062da"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 10,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/corridor-1-7-scale10.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "d3f79b9d11a38918f3b93d8130a00b280595609859d28d75caa55cecc8048878",
+        "forward": "87d1824b92658f6b933dea616b0ec8b8124fb72326920f43e7636aee783f3783",
+        "returned": "87d1824b92658f6b933dea616b0ec8b8124fb72326920f43e7636aee783f3783"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 12,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/corridor-1-7-scale12.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "9c43280036b3d7ee26260fb8005e281a7f7cd758b1e45c43e2faee0b6946295b",
+        "forward": "33b76b7fd47a0349acf54400b5583c9cf2ccd31161f5224df77337832ea86f43",
+        "returned": "33b76b7fd47a0349acf54400b5583c9cf2ccd31161f5224df77337832ea86f43"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    }
+  ]
+}

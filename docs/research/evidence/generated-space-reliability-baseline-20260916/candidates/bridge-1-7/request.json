@@ -1,0 +1,5 @@
+{
+  "id": "intent-cc01fd39-0b1d-49b3-8c83-851c3cb8678a",
+  "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A stone bridge with a flat continuous deck, tall solid side parapets and an empty walkway joining two broad stone landings.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+  "seed": 7
+}

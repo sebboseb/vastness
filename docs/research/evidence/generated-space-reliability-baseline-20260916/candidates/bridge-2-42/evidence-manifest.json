@@ -1,0 +1,66 @@
+{
+  "hashVerified": true,
+  "source": "/home/vastness/.local/share/vastness-intention-worker/shared/data/artifacts/intent-10a3cf02-3d09-4837-933f-b0aa040d8d35",
+  "files": [
+    {
+      "name": "collider.glb",
+      "bytes": 29678536,
+      "sha256": "08e209f8cc1ba52619cfd02edc04abc6d4522232c238eb19998801bfb2a16e00"
+    },
+    {
+      "name": "generation-report.json",
+      "bytes": 17688,
+      "sha256": "a1f96c6dc498cb62a026bf81b4952147ac5edce490134cce2b090700bdeed09e"
+    },
+    {
+      "name": "gpu-memory.csv",
+      "bytes": 65063,
+      "sha256": "7f995704c3a00888d27d82ac2f92a898d8e50170a59cd3345c0813b1ac4cb965"
+    },
+    {
+      "name": "image-metrics.json",
+      "bytes": 740,
+      "sha256": "a931efd371976564ebe1782e50b13c1ed59f701fb2645c5b23628e0dc7a58950"
+    },
+    {
+      "name": "image-prompt.txt",
+      "bytes": 297,
+      "sha256": "a23ec6ceb608d91eb281cfc60857590db19ccb0a3e98417756f715d2c4909470"
+    },
+    {
+      "name": "image.log",
+      "bytes": 1530,
+      "sha256": "a74d634da2c2e4b280b3eeef2e63f5129aa81bb5888e213a5d14ab66efeada56"
+    },
+    {
+      "name": "request.json",
+      "bytes": 417,
+      "sha256": "62147a3b0531a64370c18d2ba98d8c1588d0ad330262084df26a76a24cbf7802"
+    },
+    {
+      "name": "scene.ply",
+      "bytes": 82538273,
+      "sha256": "7693a548b71955d8d75cc4bbab43edfcd5a2c0cbcb24b1536593e0f9545d5684"
+    },
+    {
+      "name": "source-rgb.png",
+      "bytes": 416825,
+      "sha256": "671977e669c97755ee19019a067b81f10959d33c325c24193299179b1e016a93"
+    },
+    {
+      "name": "source-rgba.png",
+      "bytes": 495958,
+      "sha256": "c1cc61b5c9f7601bce90f5fbcee4fe5a64ce2cfc73794a39a567a548d4d7a0cf"
+    },
+    {
+      "name": "trellis-metrics.json",
+      "bytes": 943,
+      "sha256": "b214f0568bfbd600a30fa79e97179c253d28ccd7e68f05e26e575730bb60250f"
+    },
+    {
+      "name": "trellis.log",
+      "bytes": 7078,
+      "sha256": "e263998925bdb153b902cecb8decf0c170be70c7f1803daa79d73dabf8e79a7b"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "intent-097b6f72-50f1-456f-9360-78b93105a73b",
+  "createdAt": "2026-09-16T09:15:57.018Z",
+  "rawIntent": {
+    "text": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "mixed"
+    },
+    "representation": "abstract-solid"
+  },
+  "derivation": {
+    "compiler": "lexical-semantic-v1",
+    "cues": {
+      "vast": [],
+      "intimate": [],
+      "sparse": [
+        "empty"
+      ],
+      "dense": [],
+      "open": [],
+      "enclosed": [],
+      "quiet": [],
+      "ominous": [],
+      "luminous": [],
+      "joyful": []
+    },
+    "limitations": [
+      "Rule-based axis extraction; no general language reasoning",
+      "Negation handling is local, not a complete semantic parser",
+      "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+      "Concept is bounded to 600 characters; original input is retained separately"
+    ]
+  },
+  "status": "requested",
+  "jobId": "intent-097b6f72-50f1-456f-9360-78b93105a73b",
+  "request": {
+    "id": "intent-097b6f72-50f1-456f-9360-78b93105a73b",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "events": [
+    {
+      "type": "intent-recorded",
+      "at": "2026-09-16T09:15:57.018Z"
+    },
+    {
+      "type": "constraints-derived",
+      "at": "2026-09-16T09:15:57.018Z"
+    }
+  ]
+}

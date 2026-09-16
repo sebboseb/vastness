@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "large_open_interior-2-7",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 10,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/large_open_interior-2-7-scale10.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "5cb37a3611a3f1351c803dbec9228b1c7f2df4e0e828402805e48b942af4cc77",
+        "forward": "a4bac6b9fbc83e3c58a42dbad4896b381612bc8a4443fbb37dc5144becc5ed93",
+        "returned": "a4bac6b9fbc83e3c58a42dbad4896b381612bc8a4443fbb37dc5144becc5ed93"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 12,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/large_open_interior-2-7-scale12.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "da9c153530feaf900cc105847b155e84cc53cbc0da268903fd13f991971ebcb2",
+        "forward": "c4f445a10f837cfcc93ac4e0c374e9d8fa929090de1170e9fa99dec33515e7c3",
+        "returned": "c4f445a10f837cfcc93ac4e0c374e9d8fa929090de1170e9fa99dec33515e7c3"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    }
+  ]
+}

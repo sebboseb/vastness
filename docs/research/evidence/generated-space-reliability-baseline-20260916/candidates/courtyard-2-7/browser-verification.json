@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "courtyard-2-7",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "passed",
+      "declaredStatus": "passed",
+      "reasons": [],
+      "evidenceHashes": {
+        "assessment": "e009d967480141f2f5426e8d23402d4b1816144c38fa5bc71c0804abcba577a7",
+        "forward": "b46a93e9961f2353138e891b0b408a82ca7753b30266f817be3fb932f7e49947",
+        "returned": "5e77c3043a231c1a9eae19c99b0089ec37c62b10a0405d1ea1d16689c0344897",
+        "persisted": "bebc3f38256afeba5aa9611cd6e72bfd6868b27f2be54b8f491bdf6a5e675c1d"
+      },
+      "forwardEndpointDistance": 0.004724756219315881,
+      "returnEndpointDistance": 0
+    },
+    {
+      "scale": 10,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/courtyard-2-7-scale10.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "afba144082f63ec08ece0fc85b3af2a163385e6c7893dc66e626ca37287af87c",
+        "forward": "cd08a75e37f4e3efd79897ae767dd050e2b27e1f83bf827ce6367c5a6ec452a1",
+        "returned": "cd08a75e37f4e3efd79897ae767dd050e2b27e1f83bf827ce6367c5a6ec452a1"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 12,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/courtyard-2-7-scale12.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "b075662eb0dd5469bf1ec9d3bced3a420fb03932bbd61fe1f8887c521d7f20a9",
+        "forward": "9858d6d8173b775e55e4cf38889dbb7f306fd286ab32bfdef87bba8773c96ae2",
+        "returned": "9858d6d8173b775e55e4cf38889dbb7f306fd286ab32bfdef87bba8773c96ae2"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    }
+  ]
+}

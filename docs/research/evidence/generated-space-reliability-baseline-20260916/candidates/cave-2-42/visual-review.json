@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "cave-with-small-doorway-and-high-opening",
+  "sourceObservation": "Source shows a rock chamber, a small dark arched doorway and a high daylight opening over a broad floor.",
+  "generatedObservation": "Coarse exterior overview looks like an uncolored box with a pale opening at the top; that angle does not expose the interior. Only scale10 has an accepted offline route, and browser entry stops at support-gap-or-step.",
+  "evidence": [
+    "source-rgb.png",
+    "browser",
+    "diagnostic.json"
+  ]
+}

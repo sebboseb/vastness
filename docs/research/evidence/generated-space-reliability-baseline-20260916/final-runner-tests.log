@@ -1,0 +1,12 @@
+.{"at": "2026-09-16T09:52:32.418491+00:00", "event": "submitted", "candidate": "one", "jobId": "job-1"}
+{"at": "2026-09-16T09:52:32.421271+00:00", "event": "collected", "candidate": "one", "jobId": "job-1", "gpuStatus": "failed", "macStatus": "failed", "generationSeconds": null}
+{"at": "2026-09-16T09:52:32.423919+00:00", "event": "submitted", "candidate": "two", "jobId": "job-2"}
+{"at": "2026-09-16T09:52:32.426728+00:00", "event": "collected", "candidate": "two", "jobId": "job-2", "gpuStatus": "failed", "macStatus": "failed", "generationSeconds": null}
+.{"at": "2026-09-16T09:52:32.932511+00:00", "event": "collected", "candidate": "one", "id": "one", "text": "Test corridor", "seed": 7, "category": "corridor", "promptVariant": 1, "rawIntent": {"text": "Test corridor", "source": "text", "seed": 7}, "declaredAt": "2026-09-16T09:52:32.931597+00:00", "workerCommit": "fixed", "semantics": {}, "collected": true, "gpuStatus": "not_submitted", "macStatus": "not_submitted", "failureStage": "prompt_length", "finishedAt": "2026-09-16T09:52:32.932238+00:00"}
+.{"at": "2026-09-16T09:52:33.445266+00:00", "event": "submitted", "candidate": "one", "jobId": "job-1"}
+{"at": "2026-09-16T09:52:33.447966+00:00", "event": "collected", "candidate": "one", "jobId": "job-1", "gpuStatus": "failed", "macStatus": "failed", "generationSeconds": null}
+.
+----------------------------------------------------------------------
+Ran 4 tests in 2.060s
+
+OK

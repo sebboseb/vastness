@@ -1,0 +1,65 @@
+{
+  "source": "/home/vastness/.local/share/vastness-intention-worker/shared/data/artifacts/intent-79c22dd8-039b-446e-a28b-b017bf48ee5c",
+  "files": [
+    {
+      "name": "collider.glb",
+      "bytes": 13884036,
+      "sha256": "63c6ce8785a9cdf0462f6df5079fff737ef7aa67bc3796211b6f05d31bf78080"
+    },
+    {
+      "name": "generation-report.json",
+      "bytes": 17680,
+      "sha256": "5420c82765022bca16dcff75f5b847a56de2af386604989bb3241a69b54d72d6"
+    },
+    {
+      "name": "gpu-memory.csv",
+      "bytes": 45592,
+      "sha256": "eb7ba84b01d13e196688fce4cbf0a2775e8274cf328be0dc320654f6a2b77fa8"
+    },
+    {
+      "name": "image-metrics.json",
+      "bytes": 739,
+      "sha256": "c43290e24a9d5498191e92ad2f01d31ee4202c786c560e5d6a23de556c9a3b55"
+    },
+    {
+      "name": "image-prompt.txt",
+      "bytes": 298,
+      "sha256": "a0c51cf6f121ee8bc27a3b8fbf9c8d974d5ede747a828601c91f9a1d8d10001d"
+    },
+    {
+      "name": "image.log",
+      "bytes": 1428,
+      "sha256": "000d92e1e77f881f254841daee59a6852aef3f6c55379a48394157a642bcfb78"
+    },
+    {
+      "name": "request.json",
+      "bytes": 417,
+      "sha256": "7f10f3bd7d7f12412c0a2d530cdc3a8eed59031c20acfa9c9badfd8a5a08fbbb"
+    },
+    {
+      "name": "scene.ply",
+      "bytes": 25846944,
+      "sha256": "90631a748b25accf8edd99c00ece01f4761e7ea5a958f11bafc00bab33002577"
+    },
+    {
+      "name": "source-rgb.png",
+      "bytes": 388351,
+      "sha256": "0312d0211e8e81acba6e5f100fc1cb12896d0edb7ece7aad72b6bebb69e03a7f"
+    },
+    {
+      "name": "source-rgba.png",
+      "bytes": 450363,
+      "sha256": "f769689301b7f4de7b87764d44e37efc9047d66014e73fc55f5992dc6cc238ac"
+    },
+    {
+      "name": "trellis-metrics.json",
+      "bytes": 936,
+      "sha256": "f6fa49aa6d74e7ab7c67b35a3f72933c61563e9dc3faaab782b041b6315e47ae"
+    },
+    {
+      "name": "trellis.log",
+      "bytes": 7071,
+      "sha256": "5273f87132d1263a4ea3bc4113d9c195e1a64a35950458bf63cdc57f206c622b"
+    }
+  ]
+}

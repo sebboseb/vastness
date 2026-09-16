@@ -1,0 +1,200 @@
+{
+  "cases": [
+    "large_open_interior-1-7",
+    "large_open_interior-1-7-scale10",
+    "large_open_interior-1-7-scale12",
+    "tunnel-1-7",
+    "tunnel-1-7-scale10",
+    "tunnel-1-7-scale12"
+  ],
+  "diagnostics": [
+    {
+      "id": "large_open_interior-1-7",
+      "status": "prepared",
+      "scales": [
+        6,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "tunnel-1-7",
+      "status": "prepared",
+      "scales": [
+        6,
+        10,
+        12
+      ]
+    },
+    {
+      "id": "doorway-1-7",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "narrow_passage-1-7",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "chamber-1-7",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "cave-1-7",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "corridor-1-7",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "courtyard-1-7",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "bridge-1-7",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "large_open_interior-1-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "bridge-1-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "doorway-1-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "narrow_passage-1-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "cave-1-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "courtyard-1-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "corridor-1-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "tunnel-1-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "chamber-1-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "courtyard-2-7",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "bridge-2-7",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "tunnel-2-7",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "corridor-2-7",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "narrow_passage-2-7",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "chamber-2-7",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "cave-2-7",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "large_open_interior-2-7",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "doorway-2-7",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "large_open_interior-2-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "doorway-2-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "corridor-2-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "chamber-2-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "narrow_passage-2-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "courtyard-2-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "cave-2-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "bridge-2-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    },
+    {
+      "id": "tunnel-2-42",
+      "status": "not-eligible",
+      "reason": "No accepted geometry at requested scales"
+    }
+  ]
+}

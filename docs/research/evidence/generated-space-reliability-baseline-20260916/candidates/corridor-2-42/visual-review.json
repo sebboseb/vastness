@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-brick-arcade",
+  "sourceObservation": "Source shows a long brick corridor with repeated open arches along one side and continuous pale floor.",
+  "generatedObservation": "Coarse view retains a compact arcade with several openings and a ceiling. All scales pass geometry assessment but all baseline browser entries stop at the numerical seam.",
+  "evidence": [
+    "source-rgb.png",
+    "browser",
+    "diagnostic.json"
+  ]
+}

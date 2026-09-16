@@ -1,0 +1,5 @@
+{
+  "id": "intent-de172b53-3529-42f6-b4d4-b6df0779e568",
+  "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+  "seed": 42
+}

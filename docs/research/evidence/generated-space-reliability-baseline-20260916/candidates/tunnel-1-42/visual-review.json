@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "partial-tunnel-conditioning",
+  "sourceObservation": "Image shows a roofed arched chamber with a skylight and far dark doorway rather than clearly open ends of a short tunnel.",
+  "generatedObservation": "No accepted primary sustained enclosed route; larger scales fail external seam verification. A single overview cannot prove the entire interior is blocked.",
+  "evidence": [
+    "source-rgb.png",
+    "diagnostic.json",
+    "browser"
+  ]
+}

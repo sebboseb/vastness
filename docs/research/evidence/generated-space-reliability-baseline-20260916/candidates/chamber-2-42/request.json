@@ -1,0 +1,5 @@
+{
+  "id": "intent-79a8d1ec-2343-4492-af86-afdc16a76c4a",
+  "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"quiet\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+  "seed": 42
+}

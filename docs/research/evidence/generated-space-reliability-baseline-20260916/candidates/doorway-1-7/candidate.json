@@ -1,0 +1,54 @@
+{
+  "candidate": "doorway-1-7",
+  "id": "doorway-1-7",
+  "category": "doorway",
+  "promptVariant": 1,
+  "seed": 7,
+  "text": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.",
+  "rawIntent": {
+    "text": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.",
+    "source": "text",
+    "seed": 7
+  },
+  "declaredAt": "2026-09-16T09:03:14.610175+00:00",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "mixed"
+    },
+    "representation": "abstract-solid"
+  },
+  "submissionAttemptedAt": "2026-09-16T09:03:14.679120+00:00",
+  "worldId": "intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425",
+  "jobId": "intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425",
+  "request": {
+    "id": "intent-1f979c9f-1d2b-40ba-bfbb-8cf83d81e425",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A freestanding thick stone doorway with a large empty opening and attached flat floor extending through it on both sides.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 7
+  },
+  "collected": true,
+  "gpuStatus": "succeeded",
+  "macStatus": "ready",
+  "finishedAt": "2026-09-16T09:04:33.637287+00:00",
+  "generationSeconds": 68.64225567500398,
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 1788.0,
+        "sampledPeakMiB": 16564.0,
+        "samples": 614
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  },
+  "failureStage": null,
+  "geometryAssessment": "pending separate generated-support assessment"
+}

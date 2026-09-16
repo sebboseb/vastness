@@ -1,0 +1,52 @@
+{
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "failed",
+      "entry": false,
+      "traversal": false,
+      "return": false,
+      "sourceSha256": "79b792cfba58bb085aa025625e66ad170eaf5d21cecf1c18f4ed654f523345fe",
+      "evidence": {
+        "forward": "browser/scale6-forward.json",
+        "returned": "browser/scale6-returned.json",
+        "screenshots": [
+          "browser/scale6-forward.png",
+          "browser/scale6-returned.png"
+        ]
+      }
+    },
+    {
+      "scale": 10,
+      "status": "failed",
+      "entry": false,
+      "traversal": false,
+      "return": false,
+      "sourceSha256": "79b792cfba58bb085aa025625e66ad170eaf5d21cecf1c18f4ed654f523345fe",
+      "evidence": {
+        "forward": "browser/scale10-forward.json",
+        "returned": "browser/scale10-returned.json",
+        "screenshots": [
+          "browser/scale10-forward.png",
+          "browser/scale10-returned.png"
+        ]
+      }
+    },
+    {
+      "scale": 12,
+      "status": "failed",
+      "entry": false,
+      "traversal": false,
+      "return": false,
+      "sourceSha256": "79b792cfba58bb085aa025625e66ad170eaf5d21cecf1c18f4ed654f523345fe",
+      "evidence": {
+        "forward": "browser/scale12-forward.json",
+        "returned": "browser/scale12-returned.json",
+        "screenshots": [
+          "browser/scale12-forward.png",
+          "browser/scale12-returned.png"
+        ]
+      }
+    }
+  ]
+}

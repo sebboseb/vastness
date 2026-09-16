@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "candidateId": "cave-2-42",
+  "attempts": [
+    {
+      "scale": 6,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 10,
+      "status": "failed",
+      "declaredStatus": "failed",
+      "reasons": [
+        "Error: ENOENT: no such file or directory, open '/Users/seb/Documents/ChatGPT/vastness/.runtime/reliability/inspection/cave-2-42-scale10.json'"
+      ],
+      "evidenceHashes": {
+        "assessment": "fb33e840bf19bec92e133738966c73856dc420dde48a71188ae0d43481ccc55a",
+        "forward": "d19f240f97f4ca065db15105d887f1198f82b6a4a70c508c82d9e70fd486d369",
+        "returned": "d19f240f97f4ca065db15105d887f1198f82b6a4a70c508c82d9e70fd486d369"
+      },
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    },
+    {
+      "scale": 12,
+      "status": "not-assessed",
+      "declaredStatus": null,
+      "reasons": [],
+      "evidenceHashes": {},
+      "forwardEndpointDistance": null,
+      "returnEndpointDistance": null
+    }
+  ]
+}

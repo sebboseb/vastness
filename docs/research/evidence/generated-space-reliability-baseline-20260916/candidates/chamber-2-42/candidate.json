@@ -1,0 +1,54 @@
+{
+  "candidate": "chamber-2-42",
+  "id": "chamber-2-42",
+  "category": "chamber",
+  "promptVariant": 2,
+  "seed": 42,
+  "text": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+  "rawIntent": {
+    "text": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+    "source": "text",
+    "seed": 42
+  },
+  "declaredAt": "2026-09-16T09:44:14.275854+00:00",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "quiet",
+      "openness": "enclosed"
+    },
+    "representation": "abstract-solid"
+  },
+  "submissionAttemptedAt": "2026-09-16T09:44:14.294652+00:00",
+  "worldId": "intent-79a8d1ec-2343-4492-af86-afdc16a76c4a",
+  "jobId": "intent-79a8d1ec-2343-4492-af86-afdc16a76c4a",
+  "request": {
+    "id": "intent-79a8d1ec-2343-4492-af86-afdc16a76c4a",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"quiet\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "collected": true,
+  "gpuStatus": "succeeded",
+  "macStatus": "ready",
+  "finishedAt": "2026-09-16T09:45:52.599879+00:00",
+  "generationSeconds": 83.92963533599686,
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 1786.0,
+        "sampledPeakMiB": 19581.0,
+        "samples": 766
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  },
+  "failureStage": null,
+  "geometryAssessment": "pending separate generated-support assessment"
+}

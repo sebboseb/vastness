@@ -1,0 +1,2 @@
+{"recordedAt":"2026-09-16T09:36:31.184Z","event":"verifier-loaded","pid":94168,"loadedAnalysisCommit":"9c8ec4a","pendingReloadCommit":"0e37ef9","note":"Range-bound verifier reload deferred until active original geometry assessment reaches an idle boundary. No source assessment or navigation criteria changed."}
+{"recordedAt":"2026-09-16T09:38:21.478Z","event":"verifier-loaded","pid":7749,"loadedAnalysisCommit":"0e37ef9","note":"Restarted only after CPU idle at25 completed candidates; no original assessment recomputed."}

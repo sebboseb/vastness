@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "chamber-with-unrequested-person-and-platform",
+  "sourceObservation": "Source shows a broad pale chamber with bright wall openings, a raised platform and an unrequested seated person.",
+  "generatedObservation": "Coarse exterior overview is box-like and does not expose the depicted passage from this angle. All scales fail the bounded accepted-route search; a single exterior view does not establish that the interior is sealed.",
+  "evidence": [
+    "source-rgb.png",
+    "browser/scale6-overview-clean.png",
+    "diagnostic.json"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "candidate": "cave-1-42",
+  "id": "cave-1-42",
+  "category": "cave",
+  "promptVariant": 1,
+  "seed": 42,
+  "text": "A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space.",
+  "rawIntent": {
+    "text": "A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space.",
+    "source": "text",
+    "seed": 42
+  },
+  "declaredAt": "2026-09-16T09:19:37.960832+00:00",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "enclosed"
+    },
+    "representation": "abstract-solid"
+  },
+  "submissionAttemptedAt": "2026-09-16T09:19:37.979149+00:00",
+  "worldId": "intent-9dfb5a7c-0711-4aad-a454-4834fde830a3",
+  "jobId": "intent-9dfb5a7c-0711-4aad-a454-4834fde830a3",
+  "request": {
+    "id": "intent-9dfb5a7c-0711-4aad-a454-4834fde830a3",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A natural cave chamber with a broad entrance, high rocky ceiling and a continuous flat sandy floor with empty walking space.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"enclosed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "collected": true,
+  "gpuStatus": "succeeded",
+  "macStatus": "ready",
+  "finishedAt": "2026-09-16T09:20:57.282296+00:00",
+  "generationSeconds": 71.7302464769964,
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 1753.0,
+        "sampledPeakMiB": 17567.0,
+        "samples": 645
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  },
+  "failureStage": null,
+  "geometryAssessment": "pending separate generated-support assessment"
+}

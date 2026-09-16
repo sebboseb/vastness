@@ -1,0 +1,10 @@
+{
+  "sourceImageFidelity": "plausible-layered-stone-doorways",
+  "sourceObservation": "Source depicts a large foreground arch and smaller doorway beyond it on continuous stone support.",
+  "generatedObservation": "Coarse geometry preserves multiple arched openings and a floor slab. All scales pass geometry assessment, but only scale12 completes the baseline browser round trip.",
+  "evidence": [
+    "source-rgb.png",
+    "browser",
+    "diagnostic.json"
+  ]
+}

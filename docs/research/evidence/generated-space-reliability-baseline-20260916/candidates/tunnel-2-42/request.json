@@ -1,0 +1,5 @@
+{
+  "id": "intent-006d2630-6cd8-441d-a6b0-4387a59866fc",
+  "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A railway tunnel through rock with a wide level walkway, clear entrance and exit, empty floor and generous headroom.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+  "seed": 42
+}

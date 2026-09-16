@@ -1,0 +1,54 @@
+{
+  "candidate": "narrow_passage-1-42",
+  "id": "narrow_passage-1-42",
+  "category": "narrow_passage",
+  "promptVariant": 1,
+  "seed": 42,
+  "text": "A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.",
+  "rawIntent": {
+    "text": "A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.",
+    "source": "text",
+    "seed": 42
+  },
+  "declaredAt": "2026-09-16T09:17:41.891841+00:00",
+  "workerCommit": "04986defd1de38609cfb69c8d6c78ae4704e5670",
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.",
+    "axes": {
+      "scale": "human",
+      "density": "balanced",
+      "mood": "unspecified",
+      "openness": "open"
+    },
+    "representation": "abstract-solid"
+  },
+  "submissionAttemptedAt": "2026-09-16T09:17:41.909771+00:00",
+  "worldId": "intent-067ca302-ef70-480d-a667-68fe0cbd8d35",
+  "jobId": "intent-067ca302-ef70-480d-a667-68fe0cbd8d35",
+  "request": {
+    "id": "intent-067ca302-ef70-480d-a667-68fe0cbd8d35",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A narrow human passage between tall stone walls, straight flat floor and clear overhead space, open entrances at both ends.\",\"axes\":{\"scale\":\"human\",\"density\":\"balanced\",\"mood\":\"unspecified\",\"openness\":\"open\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "collected": true,
+  "gpuStatus": "succeeded",
+  "macStatus": "ready",
+  "finishedAt": "2026-09-16T09:19:37.959480+00:00",
+  "generationSeconds": 102.79582064200076,
+  "deviceMemoryMeasurement": {
+    "file": "gpu-memory.csv",
+    "pollIntervalMs": 100,
+    "devices": {
+      "GPU-02ec26d3-2fcf-7527-1110-7120a701ec49": {
+        "baselineMiB": 1785.0,
+        "sampledPeakMiB": 22727.0,
+        "samples": 956
+      }
+    },
+    "note": "First sample is baseline, not guaranteed idle. Whole-device usage includes other processes and may miss peaks. Torch peaks are separate."
+  },
+  "failureStage": null,
+  "geometryAssessment": "pending separate generated-support assessment"
+}

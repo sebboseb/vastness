@@ -1,0 +1,60 @@
+{
+  "id": "intent-c51a5de0-80bb-4922-b019-681f2618e8bb",
+  "createdAt": "2026-09-16T09:45:52.691Z",
+  "rawIntent": {
+    "text": "A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "mixed"
+    },
+    "representation": "abstract-solid"
+  },
+  "derivation": {
+    "compiler": "lexical-semantic-v1",
+    "cues": {
+      "vast": [],
+      "intimate": [],
+      "sparse": [
+        "empty"
+      ],
+      "dense": [],
+      "open": [],
+      "enclosed": [],
+      "quiet": [],
+      "ominous": [],
+      "luminous": [],
+      "joyful": []
+    },
+    "limitations": [
+      "Rule-based axis extraction; no general language reasoning",
+      "Negation handling is local, not a complete semantic parser",
+      "Unrecognized concepts stay in the concept field; no fixed destination lookup",
+      "Concept is bounded to 600 characters; original input is retained separately"
+    ]
+  },
+  "status": "requested",
+  "jobId": "intent-c51a5de0-80bb-4922-b019-681f2618e8bb",
+  "request": {
+    "id": "intent-c51a5de0-80bb-4922-b019-681f2618e8bb",
+    "prompt": "{\"version\":1,\"kind\":\"intention-destination\",\"concept\":\"A tight covered corridor with parallel brick walls, a level empty walkway and enough width and headroom for one person.\",\"axes\":{\"scale\":\"human\",\"density\":\"sparse\",\"mood\":\"unspecified\",\"openness\":\"mixed\"},\"representation\":\"abstract-solid\"}",
+    "seed": 42
+  },
+  "events": [
+    {
+      "type": "intent-recorded",
+      "at": "2026-09-16T09:45:52.691Z"
+    },
+    {
+      "type": "constraints-derived",
+      "at": "2026-09-16T09:45:52.691Z"
+    }
+  ]
+}
