@@ -1,0 +1,176 @@
+
+> vastness@0.1.0 test:passage
+> tsx --test services/passage-prototype/*.test.ts scripts/tests/passage-geometry.test.ts apps/web/src/generated-passage/*.test.ts
+
+TAP version 13
+# Subtest: Gaussian DC follows PlayCanvas conversion, without a fabricated brightness or emission boost
+ok 1 - Gaussian DC follows PlayCanvas conversion, without a fabricated brightness or emission boost
+  ---
+  duration_ms: 0.714292
+  type: 'test'
+  ...
+# Subtest: projection preserves spatially separate red, amber and neutral cues without distant color bleed
+ok 2 - projection preserves spatially separate red, amber and neutral cues without distant color bleed
+  ---
+  duration_ms: 0.941083
+  type: 'test'
+  ...
+# Subtest: minority saturated colors survive a dark majority while neutral vertices remain neutral
+ok 3 - minority saturated colors survive a dark majority while neutral vertices remain neutral
+  ---
+  duration_ms: 2.482583
+  type: 'test'
+  ...
+# Subtest: nearest representative search crosses cell boundaries and respects the maximum radius
+ok 4 - nearest representative search crosses cell boundaries and respects the maximum radius
+  ---
+  duration_ms: 0.245834
+  type: 'test'
+  ...
+# Subtest: a rare vivid orange patch survives muted brown of the same hue family
+ok 5 - a rare vivid orange patch survives muted brown of the same hue family
+  ---
+  duration_ms: 7.496292
+  type: 'test'
+  ...
+# Subtest: invalid projection input fails explicitly rather than manufacturing geometry colors
+ok 6 - invalid projection input fails explicitly rather than manufacturing geometry colors
+  ---
+  duration_ms: 0.259583
+  type: 'test'
+  ...
+# Subtest: PLY reader validates layout and filters transparent samples before color projection
+ok 7 - PLY reader validates layout and filters transparent samples before color projection
+  ---
+  duration_ms: 0.660042
+  type: 'test'
+  ...
+# Subtest: offline preparation records actual source and untouched mesh hashes and is reproducible
+ok 8 - offline preparation records actual source and untouched mesh hashes and is reproducible
+  ---
+  duration_ms: 6.081125
+  type: 'test'
+  ...
+# Subtest: walking uses genuine support triangles and returns on the same surface
+ok 9 - walking uses genuine support triangles and returns on the same surface
+  ---
+  duration_ms: 9.250041
+  type: 'test'
+  ...
+# Subtest: unsupported gaps cannot be crossed, including a 1mm gap between movement samples
+ok 10 - unsupported gaps cannot be crossed, including a 1mm gap between movement samples
+  ---
+  duration_ms: 0.339709
+  type: 'test'
+  ...
+# Subtest: actual walls block the full radius without tunneling through large displacement
+ok 11 - actual walls block the full radius without tunneling through large displacement
+  ---
+  duration_ms: 1.922583
+  type: 'test'
+  ...
+# Subtest: swept body clearance catches an obstacle between otherwise clear endpoints
+ok 12 - swept body clearance catches an obstacle between otherwise clear endpoints
+  ---
+  duration_ms: 0.307875
+  type: 'test'
+  ...
+# Subtest: explicit exterior scaffold permits a continuous crossing but cannot provide interior support
+ok 13 - explicit exterior scaffold permits a continuous crossing but cannot provide interior support
+  ---
+  duration_ms: 3.055666
+  type: 'test'
+  ...
+# Subtest: low ceilings and radius-offset obstacles fail the original-triangle body check
+ok 14 - low ceilings and radius-offset obstacles fail the original-triangle body check
+  ---
+  duration_ms: 0.343375
+  type: 'test'
+  ...
+# Subtest: bounded steps work forward and backward, while a tall ledge stays impassable
+ok 15 - bounded steps work forward and backward, while a tall ledge stays impassable
+  ---
+  duration_ms: 2.669833
+  type: 'test'
+  ...
+# Subtest: slope bound and upward source winding govern support
+ok 16 - slope bound and upward source winding govern support
+  ---
+  duration_ms: 0.500333
+  type: 'test'
+  ...
+# Subtest: a roof is not an interior, but a supported tunnel has source roof evidence
+ok 17 - a roof is not an interior, but a supported tunnel has source roof evidence
+  ---
+  duration_ms: 0.460125
+  type: 'test'
+  ...
+# Subtest: numerical seam contact crosses and returns independently of frame steps and coordinate phase
+ok 18 - numerical seam contact crosses and returns independently of frame steps and coordinate phase
+  ---
+  duration_ms: 112.281958
+  type: 'test'
+  ...
+# Subtest: real 1mm and 2cm seam gaps remain impassable at every frame step
+ok 19 - real 1mm and 2cm seam gaps remain impassable at every frame step
+  ---
+  duration_ms: 14.567833
+  type: 'test'
+  ...
+# Subtest: saved tunnel raw mesh supports frame-sized seam, route and return replays
+ok 20 - saved tunnel raw mesh supports frame-sized seam, route and return replays # SKIP Set VASTNESS_SEAM_REGRESSION_CANDIDATE_DIR to retained tunnel-1-7 evidence
+  ---
+  duration_ms: 0.036792
+  type: 'test'
+  ...
+# Subtest: assessment finds an auditable reversible route on generated floor through an actual opening
+ok 21 - assessment finds an auditable reversible route on generated floor through an actual opening
+  ---
+  duration_ms: 46.191084
+  type: 'test'
+  ...
+# Subtest: an isolated floating overhead patch cannot turn an open floor into a meaningful passage
+ok 22 - an isolated floating overhead patch cannot turn an open floor into a meaningful passage
+  ---
+  duration_ms: 137.793542
+  type: 'test'
+  ...
+# Subtest: sealed geometry, absent support and insufficient headroom fail without modifying triangles
+ok 23 - sealed geometry, absent support and insufficient headroom fail without modifying triangles
+  ---
+  duration_ms: 5.954166
+  type: 'test'
+  ...
+# Subtest: a declared uniform transform can make a small real opening human-sized without removing surfaces
+ok 24 - a declared uniform transform can make a small real opening human-sized without removing surfaces
+  ---
+  duration_ms: 18.724333
+  type: 'test'
+  ...
+# Subtest: a hash-matched conservative proxy can obstruct a route that original triangles demonstrably permit
+ok 25 - a hash-matched conservative proxy can obstruct a route that original triangles demonstrably permit
+  ---
+  duration_ms: 22.203458
+  type: 'test'
+  ...
+# Subtest: verified real tunnel has a reversible generated-floor route, sustained enclosure and genuine approach seam
+ok 26 - verified real tunnel has a reversible generated-floor route, sustained enclosure and genuine approach seam
+  ---
+  duration_ms: 8118.088417
+  type: 'test'
+  ...
+# Subtest: accepted artifact identity and idempotent crossing survive service restart; rejected geometry stays closed
+ok 27 - accepted artifact identity and idempotent crossing survive service restart; rejected geometry stays closed
+  ---
+  duration_ms: 53.50575
+  type: 'test'
+  ...
+1..27
+# tests 27
+# suites 0
+# pass 26
+# fail 0
+# cancelled 0
+# skipped 1
+# todo 0
+# duration_ms 8451.880333

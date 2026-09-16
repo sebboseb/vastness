@@ -1,0 +1,26 @@
+{
+  "assessment": "passed",
+  "audit": [],
+  "blocked": "",
+  "caseId": "control-bridge-1-7",
+  "errors": 0,
+  "generatedTravel": 0,
+  "glbSha256": "5a4c29d4289eeb9c9bdbaa2b1015a14da2964f30bbafe9336eac7b0f7db60b71",
+  "identity": "399a6706c847258f8792a938eff62120ef51810e30dc8f5db7144fb320df9a43",
+  "mode": "inspection",
+  "pathRemaining": 0,
+  "pendingVisits": 0,
+  "pitch": -14.440669090923238,
+  "position": [
+    13.125046769777938,
+    9.804003675778707,
+    19.126562372086543
+  ],
+  "ready": true,
+  "representation": "coarse",
+  "support": null,
+  "visits": [],
+  "walking": "",
+  "worldId": "intent-cc01fd39-0b1d-49b3-8c83-851c3cb8678a",
+  "yaw": 34.50852298766841
+}

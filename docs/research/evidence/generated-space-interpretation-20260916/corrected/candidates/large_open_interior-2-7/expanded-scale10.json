@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "d7aa255ae47867ea3c6df7a2562315511a79b396d47f4ccda9c11ffbeffadc3d",
+  "status": "failed",
+  "transform": {
+    "scale": 10,
+    "yaw": 0,
+    "position": [
+      0,
+      3.4263500571250916,
+      0
+    ]
+  },
+  "options": {
+    "radius": 0.3,
+    "height": 1.8,
+    "eyeHeight": 1.65,
+    "maxStep": 0.25,
+    "maxSlopeDegrees": 35,
+    "sampleStep": 0.05,
+    "contactTolerance": 0.015
+  },
+  "bounds": {
+    "min": [
+      -5.0178062915802,
+      0,
+      -5.011178255081177
+    ],
+    "max": [
+      5.008221864700317,
+      6.843772828578949,
+      5.0133562088012695
+    ]
+  },
+  "route": [],
+  "samples": [],
+  "entry": null,
+  "approachDirection": null,
+  "seam": null,
+  "approach": null,
+  "approachStart": null,
+  "approachVerified": false,
+  "shellComparison": null,
+  "metrics": {
+    "sourceTriangles": 1586842,
+    "sourceVertices": 793910,
+    "indexReferences": 2038334,
+    "indexCells": 2704,
+    "indexPitch": 0.2,
+    "gridPitch": 0.2,
+    "testedFloorPoints": 5530,
+    "supportedPoints": 3683,
+    "enclosurePoints": 0,
+    "entryCandidates": 1048,
+    "rejected": {
+      "unsupported-footprint": 1587,
+      "body-or-head-obstruction": 259,
+      "scaffold-overlaps-source-footprint": 163
+    },
+    "routeLength": 0,
+    "routeDisplacement": 0,
+    "continuousEnclosedDistance": 0,
+    "maximumConnectedDisplacement": 8.395236744726143,
+    "buildMs": 223.61383299995214,
+    "assessmentMs": 7595.212041999912
+  },
+  "reasons": [
+    "No exterior-entered, reversible original-supported route with >=3m displacement and all declared topology witnesses was found within the reported budgets."
+  ],
+  "limitations": [
+    "Synthetic-frozen bounded proposal search; failure does not prove geometry irreparable.",
+    "Original triangles and corrected navigator are unchanged. Scaffolding excludes the entire source XZ projection beyond a 2mm contact-boundary tolerance.",
+    "Witnesses are geometric operational definitions, not semantic recognition. Courtyards must be within 0.75m of source minimum height; bridge-like detached roof slabs can be geometrically indistinguishable from decks.",
+    "Exterior proposals require a clear projected corridor all the way beyond the global bounds, so scaffolding cannot seed an internal hole. This can conservatively reject exteriors behind detached source fragments.",
+    "Doorway flank rays are limited to 3m on each side; broader apertures may be missed. Deck edges must be within 2.5m on each side.",
+    "Topology witnesses use 0.2m route vertices and original ray triangle IDs; dense samples independently preserve support/body checks. Legacy Enclosure fields retain their old 6m roof range on dense samples; tall roofs are recorded in topologyWitnesses.",
+    "Enclosure-point count covers queried witness nodes only. Component count is reached-entry components, not an exhaustive mesh decomposition."
+  ],
+  "criteria": {
+    "version": 1,
+    "supported": true,
+    "required": [
+      "doorway-crossing",
+      "broad-covered-interior"
+    ],
+    "evidence": [
+      {
+        "kind": "doorway-crossing",
+        "source": "text",
+        "cue": "doorway"
+      },
+      {
+        "kind": "broad-covered-interior",
+        "source": "text",
+        "cue": "warehouse"
+      },
+      {
+        "kind": "broad-covered-interior",
+        "source": "text",
+        "cue": "interior"
+      }
+    ],
+    "ambiguities": [
+      "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement.",
+      "Alternative topology wording is not resolved by this lexical compiler; conservative conjunction retained."
+    ],
+    "requirements": {
+      "openSky": false,
+      "covered": true,
+      "opposingWalls": false,
+      "minimumWidth": 2.4
+    },
+    "physical": {
+      "radius": 0.3,
+      "height": 1.8,
+      "eyeHeight": 1.65,
+      "maxStep": 0.25,
+      "maxSlopeDegrees": 35,
+      "minimumDisplacement": 3,
+      "reversible": true
+    }
+  },
+  "topologyWitnesses": [],
+  "searchDiagnostics": {
+    "mode": "expanded",
+    "budgets": {
+      "gridCells": 20000,
+      "supportedNodes": 20000,
+      "layersPerColumn": 32,
+      "legacyEntries": 48,
+      "expandedEntries": 192,
+      "edges": 80000,
+      "candidateRoutes": 4096,
+      "topologyQueries": 160000,
+      "approachBuilds": 8,
+      "topologyIndexReferences": 24000000
+    },
+    "exhausted": [
+      "entry-proposals"
+    ],
+    "componentsExplored": 2,
+    "entriesTested": 192,
+    "edgesTested": 4760,
+    "candidateRoutes": 203,
+    "topologyQueries": 7384,
+    "approachBuilds": 0,
+    "routeCrossesBehindSeam": false
+  },
+  "selectionFreeze": "a023b551f38752982a7f6f7b29d4c5e8010f4628762e8f4ee146ce888bdcb6c7",
+  "elapsedMs": 7595.246125000063,
+  "evaluationMode": "expanded",
+  "replayFreeze": "e0e3ba360ad14f252986a4d26d3741920ceaa4da25bb47e2926b5da0f40b3881",
+  "reusedEvidence": {
+    "path": ".runtime/interpretation-study/candidates/large_open_interior-2-7/expanded-scale10.json",
+    "sha256": "e2a156c5419b30c52fb8bce895f842e143d77d6f53ed1d9c8b848146bf652526"
+  }
+}

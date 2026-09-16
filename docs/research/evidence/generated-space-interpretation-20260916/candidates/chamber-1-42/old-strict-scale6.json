@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "2b6e56636c72bdccdd387c4a30a7e98526d15efeab66d47c396287f81d7a8a76",
+  "status": "failed",
+  "transform": {
+    "scale": 6,
+    "yaw": 0,
+    "position": [
+      0,
+      3.0063246488571167,
+      0
+    ]
+  },
+  "options": {
+    "radius": 0.3,
+    "height": 1.8,
+    "eyeHeight": 1.65,
+    "maxStep": 0.25,
+    "maxSlopeDegrees": 35,
+    "sampleStep": 0.05,
+    "contactTolerance": 0.015
+  },
+  "bounds": {
+    "min": [
+      -3.0031338930130005,
+      0,
+      -3.0073564052581787
+    ],
+    "max": [
+      3.0056172609329224,
+      6.0092453956604,
+      3.006954073905945
+    ]
+  },
+  "route": [],
+  "samples": [],
+  "entry": null,
+  "approachDirection": null,
+  "seam": null,
+  "approach": null,
+  "approachStart": null,
+  "approachVerified": false,
+  "shellComparison": null,
+  "metrics": {
+    "sourceTriangles": 2279942,
+    "sourceVertices": 1141676,
+    "indexReferences": 2643858,
+    "indexCells": 1024,
+    "indexPitch": 0.2,
+    "gridPitch": 0.2,
+    "testedFloorPoints": 2229,
+    "supportedPoints": 1383,
+    "enclosurePoints": 655,
+    "entryCandidates": 199,
+    "rejected": {
+      "unsupported-footprint": 404,
+      "body-or-head-obstruction": 432
+    },
+    "routeLength": 0,
+    "routeDisplacement": 0,
+    "continuousEnclosedDistance": 0,
+    "maximumConnectedDisplacement": 7.353910524340097,
+    "buildMs": 170.65120899991598,
+    "assessmentMs": 17187.87958399998
+  },
+  "reasons": [
+    "No reversible generated-supported route with an opening/interior and 3m endpoint displacement was found within the bounded search."
+  ],
+  "limitations": [
+    "Original source triangle winding defines upward support; no face deletion, authored destination support, or occupancy clearing.",
+    "Nine footprint contact probes; projected triangle-union continuity is checked for all nine during movement. The full disk is used for swept body collision.",
+    "Upright cylinder body model; 1.5cm contact tolerance, bounded step and slope, no jumping or falling.",
+    "Search is a bounded 0.2m proposal grid by default with at most 48 exterior entry proposals; failure is not a proof that every possible route is impossible.",
+    "At least 1m contiguous route has either a roof covering all nine footprint probes 1.8–6m abovefoot or opposing torso-height source walls. Semantic room recognition is not claimed."
+  ],
+  "selectionFreeze": "a023b551f38752982a7f6f7b29d4c5e8010f4628762e8f4ee146ce888bdcb6c7",
+  "elapsedMs": 17187.899875000003
+}

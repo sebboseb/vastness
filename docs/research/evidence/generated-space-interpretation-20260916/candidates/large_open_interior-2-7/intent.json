@@ -1,0 +1,62 @@
+{
+  "rawIntent": {
+    "text": "A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A vast open warehouse interior, tall roof and large doorway, empty flat concrete floor with no furniture or central obstacles.",
+    "axes": {
+      "scale": "vast",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "enclosed"
+    },
+    "representation": "abstract-solid"
+  },
+  "criteria": {
+    "version": 1,
+    "supported": true,
+    "required": [
+      "doorway-crossing",
+      "broad-covered-interior"
+    ],
+    "evidence": [
+      {
+        "kind": "doorway-crossing",
+        "source": "text",
+        "cue": "doorway"
+      },
+      {
+        "kind": "broad-covered-interior",
+        "source": "text",
+        "cue": "warehouse"
+      },
+      {
+        "kind": "broad-covered-interior",
+        "source": "text",
+        "cue": "interior"
+      }
+    ],
+    "ambiguities": [
+      "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement.",
+      "Alternative topology wording is not resolved by this lexical compiler; conservative conjunction retained."
+    ],
+    "requirements": {
+      "openSky": false,
+      "covered": true,
+      "opposingWalls": false,
+      "minimumWidth": 2.4
+    },
+    "physical": {
+      "radius": 0.3,
+      "height": 1.8,
+      "eyeHeight": 1.65,
+      "maxStep": 0.25,
+      "maxSlopeDegrees": 35,
+      "minimumDisplacement": 3,
+      "reversible": true
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "assessment": "failed",
+  "audit": [],
+  "blocked": "",
+  "caseId": "bridge-2-7",
+  "errors": 0,
+  "generatedTravel": 0,
+  "glbSha256": "68e8a625f16c7bdda99cdd299323526ff70d8131a49d55bc25e4d8ccb9c8ed98",
+  "identity": "dc33bf52f80f949d8c4abb954a51ca0dbc9bc161d9f2056ce4a6f3112ab054ce",
+  "mode": "inspection",
+  "pathRemaining": 0,
+  "pendingVisits": 0,
+  "pitch": -14.440669090923238,
+  "position": [
+    17.451616728646417,
+    12.46272619910783,
+    25.312210626942772
+  ],
+  "ready": true,
+  "representation": "coarse",
+  "support": null,
+  "visits": [],
+  "walking": "",
+  "worldId": "intent-b594160c-b12e-44af-9695-d5fa3c60684e",
+  "yaw": 34.50852298766841
+}

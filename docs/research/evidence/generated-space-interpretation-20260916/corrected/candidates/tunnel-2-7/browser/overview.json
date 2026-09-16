@@ -1,0 +1,26 @@
+{
+  "assessment": "failed",
+  "audit": [],
+  "blocked": "",
+  "caseId": "tunnel-2-7",
+  "errors": 0,
+  "generatedTravel": 0,
+  "glbSha256": "0ff7a321ed9c1d36fdf48c1def049eb5144c42380eed28f161a7aa2a2167467a",
+  "identity": "240041125e7ff16b8d67b3658235db3fd7eb10709367924b2a40ada819f3f30c",
+  "mode": "inspection",
+  "pathRemaining": 0,
+  "pendingVisits": 0,
+  "pitch": -14.440669090923238,
+  "position": [
+    10.642218433297876,
+    9.396440589923984,
+    15.5476524842647
+  ],
+  "ready": true,
+  "representation": "coarse",
+  "support": null,
+  "visits": [],
+  "walking": "",
+  "worldId": "intent-a9d26274-03b2-4a00-9bd1-be926b6c87b3",
+  "yaw": 34.50852298766841
+}

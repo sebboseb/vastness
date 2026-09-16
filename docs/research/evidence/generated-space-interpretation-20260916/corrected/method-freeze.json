@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "frozenAt": "2026-09-16T11:19:03.546Z",
+  "selectionHash": "a023b551f38752982a7f6f7b29d4c5e8010f4628762e8f4ee146ce888bdcb6c7",
+  "methods": {
+    "scripts/reliability/plan.json": "e081fb1593b7faabd380fbbea492237cddff56128d418de94a46c64a79fad90e",
+    "scripts/reliability/verify-browser.ts": "d042c67b5f411043c953e4ec61006ae5f7f610a9e6632d9051c2f8d3d7bd6dbe",
+    "scripts/interpretation/browser-recorder.mjs": "c5d5e2216b20de6390d8e91f5ca4739ee1996255d1cc9cf4f18fae280644ea02",
+    "services/passage-prototype/server.ts": "0edbb86c53cedf0bc676a5201d311197f05bceaba86dd9d27aa83e557b711ee9",
+    "apps/web/src/generated-passage/main.ts": "20c20719e4fa7404d04180beeb2517181214156eb049d3bb6b7cb4c3b943aac0",
+    "scripts/interpretation/study.ts": "c1d09c04bd064ebe7be97db90e86ad738fb8ec7de8580cb4205cad4d62de4b74",
+    "scripts/interpretation/summarize.ts": "1a12459c4ddee017924ca7391bbeaa8dc1a2a207e7d604424003fe1ff32d80b6",
+    "scripts/interpretation/scale.ts": "c23d1cbfc69b1b34d73a98bf46848b26a0ec15db5a60f109533971324e25b11e",
+    "scripts/interpretation/criteria.ts": "2c4153d73005612194b80627cbb27fd99edafa0b58e1f44b4f070f08bfb3eeb5",
+    "scripts/interpretation/routes.ts": "9e68cbbabe43b7bd3442e99ef637e84075df5af01ce450a892c6ecaca1dc6e86",
+    "scripts/passage-geometry.ts": "ee386797faffe7b55dc53c7286a5e7b14ef44c267fcd98dfe09fcbf09a93fd79",
+    "apps/web/src/generated-passage/navigation.ts": "8c58a786e9d7fed8384d2ea7144d20b6c55edc6b2eaa45e7047d9f4ab482c73d",
+    "scripts/interpretation/criteria-v2.ts": "f8e48810926d61ef4c955239a0b8d14a998186c8484d46e1541e4854f915901c",
+    "scripts/interpretation/criteria-v2.test.ts": "fd8b43dbdc96a78535c5f6f422de104b7a8119ed9c54d66a6334784f13de744f",
+    "scripts/interpretation/correction-method.md": "1b539d26abc91fa382fa113ee771d602d6ab7bda5282bbf7300ccd7f72ebdfa6",
+    "scripts/interpretation/replay.ts": "ff4a9894ca6493981057d2d572e08c354ac906b16aa76c8aa5173b191fe53e67"
+  },
+  "reason": "Post-hoc correction of explicitroof/open-sky parsing and expanded-search regressions. Fixed expanded→legacy fallback uses samecriteria andsame selectedscale. Originalchoices andv1 outcomes retained. No generator/source/navigation changes. This is a retrospective engineering replay, not an unseen validation set."
+}

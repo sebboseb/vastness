@@ -1,0 +1,26 @@
+{
+  "assessment": "passed",
+  "audit": [],
+  "blocked": "",
+  "caseId": "repeat-cave-1-7",
+  "errors": 0,
+  "generatedTravel": 0,
+  "glbSha256": "a56bb24593ddd9164444ec54f03365f5e8712636a983ae6e50a82fa1f4b172bf",
+  "identity": "26f2b1e5fb1c12cf36f88da645cec68648e7b3e55ec5c1d5bacb7b3d88d09da3",
+  "mode": "inspection",
+  "pathRemaining": 0,
+  "pendingVisits": 0,
+  "pitch": -14.440669090923237,
+  "position": [
+    11.00010718942473,
+    8.41639896974929,
+    15.997160757333042
+  ],
+  "ready": true,
+  "representation": "coarse",
+  "support": null,
+  "visits": [],
+  "walking": "",
+  "worldId": "intent-a6868007-efd5-433a-9061-f36ccde7d864",
+  "yaw": 34.5085229876684
+}

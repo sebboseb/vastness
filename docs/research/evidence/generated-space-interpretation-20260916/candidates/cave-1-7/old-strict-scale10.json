@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "sourceSha256": "a56bb24593ddd9164444ec54f03365f5e8712636a983ae6e50a82fa1f4b172bf",
+  "status": "failed",
+  "transform": {
+    "scale": 10,
+    "yaw": 0,
+    "position": [
+      0,
+      3.4385615587234497,
+      0
+    ]
+  },
+  "options": {
+    "radius": 0.3,
+    "height": 1.8,
+    "eyeHeight": 1.65,
+    "maxStep": 0.25,
+    "maxSlopeDegrees": 35,
+    "sampleStep": 0.05,
+    "contactTolerance": 0.015
+  },
+  "bounds": {
+    "min": [
+      -4.696314334869385,
+      0,
+      -5.0159138441085815
+    ],
+    "max": [
+      4.703758060932159,
+      6.849415302276611,
+      5.013821721076965
+    ]
+  },
+  "route": [],
+  "samples": [],
+  "entry": null,
+  "approachDirection": null,
+  "seam": null,
+  "approach": null,
+  "approachStart": null,
+  "approachVerified": false,
+  "shellComparison": null,
+  "metrics": {
+    "sourceTriangles": 1273170,
+    "sourceVertices": 636686,
+    "indexReferences": 1631972,
+    "indexCells": 2548,
+    "indexPitch": 0.2,
+    "gridPitch": 0.2,
+    "testedFloorPoints": 2806,
+    "supportedPoints": 1550,
+    "enclosurePoints": 763,
+    "entryCandidates": 228,
+    "rejected": {
+      "unsupported-footprint": 1173,
+      "body-or-head-obstruction": 82,
+      "footprint-height-spread": 1,
+      "authored-to-generated-seam": 3
+    },
+    "routeLength": 0,
+    "routeDisplacement": 0,
+    "continuousEnclosedDistance": 0.96,
+    "maximumConnectedDisplacement": 4.681879964287851,
+    "buildMs": 119.7347089999821,
+    "assessmentMs": 2593.1512499999953
+  },
+  "reasons": [
+    "Dense original-triangle checks did not sustain a full metre of opening/interior evidence.",
+    "No reversible generated-supported route with an opening/interior and 3m endpoint displacement was found within the bounded search."
+  ],
+  "limitations": [
+    "Original source triangle winding defines upward support; no face deletion, authored destination support, or occupancy clearing.",
+    "Nine footprint contact probes; projected triangle-union continuity is checked for all nine during movement. The full disk is used for swept body collision.",
+    "Upright cylinder body model; 1.5cm contact tolerance, bounded step and slope, no jumping or falling.",
+    "Search is a bounded 0.2m proposal grid by default with at most 48 exterior entry proposals; failure is not a proof that every possible route is impossible.",
+    "At least 1m contiguous route has either a roof covering all nine footprint probes 1.8–6m abovefoot or opposing torso-height source walls. Semantic room recognition is not claimed."
+  ],
+  "selectionFreeze": "a023b551f38752982a7f6f7b29d4c5e8010f4628762e8f4ee146ce888bdcb6c7",
+  "elapsedMs": 2593.1617079999996
+}

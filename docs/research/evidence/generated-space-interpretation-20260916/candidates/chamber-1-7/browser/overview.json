@@ -1,0 +1,26 @@
+{
+  "assessment": "failed",
+  "audit": [],
+  "blocked": "",
+  "caseId": "chamber-1-7",
+  "errors": 0,
+  "generatedTravel": 0,
+  "glbSha256": "d526aec6874c3a1259fe4af64beb770ab96888df3909b58f4e0bd7f79e2ad464",
+  "identity": "6262043e5d2aa51786ec5ce75e7e1d004100a604fc9e5726daec422f934d3d0e",
+  "mode": "inspection",
+  "pathRemaining": 0,
+  "pendingVisits": 0,
+  "pitch": -14.440669090923238,
+  "position": [
+    6.583954575955868,
+    5.0417662168057955,
+    9.581608264148237
+  ],
+  "ready": true,
+  "representation": "coarse",
+  "support": null,
+  "visits": [],
+  "walking": "",
+  "worldId": "intent-c5cda12d-76af-4b8b-b88c-eccc7719dd26",
+  "yaw": 34.50852298766841
+}

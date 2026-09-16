@@ -1,0 +1,26 @@
+{
+  "assessment": "passed",
+  "audit": [],
+  "blocked": "",
+  "caseId": "control-corridor-1-7",
+  "errors": 0,
+  "generatedTravel": 0,
+  "glbSha256": "5383ef9cabe2f2d88fba3b08d8c4b97f2bb7f519e882a7253b8773899b5339d7",
+  "identity": "c3548dba118c38bb53bdf1d84a642fccfcc8d09a63ace2d7752867fd39e2f822",
+  "mode": "inspection",
+  "pathRemaining": 0,
+  "pendingVisits": 0,
+  "pitch": -14.440669090923238,
+  "position": [
+    10.949598888848344,
+    7.013120198001465,
+    15.912517748773102
+  ],
+  "ready": true,
+  "representation": "coarse",
+  "support": null,
+  "visits": [],
+  "walking": "",
+  "worldId": "intent-55e2d591-69a3-4910-91b9-c5df74cf01dc",
+  "yaw": 34.5085229876684
+}

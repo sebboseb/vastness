@@ -1,0 +1,26 @@
+{
+  "assessment": "failed",
+  "audit": [],
+  "blocked": "",
+  "caseId": "doorway-1-42",
+  "errors": 0,
+  "generatedTravel": 0,
+  "glbSha256": "7dc260e05158dda0e43ecd63d5f6e7db5bb57e6bab7265be5aed0f7513eb3206",
+  "identity": "8457f25974ec84c875da7179e104a21e38af67e235e118dbf0913b668072132c",
+  "mode": "inspection",
+  "pathRemaining": 0,
+  "pendingVisits": 0,
+  "pitch": -14.440669090923238,
+  "position": [
+    6.581677348762751,
+    5.991715036332607,
+    9.57005037938555
+  ],
+  "ready": true,
+  "representation": "coarse",
+  "support": null,
+  "visits": [],
+  "walking": "",
+  "worldId": "intent-097b6f72-50f1-456f-9360-78b93105a73b",
+  "yaw": 34.5085229876684
+}
