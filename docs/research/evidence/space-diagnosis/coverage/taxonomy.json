@@ -1,0 +1,437 @@
+{
+  "phase": "coverage",
+  "counts": {
+    "topology-witness-not-found-within-search": 21,
+    "no-qualifying-connected-route-within-search": 3,
+    "accepted-geometry": 3,
+    "final-seam-rejected-after-topology": 2,
+    "no-admitted-exterior-entry-within-search": 5,
+    "unsupported-intent-compilation": 2
+  },
+  "prior31Counts": {
+    "no-qualifying-connected-route-within-search": 3,
+    "topology-witness-not-found-within-search": 20,
+    "no-admitted-exterior-entry-within-search": 5,
+    "final-seam-rejected-after-topology": 1,
+    "unsupported-intent-compilation": 2
+  },
+  "notes": [
+    "Labels describe the deepest reached decision, aggregated over all recorded bounded passes. They are not mutually exclusive physical defects.",
+    "No irreparable generation claim follows from search exhaustion or failure of an operational topology witness."
+  ],
+  "rows": [
+    {
+      "id": "large_open_interior-1-7",
+      "category": "large_open_interior",
+      "previouslyUnresolved": false,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "tunnel-1-7",
+      "category": "tunnel",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "no-qualifying-connected-route-within-search",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "doorway-1-7",
+      "category": "doorway",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "narrow_passage-1-7",
+      "category": "narrow_passage",
+      "previouslyUnresolved": false,
+      "status": "passed",
+      "operationalFailure": "accepted-geometry",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "chamber-1-7",
+      "category": "chamber",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "cave-1-7",
+      "category": "cave",
+      "previouslyUnresolved": false,
+      "status": "passed",
+      "operationalFailure": "accepted-geometry",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "corridor-1-7",
+      "category": "corridor",
+      "previouslyUnresolved": false,
+      "status": "failed",
+      "operationalFailure": "final-seam-rejected-after-topology",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "courtyard-1-7",
+      "category": "courtyard",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "bridge-1-7",
+      "category": "bridge",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "entry-proposals",
+        "topology-queries"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "large_open_interior-1-42",
+      "category": "large_open_interior",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "bridge-1-42",
+      "category": "bridge",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "entry-proposals",
+        "topology-queries"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "doorway-1-42",
+      "category": "doorway",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "no-admitted-exterior-entry-within-search",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "narrow_passage-1-42",
+      "category": "narrow_passage",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "no-admitted-exterior-entry-within-search",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "cave-1-42",
+      "category": "cave",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "no-qualifying-connected-route-within-search",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "courtyard-1-42",
+      "category": "courtyard",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "corridor-1-42",
+      "category": "corridor",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "entry-proposals",
+        "topology-queries"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "tunnel-1-42",
+      "category": "tunnel",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "final-seam-rejected-after-topology",
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "chamber-1-42",
+      "category": "chamber",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "no-admitted-exterior-entry-within-search",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "courtyard-2-7",
+      "category": "courtyard",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "bridge-2-7",
+      "category": "bridge",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "entry-proposals",
+        "topology-queries"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "tunnel-2-7",
+      "category": "tunnel",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "corridor-2-7",
+      "category": "corridor",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "unsupported-intent-compilation",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "narrow_passage-2-7",
+      "category": "narrow_passage",
+      "previouslyUnresolved": false,
+      "status": "passed",
+      "operationalFailure": "accepted-geometry",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "chamber-2-7",
+      "category": "chamber",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "cave-2-7",
+      "category": "cave",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "large_open_interior-2-7",
+      "category": "large_open_interior",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "doorway-2-7",
+      "category": "doorway",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "large_open_interior-2-42",
+      "category": "large_open_interior",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "no-admitted-exterior-entry-within-search",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "doorway-2-42",
+      "category": "doorway",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "corridor-2-42",
+      "category": "corridor",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "unsupported-intent-compilation",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "chamber-2-42",
+      "category": "chamber",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals",
+        "supported-nodes"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "narrow_passage-2-42",
+      "category": "narrow_passage",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "no-admitted-exterior-entry-within-search",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "courtyard-2-42",
+      "category": "courtyard",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "cave-2-42",
+      "category": "cave",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "no-qualifying-connected-route-within-search",
+      "exhausted": [
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "bridge-2-42",
+      "category": "bridge",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "entry-proposals",
+        "topology-queries"
+      ],
+      "generationUnusableProven": false
+    },
+    {
+      "id": "tunnel-2-42",
+      "category": "tunnel",
+      "previouslyUnresolved": true,
+      "status": "failed",
+      "operationalFailure": "topology-witness-not-found-within-search",
+      "exhausted": [
+        "candidate-routes",
+        "entry-proposals"
+      ],
+      "generationUnusableProven": false
+    }
+  ]
+}

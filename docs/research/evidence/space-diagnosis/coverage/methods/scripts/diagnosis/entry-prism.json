@@ -1,0 +1,10 @@
+{
+ "name":"entry-prism",
+ "predecessor":"baseline",
+ "routeModule":"scripts/diagnosis/routes-entry.ts",
+ "criteriaModule":"scripts/diagnosis/criteria-traced.ts",
+ "methodFiles":["scripts/diagnosis/routes-traced.ts","scripts/diagnosis/routes-traced.test.ts","scripts/diagnosis/trace-method.md","scripts/diagnosis/entry.test.ts","scripts/diagnosis/entry-method.md","scripts/diagnosis/criteria-traced.test.ts","scripts/diagnosis/criteria-trace-method.md","scripts/diagnosis/runner.test.ts","scripts/diagnosis/entry-prism.json"],
+ "rationale":"Frozen baseline traces repeatedly reject entries solely because the first projected blocker lies wholly above the player or below the support band. Such evidence motivates a height-aware proof, not unconditional projection bypass.",
+ "hypothesis":"A continuous source-triangle prism test from original support seam to an actual exterior approach start can safely admit overhang/understructure cases while still rejecting sealed holes, source-support overlay, narrow passages and body obstructions. Same-mode historical acceptance runs first; only failures receive one bounded prism pass. Criteria, proposals, route/witness budgets, original navigator and locked scales are unchanged.",
+ "changedAcceptance":true
+}

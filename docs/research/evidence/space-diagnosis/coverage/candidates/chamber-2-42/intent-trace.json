@@ -1,0 +1,614 @@
+{
+  "rawIntent": {
+    "text": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "A quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "quiet",
+      "openness": "enclosed"
+    },
+    "representation": "abstract-solid"
+  },
+  "criteria": {
+    "version": 1,
+    "supported": true,
+    "required": [
+      "enclosed-passage"
+    ],
+    "evidence": [
+      {
+        "kind": "enclosed-passage",
+        "source": "text",
+        "cue": "chamber"
+      }
+    ],
+    "ambiguities": [],
+    "requirements": {
+      "openSky": false,
+      "covered": true,
+      "opposingWalls": true,
+      "minimumWidth": 2.4
+    },
+    "physical": {
+      "radius": 0.3,
+      "height": 1.8,
+      "eyeHeight": 1.65,
+      "maxStep": 0.25,
+      "maxSlopeDegrees": 35,
+      "minimumDisplacement": 3,
+      "reversible": true
+    }
+  },
+  "events": [
+    {
+      "stage": "intent",
+      "kind": "compiler-observation",
+      "decisionId": "intent:0",
+      "compiler": "deriveCorrectedSpatialCriteria",
+      "traceVersion": "criteria-observation-v1",
+      "authority": "unchanged frozen compiler return value",
+      "matchObservation": "Full lexical inspection of retained normalized input; this is not a low-level execution log of short-circuit regex calls.",
+      "scopeObservation": "Nearby noun associations are explicitly labeled hypotheses, not parsed intent or acceptance inputs."
+    },
+    {
+      "stage": "intent",
+      "kind": "normalized-source",
+      "decisionId": "intent:1",
+      "source": "text",
+      "normalizedText": "a quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+      "rawCodeUnits": 131,
+      "normalizedCodeUnits": 131,
+      "retainedCodeUnits": 131,
+      "compilerOmittedCodeUnits": 0,
+      "normalization": [
+        "NFKC",
+        "lowercase",
+        "collapse whitespace",
+        "first 2400 UTF-16 code units"
+      ],
+      "spanBasis": "All spans refer to normalizedText. No raw-input offsets are inferred after normalization."
+    },
+    {
+      "stage": "intent",
+      "kind": "normalized-source",
+      "decisionId": "intent:2",
+      "source": "semantic-concept",
+      "normalizedText": "a quiet rectangular meditation chamber, wide entrance, plain walls, tall ceiling and an uninterrupted flat floor without furniture.",
+      "rawCodeUnits": 131,
+      "normalizedCodeUnits": 131,
+      "retainedCodeUnits": 131,
+      "compilerOmittedCodeUnits": 0,
+      "normalization": [
+        "NFKC",
+        "lowercase",
+        "collapse whitespace",
+        "first 2400 UTF-16 code units"
+      ],
+      "spanBasis": "All spans refer to normalizedText. No raw-input offsets are inferred after normalization."
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:3",
+      "span": {
+        "source": "text",
+        "start": 31,
+        "end": 38,
+        "text": "chamber",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:topology:enclosed-passage:31:38",
+      "family": "topology:enclosed-passage",
+      "pattern": "\\b(tunnels?|corridors?|passages?|caves?|caverns?|chambers?)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:4",
+      "cueId": "text:topology:enclosed-passage:31:38",
+      "family": "topology:enclosed-passage",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 31,
+        "text": "a quiet rectangular meditation ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "topology-decision",
+      "decisionId": "intent:5",
+      "cueId": "text:topology:enclosed-passage:31:38",
+      "span": {
+        "source": "text",
+        "start": 31,
+        "end": 38,
+        "text": "chamber",
+        "offsets": "normalized-utf16"
+      },
+      "topology": "enclosed-passage",
+      "decision": "included-topology-evidence",
+      "source": "text",
+      "appliesTo": "conjunctive route requirements",
+      "excludedTopologies": []
+    },
+    {
+      "stage": "intent",
+      "kind": "semantic-fallback",
+      "decisionId": "intent:6",
+      "source": "semantic-concept",
+      "state": "not-evaluated",
+      "reason": "original text already supplies topology evidence",
+      "textExcludedTopologies": [],
+      "conceptAvailable": true
+    },
+    {
+      "stage": "intent",
+      "kind": "semantic-fallback",
+      "decisionId": "intent:7",
+      "source": "semantic-openness",
+      "field": "axes.openness",
+      "state": "not-evaluated",
+      "reason": "positive topology evidence already exists",
+      "observedEnclosedValue": true,
+      "accepted": false,
+      "consequence": "none"
+    },
+    {
+      "stage": "intent",
+      "kind": "topology-compilation",
+      "decisionId": "intent:8",
+      "evidence": [
+        {
+          "kind": "enclosed-passage",
+          "source": "text",
+          "cue": "chamber"
+        }
+      ],
+      "required": [
+        "enclosed-passage"
+      ],
+      "excludedTopologies": [],
+      "observedEvidenceMatchesFrozenCompiler": true,
+      "alternatives": "The frozen compiler retains conjunctive requirements; it does not choose between alternatives."
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:9",
+      "span": {
+        "source": "text",
+        "start": 73,
+        "end": 80,
+        "text": "ceiling",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:original-cover:73:80",
+      "family": "original-cover",
+      "pattern": "\\b(covered|roofed|ceiling|underground|enclosed)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:10",
+      "cueId": "text:original-cover:73:80",
+      "family": "original-cover",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 28,
+        "end": 73,
+        "text": "on chamber, wide entrance, plain walls, tall ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:11",
+      "span": {
+        "source": "text",
+        "start": 61,
+        "end": 66,
+        "text": "walls",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:opposing-walls:61:66",
+      "family": "opposing-walls",
+      "pattern": "\\b(enclosed|walls?|walled|tunnel|corridor|cave|cavern)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:12",
+      "cueId": "text:opposing-walls:61:66",
+      "family": "opposing-walls",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 16,
+        "end": 61,
+        "text": "lar meditation chamber, wide entrance, plain ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:13",
+      "span": {
+        "source": "text",
+        "start": 40,
+        "end": 44,
+        "text": "wide",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:minimum-width:40:44",
+      "family": "minimum-width",
+      "pattern": "\\b(broad|wide|spacious|vast|large)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:14",
+      "cueId": "text:minimum-width:40:44",
+      "family": "minimum-width",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 40,
+        "text": "a quiet rectangular meditation chamber, ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "original-requirements",
+      "decisionId": "intent:15",
+      "requirements": {
+        "openSky": false,
+        "covered": true,
+        "opposingWalls": true,
+        "minimumWidth": 2.4
+      },
+      "openSky": {
+        "inherentCourtyard": false,
+        "positiveCueIds": []
+      },
+      "covered": {
+        "inherentBroadInterior": false,
+        "positiveCueIds": [
+          "text:original-cover:73:80"
+        ],
+        "inherentCoverEvidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          }
+        ],
+        "inherentCoverSuppressedByOpenSky": false
+      },
+      "opposingWalls": {
+        "positiveCueIds": [
+          "text:opposing-walls:61:66"
+        ],
+        "result": true
+      },
+      "minimumWidth": {
+        "positiveCueIds": [
+          "text:minimum-width:40:44"
+        ],
+        "defaultMetres": 0.6,
+        "positiveModifierMetres": 2.4,
+        "resultMetres": 2.4,
+        "appliedScope": "one global minimumWidth field, regardless of the modifier’s nearby noun; downstream witnesses decide where to consume that field"
+      }
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:16",
+      "span": {
+        "source": "text",
+        "start": 73,
+        "end": 80,
+        "text": "ceiling",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:corrected-roof:73:80",
+      "family": "corrected-roof",
+      "pattern": "\\b(?:roofs?|roofed|ceilings?|covered)\\b",
+      "negationRule": "corrected",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:17",
+      "cueId": "text:corrected-roof:73:80",
+      "family": "corrected-roof",
+      "rule": "corrected",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|overhead|high|low|vaulted|solid|continuous|stone|wooden|enclosing)){0,4}\\s*$",
+      "maximumLookbehindCodeUnits": 90,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 73,
+        "text": "a quiet rectangular meditation chamber, wide entrance, plain walls, tall ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "roof-correction",
+      "decisionId": "intent:18",
+      "before": {
+        "openSky": false,
+        "covered": true,
+        "opposingWalls": true,
+        "minimumWidth": 2.4
+      },
+      "after": {
+        "openSky": false,
+        "covered": true,
+        "opposingWalls": true,
+        "minimumWidth": 2.4
+      },
+      "observedInputs": {
+        "positiveRoof": true,
+        "negativeRoof": false,
+        "explicitOpen": false,
+        "inheritedOpenSky": false,
+        "openSky": false,
+        "explicitCover": true,
+        "inherentCover": true,
+        "lacksRoof": false,
+        "inherentBroadInterior": false
+      },
+      "enclosedContribution": {
+        "positiveCueIds": [],
+        "state": "eligible-as-cover-cue"
+      },
+      "positiveRoofCueIds": [
+        "text:corrected-roof:73:80"
+      ],
+      "negativeRoofCueIds": [],
+      "rule": "Negated/absent roof cues can request open sky. With open sky, enclosed alone is lateral; separate positive roof cues still require cover. Explicit rooflessness conflicts with frozen broad-covered-interior topology.",
+      "observedRequirementsMatchFrozenCompiler": true,
+      "supportedBefore": true,
+      "supportedAfter": true
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:19",
+      "span": {
+        "source": "text",
+        "start": 40,
+        "end": 44,
+        "text": "wide",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:scope-modifier:40:44",
+      "family": "scope-modifier",
+      "pattern": "\\b(?:broad|wide|spacious|vast|large|narrow|compact|small|tall|high|low|open|enclosed)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:20",
+      "cueId": "text:scope-modifier:40:44",
+      "family": "scope-modifier",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 40,
+        "text": "a quiet rectangular meditation chamber, ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:21",
+      "span": {
+        "source": "text",
+        "start": 68,
+        "end": 72,
+        "text": "tall",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:scope-modifier:68:72",
+      "family": "scope-modifier",
+      "pattern": "\\b(?:broad|wide|spacious|vast|large|narrow|compact|small|tall|high|low|open|enclosed)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:22",
+      "cueId": "text:scope-modifier:68:72",
+      "family": "scope-modifier",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 23,
+        "end": 68,
+        "text": "itation chamber, wide entrance, plain walls, ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "modifier-scope-observation",
+      "decisionId": "intent:23",
+      "modifier": {
+        "source": "text",
+        "start": 40,
+        "end": 44,
+        "text": "wide",
+        "offsets": "normalized-utf16"
+      },
+      "originalNegationMatched": false,
+      "likelyReferent": {
+        "source": "text",
+        "start": 45,
+        "end": 53,
+        "text": "entrance",
+        "offsets": "normalized-utf16"
+      },
+      "confidence": "lexical-proximity-hypothesis-only",
+      "inspectionRule": "first recognized following noun within 48 normalized code units, stopping at punctuation or a listed conjunction/preposition",
+      "frozenAppliedScope": "global-minimum-width-field",
+      "requirementMetres": 2.4,
+      "limitation": "This is not a syntactic attachment or an assertion of intended meaning; narrowness and height adjectives have no dedicated dimension fields."
+    },
+    {
+      "stage": "intent",
+      "kind": "scope-warning",
+      "decisionId": "intent:24",
+      "code": "possible-local-width-promoted-to-global",
+      "modifier": {
+        "source": "text",
+        "start": 40,
+        "end": 44,
+        "text": "wide",
+        "offsets": "normalized-utf16"
+      },
+      "likelyReferent": {
+        "source": "text",
+        "start": 45,
+        "end": 53,
+        "text": "entrance",
+        "offsets": "normalized-utf16"
+      },
+      "observation": "A width modifier next to a local opening noun sets the same global minimumWidth field as a whole-space modifier.",
+      "severity": "hypothesis-needing-intent-review",
+      "changesAcceptance": false
+    },
+    {
+      "stage": "intent",
+      "kind": "modifier-scope-observation",
+      "decisionId": "intent:25",
+      "modifier": {
+        "source": "text",
+        "start": 68,
+        "end": 72,
+        "text": "tall",
+        "offsets": "normalized-utf16"
+      },
+      "originalNegationMatched": false,
+      "likelyReferent": {
+        "source": "text",
+        "start": 73,
+        "end": 80,
+        "text": "ceiling",
+        "offsets": "normalized-utf16"
+      },
+      "confidence": "lexical-proximity-hypothesis-only",
+      "inspectionRule": "first recognized following noun within 48 normalized code units, stopping at punctuation or a listed conjunction/preposition",
+      "frozenAppliedScope": "no minimum-width contribution from this token",
+      "requirementMetres": 2.4,
+      "limitation": "This is not a syntactic attachment or an assertion of intended meaning; narrowness and height adjectives have no dedicated dimension fields."
+    },
+    {
+      "stage": "intent",
+      "kind": "final-criteria",
+      "decisionId": "intent:26",
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "changedByTracing": false,
+      "sourceOfAcceptance": "deriveCorrectedSpatialCriteria"
+    }
+  ]
+}

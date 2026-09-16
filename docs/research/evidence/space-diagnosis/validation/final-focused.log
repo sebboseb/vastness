@@ -1,0 +1,334 @@
+TAP version 13
+# Subtest: late selected entry receives a qualifying route before early roots consume the unchanged global cap
+ok 1 - late selected entry receives a qualifying route before early roots consume the unchanged global cap
+  ---
+  duration_ms: 16197.805041
+  type: 'test'
+  ...
+# Subtest: successful predecessor route and assessment are returned unchanged in both modes
+ok 2 - successful predecessor route and assessment are returned unchanged in both modes
+  ---
+  duration_ms: 224.996375
+  type: 'test'
+  ...
+# Subtest: sealed rooms, internal floor holes, thin barriers and disconnected support remain rejected
+ok 3 - sealed rooms, internal floor holes, thin barriers and disconnected support remain rejected
+  ---
+  duration_ms: 7781.688667
+  type: 'test'
+  ...
+# Subtest: one shared component keeps distinct entry streams and fails closed at the unchanged route cap
+ok 4 - one shared component keeps distinct entry streams and fails closed at the unchanged route cap
+  ---
+  duration_ms: 6655.249833
+  type: 'test'
+  ...
+# Subtest: unsupported criteria and grid exhaustion produce no invented candidates
+ok 5 - unsupported criteria and grid exhaustion produce no invented candidates
+  ---
+  duration_ms: 112.667167
+  type: 'test'
+  ...
+# Subtest: local doorway width moves only to its topology and preserves all remaining obligations
+ok 6 - local doorway width moves only to its topology and preserves all remaining obligations
+  ---
+  duration_ms: 7.40475
+  type: 'test'
+  ...
+# Subtest: independent whole-space modifiers cannot be lost when a doorway is also broad
+ok 7 - independent whole-space modifiers cannot be lost when a doorway is also broad
+  ---
+  duration_ms: 0.359041
+  type: 'test'
+  ...
+# Subtest: entrance, bare opening, punctuation and unresolved modifier attachment preserve baseline
+ok 8 - entrance, bare opening, punctuation and unresolved modifier attachment preserve baseline
+  ---
+  duration_ms: 2.090375
+  type: 'test'
+  ...
+# Subtest: negation, alternatives and conflicting baseline requirements never change
+ok 9 - negation, alternatives and conflicting baseline requirements never change
+  ---
+  duration_ms: 1.249959
+  type: 'test'
+  ...
+# Subtest: one topology, body width, walkway alias and semantic fallback remain byte-identical
+ok 10 - one topology, body width, walkway alias and semantic fallback remain byte-identical
+  ---
+  duration_ms: 1.434417
+  type: 'test'
+  ...
+# Subtest: trace keeps the baseline prefix and exact normalized attachment spans before scoped output
+ok 11 - trace keeps the baseline prefix and exact normalized attachment spans before scoped output
+  ---
+  duration_ms: 0.854667
+  type: 'test'
+  ...
+# Subtest: clipping, metadata, sink mutation and sink failures cannot silently change scope
+ok 12 - clipping, metadata, sink mutation and sink failures cannot silently change scope
+  ---
+  duration_ms: 0.552875
+  type: 'test'
+  ...
+# Subtest: tracing and untraced wrapper preserve byte-identical frozen output on a synthetic language matrix
+ok 13 - tracing and untraced wrapper preserve byte-identical frozen output on a synthetic language matrix
+  ---
+  duration_ms: 20.610417
+  type: 'test'
+  ...
+# Subtest: broad entrance is explained as a global width contribution without silently fixing scope
+ok 14 - broad entrance is explained as a global width contribution without silently fixing scope
+  ---
+  duration_ms: 0.342083
+  type: 'test'
+  ...
+# Subtest: topology negation, skipped concept fallback and accepted semantic provenance are explicit
+ok 15 - topology negation, skipped concept fallback and accepted semantic provenance are explicit
+  ---
+  duration_ms: 0.672708
+  type: 'test'
+  ...
+# Subtest: roof tracing explains the correction, separate cover cues and both negation rules
+ok 16 - roof tracing explains the correction, separate cover cues and both negation rules
+  ---
+  duration_ms: 0.416292
+  type: 'test'
+  ...
+# Subtest: all spans reference exact retained normalized text and compiler truncation is explicit
+ok 17 - all spans reference exact retained normalized text and compiler truncation is explicit
+  ---
+  duration_ms: 0.400958
+  type: 'test'
+  ...
+# Subtest: event order is deterministic and sinks cannot mutate acceptance, inputs or later events
+ok 18 - event order is deterministic and sinks cannot mutate acceptance, inputs or later events
+  ---
+  duration_ms: 0.646125
+  type: 'test'
+  ...
+# Subtest: all matched cues are observable, while alternatives and local negation limits stay honest
+ok 19 - all matched cues are observable, while alternatives and local negation limits stay honest
+  ---
+  duration_ms: 0.330625
+  type: 'test'
+  ...
+# Subtest: direct covered and walled walkways gain only the existing passage classification
+ok 20 - direct covered and walled walkways gain only the existing passage classification
+  ---
+  duration_ms: 5.848292
+  type: 'test'
+  ...
+# Subtest: negation, contradictory or alternative wording never gains alias acceptance
+ok 21 - negation, contradictory or alternative wording never gains alias acceptance
+  ---
+  duration_ms: 3.406459
+  type: 'test'
+  ...
+# Subtest: unattached cover, missing walls, generic walkways and semantic-only aliases stay unsupported
+ok 22 - unattached cover, missing walls, generic walkways and semantic-only aliases stay unsupported
+  ---
+  duration_ms: 0.850209
+  type: 'test'
+  ...
+# Subtest: every existing supported or independently ambiguous result is byte-identical
+ok 23 - every existing supported or independently ambiguous result is byte-identical
+  ---
+  duration_ms: 5.187791
+  type: 'test'
+  ...
+# Subtest: trace retains the complete original unsupported decision before explicit alias and final criteria
+ok 24 - trace retains the complete original unsupported decision before explicit alias and final criteria
+  ---
+  duration_ms: 0.412
+  type: 'test'
+  ...
+# Subtest: truncation, metadata, trace mutation and sink errors cannot silently weaken the rule
+ok 25 - truncation, metadata, trace mutation and sink errors cannot silently weaken the rule
+  ---
+  duration_ms: 0.630917
+  type: 'test'
+  ...
+# Subtest: broad local aperture plus narrower supported route succeeds only with scoped obligations
+ok 26 - broad local aperture plus narrower supported route succeeds only with scoped obligations
+  ---
+  duration_ms: 2329.427625
+  type: 'test'
+  ...
+# Subtest: global0.6 cannot bypass the preserved2.4 aperture threshold
+ok 27 - global0.6 cannot bypass the preserved2.4 aperture threshold
+  ---
+  duration_ms: 2336.224375
+  type: 'test'
+  ...
+# Subtest: predecessor successful route is retained under conservative global width
+ok 28 - predecessor successful route is retained under conservative global width
+  ---
+  duration_ms: 666.742041
+  type: 'test'
+  ...
+# Subtest: criteria without scoped width retain exact predecessor assessment and trace
+ok 29 - criteria without scoped width retain exact predecessor assessment and trace
+  ---
+  duration_ms: 260.106875
+  type: 'test'
+  ...
+# Subtest: scope cannot repair sealed aperture, absent roof, unsupported gap or broad whole chamber
+ok 30 - scope cannot repair sealed aperture, absent roof, unsupported gap or broad whole chamber
+  ---
+  duration_ms: 970.229708
+  type: 'test'
+  ...
+# Subtest: legacy scoped search also preserves aperture width and actual reversible movement
+ok 31 - legacy scoped search also preserves aperture width and actual reversible movement
+  ---
+  duration_ms: 827.652042
+  type: 'test'
+  ...
+# Subtest: non-finite or sub-body scoped widths fail explicitly before geometric evaluation
+ok 32 - non-finite or sub-body scoped widths fail explicitly before geometric evaluation
+  ---
+  duration_ms: 0.401584
+  type: 'test'
+  ...
+# Subtest: same-mode predecessor passes preserve the complete route and never run new entry queries
+ok 33 - same-mode predecessor passes preserve the complete route and never run new entry queries
+  ---
+  duration_ms: 146.674709
+  type: 'test'
+  ...
+# Subtest: overhead overhang admission requires completed continuous prism proof and actual reversible seam
+ok 34 - overhead overhang admission requires completed continuous prism proof and actual reversible seam
+  ---
+  duration_ms: 120.511292
+  type: 'test'
+  ...
+# Subtest: a detached floor strictly below the support band cannot alone exclude the entrance
+ok 35 - a detached floor strictly below the support band cannot alone exclude the entrance
+  ---
+  duration_ms: 115.378208
+  type: 'test'
+  ...
+# Subtest: sealed rooms and both walled and unwalled internal holes retain rejection
+ok 36 - sealed rooms and both walled and unwalled internal holes retain rejection
+  ---
+  duration_ms: 10185.869959
+  type: 'test'
+  ...
+# Subtest: zero-thickness walls, sloping head obstacles and hanging beams remain solid
+ok 37 - zero-thickness walls, sloping head obstacles and hanging beams remain solid
+  ---
+  duration_ms: 256.313709
+  type: 'test'
+  ...
+# Subtest: same-level source support beyond a gap is excluded from the authored corridor
+ok 38 - same-level source support beyond a gap is excluded from the authored corridor
+  ---
+  duration_ms: 318.627417
+  type: 'test'
+  ...
+# Subtest: missing generated floor continuity is not repaired by allowing an overhead roof
+ok 39 - missing generated floor continuity is not repaired by allowing an overhead roof
+  ---
+  duration_ms: 73.915834
+  type: 'test'
+  ...
+# Subtest: grid limits still fail closed and each pass has independent unchanged caps
+ok 40 - grid limits still fail closed and each pass has independent unchanged caps
+  ---
+  duration_ms: 1.262583
+  type: 'test'
+  ...
+# Subtest: a recessed entrance starts the whole body outside source bounds on a fully verified longer approach
+ok 41 - a recessed entrance starts the whole body outside source bounds on a fully verified longer approach
+  ---
+  duration_ms: 157.9555
+  type: 'test'
+  ...
+# Subtest: exterior access longer than the navigator approach cap is an explicit bounded rejection
+ok 42 - exterior access longer than the navigator approach cap is an explicit bounded rejection
+  ---
+  duration_ms: 89.265458
+  type: 'test'
+  ...
+# Subtest: accepted route, witnesses, samples, diagnostics and options exactly match in both modes
+ok 43 - accepted route, witnesses, samples, diagnostics and options exactly match in both modes
+  ---
+  duration_ms: 189.911167
+  type: 'test'
+  ...
+# Subtest: all topology branches preserve successful and rejected synthetic decisions
+ok 44 - all topology branches preserve successful and rejected synthetic decisions
+  ---
+  duration_ms: 2241.875125
+  type: 'test'
+  ...
+# Subtest: sealed and internal-hole rejection records original projection triangles and omitted stages
+ok 45 - sealed and internal-hole rejection records original projection triangles and omitted stages
+  ---
+  duration_ms: 111.807042
+  type: 'test'
+  ...
+# Subtest: first failed node predicates leave later queries explicitly unexecuted
+ok 46 - first failed node predicates leave later queries explicitly unexecuted
+  ---
+  duration_ms: 869.696708
+  type: 'test'
+  ...
+# Subtest: entry rank, cap omissions and successful-stop omissions partition the original proposals
+ok 47 - entry rank, cap omissions and successful-stop omissions partition the original proposals
+  ---
+  duration_ms: 226.54975
+  type: 'test'
+  ...
+# Subtest: grid budget and unsupported criteria preserve terminal failure instead of fabricating evaluations
+ok 48 - grid budget and unsupported criteria preserve terminal failure instead of fabricating evaluations
+  ---
+  duration_ms: 21.61375
+  type: 'test'
+  ...
+# Subtest: stream errors propagate and observation mutation cannot change the assessment
+ok 49 - stream errors propagate and observation mutation cannot change the assessment
+  ---
+  duration_ms: 81.691125
+  type: 'test'
+  ...
+# Subtest: a tapered unsupported seam records both actual movement directions without adding support
+ok 50 - a tapered unsupported seam records both actual movement directions without adding support
+  ---
+  duration_ms: 114.658041
+  type: 'test'
+  ...
+# Subtest: CPU shards partition every candidate exactly once in stable cohort order
+ok 51 - CPU shards partition every candidate exactly once in stable cohort order
+  ---
+  duration_ms: 0.787292
+  type: 'test'
+  ...
+# Subtest: invalid CPU shard requests fail instead of silently dropping the cohort
+ok 52 - invalid CPU shard requests fail instead of silently dropping the cohort
+  ---
+  duration_ms: 0.112834
+  type: 'test'
+  ...
+# Subtest: a live duplicate cannot steal a shard or alter its lock; release permits resume
+ok 53 - a live duplicate cannot steal a shard or alter its lock; release permits resume
+  ---
+  duration_ms: 1.701791
+  type: 'test'
+  ...
+# Subtest: observational parity ignores clocks and harness provenance but retains acceptance evidence
+ok 54 - observational parity ignores clocks and harness provenance but retains acceptance evidence
+  ---
+  duration_ms: 0.702666
+  type: 'test'
+  ...
+1..54
+# tests 54
+# suites 0
+# pass 54
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 54948.578042

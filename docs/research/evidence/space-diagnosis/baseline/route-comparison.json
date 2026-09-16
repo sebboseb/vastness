@@ -1,0 +1,346 @@
+{
+  "phase": "baseline",
+  "keys": [
+    "sourceSha256",
+    "transform",
+    "options",
+    "criteria",
+    "route",
+    "samples",
+    "approach",
+    "approachStart",
+    "seam",
+    "entry",
+    "approachDirection",
+    "approachVerified",
+    "topologyWitnesses"
+  ],
+  "unchangedAccepted": 3,
+  "freshBrowserRequiredForRouteChange": [],
+  "rows": [
+    {
+      "id": "large_open_interior-1-7",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "190c87c54e62e88753bc2199b739dda17bb524e87ece05bcfa686ae109b5b3a1",
+      "priorRouteEvidenceSha256": "190c87c54e62e88753bc2199b739dda17bb524e87ece05bcfa686ae109b5b3a1",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "tunnel-1-7",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "db7888ef2892b8888a93a51e2a28a3ebd2dae175220659f701ad97a19d6dc187",
+      "priorRouteEvidenceSha256": "db7888ef2892b8888a93a51e2a28a3ebd2dae175220659f701ad97a19d6dc187",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "doorway-1-7",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "02db4cbc31cbea16156d58f60d30696b75fea0233d643992f2d45d0c5ed2c6f9",
+      "priorRouteEvidenceSha256": "02db4cbc31cbea16156d58f60d30696b75fea0233d643992f2d45d0c5ed2c6f9",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "narrow_passage-1-7",
+      "passed": true,
+      "previouslyPassed": true,
+      "currentRouteEvidenceSha256": "bdad0d2f1aab703c91df66341a6f3d24c8fa19fb23bb0f3c6240a2411fbd37d6",
+      "priorRouteEvidenceSha256": "bdad0d2f1aab703c91df66341a6f3d24c8fa19fb23bb0f3c6240a2411fbd37d6",
+      "acceptedEvidenceUnchanged": true,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "chamber-1-7",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "20797aa30de042cfad01c41220d426b0bc31263b2e14a2851e431c8f45a87087",
+      "priorRouteEvidenceSha256": "20797aa30de042cfad01c41220d426b0bc31263b2e14a2851e431c8f45a87087",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "cave-1-7",
+      "passed": true,
+      "previouslyPassed": true,
+      "currentRouteEvidenceSha256": "6fbebbe7e171e30706353c869d749ef074b7d73a27bad6e637befb9c53e1079d",
+      "priorRouteEvidenceSha256": "6fbebbe7e171e30706353c869d749ef074b7d73a27bad6e637befb9c53e1079d",
+      "acceptedEvidenceUnchanged": true,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "corridor-1-7",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "59c0fc452d08b68b242cdd2e6c6e52dd3194ea83a917b853fa70f1fde6ba4152",
+      "priorRouteEvidenceSha256": "59c0fc452d08b68b242cdd2e6c6e52dd3194ea83a917b853fa70f1fde6ba4152",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "courtyard-1-7",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "623f1fe402e4440588ae72cec14d42fdbf6ecd5dd48966d285a6a1d9d4d21aeb",
+      "priorRouteEvidenceSha256": "623f1fe402e4440588ae72cec14d42fdbf6ecd5dd48966d285a6a1d9d4d21aeb",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "bridge-1-7",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "ef09f3716f60770d50b90837341a68a0e1c7ca80351d5c2bf4691c0de43b53dc",
+      "priorRouteEvidenceSha256": "ef09f3716f60770d50b90837341a68a0e1c7ca80351d5c2bf4691c0de43b53dc",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "large_open_interior-1-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "376e34a621669de59fcf7d9fe8fef9de5aa22be327a191c2bf0a3c88ef1f6b0f",
+      "priorRouteEvidenceSha256": "376e34a621669de59fcf7d9fe8fef9de5aa22be327a191c2bf0a3c88ef1f6b0f",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "bridge-1-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "943948d0d3b66ef7fe00d51c9781d8eb2248468117e5cf571515369b1bd375e3",
+      "priorRouteEvidenceSha256": "943948d0d3b66ef7fe00d51c9781d8eb2248468117e5cf571515369b1bd375e3",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "doorway-1-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "dfb61e2ace33c96a6bf3d11beba80211827450db589688b85fdb5f9d6b31fd1d",
+      "priorRouteEvidenceSha256": "dfb61e2ace33c96a6bf3d11beba80211827450db589688b85fdb5f9d6b31fd1d",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "narrow_passage-1-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "c9bf4a7338ac48406acf7ad48ece245eeeadb6fd585945aca93531a9c0748899",
+      "priorRouteEvidenceSha256": "c9bf4a7338ac48406acf7ad48ece245eeeadb6fd585945aca93531a9c0748899",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "cave-1-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "039053d37e61c42827d45632f2d0c410c866cd05d85270aa7647515ab553284a",
+      "priorRouteEvidenceSha256": "039053d37e61c42827d45632f2d0c410c866cd05d85270aa7647515ab553284a",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "courtyard-1-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "407171833c1b761c321932042b22f36a2e892b9fe3064a534af792d92c5e59b0",
+      "priorRouteEvidenceSha256": "407171833c1b761c321932042b22f36a2e892b9fe3064a534af792d92c5e59b0",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "corridor-1-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "19c251042afb42232697540b821df1222cf9a593e6db432ee09f2cfdcdaf85f6",
+      "priorRouteEvidenceSha256": "19c251042afb42232697540b821df1222cf9a593e6db432ee09f2cfdcdaf85f6",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "tunnel-1-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "c11cfd377594802912c0055b1879a6bae309b5101737877effe5a786e69fdf07",
+      "priorRouteEvidenceSha256": "c11cfd377594802912c0055b1879a6bae309b5101737877effe5a786e69fdf07",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "chamber-1-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "a46e1042335cb06b703a03d4b8720b15fb264f17b646d22b0d5cac88a37c687d",
+      "priorRouteEvidenceSha256": "a46e1042335cb06b703a03d4b8720b15fb264f17b646d22b0d5cac88a37c687d",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "courtyard-2-7",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "804569ca285406b3824b7000a45eca91c510d90870e31256dec733e29c403ec7",
+      "priorRouteEvidenceSha256": "804569ca285406b3824b7000a45eca91c510d90870e31256dec733e29c403ec7",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "bridge-2-7",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "4ad2bd62db5dd6e672704bb9346320d700142b76939161d7ca342cea5f6d2ed6",
+      "priorRouteEvidenceSha256": "4ad2bd62db5dd6e672704bb9346320d700142b76939161d7ca342cea5f6d2ed6",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "tunnel-2-7",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "39a7eec2feb4fdf04d54e9a6417631ac12d1c1455a61dcb8776e25072c0a523f",
+      "priorRouteEvidenceSha256": "39a7eec2feb4fdf04d54e9a6417631ac12d1c1455a61dcb8776e25072c0a523f",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "corridor-2-7",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "0ea936b352c626487d94e8a9fabb091a39681f7b5f72ab93f09d6b409e725ae1",
+      "priorRouteEvidenceSha256": "0ea936b352c626487d94e8a9fabb091a39681f7b5f72ab93f09d6b409e725ae1",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "narrow_passage-2-7",
+      "passed": true,
+      "previouslyPassed": true,
+      "currentRouteEvidenceSha256": "eee9b69133238c1446e4fa5dba1e7f50bfe0b7e700c456728ae8dc456d38fff7",
+      "priorRouteEvidenceSha256": "eee9b69133238c1446e4fa5dba1e7f50bfe0b7e700c456728ae8dc456d38fff7",
+      "acceptedEvidenceUnchanged": true,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "chamber-2-7",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "fcee6b05fe8f4f9da0d0351e22da474518991ba71865c4fa221d21d46bcc0311",
+      "priorRouteEvidenceSha256": "fcee6b05fe8f4f9da0d0351e22da474518991ba71865c4fa221d21d46bcc0311",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "cave-2-7",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "058d46bc0b6b1fed2058f681d4e23937e4e972f69022545e298e3de6c8b30364",
+      "priorRouteEvidenceSha256": "058d46bc0b6b1fed2058f681d4e23937e4e972f69022545e298e3de6c8b30364",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "large_open_interior-2-7",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "d9eea7210d5952d86c43576c09ce7eb4ac693f5dbf37241a473891fd756094fa",
+      "priorRouteEvidenceSha256": "d9eea7210d5952d86c43576c09ce7eb4ac693f5dbf37241a473891fd756094fa",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "doorway-2-7",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "80d4103b145b42ad64dea807c8f40e2038d36183081ea3774fcd414112a2f31c",
+      "priorRouteEvidenceSha256": "80d4103b145b42ad64dea807c8f40e2038d36183081ea3774fcd414112a2f31c",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "large_open_interior-2-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "34f74fc80399fa847e93ea4763845773e6bb027ef99f80d1ddf674112b1dbf68",
+      "priorRouteEvidenceSha256": "34f74fc80399fa847e93ea4763845773e6bb027ef99f80d1ddf674112b1dbf68",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "doorway-2-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "ecc584d6e407385954b263958f0516479259789937eacc3c1fe757eba17dfc9c",
+      "priorRouteEvidenceSha256": "ecc584d6e407385954b263958f0516479259789937eacc3c1fe757eba17dfc9c",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "corridor-2-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "855c8bbf48b96d3ea762a4a9d19edcc41c05ed49ae21c4b91f7962507e312ba8",
+      "priorRouteEvidenceSha256": "855c8bbf48b96d3ea762a4a9d19edcc41c05ed49ae21c4b91f7962507e312ba8",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "chamber-2-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "1e67e11ff07d9384484b7dfe5d77105871b2d7e1f749d2851170a997bf9ab2a2",
+      "priorRouteEvidenceSha256": "1e67e11ff07d9384484b7dfe5d77105871b2d7e1f749d2851170a997bf9ab2a2",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "narrow_passage-2-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "502ece4a70a2ea6d13dff9e4c5ad244c5f7f576f6499fded9f349fccffda1dec",
+      "priorRouteEvidenceSha256": "502ece4a70a2ea6d13dff9e4c5ad244c5f7f576f6499fded9f349fccffda1dec",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "courtyard-2-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "b829cf2676f9b4a2126c32b36832a637067030f99d0d1e9bf79ad33c9818ca21",
+      "priorRouteEvidenceSha256": "b829cf2676f9b4a2126c32b36832a637067030f99d0d1e9bf79ad33c9818ca21",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "cave-2-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "e93ada8ab1a070658d94df9583adc805b0f87ab1936ef605058d81f96b86aa8b",
+      "priorRouteEvidenceSha256": "e93ada8ab1a070658d94df9583adc805b0f87ab1936ef605058d81f96b86aa8b",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "bridge-2-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "ee11b11a9780b68ce8c64f1c93cf624b1ec7217460fee7d4ea1bb11d493263e5",
+      "priorRouteEvidenceSha256": "ee11b11a9780b68ce8c64f1c93cf624b1ec7217460fee7d4ea1bb11d493263e5",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    },
+    {
+      "id": "tunnel-2-42",
+      "passed": false,
+      "previouslyPassed": false,
+      "currentRouteEvidenceSha256": "24f0000397a9445f451467904c4365e1bdf54f6699e1c4476d0aeef914ac3199",
+      "priorRouteEvidenceSha256": "24f0000397a9445f451467904c4365e1bdf54f6699e1c4476d0aeef914ac3199",
+      "acceptedEvidenceUnchanged": false,
+      "freshBrowserRequiredForRouteChange": false
+    }
+  ]
+}
