@@ -1,0 +1,877 @@
+{
+  "rawIntent": {
+    "text": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "An empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "enclosed"
+    },
+    "representation": "abstract-solid"
+  },
+  "criteria": {
+    "version": 1,
+    "supported": true,
+    "required": [
+      "enclosed-passage",
+      "doorway-crossing"
+    ],
+    "evidence": [
+      {
+        "kind": "enclosed-passage",
+        "source": "text",
+        "cue": "chamber"
+      },
+      {
+        "kind": "doorway-crossing",
+        "source": "text",
+        "cue": "doorway"
+      }
+    ],
+    "ambiguities": [
+      "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement."
+    ],
+    "requirements": {
+      "openSky": false,
+      "covered": true,
+      "opposingWalls": false,
+      "minimumWidth": 2.4
+    },
+    "physical": {
+      "radius": 0.3,
+      "height": 1.8,
+      "eyeHeight": 1.65,
+      "maxStep": 0.25,
+      "maxSlopeDegrees": 35,
+      "minimumDisplacement": 3,
+      "reversible": true
+    }
+  },
+  "events": [
+    {
+      "stage": "intent",
+      "kind": "compiler-observation",
+      "decisionId": "intent:0",
+      "compiler": "deriveCorrectedSpatialCriteria",
+      "traceVersion": "criteria-observation-v1",
+      "authority": "unchanged frozen compiler return value",
+      "matchObservation": "Full lexical inspection of retained normalized input; this is not a low-level execution log of short-circuit regex calls.",
+      "scopeObservation": "Nearby noun associations are explicitly labeled hypotheses, not parsed intent or acceptance inputs."
+    },
+    {
+      "stage": "intent",
+      "kind": "normalized-source",
+      "decisionId": "intent:1",
+      "source": "text",
+      "normalizedText": "an empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+      "rawCodeUnits": 120,
+      "normalizedCodeUnits": 120,
+      "retainedCodeUnits": 120,
+      "compilerOmittedCodeUnits": 0,
+      "normalization": [
+        "NFKC",
+        "lowercase",
+        "collapse whitespace",
+        "first 2400 UTF-16 code units"
+      ],
+      "spanBasis": "All spans refer to normalizedText. No raw-input offsets are inferred after normalization."
+    },
+    {
+      "stage": "intent",
+      "kind": "normalized-source",
+      "decisionId": "intent:2",
+      "source": "semantic-concept",
+      "normalizedText": "an empty underground stone chamber with a broad doorway and continuous level floor, high ceiling and open walking space.",
+      "rawCodeUnits": 120,
+      "normalizedCodeUnits": 120,
+      "retainedCodeUnits": 120,
+      "compilerOmittedCodeUnits": 0,
+      "normalization": [
+        "NFKC",
+        "lowercase",
+        "collapse whitespace",
+        "first 2400 UTF-16 code units"
+      ],
+      "spanBasis": "All spans refer to normalizedText. No raw-input offsets are inferred after normalization."
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:3",
+      "span": {
+        "source": "text",
+        "start": 27,
+        "end": 34,
+        "text": "chamber",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:topology:enclosed-passage:27:34",
+      "family": "topology:enclosed-passage",
+      "pattern": "\\b(tunnels?|corridors?|passages?|caves?|caverns?|chambers?)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:4",
+      "cueId": "text:topology:enclosed-passage:27:34",
+      "family": "topology:enclosed-passage",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 27,
+        "text": "an empty underground stone ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "topology-decision",
+      "decisionId": "intent:5",
+      "cueId": "text:topology:enclosed-passage:27:34",
+      "span": {
+        "source": "text",
+        "start": 27,
+        "end": 34,
+        "text": "chamber",
+        "offsets": "normalized-utf16"
+      },
+      "topology": "enclosed-passage",
+      "decision": "included-topology-evidence",
+      "source": "text",
+      "appliesTo": "conjunctive route requirements",
+      "excludedTopologies": []
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:6",
+      "span": {
+        "source": "text",
+        "start": 48,
+        "end": 55,
+        "text": "doorway",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:topology:doorway-crossing:48:55",
+      "family": "topology:doorway-crossing",
+      "pattern": "\\b(arch(?:way)?s?|doorways?|door openings?|gateways?|gates?|portals?)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:7",
+      "cueId": "text:topology:doorway-crossing:48:55",
+      "family": "topology:doorway-crossing",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 3,
+        "end": 48,
+        "text": "empty underground stone chamber with a broad ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "topology-decision",
+      "decisionId": "intent:8",
+      "cueId": "text:topology:doorway-crossing:48:55",
+      "span": {
+        "source": "text",
+        "start": 48,
+        "end": 55,
+        "text": "doorway",
+        "offsets": "normalized-utf16"
+      },
+      "topology": "doorway-crossing",
+      "decision": "included-topology-evidence",
+      "source": "text",
+      "appliesTo": "conjunctive route requirements",
+      "excludedTopologies": []
+    },
+    {
+      "stage": "intent",
+      "kind": "semantic-fallback",
+      "decisionId": "intent:9",
+      "source": "semantic-concept",
+      "state": "not-evaluated",
+      "reason": "original text already supplies topology evidence",
+      "textExcludedTopologies": [],
+      "conceptAvailable": true
+    },
+    {
+      "stage": "intent",
+      "kind": "semantic-fallback",
+      "decisionId": "intent:10",
+      "source": "semantic-openness",
+      "field": "axes.openness",
+      "state": "not-evaluated",
+      "reason": "positive topology evidence already exists",
+      "observedEnclosedValue": true,
+      "accepted": false,
+      "consequence": "none"
+    },
+    {
+      "stage": "intent",
+      "kind": "topology-compilation",
+      "decisionId": "intent:11",
+      "evidence": [
+        {
+          "kind": "enclosed-passage",
+          "source": "text",
+          "cue": "chamber"
+        },
+        {
+          "kind": "doorway-crossing",
+          "source": "text",
+          "cue": "doorway"
+        }
+      ],
+      "required": [
+        "enclosed-passage",
+        "doorway-crossing"
+      ],
+      "excludedTopologies": [],
+      "observedEvidenceMatchesFrozenCompiler": true,
+      "alternatives": "The frozen compiler retains conjunctive requirements; it does not choose between alternatives."
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:12",
+      "span": {
+        "source": "text",
+        "start": 9,
+        "end": 20,
+        "text": "underground",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:original-cover:9:20",
+      "family": "original-cover",
+      "pattern": "\\b(covered|roofed|ceiling|underground|enclosed)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:13",
+      "cueId": "text:original-cover:9:20",
+      "family": "original-cover",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 9,
+        "text": "an empty ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:14",
+      "span": {
+        "source": "text",
+        "start": 89,
+        "end": 96,
+        "text": "ceiling",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:original-cover:89:96",
+      "family": "original-cover",
+      "pattern": "\\b(covered|roofed|ceiling|underground|enclosed)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:15",
+      "cueId": "text:original-cover:89:96",
+      "family": "original-cover",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 44,
+        "end": 89,
+        "text": "oad doorway and continuous level floor, high ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:16",
+      "span": {
+        "source": "text",
+        "start": 42,
+        "end": 47,
+        "text": "broad",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:minimum-width:42:47",
+      "family": "minimum-width",
+      "pattern": "\\b(broad|wide|spacious|vast|large)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:17",
+      "cueId": "text:minimum-width:42:47",
+      "family": "minimum-width",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 42,
+        "text": "an empty underground stone chamber with a ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "original-requirements",
+      "decisionId": "intent:18",
+      "requirements": {
+        "openSky": false,
+        "covered": true,
+        "opposingWalls": false,
+        "minimumWidth": 2.4
+      },
+      "openSky": {
+        "inherentCourtyard": false,
+        "positiveCueIds": []
+      },
+      "covered": {
+        "inherentBroadInterior": false,
+        "positiveCueIds": [
+          "text:original-cover:9:20",
+          "text:original-cover:89:96"
+        ],
+        "inherentCoverEvidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          }
+        ],
+        "inherentCoverSuppressedByOpenSky": false
+      },
+      "opposingWalls": {
+        "positiveCueIds": [],
+        "result": false
+      },
+      "minimumWidth": {
+        "positiveCueIds": [
+          "text:minimum-width:42:47"
+        ],
+        "defaultMetres": 0.6,
+        "positiveModifierMetres": 2.4,
+        "resultMetres": 2.4,
+        "appliedScope": "one global minimumWidth field, regardless of the modifier’s nearby noun; downstream witnesses decide where to consume that field"
+      }
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:19",
+      "span": {
+        "source": "text",
+        "start": 89,
+        "end": 96,
+        "text": "ceiling",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:corrected-roof:89:96",
+      "family": "corrected-roof",
+      "pattern": "\\b(?:roofs?|roofed|ceilings?|covered)\\b",
+      "negationRule": "corrected",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:20",
+      "cueId": "text:corrected-roof:89:96",
+      "family": "corrected-roof",
+      "rule": "corrected",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|overhead|high|low|vaulted|solid|continuous|stone|wooden|enclosing)){0,4}\\s*$",
+      "maximumLookbehindCodeUnits": 90,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 89,
+        "text": "an empty underground stone chamber with a broad doorway and continuous level floor, high ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:21",
+      "span": {
+        "source": "text",
+        "start": 9,
+        "end": 20,
+        "text": "underground",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:corrected-underground:9:20",
+      "family": "corrected-underground",
+      "pattern": "\\bunderground\\b",
+      "negationRule": "corrected",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:22",
+      "cueId": "text:corrected-underground:9:20",
+      "family": "corrected-underground",
+      "rule": "corrected",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|overhead|high|low|vaulted|solid|continuous|stone|wooden|enclosing)){0,4}\\s*$",
+      "maximumLookbehindCodeUnits": 90,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 9,
+        "text": "an empty ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "roof-correction",
+      "decisionId": "intent:23",
+      "before": {
+        "openSky": false,
+        "covered": true,
+        "opposingWalls": false,
+        "minimumWidth": 2.4
+      },
+      "after": {
+        "openSky": false,
+        "covered": true,
+        "opposingWalls": false,
+        "minimumWidth": 2.4
+      },
+      "observedInputs": {
+        "positiveRoof": true,
+        "negativeRoof": false,
+        "explicitOpen": false,
+        "inheritedOpenSky": false,
+        "openSky": false,
+        "explicitCover": true,
+        "inherentCover": true,
+        "lacksRoof": false,
+        "inherentBroadInterior": false
+      },
+      "enclosedContribution": {
+        "positiveCueIds": [],
+        "state": "eligible-as-cover-cue"
+      },
+      "positiveRoofCueIds": [
+        "text:corrected-roof:89:96"
+      ],
+      "negativeRoofCueIds": [],
+      "rule": "Negated/absent roof cues can request open sky. With open sky, enclosed alone is lateral; separate positive roof cues still require cover. Explicit rooflessness conflicts with frozen broad-covered-interior topology.",
+      "observedRequirementsMatchFrozenCompiler": true,
+      "supportedBefore": true,
+      "supportedAfter": true
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:24",
+      "span": {
+        "source": "text",
+        "start": 42,
+        "end": 47,
+        "text": "broad",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:scope-modifier:42:47",
+      "family": "scope-modifier",
+      "pattern": "\\b(?:broad|wide|spacious|vast|large|narrow|compact|small|tall|high|low|open|enclosed)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:25",
+      "cueId": "text:scope-modifier:42:47",
+      "family": "scope-modifier",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 42,
+        "text": "an empty underground stone chamber with a ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:26",
+      "span": {
+        "source": "text",
+        "start": 84,
+        "end": 88,
+        "text": "high",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:scope-modifier:84:88",
+      "family": "scope-modifier",
+      "pattern": "\\b(?:broad|wide|spacious|vast|large|narrow|compact|small|tall|high|low|open|enclosed)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:27",
+      "cueId": "text:scope-modifier:84:88",
+      "family": "scope-modifier",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 39,
+        "end": 84,
+        "text": " a broad doorway and continuous level floor, ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:28",
+      "span": {
+        "source": "text",
+        "start": 101,
+        "end": 105,
+        "text": "open",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:scope-modifier:101:105",
+      "family": "scope-modifier",
+      "pattern": "\\b(?:broad|wide|spacious|vast|large|narrow|compact|small|tall|high|low|open|enclosed)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:29",
+      "cueId": "text:scope-modifier:101:105",
+      "family": "scope-modifier",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 56,
+        "end": 101,
+        "text": "and continuous level floor, high ceiling and ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "modifier-scope-observation",
+      "decisionId": "intent:30",
+      "modifier": {
+        "source": "text",
+        "start": 42,
+        "end": 47,
+        "text": "broad",
+        "offsets": "normalized-utf16"
+      },
+      "originalNegationMatched": false,
+      "likelyReferent": {
+        "source": "text",
+        "start": 48,
+        "end": 55,
+        "text": "doorway",
+        "offsets": "normalized-utf16"
+      },
+      "confidence": "lexical-proximity-hypothesis-only",
+      "inspectionRule": "first recognized following noun within 48 normalized code units, stopping at punctuation or a listed conjunction/preposition",
+      "frozenAppliedScope": "global-minimum-width-field",
+      "requirementMetres": 2.4,
+      "limitation": "This is not a syntactic attachment or an assertion of intended meaning; narrowness and height adjectives have no dedicated dimension fields."
+    },
+    {
+      "stage": "intent",
+      "kind": "scope-warning",
+      "decisionId": "intent:31",
+      "code": "possible-local-width-promoted-to-global",
+      "modifier": {
+        "source": "text",
+        "start": 42,
+        "end": 47,
+        "text": "broad",
+        "offsets": "normalized-utf16"
+      },
+      "likelyReferent": {
+        "source": "text",
+        "start": 48,
+        "end": 55,
+        "text": "doorway",
+        "offsets": "normalized-utf16"
+      },
+      "observation": "A width modifier next to a local opening noun sets the same global minimumWidth field as a whole-space modifier.",
+      "severity": "hypothesis-needing-intent-review",
+      "changesAcceptance": false
+    },
+    {
+      "stage": "intent",
+      "kind": "modifier-scope-observation",
+      "decisionId": "intent:32",
+      "modifier": {
+        "source": "text",
+        "start": 84,
+        "end": 88,
+        "text": "high",
+        "offsets": "normalized-utf16"
+      },
+      "originalNegationMatched": false,
+      "likelyReferent": {
+        "source": "text",
+        "start": 89,
+        "end": 96,
+        "text": "ceiling",
+        "offsets": "normalized-utf16"
+      },
+      "confidence": "lexical-proximity-hypothesis-only",
+      "inspectionRule": "first recognized following noun within 48 normalized code units, stopping at punctuation or a listed conjunction/preposition",
+      "frozenAppliedScope": "no minimum-width contribution from this token",
+      "requirementMetres": 2.4,
+      "limitation": "This is not a syntactic attachment or an assertion of intended meaning; narrowness and height adjectives have no dedicated dimension fields."
+    },
+    {
+      "stage": "intent",
+      "kind": "modifier-scope-observation",
+      "decisionId": "intent:33",
+      "modifier": {
+        "source": "text",
+        "start": 101,
+        "end": 105,
+        "text": "open",
+        "offsets": "normalized-utf16"
+      },
+      "originalNegationMatched": false,
+      "likelyReferent": null,
+      "confidence": "lexical-proximity-hypothesis-only",
+      "inspectionRule": "first recognized following noun within 48 normalized code units, stopping at punctuation or a listed conjunction/preposition",
+      "frozenAppliedScope": "no minimum-width contribution from this token",
+      "requirementMetres": 2.4,
+      "limitation": "This is not a syntactic attachment or an assertion of intended meaning; narrowness and height adjectives have no dedicated dimension fields."
+    },
+    {
+      "stage": "intent",
+      "kind": "compiler-ambiguity",
+      "decisionId": "intent:34",
+      "phase": "original",
+      "index": 0,
+      "message": "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement.",
+      "retainedInCorrected": true
+    },
+    {
+      "stage": "intent",
+      "kind": "compiler-ambiguity",
+      "decisionId": "intent:35",
+      "phase": "corrected",
+      "index": 0,
+      "message": "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement.",
+      "presentInOriginal": true
+    },
+    {
+      "stage": "intent",
+      "kind": "final-criteria",
+      "decisionId": "intent:36",
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "changedByTracing": false,
+      "sourceOfAcceptance": "deriveCorrectedSpatialCriteria"
+    },
+    {
+      "stage": "intent",
+      "kind": "walkway-alias-decision",
+      "decisionId": "walkway:0",
+      "methodVersion": "covered-walled-walkway-alias-v1",
+      "applied": false,
+      "reasons": [
+        "existing-supported-criteria-preserved"
+      ],
+      "attachment": null,
+      "uncertainty": [],
+      "baselineSupported": true,
+      "baselineRequired": [
+        "enclosed-passage",
+        "doorway-crossing"
+      ],
+      "rule": "One directly covered/roofed walkway that is directly walled or immediately between qualified walls; existing unsupported empty topology only.",
+      "source": "normalized-original-text-only",
+      "semanticFallbackAdded": false,
+      "limitations": [
+        "Finite lexical attachment grammar, not syntactic or semantic certainty.",
+        "Any listed uncertainty or negation marker declines this alias, including unrelated negation.",
+        "No source geometry or route evidence is inspected. Acceptance still requires the existing enclosed-passage and physical witnesses."
+      ]
+    },
+    {
+      "stage": "intent",
+      "kind": "walkway-final-criteria",
+      "decisionId": "walkway:1",
+      "methodVersion": "covered-walled-walkway-alias-v1",
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage",
+          "doorway-crossing"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "chamber"
+          },
+          {
+            "kind": "doorway-crossing",
+            "source": "text",
+            "cue": "doorway"
+          }
+        ],
+        "ambiguities": [
+          "Multiple positive topology cues are conjunctive: the same supported route must witness each requirement."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": false,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "changedByAlias": false,
+      "sourceOfAcceptance": "unchanged-baseline-criteria",
+      "requirementsPreserved": true,
+      "physicalPreserved": true
+    }
+  ]
+}

@@ -1,0 +1,695 @@
+{
+  "rawIntent": {
+    "text": "An empty covered walkway between brick walls, broad straight path, low arched ceiling and flat continuous paving.",
+    "source": "text"
+  },
+  "semantics": {
+    "version": 1,
+    "kind": "intention-destination",
+    "concept": "An empty covered walkway between brick walls, broad straight path, low arched ceiling and flat continuous paving.",
+    "axes": {
+      "scale": "human",
+      "density": "sparse",
+      "mood": "unspecified",
+      "openness": "mixed"
+    },
+    "representation": "abstract-solid"
+  },
+  "criteria": {
+    "version": 1,
+    "supported": true,
+    "required": [
+      "enclosed-passage"
+    ],
+    "evidence": [
+      {
+        "kind": "enclosed-passage",
+        "source": "text",
+        "cue": "empty covered walkway between brick walls"
+      }
+    ],
+    "ambiguities": [],
+    "requirements": {
+      "openSky": false,
+      "covered": true,
+      "opposingWalls": true,
+      "minimumWidth": 2.4
+    },
+    "physical": {
+      "radius": 0.3,
+      "height": 1.8,
+      "eyeHeight": 1.65,
+      "maxStep": 0.25,
+      "maxSlopeDegrees": 35,
+      "minimumDisplacement": 3,
+      "reversible": true
+    }
+  },
+  "events": [
+    {
+      "stage": "intent",
+      "kind": "compiler-observation",
+      "decisionId": "intent:0",
+      "compiler": "deriveCorrectedSpatialCriteria",
+      "traceVersion": "criteria-observation-v1",
+      "authority": "unchanged frozen compiler return value",
+      "matchObservation": "Full lexical inspection of retained normalized input; this is not a low-level execution log of short-circuit regex calls.",
+      "scopeObservation": "Nearby noun associations are explicitly labeled hypotheses, not parsed intent or acceptance inputs."
+    },
+    {
+      "stage": "intent",
+      "kind": "normalized-source",
+      "decisionId": "intent:1",
+      "source": "text",
+      "normalizedText": "an empty covered walkway between brick walls, broad straight path, low arched ceiling and flat continuous paving.",
+      "rawCodeUnits": 113,
+      "normalizedCodeUnits": 113,
+      "retainedCodeUnits": 113,
+      "compilerOmittedCodeUnits": 0,
+      "normalization": [
+        "NFKC",
+        "lowercase",
+        "collapse whitespace",
+        "first 2400 UTF-16 code units"
+      ],
+      "spanBasis": "All spans refer to normalizedText. No raw-input offsets are inferred after normalization."
+    },
+    {
+      "stage": "intent",
+      "kind": "normalized-source",
+      "decisionId": "intent:2",
+      "source": "semantic-concept",
+      "normalizedText": "an empty covered walkway between brick walls, broad straight path, low arched ceiling and flat continuous paving.",
+      "rawCodeUnits": 113,
+      "normalizedCodeUnits": 113,
+      "retainedCodeUnits": 113,
+      "compilerOmittedCodeUnits": 0,
+      "normalization": [
+        "NFKC",
+        "lowercase",
+        "collapse whitespace",
+        "first 2400 UTF-16 code units"
+      ],
+      "spanBasis": "All spans refer to normalizedText. No raw-input offsets are inferred after normalization."
+    },
+    {
+      "stage": "intent",
+      "kind": "semantic-fallback",
+      "decisionId": "intent:3",
+      "source": "semantic-concept",
+      "state": "evaluated",
+      "reason": "no positive original-text topology evidence",
+      "textExcludedTopologies": [],
+      "conceptAvailable": true
+    },
+    {
+      "stage": "intent",
+      "kind": "semantic-fallback",
+      "decisionId": "intent:4",
+      "source": "semantic-openness",
+      "field": "axes.openness",
+      "state": "evaluated",
+      "reason": "no positive text or concept topology evidence",
+      "observedEnclosedValue": false,
+      "accepted": false,
+      "consequence": "none"
+    },
+    {
+      "stage": "intent",
+      "kind": "topology-compilation",
+      "decisionId": "intent:5",
+      "evidence": [],
+      "required": [],
+      "excludedTopologies": [],
+      "observedEvidenceMatchesFrozenCompiler": true,
+      "alternatives": "The frozen compiler retains conjunctive requirements; it does not choose between alternatives."
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:6",
+      "span": {
+        "source": "text",
+        "start": 9,
+        "end": 16,
+        "text": "covered",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:original-cover:9:16",
+      "family": "original-cover",
+      "pattern": "\\b(covered|roofed|ceiling|underground|enclosed)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:7",
+      "cueId": "text:original-cover:9:16",
+      "family": "original-cover",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 9,
+        "text": "an empty ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:8",
+      "span": {
+        "source": "text",
+        "start": 78,
+        "end": 85,
+        "text": "ceiling",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:original-cover:78:85",
+      "family": "original-cover",
+      "pattern": "\\b(covered|roofed|ceiling|underground|enclosed)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:9",
+      "cueId": "text:original-cover:78:85",
+      "family": "original-cover",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 33,
+        "end": 78,
+        "text": "brick walls, broad straight path, low arched ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:10",
+      "span": {
+        "source": "text",
+        "start": 39,
+        "end": 44,
+        "text": "walls",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:opposing-walls:39:44",
+      "family": "opposing-walls",
+      "pattern": "\\b(enclosed|walls?|walled|tunnel|corridor|cave|cavern)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:11",
+      "cueId": "text:opposing-walls:39:44",
+      "family": "opposing-walls",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 39,
+        "text": "an empty covered walkway between brick ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:12",
+      "span": {
+        "source": "text",
+        "start": 46,
+        "end": 51,
+        "text": "broad",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:minimum-width:46:51",
+      "family": "minimum-width",
+      "pattern": "\\b(broad|wide|spacious|vast|large)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:13",
+      "cueId": "text:minimum-width:46:51",
+      "family": "minimum-width",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 1,
+        "end": 46,
+        "text": "n empty covered walkway between brick walls, ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "original-requirements",
+      "decisionId": "intent:14",
+      "requirements": {
+        "openSky": false,
+        "covered": true,
+        "opposingWalls": true,
+        "minimumWidth": 2.4
+      },
+      "openSky": {
+        "inherentCourtyard": false,
+        "positiveCueIds": []
+      },
+      "covered": {
+        "inherentBroadInterior": false,
+        "positiveCueIds": [
+          "text:original-cover:9:16",
+          "text:original-cover:78:85"
+        ],
+        "inherentCoverEvidence": [],
+        "inherentCoverSuppressedByOpenSky": false
+      },
+      "opposingWalls": {
+        "positiveCueIds": [
+          "text:opposing-walls:39:44"
+        ],
+        "result": true
+      },
+      "minimumWidth": {
+        "positiveCueIds": [
+          "text:minimum-width:46:51"
+        ],
+        "defaultMetres": 0.6,
+        "positiveModifierMetres": 2.4,
+        "resultMetres": 2.4,
+        "appliedScope": "one global minimumWidth field, regardless of the modifier’s nearby noun; downstream witnesses decide where to consume that field"
+      }
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:15",
+      "span": {
+        "source": "text",
+        "start": 9,
+        "end": 16,
+        "text": "covered",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:corrected-roof:9:16",
+      "family": "corrected-roof",
+      "pattern": "\\b(?:roofs?|roofed|ceilings?|covered)\\b",
+      "negationRule": "corrected",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:16",
+      "cueId": "text:corrected-roof:9:16",
+      "family": "corrected-roof",
+      "rule": "corrected",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|overhead|high|low|vaulted|solid|continuous|stone|wooden|enclosing)){0,4}\\s*$",
+      "maximumLookbehindCodeUnits": 90,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 9,
+        "text": "an empty ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:17",
+      "span": {
+        "source": "text",
+        "start": 78,
+        "end": 85,
+        "text": "ceiling",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:corrected-roof:78:85",
+      "family": "corrected-roof",
+      "pattern": "\\b(?:roofs?|roofed|ceilings?|covered)\\b",
+      "negationRule": "corrected",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:18",
+      "cueId": "text:corrected-roof:78:85",
+      "family": "corrected-roof",
+      "rule": "corrected",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|overhead|high|low|vaulted|solid|continuous|stone|wooden|enclosing)){0,4}\\s*$",
+      "maximumLookbehindCodeUnits": 90,
+      "window": {
+        "source": "text",
+        "start": 0,
+        "end": 78,
+        "text": "an empty covered walkway between brick walls, broad straight path, low arched ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "roof-correction",
+      "decisionId": "intent:19",
+      "before": {
+        "openSky": false,
+        "covered": true,
+        "opposingWalls": true,
+        "minimumWidth": 2.4
+      },
+      "after": {
+        "openSky": false,
+        "covered": true,
+        "opposingWalls": true,
+        "minimumWidth": 2.4
+      },
+      "observedInputs": {
+        "positiveRoof": true,
+        "negativeRoof": false,
+        "explicitOpen": false,
+        "inheritedOpenSky": false,
+        "openSky": false,
+        "explicitCover": true,
+        "inherentCover": false,
+        "lacksRoof": false,
+        "inherentBroadInterior": false
+      },
+      "enclosedContribution": {
+        "positiveCueIds": [],
+        "state": "eligible-as-cover-cue"
+      },
+      "positiveRoofCueIds": [
+        "text:corrected-roof:9:16",
+        "text:corrected-roof:78:85"
+      ],
+      "negativeRoofCueIds": [],
+      "rule": "Negated/absent roof cues can request open sky. With open sky, enclosed alone is lateral; separate positive roof cues still require cover. Explicit rooflessness conflicts with frozen broad-covered-interior topology.",
+      "observedRequirementsMatchFrozenCompiler": true,
+      "supportedBefore": false,
+      "supportedAfter": false
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:20",
+      "span": {
+        "source": "text",
+        "start": 46,
+        "end": 51,
+        "text": "broad",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:scope-modifier:46:51",
+      "family": "scope-modifier",
+      "pattern": "\\b(?:broad|wide|spacious|vast|large|narrow|compact|small|tall|high|low|open|enclosed)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:21",
+      "cueId": "text:scope-modifier:46:51",
+      "family": "scope-modifier",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 1,
+        "end": 46,
+        "text": "n empty covered walkway between brick walls, ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "lexical-match",
+      "decisionId": "intent:22",
+      "span": {
+        "source": "text",
+        "start": 67,
+        "end": 70,
+        "text": "low",
+        "offsets": "normalized-utf16"
+      },
+      "negated": false,
+      "cueId": "text:scope-modifier:67:70",
+      "family": "scope-modifier",
+      "pattern": "\\b(?:broad|wide|spacious|vast|large|narrow|compact|small|tall|high|low|open|enclosed)\\b",
+      "negationRule": "original",
+      "observation": "complete-inspection"
+    },
+    {
+      "stage": "intent",
+      "kind": "negation-window",
+      "decisionId": "intent:23",
+      "cueId": "text:scope-modifier:67:70",
+      "family": "scope-modifier",
+      "rule": "original",
+      "pattern": "\\b(?:no|not|without|avoid)(?:\\s+(?:a|an|any|the|enclosed|covered|open))?\\s*$",
+      "maximumLookbehindCodeUnits": 45,
+      "window": {
+        "source": "text",
+        "start": 22,
+        "end": 67,
+        "text": "ay between brick walls, broad straight path, ",
+        "offsets": "normalized-utf16"
+      },
+      "matched": false,
+      "matchedSpan": null,
+      "conclusion": "not excluded by this rule; semantic positivity is not established"
+    },
+    {
+      "stage": "intent",
+      "kind": "modifier-scope-observation",
+      "decisionId": "intent:24",
+      "modifier": {
+        "source": "text",
+        "start": 46,
+        "end": 51,
+        "text": "broad",
+        "offsets": "normalized-utf16"
+      },
+      "originalNegationMatched": false,
+      "likelyReferent": null,
+      "confidence": "lexical-proximity-hypothesis-only",
+      "inspectionRule": "first recognized following noun within 48 normalized code units, stopping at punctuation or a listed conjunction/preposition",
+      "frozenAppliedScope": "global-minimum-width-field",
+      "requirementMetres": 2.4,
+      "limitation": "This is not a syntactic attachment or an assertion of intended meaning; narrowness and height adjectives have no dedicated dimension fields."
+    },
+    {
+      "stage": "intent",
+      "kind": "modifier-scope-observation",
+      "decisionId": "intent:25",
+      "modifier": {
+        "source": "text",
+        "start": 67,
+        "end": 70,
+        "text": "low",
+        "offsets": "normalized-utf16"
+      },
+      "originalNegationMatched": false,
+      "likelyReferent": {
+        "source": "text",
+        "start": 78,
+        "end": 85,
+        "text": "ceiling",
+        "offsets": "normalized-utf16"
+      },
+      "confidence": "lexical-proximity-hypothesis-only",
+      "inspectionRule": "first recognized following noun within 48 normalized code units, stopping at punctuation or a listed conjunction/preposition",
+      "frozenAppliedScope": "no minimum-width contribution from this token",
+      "requirementMetres": 2.4,
+      "limitation": "This is not a syntactic attachment or an assertion of intended meaning; narrowness and height adjectives have no dedicated dimension fields."
+    },
+    {
+      "stage": "intent",
+      "kind": "compiler-ambiguity",
+      "decisionId": "intent:26",
+      "phase": "original",
+      "index": 0,
+      "message": "No supported spatial topology was specified; generic objects or open scenery cannot be accepted as an inferred interior.",
+      "retainedInCorrected": true
+    },
+    {
+      "stage": "intent",
+      "kind": "compiler-ambiguity",
+      "decisionId": "intent:27",
+      "phase": "corrected",
+      "index": 0,
+      "message": "No supported spatial topology was specified; generic objects or open scenery cannot be accepted as an inferred interior.",
+      "presentInOriginal": true
+    },
+    {
+      "stage": "intent",
+      "kind": "final-criteria",
+      "decisionId": "intent:28",
+      "criteria": {
+        "version": 1,
+        "supported": false,
+        "required": [],
+        "evidence": [],
+        "ambiguities": [
+          "No supported spatial topology was specified; generic objects or open scenery cannot be accepted as an inferred interior."
+        ],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "changedByTracing": false,
+      "sourceOfAcceptance": "deriveCorrectedSpatialCriteria"
+    },
+    {
+      "stage": "intent",
+      "kind": "walkway-alias-decision",
+      "decisionId": "walkway:0",
+      "methodVersion": "covered-walled-walkway-alias-v1",
+      "applied": true,
+      "reasons": [],
+      "attachment": {
+        "walkway": {
+          "source": "text",
+          "start": 17,
+          "end": 24,
+          "text": "walkway",
+          "offsets": "normalized-utf16"
+        },
+        "cover": {
+          "source": "text",
+          "start": 9,
+          "end": 16,
+          "text": "covered",
+          "offsets": "normalized-utf16"
+        },
+        "walls": {
+          "source": "text",
+          "start": 39,
+          "end": 44,
+          "text": "walls",
+          "offsets": "normalized-utf16"
+        },
+        "phrase": {
+          "source": "text",
+          "start": 3,
+          "end": 44,
+          "text": "empty covered walkway between brick walls",
+          "offsets": "normalized-utf16"
+        },
+        "wallRelation": "immediate-between-walls"
+      },
+      "uncertainty": [],
+      "baselineSupported": false,
+      "baselineRequired": [],
+      "rule": "One directly covered/roofed walkway that is directly walled or immediately between qualified walls; existing unsupported empty topology only.",
+      "source": "normalized-original-text-only",
+      "semanticFallbackAdded": false,
+      "limitations": [
+        "Finite lexical attachment grammar, not syntactic or semantic certainty.",
+        "Any listed uncertainty or negation marker declines this alias, including unrelated negation.",
+        "No source geometry or route evidence is inspected. Acceptance still requires the existing enclosed-passage and physical witnesses."
+      ]
+    },
+    {
+      "stage": "intent",
+      "kind": "walkway-final-criteria",
+      "decisionId": "walkway:1",
+      "methodVersion": "covered-walled-walkway-alias-v1",
+      "criteria": {
+        "version": 1,
+        "supported": true,
+        "required": [
+          "enclosed-passage"
+        ],
+        "evidence": [
+          {
+            "kind": "enclosed-passage",
+            "source": "text",
+            "cue": "empty covered walkway between brick walls"
+          }
+        ],
+        "ambiguities": [],
+        "requirements": {
+          "openSky": false,
+          "covered": true,
+          "opposingWalls": true,
+          "minimumWidth": 2.4
+        },
+        "physical": {
+          "radius": 0.3,
+          "height": 1.8,
+          "eyeHeight": 1.65,
+          "maxStep": 0.25,
+          "maxSlopeDegrees": 35,
+          "minimumDisplacement": 3,
+          "reversible": true
+        }
+      },
+      "changedByAlias": true,
+      "sourceOfAcceptance": "covered-walled-walkway-alias-v1",
+      "requirementsPreserved": true,
+      "physicalPreserved": true
+    }
+  ]
+}
