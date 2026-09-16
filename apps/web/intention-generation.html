@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Vastness · Intention</title></head>
+<body>
+  <canvas id="world-canvas" tabindex="0" aria-label="Walkable intention destination"></canvas>
+  <header><span>VASTNESS / INTENTION EXPERIMENT</span><h1>Beyond the threshold</h1><p id="status" role="status">Approach the threshold to describe what lies beyond.</p></header>
+  <main id="intention-panel" hidden>
+    <form id="intention-form"><label for="intention">What could be beyond this threshold?</label><textarea id="intention" maxlength="2000" rows="3" required placeholder="Describe a place, a feeling, or an unfamiliar possibility…"></textarea><button id="submit" type="submit">Shape a destination</button></form>
+    <p id="progress" aria-live="polite"></p>
+  </main>
+  <div id="crosshair" aria-hidden="true">+</div>
+  <aside><button id="enter">Explore · WASD + mouse</button><span>Drag to look · arrows turn · Esc releases mouse</span></aside>
+  <footer>
+    <details><summary>Experiment controls &amp; record</summary>
+      <p>Generated geometry, abstract solid by default. The support floor and threshold are authored. This is a bounded generation experiment.</p>
+      <div class="controls"><button id="approach">Walk to threshold</button><button id="circuit" disabled>Walk destination circuit</button><button id="return" disabled>Return through threshold</button><button id="stop">Stop walking</button><button id="reset">Reset view</button></div>
+      <div class="controls"><label>Saved destination <select id="history"><option value="">New intention</option></select></label><button id="refresh">Refresh history</button><label>Representation <select id="representation"><option value="solid">Abstract solid</option><option value="original">Original splat</option></select></label><label><input type="checkbox" id="colliders"> Show collision</label></div>
+      <p id="telemetry" data-state="{}"></p><button id="retry" hidden>Retry connection / render / visits</button>
+      <details><summary>Persistent world record</summary><pre id="world-record">No destination requested.</pre></details>
+      <details><summary>Diagnostics</summary><pre id="errors">No errors.</pre></details>
+    </details>
+  </footer>
+  <script type="module" src="/src/intention-generation/main.ts"></script>
+</body></html>
